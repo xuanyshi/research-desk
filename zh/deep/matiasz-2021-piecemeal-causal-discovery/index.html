@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>元分析式渐进因果发现中的实验选择 · 精读 · 我的文献集</title>
+<meta name="description" content="基于期望信息的Algorithm 3用9项实验把平均等价类压到少于10张图，随机策略需19项；即使完成所有两变量实验，仍平均保留4—5张不可区分图。">
+<meta property="og:title" content="元分析式渐进因果发现中的实验选择 · 精读 · 我的文献集">
+<meta property="og:description" content="基于期望信息的Algorithm 3用9项实验把平均等价类压到少于10张图，随机策略需19项；即使完成所有两变量实验，仍平均保留4—5张不可区分图。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="我的文献集">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/zh/deep/matiasz-2021-piecemeal-causal-discovery/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/zh/deep/matiasz-2021-piecemeal-causal-discovery/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/matiasz-2021-piecemeal-causal-discovery/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/matiasz-2021-piecemeal-causal-discovery/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/matiasz-2021-piecemeal-causal-discovery/">
+<link rel="alternate" type="application/atom+xml" title="我的文献集 · 精读" href="https://xuanyshi.github.io/research-desk/zh/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">我的文献集<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">首页</a>
+      <a href="../../library/index.html" class="">文献库</a>
+      <a href="../../deep/index.html" class="on">精读</a>
+      <a href="../../daily/index.html" class="">每日速览</a>
+      <a href="../../log/index.html" class="">历程</a>
+      <a href="../../about/index.html" class="">关于</a>
+      <span class="lang">
+        <a href="../../../zh/deep/matiasz-2021-piecemeal-causal-discovery/" class="on">中</a>
+        <a href="../../../en/deep/matiasz-2021-piecemeal-causal-discovery/" class="">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">我的精读</div>
+  <h1><span class="title-original" lang="en">Experiment Selection in Meta-Analytic Piecemeal Causal Discovery</span><span class="title-zh" lang="zh-CN">元分析式渐进因果发现中的实验选择</span></h1>
+  <p>Nicholas J. Matiasz, Alcino J. Silva, William Hsu</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">IEEE Access</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.1109/ACCESS.2021.3093524" target="_blank" rel="noopener">原文 / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=Experiment%20Selection%20in%20Meta-Analytic%20Piecemeal%20Causal%20Discovery" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p4">因果发现</span><span class="pill p4">文献综合</span><span class="pill p2">等价类</span><span class="pill p0">实验选择</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30秒结论</div>
+      <h2 id="overview-title">基于期望信息的Algorithm 3用9项实验把平均<strong>等价类</strong>压到少于10张图，随机策略需19项；即使完成所有两变量实验，仍平均保留4—5张不可区分图。</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>研究问题</dt>
+          <dd><strong>只有跨论文的局部因果主张、缺少共享原始数据时，如何综合相容因果图并选择下一项最有信息量的实验</strong>？</dd>
+        </div>
+        <div>
+          <dt>研究设计</dt>
+          <dd>约束式因果发现与模拟；把<strong>research map</strong>证据编码为干预或观察条件独立约束，用SAT/MaxSAT求相容图集，并比较随机、自由度和期望值三种实验选择策略。</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>证据强度</span>
+          <strong class="evidence-level level-low">有限</strong>
+        </div>
+        <dl>
+          <div><dt>计算对象</dt><dd>4变量全部543张DAG、48项两变量研究、相容图<strong>等价类</strong>、自由度和三种实验选择策略。</dd></div>
+          <div><dt>触发条件</dt><dd>模拟oracle总返回正确结果，并假设因果充分；实证只到4变量，Algorithm 3还需枚举<strong>等价类</strong>，规模扩展成本高。</dd></div>
+          <div><dt>对结论的影响</dt><dd>框架说明文献约束可用于冲突调和和证据缺口排序，尚未证明能在噪声、<strong>潜在混杂</strong>和大型生物网络中恢复真实结构。</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">阅读建议</strong>先看Figure 1理解<strong>research map</strong>到约束求解的转换，再读Algorithms 2–4。最后用Figure 2与Table 2核对实验数和残余不可识别性。</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">三个关键数字</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">543张</div>
+          <h3>4变量DAG全集</h3>
+          <p><strong>模拟逐张作为真图重复评估实验选择策略</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">9 vs 19项</div>
+          <h3>降至少于10张图所需实验</h3>
+          <p><strong>Algorithm 3约需9项，随机选择约需19项</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">4—5张</div>
+          <h3>最终残余等价类</h3>
+          <p><strong>全部两变量实验完成后仍无法区分的平均图数</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">重点看哪里</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1109/ACCESS.2021.3093524" target="_blank" rel="noopener">
+            Figure 1 · PDF p. 7<small>原文入口</small> ↗
+          </a>
+          <div><h3>把research map转为图约束</h3><p><strong>图示证据边、观察或干预标记、约束求解和下一实验推荐之间的关系</strong>。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1109/ACCESS.2021.3093524" target="_blank" rel="noopener">
+            Algorithms 2–4 · PDF pp. 7–9<small>原文入口</small> ↗
+          </a>
+          <div><h3>比较自由度、期望和假设分类</h3><p><strong>三个算法分别按可变边关系、期望删图数量和SAT相容性选择或筛查实验</strong>。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1109/ACCESS.2021.3093524" target="_blank" rel="noopener">
+            Figure 2与Table 2 · PDF p. 10<small>原文入口</small> ↗
+          </a>
+          <div><h3>核对信息效率与不可识别</h3><p>结果比较三种策略收缩<strong>等价类</strong>的速度，并显示两变量证据无法识别唯一图。</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">零敲碎打因果发现流程</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">证据</div>
+            <h3>编码局部研究主张</h3>
+            <p><strong>把观察或干预下的依赖与独立关系转为带置信权重的约束</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">求解</div>
+            <h3>寻找最大相容图集</h3>
+            <p><strong>约束一致时用SAT，冲突时用加权MaxSAT最小化违背权重</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">不确定性</div>
+            <h3>计算等价类自由度</h3>
+            <p><strong>统计每对变量仍可能取哪些方向或无边关系</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">选择</div>
+            <h3>推荐最有信息的实验</h3>
+            <p><strong>优先检验能删除最多候选图的关系，并避免无信息干预</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">更新</div>
+            <h3>加入结果并重算</h3>
+            <p>新约束缩小<strong>等价类</strong>，循环直到达到成本或可识别性边界。</p>
+          </li>
+        </ol>
+        <figcaption><strong>依据PDF Figure 1、Algorithms 1–4和模拟结果整理</strong>。</figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">完整精读</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>把散落在各研究里的因果主张（只有汇总统计、没有原始数据）编码成约束，算出所有相容的因果图（等价类），再用信息增益挑"下一个最该做的实验"。 是 LLM 之前的"文献→因果图"祖先。</p>
+</blockquote>
+<h2>作者团队</h2>
+<p>论文出自加州大学洛杉矶分校（UCLA），由资深作者 Alcino Silva 与 William Hsu 两组合作完成。Silva 为神经生物学与精神病学教授，长期倡导用【research map】整合已有研究、规划实验，并研究神经科学中的因果推理；Hsu 从事医学影像信息学。</p>
+<h2>解决什么问题</h2>
+<p>科学家读到的多是自由文本：论文给的是汇总统计、没有原始数据，而经典<strong>因果发现</strong>算法都跑在原始数据上，"只用文本信息建因果模型"这条路一直少人做。生物学还有个结构性难处——一次只能观测系统的一个子集变量（piecemeal，零敲碎打），得把子集结果分析性地拼起来。</p>
+<p>作者一上来就承认硬限制：piecemeal <strong>因果发现</strong>"无论做多少实验，往往都识别不出唯一的真因果图"。所以问题拆成两件：把多研究的因果证据综合成一致的因果模型，以及决定下一个实验做什么最省。</p>
+<h2>怎么做的</h2>
+<p><strong>因果图 G=(V,D)，只学结构不学参数</strong>。约束写成带干预集的（条件）独立关系 X⊥⊥Y|C‖J（J 是干预集，J=∅ 是被动观测），靠因果马尔可夫加忠实性两座桥、d 分离连接分布与图。</p>
+<p>求解用 Hyttinen-Eberhardt-Järvisalo 2014 的 ASP 约束式算法（不假设无环、也不假设因果充分性，所以能容许环和潜在混杂）：约束无冲突走 SAT，有冲突走加权 MaxSAT——每条约束带一个置信权重（来自 p 值或 <strong>research map</strong> 边的证据分），解器找"违背约束权重和最小"的图集。</p>
+<p>证据来源是 Silva 组的 <strong>research map</strong>：节点是现象、边带符号（激发/抑制/独立）和方法学标记（↑↓ 干预、∅↑∅↓ 观测），每条边有个基于证据收敛与一致性的贝叶斯聚合分。</p>
+<p>选实验的核心机制是<strong>等价类</strong>和自由度（DOF）。相容图集就是等价类，越大越无知；DOF 是"任意一对变量在整个等价类里还能有多少种边关系变体"，DAG 里每对有 3 种（X→Y、X←Y、X···Y），定死一种后还剩 2 个 DOF。Algorithm 2 挑剩余 DOF 最多的那对变量，再从查找表里选一个能区分这些 DOF 的最有信息的实验，并刻意避开无信息干预（比如两种可能里若含 X→Y，就别去干预 Y，否则两种变体没法区分）。</p>
+<p>Algorithm 3 更进一步：对每种 DOF 赋值算"若为真能删掉多少图"的期望 e=（该赋值占比）×（能删掉的图数），挑期望最大的——这是个价值-信息式目标，但要枚举整个<strong>等价类</strong>、更贵。Algorithm 4 只用 1–2 次 SAT 查询把一个待验假设归成三类：跟所有图都不容（矛盾）、跟所有图都容（已被蕴含）、只跟部分容（唯一值得做，保证能剪等价类）——作者说这把波普尔的可证伪性写成了解析式。</p>
+<h2>关键结果</h2>
+<p>框架加穷举模拟，没有新实证研究（真实的两篇神经科学合并案例在配套论文里）。图空间规模：1/2/3 变量分别有 1/3/25 个 DAG，4 变量 543 个，7 变量约 11 亿。评估在 4 变量的全部 543 个 DAG 上，把每个当真值、oracle 假设因果充分且知道真图，按 <strong>research map</strong> 定义的 48 个两变量研究顺序选做，记录等价类大小并跨 543 个图平均。</p>
+<p>主要发现：Algorithm 3 用 9 个实验就把<strong>等价类</strong>压到 &lt;10 个图（人工可复核的规模），随机策略要 19 个；到达最小值时随机比 Algorithm 3 平均多花 32 个研究。但有个根本极限——做完所有两变量实验后，平均还剩 4–5 个图无法区分，这就是 piecemeal 两变量约束的天花板（对照：能观测全部变量、任意干预时，log(N)+1 个实验就够）。</p>
+<h2>证据有多硬</h2>
+<p>理想化很重。虽然底层引擎能容环和潜在混杂，但被演示的评估限定在 DAG（无环）、oracle 假设因果充分（无潜在混杂），所以"通用模型空间"是工具属性、没被模拟真正压过测。而且 oracle 对每个实验都返回正确结果——不建模科学家会犯错、没有<strong>测量误差</strong>、没有有限样本的独立性检验误差。</p>
+<p>只做到 N=4 的穷举，7 变量就约 10 亿，Algorithm 3 还要枚举整个<strong>等价类</strong>，大系统不现实（作者的退路是等超算、或降到只做 1–2 次 SAT 的 Algorithm 4 做筛查）。基线是随机选实验，作者也承认这不代表真实科学家在随机选。忠实性假设、oracle 正确性、两变量约束下的不可识别（4–5 个残余图）是几个硬约束。</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="本页导航">
+    <div class="deep-toc-title">本页导航</div>
+    <a href="#overview" class="is-main">30秒结论</a>
+    <a href="#key-numbers">三个关键数字</a>
+    <a href="#where-to-focus">重点看哪里</a>
+    <a href="#study-design">零敲碎打因果发现流程</a>
+    <a href="#full-read">完整精读</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← 回精读列表</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>我的文献集 · Xuanyu Shi</span>
+    <span>每个工作日更新一次 · <a href="https://xuanyshi.github.io/research-desk/zh/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

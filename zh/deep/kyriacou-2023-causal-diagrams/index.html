@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>因果图在生物医学研究中的应用 · 精读 · 我的文献集</title>
+<meta name="description" content="变量角色由研究问题和时间顺序决定。应阻断全部开放后门路径，避免调整碰撞点；研究中介时需区分总效应、直接效应和间接效应。">
+<meta property="og:title" content="因果图在生物医学研究中的应用 · 精读 · 我的文献集">
+<meta property="og:description" content="变量角色由研究问题和时间顺序决定。应阻断全部开放后门路径，避免调整碰撞点；研究中介时需区分总效应、直接效应和间接效应。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="我的文献集">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/zh/deep/kyriacou-2023-causal-diagrams/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/zh/deep/kyriacou-2023-causal-diagrams/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/kyriacou-2023-causal-diagrams/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/kyriacou-2023-causal-diagrams/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/kyriacou-2023-causal-diagrams/">
+<link rel="alternate" type="application/atom+xml" title="我的文献集 · 精读" href="https://xuanyshi.github.io/research-desk/zh/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">我的文献集<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">首页</a>
+      <a href="../../library/index.html" class="">文献库</a>
+      <a href="../../deep/index.html" class="on">精读</a>
+      <a href="../../daily/index.html" class="">每日速览</a>
+      <a href="../../log/index.html" class="">历程</a>
+      <a href="../../about/index.html" class="">关于</a>
+      <span class="lang">
+        <a href="../../../zh/deep/kyriacou-2023-causal-diagrams/" class="on">中</a>
+        <a href="../../../en/deep/kyriacou-2023-causal-diagrams/" class="">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">我的精读</div>
+  <h1><span class="title-original" lang="en">Using Causal Diagrams for Biomedical Research</span><span class="title-zh" lang="zh-CN">因果图在生物医学研究中的应用</span></h1>
+  <p>Demetrios N. Kyriacou, Philip Greenland, Mohammad A. Mansournia</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Annals of Emergency Medicine</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.1016/j.annemergmed.2022.08.014" target="_blank" rel="noopener">原文 / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=Using%20Causal%20Diagrams%20for%20Biomedical%20Research" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p3">因果DAG</span><span class="pill p4">混杂调整</span><span class="pill p1">对撞偏倚</span><span class="pill p4">协变量选择</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30秒结论</div>
+      <h2 id="overview-title"><strong>变量角色由研究问题和时间顺序决定</strong>。应阻断全部开放后门路径，避免调整碰撞点；研究中介时需区分总效应、直接效应和间接效应。</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>研究问题</dt>
+          <dd>DAG如何决定多变量模型中哪些变量应调整、哪些变量应排除，以及何时需要单独的<strong>中介分析</strong>？</dd>
+        </div>
+        <div>
+          <dt>研究设计</dt>
+          <dd><strong>临床方法教程</strong>；使用Framingham Heart Study数据，以糖尿病—心肌缺血和肥胖—心肌缺血为例演示混杂、碰撞点和中介。</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>证据强度</span>
+          <strong class="evidence-level level-mid">中等</strong>
+        </div>
+        <dl>
+          <div><dt>计算对象</dt><dd>DAG判定规则，以及Framingham数据中糖尿病、肥胖、年龄、高血压、MACE与心肌缺血的Cox模型和<strong>中介分析</strong>。</dd></div>
+          <div><dt>触发条件</dt><dd>实例图为教学而简化，依赖先验因果知识；观测数据估计仍受未测和<strong>残余混杂</strong>、误分类及时间变化影响。</dd></div>
+          <div><dt>对结论的影响</dt><dd>DAG可约束变量选择和解释机械调参造成的偏倚，但图本身不能验证所画边，也不能将观测关联自动升级为<strong>因果效应</strong>。</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">阅读建议</strong><strong>先看Figure 2并数清3条后门路径，再对照Table 1比较正确调整与加入MACE后的变化</strong>；随后用Figure 3和Table 2理解中介分解。</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">三个关键数字</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">3条</div>
+          <h3>Figure 2的后门路径</h3>
+          <p><strong>经年龄、经肥胖、以及经肥胖和高血压到心肌缺血</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">2.08→1.28</div>
+          <h3>加入碰撞点后的HR变化</h3>
+          <p><strong>糖尿病HR由2.08降至1.28</strong>；38.5%的变化来自碰撞偏倚，不能解释为去除混杂</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">1.69</div>
+          <h3>肥胖总效应HR</h3>
+          <p><strong>中介分析</strong>估计直接效应HR 1.52，经过高血压的间接效应HR 1.11</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">重点看哪里</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1016/j.annemergmed.2022.08.014" target="_blank" rel="noopener">
+            Figure 2 · PDF p. 4<small>原文入口</small> ↗
+          </a>
+          <div><h3>识别后门路径与MACE碰撞点</h3><p><strong>图把年龄、肥胖和高血压的混杂路径与MACE的共同结果位置放在同一结构中</strong>。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1016/j.annemergmed.2022.08.014" target="_blank" rel="noopener">
+            Table 1 · PDF p. 4<small>原文入口</small> ↗
+          </a>
+          <div><h3>比较正确调整与碰撞点调整</h3><p><strong>糖尿病HR从未调整2.56到充分调整2.08</strong>；加入MACE后降到1.28，展示change-in-estimate规则可能误导。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1016/j.annemergmed.2022.08.014" target="_blank" rel="noopener">
+            Figure 3与Table 2 · PDF p. 5<small>原文入口</small> ↗
+          </a>
+          <div><h3>区分混杂变量和中介变量</h3><p>高血压位于肥胖到心肌缺血的通路上；常规调整会删除部分效应，因而需要明确的<strong>中介分析</strong>。</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">DAG驱动的变量处理</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">问题</div>
+            <h3>固定暴露与结局</h3>
+            <p><strong>先明确要估计总效应、直接效应还是中介效应</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">结构</div>
+            <h3>按时间顺序画DAG</h3>
+            <p><strong>用领域知识标出共同原因、中间变量、选择因素和共同结果</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">混杂</div>
+            <h3>阻断全部后门路径</h3>
+            <p>选择最小充分<strong>调整集</strong>，避免重复或无目的地加入变量。</p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">碰撞</div>
+            <h3>排除碰撞点及其后代</h3>
+            <p><strong>触发条件是变量由暴露和结局或其原因共同影响</strong>；调整会打开非因果路径。</p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">中介</div>
+            <h3>使用专门的效应分解</h3>
+            <p><strong>若目标涉及机制，分别估计总效应、直接效应和间接效应并说明附加假设</strong>。</p>
+          </li>
+        </ol>
+        <figcaption><strong>依据PDF Figures 1–3和Tables 1–2整理</strong>。</figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">完整精读</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>一篇写给临床研究者的 DAG 入门：用混杂、对撞、中介的判定规则决定多变量模型该放谁、排谁，再用 Framingham 的数字演示选错变量怎样把效应估计算歪。</p>
+</blockquote>
+<h2>作者团队</h2>
+<p>第一作者 Demetrios N. Kyriacou 是西北大学 Feinberg 医学院急诊与预防医学教授、JAMA 资深编辑；合作者包括西北大学心血管流行病学家 Philip Greenland，以及长期研究因果推断方法的德黑兰医科大学 Mohammad A. Mansournia。</p>
+<h2>解决什么问题</h2>
+<p><strong>临床研究选协变量，很多人还在靠 stepwise、显著性、change-in-estimate 这类机械算法</strong>，让软件挑一组拟合最好的变量。问题在于这些方法只优化整体拟合，不问每个变量在因果结构里是什么角色。于是有两类系统性错误：该放的混杂漏了，不该放的对撞、中介放了进去。</p>
+<p><strong>两者都让效应有偏，只是机制不同</strong>。作者要做的，是让研究者在跟统计学家合作时能用因果图讲清"为什么放这个、排那个"，而不是把变量选择外包给算法。老问题，但在急诊这类临床期刊里再讲一遍仍有价值。</p>
+<h2>怎么做的</h2>
+<p><strong>核心是把 DAG 当变量选择的依据</strong>。DAG 有向（箭头顺时间走）、无环（无反馈回路）；路径是沿或逆箭头的任意通路，因果路径是箭头同向的一串。三类变量各有判定和处理：</p>
+<ul>
+<li>混杂三条件：结局的、独立于暴露的外源危险因素；在源人群中与暴露相关（直接或经共因）；不被暴露或结局影响、不落在暴露到结局的因果路径上。满足就调整。</li>
+<li>对撞是两变量的共同结果，调它会凭空造出关联（对撞 / 选择偏倚），要排除；中介在因果路径上，普通回归调它会抹掉经它传导的那部分效应，得用正式中介分析拆直接、间接效应。</li>
+</ul>
+<p>找充分<strong>调整集</strong>用后门路径：从指向暴露的箭头（后门）出发，沿不含对撞的开放路径追到结局，每条后门路径至少调一个变量堵上。作者主张传统三条件和后门法并用。贯穿全文一句话：解释性建模不是预测建模，别拿机械选择和单独的 change-in-estimate 下判断。</p>
+<h2>关键结果</h2>
+<p><strong>演示用 Framingham，4,287 人，暴露是糖尿病，结局是心肌缺血</strong>。表 1 逐步加变量：未调整 HR 2.56；只调肥胖降到 2.32（变化 9.4%，肥胖是混杂）；再加年龄降到 2.08（再变 10.3%，年龄也是混杂）。到这儿都是在去混杂。</p>
+<p><strong>坑在第三步：把 MACE（重大心血管事件）放进去，HR 从 2.08 骤降到 1.28（降 38.5%）</strong>，CI 跨过 1。但 MACE 是糖尿病和心肌缺血的共同结果，是对撞不是混杂——这 38.5% 看着像去混杂，其实是引入了对撞偏倚。同一个"估计值变了"，加肥胖、年龄是对的，加 MACE 是错的，肉眼分不出来。</p>
+<p>中介那组同理：肥胖对心肌缺血未调 1.61，普通回归调高血压降到 1.45（降 9.9%），但高血压是中介，这一降是把间接效应抹掉了；正式<strong>中介分析</strong>给出总效应 1.69、直接 1.52、间接 1.11（直接 × 间接 ≈ 总）。</p>
+<h2>证据有多硬</h2>
+<p><strong>教程不是研究，"硬不硬"看它多老实，而作者相当老实</strong>。他们自己划了边界：DAG 依赖事先的科学知识，这类知识常常不全或没有；变量是混杂、对撞还是中介，取决于时间顺序和测量时点；图省了变量或箭头就会过度简化，文中几张图是有意简化的，"拿不准时宁可把箭头画上"。</p>
+<p>还点了几个真问题：一个变量可以同时是混杂又是对撞（M 偏倚）；混杂的定义方法学界吵了几十年，传统条件和后门条件只是大面积重叠；所有变量都被二分，而二分本身带来<strong>残余混杂</strong>。图的效力，取决于数据和先验知识的质量。</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="本页导航">
+    <div class="deep-toc-title">本页导航</div>
+    <a href="#overview" class="is-main">30秒结论</a>
+    <a href="#key-numbers">三个关键数字</a>
+    <a href="#where-to-focus">重点看哪里</a>
+    <a href="#study-design">DAG驱动的变量处理</a>
+    <a href="#full-read">完整精读</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← 回精读列表</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>我的文献集 · Xuanyu Shi</span>
+    <span>每个工作日更新一次 · <a href="https://xuanyshi.github.io/research-desk/zh/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

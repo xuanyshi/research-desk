@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to use directed acyclic graphs: guide for clinical researchers · Deep reads · My Research Desk</title>
+<meta name="description" content="DAGs should precede data and results, and omitted nodes or arrows are strong assumptions. The workflow improves transparency, but a consensus graph can still be wrong and does not quantify bias.">
+<meta property="og:title" content="How to use directed acyclic graphs: guide for clinical researchers · Deep reads · My Research Desk">
+<meta property="og:description" content="DAGs should precede data and results, and omitted nodes or arrows are strong assumptions. The workflow improves transparency, but a consensus graph can still be wrong and does not quantify bias.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="My Research Desk">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/en/deep/feeney-2025-clinical-dag-guide/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/en/deep/feeney-2025-clinical-dag-guide/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/feeney-2025-clinical-dag-guide/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/feeney-2025-clinical-dag-guide/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/feeney-2025-clinical-dag-guide/">
+<link rel="alternate" type="application/atom+xml" title="My Research Desk · Deep reads" href="https://xuanyshi.github.io/research-desk/en/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">My Research Desk<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">Home</a>
+      <a href="../../library/index.html" class="">Library</a>
+      <a href="../../deep/index.html" class="on">Deep reads</a>
+      <a href="../../daily/index.html" class="">Daily</a>
+      <a href="../../log/index.html" class="">Log</a>
+      <a href="../../about/index.html" class="">About</a>
+      <span class="lang">
+        <a href="../../../zh/deep/feeney-2025-clinical-dag-guide/" class="">中</a>
+        <a href="../../../en/deep/feeney-2025-clinical-dag-guide/" class="on">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">My deep read</div>
+  <h1>How to use directed acyclic graphs: guide for clinical researchers</h1>
+  <p>Timothy Feeney, Fernando Pires Hartwig, Neil M Davies</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">BMJ 388 (2025):e078226</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.1136/bmj-2023-078226" target="_blank" rel="noopener">Source / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=How%20to%20use%20directed%20acyclic%20graphs%3A%20guide%20for%20clinical%20researchers" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p3">Causal DAG</span><span class="pill p1">Clinical research</span><span class="pill p4">Estimand</span><span class="pill p1">Expert consensus</span><span class="pill p2">Sensitivity analysis</span><span class="pill p1">Reporting</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30-second read</div>
+      <h2 id="overview-title">DAGs should precede data and results, and omitted nodes or arrows are strong assumptions. The workflow improves transparency, but <strong>a consensus graph can still be wrong and does not quantify bias</strong>.</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>Question</dt>
+          <dd>How can clinical observational studies carry a DAG through <strong>estimands, data collection, covariate selection, sensitivity analysis, and reporting</strong>?</dd>
+        </div>
+        <div>
+          <dt>Design</dt>
+          <dd>A seven-step applied guide using heavy alcohol use and five-year mortality, moving from population and question through expert consensus and data choice to <strong>primary and quantitative bias analysis</strong>.</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>Evidence strength</span>
+          <strong class="evidence-level level-mid">Methods guide</strong>
+        </div>
+        <dl>
+          <div><dt>What was assessed</dt><dd><strong>Target population, exposure, outcome, consensus DAG, minimal sufficient sets, and unavailable or mismeasured variables.</strong></dd></div>
+          <div><dt>Downgrade triggers</dt><dd>A missing key variable or serious measurement error triggers new data, additional collection, or sensitivity analysis; <strong>multivariable regression does not erase an omitted node</strong>.</dd></div>
+          <div><dt>Impact on interpretation</dt><dd>The steps can become a clinical-study checklist. <strong>Correct execution does not establish that the causal structure is true.</strong></dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">Reading advice</strong>Use Box 2 and Steps 1–3 for construction and consensus, inspect iteration in Figure 6, then read Steps 4–7 and ask <strong>how the graph changes actual data and analysis choices</strong>.</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">Three numbers to keep</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">Seven</div>
+          <h3>Clinical DAG steps</h3>
+          <p><strong>From the target question and expert consensus to analysis, sensitivity analysis, and reporting</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">234</div>
+          <h3>Articles in an applied review</h3>
+          <p><strong>DAG use increased while reporting of key information varied widely</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">Two</div>
+          <h3>Example adjustment sets</h3>
+          <p><strong>The alcohol–mortality example gives two minimal sets</strong>; unmeasured family support can invalidate both</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">Where to focus</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://www.bmj.com/content/388/bmj-2023-078226.long" target="_blank" rel="noopener">
+            Box 2 and Steps 1–2 · PDF pp. 6–7<small>Direct link</small> ↗
+          </a>
+          <div><h3>Establish minimum graph requirements</h3><p><strong>Estimands, all common causes, selection nodes, and omitted-edge assumptions appear together.</strong></p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://www.bmj.com/content/388/bmj-2023-078226.long" target="_blank" rel="noopener">
+            Figure 6 and Step 3 · PDF pp. 7–8<small>Direct link</small> ↗
+          </a>
+          <div><h3>Watch consensus iteration</h3><p><strong>The path from an exposure–outcome skeleton to expert additions, unmeasured variables, and adjustment sets is visible.</strong></p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://www.bmj.com/content/388/bmj-2023-078226.long" target="_blank" rel="noopener">
+            Steps 4–7 · PDF pp. 8–10<small>Direct link</small> ↗
+          </a>
+          <div><h3>Connect the graph to research</h3><p><strong>Data choice, analysis, measurement-error sensitivity, and published code close the loop.</strong></p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">The seven-step clinical DAG loop</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">Question</div>
+            <h3>Define population and estimand</h3>
+            <p><strong>Specify exposure versions, outcome timing, and the target counterfactual contrast.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">Knowledge</div>
+            <h3>Build a consensus graph</h3>
+            <p><strong>Combine literature, domain experts, and DAG expertise and preregister nodes and edges.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">Data</div>
+            <h3>Choose measurement from the graph</h3>
+            <p><strong>Identify required variables before deciding whether available data can answer the question.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">Analysis</div>
+            <h3>Adjust and quantify bias</h3>
+            <p><strong>Use sufficient sets and measure the impact of unavailable or mismeasured variables.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">Publication</div>
+            <h3>Release graph, code, and deviations</h3>
+            <p><strong>Let readers reconstruct the DAG and audit covariate and sensitivity choices.</strong></p>
+          </li>
+        </ol>
+        <figcaption><strong>Condensed into five stages from Box 2, Figure 6, and Steps 1–7.</strong></figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">Full deep read</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>This seven-step guide connects estimands, consensus DAGs, data choice, statistical analysis, and bias sensitivity analysis into one clinical-research workflow.</p>
+</blockquote>
+<h2>The authors</h2>
+<p>Timothy Feeney is affiliated with the University of North Carolina at Chapel Hill; Fernando Pires Hartwig with the Federal University of Pelotas and the University of Bristol; Neil M Davies with University College London, Bristol, and the Norwegian University of Science and Technology. The authors work in epidemiology and causal-inference methods.</p>
+<h2>The problem</h2>
+<p>DAG use in clinical research is increasing, yet a review of 234 articles found incomplete reporting of assumptions and adjustment sets. This article seeks to turn DAGs from publication graphics into traceable design tools that can change data choice, analysis, and interpretation.</p>
+<h2>The approach</h2>
+<p>Using heavy alcohol use and five-year mortality, the authors propose seven steps: define population, exposure, outcome, and estimand; identify variables through literature and experts; iterate to consensus and preregister; choose data and measurement from the graph; choose analysis; design sensitivity analyses for missing or mismeasured variables; and publish the DAG, code, and deviations.</p>
+<p>The object for adjustment is the set of backdoor paths in the consensus graph. A variable set is triggered when it blocks all confounding paths without blocking the target causal path; the practical effect is specification of primary covariates. Missing key variables trigger new data, a different dataset, or quantitative bias analysis rather than an automatic unbiased estimate.</p>
+<h2>Key results</h2>
+<p>This is a methods guide, with no new clinical effect estimate. The alcohol example yields two minimal sufficient sets: socioeconomic position, care access, and heavy alcohol use; or care access, heavy alcohol use, and family history of alcohol abuse. Adding potentially unmeasured family support can eliminate any sufficient set composed only of measured variables.</p>
+<p>Steps 4–6 connect the graph to data: identify required measurements, disclose gaps, and translate unmeasured confounding and measurement error into sensitivity-analysis parameters. Step 7 calls for publication of the graph and reproducible code.</p>
+<h2>How solid is the evidence</h2>
+<p>The recommendations rest on DAG theory, applied reviews, and author experience. They are appropriate as reporting guidance, but no comparison shows that the seven-step workflow reduces bias. Expert-consensus thresholds and edge-level evidence grades are unspecified. A carefully executed workflow can still produce a wrong consensus graph.</p>
+<p>The article emphasizes that omitted nodes and arrows are strong assumptions. DAGs do not quantify bias magnitude, infer direction from data alone, or automatically solve changing adherence, time-varying confounding, and inconsistent intervention definitions.</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="On this page">
+    <div class="deep-toc-title">On this page</div>
+    <a href="#overview" class="is-main">30-second read</a>
+    <a href="#key-numbers">Three numbers to keep</a>
+    <a href="#where-to-focus">Where to focus</a>
+    <a href="#study-design">The seven-step clinical DAG loop</a>
+    <a href="#full-read">Full deep read</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← Back to deep reads</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>My Research Desk · Xuanyu Shi</span>
+    <span>Updated on weekdays · <a href="https://xuanyshi.github.io/research-desk/en/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

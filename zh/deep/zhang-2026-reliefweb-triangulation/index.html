@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>使用大语言模型从危机报告中提取和三角测量因果证据：基于ReliefWeb的研究 · 精读 · 我的文献集</title>
+<meta name="description" content="查询约束与片段落地使最佳闭源方案达到加权F1 90.73%，蒸馏后的Llama-3.1-8B为94.15%。LoE=0.865表示跨情境方向集中，未检验跨设计偏倚是否独立。">
+<meta property="og:title" content="使用大语言模型从危机报告中提取和三角测量因果证据：基于ReliefWeb的研究 · 精读 · 我的文献集">
+<meta property="og:description" content="查询约束与片段落地使最佳闭源方案达到加权F1 90.73%，蒸馏后的Llama-3.1-8B为94.15%。LoE=0.865表示跨情境方向集中，未检验跨设计偏倚是否独立。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="我的文献集">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/zh/deep/zhang-2026-reliefweb-triangulation/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/zh/deep/zhang-2026-reliefweb-triangulation/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/zhang-2026-reliefweb-triangulation/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/zhang-2026-reliefweb-triangulation/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/zhang-2026-reliefweb-triangulation/">
+<link rel="alternate" type="application/atom+xml" title="我的文献集 · 精读" href="https://xuanyshi.github.io/research-desk/zh/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">我的文献集<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">首页</a>
+      <a href="../../library/index.html" class="">文献库</a>
+      <a href="../../deep/index.html" class="on">精读</a>
+      <a href="../../daily/index.html" class="">每日速览</a>
+      <a href="../../log/index.html" class="">历程</a>
+      <a href="../../about/index.html" class="">关于</a>
+      <span class="lang">
+        <a href="../../../zh/deep/zhang-2026-reliefweb-triangulation/" class="on">中</a>
+        <a href="../../../en/deep/zhang-2026-reliefweb-triangulation/" class="">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">我的精读</div>
+  <h1><span class="title-original" lang="en">Causal Evidence Extraction and Triangulation in Crisis Reports using Large Language Models: A ReliefWeb-based Study</span><span class="title-zh" lang="zh-CN">使用大语言模型从危机报告中提取和三角测量因果证据：基于ReliefWeb的研究</span></h1>
+  <p>Yuanjun Zhang, Mourad Oussalah</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Findings of the Association for Computational Linguistics: ACL 2026, 32478–32491</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.18653/v1/2026.findings-acl.1626" target="_blank" rel="noopener">原文 / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=Causal%20Evidence%20Extraction%20and%20Triangulation%20in%20Crisis%20Reports%20using%20Large%20Language%20Models%3A%20A%20ReliefWeb-based%20Study" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p1">大语言模型</span><span class="pill p3">证据三角互证</span><span class="pill p3">因果证据抽取</span><span class="pill p2">信息抽取</span><span class="pill p0">证据溯源</span><span class="pill p0">模型蒸馏</span><span class="pill p0">人道主义NLP</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30秒结论</div>
+      <h2 id="overview-title">查询约束与片段落地使最佳闭源方案达到加权F1 90.73%，蒸馏后的Llama-3.1-8B为94.15%。LoE=0.865表示<strong>跨情境方向集中</strong>，未检验跨设计偏倚是否独立。</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>研究问题</dt>
+          <dd>如何从冗长的危机报告中抽取可追溯的<strong>干预—结局因果陈述</strong>，并判断不同灾害与来源中的方向是否收敛？</dd>
+        </div>
+        <div>
+          <dt>研究设计</dt>
+          <dd>工程方法与案例研究；检索ReliefWeb在2000—2024年的约8,000份英文报告，以100份专家标注报告评测两步LLM抽取，再按<strong>灾害×来源单元</strong>汇总现金援助与食物结局。</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>证据强度</span>
+          <strong class="evidence-level level-mid">中等</strong>
+        </div>
+        <dl>
+          <div><dt>计算对象</dt><dd><strong>100份报告、220条专家关系标注</strong>上的四层F1，以及约19,600条抽取记录在19个灾害×来源单元中的方向分布。</dd></div>
+          <div><dt>触发条件</dt><dd>测试集较小且未报告标注者一致性；固定配置无重复运行或误差条，LoE还受<strong>强度赋权、极性标注、平滑参数和单元定义</strong>影响。</dd></div>
+          <div><dt>对结论的影响</dt><dd>结果支持可审计抽取与跨情境一致性描述；<strong>LoE不能直接解释为跨设计因果证据强度或干预效应大小</strong>。</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">阅读建议</strong>先看Figure 1分清查询约束、片段分类和三角测量，再用Table 2核对F1提升，最后读Equation 5与Figure 2。重点检查<strong>LoE究竟计算了什么</strong>。</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">三个关键数字</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">约8,000份</div>
+          <h3>ReliefWeb报告</h3>
+          <p><strong>覆盖2000—2024年、4类灾害和5类来源</strong>；专家测试集为100份报告</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">最高94.15%</div>
+          <h3>加权F1</h3>
+          <p><strong>闭源最佳为90.73%，LoRA为94.15%</strong>；单次固定配置，无误差条</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">0.865</div>
+          <h3>食物相关结局LoE</h3>
+          <p><strong>19个非空单元的正向概率为0.91</strong>；LoE是优势方向概率的线性变换</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">重点看哪里</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://aclanthology.org/2026.findings-acl.1626.pdf#page=2" target="_blank" rel="noopener">
+            Figure 1 · PDF p. 2<small>图表直达</small> ↗
+          </a>
+          <div><h3>拆开抽取与汇总管线</h3><p><strong>图中分开查询约束候选抽取、片段落地方向分类、极性归一和灾害×来源三角测量</strong>。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://aclanthology.org/2026.findings-acl.1626.pdf#page=4" target="_blank" rel="noopener">
+            Table 2 · PDF p. 4<small>图表直达</small> ↗
+          </a>
+          <div><h3>核对模型与消融</h3><p><strong>查询约束贡献最大，片段落地继续改善关系抽取</strong>；表中也显示Llama蒸馏前后的差异。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://aclanthology.org/2026.findings-acl.1626.pdf#page=5" target="_blank" rel="noopener">
+            Equation 5与Figure 2 · PDF pp. 4–5<small>图表直达</small> ↗
+          </a>
+          <div><h3>判断LoE的含义</h3><p><strong>Equation 5把最大方向概率缩放为0—1</strong>，Figure 2展示累积方向轨迹与参与单元数。</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">危机报告到方向收敛分数</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">检索</div>
+            <h3>筛选现金援助报告</h3>
+            <p><strong>保留约8,000份英文全文，并限定灾害和来源类别</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">候选</div>
+            <h3>按查询抽干预—结局</h3>
+            <p><strong>只输出指定干预类别的关系与支持片段</strong>，限制外围主题过度抽取。</p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">分类</div>
+            <h3>判断方向与强度</h3>
+            <p><strong>片段和全文共同触发increase、decrease、no-change及三级强度标签</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">单元</div>
+            <h3>归一极性并分层计数</h3>
+            <p><strong>按灾害×来源聚合，强度赋权后加入Laplace平滑</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">汇总</div>
+            <h3>等权计算方向集中度</h3>
+            <p><strong>非空单元等权平均，优势方向概率经线性缩放得到LoE</strong>。</p>
+          </li>
+        </ol>
+        <figcaption><strong>依据PDF Figure 1、Equations 1–5、Table 2和Figure 2整理</strong>。</figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">完整精读</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>论文把查询约束、证据片段和情境分层接入危机报告抽取；抽取准确度较高，LoE 实质上衡量跨情境的方向集中度，尚不能代表跨设计因果证据强度。</p>
+</blockquote>
+<h2>作者团队</h2>
+<p>Yuanjun Zhang 的论文署名单位为 University of Oulu 和 LUT University，通讯作者 Mourad Oussalah 来自 University of Oulu。该工作由欧盟 Horizon 2020 与 CHANSE 的 Digital Emergency Communication（DIGeMERGE）项目支持，团队此前也发表过灾害严重程度评估与可解释多模态推理研究。</p>
+<h2>解决什么问题</h2>
+<p>ReliefWeb 报告篇幅长、主题杂。关键词检索偏向高召回，会捞出只顺带提到现金援助的文件；无约束的 LLM 随后可能把外围叙述也抽成干预—结局关系。作者要把这些报告变成带【干预、结局、方向、强度、原文片段】的结构化记录，并汇总不同灾害和来源中的方向一致性。</p>
+<h2>怎么做的</h2>
+<p>数据来自 2000—2024 年 ReliefWeb 中含“cash assistance”的英文全文。作者保留洪水、干旱、流行病、地震四类灾害，以及学术机构、政府、媒体、NGO、红十字会／红新月会五类来源，得到 <strong>8,029 份报告</strong>。随机抽取 100 份报告，由领域专家标注 220 条关系作为测试集。</p>
+<p>抽取分两步。第一步的【计算对象】是查询指定干预类别下的干预—结局候选，【触发条件】是报告中存在对应提及及支持片段，【实际影响】是压住关键词检索带来的过度抽取。第二步只针对候选关系，根据片段和全文判定增加、减少或无明确变化，再标为 weak、moderate 或 strong。干预与结局采用 BERTScore≥0.8 的语义匹配；强度仅在方向正确时评分，相邻等级误判记 0.5 分。</p>
+<p>三角测量前，作者先把“food security”和“food insecurity”一类正反表述统一到改善方向。每条记录按灾害×来源进入单元格，weak、moderate、strong 分别赋权 0、1、2；单元内对正向、无变化和负向计数，加 0.1 的 Laplace 平滑。最后等权平均非空单元，并把优势方向概率从 1/3—1 线性缩放为 <strong>LoE 0—1</strong>。时间轨迹使用截至每一年的累积记录重复计算。</p>
+<p>作者还用最佳闭源管线生成训练标签，分别训练 Llama-3.1-8B 的两个 LoRA adapter。100 份专家测试报告从蒸馏数据中排除。</p>
+<h2>关键结果</h2>
+<p>Qwen-Plus 的两步【查询约束＋片段落地】方案达到加权 F1 <strong>90.73%</strong>；未微调的 Llama-3.1-8B 为 75.12%，LoRA 微调后为 <strong>94.15%</strong>。加权分数由干预、结局、方向、强度四项按 0.30、0.30、0.20、0.20 合成。</p>
+<p>最佳闭源管线从 8,029 份报告中抽出 <strong>19,568 条记录</strong>。食物相关结局的分析保留 19 个非空灾害×来源单元，正向概率 PP=0.91，LoE=0.865；2017 年累积结果达到 PP=0.953、LoE=0.929，2018—2024 年略有回落。频次至少 3 次的 941 个结局词覆盖 13,554 条记录，占 69.27%，作者只对这一部分做极性标注。</p>
+<h2>证据有多硬</h2>
+<p>抽取部分有专家测试集、消融和明确的评分规则，查询约束带来的提升在三个 API 模型上方向一致。测试集只有 100 份报告，论文没有报告标注者一致性；BERTScore 阈值会把部分语义近似关系算作命中。ACL 责任清单还说明固定配置仅运行一次，没有均值、标准差或误差条。LoRA 的标签来自最佳闭源模型，学生会继承教师的系统偏差。</p>
+<p>LoE 的【计算对象】是三个方向类别中最大的单元格平均概率，【触发条件】是某一方向占优，【实际影响】是把方向集中度映射到 0—1。这个指标没有检查研究问题与目标估计量是否对齐，也没有判断灾害或来源之间的偏倚是否独立。weak 被赋权 0，弱证据不会进入方向计数；单元等权能限制大来源支配结果，却无法消除共同的报告偏倚。</p>
+<p>报告中的“cash assistance improved food security”属于文本中的因果陈述，未必来自有对照组的效应估计。英文可访问全文、单一检索词、四类灾害和五类来源又限制了外推。作者已把输出定位为需要人工复核的决策支持，并明确 strength 表示报告证据措辞，未表示效应量或人群影响。</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="本页导航">
+    <div class="deep-toc-title">本页导航</div>
+    <a href="#overview" class="is-main">30秒结论</a>
+    <a href="#key-numbers">三个关键数字</a>
+    <a href="#where-to-focus">重点看哪里</a>
+    <a href="#study-design">危机报告到方向收敛分数</a>
+    <a href="#full-read">完整精读</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← 回精读列表</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>我的文献集 · Xuanyu Shi</span>
+    <span>每个工作日更新一次 · <a href="https://xuanyshi.github.io/research-desk/zh/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

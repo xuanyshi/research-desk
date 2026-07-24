@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>有向无环图的构建规范：ESC-DAGs方法介绍及脑血管病研究案例解读 · 精读 · 我的文献集</title>
+<meta name="description" content="案例把英文方法变成可执行步骤，并提示扩展检索和变量汇总。简化流程时必须保留研究级溯源，节点合并也可能改变调整集。">
+<meta property="og:title" content="有向无环图的构建规范：ESC-DAGs方法介绍及脑血管病研究案例解读 · 精读 · 我的文献集">
+<meta property="og:description" content="案例把英文方法变成可执行步骤，并提示扩展检索和变量汇总。简化流程时必须保留研究级溯源，节点合并也可能改变调整集。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="我的文献集">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/zh/deep/hao-2024-esc-dags-stroke/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/zh/deep/hao-2024-esc-dags-stroke/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/hao-2024-esc-dags-stroke/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/hao-2024-esc-dags-stroke/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/hao-2024-esc-dags-stroke/">
+<link rel="alternate" type="application/atom+xml" title="我的文献集 · 精读" href="https://xuanyshi.github.io/research-desk/zh/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">我的文献集<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">首页</a>
+      <a href="../../library/index.html" class="">文献库</a>
+      <a href="../../deep/index.html" class="on">精读</a>
+      <a href="../../daily/index.html" class="">每日速览</a>
+      <a href="../../log/index.html" class="">历程</a>
+      <a href="../../about/index.html" class="">关于</a>
+      <span class="lang">
+        <a href="../../../zh/deep/hao-2024-esc-dags-stroke/" class="on">中</a>
+        <a href="../../../en/deep/hao-2024-esc-dags-stroke/" class="">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">我的精读</div>
+  <h1><span class="title-original" lang="en">Construction Specification of Directed Acyclic Graphs: An Introduction to the ESC-DAGs Method and Case Interpretation in Cerebrovascular Disease Research</span><span class="title-zh" lang="zh-CN">有向无环图的构建规范：ESC-DAGs方法介绍及脑血管病研究案例解读</span></h1>
+  <p>郝允逸, 夏雪, 胥芹, 赵性泉 et al.</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">中国卒中杂志 19卷10期（2024）：1221–1229</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.3969/j.issn.1673-5765.2024.10.016" target="_blank" rel="noopener">原文 / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=Construction%20Specification%20of%20Directed%20Acyclic%20Graphs%3A%20An%20Introduction%20to%20the%20ESC-DAGs%20Method%20and%20Case%20Interpretation%20in%20Cerebrovascular%20Disease%20Research" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p4">ESC-DAGs</span><span class="pill p3">因果DAG</span><span class="pill p2">缺血性卒中</span><span class="pill p3">血清尿酸</span><span class="pill p1">证据综合</span><span class="pill p4">协变量选择</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30秒结论</div>
+      <h2 id="overview-title">案例把英文方法变成可执行步骤，并提示扩展检索和变量汇总。简化流程时必须保留研究级溯源，<strong>节点合并也可能改变调整集</strong>。</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>研究问题</dt>
+          <dd>ESC-DAGs的映射、转化和整合怎样落到<strong>血清尿酸—缺血性卒中功能预后</strong>这一临床问题？</dd>
+        </div>
+        <div>
+          <dt>研究设计</dt>
+          <dd>中文方法教程与案例；从PubMed论文的暴露、结局和调整变量生成隐含图，逐边审查后合并，并讨论<strong>焦点检索悖论与工作量</strong>。</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>证据强度</span>
+          <strong class="evidence-level level-mid">方法案例</strong>
+        </div>
+        <dl>
+          <div><dt>计算对象</dt><dd><strong>卒中尿酸文献中的暴露、结局、控制变量、候选边和映射—转化—整合记录</strong>。</dd></div>
+          <div><dt>触发条件</dt><dd>边依次通过时间性、表面效度、理论与潜在结局思维实验时保留；节点合并只有在含义和路径相容时可行，<strong>否则会改变偏倚结构</strong>。</dd></div>
+          <div><dt>对结论的影响</dt><dd>可用于临床团队培训和中文决策日志；<strong>不能替代原始研究偏倚评价或直接证明尿酸的因果效应</strong>。</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">阅读建议</strong>先读Table 1掌握三阶段，再跟随Figures 4–6完成尿酸案例，最后读局限性，重点判断<strong>扩展检索、变量汇总和节点合并会漏掉什么</strong>。</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">三个关键数字</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">3阶段</div>
+          <h3>ESC-DAGs流程</h3>
+          <p><strong>映射、转化、整合</strong>，中文表格给出逐项操作</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">4类</div>
+          <h3>边审查问题</h3>
+          <p><strong>时间性、表面效度、理论和潜在结局反事实</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">2篇</div>
+          <h3>展开演示论文</h3>
+          <p><strong>尿酸—卒中预后案例用两篇文献展示隐含图和转化</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">重点看哪里</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://www.sinomed.ac.cn/article.do?ui=2024503722" target="_blank" rel="noopener">
+            Table 1 · PDF p. 3<small>图表直达</small> ↗
+          </a>
+          <div><h3>掌握三阶段操作</h3><p><strong>映射、逐边双向转化和整合的输入、动作与输出在一表中</strong>。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://www.sinomed.ac.cn/article.do?ui=2024503722" target="_blank" rel="noopener">
+            Figures 4–5 · PDF pp. 6–7<small>图表直达</small> ↗
+          </a>
+          <div><h3>跟随卒中尿酸案例</h3><p><strong>两篇论文的隐含图与转化后结构逐项对应，便于复刻</strong>。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://www.sinomed.ac.cn/article.do?ui=2024503722" target="_blank" rel="noopener">
+            Figure 6与局限性 · PDF pp. 7–8<small>图表直达</small> ↗
+          </a>
+          <div><h3>审计整合与简化</h3><p><strong>合并边、上位节点、焦点检索悖论和工作量权衡集中出现</strong>。</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">卒中案例中的ESC-DAGs</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">问题</div>
+            <h3>定义尿酸与功能预后</h3>
+            <p><strong>限定缺血性卒中人群、基线或入院暴露与预后时间窗</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">检索</div>
+            <h3>收集焦点及相关关系</h3>
+            <p><strong>从核心关系扩展到暴露、结局和候选共同原因的文献</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">映射</div>
+            <h3>生成每篇隐含图</h3>
+            <p><strong>把暴露、结局和论文控制变量转换为饱和候选结构</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">转化</div>
+            <h3>逐边检查两个方向</h3>
+            <p><strong>用四类判据记录保留、删除、反向和不确定关系</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">整合</div>
+            <h3>合并并谨慎归类节点</h3>
+            <p><strong>汇入保留边，只有路径相容时才合并为上位概念</strong>。</p>
+          </li>
+        </ol>
+        <figcaption><strong>依据PDF Table 1及Figures 4–6整理</strong>。</figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">完整精读</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>这篇中文案例逐步演示ESC-DAGs，并指出焦点检索悖论和逐篇转化的工作量，适合临床团队执行前校准预期。</p>
+</blockquote>
+<h2>作者团队</h2>
+<p>郝允逸、赵性泉来自首都医科大学附属北京天坛医院神经病学中心；夏雪、胥芹、王安心来自北京神经外科研究所流行病学研究室及首都医科大学临床流行病学与临床试验学系。团队长期从事卒中临床与流行病学研究。</p>
+<h2>解决什么问题</h2>
+<p>临床研究者知道DAG可以筛选混杂变量，却常缺少中文、逐步、贴近卒中研究的构建示例。本文介绍ESC-DAGs，并用基线／入院血清尿酸与缺血性卒中功能预后这一问题展示如何从回归论文还原图、审查边并合并。</p>
+<h2>怎么做的</h2>
+<p>映射阶段将每篇论文的暴露、结局和控制变量转为隐含图，并在控制因素间画边使其饱和。转化阶段逐边检查时间性、表面效度、理论依据和潜在结局思维实验，同时测试反向关系。整合阶段把保留边汇入空图，对新增可能关系再次转化，并可将输入输出相似的节点归为上位概念。</p>
+<p>卒中示例先在PubMed检索血清尿酸与功能预后，展示两篇研究如何形成隐含图。若某边仅因论文曾调整该变量而出现，转化不会默认其为混杂；研究者要说明设置不同暴露值是否会改变结局及其时间顺序。</p>
+<h2>关键结果</h2>
+<p>本文是方法介绍，没有新队列效应量。图1解释链、叉与碰撞结构；表1列出ESC-DAGs三个阶段；图4—6依次展示血清尿酸案例的隐含图、转化后DAG和整合过程。案例最终把部分年龄、性别等节点合并为人口统计学因素以简化图。</p>
+<p>作者提出两个实际问题。其一，若检索只围绕焦点暴露—结局，可能漏掉决定混杂结构的其他关系；其二，逐篇映射和逐边双向转化非常耗时。文中建议扩展检索到暴露和结局的相关因素，并在复杂项目中先汇总变量再统一处理。</p>
+<h2>证据有多硬</h2>
+<p>作为二级方法文，它忠实解释原始ESC-DAGs并提供本土案例，适合培训。示例只展开少数论文，没有系统综述完成后的最终效应分析，也未证明优化策略与原流程等价。边判断仍依赖研究者对测量时点和临床机制的理解。</p>
+<p>将多个具体节点合并可提升可读性，也可能掩盖不同时间窗和作用路径。血清尿酸既可能反映肾功能、代谢状态或急性应激，节点定义若不精确，调整集含义会改变。</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="本页导航">
+    <div class="deep-toc-title">本页导航</div>
+    <a href="#overview" class="is-main">30秒结论</a>
+    <a href="#key-numbers">三个关键数字</a>
+    <a href="#where-to-focus">重点看哪里</a>
+    <a href="#study-design">卒中案例中的ESC-DAGs</a>
+    <a href="#full-read">完整精读</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← 回精读列表</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>我的文献集 · Xuanyu Shi</span>
+    <span>每个工作日更新一次 · <a href="https://xuanyshi.github.io/research-desk/zh/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Causal knowledge graph analysis identifies adverse drug effects · Deep reads · My Research Desk</title>
+<meta name="description" content="Graph structure automates hypothesis generation and covariate selection. The best method reaches 0.907 precision on literature-supported causal edges and finds about 30,700 positive ACMEs among comorbidity candidates, but relies on untestable sequential ignorability.">
+<meta property="og:title" content="Causal knowledge graph analysis identifies adverse drug effects · Deep reads · My Research Desk">
+<meta property="og:description" content="Graph structure automates hypothesis generation and covariate selection. The best method reaches 0.907 precision on literature-supported causal edges and finds about 30,700 positive ACMEs among comorbidity candidates, but relies on untestable sequential ignorability.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="My Research Desk">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/en/deep/toonsi-2025-causal-kg-ade/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/en/deep/toonsi-2025-causal-kg-ade/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/toonsi-2025-causal-kg-ade/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/toonsi-2025-causal-kg-ade/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/toonsi-2025-causal-kg-ade/">
+<link rel="alternate" type="application/atom+xml" title="My Research Desk · Deep reads" href="https://xuanyshi.github.io/research-desk/en/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">My Research Desk<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">Home</a>
+      <a href="../../library/index.html" class="">Library</a>
+      <a href="../../deep/index.html" class="on">Deep reads</a>
+      <a href="../../daily/index.html" class="">Daily</a>
+      <a href="../../log/index.html" class="">Log</a>
+      <a href="../../about/index.html" class="">About</a>
+      <span class="lang">
+        <a href="../../../zh/deep/toonsi-2025-causal-kg-ade/" class="">中</a>
+        <a href="../../../en/deep/toonsi-2025-causal-kg-ade/" class="on">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">My deep read</div>
+  <h1>Causal knowledge graph analysis identifies adverse drug effects</h1>
+  <p>Sumyyah Toonsi, Paul N. Schofield, Robert Hoehndorf</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Bioinformatics</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.1093/bioinformatics/btaf661" target="_blank" rel="noopener">Source / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=Causal%20knowledge%20graph%20analysis%20identifies%20adverse%20drug%20effects" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p0">Causal inference</span><span class="pill p2">Knowledge graph</span><span class="pill p3">Mediation analysis</span><span class="pill p0">Adverse drug effects</span><span class="pill p4">Covariate selection</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30-second read</div>
+      <h2 id="overview-title">Graph structure automates hypothesis generation and covariate selection. The best method reaches 0.907 precision on literature-supported causal edges and finds about 30,700 positive ACMEs among comorbidity candidates, but relies on untestable <strong>sequential ignorability</strong>.</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>Question</dt>
+          <dd>Can a <strong>causal knowledge graph</strong> generate adverse-drug-effect hypotheses at scale and select confounders for mediation analysis?</dd>
+        </div>
+        <div>
+          <dt>Design</dt>
+          <dd><strong>A methods and cohort application constructing a drug–disease CKG and testing drug-mediated disease progression in UK Biobank and MIMIC-IV.</strong></dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>Evidence strength</span>
+          <strong class="evidence-level level-mid">Moderate</strong>
+        </div>
+        <dl>
+          <div><dt>What was assessed</dt><dd><strong>Disease progression, indications, side effects, and ICD-10 hierarchy in the DD-CKG, plus ACME, precision, recall</strong>, and external similarity validation in two observational cohorts.</dd></div>
+          <div><dt>Downgrade triggers</dt><dd><strong>Disease severity, medication timing, and dose are poorly measured</strong>. High precision is concentrated in literature-supported edges, and overlap with expert gold standards is small.</dd></div>
+          <div><dt>Impact on interpretation</dt><dd>The study supports knowledge-driven <strong>hypothesis generation</strong> and covariate selection as an engineering workflow, but novel candidates are not confirmed adverse reactions.</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">Reading advice</strong><strong>Start with Figure 1 for candidate generation and filtering, then compare the five adjustment strategies in Table 1</strong>. Read novel findings alongside the severity and measurement limitations in the Discussion.</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">Three numbers to keep</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">About 12,600</div>
+          <h3>Disease pairs in the causal set</h3>
+          <p><strong>Derived from explicit disease-progression edges in the DD-CKG</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">0.907</div>
+          <h3>Best precision</h3>
+          <p><strong>Disjunctive-cause selection plus LASSO in the causal set, with recall 0.282 and F1 0.431</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">About 30,700</div>
+          <h3>Significant positive ACMEs</h3>
+          <p><strong>The broader comorbidity set trades coverage for lower precision of 0.749</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">Where to focus</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1093/bioinformatics/btaf661" target="_blank" rel="noopener">
+            Figure 1 · PDF p. 3<small>Article entry</small> ↗
+          </a>
+          <div><h3>Trace CKG hypothesis generation</h3><p><strong>The figure combines disease progression and indications into drug-mediated paths and filters candidates already explained by graph knowledge.</strong></p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1093/bioinformatics/btaf661" target="_blank" rel="noopener">
+            Table 1 · PDF p. 6<small>Article entry</small> ↗
+          </a>
+          <div><h3>Compare confounding-control strategies</h3><p><strong>The table reports testability, ACMEs, and classification metrics for backdoor, disjunctive-cause, and LASSO-reduced sets.</strong></p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1093/bioinformatics/btaf661" target="_blank" rel="noopener">
+            Discussion · PDF pp. 6–7<small>Article entry</small> ↗
+          </a>
+          <div><h3>Check severity and measurement bias</h3><p><strong>The authors explain that comorbidity and medication counts are crude severity proxies and discuss self-reported medication, missing timing</strong>, and missing dose.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">Adverse-effect discovery pipeline</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">Knowledge</div>
+            <h3>Construct the DD-CKG</h3>
+            <p><strong>Integrate disease progression, drug indications, side effects, and the ICD-10 hierarchy.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">Hypotheses</div>
+            <h3>Generate drug-mediated paths</h3>
+            <p><strong>Combine disease progression with indicated drugs to propose candidate side effects.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">Filtering</div>
+            <h3>Remove existing explanations</h3>
+            <p><strong>Graph queries exclude combinations already explained by indication or side-effect knowledge.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">Adjustment</div>
+            <h3>Select confounders</h3>
+            <p><strong>Backdoor or disjunctive-cause criteria create candidate sets, then two LASSO unions reduce them.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">Validation</div>
+            <h3>Estimate ACME and compare externally</h3>
+            <p><strong>Mediation effects are estimated in UKB and MIMIC-IV and compared with OnSIDES and expert labels.</strong></p>
+          </li>
+        </ol>
+        <figcaption><strong>Organized from PDF Figure 1, Table 1, and the Discussion.</strong></figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">Full deep read</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>Mark causal edges on a knowledge graph and it auto-generates "drug mediates two diseases" hypotheses and confounder sets; run mediation analysis on UKB and MIMIC-IV and it both reproduces known adverse reactions and surfaces new candidates.</p>
+</blockquote>
+<h2>The authors</h2>
+<p>From the Bio-Ontology Research Group (BORG) at KAUST, led by corresponding author Robert Hoehndorf, whose group works on biomedical ontologies, knowledge graphs, and machine learning over structured biomedical knowledge. First author Sumyyah Toonsi is also at KAUST; co-author Paul N. Schofield is at the University of Cambridge.</p>
+<h2>The problem</h2>
+<p><strong>Rare adverse drug reactions that surface only after a drug ships are often missed in trials because they're infrequent or delayed, so post-marketing surveillance has to catch them.</strong></p>
+<p><strong>That task needs two things at once: background knowledge (disease and drug taxonomies, disease progression, indications, known side effects) and co-occurrence frequencies from observational data, plus causal inference to tell a genuine drug effect from a confounded association</strong>. Neither existing tool has both ends.</p>
+<p><strong>Knowledge graphs organize qualitative knowledge well but carry no probabilistic or causal semantics</strong>. Structural causal models estimate intervention effects but sit disconnected from background knowledge, with graphs that are hand-crafted and don't scale. The authors want the two to merge, so the graph itself handles proposing hypotheses, finding confounders, and constraining the distribution.</p>
+<h2>The approach</h2>
+<p>Start with a formal definition of a <strong>Causal Knowledge Graph</strong> (CKG). On top of an ordinary KG it hangs a subset of relations marked causal (Rcausal), a function f mapping each node to a subset of the population, and a probability measure P over the population.</p>
+<p><strong>The key move is not equating the KG with the causal graph but making the causal structure a subset of it, so non-causal relations (like the ICD-10 is-a hierarchy) can still drive deductive reasoning and constrain the joint distribution (if u is-a v, any individual in u is in v).</strong></p>
+<p><strong>From this they build a Drug-Disease CKG integrating four edge types</strong>: disease progression, 7,586 edges (a text-mined causal disease DAG); indications, 20,955 edges (MEDI-C); side effects, 59,119 edges (OnSIDES); and the ICD-10 hierarchy. The causal subset is disease-progression edges plus the inverse of indication edges (having a disease leads to a prescription).</p>
+<p><strong>Hypotheses are generated like this.</strong></p>
+<p><strong>For each pair x causes-onset y</strong>, query x's indicated drug M and assemble the mediation chain "x (indication) → prescribe M → y (potential side effect)." Candidates come from two sources: explicit disease-progression pairs in the CKG (causal set), and significant comorbid pairs in UK Biobank (Hidalgo's relative risk, 34,843 kept after BH correction, then oriented by diagnosis timing).</p>
+<p><strong>A SPARQL query then drops hypotheses the graph already explains otherwise, the drug being indicated for both diseases</strong>, or both diseases being side effects of the same drug.</p>
+<p><strong>That leaves 12,561 causal and 81,610 comorbidity hypotheses.</strong></p>
+<p>Statistically it's causal mediation analysis estimating the natural indirect effect (R's mediation package, i.e. ACME), identified under <strong>sequential ignorability</strong>.</p>
+<p>Confounder control is the heaviest part of the paper: beyond demographic and socioeconomic covariates, DAGitty runs the backdoor and disjunctive-cause criteria on the CKG's causal subgraph to pick <strong>adjustment sets</strong>; comorbidity count and drug count proxy for disease severity; and two LASSOs (one for the indication, one for the outcome) are unioned to shrink the covariate set, with λ from ten-fold CV.</p>
+<p><strong>Estimation uses 1,000 quasi-Bayesian simulations, HC standard errors, BH correction.</strong></p>
+<h2>Key results</h2>
+<p><strong>On the causal set, "disjunctive cause + LASSO" does best: precision 0.907, recall 0.282</strong>, F1 0.431 (versus backdoor+LASSO at F1 0.371). That high precision is partly a freebie, since those edges are literature-backed and mostly already-known effects.</p>
+<p><strong>The comorbidity set buys coverage instead: 30,724 significant positive ACMEs, the same recall but precision down to 0.749</strong>, more potentially novel candidates. Against Ryan et al.'s expert-curated set (56 overlapping pairs), the comorbidity set hits 70.0% precision and 60.6% recall.</p>
+<p><strong>External validation</strong> runs through drug repurposing: use predicted side effects to compute drug-drug similarity, then test whether similar drugs share indications. Predicted effects alone give ROCAUC 0.604, below OnSIDES alone at 0.620; but combining the two reaches 0.632 (p≪0.001), so the newly surfaced effects carry information rather than noise.</p>
+<h2>How solid is the evidence</h2>
+<p>The crux is <strong>sequential ignorability</strong>, mediation analysis requires that, after adjusting for confounders, both treatment and mediator are conditionally independent of the potential outcomes, which is untestable in observational data.</p>
+<p><strong>The authors admit the worst leak is disease severity: of 900 manually reviewed false positives</strong>, about 6% are actually disease progression rather than drug mediation. The mechanism is that a drug is given for an uncontrolled, worsening condition; mild responsive cases never develop the outcome, so the drug "appears" to mediate.</p>
+<p>Using comorbidity and drug counts as severity proxies is a blunt instrument, weaker than a weighted index like Charlson. <strong>Measurement bias</strong> is real too: UKB medication use is self-reported without accurate timing or dose, and ICD diagnoses capture only clinically confirmed phenotypes, so mild or transient effects are invisible.</p>
+<p><strong>Both cohorts skew older and socially advantaged, so transportability is doubtful</strong>; and with a small, low-overlap gold-standard set, the reported high precision holds only on that small matched slice.</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="On this page">
+    <div class="deep-toc-title">On this page</div>
+    <a href="#overview" class="is-main">30-second read</a>
+    <a href="#key-numbers">Three numbers to keep</a>
+    <a href="#where-to-focus">Where to focus</a>
+    <a href="#study-design">Adverse-effect discovery pipeline</a>
+    <a href="#full-read">Full deep read</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← Back to deep reads</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>My Research Desk · Xuanyu Shi</span>
+    <span>Updated on weekdays · <a href="https://xuanyshi.github.io/research-desk/en/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

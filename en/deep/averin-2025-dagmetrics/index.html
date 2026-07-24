@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Evaluating Directed Acyclic Graphs with DAGMetrics: Insights from Tuber and Soil Microbiome Data · Deep reads · My Research Desk</title>
+<meta name="description" content="PC with Spearman balances complexity and preprocessing stability. Graph F1 and repeated edges measure structural agreement, not correct direction or intervention meaning.">
+<meta property="og:title" content="Evaluating Directed Acyclic Graphs with DAGMetrics: Insights from Tuber and Soil Microbiome Data · Deep reads · My Research Desk">
+<meta property="og:description" content="PC with Spearman balances complexity and preprocessing stability. Graph F1 and repeated edges measure structural agreement, not correct direction or intervention meaning.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="My Research Desk">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/en/deep/averin-2025-dagmetrics/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/en/deep/averin-2025-dagmetrics/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/averin-2025-dagmetrics/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/averin-2025-dagmetrics/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/averin-2025-dagmetrics/">
+<link rel="alternate" type="application/atom+xml" title="My Research Desk · Deep reads" href="https://xuanyshi.github.io/research-desk/en/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">My Research Desk<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">Home</a>
+      <a href="../../library/index.html" class="">Library</a>
+      <a href="../../deep/index.html" class="on">Deep reads</a>
+      <a href="../../daily/index.html" class="">Daily</a>
+      <a href="../../log/index.html" class="">Log</a>
+      <a href="../../about/index.html" class="">About</a>
+      <span class="lang">
+        <a href="../../../zh/deep/averin-2025-dagmetrics/" class="">中</a>
+        <a href="../../../en/deep/averin-2025-dagmetrics/" class="on">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">My deep read</div>
+  <h1>Evaluating Directed Acyclic Graphs with DAGMetrics: Insights from Tuber and Soil Microbiome Data</h1>
+  <p>Pavel Averin, Ifigeneia Mellidou, Maria Ganopoulou, Aliki Xanthopoulou et al.</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Agronomy 15 (2025):987</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.3390/agronomy15040987" target="_blank" rel="noopener">Source / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=Evaluating%20Directed%20Acyclic%20Graphs%20with%20DAGMetrics%3A%20Insights%20from%20Tuber%20and%20Soil%20Microbiome%20Data" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p2">DAGMetrics</span><span class="pill p4">Causal discovery</span><span class="pill p0">Graph comparison</span><span class="pill p1">Markov blanket</span><span class="pill p3">Microbiome</span><span class="pill p3">R software</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30-second read</div>
+      <h2 id="overview-title">PC with Spearman balances complexity and preprocessing stability. Graph F1 and repeated edges measure <strong>structural agreement</strong>, not correct direction or intervention meaning.</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>Question</dt>
+          <dd>Without a ground-truth DAG, how can learned graphs be compared for <strong>complexity, similarity, stability, and local structure</strong>?</dd>
+        </div>
+        <div>
+          <dt>Design</dt>
+          <dd>An R package and case study generating <strong>360 DAGs</strong> from tuber and soil microbiomes across four algorithms, tests or scores, scaling options, and transformations, followed by Markov-blanket analysis.</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>Evidence strength</span>
+          <strong class="evidence-level level-low">Low to moderate</strong>
+        </div>
+        <dl>
+          <div><dt>What was assessed</dt><dd><strong>Edges, colliders, isolated nodes, graph-to-graph F1, and Markov blankets for 360 learned DAGs</strong> from two microbiome datasets.</dd></div>
+          <div><dt>Downgrade triggers</dt><dd>Moderate complexity and stability across scaling and transformations trigger candidate selection; shared algorithmic assumptions can make <strong>stability preserve systematic error</strong>.</dd></div>
+          <div><dt>Impact on interpretation</dt><dd>The package suits structural quality control after discovery. <strong>Without ground truth, intervention, or external validation, it cannot confirm causal edges.</strong></dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">Reading advice</strong>Compare complexity in Figure 1, algorithm F1 in Figure 2, and local structures in Figure 3 and Figures 4–5, always separating <strong>similarity from accuracy</strong>.</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">Three numbers to keep</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">360</div>
+          <h3>Learned DAGs</h3>
+          <p><strong>240 tuber and 120 soil graphs</strong>, covering algorithm and preprocessing combinations</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">Four</div>
+          <h3>Structure-learning algorithms</h3>
+          <p><strong>PC, Inter-IAMB, Tabu Search, and Hill-Climbing</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">Up to seven</div>
+          <h3>Markov-blanket nodes</h3>
+          <p><strong>Up to seven in tuber and four in soil</strong>, with many isolated nodes</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">Where to focus</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://www.mdpi.com/2073-4395/15/4/987" target="_blank" rel="noopener">
+            Figure 1 · PDF p. 7<small>Direct link</small> ↗
+          </a>
+          <div><h3>Compare structural complexity</h3><p><strong>Normalized edges, colliders, and isolated nodes reveal density differences between algorithm families.</strong></p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://www.mdpi.com/2073-4395/15/4/987" target="_blank" rel="noopener">
+            Figure 2 · PDF p. 8<small>Direct link</small> ↗
+          </a>
+          <div><h3>Interpret graph F1</h3><p><strong>The heatmap shows agreement among outputs, not accuracy against a true graph.</strong></p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://www.mdpi.com/2073-4395/15/4/987" target="_blank" rel="noopener">
+            Figure 3 · PDF p. 9<small>Direct link</small> ↗
+          </a>
+          <div><h3>Inspect local-structure distributions</h3><p><strong>Markov-blanket nodes, edges, colliders, and isolation characterize local interpretability.</strong></p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">Comparing DAGs without ground truth</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">Learning</div>
+            <h3>Generate many configurations</h3>
+            <p><strong>Cross algorithms, tests, scores, scaling, and transformations while retaining all outputs.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">Description</div>
+            <h3>Measure global complexity</h3>
+            <p><strong>Count edges, colliders, and isolated nodes and normalize by graph size.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">Comparison</div>
+            <h3>Calculate structural similarity</h3>
+            <p><strong>Use graph F1 and common edges to measure agreement across settings.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">Local</div>
+            <h3>Expand Markov blankets</h3>
+            <p><strong>Compare parents, children, and other parents of children around target nodes.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">Selection</div>
+            <h3>Retain stable candidates</h3>
+            <p><strong>Screen by complexity and stability while stating the lack of causal ground truth.</strong></p>
+          </li>
+        </ol>
+        <figcaption><strong>Organized from Methods and Figures 1–3.</strong></figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">Full deep read</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>DAGMetrics compares complexity and stability among learned DAGs; without a ground-truth graph, these metrics select structures but cannot confirm causal direction.</p>
+</blockquote>
+<h2>The authors</h2>
+<p>Pavel Averin and Theodoros Moysiadis are affiliated with the University of Nicosia; Ifigeneia Mellidou and Aliki Xanthopoulou with Greece's ELGO-DIMITRA Institute of Plant Breeding and Genetic Resources; Maria Ganopoulou with Aristotle University of Thessaloniki. The team spans computer science, plant research, and microbiome analysis.</p>
+<h2>The problem</h2>
+<p>Causal-discovery outputs can change with tests, scores, scaling, and transformations. Real microbiome datasets rarely have a known DAG, leaving researchers unsure which graph merits interpretation. DAGMetrics provides one interface for global and local structural comparisons.</p>
+<h2>The approach</h2>
+<p>The R package reports edges, colliders, and isolated nodes, compares graphs using F1 and shared-edge counts, and visualizes Markov blankets. On potato tuber and soil microbiomes, the authors compare PC, Inter-IAMB, Tabu Search, and Hill-Climbing with Kendall, Spearman, or Pearson tests, AIC or BIC scores, three scaling options, and two transformations.</p>
+<p>The analysis produces <strong>240 tuber DAGs</strong> and 120 soil DAGs. The selection object is graph structure across configurations. Moderate complexity and stability across preprocessing trigger selection; the practical effect is choosing candidate graphs for Markov-blanket and biological interpretation.</p>
+<h2>Key results</h2>
+<p>Score-based methods generally produce denser graphs, while constraint-based methods produce more isolated nodes. PC and Inter-IAMB with Spearman or Kendall are relatively stable across scaling and transformations. PC with Spearman is favored as a compromise between complexity and stability.</p>
+<p>Tuber Markov blankets contain up to seven nodes and soil blankets up to four, with many isolated nodes. Some edges recur across terroirs and storage stages and align with known microbial ecology. Outputs from different algorithm families remain highly dissimilar.</p>
+<h2>How solid is the evidence</h2>
+<p>Two real datasets and 360 graphs demonstrate software function and structural sensitivity. There is no ground-truth DAG, so F1 measures agreement between estimated graphs, not accuracy. A stable error scores well, and shared assumptions can make algorithms jointly miss latent variables, compositional constraints, or batch effects.</p>
+<p>Microbial abundance data are high-dimensional, small-sample, and compositional, which can distort standard conditional-independence tests. Biological interpretation is largely post hoc, without intervention or independent-cohort validation.</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="On this page">
+    <div class="deep-toc-title">On this page</div>
+    <a href="#overview" class="is-main">30-second read</a>
+    <a href="#key-numbers">Three numbers to keep</a>
+    <a href="#where-to-focus">Where to focus</a>
+    <a href="#study-design">Comparing DAGs without ground truth</a>
+    <a href="#full-read">Full deep read</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← Back to deep reads</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>My Research Desk · Xuanyu Shi</span>
+    <span>Updated on weekdays · <a href="https://xuanyshi.github.io/research-desk/en/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

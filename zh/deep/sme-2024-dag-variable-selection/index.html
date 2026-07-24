@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>整合领域专家知识开展因果效应估计中的变量选择：一项案例研究 · 精读 · 我的文献集</title>
+<meta name="description" content="纳入时变协变量后，结局驱动DAG的风险差最接近真实零值；加入较多暴露预测因子的maximal DAG偏倚更大，提示近似工具变量可放大残余混杂。">
+<meta property="og:title" content="整合领域专家知识开展因果效应估计中的变量选择：一项案例研究 · 精读 · 我的文献集">
+<meta property="og:description" content="纳入时变协变量后，结局驱动DAG的风险差最接近真实零值；加入较多暴露预测因子的maximal DAG偏倚更大，提示近似工具变量可放大残余混杂。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="我的文献集">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/zh/deep/sme-2024-dag-variable-selection/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/zh/deep/sme-2024-dag-variable-selection/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/sme-2024-dag-variable-selection/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/sme-2024-dag-variable-selection/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/sme-2024-dag-variable-selection/">
+<link rel="alternate" type="application/atom+xml" title="我的文献集 · 精读" href="https://xuanyshi.github.io/research-desk/zh/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">我的文献集<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">首页</a>
+      <a href="../../library/index.html" class="">文献库</a>
+      <a href="../../deep/index.html" class="on">精读</a>
+      <a href="../../daily/index.html" class="">每日速览</a>
+      <a href="../../log/index.html" class="">历程</a>
+      <a href="../../about/index.html" class="">关于</a>
+      <span class="lang">
+        <a href="../../../zh/deep/sme-2024-dag-variable-selection/" class="on">中</a>
+        <a href="../../../en/deep/sme-2024-dag-variable-selection/" class="">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">我的精读</div>
+  <h1><span class="title-original" lang="en">Synthesizing Subject-matter Expertise for Variable Selection in Causal Effect Estimation: A Case Study</span><span class="title-zh" lang="zh-CN">整合领域专家知识开展因果效应估计中的变量选择：一项案例研究</span></h1>
+  <p>Julia Debertin, Javier A. Jurado Vélez, Laura Corlin, Bertha Hidalgo et al.</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Epidemiology</span><span class="jbadge jb-cas z2">中科院2区</span><span class="jbadge jb-jcr">JCR Q1</span><span class="jbadge jb-if">IF 4.4</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.1097/EDE.0000000000001758" target="_blank" rel="noopener">原文 / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=Synthesizing%20Subject-matter%20Expertise%20for%20Variable%20Selection%20in%20Causal%20Effect%20Estimation%3A%20A%20Case%20Study" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p0">因果推断</span><span class="pill p3">DAG构建</span><span class="pill p4">协变量选择</span><span class="pill p4">混杂调整</span><span class="pill p4">偏倚放大</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30秒结论</div>
+      <h2 id="overview-title">纳入时变协变量后，结局驱动DAG的风险差最接近真实零值；加入较多暴露预测因子的maximal DAG偏倚更大，提示近似<strong>工具变量</strong>可放大残余混杂。</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>研究问题</dt>
+          <dd>真实数据中，哪种DAG构建策略最能选出有效的混杂<strong>调整集</strong>？</dd>
+        </div>
+        <div>
+          <dt>研究设计</dt>
+          <dd><strong>方法学案例研究</strong>；以Coronary Drug Project安慰剂组中依从性对5年死亡率的已知空效应为基准，比较outcome-driven、trimmed和maximal三种DAG。</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>证据强度</span>
+          <strong class="evidence-level level-mid">中等</strong>
+        </div>
+        <dl>
+          <div><dt>计算对象</dt><dd>2,410名安慰剂组参与者、三种基线和纵向DAG、g-formula与<strong>逆概率加权</strong>风险差，以及500次bootstrap区间。</dd></div>
+          <div><dt>触发条件</dt><dd><strong>结论来自单个1970年代男性心肌梗死人群</strong>；依从性测量粗，候选混杂变量存在缺失，三种估计区间大范围重叠。</dd></div>
+          <div><dt>对结论的影响</dt><dd><strong>该案例支持优先寻找结局预后因子并谨慎纳入仅预测暴露的变量，但不能据此确定适用于所有研究的建图策略</strong>。</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">阅读建议</strong><strong>先看Figures 1–4比较三类DAG的节点变化，再用Table 2核对风险差</strong>。Figure 5的P值函数用于判断各估计与已知零效应的相容程度。</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">三个关键数字</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">2,410人</div>
+          <h3>完整病例样本</h3>
+          <p><strong>来自Coronary Drug Project安慰剂组</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">2.5百分点</div>
+          <h3>结局驱动纵向风险差</h3>
+          <p><strong>95% CI为−2.0至7.0，三种纵向策略中最接近真实零值</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">5.2百分点</div>
+          <h3>maximal纵向风险差</h3>
+          <p><strong>95% CI为0.4至10，较结局驱动策略离零值更远</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">重点看哪里</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1097/EDE.0000000000001758" target="_blank" rel="noopener">
+            Figures 1–4 · PDF pp. 6–9<small>原文入口</small> ↗
+          </a>
+          <div><h3>比较三种DAG构建策略</h3><p>图组显示从40个死亡预后因子出发，删减弱证据节点或扩充暴露原因后，结构与<strong>调整集</strong>如何改变。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1097/EDE.0000000000001758" target="_blank" rel="noopener">
+            Table 2 · PDF p. 10<small>原文入口</small> ↗
+          </a>
+          <div><h3>核对已知空效应下的风险差</h3><p><strong>基线策略相近</strong>；加入时变协变量后，outcome-driven、trimmed和maximal的差距扩大。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1097/EDE.0000000000001758" target="_blank" rel="noopener">
+            Figure 5 · PDF p. 11<small>原文入口</small> ↗
+          </a>
+          <div><h3>查看与零效应的相容性</h3><p><strong>P值函数显示结局驱动估计与零值最相容，maximal估计的相容区间整体偏离</strong>。</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">DAG策略真实数据评估</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">基准</div>
+            <h3>选取已知空效应</h3>
+            <p><strong>安慰剂依从性不应降低死亡率，为混杂控制提供接近真实的检验目标</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">构图</div>
+            <h3>建立三类DAG</h3>
+            <p><strong>分别从结局预后因子、证据删减和析取因果扩充出发</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">估计</div>
+            <h3>处理基线与时变混杂</h3>
+            <p>基线使用插值g-formula，纵向分析使用<strong>逆概率加权</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">比较</div>
+            <h3>计算偏离零值程度</h3>
+            <p>以风险差及其bootstrap区间评价各<strong>调整集</strong>的剩余混杂。</p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">机制</div>
+            <h3>解释偏倚放大</h3>
+            <p>仅强预测依从性而弱预测死亡的变量可表现为近似<strong>工具变量</strong>并放大偏倚。</p>
+          </li>
+        </ol>
+        <figcaption><strong>依据PDF Figures 1–5和Table 2整理</strong>。</figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">完整精读</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>用真实数据里已知为空的因果效应当"金标准"，比较三种 DAG 构建法：先找结局预后因子的做法最能去混杂，硬塞暴露预测变量反而放大偏倚。</p>
+</blockquote>
+<h2>作者团队</h2>
+<p>通讯作者 Eleanor J. Murray 是波士顿大学流行病学家，主持 Murray Causal Lab，以因果推断方法与科普（Casual Inference 播客联合主持人）著称；第一作者 Julia Debertin 主导了这项 DAG 协变量选择的案例研究。</p>
+<h2>解决什么问题</h2>
+<p>因果推断里选调整变量，标准建议是画一张 DAG，然后从图上读出能阻断所有混杂路径的最小<strong>调整集</strong>。问题在于，画 DAG 本身几乎没有可操作的证据指导，大多数指南只讲图论理论或调整集的识别规则，却不告诉你该往图上放哪些变量、放到几代祖先为止。很多流行病学家因此觉得建图门槛太高，干脆不用。</p>
+<p><strong>已有的几种建图策略（析取因果准则、"厨房水槽"式纳入所有暴露预测变量、只找结局预后因子、证据合成建 DAG）大多只在模拟里验证过，很少有人在真实数据上比过它们的去混杂表现</strong>。核心障碍是真实数据里"真 DAG"永远未知，没有金标准可打分。</p>
+<h2>怎么做的</h2>
+<p>作者借用 Coronary Drug Project 试验安慰剂组这个特例：安慰剂依从性对 5 年死亡率的真实<strong>因果效应</strong>被高度确信为零，但这个关系又被一批基线和时变协变量严重混杂（经典的"健康依从者偏倚"）。真效应已知，就能反过来给不同 DAG 打分，越接近真 DAG 的调整集，估出来越该接近零。他们从 1980 年原始分析隐含的 DAG 出发，顺序构建三套（各含基线版和纵向版，共六张图）:</p>
+<ul>
+<li>outcome-driven DAG：用原试验专家挑的 40 个死亡率预后因子，不考虑依从性。</li>
+<li>trimmed DAG：做 PubMed 范围综述，删掉找不到证据支持其影响依从性的变量（多数实验室和心电图指标），再删只被单一变量导致的节点。</li>
+<li>maximal DAG：按析取因果准则补充文献和专家提示的潜在依从性/死亡原因（如高血压、抑郁、酒精），并加入协变量间连线。</li>
+</ul>
+<p>分析用 CDP 安慰剂组 N=2,410 的完整病例。基线分析用插值 g-formula，时变分析用<strong>逆概率加权</strong>处理时变混杂和删失，500 次自助抽样算 CI，还画了 P 值函数比较各结果与真零的相容度。</p>
+<h2>关键结果</h2>
+<p>未调整的风险差是 11 个百分点（95% CI 6.6, 16）。只用基线协变量时，三套<strong>调整集</strong>表现接近，点估计都有偏（去混杂不完全）：outcome-driven 7.0（2.9, 11）、trimmed 7.6（3.3, 12）、maximal 7.6（3.4, 12）。</p>
+<p><strong>加入时变协变量后差异显现：outcome-driven 降到 2.5（−2.0, 7.0），最接近零</strong>；trimmed 3.7（−1.1, 8.5）；maximal 反而只到 5.2（0.4, 10），离零差了近 3 个百分点，CI 甚至不含零。</p>
+<p><strong>P 值函数</strong>印证同一排序，outcome-driven 的结果与真零最相容，maximal 基本不相容。纳入非混杂的预后因子只缩小方差、不加偏倚；而 maximal 补进的多是只跟依从性相关、跟死亡弱相关的"近似工具变量"，触发了偏倚放大。</p>
+<h2>证据有多硬</h2>
+<p>最强的地方是设计：拿一个真值已知的效应当标尺，绕开了"真 DAG 不可知"这个死结，结论又跟理论（工具变量<strong>偏倚放大</strong>、加预后因子无害）对得上，互相印证。但外部效度很窄。这是单个案例，1970 年代全男性心梗人群，作者自己承认为安慰剂组建的 DAG 未必对全试验都成立，更别说推广到别的题目。</p>
+<p><strong>依从性测量很粗，医生看药瓶目测三档、极少有人低于 20%、易错分，可能压低了时变分析的分辨力</strong>。maximal DAG 之所以差，一部分是数据所限：想加的抑郁、认知、酒精多半没测到，加进图里却拿不到调整变量，等于只留下会放大偏倚的那半边。所以"maximal 最差"里，有多少是方法本身、有多少是这份数据的偶然，分不太开。</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="本页导航">
+    <div class="deep-toc-title">本页导航</div>
+    <a href="#overview" class="is-main">30秒结论</a>
+    <a href="#key-numbers">三个关键数字</a>
+    <a href="#where-to-focus">重点看哪里</a>
+    <a href="#study-design">DAG策略真实数据评估</a>
+    <a href="#full-read">完整精读</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← 回精读列表</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>我的文献集 · Xuanyu Shi</span>
+    <span>每个工作日更新一次 · <a href="https://xuanyshi.github.io/research-desk/zh/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

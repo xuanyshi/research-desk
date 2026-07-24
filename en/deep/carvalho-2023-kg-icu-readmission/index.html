@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Knowledge Graph Embeddings for ICU readmission prediction · Deep reads · My Research Desk</title>
+<meta name="description" content="NCIT plus RDF2Vec and random forest reached AUROC 0.827 and AUPRC 0.692 in internal five-fold cross-validation. The result supports semantic feature engineering, but not cross-hospital generalization or improved discharge decisions.">
+<meta property="og:title" content="Knowledge Graph Embeddings for ICU readmission prediction · Deep reads · My Research Desk">
+<meta property="og:description" content="NCIT plus RDF2Vec and random forest reached AUROC 0.827 and AUPRC 0.692 in internal five-fold cross-validation. The result supports semantic feature engineering, but not cross-hospital generalization or improved discharge decisions.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="My Research Desk">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/en/deep/carvalho-2023-kg-icu-readmission/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/en/deep/carvalho-2023-kg-icu-readmission/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/carvalho-2023-kg-icu-readmission/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/carvalho-2023-kg-icu-readmission/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/carvalho-2023-kg-icu-readmission/">
+<link rel="alternate" type="application/atom+xml" title="My Research Desk · Deep reads" href="https://xuanyshi.github.io/research-desk/en/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">My Research Desk<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">Home</a>
+      <a href="../../library/index.html" class="">Library</a>
+      <a href="../../deep/index.html" class="on">Deep reads</a>
+      <a href="../../daily/index.html" class="">Daily</a>
+      <a href="../../log/index.html" class="">Log</a>
+      <a href="../../about/index.html" class="">About</a>
+      <span class="lang">
+        <a href="../../../zh/deep/carvalho-2023-kg-icu-readmission/" class="">中</a>
+        <a href="../../../en/deep/carvalho-2023-kg-icu-readmission/" class="on">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">My deep read</div>
+  <h1>Knowledge Graph Embeddings for ICU readmission prediction</h1>
+  <p>Ricardo M. S. Carvalho, Daniela Oliveira, Catia Pesquita</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">BMC Medical Informatics and Decision Making</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.1186/s12911-022-02070-7" target="_blank" rel="noopener">Source / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=Knowledge%20Graph%20Embeddings%20for%20ICU%20readmission%20prediction" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p3">Knowledge graph embeddings</span><span class="pill p2">Electronic health records</span><span class="pill p4">ICU readmission prediction</span><span class="pill p0">Biomedical ontologies</span><span class="pill p0">MIMIC-III</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30-second read</div>
+      <h2 id="overview-title"><strong>NCIT plus RDF2Vec and random forest reached AUROC 0.827 and AUPRC 0.692 in internal five-fold cross-validation</strong>. The result supports semantic feature engineering, but not cross-hospital generalization or improved discharge decisions.</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>Question</dt>
+          <dd>Can mapping MIMIC-III records to biomedical ontologies and producing knowledge-graph embeddings improve 30-day <strong>ICU readmission</strong> prediction?</dd>
+        </div>
+        <div>
+          <dt>Design</dt>
+          <dd><strong>A single-center retrospective prediction study of about 35,300 adults and 48,400 ICU stays</strong>. Ontology annotations and RDF2Vec or other embeddings feed conventional machine-learning models at Pre-ICU, In-ICU, and Post-ICU snapshots.</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>Evidence strength</span>
+          <strong class="evidence-level level-mid">Low to moderate</strong>
+        </div>
+        <dl>
+          <div><dt>What was assessed</dt><dd><strong>About 48,400 ICU stays, five-fold cross-validation, AUROC and AUPRC, ontology and embedding ablations, snapshot comparisons</strong>, and a confusion matrix.</dd></div>
+          <div><dt>Downgrade triggers</dt><dd>Data come from one MIMIC-III hospital. There is no temporal or <strong>external validation</strong>, calibration, or decision-curve analysis; the outcome combines ICU return with 30-day death, and simulated discharge impact is not a prospective clinical effect.</dd></div>
+          <div><dt>Impact on interpretation</dt><dd><strong>The study supports KG embeddings as EHR feature engineering</strong>. Deployment, explainability, and reduction of readmissions require external and prospective evaluation.</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">Reading advice</strong><strong>Start with Figures 2 and 4 to establish feature availability at each time point, then inspect Figure 8</strong>, Table 3, and Figure 10 rather than relying on the abstract&#39;s clinical-impact language.</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">Three numbers to keep</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">About 48,400</div>
+          <h3>ICU stays</h3>
+          <p><strong>From about 35,300 adults</strong>; about 37,100 negative and 11,300 positive records</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">AUROC 0.827</div>
+          <h3>Best In-ICU model</h3>
+          <p><strong>Random forest with NCIT RDF2Vec</strong>; AUPRC was 0.692</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">600/980</div>
+          <h3>Positives identified per average test fold</h3>
+          <p><strong>Table 3 shows 600 of 980 actual positives identified, with 510 negatives classified positive</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">Where to focus</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1186/s12911-022-02070-7" target="_blank" rel="noopener">
+            Figure 2 · PDF p. 4<small>Article entry</small> ↗
+          </a>
+          <div><h3>Start with the semantic-enrichment pipeline</h3><p><strong>Separate data processing, ontology annotation, KG embedding, and downstream classification contributions.</strong></p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1186/s12911-022-02070-7" target="_blank" rel="noopener">
+            Figure 8 · PDF p. 12<small>Article entry</small> ↗
+          </a>
+          <div><h3>Compare the three clinical snapshots</h3><p><strong>Pre-ICU information is insufficient, In-ICU performs best</strong>, and adding final diagnosis and procedures at Post-ICU does not improve performance.</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1186/s12911-022-02070-7" target="_blank" rel="noopener">
+            Table 3 · Figure 10 · PDF pp. 13–14<small>Article entry</small> ↗
+          </a>
+          <div><h3>Check threshold consequences and completeness</h3><p><strong>The confusion matrix exposes misclassification costs</strong>; ablation shows AUPRC is more sensitive to missing annotations.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">Prediction pipeline</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">Data</div>
+            <h3>MIMIC-III ICU stays</h3>
+            <p><strong>Adult records are filtered and a 30-day ICU return or death outcome is defined.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">Annotation</div>
+            <h3>Map clinical features to ontologies</h3>
+            <p><strong>Diagnoses, drugs, tests, procedures, and chart events are linked to NCIT and other ontologies.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">Representation</div>
+            <h3>Knowledge-graph embeddings</h3>
+            <p><strong>RDF2Vec, OPA2Vec, or TransE produces 300-dimensional semantic vectors.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">Time</div>
+            <h3>Three prediction snapshots</h3>
+            <p><strong>Models use information available before ICU, during the stay, or after discharge.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">Evaluation</div>
+            <h3>Five-fold cross-validation</h3>
+            <p><strong>Four classifiers, ontology strategies, embedding methods, and annotation completeness are compared.</strong></p>
+          </li>
+        </ol>
+        <figcaption><strong>Organized from the PDF Methods and Figures 2 and 4</strong>; arrows indicate data-processing sequence.</figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">Full deep read</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>Annotate EHR data with biomedical ontologies, embed the resulting knowledge graph, and feed it to classical ML to predict 30-day ICU readmission: AUROC 0.827, AUPRC 0.692, with peak performance reached mid-stay rather than at discharge.</p>
+</blockquote>
+<h2>The authors</h2>
+<p>From the University of Lisbon's LASIGE lab, where senior author Cátia Pesquita leads the health and biomedical informatics line. Her group works on biomedical ontologies and knowledge graphs, applied here to ICU readmission prediction over EHR linked to clinical ontologies.</p>
+<h2>The problem</h2>
+<p><strong>ICU readmission</strong> is both a health risk for patients (higher mortality, longer stays) and a cost burden for hospitals; in developed countries roughly 1 in 10 discharged ICU patients gets readmitted within the same hospitalization. Predicting readmission risk with ML is not new. The gap is that most methods run directly on raw EHR values and ignore what the data means and how items relate.</p>
+<p><strong>The authors' example is blunt: 'Aortic Valve Disease' and 'Coronary Artery Disease' share no similarity under categorical coding</strong>, and a string match shares only the uninformative word 'disease', yet both are non-neoplastic heart disorders and sit close together in an ontology hierarchy.</p>
+<p><strong>Prior work either used a single ontology or vocabulary covering just one feature type (Lu et al. embed discharge summaries with hyperbolic ICD9 embeddings), or learned graph structure from the EHR itself (Choi et al.), never pulling in external scientific knowledge.</strong></p>
+<p>The question here: does ontology-based semantic annotation plus <strong>knowledge graph embedding</strong> improve readmission prediction.</p>
+<h2>The approach</h2>
+<p><strong>A three-stage pipeline</strong>. Stage one pulls and cleans data from MIMIC-III; stage two generates semantic features; stage three predicts readmission. The baseline reproduces Lin et al. (the only related work with open code), but the authors add four feature types Lin dropped (prescriptions, initial diagnosis, procedures, lab events) and replace Lin's pre-trained ICD9 word embeddings entirely with KG embeddings.</p>
+<p><strong>Three core steps</strong>. Ontology selection: BioPortal Recommender scores candidates, NCIT gives the best coverage (about 35%), while MIMIC-III itself carries LOINC for labs, ICD9CM for diagnoses and procedures, NDC for drugs. Annotation: two strategies, one mapping everything to a single ontology (NCIT), one using four ontologies by feature type (NCIT/LOINC/ICD9CM/DRON).</p>
+<p><strong>Text annotation uses ElasticSearch to retrieve six candidate classes, then picks the one with the smallest Levenshtein distance.</strong></p>
+<p><strong>Embedding: patients become instances linked to the ontology classes that annotate them</strong>, forming a KG (6.9M triples single-ontology, 8.3M multi-ontology), embedded via RDF2Vec (Skip-Gram, 500 walks, depth 4) into 300-dimensional vectors.</p>
+<p><strong>Multiple annotation vectors within one ontology are summed</strong>; across four ontologies they are concatenated into 1,200 dimensions.</p>
+<p><strong>Classifiers are deliberately classical, logistic regression, random forest, naive Bayes, SVM, with no hyperparameter tuning</strong>, so the contribution of semantic annotation is separated from the choice of algorithm.</p>
+<p><strong>A separate timeline design mirrors a real stay: Pre-ICU (demographics plus initial diagnosis)</strong>, In-ICU (add labs, prescriptions, chart events), Post-ICU (add final diagnosis and procedures), updating risk as information accrues.</p>
+<h2>Key results</h2>
+<p><strong>The best combination is single-ontology NCIT + RDF2Vec + random forest</strong>, giving In-ICU AUROC 0.827±0.011 and AUPRC 0.692±0.018 under five-fold cross-validation. Against the reproduced baseline (RF AUROC 0.617), that is a gain of over 0.2 AUROC and 0.4 AUPRC. Several findings cut against intuition.</p>
+<p><strong>Multiple ontologies performed worse, with all models dropping below 0.5 AUPRC</strong>; the authors argue a single semantic space yields a more usable holistic representation.</p>
+<p><strong>The timeline is the striking part: In-ICU is the peak</strong>, and Post-ICU actually dips slightly once final diagnosis and procedures are added, so discharge-only information adds no incremental value for predicting readmission. Dropping chart events barely changes performance, the real drivers are the lab and prescription embeddings.</p>
+<p><strong>Among embedding methods, RDF2Vec and OPA2Vec show no significant difference (Kruskal-Wallis p=0.590/0.207), both beating TransE</strong>. The confusion matrix shows the In-ICU model avoids unnecessary readmission for over 90% of patients and prevents premature discharge for about 55% of patients who need to stay, at the cost of unnecessarily prolonging the stay of 10% who did not.</p>
+<h2>How solid is the evidence</h2>
+<p><strong>Several caveats</strong>. First, the reproduced baseline is clearly below the original (Lin et al. RF 0.712 vs 0.617 here; their LSTM+CNN 0.791, which the authors could not even run due to library incompatibility).</p>
+<p><strong>The claim rests on "my gain exceeds their gain</strong>," but the two baselines are not on the same footing, so comparing absolute AUROC directly is unfair, the authors concede this.</p>
+<p><strong>Second, the label merges "death within 30 days" with "readmission" into the positive class</strong>, inherited from Lin et al., but folding death into readmission muddies the clinical reading: the model may mostly be predicting severity rather than whether a patient returns.</p>
+<p>Third, everything is on single-center MIMIC-III (2001–2012, one hospital) with no <strong>external validation</strong>; the ablation showing AUROC stays above 0.7 after randomly dropping 75% of annotations is some evidence of robustness, but cross-institution transfer is untested.</p>
+<p><strong>Fourth, no tuning and only classical models is intentional (to isolate the annotation effect)</strong>, but it also means the reported numbers are not the ceiling this feature set could reach.</p>
+<p>On <strong>measurement bias</strong>, NCIT covers only about 35%, annotation loss is heavy for prescriptions and procedures, and the "multiple ontologies are worse" conclusion may partly reflect annotation quality rather than ontology count.</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="On this page">
+    <div class="deep-toc-title">On this page</div>
+    <a href="#overview" class="is-main">30-second read</a>
+    <a href="#key-numbers">Three numbers to keep</a>
+    <a href="#where-to-focus">Where to focus</a>
+    <a href="#study-design">Prediction pipeline</a>
+    <a href="#full-read">Full deep read</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← Back to deep reads</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>My Research Desk · Xuanyu Shi</span>
+    <span>Updated on weekdays · <a href="https://xuanyshi.github.io/research-desk/en/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

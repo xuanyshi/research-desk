@@ -1,0 +1,1074 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>我的文献集 · 精读</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/"/>
+<link rel="self" href="https://xuanyshi.github.io/research-desk/zh/feed.xml"/>
+<id>https://xuanyshi.github.io/research-desk/zh/feed.xml</id>
+<updated>2026-07-22T00:00:00Z</updated>
+<author><name>Xuanyu Shi</name></author>
+<entry>
+<title>论证框架：医疗证据评价与综合的灵活方法</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/fuller-2024-argument-framework/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/fuller-2024-argument-framework/</id>
+<updated>2026-07-22T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;论证框架把异质证据放进一条可审查的推理链：数据支持或反驳前提，前提共同支撑临床结论。 它能暴露推理缺口，但论文没有给出可复现的权重算法，也没有验证该框架能提高决策准确性。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;Jonathan Fuller、Benjamin Chin-Yee和Ross E. G. Upshur分别来自匹兹堡大学、西安大略大学、剑桥大学与多伦多大学，研究背景横跨医学哲学、血液学和公共卫生。本文是2024年发表于 &lt;em&gt;Nature Medicine&lt;/em&gt; 的Comment，篇幅4页，目标是提出证据评价的概念框架。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;传统循证医学擅长回答边界清楚、存在多项相似随机试验的问题，例如特定人群中某项干预的平均效应。当临床决策依赖单臂试验、替代终点、观察性资料、机制实验或模型研究时，单纯合并同类效应量无法表达这些证据怎样共同支持结论。&lt;/p&gt;
+&lt;p&gt;作者将传统路线概括为【测量框架】：治疗证据主要是干预效应的直接比较测量，评价围绕偏倚、效度和不精确性，合成工具以Meta分析为主。替代方案是【论证框架】：先写出待判断的治疗假设，再列出使该假设成立所需的前提，寻找支持或反驳各前提的数据。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;论文没有进行系统检索或实证分析。作者依据逻辑学、统计学和认识论提出节点式论证图。结论、前提和证据分别画成节点；箭头表示推理支持或反驳，括号表示若干前提必须共同成立，负号标记反驳关系，较粗连线可表示较强支持。&lt;/p&gt;
+&lt;p&gt;【评价对象】是一条由证据节点、前提和结论构成的完整论证。【触发条件】是前提有质量合格的数据支持，推理连接具有可辩护的逻辑关系，且关键反驳证据得到处理。【实际影响】是调整结论获得支持的程度，并定位分歧发生在数据、前提还是推理连接。文章没有规定统一分值或证据升级阈值。&lt;/p&gt;
+&lt;p&gt;这类节点图和因果DAG外形相近，语义不同。论证图的节点可以是数据、命题或假设，箭头表示认知上的支持关系；因果DAG的节点通常是变量，箭头表示假定的因果作用。论证图不能直接用于d分离、后门判据或调整集选择。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;文章提供两组说明性案例，没有新的临床效应估计。精准肿瘤药物案例把【改善总生存】设为结论 (H_C)。单臂试验观察到的客观缓解率 (O)、缓解率可预测总生存的前提 (P)，以及缺乏严重安全信号 (S) 必须共同成立。缓解率的统计验证、生物学验证、自然消退可能性和后续安全性资料分别支持或削弱这些前提。&lt;/p&gt;
+&lt;p&gt;作者用PI3K抑制剂说明反驳证据怎样改变推理。部分药物曾凭单臂试验缓解率获得加速批准；后续随机试验发现致命毒性和死亡增加，相关适应证被撤回。这些结果削弱“缓解率可预测该类药物总生存获益”的前提。&lt;/p&gt;
+&lt;p&gt;第二个案例讨论无症状人群佩戴口罩对社区感染率的影响。论证图同时容纳传播方式、口罩阻隔颗粒的实验、无症状传播比例、观察性研究、随机试验和流行病模型。作者用它说明群体干预的结论需要多步推理，单一Meta分析只覆盖其中一部分。&lt;/p&gt;
+&lt;p&gt;Table 1从证据定义、研究类型、评价目标、合成工具和适用情境比较两个框架。测量框架的典型表示是森林图；论证框架的典型表示是论证图。作者主张两者可以嵌套使用，测量结果成为论证中的证据节点。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;这是一篇概念评论，证据基础是既有哲学研究和两个经过选择的案例。文章展示了框架怎样画，没有比较不同评审者能否得到一致图，也没有检验论证图是否改善指南、监管或临床决策。因此，它支持【框架可表达什么】，尚未支持【框架比现有方法更准确】。&lt;/p&gt;
+&lt;p&gt;论证强度仍缺少操作定义。线条粗细、前提依赖和反驳关系可以定性表达，但文章没有规定如何合并冲突证据、怎样处理研究间重叠、共同偏倚或同一数据对多个节点的重复支持。将节点图解释为贝叶斯网络可以量化确认度，前提概率和条件依赖仍需额外建模。&lt;/p&gt;
+&lt;p&gt;文章对测量框架的描述较为简化。GRADE和现代证据评价并不限于随机试验或Meta分析，也会评价间接性、剂量—反应、混杂及不同研究设计。论证框架更适合作为显式推理层，不能替代研究偏倚评价、效应估计或目标人群外推。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>二手烟暴露与人类健康：伞式综述</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/zhang-2026-secondhand-smoke-umbrella/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/zhang-2026-secondhand-smoke-umbrella/</id>
+<updated>2026-07-22T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;这项伞式综述把二手烟相关证据整理为226个暴露—结局关联。 肺癌、心血管病和部分孕产结局的统计可信度较高；多数结果的GRADE确定性仍为低或极低，不能据此认定全部关联具有因果效应。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;Shengxin Zhang、Shen Li、Xinggang Yang等作者来自四川大学华西医院、电子科技大学等机构，通讯作者包括Hu Liao、Juan Huang和Xuelei Ma。论文于2026年7月发表于 &lt;em&gt;Nature Human Behaviour&lt;/em&gt;，研究方案预注册于PROSPERO（CRD42024583424），数据与分析代码公开于Zenodo。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;二手烟研究横跨孕期、儿童和成人阶段，暴露来源、测量方式与健康结局差异很大。同一结局还可能被多篇系统综述重复覆盖。作者希望在统一统计方案下重算既有Meta分析，区分证据较充分、仍需补充研究和继续堆积同类观察性研究价值有限的领域。&lt;/p&gt;
+&lt;p&gt;论文的暴露范围需要先拆开理解。【成人或儿童环境二手烟】指家庭、工作场所等环境中的非主动吸烟者暴露；【孕期母亲吸烟】则把胎儿视为被动暴露者。母亲是否主动吸烟、胎儿是否经胎盘暴露及出生后的家庭二手烟属于不同估计对象，不能合并解释。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;作者检索PubMed、Cochrane Library、Web of Science和Embase至2025年8月24日，共识别 &lt;strong&gt;5,405条记录&lt;/strong&gt;。299篇系统综述满足重分析条件；对相同暴露—结局组合，优先保留报告剂量—反应、纳入研究更多、方法质量更高或暴露分层更细的综述，最终以111篇系统综述中的原始研究数据复算。&lt;/p&gt;
+&lt;p&gt;每个关联用REML随机效应模型重新合并，保留OR、RR或HR原有尺度，不做跨指标换算。作者同时评价AMSTAR 2、GRADE、95%预测区间、异质性、小样本效应、超额显著性和Rosenthal失安全数，并对未显著关联模拟还需多少项研究才能达到统计显著性或80%把握度。&lt;/p&gt;
+&lt;p&gt;【证据等级】的计算对象是一个具体暴露—结局Meta分析。【Class I触发条件】包括病例数超过1,000（连续结局参与者超过20,000）、随机效应P&amp;lt;10⁻⁶、95%预测区间排除无效值、I²&amp;lt;50%，且未发现小样本效应或超额显著性；【实际影响】是将该关联列入最高统计可信层。Class II至IV逐步放宽条件。该等级评价统计稳定性和发表模式，残余混杂、暴露误分与选择偏倚仍需单独判断。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;最终重分析覆盖 &lt;strong&gt;111篇系统综述、约2.533亿名参与者、130个健康结局和226个独立关联&lt;/strong&gt;。87个结局至少有一个显著关联，28项结局证据达到Class I或II。所有Class I/II结果的失安全数均超过5k+10，但这项指标只回答需要加入多少个假定零效应研究才能改变P值。&lt;/p&gt;
+&lt;p&gt;成人慢性病中，二手烟与肺癌的合并RR为 &lt;strong&gt;1.24（95% CI 1.16–1.32；82项研究，Class II，GRADE低）&lt;/strong&gt;；与总体心血管病的OR为 &lt;strong&gt;1.24（95% CI 1.16–1.31；52项研究，Class II，GRADE极低）&lt;/strong&gt;；与卒中的RR为1.24（95% CI 1.16–1.32；38项研究，Class II）。肺癌结果还报告了暴露强度、持续时间和累积暴露的剂量—反应关系。&lt;/p&gt;
+&lt;p&gt;癌症部分的证据梯度差异明显。乳腺癌RR为1.25（Class III），宫颈癌RR为1.53（Class III），胰腺癌RR为1.20（Class III），结直肠癌RR为1.17（Class IV）；肾癌和子宫内膜癌未达到统计显著。除肺癌外，多数癌症关联的GRADE确定性为极低或证据等级较弱，应视为后续三角互证的候选关系。&lt;/p&gt;
+&lt;p&gt;生命早期结局中，孕期母亲每日吸烟11–19支与低出生体重的OR为2.05（Class I），孕期母亲吸烟与围产儿死亡的RR为1.33（Class II）。这些结果描述胎儿对母亲主动吸烟的被动暴露，不能直接外推为非吸烟孕妇的环境二手烟效应。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;统一回到原始研究效应值复算，避免直接拼接不同综述的汇总值；重叠分析、预注册、双人提取以及数据和代码开放增强了可核查性。研究还同时展示Evidence class与GRADE，使“统计可信度较高但因果确定性仍低”的情况可以被看见。&lt;/p&gt;
+&lt;p&gt;局限也很集中。全部证据来自观察性研究，主动吸烟残留、社会经济状况、职业暴露与其他生活方式因素可能造成混杂。多数研究通过问卷测量二手烟，存在回忆误差和前吸烟者误分类。伞式综述会继承上游系统综述的选择性报告和偏倚；代表性综述的选择减少了重复计权，也可能舍弃时间窗口或人群定义不同的信息。&lt;/p&gt;
+&lt;p&gt;论文表格中的P值未做多重比较校正。失安全数假设新增研究的平均效应为零，数值很大不能排除系统性偏倚。前瞻情景分析依赖未来研究效应和方差的设定，适合判断当前结论对新增同类研究的敏感程度，不能替代价值信息分析或因果识别设计。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>有向无环图的构建规范：ESC-DAGs方法介绍及脑血管病研究案例解读</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/hao-2024-esc-dags-stroke/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/hao-2024-esc-dags-stroke/</id>
+<updated>2026-07-21T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;这篇中文案例逐步演示ESC-DAGs，并指出焦点检索悖论和逐篇转化的工作量，适合临床团队执行前校准预期。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;郝允逸、赵性泉来自首都医科大学附属北京天坛医院神经病学中心；夏雪、胥芹、王安心来自北京神经外科研究所流行病学研究室及首都医科大学临床流行病学与临床试验学系。团队长期从事卒中临床与流行病学研究。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;临床研究者知道DAG可以筛选混杂变量，却常缺少中文、逐步、贴近卒中研究的构建示例。本文介绍ESC-DAGs，并用基线／入院血清尿酸与缺血性卒中功能预后这一问题展示如何从回归论文还原图、审查边并合并。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;映射阶段将每篇论文的暴露、结局和控制变量转为隐含图，并在控制因素间画边使其饱和。转化阶段逐边检查时间性、表面效度、理论依据和潜在结局思维实验，同时测试反向关系。整合阶段把保留边汇入空图，对新增可能关系再次转化，并可将输入输出相似的节点归为上位概念。&lt;/p&gt;
+&lt;p&gt;卒中示例先在PubMed检索血清尿酸与功能预后，展示两篇研究如何形成隐含图。若某边仅因论文曾调整该变量而出现，转化不会默认其为混杂；研究者要说明设置不同暴露值是否会改变结局及其时间顺序。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;本文是方法介绍，没有新队列效应量。图1解释链、叉与碰撞结构；表1列出ESC-DAGs三个阶段；图4—6依次展示血清尿酸案例的隐含图、转化后DAG和整合过程。案例最终把部分年龄、性别等节点合并为人口统计学因素以简化图。&lt;/p&gt;
+&lt;p&gt;作者提出两个实际问题。其一，若检索只围绕焦点暴露—结局，可能漏掉决定混杂结构的其他关系；其二，逐篇映射和逐边双向转化非常耗时。文中建议扩展检索到暴露和结局的相关因素，并在复杂项目中先汇总变量再统一处理。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;作为二级方法文，它忠实解释原始ESC-DAGs并提供本土案例，适合培训。示例只展开少数论文，没有系统综述完成后的最终效应分析，也未证明优化策略与原流程等价。边判断仍依赖研究者对测量时点和临床机制的理解。&lt;/p&gt;
+&lt;p&gt;将多个具体节点合并可提升可读性，也可能掩盖不同时间窗和作用路径。血清尿酸既可能反映肾功能、代谢状态或急性应激，节点定义若不精确，调整集含义会改变。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>结合证据综合与专家知识构建心血管疾病过早死亡因果路径</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/hasani-2024-premature-cvd-dag/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/hasani-2024-premature-cvd-dag/</id>
+<updated>2026-07-21T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;文献建图、专家模糊德尔菲和真实数据演示被串成三阶段流程；专家—模型一致支持可行性，不能验证真实因果图。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;Wan Shakira Rodzlan Hasani、Kamarul Imran Musa 与 Kueh Yee Cheng 来自 Universiti Sains Malaysia，Xin Wee Chen 来自 Universiti Teknologi MARA。团队涉及社区医学、公共卫生与生物统计，研究使用马来西亚全国健康调查和死亡记录链接数据。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;ESC-DAGs能从文献生成初始图，但专家对遗漏节点和边方向常有分歧。作者以过早心血管死亡为例，建立结构化的专家修订与共识规则，再查看共识图在可用调查数据中的分析表现。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;第一阶段用ESC-DAGs构建初始DAG。第二阶段邀请12名公共卫生、流行病学和临床专家个别访谈，收集新增节点和边；第二轮由11名专家对80条因果陈述使用7级量表评分。模糊德尔菲的【计算对象】是每条候选路径；【触发条件】为阈值d≤0.2且专家同意率≥75%；【实际影响】是决定边保留、删除或改名。&lt;/p&gt;
+&lt;p&gt;第三阶段按数据可得性提出三张DAG，目标为糖尿病、高血压和高脂血症对过早心血管死亡的总效应。专家分别评价有效性、可行性和调整集；作者再用逻辑回归比较AIC、AUC、伪R²与分类指标。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;第二轮80条陈述中有 &lt;strong&gt;35条&lt;/strong&gt; 未同时达到同意率和d阈值，最终保留45条共识路径。专家认为模型1最易实施；模型3在结构有效性和调整集方面排名第一，有效性同意率91.67%。&lt;/p&gt;
+&lt;p&gt;数据分析中，模型3的AIC最低（3,903.22），AUC最高（&lt;strong&gt;82.02%&lt;/strong&gt;），略高于模型1的81.46%；模型1准确率反而最高，为76.31%，模型3为75.95%。三种调整下，已诊断糖尿病与过早心血管死亡的OR约为3.30—3.53。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;研究把专家分歧量化并记录删边理由，透明度高于单次会议式共识。12名专家规模有限，第二轮只有11人；75%和d≤0.2衡量意见集中，不衡量边是否真实。专家来自相近情境，文化和卫生系统差异限制外推。&lt;/p&gt;
+&lt;p&gt;AUC、AIC和准确率是预测或拟合指标。模型3AUC高0.46—0.56个百分点且准确率略低，不能据此验证因果结构。调查中的糖尿病、高血压、吸烟和体力活动依赖自报，图又按可测变量简化，可能产生残余混杂和过拟合。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>有向无环图在观察性研究多因素分析协变量选择中的应用</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/cao-2025-dag-covariate-selection/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/cao-2025-dag-covariate-selection/</id>
+<updated>2026-07-21T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;这篇中文综述把数据驱动选变量的误区、DAG路径规则和临床协变量选择放到同一框架中，适合作为应用入门。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;曹雨滋、袁驰、李舍予来自四川大学华西医院内分泌代谢科与中国循证医学中心 MAGIC 中国中心，刘刚来自华中科技大学同济医学院公共卫生学院，孙凤来自北京大学公共卫生学院流行病与卫生统计学系。团队横跨临床内分泌、循证医学和流行病学方法。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;观察性研究常用逐步回归、单变量P值或效应改变比例选择协变量。这些规则根据数据关联工作，可能漏掉共同原因，也可能调整中介、工具变量或碰撞点。文章解释DAG如何把变量的因果角色与统计关联分开，并给出建图和调整的实践建议。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;综述先区分混杂因素、效应修饰因素、中介、工具变量、碰撞点及其子代，再比较前向选择、后向剔除、10%效应改变法和高维倾向评分。作者用2型糖尿病与骨折示例说明，仅因某变量显著或改变OR就调整，可能打开原本关闭的路径。&lt;/p&gt;
+&lt;p&gt;建图建议沿用ESC-DAGs：映射研究结论，按时间性、表面效度、理论和反事实审查边，再整合。协变量选择的【计算对象】是暴露与结局之间的非因果开放路径；【触发条件】是后门准则要求阻断全部偏倚路径；【实际影响】是保留最小充分集，同时排除中介、碰撞点和不必要工具变量。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;本文是叙述性方法综述，没有新的效应估计。它汇总四类数据驱动方法、DAG路径开闭规则，以及共同原因法、治疗前变量法和析取原因法等替代策略。复杂图可用 DAGitty 计算最小充分调整集并检查自定集合是否封闭所有偏倚路径。&lt;/p&gt;
+&lt;p&gt;文中举例显示，某研究调整由统计规则选出的变量后OR从粗略值改变为 &lt;strong&gt;0.80&lt;/strong&gt;，但该变量可能是碰撞点，因此“改变估计”本身不能证明需要调整。作者还指出应用综述中约 &lt;strong&gt;2/3&lt;/strong&gt; 的DAG研究明确提供了图，系统报告建图假设者更少。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;文章准确梳理经典DAG逻辑和近期应用建议，适合中文临床教学。它没有系统检索与纳入流程，也没有比较各种协变量选择策略的模拟或实证性能。所给比例和案例需要回到引用原文核查。&lt;/p&gt;
+&lt;p&gt;DAG只描述在既定结构下应调整什么，不能量化混杂大小。若图不完整，最小充分集仍会错误；多个可行集合也无法仅凭数据决定哪张图更合理。测量误差和未测量混杂需另做敏感性分析。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>发布有向无环图的案例与建议：围产期HIV感染女孩四价HPV疫苗有效性</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/barnard-mayers-2022-publish-dags/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/barnard-mayers-2022-publish-dags/</id>
+<updated>2026-07-21T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;这篇案例把概念DAG改写为数据DAG，直接暴露性行为误分类、结构性种族主义代理和母亲病史缺失造成的残余偏倚。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;Ruby Barnard-Mayers、Eleanor J Murray 等作者来自 Boston University、Harvard、NYU、UCLA、University of Miami 及 PHACS 协作网络，覆盖流行病学、儿科HIV、HPV与卫生决策科学。论文在分析前公开DAG并邀请社区反馈。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;围产期HIV感染女孩接种四价HPV疫苗后的异常宫颈细胞学发生率似乎较高。这个现象可能来自免疫反应差异，也可能由年龄、接种机会、性行为、结构性因素和测量误差造成。作者要在分析前写清机制、目标人群和数据缺口。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;作者提出两个问题：接种相对于不接种是否降低异常细胞学发生；接种剂次数是否呈剂量反应。暴露拆成启动接种与继续接种，疫苗免疫反应作为中介。文献与专家讨论用于添加至少影响两个图中变量的节点，证据混合或有限时默认保留箭头，因为缺失箭头代表更强的零效应假设。&lt;/p&gt;
+&lt;p&gt;概念DAG随后适配 PHACS 的 AMP 和 AMP Up 数据。测量后的性行为、疫苗抗体反应、种族／族裔代理以及缺失的母亲宫颈病史均被单独考虑。研究对象从“所有围产期HIV感染女孩”改成“符合接种条件者”时，酵母过敏禁忌的处理也随之改变。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;这是设计案例，没有估计HPV疫苗效果。对疫苗启动到异常细胞学的总效应，概念图给出的调整集为【年龄、保险、结构性种族主义、母亲病史、性行为史】。&lt;/p&gt;
+&lt;p&gt;数据适配后，真性行为史仍可能残余混杂：已有研究中 &lt;strong&gt;14%—39%&lt;/strong&gt; 的围产期HIV暴露儿童和青少年对终身伴侣数或安全套使用的报告前后不一致。数据没有结构性种族主义和母亲宫颈病史，只能使用不完整代理或进入定量偏倚分析。抗体滴度也不能完整代表免疫功能。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;图中每条关键边都有文字理由，遗漏边也被视为需要辩护的假设。把测量值与真实构念拆开后，数据局限能具体对应到残余混杂或测量偏倚。论文没有执行效应估计，因此不能回答疫苗是否有效，也不能说明列出的调整集在实际数据中足够。&lt;/p&gt;
+&lt;p&gt;部分关键判断依赖团队知识，例如CD4计数、病毒载量和ART只作为效应修饰因素而非混杂因素。作者主动把这些争议公开，说明DAG是可修订模型。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>用于构建有向无环图的证据综合方法（ESC-DAGs）：一种新型系统化建图方法</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/ferguson-2020-esc-dags/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/ferguson-2020-esc-dags/</id>
+<updated>2026-07-21T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;ESC-DAGs把文献结论映射为饱和图，再逐边做因果审查并整合；它提供了可追踪的建图程序，边的证据质量仍待补充。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;Karl D Ferguson、Mark McCann、Srinivasa Vittal Katikireddi、Hilary Thomson、Michael J Green 与 James D Lewsey 主要来自 University of Glasgow 的公共卫生、心理健康和健康经济团队。文章发表于 International Journal of Epidemiology，是ESC-DAGs的原始方法文。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;DAG能据后门准则给出调整策略，但文献很少说明图从何而来。凭直觉画图难以审计，也容易受数据可得性和结果影响。作者把证据综合嵌入研究综述阶段，希望留下节点、边和删除理由的完整记录。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;流程分为【映射、转化、整合】。映射将每项研究的暴露、结局与控制变量做成隐含图：暴露指向结局，控制变量暂时作为共同原因，并在节点间尽量饱和连接。这一步忠实表示论文声称或暗示的结构，不判断它是否正确。&lt;/p&gt;
+&lt;p&gt;转化逐条检查两个方向的候选边。时间性不成立时删除或反向；表面效度用于排除明显不合理关系；理论支持写入日志，但缺乏理论不等于无效；最后以潜在结局思维实验问“把所有人设为不同暴露值，平均结局会否不同”。整合将保留边加入空图，新出现的可能关系再次审查，并可合并理论与输入输出相同的节点。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;这是方法示范，没有效果量或样本量结果。作者用父母既往饮酒与青少年饮酒的假想研究及实证研究展示流程。初始图把青少年性别与物质使用都当作混杂因素；转化后发现性别只是另一条风险路径，物质使用可能是中介，盲目调整会阻断效应并可能打开碰撞路径。&lt;/p&gt;
+&lt;p&gt;最终整合DAG可由DAGitty识别调整集，也能把低置信度或双向候选边用于结构敏感性分析。论文建议公开决策日志和DAG代码。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;优势在透明、系统和模块化，不在经验验证。饱和映射会把原论文控制的变量暂定为共同原因，随后高度依赖评审者用知识修正。研究结论若源于有偏回归，映射仍会先继承这种叙述。&lt;/p&gt;
+&lt;p&gt;时间性、表面效度、理论与反事实问题没有形成可重复的证据权重。整合时边一旦在任一研究中保留便进入图，研究设计、偏倚风险与相互独立性没有正式参与合并。真实结构仍可能遗漏，工作量也很大。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>如何使用有向无环图：临床研究者指南</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/feeney-2025-clinical-dag-guide/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/feeney-2025-clinical-dag-guide/</id>
+<updated>2026-07-21T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;七步指南把目标估计量、共识DAG、数据选择、统计分析和偏倚敏感性分析连成一条临床研究工作流。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;Timothy Feeney 来自 University of North Carolina at Chapel Hill，Fernando Pires Hartwig 来自 Federal University of Pelotas 与 University of Bristol，Neil M Davies 来自 University College London、University of Bristol 和 Norwegian University of Science and Technology。三位作者长期从事流行病学和因果推断方法研究。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;DAG在临床研究中越来越常见，但一项包含234篇文章的综述显示，关键假设和调整集经常报告不全。本文要把DAG从论文中的装饰图转成可追踪的设计工具，并说明什么时候应改变数据、分析或结论。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;作者用重度饮酒与五年死亡作为贯穿案例，提出七步：定义目标人群、暴露、结局和目标估计量；用文献与专家列出变量；多人迭代达成共识并预注册；按图选择数据和测量；按图确定分析；针对不可测量或测量误差做敏感性分析；公开DAG、代码与偏离理由。&lt;/p&gt;
+&lt;p&gt;调整集的【计算对象】是共识图中的后门路径；【触发条件】是变量组合封闭所有混杂路径且不阻断目标因果路径；【实际影响】是规定主分析协变量。若关键变量缺失，图不会自动给出无偏估计，而会触发换数据、收集新变量或定量偏倚分析。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;本文是方法指南，没有新的临床效应量。饮酒案例得到两套最小充分调整集：①社会经济位置、医疗可及性、重度饮酒；②医疗可及性、重度饮酒、酒精滥用家族史。加入潜在未测量的家庭支持后，可能不存在仅由已测变量构成的充分调整集。&lt;/p&gt;
+&lt;p&gt;七步中第4—6步把图与实际数据连接：先依据共识DAG决定需采集的变量，再说明数据缺口，最后把未测量混杂与测量误差转为敏感性分析参数。第7步要求正文或补充材料公开图和重建代码。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;建议建立在既有DAG理论、应用综述和作者经验上，适合作为报告规范。它没有比较遵循七步与常规做法是否降低偏倚，也没有定义专家共识阈值或边的证据等级。正确执行流程仍可能得到错误的共识图。&lt;/p&gt;
+&lt;p&gt;文章明确遗漏节点和箭头是强假设。DAG不能量化偏倚大小，无法从数据单独确认方向，也不自动处理依从性变化、时间变化混杂或干预定义不一致。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>使用DAGMetrics评估有向无环图：块茎与土壤微生物组数据的启示</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/averin-2025-dagmetrics/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/averin-2025-dagmetrics/</id>
+<updated>2026-07-21T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;DAGMetrics能比较学习所得DAG的复杂度与稳定性；没有真值图时，这些指标只能筛选结构，不能确认因果方向。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;Pavel Averin 与 Theodoros Moysiadis 来自 University of Nicosia，Ifigeneia Mellidou、Aliki Xanthopoulou 来自希腊 ELGO-DIMITRA 植物育种与遗传资源研究所，Maria Ganopoulou 来自 Aristotle University of Thessaloniki。团队结合计算机科学、植物研究和微生物组分析。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;因果发现算法对检验方法、评分函数、缩放与变换十分敏感。真实微生物组通常没有已知DAG，研究者很难判断哪张图值得后续解释。DAGMetrics提供一套统一的全局与局部比较工具。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;R包计算边数、碰撞点数、孤立节点数等描述指标，也用F1与真阳性边数比较图的相似性，并可视化Markov毯。作者在马铃薯块茎与土壤微生物组上比较PC、Inter-IAMB、Tabu Search和Hill-Climbing，组合Kendall、Spearman、Pearson相关或AIC、BIC评分，以及三种缩放和两种变换。&lt;/p&gt;
+&lt;p&gt;总计生成块茎 &lt;strong&gt;240张DAG&lt;/strong&gt;、土壤120张。模型选择的【计算对象】是不同配置输出的图结构；【触发条件】是复杂度适中且跨预处理设置相对稳定；【实际影响】是选出用于Markov毯和生物学解释的候选图。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;评分型算法通常产生更稠密的图，约束型算法产生更多孤立节点。PC与Inter-IAMB在Spearman或Kendall相关下跨缩放和变换较稳定；作者最终偏好PC+Spearman，理由是复杂度与稳定性的折中。&lt;/p&gt;
+&lt;p&gt;块茎数据的Markov毯最多7个节点，土壤数据最多4个；大量节点孤立。不同风土和采后阶段之间出现若干相同边，部分与已知微生物代谢或生态关系相符。作者同时明确，各算法输出之间高度不相似。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;软件功能通过两个真实数据集和360张图展示，适合检查计算可复现性与结构敏感性。论文没有真值DAG，因此F1衡量两张估计图的一致程度，不能称为准确率。稳定错误会得到高分，多个算法共享假设也可能共同遗漏潜变量、组成型约束和批次效应。&lt;/p&gt;
+&lt;p&gt;微生物丰度具有高维、小样本和组成数据特征，标准条件独立检验可能失真。发现的边主要通过已有生物学知识作事后解释，没有干预或独立队列验证。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>CLADDER：评估语言模型的因果推理能力</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/jin-2023-cladder/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/jin-2023-cladder/</id>
+<updated>2026-07-21T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;CLADDER把自然语言问题还原为可由因果推理引擎判定的任务；GPT-4加专用推理链后准确率仍为70.40%。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;Zhijing Jin、Yuen Chen、Felix Leeb、Luigi Gresele 等作者来自 Max Planck Institute for Intelligent Systems、ETH Zürich、IIT Kharagpur、University of Hong Kong 与 University of Washington。团队由 NLP、因果推断和认知科学研究者组成，Bernhard Schölkopf 与 Mrinmaya Sachan 参与指导。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;“模型懂因果”常用常识问答或因果词抽取来证明，任务可能依赖语言模式而不需要形式推断。CLADDER要检验模型能否读取因果图、识别查询类型、调用正确的识别公式并完成运算，同时降低训练数据污染和常识捷径。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;作者从二元与分类变量因果图采样，覆盖关联、干预和反事实三个因果阶梯层级。推理引擎根据图、查询与概率生成符号问题和真值，再通过模板转成自然语言。语境分为常识、无意义和反常识三类。&lt;/p&gt;
+&lt;p&gt;CausalCoT把任务拆成六步：解析图、识别查询、写出符号表达、抽取数据、执行因果推断、做算术并回答。评价对象是最终二元答案，同时分解节点、边、查询／估计量识别和运算表现。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;CLADDER v1.5含 &lt;strong&gt;10,112个样本&lt;/strong&gt;：因果阶梯第1、2、3层分别为3,160、3,160、3,792题。随机基线为49.27%；LLaMa为44.03%，Alpaca为44.66%，GPT-3.5为52.18%，GPT-4为 &lt;strong&gt;62.03%&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;CausalCoT将GPT-4总体准确率提高到 &lt;strong&gt;70.40%&lt;/strong&gt;，提升8.37个百分点；第1、2、3层分别为83.35%、67.47%、62.05%。反常识子集由60.47%升至70.12%。图节点与边提取F1为99.34%和97.01%，查询／估计量识别F1只有53%，形式推断步骤总体F1为50.65%。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;真值由明确的因果模型和推理引擎产生，反常识与无意义语境削弱了记忆题库的可能，分步骤误差也能定位失败。合成问题属于封闭世界，图结构、变量定义和可识别性已由出题者提供；现实研究最难的目标人群、时间顺序、未测量混杂和测量过程不在考核范围内。&lt;/p&gt;
+&lt;p&gt;模型与API版本属于2023年快照，当前模型表现不能由这张表推断。部分细粒度分析因限流只抽取2,000题，且准确率没有反映错误答案在医学决策中的不同代价。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>有向无环图用于理解足月小于胎龄儿五岁以下营养不良的因果结构</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/tiwari-2025-sga-malnutrition-dag/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/tiwari-2025-sga-malnutrition-dag/</id>
+<updated>2026-07-21T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;从342篇摘要归纳出的21节点DAG给出12套调整方案；它适合指导下一项研究，尚不能确认小于胎龄对营养不良的效应大小。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;Soumya Tiwari、Viswas Chhapola、Nisha Chaudhary 与 Lokesh Sharma 均来自印度新德里 Lady Hardinge Medical College 儿科。研究面向南亚儿童营养问题，由临床团队以 ESC-DAGs 的因果判据构建理论模型。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;足月小于胎龄儿与五岁以下营养不良相关，但宫内生长受限、家庭贫困、喂养方式与母体健康彼此相连。常规回归把所有可用变量一起调整，可能控制中介或碰撞点。作者要先定义不同决策者关心的效应，再给出可用于未来研究的因果图和充分调整集。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;暴露定义为足月小于胎龄，结局为6个月至5岁时按 WHO 标准判定的营养不良。作者分别为政策制定者、临床医生和父母描述目标估计量。检索 PubMed、Scopus、Web of Science 与 ProQuest，截至2023年12月15日，限近10年及印度次大陆研究。&lt;/p&gt;
+&lt;p&gt;快速叙述综述只从摘要提取营养不良因素。候选因素依次经时间先后、表面效度、理论支持与反事实思维实验判定方向，再在 DAGitty 中连接。调整集的【计算对象】是足月小于胎龄到营养不良的全部后门路径；【触发条件】是某变量集合阻断所有后门且不含暴露后变量；【实际影响】是规定回归中可以调整的最小变量组合。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;检索获得 &lt;strong&gt;4,818条记录&lt;/strong&gt;，最终纳入342篇摘要；39%的研究来自印度，27%来自孟加拉国。综述提取81个因素，归并为17个节点、5个领域：社会经济、父母、儿童、环境和政治。&lt;/p&gt;
+&lt;p&gt;最终DAG含 &lt;strong&gt;21个节点&lt;/strong&gt;。DAGitty给出 &lt;strong&gt;12个最小充分调整集&lt;/strong&gt;；其中一套包含9个变量。作者没有合并原始效应，也没有用队列数据估计足月小于胎龄对营养不良的实际效应。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;研究先定义目标问题，再用明确判据筛边，比按P值选协变量更透明。证据提取停留在摘要，无法核对暴露定义、时序、调整集和偏倚风险；近10年与印度次大陆限制也可能漏掉关键共同原因。81个因素归并为17个节点会隐藏测量与时间差异。&lt;/p&gt;
+&lt;p&gt;12套调整集只在所画DAG正确时充分。它们之间产生相近估计可增加结构相容性，不能验证图为真。论文没有专家共识、外部复核或数据敏感性分析。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>如何为观察性健康研究构建因果有向无环图：范围综述</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/poppe-2025-dag-development-scoping/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/poppe-2025-dag-development-scoping/</id>
+<updated>2026-07-21T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;现有DAG指南对“图怎么画”已有共识，对“领域知识从哪里来、边为何存在”交代不足；这篇范围综述把选择与测量过程补进六步流程。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;Louise Poppe、Johan Steen、Wen Wei Loh、Peter W. G. Tennant 等作者来自根特大学、马斯特里赫特大学、Emory University、University of Leeds 与 Alan Turing Institute 等机构，覆盖健康心理学、临床医学、统计学和因果推断。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;DAG被用于协变量选择，却常在数据分析前临时绘制，节点和边的知识来源也不透明。作者系统梳理现有建图指南，比较它们对混杂、选择、测量误差和领域知识的处理，再提出可执行的最低步骤。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;范围综述从三个文献数据库获得 &lt;strong&gt;902条唯一记录&lt;/strong&gt;，同时纳入网页和书籍等资源，最终保留11份指南。两名研究者完成筛选，按建图目的、步骤、知识来源和报告建议提取内容，并以老年人达到体力活动指南对工作记忆的影响作为贯穿案例。&lt;/p&gt;
+&lt;p&gt;六步为：尽早建图；精确定义暴露与结局；添加共同原因；考虑选择过程节点；考虑测量误差节点；用DAG指导分析。共同原因的【计算对象】是暴露—结局间开放的非因果路径，【触发条件】是存在共同原因，【实际影响】是将其纳入充分调整集；选择或测量节点则用于识别单纯协变量调整无法修复的偏倚。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;纳入资源普遍建议DAG服务数据分析，但对混杂变量是逐步添加还是从饱和图删除存在分歧。只有少数指南讨论选择节点，只有1份具体讨论测量误差节点；也只有 &lt;strong&gt;1份指南&lt;/strong&gt; 说明如何通过文献检索获得领域知识。&lt;/p&gt;
+&lt;p&gt;作者据此把选择和测量误差单列为步骤，并要求记录知识获取与建图决策。示例显示，选择参与研究可能形成碰撞结构；问卷测量的体力活动和测试测量的工作记忆需要区分真实变量与观测变量。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;这是指南的范围综述，目标是描述与整合建议，没有评价哪套流程能产生更接近真实因果结构的DAG。只纳入11份资源，灰色文献无法保证穷尽；六步是作者综合判断，尚无前瞻性比较验证。&lt;/p&gt;
+&lt;p&gt;DAG的正确性依赖领域知识。缺失一条共同原因边可能留下残余混杂，错误增加一条边通常扩大调整集；调整碰撞点或中介则可能直接引入偏倚。图本身也不能解决时间变化混杂，标准回归在治疗—混杂反馈下可能失效。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>如何开展伞式综述</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/belbasis-2022-umbrella-reviews/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/belbasis-2022-umbrella-reviews/</id>
+<updated>2026-07-21T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;一篇合格的伞式综述要把多个Meta分析放进同一套复算与分级协议；它提供全景和优先级，不能修复上游证据的共同偏倚。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;Lazaros Belbasis、Vanesa Bellou 与 John P A Ioannidis 长期从事 Meta 研究和证据可信度评价，作者单位包括柏林、约阿尼纳与斯坦福的 Meta 研究团队。本文属于 BMJ Medicine 的研究方法与报告文章。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;当同一疾病已有大量系统综述时，再做一篇单因素综述无法回答“哪些干预或危险因素的证据最强”。伞式综述能比较多个问题，但重叠综述、统计方案不一致与二次数据错误会放大偏倚。本文给出适用条件和操作流程。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;作者提出四个核心环节：【检索与选择、数据提取、统计复算与证据分级、结果解释】。研究问题先限定人群、干预／暴露、比较和结局；两个研究者独立筛选与提取。重叠综述可按最新、研究数最多、前瞻性研究最多或质量更高者选择，并公开排除理由。&lt;/p&gt;
+&lt;p&gt;统计阶段应提取单项研究效应值、95% CI、样本量和事件数，用统一模型重新运行每个 Meta 分析。对干预可用 GRADE；对流行病学关联则综合证据量、P值、异质性、95%预测区间、小样本效应和超额显著性。解释阶段另行讨论混杂、反向因果、选择与信息偏倚。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;本文是方法指南，没有新的临床效应估计。工作示例为2型糖尿病非遗传危险因素伞式综述：纳入 &lt;strong&gt;86篇文章、142个关联&lt;/strong&gt;；116个关联P&amp;lt;0.05，只有 &lt;strong&gt;11个&lt;/strong&gt; 在证据量、显著性、预测区间、异质性和偏倚信号的联合标准下达到强证据。&lt;/p&gt;
+&lt;p&gt;作者还引用一项对57篇伞式综述、3,744个观察性 Meta 分析的经验评价，说明各分级指标提供相对独立的补充信息。Box 3 列出每个 Meta 分析应报告的病例数、样本量、模型、汇总值、预测区间、最大研究与偏倚检验。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;这篇文章的依据是方法学经验、既有实证评价和一个工作示例，适合用来规范流程，不能据此判断某一医学关系。伞式综述只覆盖已经进入系统综述的主题；原始研究、Meta分析和伞式综述自身的偏倚可以叠加。逐项回查全部原始论文通常不可行。&lt;/p&gt;
+&lt;p&gt;证据等级的【计算对象】是每个 Meta 分析，【触发条件】是预设统计和偏倚判据，【实际影响】是排序与筛选后续验证对象。即便达到最高等级，因果主张仍需结合研究设计与生物学机制。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>早产危险因素：观察性研究Meta分析的伞式综述</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/mitrogiannis-2023-preterm-birth-umbrella/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/mitrogiannis-2023-preterm-birth-umbrella/</id>
+<updated>2026-07-21T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;166个早产相关因素中只有7个达到预设的流行病学稳健标准；这个等级压缩了噪声，仍需与因果证据分开解释。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;Ioannis Mitrogiannis、Stefania Papatheodorou 等作者来自妇产科学、流行病学和循证研究团队。研究注册于 PROSPERO（CRD42021227296），并按统一规则复算观察性研究 Meta 分析。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;早产危险因素文献数量很大，显著结果受到异质性、小样本效应和选择性报告影响。作者希望给出全景式清单，并识别哪些关联同时满足样本量、显著性、预测区间和偏倚检验要求。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;研究检索 PubMed 与 Scopus 至2021年2月，纳入观察性研究的系统综述和 Meta 分析。遇到同一因素的重叠综述时保留覆盖更完整者。每个关联统一计算随机效应汇总值、95% CI、95%预测区间、I²、小样本效应和超额显著性。&lt;/p&gt;
+&lt;p&gt;【稳健证据】的计算对象是一个危险因素对应的 Meta 分析；触发条件包括病例数&amp;gt;1,000、P&amp;lt;10⁻⁶、I²&amp;lt;50%、95%预测区间排除无效值，且无小样本效应和超额显著性；实际影响是把该关联置于最高流行病学可信等级。此规则没有检查未测量混杂或暴露定义是否可干预。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;研究分析 &lt;strong&gt;85个Meta分析、1,480项原始研究、166个关联&lt;/strong&gt;。99个关联在P&amp;lt;0.05时显著，41个达到P&amp;lt;10⁻⁶；91个关联存在较大或很大异质性。37个出现小样本效应，12个出现超额显著性。&lt;/p&gt;
+&lt;p&gt;仅7个关联达到稳健标准：苯丙胺暴露、胎儿孤立性单脐动脉、母亲人格障碍、客观评估的睡眠呼吸障碍、既往真空吸引人工流产、孕期增重不足，以及流产后妊娠间隔&amp;lt;6个月。另有26个属于高度提示、15个属于提示性证据。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;统一复算和预设分级提高了横向可比性，预测区间也比只看汇总P值更严格。所有7个稳健关联都来自不足10项原始研究的 Meta 分析，小样本效应和超额显著性检验在这个规模下功效有限。作者没有重新评价每项原始研究的偏倚风险，且上游综述遗漏会直接传递下来。&lt;/p&gt;
+&lt;p&gt;“稳健”描述统计与发表模式；它不排除混杂、反向因果、选择偏倚和暴露误分类。部分因素还是复合社会或临床状态，无法直接对应干预。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>面向糖尿病肾病临床决策支持的因果知识图谱构建与评价</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/lyu-2023-diabetic-nephropathy-ckg/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/lyu-2023-diabetic-nephropathy-ckg/</id>
+<updated>2026-07-21T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;这项工作把文献、指南和教材中的因果陈述接到患者级图推理；它证明了工程可用性，尚未证明图中边具备反事实因果效度。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;Kewei Lyu、Yu Tian 与通讯作者 Jingsong Li 所在团队来自浙江大学生物医学工程与仪器科学学院及浙江实验室医疗健康大数据研究中心；Xi Yao、Ping Zhang、Jianghua Chen 来自浙江大学医学院附属第一医院肾脏病中心。团队组合覆盖知识工程、电子病历与肾脏临床。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;医疗因果知识图谱常以文本抽取规模自证价值，却少有研究问两件更实际的事：图能否覆盖真实病历中的诊断依据，图中噪声会否误导临床决策支持。作者以糖尿病肾病与非糖尿病肾病的鉴别诊断为场景，评价知识完整性、预测用途和剪枝后的准确性。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;知识源包括 SemMedDB、UpToDate 和《Churchill's Pocketbook of Differential Diagnosis》。作者将 causes、produces、predisposes 三类关系统一编码，保留 PMID 或来源信息，并把电子病历中的结构化、半结构化与文本证据映射为患者级知识图。两种剪枝规则分别计算文献共现比和因果关系比，用阈值删除 SemMedDB 中可能的噪声边。&lt;/p&gt;
+&lt;p&gt;评价对象是 2010年10月至2020年10月某中国医院的 &lt;strong&gt;1,427名住院患者、3,045次住院记录&lt;/strong&gt;。训练、验证、测试按患者分为856、286、285人。作者用 R-GCN、MHGRN、MedPath 比较不同知识源、因果关系与关联关系、剪枝阈值的影响，并以150名患者的诊断文本和专家抽样复核评价覆盖与准确性。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;最终图包含 &lt;strong&gt;153,289个概念、1,719,968条因果三元组&lt;/strong&gt;，其中99.1%的三元组来自 SemMedDB。结构化数据映射率接近100%，半结构化数据为93.5%。在150名患者的1,783条诊断证据中，图覆盖疾病—证据因果路径的93.6%，摘要报告的总体覆盖率为93.9%。&lt;/p&gt;
+&lt;p&gt;三种知识源合并后，三个模型的 AUC 与 F1 均优于单用 SemMedDB（P&amp;lt;0.01）。只保留三类因果关系与使用全部九类关系时性能无显著差异，去掉因果关系则显著变差。剪枝后三个模型的 AUC、F1 均改善（P&amp;lt;0.01），专家抽检的平均三元组准确率提高 &lt;strong&gt;5.5个百分点&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;这是一套有真实病历、模型消融和专家复核的工程评价，证据强于只展示图规模的知识图谱论文。主要结局仍是诊断预测与文本覆盖；模型能用某条边、专家认为某条陈述合理，都不能证明在干预该原因时结局会改变。99.1%的边继承 SemMedDB 的抽取误差与发表语料偏倚。&lt;/p&gt;
+&lt;p&gt;病历来自单中心，患者多为60岁以上男性，外部可迁移性有限。剪枝阈值由同一应用场景的性能选择，存在面向任务过拟合的可能。论文也没有按研究设计、目标人群或偏倚风险给边分级。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>使用大语言模型从危机报告中提取和三角测量因果证据：基于ReliefWeb的研究</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/zhang-2026-reliefweb-triangulation/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/zhang-2026-reliefweb-triangulation/</id>
+<updated>2026-07-20T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;论文把查询约束、证据片段和情境分层接入危机报告抽取；抽取准确度较高，LoE 实质上衡量跨情境的方向集中度，尚不能代表跨设计因果证据强度。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;Yuanjun Zhang 的论文署名单位为 University of Oulu 和 LUT University，通讯作者 Mourad Oussalah 来自 University of Oulu。该工作由欧盟 Horizon 2020 与 CHANSE 的 Digital Emergency Communication（DIGeMERGE）项目支持，团队此前也发表过灾害严重程度评估与可解释多模态推理研究。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;ReliefWeb 报告篇幅长、主题杂。关键词检索偏向高召回，会捞出只顺带提到现金援助的文件；无约束的 LLM 随后可能把外围叙述也抽成干预—结局关系。作者要把这些报告变成带【干预、结局、方向、强度、原文片段】的结构化记录，并汇总不同灾害和来源中的方向一致性。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;数据来自 2000—2024 年 ReliefWeb 中含“cash assistance”的英文全文。作者保留洪水、干旱、流行病、地震四类灾害，以及学术机构、政府、媒体、NGO、红十字会／红新月会五类来源，得到 &lt;strong&gt;8,029 份报告&lt;/strong&gt;。随机抽取 100 份报告，由领域专家标注 220 条关系作为测试集。&lt;/p&gt;
+&lt;p&gt;抽取分两步。第一步的【计算对象】是查询指定干预类别下的干预—结局候选，【触发条件】是报告中存在对应提及及支持片段，【实际影响】是压住关键词检索带来的过度抽取。第二步只针对候选关系，根据片段和全文判定增加、减少或无明确变化，再标为 weak、moderate 或 strong。干预与结局采用 BERTScore≥0.8 的语义匹配；强度仅在方向正确时评分，相邻等级误判记 0.5 分。&lt;/p&gt;
+&lt;p&gt;三角测量前，作者先把“food security”和“food insecurity”一类正反表述统一到改善方向。每条记录按灾害×来源进入单元格，weak、moderate、strong 分别赋权 0、1、2；单元内对正向、无变化和负向计数，加 0.1 的 Laplace 平滑。最后等权平均非空单元，并把优势方向概率从 1/3—1 线性缩放为 &lt;strong&gt;LoE 0—1&lt;/strong&gt;。时间轨迹使用截至每一年的累积记录重复计算。&lt;/p&gt;
+&lt;p&gt;作者还用最佳闭源管线生成训练标签，分别训练 Llama-3.1-8B 的两个 LoRA adapter。100 份专家测试报告从蒸馏数据中排除。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;Qwen-Plus 的两步【查询约束＋片段落地】方案达到加权 F1 &lt;strong&gt;90.73%&lt;/strong&gt;；未微调的 Llama-3.1-8B 为 75.12%，LoRA 微调后为 &lt;strong&gt;94.15%&lt;/strong&gt;。加权分数由干预、结局、方向、强度四项按 0.30、0.30、0.20、0.20 合成。&lt;/p&gt;
+&lt;p&gt;最佳闭源管线从 8,029 份报告中抽出 &lt;strong&gt;19,568 条记录&lt;/strong&gt;。食物相关结局的分析保留 19 个非空灾害×来源单元，正向概率 PP=0.91，LoE=0.865；2017 年累积结果达到 PP=0.953、LoE=0.929，2018—2024 年略有回落。频次至少 3 次的 941 个结局词覆盖 13,554 条记录，占 69.27%，作者只对这一部分做极性标注。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;抽取部分有专家测试集、消融和明确的评分规则，查询约束带来的提升在三个 API 模型上方向一致。测试集只有 100 份报告，论文没有报告标注者一致性；BERTScore 阈值会把部分语义近似关系算作命中。ACL 责任清单还说明固定配置仅运行一次，没有均值、标准差或误差条。LoRA 的标签来自最佳闭源模型，学生会继承教师的系统偏差。&lt;/p&gt;
+&lt;p&gt;LoE 的【计算对象】是三个方向类别中最大的单元格平均概率，【触发条件】是某一方向占优，【实际影响】是把方向集中度映射到 0—1。这个指标没有检查研究问题与目标估计量是否对齐，也没有判断灾害或来源之间的偏倚是否独立。weak 被赋权 0，弱证据不会进入方向计数；单元等权能限制大来源支配结果，却无法消除共同的报告偏倚。&lt;/p&gt;
+&lt;p&gt;报告中的“cash assistance improved food security”属于文本中的因果陈述，未必来自有对照组的效应估计。英文可访问全文、单一检索词、四类灾害和五类来源又限制了外推。作者已把输出定位为需要人工复核的决策支持，并明确 strength 表示报告证据措辞，未表示效应量或人群影响。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>加强航空系统安全分析：大语言模型驱动的因果知识图谱框架用于主动风险识别</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/cheng-2027-aviation-causal-kg/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/cheng-2027-aviation-causal-kg/</id>
+<updated>2026-07-19T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;从 6.55 万份航空事件叙述中抽取因果三元组、归一化关系，再用路径剪枝做图问答；工程链条完整，图边仍是报告者的因果陈述。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;Jifei Cheng、Donghui Shi 和 Yakun Sun 来自安徽建筑大学电子与信息工程学院计算机工程系，Jozef Zurada 来自 University of Louisville 商学院。论文于 2026 年 7 月 13 日在线发表，编入 Reliability Engineering &amp;amp; System Safety 2027 年第 277 卷。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;航空安全报告保存了设备、人因和环境之间的因果叙述，文本量大、表达不统一。LLM 可以抽取三元组，却会把“led to”“caused”“resulted in”生成成大量近义关系，造成图边碎片化；普通 KG 问答直接取三跳邻域，噪声又会淹没有用路径。作者试图把抽取、&lt;strong&gt;关系归一化&lt;/strong&gt;和面向风险分析的问答连成一条自动管线。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;数据是 NASA ASRS 中 1988 年 1 月至 2012 年 7 月的 65,535 份自愿报告&lt;/strong&gt;。第一阶段的【计算对象】是叙述中的主语-关系-宾语，【触发条件】是 Gemma3-12B 在两个示例提示下识别到明确因果表达，【结论影响】是生成开放关系模式的三元组。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第二阶段处理 2,939 种原始谓词：MiniLM 计算余弦相似度&lt;/strong&gt;；相似度达到阈值 0.5 后，再由 LLM 判断语义、方向和粒度能否合并，反复迭代到没有新合并。【结论影响】是把关系压缩到 185 种，同时保留 394,770 条三元组和 562,020 个实体。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;问答阶段把问题嵌入后选择种子节点，抽取三跳子图&lt;/strong&gt;。候选路径与问题的相关分数达到阈值时才保留，再把路径序列化交给 GPT-4o 按 CoT 提示生成答案。因此【计算对象】是问题相关的图路径，【触发条件】是 LLM 相关性评分过线，【结论影响】是减少邻域噪声，但低分的次要路径也会被删掉。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;1,000 份报告的抽取评测中，GPT-4o 两样例 F1 为 0.8302，Gemma3-12B 为 0.7986。&lt;strong&gt;关系归一化&lt;/strong&gt;在阈值 0.5 时，MiniLM 单独使用的 F1 为 0.749，加入 LLM 复核后升至 0.908；2,939 种关系经 7 轮缩至 185 种，减少 93.71%。&lt;/p&gt;
+&lt;p&gt;100 个问答对上，完整模型的答案相关性 0.9682、语义相似度 0.9310、上下文精确率 0.6583、召回率 0.5923；Vanilla KG-QA 的后两项只有 0.0844 和 0.1222。&lt;strong&gt;人工复核&lt;/strong&gt;的四项 Cohen's kappa 为 0.7093-0.7357。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;工程评测覆盖抽取、归一化和问答，消融也控制了同一张图与同一答案模型。&lt;strong&gt;关系归一化&lt;/strong&gt;的【有效判据】是 F1 与人工一致性上升，实际影响是减少同义边，不等于提升因果识别。参考三元组由 GPT-3.5 加人工标注形成，未匹配结果还由 LLM 和 NLI 重新判定；&lt;/p&gt;
+&lt;p&gt;归一化标签生成与评分都使用 LLM，存在循环评价，作者已承认。ASRS 是自愿、回顾性叙述，缺少未报告事件和飞行时数分母；边频次混合了真实机制、报告倾向与抽取误差。图没有&lt;strong&gt;目标估计量&lt;/strong&gt;、时间顺序、干预定义和识别假设，路径与中心性不能支持作者提出的 what-if 或干预效应解释。数据止于 2012 年，也没有外部队列或实际安全决策验证。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>因果推断中多重偏倚的系统识别与分析路线图</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/wijesuriya-2026-multiple-bias-roadmap/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/wijesuriya-2026-multiple-bias-roadmap/</id>
+<updated>2026-07-19T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;先用理想试验和 DAG 把隐含假设逐项翻出来，再把选择、混杂和测量偏倚放进同一个定量模型；逐个做敏感性分析可能给出错的总判断。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;Rushani Wijesuriya 和 Margarita Moreno-Betancur 所在的墨尔本 Murdoch Children's Research Institute 临床流行病学与生物统计学单元牵头，合作者来自 University of Melbourne、University of Bristol MRC Integrative Epidemiology Unit 和 University of Queensland。文章于 2026 年 7 月 16 日在 American Journal of Epidemiology 在线发表，目前是 accepted manuscript。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;观察性因果分析同时依赖可交换性、一致性、阳性和测量等假设&lt;/strong&gt;。常见做法先挑一个偏倚来算，其余假设仍藏在主分析里；几个偏倚分别算一遍，每次也默认其他偏倚不存在。偏倚可能相关、方向也可能相反，单项结果无法回答叠加后的效应量。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;路线图有三步&lt;/strong&gt;。第一步的【计算对象】是理想试验的入选人群、干预、分配、随访和结局测量；观察性数据无法完整仿真某一项时，【触发条件】是相应识别假设必须成立，【结论影响】是把笼统的“无偏”拆成可核查条件，并尽量画进主分析 DAG。第二步加入有根据的替代假设。&lt;/p&gt;
+&lt;p&gt;HealthNuts 案例研究 5,279 名婴儿；替代图纳入英语能力和同意造成的可推广性偏倚、结局失访形成的对撞&lt;strong&gt;选择偏倚&lt;/strong&gt;、未测量妊娠高血压造成的混杂，以及父母报告母乳喂养和哮喘带来的测量误差。&lt;/p&gt;
+&lt;p&gt;第三步的【计算对象】是含真实暴露、结局、&lt;strong&gt;未测混杂&lt;/strong&gt;和选择过程的理想联合分布。替代图提示变量依赖时，【触发条件】是不能再按单个偏倚独立计算；作者据图设 logistic 偏倚模型，抽样填补未观测变量，计算选择权重，再做加权结局回归。【结论影响】是每次 Monte Carlo 抽样产生一个联合调整估计，并用参数分布和 bootstrap 计算区间。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;案例分析用了 1,000 次概率抽样和 1,000 次 bootstrap&lt;/strong&gt;。联合调整后的母乳喂养风险差约为 -0.10，主分析约为 -0.05；各区间大量重叠，作者据此只说联合调整给出稍强的保护关联。证明性模拟更能说明问题：1,000 个样本量 2,000 的数据集，真实风险比为 0.51。&lt;/p&gt;
+&lt;p&gt;联合分析的平均 log 风险比为 -0.70，相对偏倚 5.3%，95% 区间覆盖率 0.92；主分析平均值 -0.32，相对偏倚 52.8%。所有逐一偏倚分析的相对偏倚都超过 20%，其中只校正结局&lt;strong&gt;测量误差&lt;/strong&gt;的估计甚至翻到 2.60。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;文章把【假设清单、替代 DAG、联合定量分析】完整跑了一遍，并公开代码&lt;/strong&gt;。判据清楚：估计量与已知真实 log 风险比相比，相对偏倚低于 10% 时近似无偏，超过 20% 会实质偏离目标。结果依赖替代 DAG、偏倚模型和参数分布设对；参数不能由主数据识别，部分以边际文献值近似条件参数，部分来自专家判断。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;模拟仅覆盖一个简化结构和二元变量&lt;/strong&gt;。DAG 也画不全所有测量与可推广性问题。案例中各结果差别很小，模拟优势尚需更多误设情形和真实数据复现。当前 accepted manuscript 还可能修订。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>多组学揭示心代谢疾病与癌症的疾病轨迹</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/jiang-2026-cmd-cancer-multiomics/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/jiang-2026-cmd-cancer-multiomics/</id>
+<updated>2026-07-09T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;在 43 万英国人里追踪心血管代谢病与癌症怎么一步步叠加到共病、再到死亡：得了共病的人少活约五年，谁先谁后还会改变死亡风险，而蛋白组学比基因组学更能提前看出轨迹。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;上海交通大学医学院公共卫生学院流行病与生物统计学系的 Victor W. Zhong 课题组完成了这项研究，共同第一作者为 Xuanwei Jiang 和 Guangrui Yang，共同通讯作者还包括 Xihao Du 和 Chunlai Zeng。&lt;/p&gt;
+&lt;p&gt;Victor W. Zhong 此前在美国西北大学从事心血管代谢病与营养流行病学研究，近年围绕 UK Biobank 开展多组学与多病共存（multimorbidity）研究。本文延续了这一方向，发表于 Nature Communications。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;多病共存&lt;/strong&gt;是老龄化下的大问题：45–65 岁里约三成人身上有两种以上慢病，80 岁以上超过八成。但现有研究多是"一个病一个病地管"，缺一张把多种慢病随时间怎么相互演变的图。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;心血管代谢病&lt;/strong&gt;（CMD，含心血管病和 2 型糖尿病）和癌症是两大死因，早知道二者常共存、共享衰老和肥胖等危险因素、也共享炎症和缺氧等通路，可到底是谁先谁后、共病比单病死亡风险高多少、时序不同结局是否不同，都没说清。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;另一个缺口在预测：单病的组学预测已能提前 10–15 年,但对高共病风险的老年人，只预测单病不够&lt;/strong&gt;，多组学能不能刻画"疾病之间的转移"是个未解问题。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;把每个人的病程建成一个&lt;strong&gt;多状态模型&lt;/strong&gt;：五个状态——健康、单纯 CMD、单纯癌症、CMD-癌症共病、死亡，之间共九条转移路径（如健康→CMD、CMD→癌症、CMD→癌症→死亡、癌症→CMD→死亡等）。在 429,555 名 UK Biobank 参与者、中位随访 14.5 年里估各条转移的概率、平均生存时间和死亡风险，并特意区分"先 CMD 后癌"与"先癌后 CMD"两种时序。为让不同状态间可比，用倾向评分匹配平衡基线。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第二部分做多组学：分别在基因组（37.5 万）、代谢组（23.4 万）、蛋白组（4.5 万）数据里&lt;/strong&gt;，用 LASSO 在发现集建"组学评分"（GenScore/MetScore/ProtScore），在复制集验证，看在基础模型（人口学等）之上还能给每条转移的预测加多少 C-statistic。还按 CMD 亚型（卒中、心衰、冠心病、T2D）、癌症生存率高低、良恶性、CMD 轻重做了亚组。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;随访中，105,903 人进展到单病，15,088 人进展到 CMD-癌症共病&lt;/strong&gt;。共病者死亡概率比健康人高 28–33%、平均少活 5.0–5.3 年，比单病者高 11–23%、少活 2.4–3.6 年；确诊任一首病后约第 5 年，进展到共病的概率陡升。平均生存时间：健康 14.8 年、单纯 CMD 13.2、单纯癌症 12.3、共病约 9.5–9.9。&lt;/p&gt;
+&lt;p&gt;时序确实要紧但方向依癌种翻转：总体上共病里先得 CMD 比先得癌的死亡风险高 1–2%、多损 0.3 年；但在高生存率癌里"先 CMD"反而低 7%，在低生存率癌里高 9%，恶性肿瘤亚组里先 CMD 高 3%。癌种差异极大——胰腺癌 72% 直接死亡，肝癌患者 25% further 发展出 CMD。多组学中&lt;strong&gt;蛋白组学&lt;/strong&gt;评分预测最好，九条转移上 ΔC-statistic 0.03–0.14，明显盖过基因组和代谢组评分（后两者仅轻到中度）。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;强项是样本和设计：429,555 人、中位随访 14.5 年，多状态框架能把"病程演变＋时序＋死亡"放进一个连贯的结构里，倾向评分匹配也让状态间更可比，蛋白组学的增益在复制集里验证过。但几处要留神。&lt;strong&gt;多状态模型&lt;/strong&gt;给的是转移概率和关联，不是干预效应——"先 CMD 更致命"是观察到的时序关联，背后仍可能有共享病因、检出时点、竞争风险在推。&lt;/p&gt;
+&lt;p&gt;倾向评分只匹配了测到的基线，衰老、肥胖、炎症这些同时驱动两类病的共因很难配平，&lt;strong&gt;未测混杂&lt;/strong&gt;照在。蛋白组学那 4.5 万人是全队列里做了 Olink 的子集，代表性和外推要打问号，作者自己也强调需外部验证。ΔC-statistic 0.03–0.14 的增量真实但不大，蛋白组学的"胜出"更多是相对基因组/代谢组，绝对判别力离临床可用还有距离。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;UK Biobank 的健康志愿者偏倚和以白人为主也限制外推&lt;/strong&gt;。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>超重或肥胖成人用药的比较效果：系统综述与网络荟萃分析</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/nong-2026-obesity-drugs-nma/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/nong-2026-obesity-drugs-nma/</id>
+<updated>2026-07-09T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;把 262 个减肥药试验放进一张网络里比：替尔泊肽和 CagriSema 一年减重最多（约 15%），但减得越狠、副作用和停药也越多，多数药并不改善生活质量，只有皮下司美格鲁肽拿得出心血管和死亡获益。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;华西医院（四川大学）内分泌与中国循证医学中心的 Sheyu Li 牵头，共同一作 Kailei Nong 等；&lt;/p&gt;
+&lt;p&gt;方法学阵容很硬——GRADE 创始人之一、McMaster 的 Gordon Guyatt，MAGIC 循证生态基金会的 Per Olav Vandvik 与 Thomas Agoritsas，糖尿病流行病学的 Kamlesh Khunti，肥胖领域的 Carel Le Roux。&lt;/p&gt;
+&lt;p&gt;这是 BMJ Rapid Recommendations（BMJ 与 MAGIC 合作的快速推荐）的一环，结果要喂给一个全球指南面板，沿用他们此前糖尿病药"活网络 meta 分析"的模式。发表于 BMJ。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;减肥药一下子冒出一大批——GLP-1、GIP/GLP-1 双激动剂、三激动剂，还有老药如芬特明-托吡酯、纳曲酮-安非他酮。医生、支付方、患者要在十几种药之间选，但此前的&lt;strong&gt;网络 meta 分析&lt;/strong&gt;大多只盯已获批药、只看减重一个结局，没把新药、把获益与危害的整体权衡、把证据确定性透明地摆到一起。&lt;/p&gt;
+&lt;p&gt;缺的是一张覆盖全部可及减肥药、横跨减重之外多个患者重要结局（心血管、死亡、生活质量、身体成分、不良事件）、并逐条标注 &lt;strong&gt;GRADE&lt;/strong&gt; 确定性的全景图，好支撑真正的知情决策。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;系统综述＋&lt;strong&gt;网络 meta 分析&lt;/strong&gt;，按 PRISMA-NMA 报告、PROSPERO 注册，作为 BMJ Rapid Recs 做。&lt;/p&gt;
+&lt;p&gt;检索 Medline、Embase、Cochrane 到 2025 年 11 月，纳入疗程≥12 周、把某种&lt;strong&gt;减肥药&lt;/strong&gt;与生活方式干预、安慰剂或另一种药相比的 RCT，人群是成人超重或肥胖（可有或无心血管/代谢并发症）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;网络 meta 分析&lt;/strong&gt;的好处是能同时比较多种干预，包括从没在同一个试验里头对头比过的两种药（靠间接比较），前提是网络的传递性/一致性站得住。&lt;/p&gt;
+&lt;p&gt;合成用频率派随机效应模型出主结果，另配贝叶斯剂量反应模型看剂量-效应，异质性和不一致性都查。偏倚用 Cochrane RoB 2，证据确定性对 24 个结局逐一用 &lt;strong&gt;GRADE&lt;/strong&gt; 定级。还做了按剂量、疗程、关键患者特征的亚组，以及敏感性分析。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;整套流程最终为指南面板提供一份能够从证据推导分层推荐的底稿，药物排名只是其中一个中间产物&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;262 个试验、99,791 人、19 种药，随访 12–172 周&lt;/strong&gt;。相对单纯生活方式，一年减重（中到高确定性）：替尔泊肽 -14.9%（95% CI -16.0% 到 -13.9%）、CagriSema -14.8%、口服司美格鲁肽 -10.9%、orforglipron -9.9%、皮下司美格鲁肽 -9.8%、芬特明-托吡酯 -8.1%；在研的 retatrutide、mazdutide 等可能到 13–14.6%，但确定性很低。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;代价是对称的：因不良事件停药以 orforglipron、纳曲酮-安非他酮、利拉鲁肽、芬特明-托吡酯、CagriSema、口服司美最高（RR 1.9–4.2）&lt;/strong&gt;；胃肠事件、疲劳也随之上升，纳曲酮-安非他酮的疲劳 RR 高达 8.9（每千人一年多 331 例）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;身体成分上替尔泊肽减脂最多（25.7%），但减去的瘦体重也最多（8.3%）&lt;/strong&gt;。硬结局只有皮下司美格鲁肽关联全因死亡下降（RR 0.81，0.72–0.93）和心梗下降（0.72），且主要由高危人群的心血管结局试验贡献；皮下司美与替尔泊肽降心衰风险。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;没有药能可信地降低肾衰或把生活质量改善到最小重要差值以上（43 个试验、45,663 人，改善均 &amp;lt;5 分，MID 为 10）&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;这是这类证据里做得最规范的一档：RCT 网络、RoB2 逐项、24 个结局各标 GRADE、剂量反应另建模，且明说结论要经指南面板从证据走到推荐，透明度拉满。真正要盯的是&lt;strong&gt;网络 meta 分析&lt;/strong&gt;的命门——传递性：能把没头对头比过的药排到一起，靠的是"各试验的人群、对照、结局定义足够可比"这个假设；一旦新药试验的人群或安慰剂响应和老药试验系统不同，间接比较就会偏，而这在减肥药里不是杞人忧天（早年药与 GLP-1 时代的试验人群差异不小）。&lt;/p&gt;
+&lt;p&gt;第二是结局的确定性参差：减重是中高确定性，硬结局和生活质量常常低确定性、且随访普遍偏短，"没有获益"更多是"没测出来"。第三，死亡/心梗的获益几乎全靠少数几个高危人群 CVOT，外推到一般减重人群要打折。作者用 &lt;strong&gt;GRADE&lt;/strong&gt; 把这些确定性差异逐一标了出来，这正是它比一个光秃秃的排名可信的地方。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>GLP-1 受体激动剂及双重激动剂与癌症风险：系统综述与荟萃分析</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/ko-2026-glp1-cancer-meta/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/ko-2026-glp1-cancer-meta/</id>
+<updated>2026-07-09T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;把 48 个安慰剂对照 RCT 合起来看，GLP-1RA 对肥胖相关癌症大概既不升也不降——甲状腺、胰腺、乳腺、肾癌的风险比全都跨过 1，观察性研究里那些保护信号在随机证据里没站住。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;多中心的医师主导团队，通讯与资深作者是哈佛医学院 Mount Auburn 医院内科的 Cho-Han Chiang；共同一作 Albert Ko、Yu-Cheng Chang、Furkan Bahar。&lt;/p&gt;
+&lt;p&gt;合著散在 Mount Auburn／哈佛、University at Buffalo、Albert Einstein／Montefiore、佛蒙特大学，以及台大医院、台北慈济等，不少是台裔临床研究者。这类由住院医／研究员牵头、跨机构协作产出的系统综述与 meta 分析，是他们常见的工作形态。研究在 PROSPERO 注册，发表于 Annals of Internal Medicine。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;GLP-1RA&lt;/strong&gt; 和 GIP／GLP-1 双激动剂用量暴涨，安全性里最悬而未决的一条是癌症。担忧来自两头：一头是啮齿类里 GLP-1RA 引起 C 细胞增生和甲状腺髓样癌，加上保险理赔数据报告用药首年甲状腺癌升高；&lt;/p&gt;
+&lt;p&gt;另一头是多项人群研究说 &lt;strong&gt;GLP-1RA&lt;/strong&gt; 使用者多种肥胖相关癌反而更低，被解读成减重的抗癌红利。两个方向都主要来自观察性数据，彼此矛盾，且都可能被研究设计、暴露时长、基线癌症风险和混杂（肥胖、吸烟）搅浑。缺的是一份把随机证据单独拎出来、按癌种给出确定性分级的合成。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;系统综述＋meta 分析，PRISMA 报告、PROSPERO 注册&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;检索 PubMed、Embase、Web of Science、Scopus、Cochrane 到 2025 年 8 月，只纳入安慰剂对照的 RCT，药物限于已获批的司美格鲁肽、度拉糖肽、艾塞那肽、利拉鲁肽、利司那肽、替尔泊肽，要求至少报告一个癌症结局（甲状腺、胰腺、结直肠、胃、食管、肝、胆囊、乳腺、卵巢、子宫内膜、肾癌，以及多发性骨髓瘤、脑膜瘤）&lt;/strong&gt;。两两独立筛选与提取，分歧由第三人裁定。&lt;/p&gt;
+&lt;p&gt;偏倚用 Cochrane RoB 2 逐项评，证据确定性用 &lt;strong&gt;GRADE&lt;/strong&gt; 分四级，发表偏倚看漏斗图＋Egger 检验。合并用随机效应（Hartung–Knapp–Sidik–Jonkman），效应量取比值比 OR（癌症罕见时近似相对风险），异质性看 I²。因为不少试验某组零事件，用了治疗组连续性校正来减小零事件偏倚。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;预设了随访时长、治疗时长、人群（T2DM vs 肥胖）、有无减重效应、剂量、作用时长、药物类别&lt;/strong&gt;，以及甲状腺髓样／乳头状分层等一系列亚组与敏感性分析（去掉中高偏倚试验、只看司美／替尔泊肽、随访&amp;gt;156 周）。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;48 个试验、94,245 人（用药 51,521、安慰剂 42,724），中位随访仅 70 周&lt;/strong&gt;，43 个被评为低偏倚。主结局全都指向"little or no effect"：甲状腺癌 0.14% vs 0.07%，OR 1.37（95% CI 0.82–2.31）；&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;胰腺癌 OR 0.84（0.53–1.35）&lt;/strong&gt;；乳腺癌 0.95（0.60–1.49）；肾癌 1.12（0.78–1.60）——这四个是中等确定性。结直肠、食管、肝、胆囊、卵巢、子宫内膜、多发性骨髓瘤、脑膜瘤是低确定性的无影响，胃癌"非常不确定"。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;甲状腺按组织学分层，髓样与乳头状之间无组间差异（P=0.66），异质性都很低&lt;/strong&gt;。绝对风险差换算成每万人治疗一年多则几例、少则几例，临床上接近于零。作者特别点出一个反向苗头：结直肠癌数值上略高，随访超过 156 周的试验里有升高趋势。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;强在设计：只纳随机对照，把观察性研究的混杂和健康用户偏倚挡在门外，加上 RoB2＋&lt;strong&gt;GRADE&lt;/strong&gt; 逐癌种定级、亚组敏感性一致，可信度是这批文献里最高的一档。软在两点，作者自己也讲透了。一是这些试验根本不是为癌症设计的，癌症只是探索性安全终点，各试验的裁定口径不一，事件很少，随访普遍才 1–3 年——远短于实体瘤的潜伏期，所以"无影响"更准确的读法是"在这么短的随访里看不出信号"，无论是害还是益都测不灵敏。&lt;/p&gt;
+&lt;p&gt;二是拿不到个体数据，没法核实随机化是否真把家族史、吸烟、既往肿瘤这些基线癌症风险配平。它诚实地把话说圆：本研究支持"没有增加的癌症风险"，但没有被设计、也没有效力去证实"保护作用"。所以它证伪了观察性的乐观，却证不了 &lt;strong&gt;GLP-1RA&lt;/strong&gt; 防癌。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>肥胖成人使用 GLP-1 受体激动剂与癌症风险</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/dai-2025-glp1-cancer/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/dai-2025-glp1-cancer/</id>
+<updated>2026-07-09T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;在符合减重药适应证的肥胖／超重成人里，用 GLP-1RA 的人总体癌症发病比不用的人低约六分之一（HR 0.83）；子宫内膜、卵巢、脑膜瘤降得最明显，肾癌却露出升高的苗头。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;牵头与通讯作者是 Jiang Bian（Indiana University School of Medicine、Regenstrief Institute；此前在 University of Florida），研究健康信息学与真实世界数据。共同第一作者为 Hao Dai 和 Yongqiu Li。&lt;/p&gt;
+&lt;p&gt;该团队长期建设并使用 OneFlorida+ Clinical Research Network，将 EHR 药物流行病学与 AI／信息学方法结合。合著者包括从事药物流行病学研究的 Yi Guo、Jingchuan Guo，肿瘤内科研究者 Thomas J. George，以及代谢／生化研究者 Ramon C. Sun。&lt;/p&gt;
+&lt;p&gt;研究摘要于 2025 年 6 月在 ASCO Annual Meeting 报告，正文发表于 JAMA Oncology。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;GLP-1RA（司美格鲁肽、利拉鲁肽、替尔泊肽等）原本用于降糖，2014 年起陆续获批用于长期体重管理。随着处方量快速增加，其长期癌症风险仍缺少明确结论。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;既往研究大多局限于 2 型糖尿病人群&lt;/strong&gt;，并以其他降糖药作为对照，难以回答一个更贴近减重治疗场景的问题：在符合减重药适应证的肥胖或超重人群中，相对于不使用 GLP-1RA，癌症风险如何变化？多数研究也没有分析治疗效应异质性。&lt;/p&gt;
+&lt;p&gt;研究缺口由此落在两个方面：需要覆盖伴或不伴糖尿病的减重药适用人群，也需要一个&lt;strong&gt;贴近真实处方场景、能够控制混杂和永生时间偏倚的设计&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;研究采用&lt;strong&gt;目标试验仿真&lt;/strong&gt;：先明确理想随机试验的入排标准、治疗策略、结局和随访起点，再用观察性数据逼近该试验，以降低混杂和永生时间偏倚。数据来自 OneFlorida+，覆盖 14 家医疗机构约 2,000 万人的纵向 EHR，时间范围为 2014—2024 年。&lt;/p&gt;
+&lt;p&gt;研究对象为符合减重药适应证的成人：BMI≥30，或 BMI 为 27—29.9 且至少有一种体重相关合并症。研究排除未满 18 岁、既往患癌及入组时妊娠者。&lt;/p&gt;
+&lt;p&gt;暴露组为首次开具 GLP-1RA 的新使用者，通过 RxNorm 识别药物；对照组为同期未开始使用 GLP-1RA 者。研究用 ±1 周窗口对齐索引日期，使两组治疗分配的时间起点具有可比性。&lt;/p&gt;
+&lt;p&gt;研究采用&lt;strong&gt;1∶1 时间依赖倾向评分匹配&lt;/strong&gt;平衡人口学特征、三年内合并症、一年内用药及实验室指标，并以 &lt;strong&gt;SMD&amp;lt;0.1&lt;/strong&gt; 作为平衡判据。计算对象是匹配后协变量的标准化均差；当任一协变量 SMD≥0.1 时，提示残余不平衡，并削弱后续风险比较的可解释性。&lt;/p&gt;
+&lt;p&gt;结局为&lt;strong&gt;14 种癌症&lt;/strong&gt;的发病，包括 13 种肥胖相关癌症和肺癌。研究以 ICD-9／10 识别结局，使用 Cox 模型估计 HR，并以 Fine-Gray 亚分布模型处理死亡竞争风险。异质性分析采用&lt;strong&gt;双重稳健 meta-learner 与三重交叉拟合&lt;/strong&gt;估计个体化治疗效应，再用 SHAP 和单棵决策树识别潜在获益或风险较高的人群。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;匹配后共纳入&lt;strong&gt;86,632 人&lt;/strong&gt;，其中 GLP-1RA 组 43,317 人，对照组 43,315 人。研究对象平均 52 岁，68% 为女性，约一半患有 2 型糖尿病，近一半达到 BMI≥30。&lt;/p&gt;
+&lt;p&gt;14 种癌症合计发病率为 13.6 对 16.4／千人年，&lt;strong&gt;总体 HR 为 0.83（95% CI 0.76—0.91，P=.002）&lt;/strong&gt;。这一结果对应 GLP-1RA 使用者总体癌症发病风险较低，但仍属于观察性关联。&lt;/p&gt;
+&lt;p&gt;分癌种结果显示，子宫内膜癌（HR 0.75，95% CI 0.57—0.99）、卵巢癌（HR 0.53，95% CI 0.29—0.96）和脑膜瘤（HR 0.69，95% CI 0.48—0.97）的风险较低。子宫内膜癌与卵巢癌合并后的妇科癌症终点结果更稳定，HR 为 0.68（95% CI 0.52—0.87）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;肾癌呈风险升高信号，HR 为 1.38（95% CI 0.99—1.93）&lt;/strong&gt;，在 65 岁以下或仅超重的人群中更明显。由于置信区间跨越无效值，该结果仍需独立验证。肾癌个体化治疗效应的高位 SHAP 特征包括心力衰竭、二甲双胍、胰岛素、质子泵抑制剂和物质使用；Fine-Gray 竞争风险分析与主分析方向一致。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;目标试验仿真、新使用者设计和倾向评分匹配共同降低了混杂与永生时间偏倚，Fine-Gray 模型也检验了死亡竞争风险。这些设计增强了总体关联的可信度，但无法消除观察性研究的全部偏倚。&lt;/p&gt;
+&lt;p&gt;第一项限制是&lt;strong&gt;按适应证混杂和未测混杂&lt;/strong&gt;。GLP-1RA 的处方与健康行为、就医强度及支付能力相关，而这些因素在 EHR 中难以完整测量。BMI 和血糖也缺少充分的纵向建模，药物本身、减重及血糖改善的作用因而难以区分。减重和降糖还可能位于药物影响癌症的中介通路上，若作为普通协变量调整，可能造成过度调整。&lt;/p&gt;
+&lt;p&gt;第二项限制是&lt;strong&gt;多重比较&lt;/strong&gt;。14 个癌种中三个显著结果的 P 值约为 .04—.05，置信区间上界为 0.96—0.99，且论文未报告多重性校正。妇科癌症复合终点相对稳定，单癌种边界显著结果应谨慎解释。&lt;/p&gt;
+&lt;p&gt;罕见癌症事件数较少、置信区间较宽，随访时间相对于肿瘤潜伏期也偏短。因此，&lt;strong&gt;现有结果更适合作为进一步验证的信号，暂不支持确定的因果结论&lt;/strong&gt;。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>糖尿病与癌症：共识报告</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/giovannucci-2010-diabetes-cancer/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/giovannucci-2010-diabetes-cancer/</id>
+<updated>2026-07-09T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;糖尿病与多种癌症确有关联，但机制与降糖药的因果角色仍未定——这份 ADA/ACS 共识划定了战场，也诚实圈出了所有未知。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;写作组由哈佛公卫的营养/流行病学家 Edward Giovannucci 与 UMass 的糖尿病专家 David Harlan 共同牵头，成员含 McGill 的 Michael Pollak（长期研究胰岛素/IGF 与肿瘤）、美国癌症协会的 Susan Gapstur、Kaiser Permanente 研究部的 Laurel Habel 等。文章由美国糖尿病协会（ADA）与美国癌症协会（ACS）在 2009 年 12 月联合召开共识会后，由写作组独立成文。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;糖尿病和癌症均为高发且负担持续增长的疾病，两者在同一个体中共同出现的频率超过随机预期&lt;/strong&gt;。2009 年，多项关于甘精胰岛素（glargine）可能升高癌症风险的分析引发争议，ADA 和 ACS 随后组织专家梳理分散证据。文章回答四个问题：糖尿病与癌症发病或预后是否存在实质关联，两病共享哪些危险因素，可能的生物学联系是什么，以及降糖治疗是否改变癌症风险或预后。作者试图建立一个同时容纳关联、机制、混杂和药物信号的判断框架。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;本文属于专家共识和结构化文献综合，没有新增实证数据&lt;/strong&gt;。其方法学价值集中在分析框架。面对每一项关联，作者区分三类解释：糖尿病直接影响癌症发生，如高血糖本身；糖尿病是胰岛素抵抗或高胰岛素血症等生物过程的标记；两类疾病受到肥胖、久坐和饮食等共同危险因素影响，后一情形对应混杂。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;机制上他们把重心押在胰岛素/IGF 轴：高胰岛素血症经胰岛素受体和 IGF-I 促增殖、抗凋亡&lt;/strong&gt;，胰岛素还压低肝脏 IGFBP-1/2、抬高游离 IGF-I，并降低 SHBG 让性激素生物利用度上升。高血糖（Warburg 效应）被明确降级——1 型糖尿病动物模型里肿瘤反而长得慢，说明单靠高血糖不驱动生长。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;药物那一节最见功力：二甲双胍、TZD、磺脲、肠促胰素类、胰岛素/类似物逐个过，每个都点出观察性研究的坑&lt;/strong&gt;，最突出的是 confounding by indication（二甲双胍多开给病程短、无肝肾病的人）和比较药的选择（磺脲的"升高"到底是磺脲致癌，还是对照组里的二甲双胍在保护？）。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;关联的方向和量级是这篇最实的部分&lt;/strong&gt;。相对非糖尿病者，糖尿病把肝癌、胰腺癌、子宫内膜癌抬到约 2 倍或更高，结直肠、乳腺、膀胱癌抬到 1.2–1.5 倍，前列腺癌反而更低，肺癌基本无关。胰腺癌的反向因果（血糖异常可能是胰腺癌的后果）用"糖尿病早于诊断至少 5 年"的限制来排除，关联依然在；前列腺癌的低风险在 PSA 筛查普及前后都存在，所以不是检出偏倚。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;预后上，乳腺癌合并糖尿病的 5 年死亡 HR 约 1.39&lt;/strong&gt;。危险因素方面，糖尿病预防计划（DPP）的强化生活方式把糖尿病发病降了 58%，减重贡献了大部分；减重手术让肥胖女性癌症风险降到 RR 0.58–0.62（主要乳腺和子宫内膜），男性无关联。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;药物结论克制：二甲双胍在观察性研究里与更低癌症风险相关&lt;/strong&gt;；TZD 不一致（罗格列酮试验 meta 无显著变化）；磺脲相对二甲双胍有些升高信号；甘精胰岛素的 IGF-1R 亲和力和促有丝分裂强于人胰岛素，但 glargine vs NPH 的 5 年 RCT 没看到超额（57 vs 62 例），更大的 ORIGIN 试验在做、但为心血管终点设计。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;这是一份叙述性共识，强度取决于底下各项研究，它自己不产生新数据&lt;/strong&gt;。发病关联对常见癌较稳（多队列一致），但因果解释几乎全开放着——直接致癌、标记、还是共享混杂，作者自己也没下定论。最软的是药物这块。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;他们诚实列了坑：confounding by indication、比较药选择、位点特异癌事件太少导致检验力不足、新药随访太短&lt;/strong&gt;。但受时代所限，他们手里没有后来的工具：这篇 2010 年的文章早于 Suissa 2012 对二甲双胍研究 immortal time bias 的系统批评——那之后大家才明白，"二甲双胍抗癌"的观察性信号被永生时间偏倚和其他时间相关偏倚显著夸大了。所以它对二甲双胍的乐观，今天要打折看。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;它反复强调"别把所有癌症合并分析"（肺癌无关联会稀释信号），这条倒站得住&lt;/strong&gt;。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>因果有向无环图导论</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/trickey-2019-intro-dags/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/trickey-2019-intro-dags/</id>
+<updated>2026-07-07T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;一份斯坦福的 DAG 入门讲义：混杂、对撞、中介、后门路径、最小调整集，讲得干净标准。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;由 Amber W. Trickey 独立主讲的教学报告。她是斯坦福 S-SPIRE 中心（外科政策改进研究与教育中心）的资深生物统计学家，长期为外科与卫生服务研究团队提供研究设计与统计分析支持。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;先说清楚，这是一份教学幻灯片，不是研究论文&lt;/strong&gt;。作者是斯坦福 S-SPIRE（外科政策改进研究与教育）的资深生物统计师，2019 年 1 月在组内 Works in Progress 上讲给做外科和卫生服务研究的临床、统计同事。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;他们的数据几乎全是观察性的（Medicare、HCUP、NSQIP、Optum），治疗不随机&lt;/strong&gt;，由常规诊疗里往往未知的机制决定。教学问题很朴素：不能随机化、correlation ≠ causation 时，怎么有条理地决定该调整哪些变量。答案是 DAG——把因果假设画出来，用它看偏倚从哪来、效应能否识别、协变量选谁。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;内容沿一条标准弧线走&lt;/strong&gt;。先讲动机：DAG 用来显示偏倚来源、判断效应能否从现有数据识别、把假设摊开（作者诚实地说，分析模型本来也带假设，DAG 只是让它显形）。再讲规则：有向无环、时间从左到右，A 暴露、Y 结局、C 协变量、U 未测量，parent/child/ancestor/descendant 逐个定义。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;主干是画图四步：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第一步写清研究问题，摆上 A、Y 和"?"；第二步考虑内嵌的中介与调节变量；&lt;/li&gt;
+&lt;li&gt;第三步加混杂（A 与 Y 的共同原因）；第四步补其他相关变量。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;选变量原则：任意两点的所有共同原因都要进，包括测不到的和选择变量&lt;/strong&gt;；只导致 Y、不导致 A 的非必须。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;再转到调整——后门路径、对撞（两个箭头在共同后代处相撞），以及 conditioning 三条铁律&lt;/strong&gt;：在开放后门路径上条件化会消掉非因果关联，在对撞点上条件化反而打开原本被挡的路径，在中介上条件化会削掉一部分真实效应。&lt;/p&gt;
+&lt;p&gt;最后把混杂、对撞、选择偏倚（含 Berkson）收进同一套结构框架，甩出 &lt;strong&gt;DAGitty&lt;/strong&gt;，以 AHRQ 的 Sauer-VanderWeele 小结收尾：DAG 独立于现有数据构建，纳入所有共同原因，找能挡住全部后门又不误开对撞的最小调整集。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;它是教学材料，"结果"就是落地的规则和例子&lt;/strong&gt;。三条 conditioning 规则讲得干净，是全场最有价值的一页。&lt;/p&gt;
+&lt;p&gt;阑尾炎例取自作者自己的 JAMA Surgery 论文（A＝非手术管理，Y＝30 天急诊就诊，混杂为年龄/性别/保险/严重度/母语，收入未测），是纯混杂场景，没有中介、调节、对撞，条件化后仍剩母语和收入的残余混杂。腰痛手术例专门演示对撞：对"是否手术"这个共同结果条件化，会打开对撞偏倚。一正一反，说明别把变量一股脑塞进回归。工具落在 &lt;strong&gt;DAGitty&lt;/strong&gt;，收官落在最小调整集。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;它不是证据，是一堂课，只能评准不准、清不清、覆盖到哪。准确性没问题，是当下的标准口径：把&lt;strong&gt;选择偏倚&lt;/strong&gt;归为对撞偏倚的特例（Hernán/Greenland 的结构化视角）做对了，三条条件化规则一字不差，"DAG 独立于数据构建"这条重点抓得准，连"adjusting/controlling 有误导、该说 conditioning"（Shrier-Platt）都点到了。&lt;/p&gt;
+&lt;p&gt;短板在覆盖面，这对我这样的读者才是要害。没有 d-separation 的正式定义，没点名&lt;strong&gt;后门准则&lt;/strong&gt;，没有 do-calculus 和前门准则，IV 只作记号。更明显的是不碰 M-bias／butterfly bias——都讲对撞了却漏掉最容易踩的坑；&lt;/p&gt;
+&lt;p&gt;也没有时变混杂、g-methods 这些 Hernán-Robins 进阶；effect modifier 进不进 DAG 本身有争议，讲义如实标了"有分歧"（Weinberg 2007）却没讲透；&lt;strong&gt;DAGitty&lt;/strong&gt; 真正的算法能力（自动算最小充分集、导出可检验蕴含）被压成一句"记得存代码"。作为 2019 年的入门课它不会教错任何东西，只是恰好停在方法学开始变有意思的地方。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>人类行为的因果推断</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/bailey-2024-causal-human-behaviour/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/bailey-2024-causal-human-behaviour/</id>
+<updated>2026-07-07T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;一篇 Nature Human Behaviour 的概念综述：把行为因果推断的难点归成七类，点破"修好一个常常弄坏另一个"，出路落在三角互证与把问题问清楚。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;一篇多学科合著论文。第一作者 Drew H. Bailey 来自加州大学欧文分校教育学院，末位作者 Kou Murayama 为图宾根大学教育心理学教授；合著者包括宾夕法尼亚大学的 Konrad Kording 和研究心理学因果推断的 Julia Rohrer。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;行为科学要回答"什么导致什么"，但行为嵌在一个只能观测到局部的复杂因果系统里。幸福、认知能力这类变量多半没法随机操纵，每种方法各带偏倚，不少领域连"到底想不想估一个&lt;strong&gt;因果效应&lt;/strong&gt;"都没说清。作者判断：因果推断工具这些年进步快、纵向数据也更好拿，但进展散在经济学、流行病学、心理学、社会学各处，各修各的，缺一张把难点与出路摆在一起的整合图。这篇 Review 就想补这张图——非技术、跨学科、以纵向数据为主。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;框架分两半&lt;/strong&gt;。前半是七类挑战，我按原文点名。一，研究问题不够具体："为什么有人更幸福"是反向因果，"能否预测健康"只是预测，只有"多读一年书的回报"才既具体又正向。&lt;/p&gt;
+&lt;p&gt;二，欠调整：&lt;strong&gt;未测混杂&lt;/strong&gt;几乎无法证明已控净。三，过度调整：控中介或对撞就引入 post-treatment bias，拦截数据里"被拦"是对撞、会低估种族歧视。四，效应异质性：平均处理效应掩盖差异，某些条件下连平均都被带偏。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;五，干扰／溢出：同伴、兄弟姐妹互相影响，SUTVA 破裂&lt;/strong&gt;。六，时间尺度：效应有长短、还可能非平稳。七，"胖手"干预：想只动幸福必然带动情绪，构念定义模糊、不可直接操纵。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;贯穿全篇的一句是：为治一个毛病优化的方法常加重另一个——多控变量防欠调整，就冒过度调整的险&lt;/strong&gt;。没有免费的午餐。&lt;/p&gt;
+&lt;p&gt;后半是出路，四条：把问题问清楚、通常问窄；问题定了再挑设计与变量、盯住构念测量；把"因果信息量"当连续谱而非二元开关，别因为是观测数据就拒谈因果；以及&lt;strong&gt;三角互证&lt;/strong&gt;（Fig 1）——把定义清晰但多半胖手的干预给的强估计，与观测数据的估计并排比，对着理论看收敛还是发散、回头修理论，工具有同一样本内的实验—观测对照、连贯的模式匹配、稳健性与证伪检验、边界／敏感性分析和结构模型。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;方法／观点文，产出是分类法和建议、不是数字&lt;/strong&gt;。最实用的是七类挑战清单、四条出路，和 Fig 1 那个"干预估计 ↔ 观测估计 ↔ 理论"互相印证又互相修正的回路；Box 2–8 每类挑战配暂定解法与延伸读物，是现成速查。&lt;/p&gt;
+&lt;p&gt;几条主张值得记：把"研究目标是因果估计"与"方法给的确定性"分开说，别都塞进一个 causal；结构模型给了正面例子——Todd 与 Wolpin 的上学模型预测出补贴对出勤的提升、事后被实验证实。作者也说死：&lt;strong&gt;三角互证&lt;/strong&gt;不保证干净回答大问题，但能把更窄的问题答实。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;按综述看它诚实但有限。没有新方法、没有数据、没有验证；诊断到位，可药方基本还是领域里已有的工具，标着"暂定"。它的&lt;strong&gt;三角互证&lt;/strong&gt;是推理姿态、不是算法：没给"收敛到什么程度才算数"的判据，也没说几个都有偏的估计怎么加权。更麻烦的是，两类研究偏倚同向还是反向本身是判断题，作者自己都提醒"若控制差、干预又都胖手，净偏倚可能同向"——那样一致就不再是证据。至于 DAG、好控制坏控制、对撞那部分，对熟因果图的人是教科书内容。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>因果图在生物医学研究中的应用</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/kyriacou-2023-causal-diagrams/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/kyriacou-2023-causal-diagrams/</id>
+<updated>2026-07-07T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;一篇写给临床研究者的 DAG 入门：用混杂、对撞、中介的判定规则决定多变量模型该放谁、排谁，再用 Framingham 的数字演示选错变量怎样把效应估计算歪。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;第一作者 Demetrios N. Kyriacou 是西北大学 Feinberg 医学院急诊与预防医学教授、JAMA 资深编辑；合作者包括西北大学心血管流行病学家 Philip Greenland，以及长期研究因果推断方法的德黑兰医科大学 Mohammad A. Mansournia。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;临床研究选协变量，很多人还在靠 stepwise、显著性、change-in-estimate 这类机械算法&lt;/strong&gt;，让软件挑一组拟合最好的变量。问题在于这些方法只优化整体拟合，不问每个变量在因果结构里是什么角色。于是有两类系统性错误：该放的混杂漏了，不该放的对撞、中介放了进去。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;两者都让效应有偏，只是机制不同&lt;/strong&gt;。作者要做的，是让研究者在跟统计学家合作时能用因果图讲清"为什么放这个、排那个"，而不是把变量选择外包给算法。老问题，但在急诊这类临床期刊里再讲一遍仍有价值。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;核心是把 DAG 当变量选择的依据&lt;/strong&gt;。DAG 有向（箭头顺时间走）、无环（无反馈回路）；路径是沿或逆箭头的任意通路，因果路径是箭头同向的一串。三类变量各有判定和处理：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;混杂三条件：结局的、独立于暴露的外源危险因素；在源人群中与暴露相关（直接或经共因）；不被暴露或结局影响、不落在暴露到结局的因果路径上。满足就调整。&lt;/li&gt;
+&lt;li&gt;对撞是两变量的共同结果，调它会凭空造出关联（对撞 / 选择偏倚），要排除；中介在因果路径上，普通回归调它会抹掉经它传导的那部分效应，得用正式中介分析拆直接、间接效应。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;找充分&lt;strong&gt;调整集&lt;/strong&gt;用后门路径：从指向暴露的箭头（后门）出发，沿不含对撞的开放路径追到结局，每条后门路径至少调一个变量堵上。作者主张传统三条件和后门法并用。贯穿全文一句话：解释性建模不是预测建模，别拿机械选择和单独的 change-in-estimate 下判断。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;演示用 Framingham，4,287 人，暴露是糖尿病，结局是心肌缺血&lt;/strong&gt;。表 1 逐步加变量：未调整 HR 2.56；只调肥胖降到 2.32（变化 9.4%，肥胖是混杂）；再加年龄降到 2.08（再变 10.3%，年龄也是混杂）。到这儿都是在去混杂。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;坑在第三步：把 MACE（重大心血管事件）放进去，HR 从 2.08 骤降到 1.28（降 38.5%）&lt;/strong&gt;，CI 跨过 1。但 MACE 是糖尿病和心肌缺血的共同结果，是对撞不是混杂——这 38.5% 看着像去混杂，其实是引入了对撞偏倚。同一个"估计值变了"，加肥胖、年龄是对的，加 MACE 是错的，肉眼分不出来。&lt;/p&gt;
+&lt;p&gt;中介那组同理：肥胖对心肌缺血未调 1.61，普通回归调高血压降到 1.45（降 9.9%），但高血压是中介，这一降是把间接效应抹掉了；正式&lt;strong&gt;中介分析&lt;/strong&gt;给出总效应 1.69、直接 1.52、间接 1.11（直接 × 间接 ≈ 总）。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;教程不是研究，"硬不硬"看它多老实，而作者相当老实&lt;/strong&gt;。他们自己划了边界：DAG 依赖事先的科学知识，这类知识常常不全或没有；变量是混杂、对撞还是中介，取决于时间顺序和测量时点；图省了变量或箭头就会过度简化，文中几张图是有意简化的，"拿不准时宁可把箭头画上"。&lt;/p&gt;
+&lt;p&gt;还点了几个真问题：一个变量可以同时是混杂又是对撞（M 偏倚）；混杂的定义方法学界吵了几十年，传统条件和后门条件只是大面积重叠；所有变量都被二分，而二分本身带来&lt;strong&gt;残余混杂&lt;/strong&gt;。图的效力，取决于数据和先验知识的质量。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>流行病学中的因果性评估：结合因果思维进展重新审视 Bradford Hill 准则</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/shimonovich-2021-bradford-hill/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/shimonovich-2021-bradford-hill/</id>
+<updated>2026-07-07T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;把 Hill 的九条因果观点逐条摆到 DAG、充分病因（SCC）模型和 GRADE 面前，看哪些站得住、哪些要按三角互证与负对照的逻辑重写、哪些该退休；共同底座是潜在结果框架。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;通讯作者 Srinivasa Vittal Katikireddi 是格拉斯哥大学 MRC/CSO 社会与公共卫生科学中心的公共卫生与健康不平等教授；第一作者 Michal Shimonovich 同在该中心，研究证据综合中的因果判定，合著者 Katherine Keyes 为哥伦比亚大学流行病学者。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Bradford Hill&lt;/strong&gt; 1965 的九条观点至今是流行病学判因果的默认工具。Hill 自己叫它们 viewpoints、反对当清单打钩，但半个世纪的实践基本把它们当了 checklist。这半个世纪里因果推断长出了潜在结果框架，以及三支操作化它的方法：DAG、SCC（因果饼）、GRADE。&lt;/p&gt;
+&lt;p&gt;新旧之间到底重不重叠、能不能互相解释，之前没人系统比过——有人比 SCC 对 DAG，有人比 &lt;strong&gt;GRADE&lt;/strong&gt; 对 Hill，却没人把 DAG 和 SCC 一起摆到九条上，而 DAG 恰恰是这些年最主流的。问题就是：拿现代因果框架回头看 Hill，哪些观点有扎实的理论支撑、哪些只是同一件事的不同说法、哪些其实该退休。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;做法很朴素：给每条 &lt;strong&gt;Hill 观点&lt;/strong&gt;画一张 DAG、一张 SCC 饼图，再对到 GRADE 的每个域，用一个跑通全文的玩具例子（酒精→活动性结核，overcrowding 当混杂）演示每条观点在三种框架下"长什么样"。&lt;/p&gt;
+&lt;p&gt;关键是三种框架都建在潜在结果之上，共同货币是可交换性：DAG 告诉你该 condition 哪些变量才可交换；SCC 强调未知成分让可交换性判断变难；&lt;strong&gt;GRADE&lt;/strong&gt; 干脆按"设计多大程度保证可交换"给证据排座次（RCT 高于 NRS）。九条的命运可以归成四类。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;直接站得住的四条：strength、temporality、plausibility、experiment。强度用 DAG 做偏倚分析、用 SCC 看竞争病因怎么稀释 RR、GRADE 给 RR 2–5 的阈值；时序被 DAG 显式编码，还能查反向因果（诊断前／后的结核）；可信度靠 DAG（中介、因果链）和 SCC（交互）把假设摊开写；实验用 DAG 说明随机化为何带来可交换（随机化＝工具变量），并接到自然实验与 target trial。&lt;/li&gt;
+&lt;li&gt;specificity 被改写。流行病学里一因多果、一果多因，特异性几乎不成立；作者把它换成 falsification／负对照（拿 head lice 当安慰剂结局），这才是它剩下的用处。&lt;/li&gt;
+&lt;li&gt;consistency 被拆开，这条跟三角互证最贴。Hill 说不同方法得到一致结果加强因果，作者顺着 GRADE 反驳：一致很可能是被同一个偏倚一致地带偏。于是该拆成两件事——transportability（换人群／情境效应还成不成立，DAG 看混杂结构、SCC 看竞争病因）和 unexplained heterogeneity（无法解释的统计异质，才真正削弱因果）。&lt;/li&gt;
+&lt;li&gt;基本淘汰的：dose-response 被降级（梯度能由混杂造出来，阈值效应也常见）；coherence 和 analogy 判"用处存疑"，前者跟 plausibility 分不清，后者被 GRADE 混成 directness。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;要说明：论文明面上比的三个框架是 DAG／SCC／&lt;strong&gt;GRADE&lt;/strong&gt;，并没有把"三角互证"单列；三角互证的逻辑是藏在 consistency 这条的重写里的。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;产出是两张表：映射表（Table 4）和结论表（Table 5），不是数字&lt;/strong&gt;。核心结论——九条里有四条真正互通：strength（含对可能混杂的分析）、temporality、plausibility（DAG 编码中介、SCC 编码交互）、experiment（含研究设计对可交换性的含义）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;consistency 建议拆成 transportability 与无法解释的异质&lt;/strong&gt;；specificity 太罕见，用 falsification／负对照替代更实在；dose-response 没大家以为的有用，混杂就能造出梯度；coherence 和 analogy 用处存疑。&lt;/p&gt;
+&lt;p&gt;关于&lt;strong&gt;三角互证&lt;/strong&gt;他们没点名，但 consistency 那段说得很直白：指向同一结论不等于统计上一致、更不等于可以合并，一致有可能只是共享了同一个偏倚——这正是 Lawlor／Davey Smith 三角互证的出发点，只不过这篇是从 Hill 那一侧走进来。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;量级演示放在 SCC 表里（酒精单独 RR 3.0，overcrowding 单独在两个人群 3.5 对 2.0，两者都有 4.5），示范竞争病因和参照组患病率怎么改变 RR&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;这是一篇 essay，作者反复说"preliminary""tentative"&lt;/strong&gt;。几条限制我认同：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;只有一个刻意简化的酒精→结核玩具例子，撑不起"每条观点在真实研究里都这么用"的普适结论；换成多混杂、测量差的真实问题，映射会糊很多。&lt;/li&gt;
+&lt;li&gt;只比了 DAG／SCC／GRADE 三个"最知名"的框架，明说略过 IARC、致畸判据等，potential outcomes 之外的传统也没进来。&lt;/li&gt;
+&lt;li&gt;SCC 该不该算他们自己都犹豫，承认它更像描述因果实在、用得最少。&lt;/li&gt;
+&lt;li&gt;判断本身是定性的：哪条 survive、哪条"用处存疑"，很多是作者的阅读，不是可复现的检验。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;好在边界划得诚实，没硬吹成"新因果准则"，只说是抛砖、请人来吵&lt;/strong&gt;。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>我们能相信 DAG 吗？关于因果 DAG 与机制关系的评论</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/aalen-2016-believe-dags/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/aalen-2016-believe-dags/</id>
+<updated>2026-07-07T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;真实因果是连续时间里的机制，DAG 却建在稀疏的离散观测上。 采样一粗，DAG 会凭空长出并不存在的直接箭头，退化成底层机制图的传递闭包。 对正在造 DAG 工具的人，这是该先读的一盆冷水。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;第一作者 Odd O. Aalen 是奥斯陆大学医学统计学教授，以 Aalen 加性风险模型与生存分析闻名；他与同校生物统计系的 Røysland、Gran 长期发展连续时间随机过程的因果推断，正对应本文对离散 DAG 的反思。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;因果 DAG&lt;/strong&gt; 是流行病学的通用语言：画节点、连箭头、用 d-分离和后门准则判断效应能否识别。可节点到底是什么？多数应用里，节点是某个量在某个时点的一次测量。真实机制则可能在连续时间中运行，例如阿司匹林持续抑制血小板聚集，HAART 持续压低病毒载量。&lt;/p&gt;
+&lt;p&gt;作者直接追问：把连续过程在几个离散时点上采样再画 DAG，这张图还能对应底层机制吗？答案通常是否定的，而且图本身不会提示失真发生在哪里。论文保留 DAG 在识别&lt;strong&gt;选择偏倚&lt;/strong&gt;和混杂方面的用途，批评集中在用离散 DAG 表示连续机制。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;核心动作是把机制显式写成&lt;strong&gt;连续时间动力系统&lt;/strong&gt;，再看它在离散采样下投影成什么。他们用线性随机微分方程 dX=[A(μ−X)+a]dt+σdW 当真机制，矩阵 A 的非对角元编码谁直接影响谁：A_ij=0 即 X_i 对 X_j 局部独立。这套"局部独立图"是把贝叶斯网络的条件独立搬进连续时间的自然推广，用鞅论定义，还能装下 DAG 装不下的东西：反馈环（CD4 既被治疗影响、又决定何时开始治疗，两条反向箭头，根本不无环）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;关键是 A 与它的矩阵指数 e^{−tA} 的区别&lt;/strong&gt;。A 是无穷小时刻的局部依赖，e^{−tA} 是长度 t 的离散区间上的依赖，两者不是一回事。只要采样间隔不无穷小，局部动态就被"抹开"：本来 E→M→D 的链，只在 0 和 t 两点看，回归就报出一条 E→D 直接效应。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;附录把这做成一般命题：离散 DAG 是局部独立图的传递闭包，机制图上凡可达的点，离散 DAG 上都连一条直接箭头&lt;/strong&gt;。离散化不是让你看不清，是主动往图里塞假的直接边。所倚赖的假设与 faithfulness 同路：两条间接路径不刚好抵消。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;阿司匹林那组模拟最扎心。真机制是全部效应过血小板聚集（100% 中介），但在离散观测上做&lt;strong&gt;中介分析&lt;/strong&gt;，setup 1 报出的中介比例只有 17%–23%，凭空冒出近 80% 的"直接效应"。更反直觉：治疗对中介越慢，估出的中介比例反而越接近真相（setup 2 为 56%–74%，setup 3 到 60%–92%），作者自己都说没料到，快速起效的阿司匹林给出最差的图。&lt;/p&gt;
+&lt;p&gt;第二个模拟更狠：真机制是 X1→X2→X3→X4 一条链，离散回归却给根因 X1 估出负系数（偏相关 −0.104），方向反了，照此干预就是错的。真实数据也复现：瑞士 HIV 队列用月度数据能干净还原 RNA→CD4→HEM、无 RNA→HEM 直接边；一降到年度、三年度分辨率，链被抹开，假的直接边冒出来。顺带一个推论：暴露若是连续过程，&lt;strong&gt;工具变量&lt;/strong&gt;的排他性约束会破，IV 估计有偏。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;这是评论、警示文，边界要看清&lt;/strong&gt;。第一，"真机制是线性 SDE"这前提在扛大梁；真实机制通常非线性，作者也承认线性只为能算，好在"离散化填箭头"这个定性结论对非线性大体稳健。第二，传递闭包挂在类 faithfulness 假设上，且作者反复强调这"主要是粗离散化的问题"，细采样能还原结构。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;所以被批的不是 DAG 本身，是粗采样上、无视时间的那种朴素用法&lt;/strong&gt;。第三，他们最后开的药方（连续时间里定义一串 DAG、动态路径模型、可加危险度模型）本质仍是 DAG，只是把时间显式放进去，与 Hernán–Robins 的时变 DAG、g 方法同路。所以标题比内容挑衅，答案其实是"尊重时间和采样就能信"。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第四，模拟里他们能拿到真 A，现实拿不到&lt;/strong&gt;；批评的力度因此取决于"连续时间机制"是否是对现实的正确刻画，若某些现象本就由离散决策点驱动，这刀砍得就轻。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>有向无环图指南文件：人体系统风险委员会</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/antonsen-2022-nasa-dag-guidance/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/antonsen-2022-nasa-dag-guidance/</id>
+<updated>2026-07-07T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;NASA 人类系统风险委员会手工搭建、评审、版本化约 30 张风险因果 DAG 的操作规程。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;由主持 NASA 人类系统风险委员会（HSRB）的 Erik L. Antonsen 领衔编写；他兼具航天工程博士与医学博士背景。这份 NASA 技术备忘录为各风险团队制定绘制与更新 DAG 的标准流程与指南。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;NASA 跟踪约 30 个航天员健康与绩效风险&lt;/strong&gt;，全都源自五个不可改变的航天 Hazard（改变的重力、辐射、隔离封闭、有害封闭环境、离地距离）。过去这些风险被切成一个个孤岛分别研究，漏掉了真实情况：人体在航天中的损伤是多因、累积的，从发射起叠加，甚至延续到退役之后。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;委员会原来给每个风险单独打 Likelihood×Consequence 分、标红黄绿&lt;/strong&gt;，这套打分看不见风险间的协同：一个本身不严重的小毛病，可能在别的系统、别的时点被放大。2020 年 1 月起 HSRB 启动试点，用 DAG 把"风险如何因果流动"画成一张所有干系人共享的心智模型。这份 TM 就是教风险管护团队怎么建、怎么更新这些图的规程。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;核心不是算法，是一套约定加治理&lt;/strong&gt;。每张图从至少一个 Hazard 出发、到至少一个 Mission Level Outcome 结束，中间是贡献因素；每条箭头都被明确成一个可证伪的因果假设，证据变了就能加、减、改。图分两层：Narrative DAG 面向沟通、上板评审、配置管理；Detailed DAG 更细、供网络分析，因为太专业反而不上板。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;为了把各风险的图拼成一张网，术语必须和谐化且中性——光"改变的重力"一个概念，10 个组就用了 6 种叫法&lt;/strong&gt;，于是强制统一命名，并偏好连续变量。禁止反馈环，真需要就用时间索引节点展开。初版用 Dagitty 画。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;整套靠众包加配置管理运转：管护团队起草&lt;/strong&gt;，HSRB（10 名常任委员、每次会 100–200 人）走正式评审与意见处理，分歧由委员会或主席按证据标准裁定。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;产出是一套可照搬的构件&lt;/strong&gt;。节点词表预定义：5 个 Hazard、8 个 Mission Level Outcome 两端固定；图论的外生/内生节点改叫 External/Integral Factor；对策分监测、预防、干预三类，画法有硬规矩：预防指向它要阻止的节点，干预不画回被治的病、而画到其下游。另有类别节点与嵌套、只画入边的灰色 Risk 节点、决策节点、Effective Exposure Duration 这类时间节点。&lt;/p&gt;
+&lt;p&gt;边有两个属性：证据等级 LOE，以及影响强度（有数据时用路径系数或联合概率表）。LOE 取自 &lt;strong&gt;Bradford Hill&lt;/strong&gt; 六条准则，分四级且编号反着来：4 Speculative、3 Weak、2 Moderate、1 Strong；Speculative＝时序＋类比，是入图门槛；单篇先过一道质量关，方法差的最高只记 Weak。可视化上虚线＝弱/推测，实线＝中/强。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;节点入图需满足 Speculative 且至少一条连边，或有 SME 的明确关切&lt;/strong&gt;。新增术语要报办公室审、上板讨论、主席终裁；到 2022 年 1 月 13 日，30 个风险的初版 DAG 全部通过。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;它值钱在流程可审计：配置管理加意见处理留痕，等于给"现在为什么这么画"存了一份可追溯的组织记忆，还把每条边写成可证伪假设。但严格性几乎全靠人。LOE 手工赋，质量关逐篇人工判断，&lt;strong&gt;Bradford Hill&lt;/strong&gt; 本身是定性启发、只四级、无自动分级；"SME 关切"能单独作为入图理由，诚实，却也是最难复核的主观项。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;影响强度那层基本画饼：文中反复说"若有足够数据"才填路径系数，实际大多数边只有 LOE、没有权重&lt;/strong&gt;，所谓 Bayesian network 是潜力不是现状。作者自认两个软肋：图一旦定稿会给社区带来锚定偏倚；画多细"更像艺术而非科学"。裁决权集中在委员会和主席——NASA 内部可复现，却不是能搬到别处的算法。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;加上 30 张图动用上百人、耗时两年，扩展性差&lt;/strong&gt;。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>用因果图评估航天飞行中的人体系统风险</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/antonsen-2024-spaceflight-dag/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/antonsen-2024-spaceflight-dag/</id>
+<updated>2026-07-07T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;NASA 用 DAG 管理约 30 个航天员健康风险：专家手工建图、按证据分级、配置化评审、拼成风险网络。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;第一作者 Erik Antonsen 任贝勒医学院太空医学中心，并主持 NASA 人类系统风险委员会（HSRB）；末位作者 Daniel M. Buckland 属 NASA 约翰逊航天中心与杜克大学。该团队为 HSRB 核心成员，用 DAG 评估航天员的系统性健康风险。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;NASA 追踪约 30 个影响航天员健康与表现的风险，全源自航天的 5 大 hazard&lt;/strong&gt;，还要放在 8 个 design reference mission（从近地轨道短任务到三年火星任务）下评估。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;过去这些风险被切成一个个 silo 来刻画，建库阶段好用，但航天员是同时暴露在所有风险下的，风险本身多因、累积&lt;/strong&gt;。silo 化让不同学科各说各话：光是 altered gravity 就能有六种叫法（microgravity、weightlessness、partial gravity……）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;没有共同术语和共享的心理模型，Human System Risk Board（HSRB）就很难对"哪个风险更急、钱投哪"达成一致&lt;/strong&gt;。证据也很薄：迄今上过天的人不到 700，很多因果链只能依靠专家判断。团队因此需要一套能把复杂因果显式化、又能由组织持续追踪管理的表示法。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;2020 年 1 月起，HSRB 把每个风险画成 DAG：节点是随机变量，有向边表示因果，无环&lt;/strong&gt;。图从 hazard 出发，止于预定义的 mission-level outcome（从丢失任务目标到 loss of crew life）。每个风险配两种图。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;narrative DAG 讲高层因果故事、配一段文字，用来在评审会上对齐心理模型&lt;/strong&gt;；detailed DAG 补细节，但必须守同一套 data schema。无环是硬约束，发现反馈回路就挑最可能的前驱节点、放到链条更早处。&lt;/p&gt;
+&lt;p&gt;节点入图有门槛。先要有"影响风险"的逻辑依据，HSRB 从 &lt;strong&gt;Bradford Hill&lt;/strong&gt; 准则里选了 6 条评证据等级，最低要同时满足 temporality 和 analogy，够到最低的 speculative 级才能进；narrative 图还要求效应量大到对下游可测。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;表示法被标准化到近乎强迫症：节点画圆、边由因指向果，分 exogenous 与 endogenous&lt;/strong&gt;；countermeasure 分 monitoring / prevention / intervention 三类（一氧化碳那例：探测器 → CO 浓度 → 氧气面罩）；category 节点可以 nest 出子节点（individual factors 下挂 modifiable / non-modifiable）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;术语要 harmonize，且用中性随机变量命名——写 nutritional status 而非 inadequate nutrition，让节点跨风险、跨 DRM 都通用&lt;/strong&gt;；跨风险的重叠节点靠 edge work 对齐，顺手保证不成环。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;治理是重头戏&lt;/strong&gt;。每个风险由 risk custodian team 起草，HSRB 这个 100 到 200 人的论坛评审，走正式的 tracked comment 与 comment resolution，分歧由 board 或 chair 按证据标准裁决；&lt;/p&gt;
+&lt;p&gt;只有 narrative DAG 进配置管理，detailed 不进（太细、太耗时）。他们还试了结构验证：拿 bone fracture 子图配 4 组啮齿动物数据、用 DAG 蕴含的&lt;strong&gt;条件独立&lt;/strong&gt;性去测，结果大体支持图的结构。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;证据等级&lt;/strong&gt;直接画进边的样式：实线强、虚线弱（SANS 那张图 2020 年 4 月过审、2022 年 5 月改版）。最后 30 张 detailed DAG 靠共同节点拼成一张风险网络，作者自承这网"已超出人工能分析的范围"，下一步想当 Bayesian network 来跑、把 epistemic / aleatory 不确定性都建进去，但那是 future work。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;这是一篇方法与流程论文，没有效应量&lt;/strong&gt;。主要产出包括一套可复用的建图规范和已经投入运行的治理机制：约 30 个配置管理的风险、5 个 hazard、8 个 DRM；每项风险两类 DAG；&lt;/p&gt;
+&lt;p&gt;6 条改编自 Hill 的证据准则，temporality 和 analogy 是入图下限，最低级为 speculative；countermeasure 分为三类；工具从 Dagitty 换到自研的 DAGvision；100—200 人参与评审论坛；4 组啮齿动物数据用于结构验证；第一版风险网络由 30 张图拼接而成。&lt;strong&gt;证据等级&lt;/strong&gt;会编码为不同的边样式，并随版本更新，SANS 图在两年内完成过一次修订。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;研究验证的是流程可行性，没有检验某个具体因果假设&lt;/strong&gt;。图的因果结构主要来自专家判断，数据驱动的结构学习很有限；作者也承认证据基础薄弱，许多边仅为 speculative。几个实质问题被点到但没有解决：6 条 Hill 准则仍需人工判断，证据级别的边界缺少客观标尺；第一张图可能造成 anchoring bias；命名与粒度难以形成共识，最终仍要由 HSRB 确定"官方版"。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;无环约束的辩护——反馈回路本质不同时、可用 time-indexed 节点表示——逻辑自洽&lt;/strong&gt;，但也承认 duration of exposure 现在压成一个节点是权宜。那张 30 风险网络更像存在性证明：拼得出来，定量分析明确是 future work。作为工程实践它扎实，作为因果推断方法它还停在结构化专家共识。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>基于证据的有向无环图的开发与应用：评估金属混合物与心代谢结局的关联</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/riseberg-2023-metals-dag/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/riseberg-2023-metals-dag/</id>
+<updated>2026-07-07T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;这是"循证 DAG"这个名字的实体先例：一次 PubMed 检索把 42 篇综述变成一张因果图，再用它选混杂调整集。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;通讯作者 Laura Corlin 是塔夫茨大学环境流行病学家，擅长将因果推断方法用于环境毒物的观察性研究；第一作者 Emily Riseberg 曾在其课题组研究尿金属与心血管代谢结局。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;环境暴露没法做 RCT，把人随机分到有毒金属里不道德，只能靠观察性研究，而观察性研究要调混杂。DAG 是把因果结构画出来、据此选&lt;strong&gt;调整集&lt;/strong&gt;的标准工具。但环境流行病学里几乎没有"循证"DAG：建一张要做文献综述，也没人真拿数据检验过一张文献建出来的 DAG 到底合不合适；金属混合暴露到心血管代谢结局，更是一张已发表的都没有。作者要补两个洞，一套从文献建图并检验它的方法，以及这张具体的金属混合 DAG。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;五种金属：砷、镉、锰、铀、钨&lt;/strong&gt;。三个结局：心血管疾病、空腹血糖、收缩压。先做一个设计决定，从每种金属到每个结局都强行连一条弧，因为这些关联本就是要检验的对象。&lt;/p&gt;
+&lt;p&gt;建图证据来自一次 PubMed 检索：五种金属 MeSH 词 AND 三个结局 AND（综述／系统综述／meta 分析），限 2011–2021、英文、人群研究，再凭作者已有知识补 5 篇，共 42 篇（砷 22 篇、镉 17 篇最多）。每篇抽作者、年份、期刊、人群、暴露、暴露来源、结局、主要结果，在 &lt;strong&gt;DAGitty&lt;/strong&gt; 里连图。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;其余节点分四步接：从文献认出暴露来源（饮食、空气、吸烟、土壤、饮水）&lt;/strong&gt;，从各结局的共识声明认出危险因素（性别、年龄、肥胖、教育、族裔、收入、体力活动、饮酒），再对跨结局的危险因素组合去 PubMed 搜两词（如"smoking diabetes"），最后同样搜危险因素之间、暴露来源与危险因素之间的关联。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;接弧门槛借了 ESC-DAG（Ferguson 2020）那两条：生物学上说得通、时间顺序对&lt;/strong&gt;；方向靠时序和背景知识定（教育在成年饮食之前，故教育→饮食）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;关键是纳入极宽松，只要一篇同行评审文章提示两变量相关就连弧，因为漏掉一条真弧比多画一条假弧偏得更狠&lt;/strong&gt;。每条弧的出处列进 Appendix A，再由第二位审阅者逐条确认。&lt;/p&gt;
+&lt;p&gt;真正新的一步是检验这张图。把节点对到 San Luis Valley 糖尿病队列（n=1,795），删掉没测的环境暴露节点，让 &lt;strong&gt;DAGitty&lt;/strong&gt; 吐出所有隐含的条件独立命题，逐条用回归检验，p&amp;gt;0.05 记作支持；再把同一骨架、随机打乱节点标签的 1,000 张图跑同样的检验作对照。应用端用单门准则（Pearl 2009）取最小充分调整集，配 BKMR、线性混合效应、Cox。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;DAG 隐含 81 条&lt;strong&gt;条件独立命题&lt;/strong&gt;，74 条可测，SLVDS 支持其中 43%（样本量 1,265–1,795）。对照给了最扎眼的数字：1,000 张随机打乱的图里有 608 张被支持的比例高于 43%，也就是这张"循证"DAG 只赢过约四成随机图，没跑赢随机。&lt;/p&gt;
+&lt;p&gt;最小充分&lt;strong&gt;调整集&lt;/strong&gt;三个结局完全一样：环境暴露、吸烟、饮食。应用结果只是配角：砷与空腹血糖近似线性、锰呈 U 形（大调整集下）；镉与收缩压在小调整集里正相关，加了环境暴露的代理变量后被削平甚至反向（p-trend 0.07），作者读成环境暴露的混杂；没有金属与心血管疾病相关，混合内也无交互。摘要落在一句：砷、锰与空腹血糖有关联。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;"循证"这块招牌比听上去薄&lt;/strong&gt;。金属→结局那些弧不是证据推出来的，是为了检验强行塞进去的，而全文没把证据弧和设计弧分开。纳入规则也粗：一篇文章即一条弧，不分设计、不看质量，冲突的综述照样连（砷与心血管在低剂量本就不一致）；方向是判断题，作者自己承认收入与饮酒谁因谁果都说不准。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;只用二手文献、42 篇、单一引擎、不是系统综述&lt;/strong&gt;。可复现的是查询式和 Appendix A 都印了出来，但节点与弧终究靠人工合理性判断加第二审阅，可审计，未机械化。那个检验是全篇最好的主意，却没通过：图输给约六成随机排列。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;作者的辩解都成立——随机图可能生物学上荒谬，比如弧指向年龄&lt;/strong&gt;；只用 p 不看效应量；缺了环境暴露节点——但这恰恰说明检验按现在的跑法证不了这张图。于是我们拿到一套建图流程和一个验证思路，两者都没在这份数据上被证明有效。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>元分析式渐进因果发现中的实验选择</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/matiasz-2021-piecemeal-causal-discovery/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/matiasz-2021-piecemeal-causal-discovery/</id>
+<updated>2026-07-07T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;把散落在各研究里的因果主张（只有汇总统计、没有原始数据）编码成约束，算出所有相容的因果图（等价类），再用信息增益挑"下一个最该做的实验"。 是 LLM 之前的"文献→因果图"祖先。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;论文出自加州大学洛杉矶分校（UCLA），由资深作者 Alcino Silva 与 William Hsu 两组合作完成。Silva 为神经生物学与精神病学教授，长期倡导用【research map】整合已有研究、规划实验，并研究神经科学中的因果推理；Hsu 从事医学影像信息学。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;科学家读到的多是自由文本：论文给的是汇总统计、没有原始数据，而经典&lt;strong&gt;因果发现&lt;/strong&gt;算法都跑在原始数据上，"只用文本信息建因果模型"这条路一直少人做。生物学还有个结构性难处——一次只能观测系统的一个子集变量（piecemeal，零敲碎打），得把子集结果分析性地拼起来。&lt;/p&gt;
+&lt;p&gt;作者一上来就承认硬限制：piecemeal &lt;strong&gt;因果发现&lt;/strong&gt;"无论做多少实验，往往都识别不出唯一的真因果图"。所以问题拆成两件：把多研究的因果证据综合成一致的因果模型，以及决定下一个实验做什么最省。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;因果图 G=(V,D)，只学结构不学参数&lt;/strong&gt;。约束写成带干预集的（条件）独立关系 X⊥⊥Y|C‖J（J 是干预集，J=∅ 是被动观测），靠因果马尔可夫加忠实性两座桥、d 分离连接分布与图。&lt;/p&gt;
+&lt;p&gt;求解用 Hyttinen-Eberhardt-Järvisalo 2014 的 ASP 约束式算法（不假设无环、也不假设因果充分性，所以能容许环和潜在混杂）：约束无冲突走 SAT，有冲突走加权 MaxSAT——每条约束带一个置信权重（来自 p 值或 &lt;strong&gt;research map&lt;/strong&gt; 边的证据分），解器找"违背约束权重和最小"的图集。&lt;/p&gt;
+&lt;p&gt;证据来源是 Silva 组的 &lt;strong&gt;research map&lt;/strong&gt;：节点是现象、边带符号（激发/抑制/独立）和方法学标记（↑↓ 干预、∅↑∅↓ 观测），每条边有个基于证据收敛与一致性的贝叶斯聚合分。&lt;/p&gt;
+&lt;p&gt;选实验的核心机制是&lt;strong&gt;等价类&lt;/strong&gt;和自由度（DOF）。相容图集就是等价类，越大越无知；DOF 是"任意一对变量在整个等价类里还能有多少种边关系变体"，DAG 里每对有 3 种（X→Y、X←Y、X···Y），定死一种后还剩 2 个 DOF。Algorithm 2 挑剩余 DOF 最多的那对变量，再从查找表里选一个能区分这些 DOF 的最有信息的实验，并刻意避开无信息干预（比如两种可能里若含 X→Y，就别去干预 Y，否则两种变体没法区分）。&lt;/p&gt;
+&lt;p&gt;Algorithm 3 更进一步：对每种 DOF 赋值算"若为真能删掉多少图"的期望 e=（该赋值占比）×（能删掉的图数），挑期望最大的——这是个价值-信息式目标，但要枚举整个&lt;strong&gt;等价类&lt;/strong&gt;、更贵。Algorithm 4 只用 1–2 次 SAT 查询把一个待验假设归成三类：跟所有图都不容（矛盾）、跟所有图都容（已被蕴含）、只跟部分容（唯一值得做，保证能剪等价类）——作者说这把波普尔的可证伪性写成了解析式。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;框架加穷举模拟，没有新实证研究（真实的两篇神经科学合并案例在配套论文里）。图空间规模：1/2/3 变量分别有 1/3/25 个 DAG，4 变量 543 个，7 变量约 11 亿。评估在 4 变量的全部 543 个 DAG 上，把每个当真值、oracle 假设因果充分且知道真图，按 &lt;strong&gt;research map&lt;/strong&gt; 定义的 48 个两变量研究顺序选做，记录等价类大小并跨 543 个图平均。&lt;/p&gt;
+&lt;p&gt;主要发现：Algorithm 3 用 9 个实验就把&lt;strong&gt;等价类&lt;/strong&gt;压到 &amp;lt;10 个图（人工可复核的规模），随机策略要 19 个；到达最小值时随机比 Algorithm 3 平均多花 32 个研究。但有个根本极限——做完所有两变量实验后，平均还剩 4–5 个图无法区分，这就是 piecemeal 两变量约束的天花板（对照：能观测全部变量、任意干预时，log(N)+1 个实验就够）。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;理想化很重。虽然底层引擎能容环和潜在混杂，但被演示的评估限定在 DAG（无环）、oracle 假设因果充分（无潜在混杂），所以"通用模型空间"是工具属性、没被模拟真正压过测。而且 oracle 对每个实验都返回正确结果——不建模科学家会犯错、没有&lt;strong&gt;测量误差&lt;/strong&gt;、没有有限样本的独立性检验误差。&lt;/p&gt;
+&lt;p&gt;只做到 N=4 的穷举，7 变量就约 10 亿，Algorithm 3 还要枚举整个&lt;strong&gt;等价类&lt;/strong&gt;，大系统不现实（作者的退路是等超算、或降到只做 1–2 次 SAT 的 Algorithm 4 做筛查）。基线是随机选实验，作者也承认这不代表真实科学家在随机选。忠实性假设、oracle 正确性、两变量约束下的不可识别（4–5 个残余图）是几个硬约束。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>证据负担研究：评估风险证据</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/zheng-2022-burden-of-proof/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/zheng-2022-burden-of-proof/</id>
+<updated>2026-07-07T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;给每个"风险因子→结局"关系算一条保守的下界风险函数（BPRF），转成 ROS、再压成 1–5 星，做出可复现、算法化的证据强度分级——GRADE 的机器版。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;团队来自华盛顿大学健康测量与评价研究所（IHME）。第一作者 Peng Zheng 从事健康测量、统计建模与 Meta 分析方法研究；资深作者 Christopher J. L. Murray 主持全球疾病负担（GBD）研究。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;风险因子和结局的关系强弱，现有分级（&lt;strong&gt;GRADE&lt;/strong&gt;、Cochrane）靠专家判断、可复现性差、跨对之间不可比；作者的原话是 GRADE"很有用，但没法算法化实现"。常规剂量反应 meta 又通常强加对数线性，而且把研究间异质性算了出来、却不真正用进总不确定性。&lt;/p&gt;
+&lt;p&gt;小效应量的风险因子还常被"残余混杂"一句话质疑掉。作者要一套数据驱动、可复现、跨风险对可比的证据强度度量，喂给 GBD 的比较风险评估，定位是 &lt;strong&gt;GRADE&lt;/strong&gt;/Cochrane 的补充而非替代。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;核心对象是 Burden of Proof Risk Function（BPRF）：在所有与数据相容的风险函数里&lt;/strong&gt;，取最靠近"无关系"（RR=1）的那条——有害风险取 5% 分位曲线、保护性取 95% 分位，直觉是"即使最保守地读，效应至少还有这么大"，它同时反映效应量和不确定性。模型是 MR-BRT（mrtool）：贝叶斯、带修剪的混合效应样条 meta 回归。几步：一，PRISMA 抽数据、映射到 GBD 病因、补全未报的暴露区间。&lt;/p&gt;
+&lt;p&gt;二，用 B 样条估形状、不假设对数线性，把每个观测建成"样条在替代暴露区间与参照区间上的积分之比"，从而处理参照组和暴露范围不统一；单调性和最大斜率（生物合理性）作为对样条导数的线性不等式约束；再用 50 个随机结点的样条集成消掉结点敏感性。三，按 &lt;strong&gt;GRADE&lt;/strong&gt; 编码 6 个偏倚域（人群代表性、暴露、结局、反向因果、混杂控制、选择偏倚），做成 signal 斜率的效应修饰，用 Lasso 排序、加高斯先验逐个引入。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;四，研究间异质性 γ 用研究特异随机斜率，样本少时 γ 会被低估甚至为 0&lt;/strong&gt;，于是用 Fisher 信息矩阵取 γ 的 95% 分位，最终不确定区间合并固定效应后验和这个 95% 分位。五，发表偏倚用 Egger 回归——只标记、不校正。六，把 BPRF 在 15–85 百分位暴露范围上取平均 log、带符号，得到 risk-outcome score（ROS）：ROS 越大关系越强，ROS&amp;lt;0 表示保守读法下无法拒绝零假设。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ROS 分箱成 1–5 星&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;星级阈值（原文）：ROS&amp;lt;0 一星、0–0.14 两星、0.14–0.41 三星、0.41–0.62 四星、&amp;gt;0.62 五星——这几个切点其实就是 ln1.15、ln1.50、ln1.85，所以有害/保护对称&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;四个演示对：吸烟→肺癌 5 星（20 pack-years 时 RR 5.11，平均抬升风险 106.7%，ROS 0.73）&lt;/strong&gt;；SBP→缺血性心脏病 5 星（140 vs 100 mmHg RR 2.38，ROS 0.70）；&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;蔬菜摄入→IHD 保护但仅 2 星（100 g/d RR 0.81，平均降 12.1%，ROS 0.13）&lt;/strong&gt;；未加工红肉→IHD 名义 2 星，BPRF 平均 0.01 基本贴在零线（ROS 0.01，风险只 +1.04%）。在 GBD 的 180 对里，只有 22 对（12.2%）拿到 4–5 星，112 对（62.2%）是 1–2 星。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;暴露窗口很稳：换成 10–90、5–95 时 ROS 相关 0.98&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;最关键的一点是，ROS 把"证据强度"和"效应量"放在同一条轴上。红肉得到 2 星，原因在于保守下界恰好压在零线，并不能据此判断研究数量少或质量差。相应地，"5 星"也不等于 &lt;strong&gt;GRADE&lt;/strong&gt; 意义上的高质量证据，它表示保守下界仍然较大。&lt;/p&gt;
+&lt;p&gt;观察性混杂没有得到充分解决。混杂仅作为粗粒度的研究级偏倚协变量进入模型，作者也承认：如果绝大多数输入研究都存在偏倚，这类协变量很难完成纠正。整个框架停留在关联和剂量反应层面，没有使用 do 演算、&lt;strong&gt;调整集&lt;/strong&gt;识别或潜在结果框架。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;修剪比例，即保留 90% 最自洽数据点，属于人为设定的启发式规则&lt;/strong&gt;；发表偏倚只检测、不纠正，动物证据也未纳入。作者列出了 8 项限制，边界交代得很清楚。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>病因流行病学中的三角互证</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/lawlor-2016-triangulation/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/lawlor-2016-triangulation/</id>
+<updated>2026-07-07T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;三角互证要求多种偏倚结构相互独立、偏倚方向最好相反的方法共同检验同一问题；若结论仍然收敛，因果解释会更可信。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;三位作者均来自布里斯托大学 MRC 整合流行病学研究所（IEU）：第一作者 Deborah Lawlor 任该所副主任，Kate Tilling 为医学统计学教授，资深作者兼所长 George Davey Smith 是孟德尔随机化的开创者。该组以病因流行病学的因果推断方法见长。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;病因流行病学要判断"什么导致了疾病"，但很多暴露（母乳喂养、酒精、吸烟的长期效应）没法做 RCT。单一方法各有偏倚；把同一设计重复做、或 meta 合并，隐含假设它们都无偏、估的是同一个效应——可如果它们都被同样的&lt;strong&gt;残余混杂&lt;/strong&gt;带偏，"一致的答案"很可能就是"一致地错"，作者原话是那个 similar answer 很可能是"（残余）混杂后的答案"。所以需要一套框架，系统地利用"不同方法偏倚不同"来加强因果推断，而不是靠重复制造虚假的一致。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;三角互证&lt;/strong&gt;的定义（作者原话）：整合多种"方法（approaches）"的结果来加强因果推断，这些方法的关键偏倚来源各不相同、且假定互不相关。刻意用 approaches 而非"设计"——既可以跨设计（RCT vs 队列），也可以在同一队列里跨分析策略（负对照、跨情境比较、MR）。名字借自 17 世纪测绘：用几个易测距离加三角几何算出难测距离；这里"难测的量"就是无偏因果效应，"不同位置"就是不同偏倚的方法。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;核心是 5 条最小准则：(1) 至少两种、最好更多、关键偏倚来源不同且不相关的方法放一起比&lt;/strong&gt;；(2) 各方法针对同一个底层因果问题；(3) 比较时把每种方法评估的暴露时长与时点纳入考虑；(4) 明确写出每种方法的关键偏倚来源；(5) 尽量写出每种偏倚的预期方向，理想情况下这组方法里有方向相反的。&lt;/p&gt;
+&lt;p&gt;第 5 条是精髓：几种偏倚方向不同的方法若仍指向同一结论，这个结论就很难再用偏倚解释。关键的划界——把一堆估计量（分层、PS、IPW、g-formula，或 IV、匹配、DID）套在同一份数据上不算&lt;strong&gt;三角互证&lt;/strong&gt;，因为它们共享同样的测量误差和残余混杂。&lt;/p&gt;
+&lt;p&gt;真正的"偏倚来源"要看机制：观察性回归的混杂来自&lt;strong&gt;未测混杂&lt;/strong&gt;，RCT 的"混杂"来自破坏随机化，MR 的来自人群分层——同一个混杂构念，三种来源互不相关，才值得互证。Table 1 把每种设计的假设与关键偏倚来源列成知识表；Figure 1 用 LDLc→CHD 的六个 IV-DAG 说明：HMGCR 变异的 MR 在模仿他汀，其多效性路径和他汀 RCT 同源，这两个反而不该互证；选在不同通路上的变异才给出不相关的违背。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;方法/观点文，产出是框架不是数字。最可操作的是 Table 1（设计→假设→关键偏倚来源的知识库）和 Figure 1 的 DAG 判定逻辑。作者说得很直白：当前&lt;strong&gt;三角互证&lt;/strong&gt;"多半只能给因果强度的定性评估"，"指向同一结论并不意味着结果统计上一致、可以合并"。&lt;/p&gt;
+&lt;p&gt;三个刻意"不干净"的实例演示怎么用：降 SBP→CHD 三法（MR、队列 meta、RCT 的 IV 比值）方向一致但量级不同（MR 最大、队列中间、RCT 最小），按暴露时长画出来后大致自洽，支持累积暴露解释；母乳喂养→BMI 用多法（含一个专门为本文做的 ALSPAC 负结局对照，拿"老鼠/鸽子入室"当安慰剂结局）几乎都指向无&lt;strong&gt;因果效应&lt;/strong&gt;，负对照提示观察到的负相关来自残余混杂；母亲血糖→出生体重那组则对不上，只能说"还需更多证据"。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;作者自己划的边界很诚实。第一，只有定性、没有合并方法——"本文不考虑如何在三角框架里合并数据得到量化因果估计"，把"给出&lt;strong&gt;因果效应&lt;/strong&gt;的合理界"明列为未来工作。第二，"偏倚来源是否不相关"是判断题、会错——HMGCR/他汀那例就说明两个名义不同的设计可能共享同一偏倚源。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第三，偏倚方向常常无法先验预测，"依问题和方法而定"，有些新偏倚要等分析开了才显形&lt;/strong&gt;。第四，作者不声称这是新方法（跟 Hill 的 consistency、对 Duhem-Quine 的回应同源），贡献是"定义+准则+演示"。所以它是纲领，不是能一键跑的推断引擎；越难的案例它越只能把球踢给"更多证据"。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>利用大语言模型自动筛选观察性研究并提取变量的试点项目</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/pradhan-2026-litscreen-varex/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/pradhan-2026-litscreen-varex/</id>
+<updated>2026-07-07T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;两条开源 LLM 流水线：LitScreen 筛观察性研究、VarEx 抽暴露/结局/混杂并对齐 Metaconfoundr。 筛查基准显示 5 个 SYNERGY 数据集中有 4 个召回率为 1.00，但生产语料缺少完整纳入金标准，稿件也仍有占位内容。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;论文出自新墨西哥大学健康科学中心翻译信息学部，通讯作者 Scott A. Malec 主持 Malec 实验室，研究因果推断与基于文献的知识发现；合著者 Melissa L. Rethlefsen 主管该校健康科学图书馆、主导 PRISMA-S 检索报告规范；第一作者 Manjil M. Pradhan 为该校计算机博士生。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;系统综述是慢性病因果推断的证据顶层，却被文献规模压垮&lt;/strong&gt;：一篇 SR 常要几百到上千人时、从注册到发表中位 60 多周，筛查和数据抽取是最耗人力的两步。&lt;/p&gt;
+&lt;p&gt;更麻烦的是它汇总的观察性研究在混杂调整上极不一致——漏掉真混杂，或错调了 collider、mediator、&lt;strong&gt;工具变量&lt;/strong&gt;——同一个暴露-结局关系，各研究调的变量都不一样。VanderWeele 的 disjunctive cause criterion、DAG 这些原则早有了，实际报告仍然五花八门。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;现有 ML 筛查工具（如 Abstrackr）又多是专有黑箱，透明性和可复现差&lt;/strong&gt;。缺的是一套透明、开源、既减负担又能把各研究报告的暴露/结局/协变量标准化可比的方法。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;端到端两条流水线，全用开源模型（Deepseek-R1:70b、Llama3.3:70b，经 Ollama）&lt;/strong&gt;，且 provider-agnostic。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;LitScreen 三阶段筛查，核心是"渐进加证据、只对最不确定的少数文献上重计算"&lt;/strong&gt;。Phase 1 领域中立句抽取（llama3.3:70b few-shot）：故意把所有暴露/结局/设计的具体名字从 prompt 和示例里抹掉，逼模型别靠关键词 pattern-match，只抽描述设计、暴露、结局的句子。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Phase 2 逐条判定（Deepseek-R1:70b，reasoning 模型带 &lt;code&gt;&amp;lt;think&amp;gt;&lt;/code&gt;）&lt;/strong&gt;：初判 → 对 4-5 个准则问题自反思 → 给 YES/NO/UNCLEAR 加置信度，再走确定性三向门——高置信 NO 直接排除，其余全升到全文。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Phase 3 全文 RAG 验证：Entrez 取 PMID/PMCID 转 JATS XML（Unpaywall 兜底），自定义解析只留 Methods 和 Results，自适应分块（cosine&amp;gt;0.80、60-500 词），bioLinkBERT-large 检索 → MMR 取 top50 → bge-reranker 取 top5 → Deepseek 验证，禁 UNCLEAR、要引 chunk id&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;两个防幻觉门是关键：证据态门（Disqualifying/Confirming/Insufficient，No 只有拿到 Disqualifying 才允许）&lt;/strong&gt;；逐字门（DISQUALIFIER_VERBATIM 必须是抽取句的精确子串，否则 No 降级为 Unclear）。整套设计 recall 优先——漏一篇合格文献比多留一篇坏得多。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;VarEx 抽取沿用同一套解析分块，但按 STROBE 多留 abstract，还抽表格与表/图注文本&lt;/strong&gt;。PubMedBERT embed，暴露/结局/协变量分角色各自检索，每角色最多 4 chunk；分角色 prompt，每个变量强制带精确引文加 chunk id，禁生成统计结论。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;最后把协变量分到 10 个语义类（社会人口、生物遗传、健康行为、用药、生理测量、社会心理、临床症状、精神病史、基础疾病、其他），对齐 Metaconfoundr 的 Confounder Matrix&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;主数据集 HTN→ADRD（20 篇、240 个参考协变量）&lt;/strong&gt;：抽取 Precision 0.80、Recall 0.79、F1 0.76，分类准确率 0.97，strict F1（变量和类别都对）0.73。Education→Dementia（10 篇）F1 0.81。SYNERGY 验证集里 Bos 最好（F1 0.85），Brouwer（心理预测因子→抑郁复发）最差（F1 0.65、分类准确率仅 0.49）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;类别层面差得很开：Sociodemographics、Physiological、Health Behaviors 都到 0.87&lt;/strong&gt;；&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Medication Use 崩到 0.57（recall 0.47）&lt;/strong&gt;，Underlying Health Conditions 过度抽取（precision 0.60），Psychosocial 这种稀疏类只有 0.33。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;效率上，对比 Wang 等的人工基线（摘要 0.9、全文 7、抽取 53 min/ref，合计 60.9）&lt;/strong&gt;，流水线 8.68 min/ref，省 85.7%。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;但要看清楚：摘要筛查这一步 LLM 反而更慢（2.95 对 0.9 min）&lt;/strong&gt;，省的几乎全来自数据抽取（53→2.53）。LitScreen 平均在摘要阶段排掉 60.8%（Education 94.1%、HTN 86.9%）。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;这是一份内部状态不一致的 preprint&lt;/strong&gt;。正文仍留有 "MONKEY MONKEY MONKEY TO ADD TO DO" 占位符，HTN→ADRD 的 PRISMA 图有多处 n= 空缺，末尾还保留 "Things To Do / Incomplete" 清单；但 PDF 后部已经补入 MEDLINE 检索式、筛查提示模板和 Appendix F 的 Screening Results。版本完成度不能只按正文的未完成说明判断。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Table 9 给出了 LitScreen 的筛查性能&lt;/strong&gt;。BPV→Dementia 的 precision 为 0.846、recall 为 1.000；&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;5 个 SYNERGY 数据集中，Bos、Brouwer、van de Schoot 和 Wolters 的 recall 均为 1.000，van der Valk 为 0.725&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;生产语料 HTN→ADRD 和 Education→Dementia 没有完整纳入标签&lt;/strong&gt;，只能由专家复核模型标记的纳入项并报告 precision 0.857 和 0.655，accuracy、F1 和 recall 均不可估。由此可见，高召回在带金标准的若干基准上得到支持，对实际生产语料仍未完成验证。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;抽取评估也偏松&lt;/strong&gt;。语义匹配用 cosine≥0.60 定 true positive，阈值偏低，近似命中也算对；分类指标只在"已抽对"的协变量上算，所以 0.97 是条件在那 79% 上的数字。更别扭的是检索和评估用同一族 PubMedBERT embedding，容易把表面一致当成正确。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;样本也小：主集 20 篇、单个专家构建的抽取标准，参考标准没报标注者一致性&lt;/strong&gt;。Brouwer 一贯垫底，说明心理行为类协变量的语言更难，所谓"泛化"其实主场（HTN、Education）才好看。效率对比是跨研究的人工基线，不是同一 corpus 头对头，53 min/ref 的抽取基线在 85.7% 里权重极大。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;作者自己也承认幻觉不可避免（抽出原文没有的变量、按错证据判定），只能当助手&lt;/strong&gt;。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Living DAG：流行病学中 DAG 的未来</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/reynolds-2026-living-dags/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/reynolds-2026-living-dags/</id>
+<updated>2026-07-07T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;DAG 现在被当成一次性、study-specific 的工具用完就扔。 作者主张把它做成"活的"共享因果基础设施：标注证据等级、版本化、随新证据修订、可协作，让科学能累积。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;Robert J. Reynolds 是 NASA 约翰逊航天中心人类健康与绩效部的数据科学家（由承包商 KBR 派驻），并任人类系统风险委员会（HSRB）网络科学家。他长期研究航天流行病学与因果图，将 DAG 用于航天员健康风险的动态建模。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;过去二十年 DAG 从新奇变成流行病学的标准工具，用来画研究问题、明确 estimand、找偏倚来源、定分析。但常见用法很浪费：假设 DAG 结构正确（基于先验或文献），取出&lt;strong&gt;调整集&lt;/strong&gt;，然后丢掉 DAG。它顶多在论文里露个脸，很少做 d-分离之外的网络分析，几乎从不链接到先验证据或竞争模型。DAG 成了 study-specific 的一次性器械，研究一结束就无关了。作者认为这浪费了 DAG 支撑"可累积科学"的潜力。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;这是一篇观点与方法学文章，没有新增实证分析。核心提议是把 DAG 建设为 epistemic infrastructure：&lt;strong&gt;living DAG&lt;/strong&gt; 提供共享的领域级因果基础，研究者据此派生 study-specific DAG，加入选择节点、测量设定和时间窗后再开展分析。&lt;/p&gt;
+&lt;p&gt;一个 &lt;strong&gt;living DAG&lt;/strong&gt; 有四个特征：每条因果关系带有 speculative、weak、moderate 或 strong 的证据等级；图会随新研究、实验和机制模型更新；所有版本可追溯；各模块可以独立评估、修订和复用。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;情境差异通过模块化的修饰因子节点表达，地理、时间和人口特征可以改变通路强度，因此无需为每个场景从头建图&lt;/strong&gt;。作者区分"普适的因果机制"和"情境相关的量级"：领域 DAG 编码机制，study-specific DAG 指定暴露窗口等分析条件。以空气污染和肺癌为例，3 个月前的暴露窗口缺乏合理性，10—20 年前的暴露更符合疾病过程。文中还给出协作建图与修订循环，并允许竞争性 DAG 并存。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;观点文没有实验数字，给的是两个已经在做的实例。NASA 把人类航天风险用 29 个互联 DAG 建模，每个对应 Human System Risk Board 监控的一个风险，合成 NASA Human System Risk Network（HSRN），靠&lt;strong&gt;结构化专家启发&lt;/strong&gt;加配置评审流程建立。&lt;/p&gt;
+&lt;p&gt;脑瘫国际联盟则由 50 多名研究者和临床医生，加上照护者与患者的输入，用两年时间迭代式地建了一个脑瘫 DAG。两例都靠&lt;strong&gt;结构化专家启发&lt;/strong&gt;起步、再反复精炼。作者由 2025 年 SER 会议的工作坊引出这套主张，2026 年 SER 已接受三个相关 session。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;这是呼吁，不是被验证的方法。它的"证据"就是 NASA 和脑瘫两个案例，都是专家共识的产物，没有量化说明 &lt;strong&gt;living DAG&lt;/strong&gt; 比 study-specific 用法带来了多少可测的改进。&lt;/p&gt;
+&lt;p&gt;几个硬问题它点到没解决：&lt;strong&gt;证据等级&lt;/strong&gt;怎么客观赋分（speculative 到 strong 的边界谁定），竞争性 DAG 如何仲裁，版本治理谁来管，跨机构协作的激励和产权归谁。空气污染那个例子直观，但"机制普适、量级情境相关"这个断言本身也需要实证支撑。作为纲领它有说服力，作为方法它还缺形式化和验证。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>用于 ICU 再入院预测的知识图谱嵌入</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/carvalho-2023-kg-icu-readmission/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/carvalho-2023-kg-icu-readmission/</id>
+<updated>2026-07-06T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;把电子病历用生物医学本体做语义标注、再用知识图谱嵌入喂给传统机器学习，预测 30 天 ICU 再入院，AUROC 0.827、AUPRC 0.692，且入院中期就能达到峰值，不必等到出院。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;论文出自里斯本大学理学院 LASIGE 实验室，通讯作者 Cátia Pesquita 主持该室健康与生物医学信息研究方向，团队长于生物医学本体、知识图谱与本体语义相似度，本文将其用于整合电子病历与临床本体以预测 ICU 再入院。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;ICU 再入院&lt;/strong&gt;既是病人的健康风险（更高死亡率、更长住院），也是医院的成本负担，发达国家约每 10 个 ICU 出院病人就有 1 个在同次住院内被重新收治。用机器学习预测再入院风险不新鲜，问题在于绝大多数方法直接在 EHR 的原始值上跑，不理会数据的含义和关系。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;作者举的例子很直白：'主动脉瓣疾病' 和 '冠状动脉疾病' 在分类编码上毫无相似&lt;/strong&gt;，字符串比对只共享 'disease' 这个没信息量的词，但两者都是非肿瘤性心脏病，在本体的层级里是近亲。&lt;/p&gt;
+&lt;p&gt;以前的工作要么只用单一本体或受控词表、只覆盖一类特征（Lu et al. 用出院小结加 ICD9 超曲嵌入），要么从 EHR 里自己学图结构（Choi et al.），都没有真正把外部科学知识接进来。作者想问的是：用本体做语义标注、建&lt;strong&gt;知识图谱&lt;/strong&gt;、再嵌入，能不能改善再入院预测。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;三段流水线。第一段从 MIMIC-III 抽数据并清洗；第二段做语义特征生成；第三段做再入院预测。基线复现自 Lin et al.（唯一有开源代码的相关工作），但作者多抽了处方、初始诊断、操作、化验四类特征，并把 Lin 的 ICD9 预训练词嵌入整个换成&lt;strong&gt;知识图谱嵌入&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;核心三步&lt;/strong&gt;。选本体：用 BioPortal Recommender 打分，NCIT 覆盖率最好（约 35%），同时 MIMIC-III 本身对化验有 LOINC、诊断和操作有 ICD9CM、处方有 NDC。做标注：设两种策略，一种全部映到单一本体 NCIT，一种按特征类型分别用 NCIT/LOINC/ICD9CM/DRON 四本体。&lt;/p&gt;
+&lt;p&gt;文本标注用 ElasticSearch 取前六个候选类，再按 Levenshtein 距离选最近的。做嵌入：把病人当实例、连到标注它的本体类，建成&lt;strong&gt;知识图谱&lt;/strong&gt;（单本体 690 万三元组，多本体 830 万），用 RDF2Vec（Skip-Gram、500 次游走、深度 4）学 300 维向量。同一病人在一个本体里的多个标注向量相加；多本体场景下四个本体的向量拼接成 1,200 维。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;分类器故意用传统方法，逻辑回归、随机森林、朴素贝叶斯、SVM，不做超参优化&lt;/strong&gt;，为的是把语义标注的贡献和算法选择的贡献分开。作者另设了一个时间轴设计：Pre-ICU（人口学加初始诊断）、In-ICU（加化验、处方、chart events）、Post-ICU（加最终诊断和操作），模拟入院过程中随信息增加不断更新风险。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;最好的组合是 NCIT 单本体加 RDF2Vec 加随机森林&lt;/strong&gt;，五折交叉验证下 In-ICU 时刻 AUROC 0.827±0.011、AUPRC 0.692±0.018。相比复现出来的基线（RF AUROC 0.617），提升超过 0.2 的 AUROC 和 0.4 的 AUPRC。有几个反直觉的地方。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;多本体反而更差，所有模型 AUPRC 掉到 0.5 以下，作者认为单一语义空间的整体表示更好用&lt;/strong&gt;。时间轴上最有意思：In-ICU 就是峰值，Post-ICU 加了最终诊断和操作后性能反而略降，说明出院时才有的信息对再入院预测没有增量价值。去掉 chart events 几乎不掉分，真正起作用的是化验和处方嵌入。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;嵌入方法对比里，RDF2Vec 和 OPA2Vec 无显著差异（Kruskal-Wallis p=0.590/0.207），都胜过 TransE&lt;/strong&gt;。混淆矩阵上 In-ICU 模型能避免超过 90% 病人的不必要再入院，对约 55% 需要留院的病人能防止过早出院，代价是让 10% 本不需要留院的病人多住了。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;几处要打折扣&lt;/strong&gt;。一是基线复现明显低于原文（Lin et al. RF 0.712，作者复现 0.617；&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;LSTM+CNN 原文 0.791，作者根本没跑起来&lt;/strong&gt;，说是库不兼容），作者的立论是"我的提升幅度大于他的提升幅度"，但两条基线不在同一水平线上，直接比绝对 AUROC 并不公平，这一点作者自己也承认。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;二是标签定义把"30 天内死亡"和"再入院"合并成正类，这是沿用 Lin et al. 的口径&lt;/strong&gt;，但把死亡混进再入院会稀释结论的临床解读，模型可能主要在预测危重程度而非"会不会回来"。&lt;/p&gt;
+&lt;p&gt;三是全部在单中心 MIMIC-III（2001–2012，一家医院）上做，&lt;strong&gt;外部效度&lt;/strong&gt;未验证；作者的消融实验显示随机砍掉 75% 标注后 AUROC 仍在 0.7 以上，算是对稳健性的一点旁证，但跨机构迁移没测。&lt;/p&gt;
+&lt;p&gt;四是没做超参优化、只用传统模型，这是有意为之（为了隔离语义标注的效应），但也意味着报出来的绝对数字不是这套特征能达到的上限。&lt;strong&gt;测量偏倚&lt;/strong&gt;上，NCIT 覆盖率只有约 35%，处方和操作的标注损失明显，多本体反而更差这个结论可能部分是标注质量而非本体数量的问题。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>大语言模型驱动的心理健康探索知识图谱构建</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/gao-2025-mdkg-mental-health/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/gao-2025-mdkg-mental-health/</id>
+<updated>2026-07-06T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;用 GPT-4 加主动学习从 PubMed 摘要抽三元组，再融入十几个数据库，拼出&lt;strong&gt;千万级、带上下文的心理疾病知识图谱 MDKG&lt;/strong&gt;，还证明它能压缩专家审阅时间、提升 UK Biobank 上的疾病预测。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;论文由跨校统计与生物统计团队完成。第一作者为 Shan Gao，Kaixian Yu 和 Yue Yang 参与了模型与数据工作，末位作者为 Hongtu Zhu。&lt;/p&gt;
+&lt;p&gt;Hongtu Zhu 的研究涉及 UK Biobank 等大规模生物库、影像遗传学和大数据整合。Sheng Yu 主要研究医学 NLP 与生物医学知识图谱，Xueqin Wang 主要研究统计学习。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;心理疾病的研究证据分散在数十万篇文献和多个数据库中，人工难以全面阅读。精神分裂症、双相障碍等高负担疾病仍缺少覆盖充分的公开专病知识图谱。&lt;/p&gt;
+&lt;p&gt;现有生物医学知识图谱面临两个主要问题。其一，训练数据标注成本高，专病图谱规模受限；其二，扁平三元组会丢失条件信息。例如【仅在女性中成立】【MDD 早期】和样本量等语境一旦被删除，同一条边在不同人群中的真实性便难以判断。&lt;/p&gt;
+&lt;p&gt;研究目标是扩大图谱规模，同时把关系成立的条件、研究人群、来源和置信度保留在图中。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;分两条线：文献抽取，加数据库融合。&lt;/p&gt;
+&lt;p&gt;文献抽取以 &lt;strong&gt;LLM 加主动学习&lt;/strong&gt;为主线。研究从 GBD 2019 的高负担病种提取关键词，共检索 &lt;strong&gt;234,087 篇 PubMed 文章&lt;/strong&gt;。BERN2 和 QuickUMLS 用于实体预标注，GPT-4 补充方法和生理过程等容易漏检的名词短语。随后通过两步提问，先判断句子是否包含目标关系，再输出相应实体对。&lt;/p&gt;
+&lt;p&gt;主动学习用于降低关系标注成本。研究将候选句的 [CLS] 向量进行加权 K-means 聚类，权重取自模型对关系判断的交叉熵不确定度，再按照&lt;strong&gt;不确定度与关系类型多样性&lt;/strong&gt;选择优先标注的簇。最终人工精修 500 篇摘要，用于补充 risk 等稀有关系。&lt;/p&gt;
+&lt;p&gt;正式抽取模型为 SpERT.PL，并采用在 UMLS 上预训练的 CODER++ 编码器和 NoisyTune。GPT-4o 随后复核实体跨度、实体类型和关系，并给出 1—10 分；低于 5 分的结果重新处理。遇到冲突三元组时，模型结合完整摘要判断冲突是否来自论文结论差异，再决定保留两条关系或删除错误关系。&lt;/p&gt;
+&lt;p&gt;每条文献三元组附带三类上下文。第一类是条件语句，如【仅女性】【MDD 早期】等句子级依赖，共 283,417 条；第二类是年龄、性别、种族和样本量等七项研究人群特征，由 ChatGPT、PaddleOCR 和 pdfplumber 从 PDF/XML 表格中提取；第三类是来源和置信度等辅助信息。&lt;/p&gt;
+&lt;p&gt;置信度分综合模型评分、期刊影响、跨来源出现频次、发表年份和矛盾计数。该分数用于排序和辅助审阅，不能替代关系真实性的人工验证。&lt;/p&gt;
+&lt;p&gt;数据库融合覆盖 DrugBank、DisGeNET、UMLS、MONDO 等多个资源。研究先评估各数据库的来源、生成方式、证据强度和更新频率，再使用 &lt;strong&gt;SapBERT 嵌入与 FAISS 检索&lt;/strong&gt;完成实体对齐。&lt;/p&gt;
+&lt;p&gt;实体余弦相似度超过 0.9 时被判定为同一实体。计算对象是候选实体对的嵌入相似度；超过阈值会触发合并，因此错误对齐会直接改变图谱的节点数量、连通性和下游路径。&lt;/p&gt;
+&lt;p&gt;下游应用将 MDKG 作为 UK Biobank 疾病预测的外部知识。MDKG 实体先经 SapBERT 映射到 ICD-10，再映射到 PheCode，特征维度约降低 75%。&lt;/p&gt;
+&lt;p&gt;RDF2vec 用于生成图嵌入，并将个人病史汇总为 200 维向量。研究随后使用 LR、RF、SVM 和 XGBoost 预测 MDD、焦虑和双相障碍，病例与对照比例为 1∶2，输入为诊断前 1—7 年的病史。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;文献图包含 236,542 个实体和 1,913,461 条三元组，其中 880,692 条为去重后的唯一关系。多源融合后，图谱达到 &lt;strong&gt;1,642,543 个实体和 10,702,976 条关系&lt;/strong&gt;，其中近百万条关系未出现在比较数据库中。&lt;/p&gt;
+&lt;p&gt;在 MDD、焦虑、双相障碍、精神分裂症和抑郁症相关信息上，MDKG 的覆盖量为 PrimeKG、SPOKE 和 GENA 的 &lt;strong&gt;5—50 倍&lt;/strong&gt;。NER 的 micro/macro F1 为 &lt;strong&gt;0.89/0.88&lt;/strong&gt;，联合 NER+RE 经精修后达到 &lt;strong&gt;0.79/0.76&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;四位专家参加人工评估，包括两名精神科医生和两名医学博士。MDKG 的正确率为 &lt;strong&gt;0.79&lt;/strong&gt;，略高于 GENA 的 0.783；错误主要来自语义歧义（28%），事实错误占 12%。&lt;/p&gt;
+&lt;p&gt;上下文信息明显缩短了审阅时间。临床医生审阅一条 MDKG 三元组平均需要 &lt;strong&gt;31 秒&lt;/strong&gt;，PrimeKG 为 129 秒，GENA 为 85 秒，相当于缩短 &lt;strong&gt;62%—77%&lt;/strong&gt;。置信度分与人工 insightfulness 评分的相关系数为 0.78。&lt;/p&gt;
+&lt;p&gt;GENA 的 insightfulness 得分高于 MDKG（2.29 对 2.18）。作者认为原因之一是 MDKG 纳入较多较早的常识性文献，例如 24.34% 的精神分裂症三元组来自 2010 年以前。&lt;/p&gt;
+&lt;p&gt;三个疾病预测任务在加入 KG 嵌入后均有所提升。MDD 的 XGBoost 模型中，&lt;strong&gt;EHR+KG 的 AUC 为 0.89&lt;/strong&gt;，高于纯 EHR 的 0.82 和纯 KG 的 0.71。仅使用环境因素时，加入 KG 后 SVM 的 AUC 从 0.57 提升到 0.78。&lt;/p&gt;
+&lt;p&gt;双相障碍的 LR 模型从纯 KG 的 0.70 提升到整合模型的 0.87。各模型和疾病的 AUC 增益范围为 &lt;strong&gt;0.02—0.21&lt;/strong&gt;，在原始特征较少时增益较大。SHAP 分析显示，加入病史嵌入后，部分嵌入维度进入高位，但这些维度的临床含义仍不清楚。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;抽取证据主要来自&lt;strong&gt;摘要中的句子级信息&lt;/strong&gt;，未系统覆盖全文、附表和图。RE 单任务 F1 为 0.68，联合抽取原始 F1 为 0.63，后续结果较大程度依赖 GPT-4o 精修。该步骤&lt;strong&gt;缺少独立的人工召回核验&lt;/strong&gt;，因此被删除的三元组是否均为错误尚不清楚。&lt;/p&gt;
+&lt;p&gt;正确率 0.79 的计算对象是【三元组是否与给定句子一致】，衡量的是来源忠实度，不能证明原句结论本身可靠。跨专业评审者的 &lt;strong&gt;kappa 低至 0.04&lt;/strong&gt;，触发了对评审一致性的担忧，也降低了正确率点估计的解释强度。&lt;/p&gt;
+&lt;p&gt;论文中的【因果图】由 risk 关系沿方向连接形成，&lt;strong&gt;没有混杂调整、干预语义或反事实识别&lt;/strong&gt;。谷氨酸到抑郁的八步路径可以用于生成假设，不能解释为已经识别或估计的因果效应。&lt;/p&gt;
+&lt;p&gt;下游预测主要在 UK Biobank 内部完成，其人群构成偏白人和社会优势群体，外部效度有限。AUC 增益在模型和疾病之间波动较大，200 维图嵌入也缺少临床可解释性。实体对齐依赖 0.9 的余弦相似度阈值，同义词和缩写仍可能降低图谱连通性和实体链接质量。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>整合领域专家知识开展因果效应估计中的变量选择：一项案例研究</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/sme-2024-dag-variable-selection/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/sme-2024-dag-variable-selection/</id>
+<updated>2026-07-06T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;用真实数据里已知为空的因果效应当"金标准"，比较三种 DAG 构建法：先找结局预后因子的做法最能去混杂，硬塞暴露预测变量反而放大偏倚。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;通讯作者 Eleanor J. Murray 是波士顿大学流行病学家，主持 Murray Causal Lab，以因果推断方法与科普（Casual Inference 播客联合主持人）著称；第一作者 Julia Debertin 主导了这项 DAG 协变量选择的案例研究。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;因果推断里选调整变量，标准建议是画一张 DAG，然后从图上读出能阻断所有混杂路径的最小&lt;strong&gt;调整集&lt;/strong&gt;。问题在于，画 DAG 本身几乎没有可操作的证据指导，大多数指南只讲图论理论或调整集的识别规则，却不告诉你该往图上放哪些变量、放到几代祖先为止。很多流行病学家因此觉得建图门槛太高，干脆不用。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;已有的几种建图策略（析取因果准则、"厨房水槽"式纳入所有暴露预测变量、只找结局预后因子、证据合成建 DAG）大多只在模拟里验证过，很少有人在真实数据上比过它们的去混杂表现&lt;/strong&gt;。核心障碍是真实数据里"真 DAG"永远未知，没有金标准可打分。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;作者借用 Coronary Drug Project 试验安慰剂组这个特例：安慰剂依从性对 5 年死亡率的真实&lt;strong&gt;因果效应&lt;/strong&gt;被高度确信为零，但这个关系又被一批基线和时变协变量严重混杂（经典的"健康依从者偏倚"）。真效应已知，就能反过来给不同 DAG 打分，越接近真 DAG 的调整集，估出来越该接近零。他们从 1980 年原始分析隐含的 DAG 出发，顺序构建三套（各含基线版和纵向版，共六张图）:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;outcome-driven DAG：用原试验专家挑的 40 个死亡率预后因子，不考虑依从性。&lt;/li&gt;
+&lt;li&gt;trimmed DAG：做 PubMed 范围综述，删掉找不到证据支持其影响依从性的变量（多数实验室和心电图指标），再删只被单一变量导致的节点。&lt;/li&gt;
+&lt;li&gt;maximal DAG：按析取因果准则补充文献和专家提示的潜在依从性/死亡原因（如高血压、抑郁、酒精），并加入协变量间连线。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;分析用 CDP 安慰剂组 N=2,410 的完整病例。基线分析用插值 g-formula，时变分析用&lt;strong&gt;逆概率加权&lt;/strong&gt;处理时变混杂和删失，500 次自助抽样算 CI，还画了 P 值函数比较各结果与真零的相容度。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;未调整的风险差是 11 个百分点（95% CI 6.6, 16）。只用基线协变量时，三套&lt;strong&gt;调整集&lt;/strong&gt;表现接近，点估计都有偏（去混杂不完全）：outcome-driven 7.0（2.9, 11）、trimmed 7.6（3.3, 12）、maximal 7.6（3.4, 12）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;加入时变协变量后差异显现：outcome-driven 降到 2.5（−2.0, 7.0），最接近零&lt;/strong&gt;；trimmed 3.7（−1.1, 8.5）；maximal 反而只到 5.2（0.4, 10），离零差了近 3 个百分点，CI 甚至不含零。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;P 值函数&lt;/strong&gt;印证同一排序，outcome-driven 的结果与真零最相容，maximal 基本不相容。纳入非混杂的预后因子只缩小方差、不加偏倚；而 maximal 补进的多是只跟依从性相关、跟死亡弱相关的"近似工具变量"，触发了偏倚放大。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;最强的地方是设计：拿一个真值已知的效应当标尺，绕开了"真 DAG 不可知"这个死结，结论又跟理论（工具变量&lt;strong&gt;偏倚放大&lt;/strong&gt;、加预后因子无害）对得上，互相印证。但外部效度很窄。这是单个案例，1970 年代全男性心梗人群，作者自己承认为安慰剂组建的 DAG 未必对全试验都成立，更别说推广到别的题目。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;依从性测量很粗，医生看药瓶目测三档、极少有人低于 20%、易错分，可能压低了时变分析的分辨力&lt;/strong&gt;。maximal DAG 之所以差，一部分是数据所限：想加的抑郁、认知、酒精多半没测到，加进图里却拿不到调整变量，等于只留下会放大偏倚的那半边。所以"maximal 最差"里，有多少是方法本身、有多少是这份数据的偶然，分不太开。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>因果知识图谱分析识别药物不良效应</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/toonsi-2025-causal-kg-ade/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/toonsi-2025-causal-kg-ade/</id>
+<updated>2026-07-06T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;给知识图谱标上因果边，就能自动生成"药物中介两病"的假设并挑混杂集，对 UKB 和 MIMIC-IV 跑中介分析，既复现已知不良反应也捞出新候选。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;论文出自阿卜杜拉国王科技大学（KAUST）生物本体研究组（BORG）：通讯作者 Robert Hoehndorf 领衔，该组长于生物医学本体、知识图谱及结构化知识上的机器学习；第一作者 Sumyyah Toonsi 同属 KAUST，合作者 Paul N. Schofield 来自剑桥大学。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;药物上市后的罕见不良反应，因为发病率低、发作延迟常在临床试验里漏掉，得靠事后监测。这件事同时要背景知识（分类、疾病进展、适应症、已知副作用）、观测数据里的共现频率，还要因果推断分辨关联是真副作用还是混杂造出来的。现有做法两头都不占全：&lt;strong&gt;知识图谱&lt;/strong&gt;擅长组织定性知识但没有概率和因果语义，结构因果模型能算干预效应却和背景知识脱节、图是手搓的不成规模。作者想让两者合流，让图结构自动完成提假设、找混杂、约束分布这几步。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;先形式化定义&lt;strong&gt;因果知识图谱&lt;/strong&gt;（CKG）：在普通知识图谱上挂标记为因果的关系子集 Rcausal、把节点映到人群子集的函数 f、人群上的概率测度 P。关键是不把知识图谱等同于因果图，而让因果结构只做图的子集，这样非因果关系（如 ICD-10 的 is-a 层级）还能参与演绎推理、约束联合分布。&lt;/p&gt;
+&lt;p&gt;据此建的药物-疾病 CKG 整合四类边，疾病进展 7,586 条（文本挖掘的疾病&lt;strong&gt;因果 DAG&lt;/strong&gt;）、适应症 20,955 条（MEDI-C）、副作用 59,119 条（OnSIDES）、ICD-10 层级；因果子集取疾病进展边加适应症边的逆向（患病导致开药）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;假设这样生成：对每对 x 致病→y，查 x 的适应症药物 M&lt;/strong&gt;，拼成"x（适应症）→ 开 M → y（潜在副作用）"的中介链。候选来自两处，CKG 里显式的疾病进展对（因果集），和 UKB 里显著的共病对（Hidalgo 相对风险、BH 校正后留 34,843 条、再用诊断时间定向）。用 SPARQL 滤掉图里已有别的解释的假设，最后落到 12,561 条因果假设和 81,610 条共病假设。&lt;/p&gt;
+&lt;p&gt;统计上做因果中介分析估自然间接效应（R 的 mediation 包，即 ACME），识别靠序贯可忽略性。混杂控制是全篇最重的一环：除人口社会经济变量外，用 &lt;strong&gt;DAGitty&lt;/strong&gt; 在因果子图上跑后门准则和分离因果准则挑调整集，用共病数和用药数当严重度代理，再用两个 LASSO（适应症、结局各一）取并集缩减协变量。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;因果集上"分离因果准则 + LASSO"最好&lt;/strong&gt;：精度 0.907、召回 0.282、F1 0.431（对照 backdoor+LASSO 的 0.371）。这高精度部分是"送分"，因为这些边本就有文献支持、多半是已知效应。共病集换来覆盖面：30,724 个显著正 ACME，召回持平但精度降到 0.749，即更多潜在新候选；对 Ryan 等专家标注集的 56 对重叠，精度 70.0%、召回 60.6%。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;外部验证&lt;/strong&gt;走药物重定位：预测效应单用 ROCAUC 0.604，低于 OnSIDES 的 0.620，但两者合起来到 0.632（p≪0.001），说明新捞出的效应带信息而非噪声。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;命门是&lt;strong&gt;序贯可忽略性&lt;/strong&gt;：中介分析要求调整完混杂后处理和中介都对潜在结局条件独立，这在观测数据里不可检验。作者自己承认最要命的漏网之鱼是疾病严重度，人工评的 900 个假阳性里约 6% 其实是疾病进展而非药物中介，药开给会恶化的重病，轻症有效者根本不出现结局，药就"看起来"在中介。&lt;/p&gt;
+&lt;p&gt;拿共病数和用药数当严重度代理是钝器，比不上 Charlson 加权指数。&lt;strong&gt;测量偏倚&lt;/strong&gt;也不小：UKB 用药自报、没有准确时点和剂量，ICD 只抓临床确认表型、轻微一过性副作用看不见。两个队列都偏中老年、社会优势人群，可迁移性存疑，加上金标准集小、重叠少，报出来的高精度只在能对上的那一小块成立。&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>健康研究中的证据三角互证</title>
+<link href="https://xuanyshi.github.io/research-desk/zh/deep/gutierrez-2025-triangulation/"/>
+<id>https://xuanyshi.github.io/research-desk/zh/deep/gutierrez-2025-triangulation/</id>
+<updated>2026-07-06T00:00:00Z</updated>
+<content type="html">&lt;blockquote&gt;
+&lt;p&gt;没有哪个单独的研究能定论。 把弱点各不相同的几种设计摞起来，它们假设不同、偏倚不搭界，结果还一致，这才靠得住。 这叫证据三角验证。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;作者团队&lt;/h2&gt;
+&lt;p&gt;第一作者 Sirena Gutierrez 为加州大学旧金山分校（UCSF）流行病学者，出自 M. Maria Glymour 的因果推断团队；Glymour 现任波士顿大学公共卫生学院流行病学系主任，长于社会流行病学与因果推断方法。资深作者 George Davey Smith（布里斯托大学）是孟德尔随机化与证据三角验证的主要倡导者。&lt;/p&gt;
+&lt;h2&gt;解决什么问题&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;"完美研究"不存在&lt;/strong&gt;。你没法做一个足够大、足够多样、把所有相关处理都随机化、还追踪所有结局的试验。作者拿酒精和痴呆开场：一堆观察性研究说"适量喝酒"认知更好、痴呆更少，媒体年年拿这个做文章。&lt;/p&gt;
+&lt;p&gt;可这些关联里混着社会经济地位、地区和宗教习惯、过去的成瘾史，还有反向因果（人快得痴呆了自然会少喝）、选择性存活、&lt;strong&gt;测量误差&lt;/strong&gt;。想靠一个大 RCT 断案？NIH 和酒业出钱的 MACH 试验中途就黄了，就算做完也只答得上很窄一段。剩下的只能靠把很多有缺陷的研究拼起来读。&lt;/p&gt;
+&lt;h2&gt;怎么做的&lt;/h2&gt;
+&lt;p&gt;核心是让偏倚错开：先找出每种设计最要命的那个弱点，再去补一个不带这个弱点的证据。新证据当然也有毛病，但只要它跟前一个假设不同、偏倚方向不相干，两边还一致，可信度就上一个台阶。工具是把偏倚归成三类（混杂、测量、选择），再用&lt;strong&gt;有向无环图&lt;/strong&gt;（DAG）把没法检验的假设摊开对照，挑出识别假设各不一样的互补设计。&lt;/p&gt;
+&lt;p&gt;作者给了一个六件套的工具箱。RCT 是金标准，但常做不了、也只答很窄一段。工具变量和自然实验用政策变动这类外生、时点近乎随意的变异当工具，绕开&lt;strong&gt;未测混杂&lt;/strong&gt;，假设跟 RCT 是同一套。孟德尔随机化拿遗传变异当工具，值钱在于假设跟传统混杂控制完全不同。&lt;/p&gt;
+&lt;p&gt;负对照找一个混杂结构相似、因果上却不该有效应的暴露，比如用"父亲吸烟"检验"母亲孕期吸烟到子代肥胖"的宫内机制。跨情境比较在混杂结构不同的人群里反复看同一个关联。&lt;strong&gt;定量偏倚分析&lt;/strong&gt;干脆把偏倚的量级估出来。&lt;/p&gt;
+&lt;h2&gt;关键结果&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;作为一篇述评，本文提供的实验数字不多，贡献集中在几条可以操作的判断规则&lt;/strong&gt;。合并证据前要先对齐估计量：在 LDL 胆固醇与冠心病的例子中，RCT 估计降低 LDL 五年的效应，MR 对应遗传决定的终身轨迹。MR 效应明显更大，但 RCT 约为 MR 的四成，比例相对稳定，因而可以换算。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;暴露和结局的定义也要校准，例如每天饮酒杯数与每周杯数、4 杯或 5 杯如何界定 binge&lt;/strong&gt;，以及全因痴呆与临床诊断是否对应同一结局。很多时候，异质性比强行合并一个总效应更有信息；当偏倚方向可以判断时，一个上偏估计和一个下偏估计还能为真实效应提供区间约束。&lt;/p&gt;
+&lt;h2&gt;证据有多硬&lt;/h2&gt;
+&lt;p&gt;这是方法学述评，要掂量的是框架本身的成熟度。定量合并的方法还在发展，多数情况只能做定性比较。跨情境和&lt;strong&gt;工具变量&lt;/strong&gt;都吃大样本，而现有数据又偏向高收入、社会优势人群。三角验证自己也会被玩坏：挑最配合假设的负对照来报、事后编故事、发表偏倚，都会污染结论。作者给的解法是把分析在各种合理设定下系统地跑一遍，再加上预注册三角验证的方案。&lt;/p&gt;</content>
+</entry>
+</feed>

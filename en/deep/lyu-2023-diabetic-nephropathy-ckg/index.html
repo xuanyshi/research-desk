@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Causal knowledge graph construction and evaluation for clinical decision support of diabetic nephropathy · Deep reads · My Research Desk</title>
+<meta name="description" content="The graph covers most diagnostic evidence and pruning raises expert accuracy by 5.5 points. This supports knowledge-engineering and decision-support use, not counterfactual validity of triples.">
+<meta property="og:title" content="Causal knowledge graph construction and evaluation for clinical decision support of diabetic nephropathy · Deep reads · My Research Desk">
+<meta property="og:description" content="The graph covers most diagnostic evidence and pruning raises expert accuracy by 5.5 points. This supports knowledge-engineering and decision-support use, not counterfactual validity of triples.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="My Research Desk">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/en/deep/lyu-2023-diabetic-nephropathy-ckg/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/en/deep/lyu-2023-diabetic-nephropathy-ckg/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/lyu-2023-diabetic-nephropathy-ckg/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/lyu-2023-diabetic-nephropathy-ckg/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/lyu-2023-diabetic-nephropathy-ckg/">
+<link rel="alternate" type="application/atom+xml" title="My Research Desk · Deep reads" href="https://xuanyshi.github.io/research-desk/en/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">My Research Desk<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">Home</a>
+      <a href="../../library/index.html" class="">Library</a>
+      <a href="../../deep/index.html" class="on">Deep reads</a>
+      <a href="../../daily/index.html" class="">Daily</a>
+      <a href="../../log/index.html" class="">Log</a>
+      <a href="../../about/index.html" class="">About</a>
+      <span class="lang">
+        <a href="../../../zh/deep/lyu-2023-diabetic-nephropathy-ckg/" class="">中</a>
+        <a href="../../../en/deep/lyu-2023-diabetic-nephropathy-ckg/" class="on">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">My deep read</div>
+  <h1>Causal knowledge graph construction and evaluation for clinical decision support of diabetic nephropathy</h1>
+  <p>Kewei Lyu, Yu Tian, Yong Shang, Tianshu Zhou et al.</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Journal of Biomedical Informatics 139 (2023):104298</span></div>
+  <div class="dbadges"><span class="dbadge">Diabetes</span><span class="dbadge">Kidney disease</span></div>
+  <p class="deep-links">
+    <a href="https://doi.org/10.1016/j.jbi.2023.104298" target="_blank" rel="noopener">Source / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=Causal%20knowledge%20graph%20construction%20and%20evaluation%20for%20clinical%20decision%20support%20of%20diabetic%20nephropathy" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p2">Causal knowledge graph</span><span class="pill p4">Diabetic nephropathy</span><span class="pill p4">Clinical decision support</span><span class="pill p1">Electronic health records</span><span class="pill p4">Graph pruning</span><span class="pill p0">Knowledge evaluation</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30-second read</div>
+      <h2 id="overview-title">The graph covers most diagnostic evidence and pruning raises expert accuracy by 5.5 points. This supports <strong>knowledge-engineering and decision-support use</strong>, not counterfactual validity of triples.</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>Question</dt>
+          <dd>Can multi-source medical causal statements form a graph for <strong>differential diagnosis of diabetic nephropathy</strong>, with patient data and expert review revealing noise?</dd>
+        </div>
+        <div>
+          <dt>Design</dt>
+          <dd>An engineering evaluation combining SemMedDB, UpToDate, and a diagnostic textbook, mapped to about 1,400 inpatients and evaluated by <strong>three graph models, clinical text, and expert review</strong>.</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>Evidence strength</span>
+          <strong class="evidence-level level-mid">Moderate</strong>
+        </div>
+        <dl>
+          <div><dt>What was assessed</dt><dd><strong>Patient graphs for 1,427 people, 150 diagnostic narratives, and sampled expert-rated triples</strong>, assessed by AUC, F1, path coverage, and manual accuracy.</dd></div>
+          <div><dt>Downgrade triggers</dt><dd>SemMedDB supplies 99.1% of edges and the EHR cohort is single-center; systematic extraction, publication, or threshold bias could <strong>overstate transferability of predictive gains</strong>.</dd></div>
+          <div><dt>Impact on interpretation</dt><dd>The multi-source, provenance, and pruning workflow is reusable. <strong>AUC, coverage, and expert plausibility cannot be read directly as causal-effect evidence.</strong></dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">Reading advice</strong>Start with Figure 5 and Table 4 for provenance, audit source and relation ablations in Tables 6–8, then use Tables 9–12 to ask <strong>how much coverage pruning trades for accuracy</strong>.</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">Three numbers to keep</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">About 1.72M</div>
+          <h3>Causal triples</h3>
+          <p><strong>153,289 concepts, with 99.1% of triples from SemMedDB</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">About 1,400</div>
+          <h3>Inpatients</h3>
+          <p><strong>1,427 patients and 3,045 admissions</strong>; patient-level train, validation, and test splits</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">+5.5 points</div>
+          <h3>Expert accuracy</h3>
+          <p><strong>Pruning also improves AUC and F1 in all three graph models</strong>, with thresholds selected in the same task</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">Where to focus</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1016/j.jbi.2023.104298" target="_blank" rel="noopener">
+            Figure 5 and Table 4 · PDF p. 8<small>Direct link</small> ↗
+          </a>
+          <div><h3>Trace the graph&#39;s origin</h3><p><strong>Concept hierarchy, source provenance, and three causal relations appear together</strong>, revealing SemMedDB dominance.</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1016/j.jbi.2023.104298" target="_blank" rel="noopener">
+            Tables 6–8 · PDF pp. 9–10<small>Direct link</small> ↗
+          </a>
+          <div><h3>Audit knowledge and relation ablations</h3><p><strong>Compare one source, all sources, three causal relations, and six associative relations</strong> for diagnostic prediction.</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1016/j.jbi.2023.104298" target="_blank" rel="noopener">
+            Tables 9–12 · PDF pp. 10–13<small>Direct link</small> ↗
+          </a>
+          <div><h3>Audit pruning gains</h3><p><strong>Graph size, AUC, F1, and expert accuracy together show whether pruning is task-specific compression.</strong></p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">From multi-source knowledge to patient-level evaluation</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">Knowledge</div>
+            <h3>Combine three source types</h3>
+            <p><strong>Extract and normalize causal triples from SemMedDB, guidelines, and a textbook</strong> with provenance.</p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">Instances</div>
+            <h3>Map patient records</h3>
+            <p><strong>Convert structured, semi-structured, and narrative evidence into patient graphs.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">Completeness</div>
+            <h3>Measure clinical coverage</h3>
+            <p><strong>Calculate coverage of disease-to-diagnostic-evidence paths.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">Utility</div>
+            <h3>Run graph reasoning</h3>
+            <p><strong>Three models compare the diagnostic contribution of sources and relation types.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">Denoising</div>
+            <h3>Prune and review</h3>
+            <p><strong>Remove edges by co-occurrence or causal ratio, then compare performance, size, and expert accuracy.</strong></p>
+          </li>
+        </ol>
+        <figcaption><strong>Organized from PDF Figures 2–5 and Tables 4–12.</strong></figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">Full deep read</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>This study links causal statements from literature, guidelines, and textbooks to patient-level graph reasoning; it demonstrates engineering utility, not counterfactual validity of the edges.</p>
+</blockquote>
+<h2>The authors</h2>
+<p>Kewei Lyu, Yu Tian, and corresponding author Jingsong Li are affiliated with Zhejiang University and the Research Center for Healthcare Data Science at Zhejiang Lab. Xi Yao, Ping Zhang, and Jianghua Chen are based at the Kidney Disease Center of the First Affiliated Hospital, Zhejiang University. The collaboration spans knowledge engineering, electronic records, and nephrology.</p>
+<h2>The problem</h2>
+<p>Medical causal knowledge graphs are often justified by extraction scale. Two practical questions receive less attention: whether a graph covers diagnostic evidence in real records, and whether noisy edges degrade clinical decision support. The authors use differential diagnosis of diabetic versus non-diabetic kidney disease to assess completeness, predictive use, and accuracy after pruning.</p>
+<h2>The approach</h2>
+<p>The graph combines SemMedDB, UpToDate, and Churchill's Pocketbook of Differential Diagnosis. Causes, produces, and predisposes relations are normalized, with PMID or source provenance retained. Structured, semi-structured, and narrative EHR evidence is mapped into patient-specific graphs. Two pruning rules remove SemMedDB edges using literature co-occurrence and causal-relation ratios.</p>
+<p>Evaluation uses <strong>1,427 inpatients and 3,045 admissions</strong> from one Chinese hospital between October 2010 and October 2020. Patient-level training, validation, and test sets contain 856, 286, and 285 people. R-GCN, MHGRN, and MedPath compare knowledge sources, causal versus associative relations, and pruning thresholds; 150 patient narratives and expert samples assess coverage and accuracy.</p>
+<h2>Key results</h2>
+<p>The graph contains <strong>153,289 concepts and 1,719,968 causal triples</strong>, 99.1% from SemMedDB. Mapping was nearly 100% for structured data and 93.5% for semi-structured data. Among 1,783 diagnostic evidence items in 150 patients, causal paths covered 93.6%; the abstract reports overall causal-relation coverage of 93.9%.</p>
+<p>Combining all three sources improved AUC and F1 over SemMedDB alone for all three models (P&lt;0.01). Models using only the three causal relations did not differ significantly from models using all nine relations, whereas models excluding them performed worse. Pruning improved AUC and F1 (P&lt;0.01) and raised expert-rated triple accuracy by <strong>5.5 percentage points</strong>.</p>
+<h2>How solid is the evidence</h2>
+<p>Real EHRs, model ablations, and expert review make this stronger than a graph-size demonstration. The outcomes remain diagnostic prediction and text coverage. An edge helping a model, or appearing plausible to an expert, does not show that intervening on its cause would change the outcome. The graph also inherits extraction and publication biases from SemMedDB, which supplies 99.1% of its triples.</p>
+<p>The cohort is single-center and dominated by older men. Threshold selection in the same application can overfit pruning to that task. Edges are not graded by study design, target population, estimand, or risk of bias.</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="On this page">
+    <div class="deep-toc-title">On this page</div>
+    <a href="#overview" class="is-main">30-second read</a>
+    <a href="#key-numbers">Three numbers to keep</a>
+    <a href="#where-to-focus">Where to focus</a>
+    <a href="#study-design">From multi-source knowledge to patient-level evaluation</a>
+    <a href="#full-read">Full deep read</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← Back to deep reads</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>My Research Desk · Xuanyu Shi</span>
+    <span>Updated on weekdays · <a href="https://xuanyshi.github.io/research-desk/en/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

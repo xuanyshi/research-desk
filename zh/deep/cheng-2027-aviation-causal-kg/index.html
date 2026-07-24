@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>加强航空系统安全分析：大语言模型驱动的因果知识图谱框架用于主动风险识别 · 精读 · 我的文献集</title>
+<meta name="description" content="混合归一化把约3,000种原始谓词压到185种，F1为0.908；路径剪枝显著提高上下文精确率。图边表示报告叙述中的因果陈述，未建立干预估计或反事实识别。">
+<meta property="og:title" content="加强航空系统安全分析：大语言模型驱动的因果知识图谱框架用于主动风险识别 · 精读 · 我的文献集">
+<meta property="og:description" content="混合归一化把约3,000种原始谓词压到185种，F1为0.908；路径剪枝显著提高上下文精确率。图边表示报告叙述中的因果陈述，未建立干预估计或反事实识别。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="我的文献集">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/zh/deep/cheng-2027-aviation-causal-kg/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/zh/deep/cheng-2027-aviation-causal-kg/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/cheng-2027-aviation-causal-kg/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/cheng-2027-aviation-causal-kg/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/cheng-2027-aviation-causal-kg/">
+<link rel="alternate" type="application/atom+xml" title="我的文献集 · 精读" href="https://xuanyshi.github.io/research-desk/zh/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">我的文献集<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">首页</a>
+      <a href="../../library/index.html" class="">文献库</a>
+      <a href="../../deep/index.html" class="on">精读</a>
+      <a href="../../daily/index.html" class="">每日速览</a>
+      <a href="../../log/index.html" class="">历程</a>
+      <a href="../../about/index.html" class="">关于</a>
+      <span class="lang">
+        <a href="../../../zh/deep/cheng-2027-aviation-causal-kg/" class="on">中</a>
+        <a href="../../../en/deep/cheng-2027-aviation-causal-kg/" class="">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">我的精读</div>
+  <h1><span class="title-original" lang="en">Enhancing system safety analysis in aviation: A causal knowledge graph framework powered by Large Language Models for proactive risk identification</span><span class="title-zh" lang="zh-CN">加强航空系统安全分析：大语言模型驱动的因果知识图谱框架用于主动风险识别</span></h1>
+  <p>Jifei Cheng, Donghui Shi, Jozef Zurada, Yakun Sun</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Reliability Engineering &amp; System Safety 277 (2027):113141; online 13 July 2026</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.1016/j.ress.2026.113141" target="_blank" rel="noopener">原文 / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=Enhancing%20system%20safety%20analysis%20in%20aviation%3A%20A%20causal%20knowledge%20graph%20framework%20powered%20by%20Large%20Language%20Models%20for%20proactive%20risk%20identification" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p1">大语言模型</span><span class="pill p2">知识图谱</span><span class="pill p2">因果知识图谱</span><span class="pill p2">信息抽取</span><span class="pill p4">关系归一化</span><span class="pill p2">RAG检索增强</span><span class="pill p4">问答系统</span><span class="pill p2">航空安全</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30秒结论</div>
+      <h2 id="overview-title">混合归一化把约3,000种原始谓词压到185种，F1为0.908；路径剪枝显著提高上下文精确率。图边表示报告叙述中的因果陈述，未建立干预估计或<strong>反事实识别</strong>。</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>研究问题</dt>
+          <dd>如何从大规模航空安全叙述中抽取和归一化因果语言，并通过路径剪枝提升<strong>知识图谱</strong>问答的证据相关性？</dd>
+        </div>
+        <div>
+          <dt>研究设计</dt>
+          <dd>工程方法与基准评测；从NASA ASRS的约65,500份报告构建航空安全风险CKG，评估三元组抽取、混合<strong>关系归一化</strong>和100个问答对上的RAG路径剪枝。</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>证据强度</span>
+          <strong class="evidence-level level-mid">中等</strong>
+        </div>
+        <dl>
+          <div><dt>计算对象</dt><dd>1,000份报告的抽取评测、<strong>关系归一化</strong>人工参考、约562,000个实体和约394,800条三元组，以及100个问答对的RAGAs指标与消融。</dd></div>
+          <div><dt>触发条件</dt><dd><strong>ASRS为自愿回顾性报告，无事件分母</strong>；参考与评分多次使用LLM，存在循环评价，数据截至2012年且缺少外部安全决策验证。</dd></div>
+          <div><dt>对结论的影响</dt><dd><strong>结果支持因果语言标准化和证据路径检索的工程价值，不能据此声称发现真实因果结构或完成what-if干预模拟</strong>。</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">阅读建议</strong>先看Algorithm 1理解抽取—归一化—问答链，再核对Tables 5–7的三个评测层。阅读网络中心性和what-if表述时，始终区分叙述因果边与识别后的<strong>因果效应</strong>。</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">三个关键数字</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">约65,500份</div>
+          <h3>ASRS事件报告</h3>
+          <p><strong>覆盖1988年1月至2012年7月</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">约3,000→185种</div>
+          <h3>关系类型压缩</h3>
+          <p><strong>7轮迭代减少93.71%，混合归一化F1为0.908</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">0.6583</div>
+          <h3>完整问答模型上下文精确率</h3>
+          <p><strong>Vanilla KG-QA为0.0844</strong>；完整模型上下文召回率0.5923</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">重点看哪里</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1016/j.ress.2026.113141" target="_blank" rel="noopener">
+            Algorithm 1 · PDF pp. 4–5<small>原文入口</small> ↗
+          </a>
+          <div><h3>追踪三段式工程管线</h3><p><strong>算法串联开放关系抽取、MiniLM候选合并、LLM语义复核、三跳检索和路径剪枝</strong>。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1016/j.ress.2026.113141" target="_blank" rel="noopener">
+            Tables 5–6 · PDF p. 9<small>原文入口</small> ↗
+          </a>
+          <div><h3>核对抽取与关系归一化</h3><p><strong>Table 5比较模型与示例数，Table 6显示阈值0.5时MiniLM加LLM把F1从0.749提高到0.908</strong>。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1016/j.ress.2026.113141" target="_blank" rel="noopener">
+            Table 7与Figure 6 · PDF p. 10<small>原文入口</small> ↗
+          </a>
+          <div><h3>检查压缩收敛和问答消融</h3><p><strong>Figure 6显示关系类型稳定在185种</strong>；Table 7区分答案相关性、语义相似度、上下文精确率和召回率。</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">航空叙述到图问答</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">文本</div>
+            <h3>抽取开放因果三元组</h3>
+            <p><strong>Gemma3-12B从事件叙述生成主语、关系和宾语</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">候选</div>
+            <h3>用MiniLM筛近义关系</h3>
+            <p><strong>余弦相似度达到0.5时进入语义合并复核</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">归一</div>
+            <h3>由LLM检查方向和粒度</h3>
+            <p><strong>循环合并到无新候选，形成185种规范谓词</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">检索</div>
+            <h3>构建三跳候选路径</h3>
+            <p><strong>从问题相关种子节点取子图，并按相关分数剪除弱路径</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">回答</div>
+            <h3>基于保留路径生成</h3>
+            <p><strong>GPT-4o整合证据链输出答案</strong>；结果仍属于报告叙述检索。</p>
+          </li>
+        </ol>
+        <figcaption><strong>依据PDF Algorithms 1–2、Tables 5–7和Figures 6–7整理</strong>。</figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">完整精读</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>从 6.55 万份航空事件叙述中抽取因果三元组、归一化关系，再用路径剪枝做图问答；工程链条完整，图边仍是报告者的因果陈述。</p>
+</blockquote>
+<h2>作者团队</h2>
+<p>Jifei Cheng、Donghui Shi 和 Yakun Sun 来自安徽建筑大学电子与信息工程学院计算机工程系，Jozef Zurada 来自 University of Louisville 商学院。论文于 2026 年 7 月 13 日在线发表，编入 Reliability Engineering &amp; System Safety 2027 年第 277 卷。</p>
+<h2>解决什么问题</h2>
+<p>航空安全报告保存了设备、人因和环境之间的因果叙述，文本量大、表达不统一。LLM 可以抽取三元组，却会把“led to”“caused”“resulted in”生成成大量近义关系，造成图边碎片化；普通 KG 问答直接取三跳邻域，噪声又会淹没有用路径。作者试图把抽取、<strong>关系归一化</strong>和面向风险分析的问答连成一条自动管线。</p>
+<h2>怎么做的</h2>
+<p><strong>数据是 NASA ASRS 中 1988 年 1 月至 2012 年 7 月的 65,535 份自愿报告</strong>。第一阶段的【计算对象】是叙述中的主语-关系-宾语，【触发条件】是 Gemma3-12B 在两个示例提示下识别到明确因果表达，【结论影响】是生成开放关系模式的三元组。</p>
+<p><strong>第二阶段处理 2,939 种原始谓词：MiniLM 计算余弦相似度</strong>；相似度达到阈值 0.5 后，再由 LLM 判断语义、方向和粒度能否合并，反复迭代到没有新合并。【结论影响】是把关系压缩到 185 种，同时保留 394,770 条三元组和 562,020 个实体。</p>
+<p><strong>问答阶段把问题嵌入后选择种子节点，抽取三跳子图</strong>。候选路径与问题的相关分数达到阈值时才保留，再把路径序列化交给 GPT-4o 按 CoT 提示生成答案。因此【计算对象】是问题相关的图路径，【触发条件】是 LLM 相关性评分过线，【结论影响】是减少邻域噪声，但低分的次要路径也会被删掉。</p>
+<h2>关键结果</h2>
+<p>1,000 份报告的抽取评测中，GPT-4o 两样例 F1 为 0.8302，Gemma3-12B 为 0.7986。<strong>关系归一化</strong>在阈值 0.5 时，MiniLM 单独使用的 F1 为 0.749，加入 LLM 复核后升至 0.908；2,939 种关系经 7 轮缩至 185 种，减少 93.71%。</p>
+<p>100 个问答对上，完整模型的答案相关性 0.9682、语义相似度 0.9310、上下文精确率 0.6583、召回率 0.5923；Vanilla KG-QA 的后两项只有 0.0844 和 0.1222。<strong>人工复核</strong>的四项 Cohen's kappa 为 0.7093-0.7357。</p>
+<h2>证据有多硬</h2>
+<p>工程评测覆盖抽取、归一化和问答，消融也控制了同一张图与同一答案模型。<strong>关系归一化</strong>的【有效判据】是 F1 与人工一致性上升，实际影响是减少同义边，不等于提升因果识别。参考三元组由 GPT-3.5 加人工标注形成，未匹配结果还由 LLM 和 NLI 重新判定；</p>
+<p>归一化标签生成与评分都使用 LLM，存在循环评价，作者已承认。ASRS 是自愿、回顾性叙述，缺少未报告事件和飞行时数分母；边频次混合了真实机制、报告倾向与抽取误差。图没有<strong>目标估计量</strong>、时间顺序、干预定义和识别假设，路径与中心性不能支持作者提出的 what-if 或干预效应解释。数据止于 2012 年，也没有外部队列或实际安全决策验证。</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="本页导航">
+    <div class="deep-toc-title">本页导航</div>
+    <a href="#overview" class="is-main">30秒结论</a>
+    <a href="#key-numbers">三个关键数字</a>
+    <a href="#where-to-focus">重点看哪里</a>
+    <a href="#study-design">航空叙述到图问答</a>
+    <a href="#full-read">完整精读</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← 回精读列表</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>我的文献集 · Xuanyu Shi</span>
+    <span>每个工作日更新一次 · <a href="https://xuanyshi.github.io/research-desk/zh/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roadmap for systematic identification and analysis of multiple biases in causal inference · Deep reads · My Research Desk</title>
+<meta name="description" content="Start with an ideal trial and DAG to expose assumptions, then model unmeasured variables, mismeasurement, and selection jointly. In simulation, relative bias is 5.3% for simultaneous analysis versus 52.8% for the primary analysis, and above 20% for every one-at-a-time analysis.">
+<meta property="og:title" content="Roadmap for systematic identification and analysis of multiple biases in causal inference · Deep reads · My Research Desk">
+<meta property="og:description" content="Start with an ideal trial and DAG to expose assumptions, then model unmeasured variables, mismeasurement, and selection jointly. In simulation, relative bias is 5.3% for simultaneous analysis versus 52.8% for the primary analysis, and above 20% for every one-at-a-time analysis.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="My Research Desk">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/en/deep/wijesuriya-2026-multiple-bias-roadmap/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/en/deep/wijesuriya-2026-multiple-bias-roadmap/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/wijesuriya-2026-multiple-bias-roadmap/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/wijesuriya-2026-multiple-bias-roadmap/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/wijesuriya-2026-multiple-bias-roadmap/">
+<link rel="alternate" type="application/atom+xml" title="My Research Desk · Deep reads" href="https://xuanyshi.github.io/research-desk/en/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">My Research Desk<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">Home</a>
+      <a href="../../library/index.html" class="">Library</a>
+      <a href="../../deep/index.html" class="on">Deep reads</a>
+      <a href="../../daily/index.html" class="">Daily</a>
+      <a href="../../log/index.html" class="">Log</a>
+      <a href="../../about/index.html" class="">About</a>
+      <span class="lang">
+        <a href="../../../zh/deep/wijesuriya-2026-multiple-bias-roadmap/" class="">中</a>
+        <a href="../../../en/deep/wijesuriya-2026-multiple-bias-roadmap/" class="on">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">My deep read</div>
+  <h1>Roadmap for systematic identification and analysis of multiple biases in causal inference</h1>
+  <p>Rushani Wijesuriya, Rachael Hughes, John Carlin, Rachel L Peters et al.</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">American Journal of Epidemiology</span><span class="jbadge jb-cas z2">CAS 2</span><span class="jbadge jb-jcr">JCR Q1</span><span class="jbadge jb-if">IF 4.1</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.1093/aje/kwag166" target="_blank" rel="noopener">Source / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=Roadmap%20for%20systematic%20identification%20and%20analysis%20of%20multiple%20biases%20in%20causal%20inference" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p0">Causal inference</span><span class="pill p3">Causal DAG</span><span class="pill p4">Quantitative bias analysis</span><span class="pill p0">Multiple-bias analysis</span><span class="pill p4">Probabilistic bias analysis</span><span class="pill p0">Selection bias</span><span class="pill p0">Measurement error</span><span class="pill p2">Expert elicitation</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30-second read</div>
+      <h2 id="overview-title"><strong>Start with an ideal trial and DAG to expose assumptions, then model unmeasured variables, mismeasurement, and selection jointly</strong>. In simulation, relative bias is 5.3% for simultaneous analysis versus 52.8% for the primary analysis, and above 20% for every one-at-a-time analysis.</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>Question</dt>
+          <dd>When selection, confounding, and <strong>measurement biases</strong> coexist, how can they be analyzed jointly from explicit assumptions?</dd>
+        </div>
+        <div>
+          <dt>Design</dt>
+          <dd>A three-step methodological roadmap illustrated with a <strong>breastfeeding–asthma analysis of 5,279 HealthNuts infants and 1,000 simulated datasets</strong> comparing simultaneous with one-at-a-time bias analysis.</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>Evidence strength</span>
+          <strong class="evidence-level level-mid">Moderate</strong>
+        </div>
+        <dl>
+          <div><dt>What was assessed</dt><dd><strong>Ideal-trial components, primary and alternative DAGs, bias-parameter models in HealthNuts, 1,000 probabilistic draws and bootstraps</strong>, and a known-truth simulation.</dd></div>
+          <div><dt>Downgrade triggers</dt><dd><strong>Validity depends on a correct alternative DAG, bias models, and external parameter distributions</strong>. Many parameters are unidentified by the primary data, case-study estimates differ little, and the simulation is simplified.</dd></div>
+          <div><dt>Impact on interpretation</dt><dd><strong>Separate sensitivity analyses can mislead when biases are dependent or oppose one another</strong>. Joint results remain sensitivity ranges conditional on model and parameter choices.</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">Reading advice</strong><strong>Follow Figure 1, Figure 3, and Figure 4 as the three-step roadmap, then inspect Table 5</strong>. Record each bias parameter&#39;s conditioning set, source, and practical impact on the estimate.</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">Three numbers to keep</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">5,279</div>
+          <h3>Infants in the HealthNuts case study</h3>
+          <p><strong>Used for primary and multiple-bias analyses of breastfeeding and asthma</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">1,000 × 1,000</div>
+          <h3>Probabilistic draws and bootstraps</h3>
+          <p><strong>Propagate bias-parameter uncertainty and sampling variability in the case study</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">5.3% vs 52.8%</div>
+          <h3>Relative bias in simulation</h3>
+          <p><strong>Simultaneous analysis versus the unadjusted primary analysis</strong>; every one-at-a-time analysis exceeds 20%</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">Where to focus</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1093/aje/kwag166" target="_blank" rel="noopener">
+            Figure 1 and Table 1 · PDF pp. 5–6<small>Article entry</small> ↗
+          </a>
+          <div><h3>Decompose the primary analysis into an ideal trial and assumptions</h3><p><strong>Step 1 compares eligibility, intervention, assignment, follow-up, and outcome measurement with the conditions required for observational emulation.</strong></p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1093/aje/kwag166" target="_blank" rel="noopener">
+            Figure 3 · PDF pp. 6–7<small>Article entry</small> ↗
+          </a>
+          <div><h3>See multiple biases enter one DAG</h3><p><strong>The alternative graph includes generalizability, outcome-missingness selection, unmeasured gestational-hypertension confounding, and exposure and outcome error.</strong></p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1093/aje/kwag166" target="_blank" rel="noopener">
+            Figure 4 and Table 5 · PDF pp. 9–11<small>Article entry</small> ↗
+          </a>
+          <div><h3>Compare joint with one-at-a-time correction</h3><p><strong>The case-study differences are small, while simulation shows joint analysis near the truth and substantial residual bias in every separate analysis.</strong></p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">Multiple quantitative-bias-analysis roadmap</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">Step 1</div>
+            <h3>Define the ideal trial and estimand</h3>
+            <p><strong>Specify population, treatment versions, assignment, follow-up, and outcome measurement.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">Step 2</div>
+            <h3>Draw primary and alternative DAGs</h3>
+            <p>Represent selection, <strong>unmeasured confounding</strong>, mismeasurement, and their dependencies.</p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">Parameters</div>
+            <h3>Specify bias-model distributions</h3>
+            <p>Use validation studies, substantive literature, and <strong>expert elicitation</strong> for conditional parameters.</p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">Step 3</div>
+            <h3>Impute, weight, and regress jointly</h3>
+            <p><strong>Generate true variables, selection weights, and outcome estimates while preserving DAG dependencies.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">Output</div>
+            <h3>Propagate both uncertainties</h3>
+            <p><strong>Probabilistic draws propagate parameter uncertainty and bootstrap samples propagate main-data variation.</strong></p>
+          </li>
+        </ol>
+        <figcaption><strong>Organized from PDF Figures 1–4 and Tables 1–5.</strong></figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">Full deep read</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>Use an ideal trial and a DAG to expose assumptions first, then put selection, confounding, and measurement bias into one quantitative model; separate sensitivity analyses can misstate their joint impact.</p>
+</blockquote>
+<h2>The authors</h2>
+<p>The work is led by Rushani Wijesuriya and Margarita Moreno-Betancur's Clinical Epidemiology &amp; Biostatistics Unit at the Murdoch Children's Research Institute, with collaborators at the University of Melbourne, the University of Bristol's MRC Integrative Epidemiology Unit, and the University of Queensland.</p>
+<p>It was published online in the American Journal of Epidemiology on 16 July 2026 and is currently an accepted manuscript.</p>
+<h2>The problem</h2>
+<p><strong>Observational causal analyses simultaneously depend on exchangeability, consistency, positivity, and measurement assumptions</strong>. Quantitative bias analyses often choose one violation to quantify while leaving the rest embedded in the primary analysis. Even a series of separate analyses assumes, each time, that the other biases are absent.</p>
+<p><strong>That is a poor guide to the combined effect when biases are dependent or point in opposite directions.</strong></p>
+<h2>The approach</h2>
+<p><strong>The roadmap has three steps</strong>. First, define the ideal randomized trial through its eligibility criteria, treatment strategies, assignment, follow-up, and outcome measurement. For each component, compare the observational emulation with the ideal and state the identification assumptions required to bridge the gap, drawing them in a primary-analysis DAG where possible.</p>
+<p>Second, add substantively plausible violations to an alternative DAG. The HealthNuts example asks for the <strong>causal effect</strong> of any breastfeeding in the first 12 months on asthma risk at age six among 5,279 infants.</p>
+<p>Its alternative graph adds generalizability bias from restricting participation by English ability and consent, collider selection from outcome loss to follow-up, <strong>unmeasured confounding</strong> by gestational hypertension, and exposure/outcome error from parental reports.</p>
+<p><strong>Third, target the ideal joint distribution containing the true exposure and outcome, an unmeasured confounder</strong>, and the selection process. When the alternative graph implies dependence among these variables, the trigger for joint analysis is met.</p>
+<p><strong>The authors factor a bias-adjusting probability according to the graph, specify logistic bias models, sample the true exposure</strong>, outcome, and unmeasured confounder, derive inverse-probability selection weights, and fit a weighted outcome regression.</p>
+<p><strong>Each Monte Carlo draw yields one effect estimate adjusted for all represented biases</strong>. Distributions over bias parameters and bootstrap resampling propagate parameter uncertainty and sampling error into the interval.</p>
+<h2>Key results</h2>
+<p><strong>The case study used 1,000 probabilistic draws and 1,000 bootstraps</strong>. The jointly adjusted breastfeeding risk difference was about -0.10 versus roughly -0.05 in the primary analysis; the intervals overlapped considerably, so the authors describe only a somewhat stronger protective association. The proof-of-concept simulation is sharper: 1,000 datasets of n=2,000 with a true risk ratio of 0.51.</p>
+<p><strong>Simultaneous analysis produced a mean log risk ratio of -0.70, 5.3% relative bias, and 0.92 coverage</strong>. The primary analysis averaged -0.32 with 52.8% relative bias. Every one-at-a-time analysis had more than 20% relative bias; outcome-measurement correction alone even reversed the estimate to 2.60 on the log scale.</p>
+<h2>How solid is the evidence</h2>
+<p><strong>The paper completes the whole chain from assumption inventory through an alternative DAG to joint analysis</strong>, and releases its code. Its simulation criterion is concrete: compare estimates with the known true log risk ratio; below 10% relative bias the joint method is approximately unbiased, while above 20% the one-at-a-time methods materially miss the target.</p>
+<p><strong>The result is conditional on a correct alternative DAG, correct bias models, and defensible parameter distributions.</strong></p>
+<p><strong>Those parameters are not identified by the primary data</strong>; some conditional parameters are approximated with marginal literature values and others rely on expert judgment. The simulation covers one simplified graph with binary variables. DAGs also cannot display every form of measurement or generalizability bias.</p>
+<p><strong>Joint and separate estimates barely differed in the applied example</strong>, so the advantage still needs testing under more structures, model misspecification, and independent real-data applications. The accepted manuscript may change during copyediting or typesetting.</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="On this page">
+    <div class="deep-toc-title">On this page</div>
+    <a href="#overview" class="is-main">30-second read</a>
+    <a href="#key-numbers">Three numbers to keep</a>
+    <a href="#where-to-focus">Where to focus</a>
+    <a href="#study-design">Multiple quantitative-bias-analysis roadmap</a>
+    <a href="#full-read">Full deep read</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← Back to deep reads</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>My Research Desk · Xuanyu Shi</span>
+    <span>Updated on weekdays · <a href="https://xuanyshi.github.io/research-desk/en/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>用于 ICU 再入院预测的知识图谱嵌入 · 精读 · 我的文献集</title>
+<meta name="description" content="NCIT加RDF2Vec与随机森林在内部五折交叉验证中达到AUROC 0.827、AUPRC 0.692；结果支持语义标注的预测价值，尚未证明跨医院泛化或临床出院决策获益。">
+<meta property="og:title" content="用于 ICU 再入院预测的知识图谱嵌入 · 精读 · 我的文献集">
+<meta property="og:description" content="NCIT加RDF2Vec与随机森林在内部五折交叉验证中达到AUROC 0.827、AUPRC 0.692；结果支持语义标注的预测价值，尚未证明跨医院泛化或临床出院决策获益。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="我的文献集">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/zh/deep/carvalho-2023-kg-icu-readmission/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/zh/deep/carvalho-2023-kg-icu-readmission/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/carvalho-2023-kg-icu-readmission/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/carvalho-2023-kg-icu-readmission/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/carvalho-2023-kg-icu-readmission/">
+<link rel="alternate" type="application/atom+xml" title="我的文献集 · 精读" href="https://xuanyshi.github.io/research-desk/zh/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">我的文献集<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">首页</a>
+      <a href="../../library/index.html" class="">文献库</a>
+      <a href="../../deep/index.html" class="on">精读</a>
+      <a href="../../daily/index.html" class="">每日速览</a>
+      <a href="../../log/index.html" class="">历程</a>
+      <a href="../../about/index.html" class="">关于</a>
+      <span class="lang">
+        <a href="../../../zh/deep/carvalho-2023-kg-icu-readmission/" class="on">中</a>
+        <a href="../../../en/deep/carvalho-2023-kg-icu-readmission/" class="">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">我的精读</div>
+  <h1><span class="title-original" lang="en">Knowledge Graph Embeddings for ICU readmission prediction</span><span class="title-zh" lang="zh-CN">用于 ICU 再入院预测的知识图谱嵌入</span></h1>
+  <p>Ricardo M. S. Carvalho, Daniela Oliveira, Catia Pesquita</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">BMC Medical Informatics and Decision Making</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.1186/s12911-022-02070-7" target="_blank" rel="noopener">原文 / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=Knowledge%20Graph%20Embeddings%20for%20ICU%20readmission%20prediction" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p3">知识图谱嵌入</span><span class="pill p2">电子病历</span><span class="pill p4">ICU再入院预测</span><span class="pill p0">生物医学本体</span><span class="pill p0">MIMIC-III</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30秒结论</div>
+      <h2 id="overview-title"><strong>NCIT加RDF2Vec与随机森林在内部五折交叉验证中达到AUROC 0.827、AUPRC 0.692</strong>；结果支持语义标注的预测价值，尚未证明跨医院泛化或临床出院决策获益。</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>研究问题</dt>
+          <dd>将MIMIC-III病历映射到生物医学本体并生成<strong>知识图谱嵌入</strong>，能否改善30天ICU再入院预测？</dd>
+        </div>
+        <div>
+          <dt>研究设计</dt>
+          <dd><strong>单中心回顾性预测建模</strong>；约35,300名成人、48,400次ICU住院，经本体标注和RDF2Vec等嵌入后输入传统机器学习，并比较Pre-ICU、In-ICU和Post-ICU三个时间点。</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>证据强度</span>
+          <strong class="evidence-level level-mid">中等偏低</strong>
+        </div>
+        <dl>
+          <div><dt>计算对象</dt><dd><strong>约48,400次ICU住院、五折交叉验证、AUROC和AUPRC、不同本体与嵌入消融、时间点比较及混淆矩阵</strong>。</dd></div>
+          <div><dt>触发条件</dt><dd>数据仅来自MIMIC-III单院；没有时间外或<strong>外部验证</strong>、校准和决策曲线；结局把再入ICU与30天死亡合并，模拟的出院影响不等于前瞻临床效果。</dd></div>
+          <div><dt>对结论的影响</dt><dd>可支持<strong>知识图谱嵌入</strong>作为EHR特征工程方案；临床部署、可解释性和减少再入院的主张需要外部与前瞻验证。</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">阅读建议</strong><strong>先看Figure 2和Figure 4确认特征在各时间点的可用性</strong>，再看Figure 8、Table 3与Figure 10，避免只引用摘要中的临床获益表述。</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">三个关键数字</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">约48,400次</div>
+          <h3>ICU住院记录</h3>
+          <p><strong>来自约35,300名成人</strong>；阴性约37,100次、阳性约11,300次</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">AUROC 0.827</div>
+          <h3>最佳In-ICU模型</h3>
+          <p><strong>随机森林加NCIT RDF2Vec</strong>；AUPRC为0.692</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">600/980</div>
+          <h3>平均测试折中的阳性识别</h3>
+          <p><strong>Table 3中实际阳性980例，识别600例</strong>；同时510例阴性被判为阳性</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">重点看哪里</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1186/s12911-022-02070-7" target="_blank" rel="noopener">
+            Figure 2 · PDF p. 4<small>原文入口</small> ↗
+          </a>
+          <div><h3>先看语义增强的完整管线</h3><p>区分数据清洗、本体标注、<strong>知识图谱嵌入</strong>和下游分类器各自的贡献。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1186/s12911-022-02070-7" target="_blank" rel="noopener">
+            Figure 8 · PDF p. 12<small>原文入口</small> ↗
+          </a>
+          <div><h3>比较三个临床时间点</h3><p><strong>Pre-ICU信息不足，In-ICU表现最佳，Post-ICU加入最终诊断和操作后没有继续改善</strong>。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1186/s12911-022-02070-7" target="_blank" rel="noopener">
+            Table 3 · Figure 10 · PDF pp. 13—14<small>原文入口</small> ↗
+          </a>
+          <div><h3>检查阈值后果与数据完整性</h3><p><strong>混淆矩阵揭示潜在误判代价</strong>；消融显示注释数量减少时AUPRC下降更明显。</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">预测建模流程</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">数据</div>
+            <h3>MIMIC-III ICU住院</h3>
+            <p><strong>筛选成人住院记录并定义30天再入ICU或死亡结局</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">标注</div>
+            <h3>多类临床特征映射本体</h3>
+            <p><strong>将诊断、用药、化验、操作和chart events连接到NCIT等本体</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">表示</div>
+            <h3>知识图谱嵌入</h3>
+            <p><strong>用RDF2Vec、OPA2Vec或TransE生成300维语义向量</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">时间</div>
+            <h3>三个预测快照</h3>
+            <p><strong>分别使用入ICU前、住ICU期间和出ICU后可获得的信息</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">评估</div>
+            <h3>五折交叉验证</h3>
+            <p><strong>比较四类分类器、本体策略、嵌入方法与注释完整性</strong>。</p>
+          </li>
+        </ol>
+        <figcaption><strong>根据PDF Methods、Figure 2和Figure 4整理</strong>；箭头表示数据处理顺序。</figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">完整精读</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>把电子病历用生物医学本体做语义标注、再用知识图谱嵌入喂给传统机器学习，预测 30 天 ICU 再入院，AUROC 0.827、AUPRC 0.692，且入院中期就能达到峰值，不必等到出院。</p>
+</blockquote>
+<h2>作者团队</h2>
+<p>论文出自里斯本大学理学院 LASIGE 实验室，通讯作者 Cátia Pesquita 主持该室健康与生物医学信息研究方向，团队长于生物医学本体、知识图谱与本体语义相似度，本文将其用于整合电子病历与临床本体以预测 ICU 再入院。</p>
+<h2>解决什么问题</h2>
+<p><strong>ICU 再入院</strong>既是病人的健康风险（更高死亡率、更长住院），也是医院的成本负担，发达国家约每 10 个 ICU 出院病人就有 1 个在同次住院内被重新收治。用机器学习预测再入院风险不新鲜，问题在于绝大多数方法直接在 EHR 的原始值上跑，不理会数据的含义和关系。</p>
+<p><strong>作者举的例子很直白：'主动脉瓣疾病' 和 '冠状动脉疾病' 在分类编码上毫无相似</strong>，字符串比对只共享 'disease' 这个没信息量的词，但两者都是非肿瘤性心脏病，在本体的层级里是近亲。</p>
+<p>以前的工作要么只用单一本体或受控词表、只覆盖一类特征（Lu et al. 用出院小结加 ICD9 超曲嵌入），要么从 EHR 里自己学图结构（Choi et al.），都没有真正把外部科学知识接进来。作者想问的是：用本体做语义标注、建<strong>知识图谱</strong>、再嵌入，能不能改善再入院预测。</p>
+<h2>怎么做的</h2>
+<p>三段流水线。第一段从 MIMIC-III 抽数据并清洗；第二段做语义特征生成；第三段做再入院预测。基线复现自 Lin et al.（唯一有开源代码的相关工作），但作者多抽了处方、初始诊断、操作、化验四类特征，并把 Lin 的 ICD9 预训练词嵌入整个换成<strong>知识图谱嵌入</strong>。</p>
+<p><strong>核心三步</strong>。选本体：用 BioPortal Recommender 打分，NCIT 覆盖率最好（约 35%），同时 MIMIC-III 本身对化验有 LOINC、诊断和操作有 ICD9CM、处方有 NDC。做标注：设两种策略，一种全部映到单一本体 NCIT，一种按特征类型分别用 NCIT/LOINC/ICD9CM/DRON 四本体。</p>
+<p>文本标注用 ElasticSearch 取前六个候选类，再按 Levenshtein 距离选最近的。做嵌入：把病人当实例、连到标注它的本体类，建成<strong>知识图谱</strong>（单本体 690 万三元组，多本体 830 万），用 RDF2Vec（Skip-Gram、500 次游走、深度 4）学 300 维向量。同一病人在一个本体里的多个标注向量相加；多本体场景下四个本体的向量拼接成 1,200 维。</p>
+<p><strong>分类器故意用传统方法，逻辑回归、随机森林、朴素贝叶斯、SVM，不做超参优化</strong>，为的是把语义标注的贡献和算法选择的贡献分开。作者另设了一个时间轴设计：Pre-ICU（人口学加初始诊断）、In-ICU（加化验、处方、chart events）、Post-ICU（加最终诊断和操作），模拟入院过程中随信息增加不断更新风险。</p>
+<h2>关键结果</h2>
+<p><strong>最好的组合是 NCIT 单本体加 RDF2Vec 加随机森林</strong>，五折交叉验证下 In-ICU 时刻 AUROC 0.827±0.011、AUPRC 0.692±0.018。相比复现出来的基线（RF AUROC 0.617），提升超过 0.2 的 AUROC 和 0.4 的 AUPRC。有几个反直觉的地方。</p>
+<p><strong>多本体反而更差，所有模型 AUPRC 掉到 0.5 以下，作者认为单一语义空间的整体表示更好用</strong>。时间轴上最有意思：In-ICU 就是峰值，Post-ICU 加了最终诊断和操作后性能反而略降，说明出院时才有的信息对再入院预测没有增量价值。去掉 chart events 几乎不掉分，真正起作用的是化验和处方嵌入。</p>
+<p><strong>嵌入方法对比里，RDF2Vec 和 OPA2Vec 无显著差异（Kruskal-Wallis p=0.590/0.207），都胜过 TransE</strong>。混淆矩阵上 In-ICU 模型能避免超过 90% 病人的不必要再入院，对约 55% 需要留院的病人能防止过早出院，代价是让 10% 本不需要留院的病人多住了。</p>
+<h2>证据有多硬</h2>
+<p><strong>几处要打折扣</strong>。一是基线复现明显低于原文（Lin et al. RF 0.712，作者复现 0.617；</p>
+<p><strong>LSTM+CNN 原文 0.791，作者根本没跑起来</strong>，说是库不兼容），作者的立论是"我的提升幅度大于他的提升幅度"，但两条基线不在同一水平线上，直接比绝对 AUROC 并不公平，这一点作者自己也承认。</p>
+<p><strong>二是标签定义把"30 天内死亡"和"再入院"合并成正类，这是沿用 Lin et al. 的口径</strong>，但把死亡混进再入院会稀释结论的临床解读，模型可能主要在预测危重程度而非"会不会回来"。</p>
+<p>三是全部在单中心 MIMIC-III（2001–2012，一家医院）上做，<strong>外部效度</strong>未验证；作者的消融实验显示随机砍掉 75% 标注后 AUROC 仍在 0.7 以上，算是对稳健性的一点旁证，但跨机构迁移没测。</p>
+<p>四是没做超参优化、只用传统模型，这是有意为之（为了隔离语义标注的效应），但也意味着报出来的绝对数字不是这套特征能达到的上限。<strong>测量偏倚</strong>上，NCIT 覆盖率只有约 35%，处方和操作的标注损失明显，多本体反而更差这个结论可能部分是标注质量而非本体数量的问题。</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="本页导航">
+    <div class="deep-toc-title">本页导航</div>
+    <a href="#overview" class="is-main">30秒结论</a>
+    <a href="#key-numbers">三个关键数字</a>
+    <a href="#where-to-focus">重点看哪里</a>
+    <a href="#study-design">预测建模流程</a>
+    <a href="#full-read">完整精读</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← 回精读列表</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>我的文献集 · Xuanyu Shi</span>
+    <span>每个工作日更新一次 · <a href="https://xuanyshi.github.io/research-desk/zh/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

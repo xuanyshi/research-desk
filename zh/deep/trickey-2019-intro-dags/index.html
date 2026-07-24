@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>因果有向无环图导论 · 精读 · 我的文献集</title>
+<meta name="description" content="DAG应独立于现有数据构建，并纳入图中任意两个变量的共同原因。调整集要阻断全部后门路径，同时避免对碰撞点及其后代进行条件化。">
+<meta property="og:title" content="因果有向无环图导论 · 精读 · 我的文献集">
+<meta property="og:description" content="DAG应独立于现有数据构建，并纳入图中任意两个变量的共同原因。调整集要阻断全部后门路径，同时避免对碰撞点及其后代进行条件化。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="我的文献集">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/zh/deep/trickey-2019-intro-dags/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/zh/deep/trickey-2019-intro-dags/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/trickey-2019-intro-dags/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/trickey-2019-intro-dags/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/trickey-2019-intro-dags/">
+<link rel="alternate" type="application/atom+xml" title="我的文献集 · 精读" href="https://xuanyshi.github.io/research-desk/zh/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">我的文献集<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">首页</a>
+      <a href="../../library/index.html" class="">文献库</a>
+      <a href="../../deep/index.html" class="on">精读</a>
+      <a href="../../daily/index.html" class="">每日速览</a>
+      <a href="../../log/index.html" class="">历程</a>
+      <a href="../../about/index.html" class="">关于</a>
+      <span class="lang">
+        <a href="../../../zh/deep/trickey-2019-intro-dags/" class="on">中</a>
+        <a href="../../../en/deep/trickey-2019-intro-dags/" class="">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">我的精读</div>
+  <h1><span class="title-original" lang="en">Introduction to Causal Directed Acyclic Graphs</span><span class="title-zh" lang="zh-CN">因果有向无环图导论</span></h1>
+  <p>Amber W. Trickey</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Stanford S-SPIRE Works in Progress (presentation), 2019-01-28</span></div>
+  
+  <p class="deep-links">
+    <a href="" target="_blank" rel="noopener">原文 / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=Introduction%20to%20Causal%20Directed%20Acyclic%20Graphs" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p3">因果DAG</span><span class="pill p4">混杂调整</span><span class="pill p1">对撞偏倚</span><span class="pill p3">教学讲义</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30秒结论</div>
+      <h2 id="overview-title">DAG应独立于现有数据构建，并纳入图中任意两个变量的共同原因。<strong>调整集</strong>要阻断全部后门路径，同时避免对碰撞点及其后代进行条件化。</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>研究问题</dt>
+          <dd>临床研究者如何从研究问题出发构建DAG，并据此选择最小充分<strong>调整集</strong>？</dd>
+        </div>
+        <div>
+          <dt>研究设计</dt>
+          <dd><strong>30页教学课件</strong>；用阑尾炎非手术管理与30日急诊就诊示例，演示从暴露—结局到中介、效应修饰、混杂、未测共同原因和选择变量的构图过程。</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>证据强度</span>
+          <strong class="evidence-level level-low">有限</strong>
+        </div>
+        <dl>
+          <div><dt>计算对象</dt><dd><strong>4步构图流程、阑尾炎教学案例和AHRQ CER User&#39;s Guide的DAG调整原则</strong>。</dd></div>
+          <div><dt>触发条件</dt><dd><strong>课件属于入门教学材料，未报告新数据或方法比较</strong>；部分简化表示和术语需要结合正式因果推断文献使用。</dd></div>
+          <div><dt>对结论的影响</dt><dd><strong>可作为构图和团队讨论清单，不能单独证明所画结构正确，也不能替代敏感性分析与领域验证</strong>。</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">阅读建议</strong><strong>按PDF第11—14页连续阅读4个步骤，再看第27页总结</strong>。重点检查共同原因、选择变量和未测变量是否被遗漏。</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">三个关键数字</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">4步</div>
+          <h3>DAG构建流程</h3>
+          <p><strong>明确问题、加入问题内变量、加入混杂变量、补充其他相关变量</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">2类</div>
+          <h3>必须重点补入的变量</h3>
+          <p><strong>任意两节点的共同原因，以及由入组或缺失机制形成的选择变量</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">1套</div>
+          <h3>最小充分调整集</h3>
+          <p><strong>阻断全部后门路径，同时不因调整碰撞点或其后代而打开闭合路径</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">重点看哪里</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <span class="focus-ref focus-ref--plain">Steps 1–4 · PDF pp. 11–14<small>仅定位</small></span>
+          <div><h3>按顺序完成DAG构图</h3><p><strong>4页依次固定暴露与结局、加入中介或修饰因素、加入共同原因，并补充未测与选择变量</strong>。</p></div>
+        </li>
+        <li>
+          <span class="focus-ref focus-ref--plain">阑尾炎案例 · PDF p. 15<small>仅定位</small></span>
+          <div><h3>核对变量角色如何落到实例</h3><p><strong>案例将保险、年龄、严重程度、收入、语言等变量放入同一图，便于检查角色是否随研究问题变化</strong>。</p></div>
+        </li>
+        <li>
+          <span class="focus-ref focus-ref--plain">AHRQ总结 · PDF p. 27<small>仅定位</small></span>
+          <div><h3>提取最小充分调整规则</h3><p><strong>该页明确要求DAG独立于可测变量构建，纳入共同原因，并避免调整碰撞点或其后代</strong>。</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">从研究问题到调整集</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">步骤1</div>
+            <h3>写清暴露与结局</h3>
+            <p>把研究问题转成A到Y的目标<strong>因果效应</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">步骤2</div>
+            <h3>加入问题内关键变量</h3>
+            <p><strong>标出中介和可能改变效应方向或强度的修饰因素</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">步骤3</div>
+            <h3>加入共同原因</h3>
+            <p>将同时导致暴露与结局的已测和<strong>未测混杂</strong>因素放入图中。</p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">步骤4</div>
+            <h3>补充选择与其他结构</h3>
+            <p><strong>纳入入组、失访和缺失机制，并检查图中任意两变量的共同原因</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">输出</div>
+            <h3>求最小充分调整集</h3>
+            <p><strong>阻断所有后门路径，排除会打开路径的碰撞点及其后代</strong>。</p>
+          </li>
+        </ol>
+        <figcaption><strong>依据PDF第11—15页和第27页整理</strong>。</figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">完整精读</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>一份斯坦福的 DAG 入门讲义：混杂、对撞、中介、后门路径、最小调整集，讲得干净标准。</p>
+</blockquote>
+<h2>作者团队</h2>
+<p>由 Amber W. Trickey 独立主讲的教学报告。她是斯坦福 S-SPIRE 中心（外科政策改进研究与教育中心）的资深生物统计学家，长期为外科与卫生服务研究团队提供研究设计与统计分析支持。</p>
+<h2>解决什么问题</h2>
+<p><strong>先说清楚，这是一份教学幻灯片，不是研究论文</strong>。作者是斯坦福 S-SPIRE（外科政策改进研究与教育）的资深生物统计师，2019 年 1 月在组内 Works in Progress 上讲给做外科和卫生服务研究的临床、统计同事。</p>
+<p><strong>他们的数据几乎全是观察性的（Medicare、HCUP、NSQIP、Optum），治疗不随机</strong>，由常规诊疗里往往未知的机制决定。教学问题很朴素：不能随机化、correlation ≠ causation 时，怎么有条理地决定该调整哪些变量。答案是 DAG——把因果假设画出来，用它看偏倚从哪来、效应能否识别、协变量选谁。</p>
+<h2>怎么做的</h2>
+<p><strong>内容沿一条标准弧线走</strong>。先讲动机：DAG 用来显示偏倚来源、判断效应能否从现有数据识别、把假设摊开（作者诚实地说，分析模型本来也带假设，DAG 只是让它显形）。再讲规则：有向无环、时间从左到右，A 暴露、Y 结局、C 协变量、U 未测量，parent/child/ancestor/descendant 逐个定义。</p>
+<p><strong>主干是画图四步：</strong></p>
+<ul>
+<li>第一步写清研究问题，摆上 A、Y 和"?"；第二步考虑内嵌的中介与调节变量；</li>
+<li>第三步加混杂（A 与 Y 的共同原因）；第四步补其他相关变量。</li>
+</ul>
+<p><strong>选变量原则：任意两点的所有共同原因都要进，包括测不到的和选择变量</strong>；只导致 Y、不导致 A 的非必须。</p>
+<p><strong>再转到调整——后门路径、对撞（两个箭头在共同后代处相撞），以及 conditioning 三条铁律</strong>：在开放后门路径上条件化会消掉非因果关联，在对撞点上条件化反而打开原本被挡的路径，在中介上条件化会削掉一部分真实效应。</p>
+<p>最后把混杂、对撞、选择偏倚（含 Berkson）收进同一套结构框架，甩出 <strong>DAGitty</strong>，以 AHRQ 的 Sauer-VanderWeele 小结收尾：DAG 独立于现有数据构建，纳入所有共同原因，找能挡住全部后门又不误开对撞的最小调整集。</p>
+<h2>关键结果</h2>
+<p><strong>它是教学材料，"结果"就是落地的规则和例子</strong>。三条 conditioning 规则讲得干净，是全场最有价值的一页。</p>
+<p>阑尾炎例取自作者自己的 JAMA Surgery 论文（A＝非手术管理，Y＝30 天急诊就诊，混杂为年龄/性别/保险/严重度/母语，收入未测），是纯混杂场景，没有中介、调节、对撞，条件化后仍剩母语和收入的残余混杂。腰痛手术例专门演示对撞：对"是否手术"这个共同结果条件化，会打开对撞偏倚。一正一反，说明别把变量一股脑塞进回归。工具落在 <strong>DAGitty</strong>，收官落在最小调整集。</p>
+<h2>证据有多硬</h2>
+<p>它不是证据，是一堂课，只能评准不准、清不清、覆盖到哪。准确性没问题，是当下的标准口径：把<strong>选择偏倚</strong>归为对撞偏倚的特例（Hernán/Greenland 的结构化视角）做对了，三条条件化规则一字不差，"DAG 独立于数据构建"这条重点抓得准，连"adjusting/controlling 有误导、该说 conditioning"（Shrier-Platt）都点到了。</p>
+<p>短板在覆盖面，这对我这样的读者才是要害。没有 d-separation 的正式定义，没点名<strong>后门准则</strong>，没有 do-calculus 和前门准则，IV 只作记号。更明显的是不碰 M-bias／butterfly bias——都讲对撞了却漏掉最容易踩的坑；</p>
+<p>也没有时变混杂、g-methods 这些 Hernán-Robins 进阶；effect modifier 进不进 DAG 本身有争议，讲义如实标了"有分歧"（Weinberg 2007）却没讲透；<strong>DAGitty</strong> 真正的算法能力（自动算最小充分集、导出可检验蕴含）被压成一句"记得存代码"。作为 2019 年的入门课它不会教错任何东西，只是恰好停在方法学开始变有意思的地方。</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="本页导航">
+    <div class="deep-toc-title">本页导航</div>
+    <a href="#overview" class="is-main">30秒结论</a>
+    <a href="#key-numbers">三个关键数字</a>
+    <a href="#where-to-focus">重点看哪里</a>
+    <a href="#study-design">从研究问题到调整集</a>
+    <a href="#full-read">完整精读</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← 回精读列表</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>我的文献集 · Xuanyu Shi</span>
+    <span>每个工作日更新一次 · <a href="https://xuanyshi.github.io/research-desk/zh/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

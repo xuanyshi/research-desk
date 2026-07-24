@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enhancing system safety analysis in aviation: A causal knowledge graph framework powered by Large Language Models for proactive risk identification · Deep reads · My Research Desk</title>
+<meta name="description" content="Hybrid normalization compresses about 3,000 raw predicates to 185 with F1 0.908, and path pruning substantially improves context precision. Edges represent causal claims in incident narratives, not identified intervention effects or counterfactuals.">
+<meta property="og:title" content="Enhancing system safety analysis in aviation: A causal knowledge graph framework powered by Large Language Models for proactive risk identification · Deep reads · My Research Desk">
+<meta property="og:description" content="Hybrid normalization compresses about 3,000 raw predicates to 185 with F1 0.908, and path pruning substantially improves context precision. Edges represent causal claims in incident narratives, not identified intervention effects or counterfactuals.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="My Research Desk">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/en/deep/cheng-2027-aviation-causal-kg/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/en/deep/cheng-2027-aviation-causal-kg/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/cheng-2027-aviation-causal-kg/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/cheng-2027-aviation-causal-kg/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/cheng-2027-aviation-causal-kg/">
+<link rel="alternate" type="application/atom+xml" title="My Research Desk · Deep reads" href="https://xuanyshi.github.io/research-desk/en/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">My Research Desk<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">Home</a>
+      <a href="../../library/index.html" class="">Library</a>
+      <a href="../../deep/index.html" class="on">Deep reads</a>
+      <a href="../../daily/index.html" class="">Daily</a>
+      <a href="../../log/index.html" class="">Log</a>
+      <a href="../../about/index.html" class="">About</a>
+      <span class="lang">
+        <a href="../../../zh/deep/cheng-2027-aviation-causal-kg/" class="">中</a>
+        <a href="../../../en/deep/cheng-2027-aviation-causal-kg/" class="on">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">My deep read</div>
+  <h1>Enhancing system safety analysis in aviation: A causal knowledge graph framework powered by Large Language Models for proactive risk identification</h1>
+  <p>Jifei Cheng, Donghui Shi, Jozef Zurada, Yakun Sun</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Reliability Engineering &amp; System Safety 277 (2027):113141; online 13 July 2026</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.1016/j.ress.2026.113141" target="_blank" rel="noopener">Source / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=Enhancing%20system%20safety%20analysis%20in%20aviation%3A%20A%20causal%20knowledge%20graph%20framework%20powered%20by%20Large%20Language%20Models%20for%20proactive%20risk%20identification" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p1">Large language models</span><span class="pill p2">Knowledge graph</span><span class="pill p2">Causal knowledge graph</span><span class="pill p2">Information extraction</span><span class="pill p4">Relation normalization</span><span class="pill p2">Retrieval-augmented generation</span><span class="pill p4">Question answering</span><span class="pill p2">Aviation safety</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30-second read</div>
+      <h2 id="overview-title"><strong>Hybrid normalization compresses about 3,000 raw predicates to 185 with F1 0.908</strong>, and path pruning substantially improves context precision. Edges represent causal claims in incident narratives, not identified intervention effects or counterfactuals.</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>Question</dt>
+          <dd><strong>How can causal language be extracted and normalized from aviation narratives</strong>, and can path pruning improve evidence relevance in graph question answering?</dd>
+        </div>
+        <div>
+          <dt>Design</dt>
+          <dd>An engineering method and benchmark using about 65,500 NASA ASRS reports to build an aviation-safety CKG and evaluate triple extraction, hybrid <strong>relation normalization</strong>, and pruned RAG on 100 question–answer pairs.</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>Evidence strength</span>
+          <strong class="evidence-level level-mid">Moderate</strong>
+        </div>
+        <dl>
+          <div><dt>What was assessed</dt><dd><strong>Triple extraction on 1,000 reports, a relation-normalization reference, about 562,000 entities and 394,800 triples</strong>, and RAGAs metrics and ablations on 100 QA pairs.</dd></div>
+          <div><dt>Downgrade triggers</dt><dd><strong>ASRS reports are voluntary and retrospective with no event-rate denominator</strong>. LLMs contribute to reference creation and scoring, data end in 2012, and no external safety-decision validation is reported.</dd></div>
+          <div><dt>Impact on interpretation</dt><dd>The results support engineering for causal-language normalization and evidence-path retrieval, but do not establish true <strong>causal discovery</strong> or what-if intervention simulation.</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">Reading advice</strong><strong>Start with Algorithm 1 for the extraction–normalization–QA chain and verify all three evaluation layers in Tables 5–7</strong>. Keep narrative causal edges separate from identified effects when reading centrality and what-if claims.</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">Three numbers to keep</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">About 65,500</div>
+          <h3>ASRS incident reports</h3>
+          <p><strong>Covering January 1988 through July 2012</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">About 3,000→185</div>
+          <h3>Relation-type compression</h3>
+          <p><strong>A 93.71% reduction over seven iterations, with hybrid normalization F1 0.908</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">0.6583</div>
+          <h3>Context precision of the full QA model</h3>
+          <p><strong>Vanilla KG-QA scores 0.0844</strong>; full-model context recall is 0.5923</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">Where to focus</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1016/j.ress.2026.113141" target="_blank" rel="noopener">
+            Algorithm 1 · PDF pp. 4–5<small>Article entry</small> ↗
+          </a>
+          <div><h3>Trace the three-stage engineering pipeline</h3><p><strong>The algorithm joins open-relation extraction, MiniLM candidate merging, LLM semantic review, three-hop retrieval, and path pruning.</strong></p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1016/j.ress.2026.113141" target="_blank" rel="noopener">
+            Tables 5–6 · PDF p. 9<small>Article entry</small> ↗
+          </a>
+          <div><h3>Verify extraction and relation normalization</h3><p><strong>Table 5 compares models and shot counts</strong>; Table 6 shows MiniLM plus LLM raising F1 from 0.749 to 0.908 at threshold 0.5.</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1016/j.ress.2026.113141" target="_blank" rel="noopener">
+            Table 7 and Figure 6 · PDF p. 10<small>Article entry</small> ↗
+          </a>
+          <div><h3>Check compression convergence and QA ablation</h3><p><strong>Figure 6 stabilizes at 185 relation types, while Table 7 separates answer relevance, semantic similarity, context precision</strong>, and recall.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">From aviation narratives to graph QA</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">Text</div>
+            <h3>Extract open causal triples</h3>
+            <p><strong>Gemma3-12B generates subject, relation, and object from incident narratives.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">Candidates</div>
+            <h3>Screen synonymous relations with MiniLM</h3>
+            <p><strong>Pairs reaching cosine similarity 0.5 advance to semantic merge review.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">Normalization</div>
+            <h3>Check direction and granularity with an LLM</h3>
+            <p><strong>Iterative merging stops when no candidates remain, yielding 185 canonical predicates.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">Retrieval</div>
+            <h3>Build and prune three-hop paths</h3>
+            <p><strong>Question-related seed nodes define a subgraph and low-relevance paths are removed.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">Answer</div>
+            <h3>Generate from retained evidence paths</h3>
+            <p><strong>GPT-4o integrates the path evidence, but the result remains retrieval over reported narratives.</strong></p>
+          </li>
+        </ol>
+        <figcaption><strong>Organized from PDF Algorithms 1–2, Tables 5–7, and Figures 6–7.</strong></figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">Full deep read</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>Extract causal triples from 65,535 aviation narratives, normalize their predicates, and use path pruning for graph QA; the engineering chain is complete, but its edges remain reporters' causal statements.</p>
+</blockquote>
+<h2>The authors</h2>
+<p>Jifei Cheng, Donghui Shi, and Yakun Sun are with the Department of Computer Engineering at Anhui Jianzhu University; Jozef Zurada is with the University of Louisville College of Business. The paper became available online on 13 July 2026 and appears in volume 277 of Reliability Engineering &amp; System Safety, dated 2027.</p>
+<h2>The problem</h2>
+<p><strong>Aviation safety reports contain causal narratives linking equipment, human factors, and the environment</strong>, but the corpus is large and linguistically inconsistent. LLM extraction creates another problem: variants such as “led to,” “caused,” and “resulted in” fragment equivalent edges.</p>
+<p>Standard KG-QA then retrieves a whole three-hop neighborhood, allowing noise to swamp useful paths. The paper connects extraction, <strong>relation normalization</strong>, and risk-oriented QA in one automated pipeline.</p>
+<h2>The approach</h2>
+<p><strong>The source is 65,535 voluntary NASA ASRS reports from January 1988 through July 2012</strong>. In stage one, Gemma3-12B receives two examples and extracts open-schema subject-relation-object triples from explicit causal language. Stage two processes 2,939 raw predicates.</p>
+<p><strong>MiniLM computes cosine similarity</strong>; when similarity reaches 0.5, an LLM reviews whether meaning, direction, and granularity permit a merge. The process repeats until no candidate can be merged. This reduces the vocabulary to 185 relation types while retaining 394,770 triples and 562,020 entities.</p>
+<p><strong>For QA, the query is embedded to select seed nodes and extract three-hop subgraphs</strong>. A candidate path is retained only when an LLM's relevance score exceeds the pruning threshold; surviving paths are serialized and passed to GPT-4o with a chain-of-thought prompt. The operational effect is less neighborhood noise, with the corresponding risk that secondary paths receive low scores and disappear.</p>
+<h2>Key results</h2>
+<p><strong>On a 1,000-report extraction set, two-shot GPT-4o reached F1 0.8302 and Gemma3-12B 0.7986</strong>. At the 0.5 normalization threshold, MiniLM alone reached F1 0.749; LLM review raised it to 0.908. Seven iterations reduced 2,939 predicates to 185, a 93.71% decrease.</p>
+<p><strong>On 100 QA pairs, the full model scored 0.9682 for answer relevance, 0.9310 for semantic similarity</strong>, 0.6583 for context precision, and 0.5923 for context recall. The last two metrics were 0.0844 and 0.1222 for Vanilla KG-QA. Four supplementary human checks produced Cohen's kappa values from 0.7093 to 0.7357.</p>
+<h2>How solid is the evidence</h2>
+<p><strong>The evaluation covers extraction, normalization, and QA, and the ablation holds the graph and answer generator constant</strong>. The normalization success criterion is higher F1 plus human agreement; that supports synonym consolidation, not causal identification. The reference triples combine GPT-3.5 output with manual annotation, and unmatched outputs are reconsidered by an LLM and NLI model.</p>
+<p><strong>LLMs participate in both normalized-label generation and scoring, creating circular evaluation that the authors acknowledge</strong>. ASRS contains voluntary retrospective narratives, without unreported events or an exposure denominator such as flight hours. Edge frequency therefore mixes mechanism, reporting behavior, and extraction error.</p>
+<p>The graph has no <strong>target estimand</strong>, temporal ordering, intervention definition, or identification assumptions. Its paths and centrality cannot support the paper's “what-if” or intervention-effect language. Data end in 2012, and there is no external-corpus or operational-decision validation.</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="On this page">
+    <div class="deep-toc-title">On this page</div>
+    <a href="#overview" class="is-main">30-second read</a>
+    <a href="#key-numbers">Three numbers to keep</a>
+    <a href="#where-to-focus">Where to focus</a>
+    <a href="#study-design">From aviation narratives to graph QA</a>
+    <a href="#full-read">Full deep read</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← Back to deep reads</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>My Research Desk · Xuanyu Shi</span>
+    <span>Updated on weekdays · <a href="https://xuanyshi.github.io/research-desk/en/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

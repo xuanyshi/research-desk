@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Using Causal Diagrams for Biomedical Research · Deep reads · My Research Desk</title>
+<meta name="description" content="Variable roles depend on the research question and temporal order. Block every open backdoor path, avoid conditioning on colliders, and distinguish total, direct, and indirect effects when studying mediation.">
+<meta property="og:title" content="Using Causal Diagrams for Biomedical Research · Deep reads · My Research Desk">
+<meta property="og:description" content="Variable roles depend on the research question and temporal order. Block every open backdoor path, avoid conditioning on colliders, and distinguish total, direct, and indirect effects when studying mediation.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="My Research Desk">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/en/deep/kyriacou-2023-causal-diagrams/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/en/deep/kyriacou-2023-causal-diagrams/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/kyriacou-2023-causal-diagrams/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/kyriacou-2023-causal-diagrams/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/kyriacou-2023-causal-diagrams/">
+<link rel="alternate" type="application/atom+xml" title="My Research Desk · Deep reads" href="https://xuanyshi.github.io/research-desk/en/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">My Research Desk<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">Home</a>
+      <a href="../../library/index.html" class="">Library</a>
+      <a href="../../deep/index.html" class="on">Deep reads</a>
+      <a href="../../daily/index.html" class="">Daily</a>
+      <a href="../../log/index.html" class="">Log</a>
+      <a href="../../about/index.html" class="">About</a>
+      <span class="lang">
+        <a href="../../../zh/deep/kyriacou-2023-causal-diagrams/" class="">中</a>
+        <a href="../../../en/deep/kyriacou-2023-causal-diagrams/" class="on">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">My deep read</div>
+  <h1>Using Causal Diagrams for Biomedical Research</h1>
+  <p>Demetrios N. Kyriacou, Philip Greenland, Mohammad A. Mansournia</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Annals of Emergency Medicine</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.1016/j.annemergmed.2022.08.014" target="_blank" rel="noopener">Source / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=Using%20Causal%20Diagrams%20for%20Biomedical%20Research" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p3">Causal DAG</span><span class="pill p4">Confounder adjustment</span><span class="pill p1">Collider bias</span><span class="pill p4">Covariate selection</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30-second read</div>
+      <h2 id="overview-title"><strong>Variable roles depend on the research question and temporal order</strong>. Block every open backdoor path, avoid conditioning on colliders, and distinguish total, direct, and indirect effects when studying mediation.</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>Question</dt>
+          <dd>How can a DAG determine which variables to adjust for, which to exclude, and when a separate <strong>mediation analysis</strong> is needed?</dd>
+        </div>
+        <div>
+          <dt>Design</dt>
+          <dd><strong>A clinical methods tutorial using Framingham Heart Study data, with diabetes–cardiac ischemia and obesity–cardiac ischemia examples for confounding</strong>, colliders, and mediation.</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>Evidence strength</span>
+          <strong class="evidence-level level-mid">Moderate</strong>
+        </div>
+        <dl>
+          <div><dt>What was assessed</dt><dd><strong>DAG decision rules plus Cox models and mediation analyses involving diabetes, obesity, age, hypertension, MACE</strong>, and cardiac ischemia in Framingham data.</dd></div>
+          <div><dt>Downgrade triggers</dt><dd>The teaching DAGs are deliberately simplified and depend on prior causal knowledge. Observational estimates remain vulnerable to unmeasured and <strong>residual confounding</strong>, misclassification, and time-varying processes.</dd></div>
+          <div><dt>Impact on interpretation</dt><dd>DAGs constrain variable selection and expose bias from mechanical adjustment, but they do not validate the arrows or automatically turn observational associations into <strong>causal effects</strong>.</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">Reading advice</strong><strong>Start with Figure 2 and identify its three backdoor paths</strong>. Compare Table 1 before and after MACE adjustment, then use Figure 3 and Table 2 for mediation.</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">Three numbers to keep</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">3</div>
+          <h3>Backdoor paths in Figure 2</h3>
+          <p><strong>Through age, through obesity, and through obesity plus hypertension to cardiac ischemia</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">2.08→1.28</div>
+          <h3>HR after adding a collider</h3>
+          <p><strong>The diabetes HR falls by 38.5%, but the change reflects collider bias rather than removal of confounding</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">1.69</div>
+          <h3>Total-effect HR for obesity</h3>
+          <p>The <strong>mediation analysis</strong> reports a direct-effect HR of 1.52 and an indirect-effect HR through hypertension of 1.11</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">Where to focus</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1016/j.annemergmed.2022.08.014" target="_blank" rel="noopener">
+            Figure 2 · PDF p. 4<small>Article entry</small> ↗
+          </a>
+          <div><h3>Locate backdoor paths and the MACE collider</h3><p><strong>The graph places confounding paths through age, obesity, and hypertension beside MACE as a common effect.</strong></p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1016/j.annemergmed.2022.08.014" target="_blank" rel="noopener">
+            Table 1 · PDF p. 4<small>Article entry</small> ↗
+          </a>
+          <div><h3>Compare valid adjustment with collider adjustment</h3><p><strong>The diabetes HR moves from 2.56 unadjusted to 2.08 with a sufficient set</strong>, then to 1.28 after adding MACE, showing why change-in-estimate rules can mislead.</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1016/j.annemergmed.2022.08.014" target="_blank" rel="noopener">
+            Figure 3 and Table 2 · PDF p. 5<small>Article entry</small> ↗
+          </a>
+          <div><h3>Separate a confounder from a mediator</h3><p>Hypertension lies on the obesity-to-ischemia pathway; conventional adjustment removes part of the effect and requires an explicit <strong>mediation analysis</strong>.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">DAG-driven variable handling</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">Question</div>
+            <h3>Fix the exposure and outcome</h3>
+            <p><strong>State whether the target is a total, direct, or mediated effect.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">Structure</div>
+            <h3>Draw the time-ordered DAG</h3>
+            <p><strong>Use subject knowledge to mark common causes, intermediates, selection factors, and common effects.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">Confounding</div>
+            <h3>Block every backdoor path</h3>
+            <p><strong>Choose a minimally sufficient set without redundant or purposeless covariates.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">Colliders</div>
+            <h3>Exclude colliders and descendants</h3>
+            <p><strong>A variable affected by exposure and outcome or their causes can open a noncausal path when conditioned on.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">Mediation</div>
+            <h3>Use explicit effect decomposition</h3>
+            <p><strong>For mechanism questions, estimate total, direct, and indirect effects and state the additional assumptions.</strong></p>
+          </li>
+        </ol>
+        <figcaption><strong>Organized from PDF Figures 1–3 and Tables 1–2.</strong></figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">Full deep read</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>A clinician-facing DAG primer: use the confounder/collider/mediator rules to decide which variables go into a multivariable model and which stay out, then let Framingham numbers show how the wrong choice miscalculates the effect.</p>
+</blockquote>
+<h2>The authors</h2>
+<p>Led by Demetrios N. Kyriacou, professor of emergency and preventive medicine at Northwestern's Feinberg School of Medicine, with Northwestern cardiovascular epidemiologist Philip Greenland and Mohammad A. Mansournia of Tehran University of Medical Sciences, who publishes widely on causal-inference methods.</p>
+<h2>The problem</h2>
+<p><strong>Picking covariates in clinical research, many people still lean on mechanical algorithms — stepwise, significance</strong>, change-in-estimate — letting software pick the set that fits best. The trouble is these methods optimize overall fit and never ask what role each variable plays in the causal structure.</p>
+<p><strong>That yields two systematic errors: leaving out a confounder that belongs in</strong>, and putting in colliders or mediators that don't.</p>
+<p><strong>Both bias the estimate, through different mechanisms</strong>. What the authors want is for researchers, working with statisticians, to be able to say from a causal diagram why this variable is in and that one is out, instead of outsourcing variable selection to an algorithm. An old problem, but worth restating in a clinical (emergency-medicine) journal.</p>
+<h2>The approach</h2>
+<p><strong>The core move is to treat the DAG as the basis for variable selection</strong>. A DAG is directed (arrows follow time order) and acyclic (no feedback loops); a path is any unbroken route along or against arrows, and a causal path is a run of arrows all pointing the same way. Each variable type has its own rule:</p>
+<ul>
+<li>Confounder, three criteria: an extraneous risk factor for the outcome, independent of the exposure; associated with the exposure in the source population (directly or via a common cause); not affected by exposure or outcome, and never on the causal path between them. If it qualifies, adjust.</li>
+<li>A collider is the common effect of two variables, and conditioning on it manufactures an association out of nothing (collider / selection bias), so exclude it; a mediator sits on the causal path, and adjusting it with ordinary regression erases the part of the effect that flows through it, so you need a formal mediation analysis to split direct and indirect effects.</li>
+</ul>
+<p>To find a sufficient <strong>adjustment set</strong>, use backdoor paths: start from an arrow into the exposure (the backdoor), follow an open path (no colliders) to the outcome, and block every backdoor path by adjusting at least one variable on it. The authors argue for using the conventional three criteria and the backdoor method together.</p>
+<p><strong>Running through it all is one line: explanatory modeling is not predictive modeling</strong>, so don't judge by mechanical selection or change-in-estimate alone.</p>
+<h2>Key results</h2>
+<p><strong>The demonstration uses Framingham, 4,287 people, exposure diabetes, outcome cardiac ischemia</strong>. Table 1 adds variables step by step: unadjusted HR 2.56; adjusting obesity alone drops it to 2.32 (9.4% change, obesity is a confounder); adding age drops it to 2.08 (another 10.3%, age is a confounder too). So far this is confounding removal.</p>
+<p><strong>The trap is step three: put in MACE (major adverse cardiovascular events) and the HR plunges from 2.08 to 1.28 (a 38.5% drop), the CI crossing 1</strong>. But MACE is a common effect of diabetes and cardiac ischemia — a collider, not a confounder — so that 38.5% looks like confounding removal and is actually collider bias introduced.</p>
+<p><strong>The same "estimate moved" event is right for obesity and age, wrong for MACE</strong>, and change-in-estimate can't tell them apart.</p>
+<p>The mediation case is the twin: obesity on cardiac ischemia unadjusted 1.61, ordinary regression on hypertension drops it to 1.45 (9.9%), but hypertension is a mediator, so that drop erases the indirect effect; a formal <strong>mediation analysis</strong> gives total 1.69, direct 1.52, indirect 1.11 (direct × indirect ≈ total).</p>
+<h2>How solid is the evidence</h2>
+<p><strong>It's a tutorial, not a study</strong>, so "solid" means how honest it is — and the authors are honest.</p>
+<p><strong>They draw the limits themselves: a DAG depends on prior scientific knowledge that is often incomplete or unavailable</strong>; whether a variable is a confounder, collider, or mediator depends on temporal order and measurement timing; a diagram that omits variables or arrows is oversimplified, and the figures here are deliberately so ("include arrows when in doubt").</p>
+<p>They flag real problems: a variable can be a confounder and a collider at once (M-bias); the definition of confounding has been argued over for decades, with the conventional and backdoor criteria only largely overlapping; and every variable here is dichotomized, which itself introduces <strong>residual confounding</strong>. The diagram's power is only as good as the data and the prior knowledge behind it.</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="On this page">
+    <div class="deep-toc-title">On this page</div>
+    <a href="#overview" class="is-main">30-second read</a>
+    <a href="#key-numbers">Three numbers to keep</a>
+    <a href="#where-to-focus">Where to focus</a>
+    <a href="#study-design">DAG-driven variable handling</a>
+    <a href="#full-read">Full deep read</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← Back to deep reads</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>My Research Desk · Xuanyu Shi</span>
+    <span>Updated on weekdays · <a href="https://xuanyshi.github.io/research-desk/en/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

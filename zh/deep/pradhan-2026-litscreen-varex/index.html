@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>利用大语言模型自动筛选观察性研究并提取变量的试点项目 · 精读 · 我的文献集</title>
+<meta name="description" content="VarEx在主要参考集中达到0.80精度、0.79召回率；LitScreen在4个SYNERGY集上召回率为1.00，在另1个集为0.725。生产语料缺少完整纳入金标准，且稿件仍有占位内容。">
+<meta property="og:title" content="利用大语言模型自动筛选观察性研究并提取变量的试点项目 · 精读 · 我的文献集">
+<meta property="og:description" content="VarEx在主要参考集中达到0.80精度、0.79召回率；LitScreen在4个SYNERGY集上召回率为1.00，在另1个集为0.725。生产语料缺少完整纳入金标准，且稿件仍有占位内容。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="我的文献集">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/zh/deep/pradhan-2026-litscreen-varex/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/zh/deep/pradhan-2026-litscreen-varex/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/pradhan-2026-litscreen-varex/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/pradhan-2026-litscreen-varex/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/pradhan-2026-litscreen-varex/">
+<link rel="alternate" type="application/atom+xml" title="我的文献集 · 精读" href="https://xuanyshi.github.io/research-desk/zh/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">我的文献集<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">首页</a>
+      <a href="../../library/index.html" class="">文献库</a>
+      <a href="../../deep/index.html" class="on">精读</a>
+      <a href="../../daily/index.html" class="">每日速览</a>
+      <a href="../../log/index.html" class="">历程</a>
+      <a href="../../about/index.html" class="">关于</a>
+      <span class="lang">
+        <a href="../../../zh/deep/pradhan-2026-litscreen-varex/" class="on">中</a>
+        <a href="../../../en/deep/pradhan-2026-litscreen-varex/" class="">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">我的精读</div>
+  <h1><span class="title-original" lang="en">A Pilot Project Leveraging Large Language Models for Automated Screening and Variable Extraction in Observational Studies</span><span class="title-zh" lang="zh-CN">利用大语言模型自动筛选观察性研究并提取变量的试点项目</span></h1>
+  <p>Manjil M. Pradhan, Melissa L. Rethlefsen, Scott A. Malec</p>
+  <div class="jmetrics">
+<span class="jbadge jb-pre">medRxiv</span>
+</div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.64898/2026.06.13.26355589" target="_blank" rel="noopener">原文 / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=A%20Pilot%20Project%20Leveraging%20Large%20Language%20Models%20for%20Automated%20Screening%20and%20Variable%20Extraction%20in%20Observational%20Studies" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p1">大语言模型</span><span class="pill p1">系统综述自动化</span><span class="pill p4">混杂调整</span><span class="pill p2">信息抽取</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30秒结论</div>
+      <h2 id="overview-title"><strong>VarEx在主要参考集中达到0.80精度、0.79召回率</strong>；LitScreen在4个SYNERGY集上召回率为1.00，在另1个集为0.725。生产语料缺少完整纳入金标准，且稿件仍有占位内容。</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>研究问题</dt>
+          <dd><strong>开源LLM能否在保持高召回的前提下筛选观察性研究，并可审计地抽取暴露、结局和协变量</strong>？</dd>
+        </div>
+        <div>
+          <dt>研究设计</dt>
+          <dd><strong>medRxiv预印本</strong>；LitScreen用摘要判定与全文RAG筛查，VarEx从方法和结果段抽取变量并对齐10类Metaconfoundr语义类别。</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>证据强度</span>
+          <strong class="evidence-level level-low">有限</strong>
+        </div>
+        <dl>
+          <div><dt>计算对象</dt><dd><strong>20篇高血压—ADRD文章中的240个参考协变量、多个SYNERGY筛查基准、逐字证据门和每篇处理时间</strong>。</dd></div>
+          <div><dt>触发条件</dt><dd>预印本未经同行评议；生产语料只能报告<strong>人工复核</strong>精度，完整召回率不可估；筛查附录与正文仍存在未完成标记。</dd></div>
+          <div><dt>对结论的影响</dt><dd><strong>结果支持带逐字证据的自动抽取和高召回筛查原型，尚不足以证明其能无人监督替代系统综述双人筛查</strong>。</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">阅读建议</strong><strong>先看Figure 1理解两条流水线，再核对Tables 3–6的抽取与效率指标</strong>，最后读Appendix F的Table 9，区分SYNERGY完整标签与生产语料不完整标签。</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">三个关键数字</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">20篇</div>
+          <h3>主要抽取参考集</h3>
+          <p><strong>高血压—ADRD语料含240个参考协变量</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">0.80 / 0.79</div>
+          <h3>变量抽取精度 / 召回率</h3>
+          <p><strong>主要参考集的F1为0.76，分类准确率为0.97</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">8.68分钟/篇</div>
+          <h3>端到端处理时间</h3>
+          <p><strong>跨研究人工基线为60.90分钟/篇，估计节省85.7%</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">重点看哪里</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.64898/2026.06.13.26355589" target="_blank" rel="noopener">
+            Figure 1 · PDF pp. 3–4<small>原文入口</small> ↗
+          </a>
+          <div><h3>区分LitScreen与VarEx</h3><p><strong>总览图连接摘要筛查、全文RAG、变量抽取、证据引用和Metaconfoundr分类</strong>。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.64898/2026.06.13.26355589" target="_blank" rel="noopener">
+            Tables 3–6 · PDF pp. 17–18<small>原文入口</small> ↗
+          </a>
+          <div><h3>核对抽取性能和时间</h3><p><strong>表格分别报告总体、类别、分类和处理时长</strong>；分类准确率只在已正确匹配的变量上计算。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.64898/2026.06.13.26355589" target="_blank" rel="noopener">
+            Table 9 · PDF p. 31<small>原文入口</small> ↗
+          </a>
+          <div><h3>辨认筛查评估的完整与缺失指标</h3><p>SYNERGY有完整标签，生产语料多缺少金标准纳入集，因此只能报告<strong>人工复核</strong>精度而不能估计召回率。</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">可审计文献筛查与变量抽取</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">摘要</div>
+            <h3>提取领域中立证据句</h3>
+            <p><strong>先抽取设计、暴露和结局相关原句，降低关键词捷径</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">判定</div>
+            <h3>逐准则反思与证据门</h3>
+            <p><strong>高置信排除必须有逐字否定证据，其余文献进入全文</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">全文</div>
+            <h3>RAG核实Methods与Results</h3>
+            <p><strong>分块、检索和重排后，模型引用具体chunk作出最终判断</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">抽取</div>
+            <h3>分角色提取变量</h3>
+            <p><strong>暴露、结局和协变量分别检索，每项输出绑定原文引文</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">对齐</div>
+            <h3>映射到10类协变量</h3>
+            <p><strong>将异名变量归入Metaconfoundr类别，生成跨研究可比较矩阵</strong>。</p>
+          </li>
+        </ol>
+        <figcaption><strong>依据PDF Figures 1–3、Tables 3–6和Appendix F整理</strong>。</figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">完整精读</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>两条开源 LLM 流水线：LitScreen 筛观察性研究、VarEx 抽暴露/结局/混杂并对齐 Metaconfoundr。 筛查基准显示 5 个 SYNERGY 数据集中有 4 个召回率为 1.00，但生产语料缺少完整纳入金标准，稿件也仍有占位内容。</p>
+</blockquote>
+<h2>作者团队</h2>
+<p>论文出自新墨西哥大学健康科学中心翻译信息学部，通讯作者 Scott A. Malec 主持 Malec 实验室，研究因果推断与基于文献的知识发现；合著者 Melissa L. Rethlefsen 主管该校健康科学图书馆、主导 PRISMA-S 检索报告规范；第一作者 Manjil M. Pradhan 为该校计算机博士生。</p>
+<h2>解决什么问题</h2>
+<p><strong>系统综述是慢性病因果推断的证据顶层，却被文献规模压垮</strong>：一篇 SR 常要几百到上千人时、从注册到发表中位 60 多周，筛查和数据抽取是最耗人力的两步。</p>
+<p>更麻烦的是它汇总的观察性研究在混杂调整上极不一致——漏掉真混杂，或错调了 collider、mediator、<strong>工具变量</strong>——同一个暴露-结局关系，各研究调的变量都不一样。VanderWeele 的 disjunctive cause criterion、DAG 这些原则早有了，实际报告仍然五花八门。</p>
+<p><strong>现有 ML 筛查工具（如 Abstrackr）又多是专有黑箱，透明性和可复现差</strong>。缺的是一套透明、开源、既减负担又能把各研究报告的暴露/结局/协变量标准化可比的方法。</p>
+<h2>怎么做的</h2>
+<p><strong>端到端两条流水线，全用开源模型（Deepseek-R1:70b、Llama3.3:70b，经 Ollama）</strong>，且 provider-agnostic。</p>
+<p><strong>LitScreen 三阶段筛查，核心是"渐进加证据、只对最不确定的少数文献上重计算"</strong>。Phase 1 领域中立句抽取（llama3.3:70b few-shot）：故意把所有暴露/结局/设计的具体名字从 prompt 和示例里抹掉，逼模型别靠关键词 pattern-match，只抽描述设计、暴露、结局的句子。</p>
+<p><strong>Phase 2 逐条判定（Deepseek-R1:70b，reasoning 模型带 <code>&lt;think&gt;</code>）</strong>：初判 → 对 4-5 个准则问题自反思 → 给 YES/NO/UNCLEAR 加置信度，再走确定性三向门——高置信 NO 直接排除，其余全升到全文。</p>
+<p><strong>Phase 3 全文 RAG 验证：Entrez 取 PMID/PMCID 转 JATS XML（Unpaywall 兜底），自定义解析只留 Methods 和 Results，自适应分块（cosine&gt;0.80、60-500 词），bioLinkBERT-large 检索 → MMR 取 top50 → bge-reranker 取 top5 → Deepseek 验证，禁 UNCLEAR、要引 chunk id</strong>。</p>
+<p><strong>两个防幻觉门是关键：证据态门（Disqualifying/Confirming/Insufficient，No 只有拿到 Disqualifying 才允许）</strong>；逐字门（DISQUALIFIER_VERBATIM 必须是抽取句的精确子串，否则 No 降级为 Unclear）。整套设计 recall 优先——漏一篇合格文献比多留一篇坏得多。</p>
+<p><strong>VarEx 抽取沿用同一套解析分块，但按 STROBE 多留 abstract，还抽表格与表/图注文本</strong>。PubMedBERT embed，暴露/结局/协变量分角色各自检索，每角色最多 4 chunk；分角色 prompt，每个变量强制带精确引文加 chunk id，禁生成统计结论。</p>
+<p><strong>最后把协变量分到 10 个语义类（社会人口、生物遗传、健康行为、用药、生理测量、社会心理、临床症状、精神病史、基础疾病、其他），对齐 Metaconfoundr 的 Confounder Matrix</strong>。</p>
+<h2>关键结果</h2>
+<p><strong>主数据集 HTN→ADRD（20 篇、240 个参考协变量）</strong>：抽取 Precision 0.80、Recall 0.79、F1 0.76，分类准确率 0.97，strict F1（变量和类别都对）0.73。Education→Dementia（10 篇）F1 0.81。SYNERGY 验证集里 Bos 最好（F1 0.85），Brouwer（心理预测因子→抑郁复发）最差（F1 0.65、分类准确率仅 0.49）。</p>
+<p><strong>类别层面差得很开：Sociodemographics、Physiological、Health Behaviors 都到 0.87</strong>；</p>
+<p><strong>Medication Use 崩到 0.57（recall 0.47）</strong>，Underlying Health Conditions 过度抽取（precision 0.60），Psychosocial 这种稀疏类只有 0.33。</p>
+<p><strong>效率上，对比 Wang 等的人工基线（摘要 0.9、全文 7、抽取 53 min/ref，合计 60.9）</strong>，流水线 8.68 min/ref，省 85.7%。</p>
+<p><strong>但要看清楚：摘要筛查这一步 LLM 反而更慢（2.95 对 0.9 min）</strong>，省的几乎全来自数据抽取（53→2.53）。LitScreen 平均在摘要阶段排掉 60.8%（Education 94.1%、HTN 86.9%）。</p>
+<h2>证据有多硬</h2>
+<p><strong>这是一份内部状态不一致的 preprint</strong>。正文仍留有 "MONKEY MONKEY MONKEY TO ADD TO DO" 占位符，HTN→ADRD 的 PRISMA 图有多处 n= 空缺，末尾还保留 "Things To Do / Incomplete" 清单；但 PDF 后部已经补入 MEDLINE 检索式、筛查提示模板和 Appendix F 的 Screening Results。版本完成度不能只按正文的未完成说明判断。</p>
+<p><strong>Table 9 给出了 LitScreen 的筛查性能</strong>。BPV→Dementia 的 precision 为 0.846、recall 为 1.000；</p>
+<p><strong>5 个 SYNERGY 数据集中，Bos、Brouwer、van de Schoot 和 Wolters 的 recall 均为 1.000，van der Valk 为 0.725</strong>。</p>
+<p><strong>生产语料 HTN→ADRD 和 Education→Dementia 没有完整纳入标签</strong>，只能由专家复核模型标记的纳入项并报告 precision 0.857 和 0.655，accuracy、F1 和 recall 均不可估。由此可见，高召回在带金标准的若干基准上得到支持，对实际生产语料仍未完成验证。</p>
+<p><strong>抽取评估也偏松</strong>。语义匹配用 cosine≥0.60 定 true positive，阈值偏低，近似命中也算对；分类指标只在"已抽对"的协变量上算，所以 0.97 是条件在那 79% 上的数字。更别扭的是检索和评估用同一族 PubMedBERT embedding，容易把表面一致当成正确。</p>
+<p><strong>样本也小：主集 20 篇、单个专家构建的抽取标准，参考标准没报标注者一致性</strong>。Brouwer 一贯垫底，说明心理行为类协变量的语言更难，所谓"泛化"其实主场（HTN、Education）才好看。效率对比是跨研究的人工基线，不是同一 corpus 头对头，53 min/ref 的抽取基线在 85.7% 里权重极大。</p>
+<p><strong>作者自己也承认幻觉不可避免（抽出原文没有的变量、按错证据判定），只能当助手</strong>。</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="本页导航">
+    <div class="deep-toc-title">本页导航</div>
+    <a href="#overview" class="is-main">30秒结论</a>
+    <a href="#key-numbers">三个关键数字</a>
+    <a href="#where-to-focus">重点看哪里</a>
+    <a href="#study-design">可审计文献筛查与变量抽取</a>
+    <a href="#full-read">完整精读</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← 回精读列表</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>我的文献集 · Xuanyu Shi</span>
+    <span>每个工作日更新一次 · <a href="https://xuanyshi.github.io/research-desk/zh/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

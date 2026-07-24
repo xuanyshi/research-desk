@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>如何使用有向无环图：临床研究者指南 · 精读 · 我的文献集</title>
+<meta name="description" content="DAG应先于数据和结果，遗漏节点或箭头是强假设。七步能提高设计透明度，共识图仍可能错误且不能量化偏倚大小。">
+<meta property="og:title" content="如何使用有向无环图：临床研究者指南 · 精读 · 我的文献集">
+<meta property="og:description" content="DAG应先于数据和结果，遗漏节点或箭头是强假设。七步能提高设计透明度，共识图仍可能错误且不能量化偏倚大小。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="我的文献集">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/zh/deep/feeney-2025-clinical-dag-guide/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/zh/deep/feeney-2025-clinical-dag-guide/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/feeney-2025-clinical-dag-guide/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/feeney-2025-clinical-dag-guide/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/feeney-2025-clinical-dag-guide/">
+<link rel="alternate" type="application/atom+xml" title="我的文献集 · 精读" href="https://xuanyshi.github.io/research-desk/zh/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">我的文献集<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">首页</a>
+      <a href="../../library/index.html" class="">文献库</a>
+      <a href="../../deep/index.html" class="on">精读</a>
+      <a href="../../daily/index.html" class="">每日速览</a>
+      <a href="../../log/index.html" class="">历程</a>
+      <a href="../../about/index.html" class="">关于</a>
+      <span class="lang">
+        <a href="../../../zh/deep/feeney-2025-clinical-dag-guide/" class="on">中</a>
+        <a href="../../../en/deep/feeney-2025-clinical-dag-guide/" class="">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">我的精读</div>
+  <h1><span class="title-original" lang="en">How to use directed acyclic graphs: guide for clinical researchers</span><span class="title-zh" lang="zh-CN">如何使用有向无环图：临床研究者指南</span></h1>
+  <p>Timothy Feeney, Fernando Pires Hartwig, Neil M Davies</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">BMJ 388 (2025):e078226</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.1136/bmj-2023-078226" target="_blank" rel="noopener">原文 / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=How%20to%20use%20directed%20acyclic%20graphs%3A%20guide%20for%20clinical%20researchers" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p3">因果DAG</span><span class="pill p1">临床研究</span><span class="pill p4">目标估计量</span><span class="pill p1">专家共识</span><span class="pill p2">敏感性分析</span><span class="pill p1">报告规范</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30秒结论</div>
+      <h2 id="overview-title">DAG应先于数据和结果，遗漏节点或箭头是强假设。七步能提高设计透明度，<strong>共识图仍可能错误且不能量化偏倚大小</strong>。</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>研究问题</dt>
+          <dd>临床观察性研究怎样把DAG贯穿到<strong>目标估计量、数据采集、协变量选择、敏感性分析和公开报告</strong>？</dd>
+        </div>
+        <div>
+          <dt>研究设计</dt>
+          <dd>七步应用指南；以重度饮酒与五年死亡为例，从目标人群和问题开始，经过专家共识与数据选择，落到<strong>主分析和定量偏倚分析</strong>。</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>证据强度</span>
+          <strong class="evidence-level level-mid">方法指南</strong>
+        </div>
+        <dl>
+          <div><dt>计算对象</dt><dd><strong>目标人群、暴露、结局、共识DAG、最小充分调整集以及不可测或误测变量</strong>。</dd></div>
+          <div><dt>触发条件</dt><dd>关键变量不可测或测量误差明显时，DAG触发换数据、补采集或敏感性分析；<strong>缺失节点不会因多变量回归自动消失</strong>。</dd></div>
+          <div><dt>对结论的影响</dt><dd>可直接转为临床研究清单；<strong>正确执行流程不等于真实因果结构已被验证</strong>。</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">阅读建议</strong>先看Box 2和Steps 1–3理解建图与共识，再看Figure 6的迭代过程，最后读Steps 4–7，检查<strong>图如何真实改变数据和分析选择</strong>。</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">三个关键数字</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">7步</div>
+          <h3>临床DAG流程</h3>
+          <p><strong>从目标问题、专家共识到分析、敏感性分析与公开报告</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">234篇</div>
+          <h3>既有应用综述</h3>
+          <p><strong>显示DAG使用增加但关键报告项目差异很大</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">2套</div>
+          <h3>示例调整集</h3>
+          <p><strong>饮酒—死亡案例给出两套最小充分集</strong>；未测家庭支持可使两套都不充分</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">重点看哪里</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://www.bmj.com/content/388/bmj-2023-078226.long" target="_blank" rel="noopener">
+            Box 2与Steps 1–2 · PDF pp. 6–7<small>图表直达</small> ↗
+          </a>
+          <div><h3>确定最低建图要求</h3><p><strong>目标估计量、全部共同原因、选择节点和遗漏边假设集中出现</strong>。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://www.bmj.com/content/388/bmj-2023-078226.long" target="_blank" rel="noopener">
+            Figure 6与Step 3 · PDF pp. 7–8<small>图表直达</small> ↗
+          </a>
+          <div><h3>观察共识图如何迭代</h3><p><strong>从暴露—结局骨架到专家补边、未测变量和调整集的变化清楚可见</strong>。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://www.bmj.com/content/388/bmj-2023-078226.long" target="_blank" rel="noopener">
+            Steps 4–7 · PDF pp. 8–10<small>图表直达</small> ↗
+          </a>
+          <div><h3>把图接到真实研究</h3><p><strong>数据选择、分析方法、测量误差敏感性和公开代码形成闭环</strong>。</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">临床研究DAG的七步闭环</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">问题</div>
+            <h3>定义目标人群与估计量</h3>
+            <p><strong>写清暴露版本、结局时间和目标反事实比较</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">知识</div>
+            <h3>列变量并建立共识图</h3>
+            <p><strong>结合文献、领域专家和DAG专家，预注册节点与边</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">数据</div>
+            <h3>由图选择测量与数据集</h3>
+            <p><strong>先确定必要变量，再判断现有数据能否回答问题</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">分析</div>
+            <h3>实施调整与敏感性分析</h3>
+            <p><strong>使用充分调整集，并量化未测量或误测变量的影响</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">公开</div>
+            <h3>发布图、代码与偏离</h3>
+            <p><strong>让读者重建DAG并审查协变量和敏感性分析理由</strong>。</p>
+          </li>
+        </ol>
+        <figcaption><strong>依据PDF Box 2、Figure 6与Steps 1–7整理为五段</strong>。</figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">完整精读</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>七步指南把目标估计量、共识DAG、数据选择、统计分析和偏倚敏感性分析连成一条临床研究工作流。</p>
+</blockquote>
+<h2>作者团队</h2>
+<p>Timothy Feeney 来自 University of North Carolina at Chapel Hill，Fernando Pires Hartwig 来自 Federal University of Pelotas 与 University of Bristol，Neil M Davies 来自 University College London、University of Bristol 和 Norwegian University of Science and Technology。三位作者长期从事流行病学和因果推断方法研究。</p>
+<h2>解决什么问题</h2>
+<p>DAG在临床研究中越来越常见，但一项包含234篇文章的综述显示，关键假设和调整集经常报告不全。本文要把DAG从论文中的装饰图转成可追踪的设计工具，并说明什么时候应改变数据、分析或结论。</p>
+<h2>怎么做的</h2>
+<p>作者用重度饮酒与五年死亡作为贯穿案例，提出七步：定义目标人群、暴露、结局和目标估计量；用文献与专家列出变量；多人迭代达成共识并预注册；按图选择数据和测量；按图确定分析；针对不可测量或测量误差做敏感性分析；公开DAG、代码与偏离理由。</p>
+<p>调整集的【计算对象】是共识图中的后门路径；【触发条件】是变量组合封闭所有混杂路径且不阻断目标因果路径；【实际影响】是规定主分析协变量。若关键变量缺失，图不会自动给出无偏估计，而会触发换数据、收集新变量或定量偏倚分析。</p>
+<h2>关键结果</h2>
+<p>本文是方法指南，没有新的临床效应量。饮酒案例得到两套最小充分调整集：①社会经济位置、医疗可及性、重度饮酒；②医疗可及性、重度饮酒、酒精滥用家族史。加入潜在未测量的家庭支持后，可能不存在仅由已测变量构成的充分调整集。</p>
+<p>七步中第4—6步把图与实际数据连接：先依据共识DAG决定需采集的变量，再说明数据缺口，最后把未测量混杂与测量误差转为敏感性分析参数。第7步要求正文或补充材料公开图和重建代码。</p>
+<h2>证据有多硬</h2>
+<p>建议建立在既有DAG理论、应用综述和作者经验上，适合作为报告规范。它没有比较遵循七步与常规做法是否降低偏倚，也没有定义专家共识阈值或边的证据等级。正确执行流程仍可能得到错误的共识图。</p>
+<p>文章明确遗漏节点和箭头是强假设。DAG不能量化偏倚大小，无法从数据单独确认方向，也不自动处理依从性变化、时间变化混杂或干预定义不一致。</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="本页导航">
+    <div class="deep-toc-title">本页导航</div>
+    <a href="#overview" class="is-main">30秒结论</a>
+    <a href="#key-numbers">三个关键数字</a>
+    <a href="#where-to-focus">重点看哪里</a>
+    <a href="#study-design">临床研究DAG的七步闭环</a>
+    <a href="#full-read">完整精读</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← 回精读列表</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>我的文献集 · Xuanyu Shi</span>
+    <span>每个工作日更新一次 · <a href="https://xuanyshi.github.io/research-desk/zh/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

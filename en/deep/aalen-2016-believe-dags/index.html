@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Can we believe the DAGs? A comment on the relationship between causal DAGs and mechanisms · Deep reads · My Research Desk</title>
+<meta name="description" content="Coarse temporal sampling can collapse indirect paths into spurious direct edges and can even reverse an estimated direction. Mechanistic use of DAGs therefore requires explicit time scales, sampling intervals, and feedback structure.">
+<meta property="og:title" content="Can we believe the DAGs? A comment on the relationship between causal DAGs and mechanisms · Deep reads · My Research Desk">
+<meta property="og:description" content="Coarse temporal sampling can collapse indirect paths into spurious direct edges and can even reverse an estimated direction. Mechanistic use of DAGs therefore requires explicit time scales, sampling intervals, and feedback structure.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="My Research Desk">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/en/deep/aalen-2016-believe-dags/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/en/deep/aalen-2016-believe-dags/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/aalen-2016-believe-dags/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/aalen-2016-believe-dags/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/aalen-2016-believe-dags/">
+<link rel="alternate" type="application/atom+xml" title="My Research Desk · Deep reads" href="https://xuanyshi.github.io/research-desk/en/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">My Research Desk<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">Home</a>
+      <a href="../../library/index.html" class="">Library</a>
+      <a href="../../deep/index.html" class="on">Deep reads</a>
+      <a href="../../daily/index.html" class="">Daily</a>
+      <a href="../../log/index.html" class="">Log</a>
+      <a href="../../about/index.html" class="">About</a>
+      <span class="lang">
+        <a href="../../../zh/deep/aalen-2016-believe-dags/" class="">中</a>
+        <a href="../../../en/deep/aalen-2016-believe-dags/" class="on">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">My deep read</div>
+  <h1>Can we believe the DAGs? A comment on the relationship between causal DAGs and mechanisms</h1>
+  <p>Odd O. Aalen, Kjetil Røysland, Jon Michael Gran, Roger Kouyos et al.</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Statistical Methods in Medical Research</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.1177/0962280213520436" target="_blank" rel="noopener">Source / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=Can%20we%20believe%20the%20DAGs%3F%20A%20comment%20on%20the%20relationship%20between%20causal%20DAGs%20and%20mechanisms" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p3">Causal DAG</span><span class="pill p4">Continuous-time mechanisms</span><span class="pill p4">Local independence</span><span class="pill p1">Time-varying confounding</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30-second read</div>
+      <h2 id="overview-title"><strong>Coarse temporal sampling can collapse indirect paths into spurious direct edges and can even reverse an estimated direction</strong>. Mechanistic use of DAGs therefore requires explicit time scales, sampling intervals, and feedback structure.</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>Question</dt>
+          <dd>When a continuous-time <strong>causal mechanism</strong> is reduced to a few discrete measurements, do direct edges in the resulting DAG still represent the mechanism?</dd>
+        </div>
+        <div>
+          <dt>Design</dt>
+          <dd><strong>A methodological analysis using linear stochastic differential equations, an aspirin-mediation simulation, a four-node chain simulation</strong>, and a Swiss HIV Cohort Study example at several temporal resolutions.</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>Evidence strength</span>
+          <strong class="evidence-level level-mid">Moderate</strong>
+        </div>
+        <dl>
+          <div><dt>What was assessed</dt><dd>Continuous-time local-independence graphs, <strong>discrete-time</strong> conditional dependence, simulated mediated proportions and partial correlations, and monthly, yearly, and tri-yearly analyses of 717 HAART-treated participants.</dd></div>
+          <div><dt>Downgrade triggers</dt><dd><strong>The derivation uses a linear dynamic system and a faithfulness-like non-cancellation condition</strong>. Simulations reveal the true mechanism by construction; the HIV example includes few variables and lacks Zidovudine treatment data.</dd></div>
+          <div><dt>Impact on interpretation</dt><dd><strong>The paper strongly demonstrates how coarse sampling can manufacture direct edges, but it does not invalidate every DAG</strong>. Its main target is time-blind mechanistic interpretation and adjustment.</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">Reading advice</strong><strong>Start with Figure 4 for the mechanism-to-discrete-graph contrast, then verify Table 1 and Figure 6</strong>. The end of the appendix states the transitive-closure result and its scope.</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">Three numbers to keep</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">17%–23%</div>
+          <h3>Mediated proportion in the aspirin simulation</h3>
+          <p><strong>The true mechanism routes 100% of the effect through platelet aggregation</strong>, while discrete regression implies about 80% direct effect</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">−0.104</div>
+          <h3>Partial correlation in the four-node chain</h3>
+          <p><strong>The root cause takes a negative sign after conditioning on intermediate measurements, contrary to the local mechanism</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">717</div>
+          <h3>Swiss HIV Cohort participants</h3>
+          <p><strong>Monthly data support RNA→CD4→HEM</strong>; yearly and tri-yearly sampling progressively smear the pathway</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">Where to focus</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1177/0962280213520436" target="_blank" rel="noopener">
+            Figure 4 · PDF p. 11<small>Article entry</small> ↗
+          </a>
+          <div><h3>See how a continuous mechanism becomes a discrete DAG</h3><p><strong>The upper graph shows local dependence and the lower graph finite-interval dependence</strong>, providing the clearest entry to the main argument.</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1177/0962280213520436" target="_blank" rel="noopener">
+            Table 1 · PDF p. 12<small>Article entry</small> ↗
+          </a>
+          <div><h3>Check why mediation is badly distorted</h3><p><strong>Compare three adjustment speeds and two mediator measurement times to see how an apparent direct effect is created.</strong></p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1177/0962280213520436" target="_blank" rel="noopener">
+            Figure 6 · PDF p. 16<small>Article entry</small> ↗
+          </a>
+          <div><h3>Verify the temporal-resolution effect in cohort data</h3><p><strong>Compare monthly, yearly, and tri-yearly estimates and track the appearance of a direct RNA→HEM signal.</strong></p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">Argument at a glance</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">Mechanism</div>
+            <h3>Continuous-time dynamics</h3>
+            <p><strong>Matrix A encodes local direct dependence at an infinitesimal time scale and can accommodate feedback.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">Representation</div>
+            <h3>Local-independence graph</h3>
+            <p>The graph represents direct influence and <strong>conditional independence</strong> in the continuous process.</p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">Sampling</div>
+            <h3>Discrete-time projection</h3>
+            <p><strong>Finite-interval dependence follows a matrix exponential and can connect every node reachable in the mechanism graph.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">Simulation</div>
+            <h3>Mediation and a four-node chain</h3>
+            <p><strong>The examples test apparent direct effects, mediated-proportion distortion, and sign reversal.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">Cohort example</div>
+            <h3>Swiss HIV Cohort</h3>
+            <p><strong>The same data are coarsened to show loss of pathway detail and emergence of a direct edge.</strong></p>
+          </li>
+        </ol>
+        <figcaption><strong>Organized from the PDF text, Figure 4, Table 1, and Figure 6</strong>; arrows indicate analytic sequence.</figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">Full deep read</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>Real causation is a mechanism running in continuous time, yet a DAG is built on sparse discrete observations. Coarsen the sampling and the DAG sprouts direct arrows that don't exist, collapsing into the transitive closure of the underlying mechanism graph. For anyone building DAG tooling, this is the cold water to read first.</p>
+</blockquote>
+<h2>The authors</h2>
+<p>Lead author Odd O. Aalen is Professor of Medical Statistics at the University of Oslo, known for the Aalen additive-hazards model. With Oslo colleagues Røysland and Gran, his group develops continuous-time, stochastic-process approaches to causal inference — the mechanistic view this paper sets against discrete DAGs.</p>
+<h2>The problem</h2>
+<p>Causal DAGs are the lingua franca of epidemiology: draw nodes, connect arrows, use d-separation and the <strong>backdoor criterion</strong> to decide what's identifiable. But what is a node? In most applications it's a single measurement of some quantity at one time point.</p>
+<p><strong>The real mechanism, say aspirin suppressing platelet aggregation or HAART driving down viral load, runs continuously in time</strong>. The authors' question is blunt: if you sample a continuous process at a few discrete times and draw a DAG from that, does the DAG still match the underlying mechanism? Their answer is mostly no, and nothing warns you where it breaks.</p>
+<p>This isn't a rejection of DAGs, which remain good for reasoning about <strong>selection bias</strong> and confounding; it's cold water on using DAGs to represent mechanism.</p>
+<h2>The approach</h2>
+<p>The core move is to write the mechanism explicitly as a <strong>continuous-time dynamical system</strong>, then see what it projects to under discrete sampling. They take a linear stochastic differential equation, dX = [A(μ−X)+a]dt + σdW, as the true mechanism; the off-diagonal entries of matrix A encode who directly drives whom, with A_ij = 0 meaning X_i is locally independent of X_j.</p>
+<p>This "local independence graph" is the natural lift of Bayesian-network <strong>conditional independence</strong> into continuous time, defined via martingale theory, and it holds what a DAG can't: feedback loops (CD4 is both affected by treatment and determines when treatment starts, two arrows in opposite directions, not acyclic at all).</p>
+<p><strong>The crux is the gap between A and its matrix exponential e^{−tA}</strong>. A is local dependence at an infinitesimal instant; e^{−tA} is dependence over a finite interval of length t; they are not the same object. As soon as the sampling gap isn't infinitesimal, local dynamics get "smeared out": a true E→M→D chain, observed only at 0 and t, makes a regression report a direct E→D effect.</p>
+<p><strong>The appendix turns this into a general proposition: the time-discrete DAG is the transitive closure of the local independence graph, and every node reachable in the mechanism graph gets a direct arrow in the discrete DAG</strong>. Discretization doesn't just blur the picture, it actively inserts spurious direct edges. The one assumption it leans on is faithfulness-flavored: the two indirect paths don't exactly cancel.</p>
+<h2>Key results</h2>
+<p>The aspirin simulation is the one that stings. The true mechanism routes 100% of the effect through platelet aggregation, yet a <strong>mediation analysis</strong> on discrete observations reports a mediated proportion of only 17%–23% in setup 1, conjuring nearly 80% of "direct effect" out of nothing.</p>
+<p><strong>More counterintuitively, the slower treatment acts on the mediator</strong>, the closer the estimated mediated proportion gets to the truth (56%–74% in setup 2, 60%–92% in setup 3); the authors admit this surprised them, since fast-acting aspirin gives the worst picture.</p>
+<p><strong>The second simulation is harsher: the true mechanism is a chain X1→X2→X3→X4</strong>, but discrete regression hands the root cause X1 a negative coefficient (partial correlation −0.104), the wrong sign, and acting on it would be a mistake.</p>
+<p><strong>Real data reproduces it: in the Swiss HIV Cohort</strong>, monthly data cleanly recovers RNA→CD4→HEM with no direct RNA→HEM edge; drop to yearly or tri-yearly resolution and the chain smears, a spurious direct edge appears.</p>
+<p><strong>One corollary in passing: if the exposure is itself a continuous process</strong>, the instrumental-variable exclusion restriction breaks and IV estimates are biased.</p>
+<h2>How solid is the evidence</h2>
+<p><strong>This is a commentary and cautionary piece, so watch the boundaries</strong>. First, "the true mechanism is a linear SDE" is carrying a lot; real mechanisms are usually non-linear, and the authors concede linearity is just for tractability, though the qualitative "discretization fills in arrows" result is fairly robust to that.</p>
+<p><strong>Second, the transitive-closure claim hangs on a faithfulness-like assumption</strong>, and the authors repeatedly stress this is "mainly a problem for coarse discretization," since fine sampling recovers the structure.</p>
+<p><strong>So what's actually indicted is not DAGs per se but the naive</strong>, time-blind use of DAGs on coarsely-sampled data. Third, the remedy they end on (a series of DAGs defined continuously over time, dynamic path models, additive hazards models) is still DAGs, just with time made explicit, of a piece with Hernán–Robins time-varying DAGs and g-methods.</p>
+<p><strong>So the title is more provocative than the content: the honest answer is "yes</strong>, if you respect time and sampling." Fourth, in the simulations they get to know the true A; in real life you don't, so the bite of the critique depends on whether "continuous-time mechanism" is the right model of reality, and where a phenomenon really is driven by discrete decision points the blade cuts less.</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="On this page">
+    <div class="deep-toc-title">On this page</div>
+    <a href="#overview" class="is-main">30-second read</a>
+    <a href="#key-numbers">Three numbers to keep</a>
+    <a href="#where-to-focus">Where to focus</a>
+    <a href="#study-design">Argument at a glance</a>
+    <a href="#full-read">Full deep read</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← Back to deep reads</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>My Research Desk · Xuanyu Shi</span>
+    <span>Updated on weekdays · <a href="https://xuanyshi.github.io/research-desk/en/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

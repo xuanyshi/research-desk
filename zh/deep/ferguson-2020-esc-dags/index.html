@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>用于构建有向无环图的证据综合方法（ESC-DAGs）：一种新型系统化建图方法 · 精读 · 我的文献集</title>
+<meta name="description" content="ESC-DAGs提供映射—转化—整合和决策日志。它系统化了结构综合，没有正式按研究偏倚或证据确定性给边加权。">
+<meta property="og:title" content="用于构建有向无环图的证据综合方法（ESC-DAGs）：一种新型系统化建图方法 · 精读 · 我的文献集">
+<meta property="og:description" content="ESC-DAGs提供映射—转化—整合和决策日志。它系统化了结构综合，没有正式按研究偏倚或证据确定性给边加权。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="我的文献集">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/zh/deep/ferguson-2020-esc-dags/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/zh/deep/ferguson-2020-esc-dags/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/ferguson-2020-esc-dags/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/ferguson-2020-esc-dags/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/ferguson-2020-esc-dags/">
+<link rel="alternate" type="application/atom+xml" title="我的文献集 · 精读" href="https://xuanyshi.github.io/research-desk/zh/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">我的文献集<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">首页</a>
+      <a href="../../library/index.html" class="">文献库</a>
+      <a href="../../deep/index.html" class="on">精读</a>
+      <a href="../../daily/index.html" class="">每日速览</a>
+      <a href="../../log/index.html" class="">历程</a>
+      <a href="../../about/index.html" class="">关于</a>
+      <span class="lang">
+        <a href="../../../zh/deep/ferguson-2020-esc-dags/" class="on">中</a>
+        <a href="../../../en/deep/ferguson-2020-esc-dags/" class="">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">我的精读</div>
+  <h1><span class="title-original" lang="en">Evidence synthesis for constructing directed acyclic graphs (ESC-DAGs): a novel and systematic method for building directed acyclic graphs</span><span class="title-zh" lang="zh-CN">用于构建有向无环图的证据综合方法（ESC-DAGs）：一种新型系统化建图方法</span></h1>
+  <p>Karl D Ferguson, Mark McCann, Srinivasa Vittal Katikireddi, Hilary Thomson et al.</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">International Journal of Epidemiology 49 (2020):322–329</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.1093/ije/dyz150" target="_blank" rel="noopener">原文 / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=Evidence%20synthesis%20for%20constructing%20directed%20acyclic%20graphs%20%28ESC-DAGs%29%3A%20a%20novel%20and%20systematic%20method%20for%20building%20directed%20acyclic%20graphs" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p4">ESC-DAGs</span><span class="pill p3">因果DAG</span><span class="pill p1">证据综合</span><span class="pill p1">反事实</span><span class="pill p0">决策日志</span><span class="pill p2">敏感性分析</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30秒结论</div>
+      <h2 id="overview-title">ESC-DAGs提供映射—转化—整合和决策日志。它系统化了结构综合，<strong>没有正式按研究偏倚或证据确定性给边加权</strong>。</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>研究问题</dt>
+          <dd>怎样把多篇观察性研究的结论转成一张<strong>可审计、可用于调整策略与结构敏感性分析的DAG</strong>？</dd>
+        </div>
+        <div>
+          <dt>研究设计</dt>
+          <dd>原始方法文；先把每项研究映射为饱和隐含图，再逐边应用时间性、表面效度、理论和反事实思维实验，最后<strong>整合保留边</strong>。</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>证据强度</span>
+          <strong class="evidence-level level-mid">方法提出</strong>
+        </div>
+        <dl>
+          <div><dt>计算对象</dt><dd><strong>文献中每项研究的暴露、结局、控制变量、候选边及逐边保留／反向／删除决策</strong>。</dd></div>
+          <div><dt>触发条件</dt><dd>边通过时间性和表面效度，并在理论与反事实思维实验下仍合理时保留；<strong>任一研究保留的边可进入整合图</strong>。</dd></div>
+          <div><dt>对结论的影响</dt><dd>可生成透明的候选因果结构并规划调整与敏感性分析；<strong>不能保证整合图是真实DAG或边具有同等证据强度</strong>。</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">阅读建议</strong>先看Table 1掌握映射规则，再用Figure 1追踪一条边如何被转化，最后读Integration与Discussion，重点检查<strong>饱和映射和无权重整合带来的代价</strong>。</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">三个关键数字</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">3阶段</div>
+          <h3>ESC-DAGs主流程</h3>
+          <p><strong>映射、转化、整合</strong>，每一阶段保留可复核记录</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">4类</div>
+          <h3>转化判据</h3>
+          <p><strong>时间性、表面效度、理论依据和反事实思维实验</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">2个方向</div>
+          <h3>每条边均需测试</h3>
+          <p><strong>正向与反向都评估</strong>，可记录双向候选或低置信度</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">重点看哪里</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://academic.oup.com/ije/article/49/1/322/5536330" target="_blank" rel="noopener">
+            Table 1 · PDF p. 3<small>图表直达</small> ↗
+          </a>
+          <div><h3>掌握映射规则</h3><p><strong>论文的暴露、结局和控制变量如何变成饱和隐含图在此定义</strong>。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://academic.oup.com/ije/article/49/1/322/5536330" target="_blank" rel="noopener">
+            Figure 1 · PDF p. 4<small>图表直达</small> ↗
+          </a>
+          <div><h3>跟踪转化与整合</h3><p><strong>从隐含图到单篇DAG再到整合DAG的结构变化直观可见</strong>。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://academic.oup.com/ije/article/49/1/322/5536330" target="_blank" rel="noopener">
+            Integration与Discussion · PDF pp. 6–7<small>图表直达</small> ↗
+          </a>
+          <div><h3>理解方法边界</h3><p><strong>新关系、节点合并、主观性、工作量和敏感性分析在此集中讨论</strong>。</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">ESC-DAGs的结构综合</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">检索</div>
+            <h3>收集焦点问题研究</h3>
+            <p><strong>以系统综述或综述的综述建立研究证据库</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">映射</div>
+            <h3>生成饱和隐含图</h3>
+            <p><strong>把论文结论和控制变量完整转为候选节点与边</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">转化</div>
+            <h3>逐边双向审查</h3>
+            <p><strong>应用四类判据，记录保留、反向、删除和低置信度</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">整合</div>
+            <h3>汇入空白DAG</h3>
+            <p><strong>加入全部保留边，并审查新增可能关系与节点合并</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">分析</div>
+            <h3>导出调整与敏感性方案</h3>
+            <p><strong>用整合图识别调整集并扰动不确定边测试结论稳定性</strong>。</p>
+          </li>
+        </ol>
+        <figcaption><strong>依据PDF Table 1、Figure 1和Integration章节整理</strong>。</figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">完整精读</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>ESC-DAGs把文献结论映射为饱和图，再逐边做因果审查并整合；它提供了可追踪的建图程序，边的证据质量仍待补充。</p>
+</blockquote>
+<h2>作者团队</h2>
+<p>Karl D Ferguson、Mark McCann、Srinivasa Vittal Katikireddi、Hilary Thomson、Michael J Green 与 James D Lewsey 主要来自 University of Glasgow 的公共卫生、心理健康和健康经济团队。文章发表于 International Journal of Epidemiology，是ESC-DAGs的原始方法文。</p>
+<h2>解决什么问题</h2>
+<p>DAG能据后门准则给出调整策略，但文献很少说明图从何而来。凭直觉画图难以审计，也容易受数据可得性和结果影响。作者把证据综合嵌入研究综述阶段，希望留下节点、边和删除理由的完整记录。</p>
+<h2>怎么做的</h2>
+<p>流程分为【映射、转化、整合】。映射将每项研究的暴露、结局与控制变量做成隐含图：暴露指向结局，控制变量暂时作为共同原因，并在节点间尽量饱和连接。这一步忠实表示论文声称或暗示的结构，不判断它是否正确。</p>
+<p>转化逐条检查两个方向的候选边。时间性不成立时删除或反向；表面效度用于排除明显不合理关系；理论支持写入日志，但缺乏理论不等于无效；最后以潜在结局思维实验问“把所有人设为不同暴露值，平均结局会否不同”。整合将保留边加入空图，新出现的可能关系再次审查，并可合并理论与输入输出相同的节点。</p>
+<h2>关键结果</h2>
+<p>这是方法示范，没有效果量或样本量结果。作者用父母既往饮酒与青少年饮酒的假想研究及实证研究展示流程。初始图把青少年性别与物质使用都当作混杂因素；转化后发现性别只是另一条风险路径，物质使用可能是中介，盲目调整会阻断效应并可能打开碰撞路径。</p>
+<p>最终整合DAG可由DAGitty识别调整集，也能把低置信度或双向候选边用于结构敏感性分析。论文建议公开决策日志和DAG代码。</p>
+<h2>证据有多硬</h2>
+<p>优势在透明、系统和模块化，不在经验验证。饱和映射会把原论文控制的变量暂定为共同原因，随后高度依赖评审者用知识修正。研究结论若源于有偏回归，映射仍会先继承这种叙述。</p>
+<p>时间性、表面效度、理论与反事实问题没有形成可重复的证据权重。整合时边一旦在任一研究中保留便进入图，研究设计、偏倚风险与相互独立性没有正式参与合并。真实结构仍可能遗漏，工作量也很大。</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="本页导航">
+    <div class="deep-toc-title">本页导航</div>
+    <a href="#overview" class="is-main">30秒结论</a>
+    <a href="#key-numbers">三个关键数字</a>
+    <a href="#where-to-focus">重点看哪里</a>
+    <a href="#study-design">ESC-DAGs的结构综合</a>
+    <a href="#full-read">完整精读</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← 回精读列表</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>我的文献集 · Xuanyu Shi</span>
+    <span>每个工作日更新一次 · <a href="https://xuanyshi.github.io/research-desk/zh/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

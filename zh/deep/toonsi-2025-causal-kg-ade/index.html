@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>因果知识图谱分析识别药物不良效应 · 精读 · 我的文献集</title>
+<meta name="description" content="图结构可自动生成假设并筛选调整变量；最佳方案在已有因果边上达到0.907精度，在共病候选中发现约30,700个显著正向ACME，但仍依赖不可检验的序贯可忽略性。">
+<meta property="og:title" content="因果知识图谱分析识别药物不良效应 · 精读 · 我的文献集">
+<meta property="og:description" content="图结构可自动生成假设并筛选调整变量；最佳方案在已有因果边上达到0.907精度，在共病候选中发现约30,700个显著正向ACME，但仍依赖不可检验的序贯可忽略性。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="我的文献集">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/zh/deep/toonsi-2025-causal-kg-ade/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/zh/deep/toonsi-2025-causal-kg-ade/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/toonsi-2025-causal-kg-ade/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/toonsi-2025-causal-kg-ade/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/toonsi-2025-causal-kg-ade/">
+<link rel="alternate" type="application/atom+xml" title="我的文献集 · 精读" href="https://xuanyshi.github.io/research-desk/zh/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">我的文献集<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">首页</a>
+      <a href="../../library/index.html" class="">文献库</a>
+      <a href="../../deep/index.html" class="on">精读</a>
+      <a href="../../daily/index.html" class="">每日速览</a>
+      <a href="../../log/index.html" class="">历程</a>
+      <a href="../../about/index.html" class="">关于</a>
+      <span class="lang">
+        <a href="../../../zh/deep/toonsi-2025-causal-kg-ade/" class="on">中</a>
+        <a href="../../../en/deep/toonsi-2025-causal-kg-ade/" class="">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">我的精读</div>
+  <h1><span class="title-original" lang="en">Causal knowledge graph analysis identifies adverse drug effects</span><span class="title-zh" lang="zh-CN">因果知识图谱分析识别药物不良效应</span></h1>
+  <p>Sumyyah Toonsi, Paul N. Schofield, Robert Hoehndorf</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Bioinformatics</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.1093/bioinformatics/btaf661" target="_blank" rel="noopener">原文 / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=Causal%20knowledge%20graph%20analysis%20identifies%20adverse%20drug%20effects" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p0">因果推断</span><span class="pill p2">知识图谱</span><span class="pill p3">中介分析</span><span class="pill p0">药物不良反应</span><span class="pill p4">协变量选择</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30秒结论</div>
+      <h2 id="overview-title">图结构可自动生成假设并筛选调整变量；最佳方案在已有因果边上达到0.907精度，在共病候选中发现约30,700个显著正向ACME，但仍依赖不可检验的<strong>序贯可忽略性</strong>。</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>研究问题</dt>
+          <dd><strong>因果知识图谱</strong>能否规模化提出药物不良反应假设，并自动选择中介分析的混杂调整集？</dd>
+        </div>
+        <div>
+          <dt>研究设计</dt>
+          <dd>方法与队列应用；构建药物—疾病<strong>因果知识图谱</strong>，在UK Biobank和MIMIC-IV中对药物中介的疾病进展进行因果中介分析。</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>证据强度</span>
+          <strong class="evidence-level level-mid">中等</strong>
+        </div>
+        <dl>
+          <div><dt>计算对象</dt><dd><strong>药物—疾病CKG中的疾病进展、适应症、副作用和ICD-10层级</strong>，以及两个观测队列中的ACME、精度、召回率和外部相似性验证。</dd></div>
+          <div><dt>触发条件</dt><dd><strong>疾病严重度、用药时点与剂量测量有限</strong>；高精度主要来自已有文献支持的因果边，且金标准重叠样本较小。</dd></div>
+          <div><dt>对结论的影响</dt><dd>结果支持知识驱动的<strong>假设生成</strong>和协变量筛选具有工程价值，尚不能把新候选直接视为已证实药物不良反应。</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">阅读建议</strong><strong>先看Figure 1理解候选生成与过滤，再核对Table 1的五种调整策略</strong>。阅读新发现时同时查看Discussion中的疾病严重度与测量限制。</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">三个关键数字</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">约12,600条</div>
+          <h3>因果集疾病对</h3>
+          <p><strong>来自DD-CKG中显式疾病进展边，用于较高先验可信度的假设集</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">0.907</div>
+          <h3>最佳精度</h3>
+          <p><strong>因果集采用析取因果准则加LASSO时，召回率0.282、F1为0.431</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">约30,700个</div>
+          <h3>显著正向ACME</h3>
+          <p><strong>共病候选集覆盖更广，精度降至0.749</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">重点看哪里</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1093/bioinformatics/btaf661" target="_blank" rel="noopener">
+            Figure 1 · PDF p. 3<small>原文入口</small> ↗
+          </a>
+          <div><h3>追踪CKG假设生成</h3><p><strong>图示从疾病进展和适应症关系构造药物中介链，并排除已被图中知识解释的候选</strong>。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1093/bioinformatics/btaf661" target="_blank" rel="noopener">
+            Table 1 · PDF p. 6<small>原文入口</small> ↗
+          </a>
+          <div><h3>比较混杂控制策略</h3><p>表中并列<strong>后门准则</strong>、析取因果准则及LASSO缩减后的可检验数量、ACME与分类指标。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1093/bioinformatics/btaf661" target="_blank" rel="noopener">
+            Discussion · PDF pp. 6–7<small>原文入口</small> ↗
+          </a>
+          <div><h3>检查严重度与测量偏倚</h3><p><strong>作者说明共病数和用药数只是严重度代理，并讨论UKB自报用药、时点和剂量缺失造成的识别风险</strong>。</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">药物不良反应发现流程</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">知识</div>
+            <h3>构建DD-CKG</h3>
+            <p><strong>整合疾病进展、药物适应症、副作用和ICD-10层级</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">假设</div>
+            <h3>生成药物中介链</h3>
+            <p><strong>把疾病到疾病的进展关系与适应症药物组合为候选副作用</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">过滤</div>
+            <h3>排除已有解释</h3>
+            <p><strong>使用图查询删去适应症或副作用知识已经能够解释的组合</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">调整</div>
+            <h3>选择混杂变量</h3>
+            <p><strong>由后门或析取因果准则产生候选集，再用双LASSO并集缩减</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">验证</div>
+            <h3>估计ACME并外部比较</h3>
+            <p><strong>在UKB和MIMIC-IV估计中介效应，并与OnSIDES及专家标注集对照</strong>。</p>
+          </li>
+        </ol>
+        <figcaption><strong>依据PDF Figure 1、Table 1和Discussion整理</strong>。</figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">完整精读</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>给知识图谱标上因果边，就能自动生成"药物中介两病"的假设并挑混杂集，对 UKB 和 MIMIC-IV 跑中介分析，既复现已知不良反应也捞出新候选。</p>
+</blockquote>
+<h2>作者团队</h2>
+<p>论文出自阿卜杜拉国王科技大学（KAUST）生物本体研究组（BORG）：通讯作者 Robert Hoehndorf 领衔，该组长于生物医学本体、知识图谱及结构化知识上的机器学习；第一作者 Sumyyah Toonsi 同属 KAUST，合作者 Paul N. Schofield 来自剑桥大学。</p>
+<h2>解决什么问题</h2>
+<p>药物上市后的罕见不良反应，因为发病率低、发作延迟常在临床试验里漏掉，得靠事后监测。这件事同时要背景知识（分类、疾病进展、适应症、已知副作用）、观测数据里的共现频率，还要因果推断分辨关联是真副作用还是混杂造出来的。现有做法两头都不占全：<strong>知识图谱</strong>擅长组织定性知识但没有概率和因果语义，结构因果模型能算干预效应却和背景知识脱节、图是手搓的不成规模。作者想让两者合流，让图结构自动完成提假设、找混杂、约束分布这几步。</p>
+<h2>怎么做的</h2>
+<p>先形式化定义<strong>因果知识图谱</strong>（CKG）：在普通知识图谱上挂标记为因果的关系子集 Rcausal、把节点映到人群子集的函数 f、人群上的概率测度 P。关键是不把知识图谱等同于因果图，而让因果结构只做图的子集，这样非因果关系（如 ICD-10 的 is-a 层级）还能参与演绎推理、约束联合分布。</p>
+<p>据此建的药物-疾病 CKG 整合四类边，疾病进展 7,586 条（文本挖掘的疾病<strong>因果 DAG</strong>）、适应症 20,955 条（MEDI-C）、副作用 59,119 条（OnSIDES）、ICD-10 层级；因果子集取疾病进展边加适应症边的逆向（患病导致开药）。</p>
+<p><strong>假设这样生成：对每对 x 致病→y，查 x 的适应症药物 M</strong>，拼成"x（适应症）→ 开 M → y（潜在副作用）"的中介链。候选来自两处，CKG 里显式的疾病进展对（因果集），和 UKB 里显著的共病对（Hidalgo 相对风险、BH 校正后留 34,843 条、再用诊断时间定向）。用 SPARQL 滤掉图里已有别的解释的假设，最后落到 12,561 条因果假设和 81,610 条共病假设。</p>
+<p>统计上做因果中介分析估自然间接效应（R 的 mediation 包，即 ACME），识别靠序贯可忽略性。混杂控制是全篇最重的一环：除人口社会经济变量外，用 <strong>DAGitty</strong> 在因果子图上跑后门准则和分离因果准则挑调整集，用共病数和用药数当严重度代理，再用两个 LASSO（适应症、结局各一）取并集缩减协变量。</p>
+<h2>关键结果</h2>
+<p><strong>因果集上"分离因果准则 + LASSO"最好</strong>：精度 0.907、召回 0.282、F1 0.431（对照 backdoor+LASSO 的 0.371）。这高精度部分是"送分"，因为这些边本就有文献支持、多半是已知效应。共病集换来覆盖面：30,724 个显著正 ACME，召回持平但精度降到 0.749，即更多潜在新候选；对 Ryan 等专家标注集的 56 对重叠，精度 70.0%、召回 60.6%。</p>
+<p><strong>外部验证</strong>走药物重定位：预测效应单用 ROCAUC 0.604，低于 OnSIDES 的 0.620，但两者合起来到 0.632（p≪0.001），说明新捞出的效应带信息而非噪声。</p>
+<h2>证据有多硬</h2>
+<p>命门是<strong>序贯可忽略性</strong>：中介分析要求调整完混杂后处理和中介都对潜在结局条件独立，这在观测数据里不可检验。作者自己承认最要命的漏网之鱼是疾病严重度，人工评的 900 个假阳性里约 6% 其实是疾病进展而非药物中介，药开给会恶化的重病，轻症有效者根本不出现结局，药就"看起来"在中介。</p>
+<p>拿共病数和用药数当严重度代理是钝器，比不上 Charlson 加权指数。<strong>测量偏倚</strong>也不小：UKB 用药自报、没有准确时点和剂量，ICD 只抓临床确认表型、轻微一过性副作用看不见。两个队列都偏中老年、社会优势人群，可迁移性存疑，加上金标准集小、重叠少，报出来的高精度只在能对上的那一小块成立。</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="本页导航">
+    <div class="deep-toc-title">本页导航</div>
+    <a href="#overview" class="is-main">30秒结论</a>
+    <a href="#key-numbers">三个关键数字</a>
+    <a href="#where-to-focus">重点看哪里</a>
+    <a href="#study-design">药物不良反应发现流程</a>
+    <a href="#full-read">完整精读</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← 回精读列表</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>我的文献集 · Xuanyu Shi</span>
+    <span>每个工作日更新一次 · <a href="https://xuanyshi.github.io/research-desk/zh/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

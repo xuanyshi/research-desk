@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Introduction to Causal Directed Acyclic Graphs · Deep reads · My Research Desk</title>
+<meta name="description" content="Construct the DAG independently of available data and include common causes of any two variables in the graph. The adjustment set should block all backdoor paths without conditioning on colliders or their descendants.">
+<meta property="og:title" content="Introduction to Causal Directed Acyclic Graphs · Deep reads · My Research Desk">
+<meta property="og:description" content="Construct the DAG independently of available data and include common causes of any two variables in the graph. The adjustment set should block all backdoor paths without conditioning on colliders or their descendants.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="My Research Desk">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/en/deep/trickey-2019-intro-dags/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/en/deep/trickey-2019-intro-dags/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/trickey-2019-intro-dags/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/trickey-2019-intro-dags/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/trickey-2019-intro-dags/">
+<link rel="alternate" type="application/atom+xml" title="My Research Desk · Deep reads" href="https://xuanyshi.github.io/research-desk/en/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">My Research Desk<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">Home</a>
+      <a href="../../library/index.html" class="">Library</a>
+      <a href="../../deep/index.html" class="on">Deep reads</a>
+      <a href="../../daily/index.html" class="">Daily</a>
+      <a href="../../log/index.html" class="">Log</a>
+      <a href="../../about/index.html" class="">About</a>
+      <span class="lang">
+        <a href="../../../zh/deep/trickey-2019-intro-dags/" class="">中</a>
+        <a href="../../../en/deep/trickey-2019-intro-dags/" class="on">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">My deep read</div>
+  <h1>Introduction to Causal Directed Acyclic Graphs</h1>
+  <p>Amber W. Trickey</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Stanford S-SPIRE Works in Progress (presentation), 2019-01-28</span></div>
+  
+  <p class="deep-links">
+    <a href="" target="_blank" rel="noopener">Source / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=Introduction%20to%20Causal%20Directed%20Acyclic%20Graphs" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p3">Causal DAG</span><span class="pill p4">Confounder adjustment</span><span class="pill p1">Collider bias</span><span class="pill p3">Teaching deck</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30-second read</div>
+      <h2 id="overview-title">Construct the DAG independently of available data and include common causes of any two variables in the graph. The <strong>adjustment set</strong> should block all backdoor paths without conditioning on colliders or their descendants.</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>Question</dt>
+          <dd>How can a clinical researcher build a DAG from a research question and use it to choose a minimally sufficient <strong>adjustment set</strong>?</dd>
+        </div>
+        <div>
+          <dt>Design</dt>
+          <dd><strong>A 30-page teaching deck using nonoperative appendicitis management and 30-day emergency visits to move from exposure and outcome to mediators, modifiers, confounders, unmeasured common causes, and selection variables.</strong></dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>Evidence strength</span>
+          <strong class="evidence-level level-low">Limited</strong>
+        </div>
+        <dl>
+          <div><dt>What was assessed</dt><dd><strong>A four-step construction process, an appendicitis teaching example, and adjustment guidance adapted from the AHRQ CER User&#39;s Guide.</strong></dd></div>
+          <div><dt>Downgrade triggers</dt><dd><strong>This is introductory teaching material with no new dataset or methods comparison</strong>. Some simplified notation and terminology need support from formal causal-inference sources.</dd></div>
+          <div><dt>Impact on interpretation</dt><dd><strong>The deck is useful as a construction and discussion checklist</strong>, but it cannot establish that a proposed graph is correct or replace sensitivity analysis and domain validation.</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">Reading advice</strong><strong>Read PDF pages 11–14 as one four-step sequence, then inspect the summary on page 27</strong>. Focus on omitted common causes, selection variables, and unmeasured variables.</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">Three numbers to keep</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">4 steps</div>
+          <h3>DAG construction process</h3>
+          <p><strong>State the question, add embedded variables, add confounders, and add other relevant variables</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">2 types</div>
+          <h3>Variables that require special attention</h3>
+          <p><strong>Common causes of any two nodes and selection variables created by enrollment or missingness</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">1 set</div>
+          <h3>Minimally sufficient adjustment set</h3>
+          <p><strong>Blocks all backdoor paths without opening closed paths by conditioning on colliders or descendants</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">Where to focus</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <span class="focus-ref focus-ref--plain">Steps 1–4 · PDF pp. 11–14<small>Locator only</small></span>
+          <div><h3>Build the DAG in sequence</h3><p><strong>The four pages fix exposure and outcome, add mediators or modifiers, add common causes</strong>, and then add unmeasured and selection variables.</p></div>
+        </li>
+        <li>
+          <span class="focus-ref focus-ref--plain">Appendicitis example · PDF p. 15<small>Locator only</small></span>
+          <div><h3>See variable roles in a worked example</h3><p><strong>Insurance, age, severity, income, language, and other variables are placed in one graph</strong>, making role changes across questions visible.</p></div>
+        </li>
+        <li>
+          <span class="focus-ref focus-ref--plain">AHRQ summary · PDF p. 27<small>Locator only</small></span>
+          <div><h3>Extract the sufficient-adjustment rule</h3><p><strong>The page requires construction independent of measured data, inclusion of common causes</strong>, and avoidance of conditioning on colliders or descendants.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">From research question to adjustment set</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">Step 1</div>
+            <h3>State exposure and outcome</h3>
+            <p>Translate the question into the target <strong>causal effect</strong> from A to Y.</p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">Step 2</div>
+            <h3>Add variables embedded in the question</h3>
+            <p><strong>Mark mediators and factors that may modify effect direction or strength.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">Step 3</div>
+            <h3>Add common causes</h3>
+            <p><strong>Include measured and unmeasured factors that cause both exposure and outcome.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">Step 4</div>
+            <h3>Add selection and other structure</h3>
+            <p><strong>Represent enrollment, loss, and missingness and check common causes of every pair of graph variables.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">Output</div>
+            <h3>Derive a minimally sufficient set</h3>
+            <p><strong>Block every backdoor path while excluding colliders and descendants that would open a path.</strong></p>
+          </li>
+        </ol>
+        <figcaption><strong>Organized from PDF pages 11–15 and 27.</strong></figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">Full deep read</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>A Stanford intro-to-DAGs teaching deck: confounding, colliders, mediators, backdoor paths, minimal adjustment sets, all done cleanly and to standard.</p>
+</blockquote>
+<h2>The authors</h2>
+<p>A solo teaching presentation by Amber W. Trickey, senior biostatistician at Stanford's S-SPIRE (Surgery Policy Improvement Research and Education Center), where she supports surgical and health-services research teams in study design and analysis.</p>
+<h2>The problem</h2>
+<p><strong>Up front: this is a slide deck, not a research paper</strong>. The author is a senior biostatistician at Stanford S-SPIRE (Surgery Policy Improvement Research and Education), presenting in January 2019 to the group's Works in Progress for surgical and health-services researchers — clinicians and statisticians.</p>
+<p><strong>Their data is almost entirely observational (Medicare, HCUP, NSQIP, Optum)</strong>; treatment isn't randomized, it's set by the often-unknown mechanisms of routine care.</p>
+<p><strong>The teaching problem is plain: when you can't randomize and correlation ≠ causation</strong>, how do you decide in a principled way which variables to adjust for. The answer is the DAG — draw your causal assumptions, then use the picture to see where bias comes from, whether the effect is identifiable, and which covariates to pick.</p>
+<h2>The approach</h2>
+<p><strong>The content follows a standard arc</strong>. Motivation first: DAGs display sources of bias, decide whether an effect is identifiable from the available data, and make assumptions explicit (the author is honest that analytic models carry assumptions anyway — the DAG just surfaces them).</p>
+<p><strong>Then the rules: directed and acyclic, time flowing left to right, A for exposure, Y for outcome</strong>, C for covariates, U for unmeasured, with parent/child/ancestor/descendant defined one by one.</p>
+<p><strong>The core is a four-step build:</strong></p>
+<ul>
+<li>Step 1, articulate the research question and place A, Y, and a "?"; step 2, consider the mediators and moderators embedded in it;</li>
+<li>step 3, add confounders (common causes of A and Y); step 4, fill in other relevant variables.</li>
+</ul>
+<p><strong>The inclusion rule: every common cause of any two nodes goes in, including unmeasured ones and selection variables</strong>; variables causing Y but not A are optional.</p>
+<p><strong>Then adjustment — backdoor paths, colliders (two arrows colliding at a common descendant)</strong>, and the three iron rules of conditioning: conditioning on a variable in an open backdoor path removes the non-causal association, conditioning on a collider instead opens the path it was blocking, and conditioning on a mediator strips out part of the real effect.</p>
+<p>It closes by folding confounding, collider, and <strong>selection bias</strong> (including Berkson's) into one structural family, points to DAGitty, and ends on the AHRQ Sauer-VanderWeele summary: build the DAG independent of the available data, include all common causes, and find a minimal set that blocks every backdoor without inadvertently opening a collider.</p>
+<h2>Key results</h2>
+<p><strong>It's teaching material, so the "results" are the rules and examples it lands</strong>. The three conditioning rules are stated cleanly — the most valuable slide in the deck.</p>
+<p>The appendicitis example is from the author's own JAMA Surgery paper (A = nonoperative management, Y = 30-day ED visits, confounders age/gender/insurance/severity/language, income unmeasured): a clean pure-confounding case with no mediators, moderators, or colliders, where conditioning still leaves <strong>residual confounding</strong> from language and income.</p>
+<p>The low-back-pain surgery example exists to demonstrate a collider: conditioning on "surgery," a common effect, opens collider bias. One positive, one cautionary — exactly the point that you don't dump every variable into the regression. The tool is DAGitty; the closing principle is the minimal <strong>adjustment set</strong>.</p>
+<h2>How solid is the evidence</h2>
+<p><strong>It isn't evidence, it's a lecture, so the only fair questions are accuracy, clarity, and coverage.</strong></p>
+<p>Accuracy is fine and current: treating <strong>selection bias</strong> as a special case of collider bias (the Hernán/Greenland structural view) is right, the three conditioning rules are exact, the "build the DAG independent of the data" point is the correct emphasis, and it even flags that "adjusting/controlling" is misleading language and one should say "conditioning" (Shrier-Platt).</p>
+<p>The weakness is coverage, which is what matters for a reader like me. No formal definition of d-separation, no named <strong>backdoor criterion</strong>, no do-calculus or front-door, and IV appears only as notation.</p>
+<p>The deck teaches colliders but does not cover M-bias or butterfly bias, a common adjustment trap. <strong>Time-varying confounding</strong> and g-methods are also outside its scope. It acknowledges disagreement over whether effect modifiers belong in a DAG but leaves the issue unresolved.</p>
+<p><strong>DAGitty</strong>'s algorithmic capabilities, including minimal sufficient sets and testable implications, are compressed into a brief instruction to save the code. As a 2019 introduction, the material is sound but stops before the harder methodological problems.</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="On this page">
+    <div class="deep-toc-title">On this page</div>
+    <a href="#overview" class="is-main">30-second read</a>
+    <a href="#key-numbers">Three numbers to keep</a>
+    <a href="#where-to-focus">Where to focus</a>
+    <a href="#study-design">From research question to adjustment set</a>
+    <a href="#full-read">Full deep read</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← Back to deep reads</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>My Research Desk · Xuanyu Shi</span>
+    <span>Updated on weekdays · <a href="https://xuanyshi.github.io/research-desk/en/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

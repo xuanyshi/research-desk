@@ -1,0 +1,720 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Library · My Research Desk</title>
+<meta name="description" content="Papers I&#39;ve read, am reading, or mean to — plus a few worth a look from the journals each day.">
+<meta property="og:title" content="Library · My Research Desk">
+<meta property="og:description" content="Papers I&#39;ve read, am reading, or mean to — plus a few worth a look from the journals each day.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="My Research Desk">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/en/library/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/en/library/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/library/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/library/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/library/">
+<link rel="alternate" type="application/atom+xml" title="My Research Desk · Deep reads" href="https://xuanyshi.github.io/research-desk/en/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../index.html">My Research Desk<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../index.html" class="">Home</a>
+      <a href="../library/index.html" class="on">Library</a>
+      <a href="../deep/index.html" class="">Deep reads</a>
+      <a href="../daily/index.html" class="">Daily</a>
+      <a href="../log/index.html" class="">Log</a>
+      <a href="../about/index.html" class="">About</a>
+      <span class="lang">
+        <a href="../../zh/library/" class="">中</a>
+        <a href="../../en/library/" class="on">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--sub">
+  <h1>Library</h1>
+  <p>45 papers. Search, or filter by status and tag.</p>
+</section>
+
+<div class="toolbar">
+  <input class="search" id="q" type="search" placeholder="Search title, author, tag, note…" autocomplete="off">
+  <div class="filters" id="statusFilters">
+    <button class="chip-btn on" data-status="all">All</button>
+    <button class="chip-btn" data-status="to-read">To read</button>
+    <button class="chip-btn" data-status="reading">Reading</button>
+    <button class="chip-btn" data-status="read">Read</button>
+  </div>
+  <div class="filters" id="sourceFilters">
+    <button class="chip-btn on" data-source="all">All</button>
+    <button class="chip-btn" data-source="mine">My picks</button>
+    <button class="chip-btn" data-source="backfill">Backfilled</button>
+  </div>
+</div>
+<div class="tagfilter" id="tagfilter">
+  <div class="tagfilter-row">
+    <span class="filters-label">Diseases</span>
+    <div class="chips">
+<button class="chip-btn chip-dis" data-type="disease" data-val="cancer">Cancer <span class="chip-n">4</span></button><button class="chip-btn chip-dis" data-type="disease" data-val="diabetes">Diabetes <span class="chip-n">2</span></button><button class="chip-btn chip-dis" data-type="disease" data-val="infectious">Infectious disease <span class="chip-n">2</span></button><button class="chip-btn chip-dis" data-type="disease" data-val="obesity">Obesity <span class="chip-n">2</span></button><button class="chip-btn chip-dis" data-type="disease" data-val="pregnancy">Pregnancy <span class="chip-n">2</span></button><button class="chip-btn chip-dis" data-type="disease" data-val="cardiovascular">Cardiovascular <span class="chip-n">1</span></button><button class="chip-btn chip-dis" data-type="disease" data-val="kidney">Kidney disease <span class="chip-n">1</span></button><button class="chip-btn chip-dis" data-type="disease" data-val="mental">Mental health <span class="chip-n">1</span></button>    </div>
+  </div>
+  <div class="tagfilter-row">
+    <span class="filters-label">Tags</span>
+    <div class="chips">
+<button class="chip-btn" data-type="tag" data-val="因果DAG">Causal DAG <span class="chip-n">16</span></button><button class="chip-btn" data-type="tag" data-val="因果推断">Causal inference <span class="chip-n">9</span></button><button class="chip-btn" data-type="tag" data-val="证据分级">Evidence grading <span class="chip-n">8</span></button><button class="chip-btn" data-type="tag" data-val="大语言模型">Large language models <span class="chip-n">7</span></button><button class="chip-btn" data-type="tag" data-val="三角验证">Triangulation <span class="chip-n">6</span></button><button class="chip-btn" data-type="tag" data-val="协变量选择">Covariate selection <span class="chip-n">6</span></button><button class="chip-btn" data-type="tag" data-val="信息抽取">Information extraction <span class="chip-n">5</span></button><button class="chip-btn" data-type="tag" data-val="混杂调整">Confounder adjustment <span class="chip-n">5</span></button><button class="chip-btn" data-type="tag" data-val="DAG构建">DAG construction <span class="chip-n">3</span></button><button class="chip-btn" data-type="tag" data-val="ESC-DAGs">ESC-DAGs <span class="chip-n">3</span></button><button class="chip-btn" data-type="tag" data-val="GLP-1">GLP-1 <span class="chip-n">3</span></button><button class="chip-btn" data-type="tag" data-val="专家启发">Expert elicitation <span class="chip-n">3</span></button><button class="chip-btn" data-type="tag" data-val="伞式综述">Umbrella review <span class="chip-n">3</span></button><button class="chip-btn" data-type="tag" data-val="因果发现">Causal discovery <span class="chip-n">3</span></button><button class="chip-btn" data-type="tag" data-val="测量误差">Measurement error <span class="chip-n">3</span></button><button class="chip-btn" data-type="tag" data-val="知识图谱">Knowledge graph <span class="chip-n">3</span></button><button class="chip-btn" data-type="tag" data-val="肿瘤流行病学">Cancer epidemiology <span class="chip-n">3</span></button><button class="chip-btn" data-type="tag" data-val="荟萃分析">Meta-analysis <span class="chip-n">3</span></button><button class="chip-btn" data-type="tag" data-val="证据综合">Evidence synthesis <span class="chip-n">3</span></button><button class="chip-btn" data-type="tag" data-val="专家共识">Expert consensus <span class="chip-n">2</span></button><button class="chip-btn" data-type="tag" data-val="反事实">Counterfactuals <span class="chip-n">2</span></button><button class="chip-btn" data-type="tag" data-val="因果知识图谱">Causal knowledge graph <span class="chip-n">2</span></button><button class="chip-btn" data-type="tag" data-val="孟德尔随机化">Mendelian randomization <span class="chip-n">2</span></button><button class="chip-btn" data-type="tag" data-val="对撞偏倚">Collider bias <span class="chip-n">2</span></button><button class="chip-btn" data-type="tag" data-val="心血管疾病">Cardiovascular disease <span class="chip-n">2</span></button><button class="chip-btn" data-type="tag" data-val="报告规范">Reporting <span class="chip-n">2</span></button><button class="chip-btn" data-type="tag" data-val="敏感性分析">Sensitivity analysis <span class="chip-n">2</span></button><button class="chip-btn" data-type="tag" data-val="混杂by适应证">Confounding by indication <span class="chip-n">2</span></button><button class="chip-btn" data-type="tag" data-val="目标估计量">Estimand <span class="chip-n">2</span></button><button class="chip-btn" data-type="tag" data-val="系统综述">Systematic review <span class="chip-n">2</span></button><button class="chip-btn" data-type="tag" data-val="药物流行病学">Pharmacoepidemiology <span class="chip-n">2</span></button><button class="chip-btn" data-type="tag" data-val="观察性研究">Observational research <span class="chip-n">2</span></button><button class="chip-btn" data-type="tag" data-val="选择偏倚">Selection bias <span class="chip-n">2</span></button><button class="chip-btn" data-type="tag" data-val="随机对照试验">Randomized controlled trials <span class="chip-n">2</span></button><button class="chip-btn" data-type="tag" data-val="Bradford Hill">Bradford Hill <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="CLADDER">CLADDER <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="DAGMetrics">DAGMetrics <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="GRADE">GRADE <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="HIV">HIV <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="HPV疫苗">HPV vaccine <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="ICU再入院预测">ICU readmission prediction <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="MIMIC-III">MIMIC-III <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="Markov毯">Markov blanket <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="RAG检索增强">Retrieval-augmented generation <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="R软件">R software <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="UK Biobank">UK Biobank <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="中介分析">Mediation analysis <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="临床决策支持">Clinical decision support <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="临床指南">Clinical guideline <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="临床研究">Clinical research <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="主动学习">Active learning <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="二手烟">Secondhand smoke <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="二甲双胍">Metformin <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="人道主义NLP">Humanitarian NLP <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="倾向评分匹配">Propensity score matching <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="偏倚放大">Bias amplification <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="偏倚方向">Direction of bias <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="健康用户偏倚">Healthy user bias <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="儿童营养不良">Child malnutrition <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="共病">Multimorbidity <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="关系归一化">Relation normalization <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="决策日志">Decision log <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="减肥药">Obesity drugs <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="剂量反应">Dose-response <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="医学认识论">Medical epistemology <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="危险因素">Risk factors <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="因果推理">Causal reasoning <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="因果证据抽取">Causal evidence extraction <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="图剪枝">Graph pruning <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="图结构比较">Graph comparison <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="基准测试">Benchmarking <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="多因素分析">Multivariable analysis <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="多状态模型">Multistate model <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="多组学">Multiomics <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="多重偏倚分析">Multiple-bias analysis <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="孕产结局">Perinatal outcomes <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="定量偏倚分析">Quantitative bias analysis <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="实验选择">Experiment selection <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="小于胎龄儿">Small for gestational age <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="小样本效应">Small-study effects <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="局部独立图">Local independence <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="工具变量">Instrumental variables <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="异质证据">Heterogeneous evidence <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="循证DAG">Evidence-based DAG <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="微生物组">Microbiome <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="快速综述">Rapid review <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="教学讲义">Teaching deck <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="文献综合">Literature synthesis <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="早产">Preterm birth <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="时变混杂">Time-varying confounding <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="最小充分调整集">Minimal sufficient adjustment set <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="标准化复算">Standardized re-analysis <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="概率偏倚分析">Probabilistic bias analysis <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="模型蒸馏">Model distillation <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="模糊德尔菲">Fuzzy Delphi <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="比较效果研究">Comparative effectiveness <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="治疗效应异质性">Heterogeneity of treatment effects <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="流行病学稳健性">Epidemiological credibility <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="混杂与对撞">Confounding &amp; colliders <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="混杂因素">Confounding <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="生物医学本体">Biomedical ontologies <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="电子健康记录">Electronic health records <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="电子病历">Electronic health records <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="疾病轨迹">Disease trajectories <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="目标试验仿真">Target trial emulation <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="真实世界证据">Real-world evidence <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="知识图谱嵌入">Knowledge graph embeddings <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="知识基础设施">Epistemic infrastructure <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="知识评价">Knowledge evaluation <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="碰撞偏倚">Collider bias <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="等价类">Equivalence class <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="精准肿瘤学">Precision oncology <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="糖尿病肾病">Diabetic nephropathy <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="系统综述自动化">Systematic review automation <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="缺血性卒中">Ischemic stroke <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="网络meta分析">Network meta-analysis <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="肺癌">Lung cancer <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="航天医学">Spaceflight medicine <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="航空安全">Aviation safety <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="范围综述">Scoping review <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="药物不良反应">Adverse drug effects <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="蛋白组学">Proteomics <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="血清尿酸">Serum uric acid <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="行为科学">Behavioural science <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="论证图">Argument diagram <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="论证框架">Argument framework <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="证据三角互证">Evidence triangulation <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="证据溯源">Evidence provenance <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="调整集">Adjustment set <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="超额显著性">Excess significance <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="连续时间机制">Continuous-time mechanisms <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="重叠处理">Overlap handling <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="金属混合暴露">Metal mixtures <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="链式推理">Chain of thought <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="问答系统">Question answering <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="预注册">Preregistration <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="风险治理">Risk governance <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="风险评估">Risk assessment <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="风险预测">Risk prediction <span class="chip-n">1</span></button><button class="chip-btn" data-type="tag" data-val="高胰岛素血症">Hyperinsulinemia <span class="chip-n">1</span></button>    </div>
+  </div>
+  <div class="tagfilter-foot"><button class="tf-clear hidden" id="tfClear">✕ Clear</button></div>
+</div>
+<div class="count-note"><span id="count">45</span> </div>
+
+<div class="grid" id="cards">
+<article class="card" data-status="read" data-source="mine" data-tags="论证框架,证据综合,异质证据,精准肿瘤学,论证图,医学认识论" data-diseases="" data-text="the argument framework is a flexible approach to evidence in healthcare 论证框架：医疗证据评价与综合的灵活方法 jonathan fuller benjamin chin-yee ross e. g. upshur argument framework evidence synthesis heterogeneous evidence precision oncology argument diagram medical epistemology  ">
+<div class="pills"><span class="pill p2">Argument framework</span><span class="pill p1">Evidence synthesis</span><span class="pill p1">Heterogeneous evidence</span><span class="pill p3">Precision oncology</span><span class="pill p1">Argument diagram</span><span class="pill p3">Medical epistemology</span></div>  <h4><a href="https://doi.org/10.1038/s41591-024-02930-x" target="_blank" rel="noopener">The argument framework is a flexible approach to evidence in healthcare</a></h4>
+  <p class="cardmeta">Jonathan Fuller, Benjamin Chin-Yee, Ross E. G. Upshur · 2026-07-22</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Nature Medicine 30 (2024):2113–2116</span><span class="jbadge jb-cas z1">CAS 1 Top</span><span class="jbadge jb-jcr">JCR Q1</span><span class="jbadge jb-if">IF 52.5</span></div>
+  
+  <div class="foot">
+    <span><span class="stars">★★★★★<span class="off"></span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/fuller-2024-argument-framework/index.html">My deep read</a>      <a href="https://doi.org/10.1038/s41591-024-02930-x" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=The%20argument%20framework%20is%20a%20flexible%20approach%20to%20evidence%20in%20healthcare" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="伞式综述,二手烟,肺癌,心血管疾病,孕产结局,证据分级" data-diseases="" data-text="secondhand smoke exposure and human health: an umbrella review 二手烟暴露与人类健康：伞式综述 shengxin zhang shen li xinggang yang ziyang cheng tong zhou bo xu zhixun yang wenxuan wu hu liao juan huang xuelei ma umbrella review secondhand smoke lung cancer cardiovascular disease perinatal outcomes evidence grading  ">
+<div class="pills"><span class="pill p1">Umbrella review</span><span class="pill p3">Secondhand smoke</span><span class="pill p4">Lung cancer</span><span class="pill p4">Cardiovascular disease</span><span class="pill p2">Perinatal outcomes</span><span class="pill p4">Evidence grading</span></div>  <h4><a href="https://doi.org/10.1038/s41562-026-02480-x" target="_blank" rel="noopener">Secondhand smoke exposure and human health: an umbrella review</a></h4>
+  <p class="cardmeta">Shengxin Zhang, Shen Li, Xinggang Yang, Ziyang Cheng et al. · 2026-07-22</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Nature Human Behaviour (2026)</span></div>
+  
+  <div class="foot">
+    <span><span class="stars">★★★★★<span class="off"></span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/zhang-2026-secondhand-smoke-umbrella/index.html">My deep read</a>      <a href="https://doi.org/10.1038/s41562-026-02480-x" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Secondhand%20smoke%20exposure%20and%20human%20health%3A%20an%20umbrella%20review" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="ESC-DAGs,因果DAG,缺血性卒中,血清尿酸,证据综合,协变量选择" data-diseases="" data-text="construction specification of directed acyclic graphs: an introduction to the esc-dags method and case interpretation in cerebrovascular disease research 有向无环图的构建规范：esc-dags方法介绍及脑血管病研究案例解读 郝允逸 夏雪 胥芹 赵性泉 王安心 esc-dags causal dag ischemic stroke serum uric acid evidence synthesis covariate selection  ">
+<div class="pills"><span class="pill p4">ESC-DAGs</span><span class="pill p3">Causal DAG</span><span class="pill p2">Ischemic stroke</span><span class="pill p3">Serum uric acid</span><span class="pill p1">Evidence synthesis</span><span class="pill p4">Covariate selection</span></div>  <h4><a href="https://doi.org/10.3969/j.issn.1673-5765.2024.10.016" target="_blank" rel="noopener">Construction Specification of Directed Acyclic Graphs: An Introduction to the ESC-DAGs Method and Case Interpretation in Cerebrovascular Disease Research</a></h4>
+  <p class="cardmeta">郝允逸, 夏雪, 胥芹, 赵性泉 et al. · 2026-07-21</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">中国卒中杂志 19卷10期（2024）：1221–1229</span></div>
+  
+  <div class="foot">
+    <span><span class="stars">★★★★<span class="off">★</span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/hao-2024-esc-dags-stroke/index.html">My deep read</a>      <a href="https://doi.org/10.3969/j.issn.1673-5765.2024.10.016" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Construction%20Specification%20of%20Directed%20Acyclic%20Graphs%3A%20An%20Introduction%20to%20the%20ESC-DAGs%20Method%20and%20Case%20Interpretation%20in%20Cerebrovascular%20Disease%20Research" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="因果DAG,ESC-DAGs,模糊德尔菲,专家共识,心血管疾病,调整集" data-diseases="cardiovascular" data-text="constructing causal pathways for premature cardiovascular disease mortality using directed acyclic graphs with integrating evidence synthesis and expert knowledge 结合证据综合与专家知识构建心血管疾病过早死亡因果路径 wan shakira rodzlan hasani kamarul imran musa xin wee chen kueh yee cheng causal dag esc-dags fuzzy delphi expert consensus cardiovascular disease adjustment set  心血管 cardiovascular">
+<div class="pills"><span class="pill p3">Causal DAG</span><span class="pill p4">ESC-DAGs</span><span class="pill p1">Fuzzy Delphi</span><span class="pill p1">Expert consensus</span><span class="pill p4">Cardiovascular disease</span><span class="pill p2">Adjustment set</span></div>  <h4><a href="https://doi.org/10.1038/s41598-024-80091-0" target="_blank" rel="noopener">Constructing causal pathways for premature cardiovascular disease mortality using directed acyclic graphs with integrating evidence synthesis and expert knowledge</a></h4>
+  <p class="cardmeta">Wan Shakira Rodzlan Hasani, Kamarul Imran Musa, Xin Wee Chen, Kueh Yee Cheng · 2026-07-21</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Scientific Reports 14 (2024):28849</span></div>
+  <div class="dbadges"><span class="dbadge">Cardiovascular</span></div>
+  <div class="foot">
+    <span><span class="stars">★★★★<span class="off">★</span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/hasani-2024-premature-cvd-dag/index.html">My deep read</a>      <a href="https://doi.org/10.1038/s41598-024-80091-0" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Constructing%20causal%20pathways%20for%20premature%20cardiovascular%20disease%20mortality%20using%20directed%20acyclic%20graphs%20with%20integrating%20evidence%20synthesis%20and%20expert%20knowledge" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="因果DAG,协变量选择,多因素分析,混杂因素,碰撞偏倚,观察性研究" data-diseases="" data-text="directed acyclic graphs in choosing covariates for multivariable model of observational study 有向无环图在观察性研究多因素分析协变量选择中的应用 曹雨滋 袁驰 刘刚 孙凤 李舍予 causal dag covariate selection multivariable analysis confounding collider bias observational research  ">
+<div class="pills"><span class="pill p3">Causal DAG</span><span class="pill p4">Covariate selection</span><span class="pill p2">Multivariable analysis</span><span class="pill p3">Confounding</span><span class="pill p1">Collider bias</span><span class="pill p0">Observational research</span></div>  <h4><a href="https://doi.org/10.7507/1002-0179.202504241" target="_blank" rel="noopener">Directed acyclic graphs in choosing covariates for multivariable model of observational study</a></h4>
+  <p class="cardmeta">曹雨滋, 袁驰, 刘刚, 孙凤 et al. · 2026-07-21</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">华西医学 40卷6期（2025）</span></div>
+  
+  <div class="foot">
+    <span><span class="stars">★★★★<span class="off">★</span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/cao-2025-dag-covariate-selection/index.html">My deep read</a>      <a href="https://doi.org/10.7507/1002-0179.202504241" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Directed%20acyclic%20graphs%20in%20choosing%20covariates%20for%20multivariable%20model%20of%20observational%20study" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="因果DAG,HPV疫苗,HIV,协变量选择,测量误差,预注册" data-diseases="infectious" data-text="a case study and proposal for publishing directed acyclic graphs: the effectiveness of the quadrivalent human papillomavirus vaccine in perinatally hiv infected girls 发布有向无环图的案例与建议：围产期hiv感染女孩四价hpv疫苗有效性 ruby barnard-mayers hiba kouser jamie a. cohen katherine tassiopoulos ellen c. caniglia anna-barbara moscicki nicole g. campos michelle r. caunca george r. seage iii eleanor j murray causal dag hpv vaccine hiv covariate selection measurement error preregistration  感染 infectious disease">
+<div class="pills"><span class="pill p3">Causal DAG</span><span class="pill p3">HPV vaccine</span><span class="pill p2">HIV</span><span class="pill p4">Covariate selection</span><span class="pill p0">Measurement error</span><span class="pill p1">Preregistration</span></div>  <h4><a href="https://doi.org/10.1016/j.jclinepi.2021.12.028" target="_blank" rel="noopener">A case study and proposal for publishing directed acyclic graphs: The effectiveness of the quadrivalent human papillomavirus vaccine in perinatally HIV infected girls</a></h4>
+  <p class="cardmeta">Ruby Barnard-Mayers, Hiba Kouser, Jamie A. Cohen, Katherine Tassiopoulos et al. · 2026-07-21</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Journal of Clinical Epidemiology 144 (2022):127–135</span><span class="jbadge jb-cas z2">CAS 2 Top</span><span class="jbadge jb-jcr">JCR Q1</span><span class="jbadge jb-if">IF 5.8</span></div>
+  <div class="dbadges"><span class="dbadge">Infectious disease</span></div>
+  <div class="foot">
+    <span><span class="stars">★★★★★<span class="off"></span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/barnard-mayers-2022-publish-dags/index.html">My deep read</a>      <a href="https://doi.org/10.1016/j.jclinepi.2021.12.028" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=A%20case%20study%20and%20proposal%20for%20publishing%20directed%20acyclic%20graphs%3A%20The%20effectiveness%20of%20the%20quadrivalent%20human%20papillomavirus%20vaccine%20in%20perinatally%20HIV%20infected%20girls" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="ESC-DAGs,因果DAG,证据综合,反事实,决策日志,敏感性分析" data-diseases="" data-text="evidence synthesis for constructing directed acyclic graphs (esc-dags): a novel and systematic method for building directed acyclic graphs 用于构建有向无环图的证据综合方法（esc-dags）：一种新型系统化建图方法 karl d ferguson mark mccann srinivasa vittal katikireddi hilary thomson michael j green daniel j smith james d lewsey esc-dags causal dag evidence synthesis counterfactuals decision log sensitivity analysis  ">
+<div class="pills"><span class="pill p4">ESC-DAGs</span><span class="pill p3">Causal DAG</span><span class="pill p1">Evidence synthesis</span><span class="pill p1">Counterfactuals</span><span class="pill p0">Decision log</span><span class="pill p2">Sensitivity analysis</span></div>  <h4><a href="https://doi.org/10.1093/ije/dyz150" target="_blank" rel="noopener">Evidence synthesis for constructing directed acyclic graphs (ESC-DAGs): a novel and systematic method for building directed acyclic graphs</a></h4>
+  <p class="cardmeta">Karl D Ferguson, Mark McCann, Srinivasa Vittal Katikireddi, Hilary Thomson et al. · 2026-07-21</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">International Journal of Epidemiology 49 (2020):322–329</span></div>
+  
+  <div class="foot">
+    <span><span class="stars">★★★★★<span class="off"></span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/ferguson-2020-esc-dags/index.html">My deep read</a>      <a href="https://doi.org/10.1093/ije/dyz150" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Evidence%20synthesis%20for%20constructing%20directed%20acyclic%20graphs%20%28ESC-DAGs%29%3A%20a%20novel%20and%20systematic%20method%20for%20building%20directed%20acyclic%20graphs" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="因果DAG,临床研究,目标估计量,专家共识,敏感性分析,报告规范" data-diseases="" data-text="how to use directed acyclic graphs: guide for clinical researchers 如何使用有向无环图：临床研究者指南 timothy feeney fernando pires hartwig neil m davies causal dag clinical research estimand expert consensus sensitivity analysis reporting  ">
+<div class="pills"><span class="pill p3">Causal DAG</span><span class="pill p1">Clinical research</span><span class="pill p4">Estimand</span><span class="pill p1">Expert consensus</span><span class="pill p2">Sensitivity analysis</span><span class="pill p1">Reporting</span></div>  <h4><a href="https://doi.org/10.1136/bmj-2023-078226" target="_blank" rel="noopener">How to use directed acyclic graphs: guide for clinical researchers</a></h4>
+  <p class="cardmeta">Timothy Feeney, Fernando Pires Hartwig, Neil M Davies · 2026-07-21</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">BMJ 388 (2025):e078226</span></div>
+  
+  <div class="foot">
+    <span><span class="stars">★★★★★<span class="off"></span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/feeney-2025-clinical-dag-guide/index.html">My deep read</a>      <a href="https://doi.org/10.1136/bmj-2023-078226" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=How%20to%20use%20directed%20acyclic%20graphs%3A%20guide%20for%20clinical%20researchers" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="DAGMetrics,因果发现,图结构比较,Markov毯,微生物组,R软件" data-diseases="" data-text="evaluating directed acyclic graphs with dagmetrics: insights from tuber and soil microbiome data 使用dagmetrics评估有向无环图：块茎与土壤微生物组数据的启示 pavel averin ifigeneia mellidou maria ganopoulou aliki xanthopoulou theodoros moysiadis dagmetrics causal discovery graph comparison markov blanket microbiome r software  ">
+<div class="pills"><span class="pill p2">DAGMetrics</span><span class="pill p4">Causal discovery</span><span class="pill p0">Graph comparison</span><span class="pill p1">Markov blanket</span><span class="pill p3">Microbiome</span><span class="pill p3">R software</span></div>  <h4><a href="https://doi.org/10.3390/agronomy15040987" target="_blank" rel="noopener">Evaluating Directed Acyclic Graphs with DAGMetrics: Insights from Tuber and Soil Microbiome Data</a></h4>
+  <p class="cardmeta">Pavel Averin, Ifigeneia Mellidou, Maria Ganopoulou, Aliki Xanthopoulou et al. · 2026-07-21</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Agronomy 15 (2025):987</span></div>
+  
+  <div class="foot">
+    <span><span class="stars">★★★<span class="off">★★</span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/averin-2025-dagmetrics/index.html">My deep read</a>      <a href="https://doi.org/10.3390/agronomy15040987" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Evaluating%20Directed%20Acyclic%20Graphs%20with%20DAGMetrics%3A%20Insights%20from%20Tuber%20and%20Soil%20Microbiome%20Data" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="大语言模型,因果推理,CLADDER,反事实,基准测试,链式推理" data-diseases="" data-text="cladder: assessing causal reasoning in language models cladder：评估语言模型的因果推理能力 zhijing jin yuen chen felix leeb luigi gresele ojasv kamal zhiheng lyu kevin blin fernando gonzalez max kleiman-weiner mrinmaya sachan bernhard schölkopf large language models causal reasoning cladder counterfactuals benchmarking chain of thought  ">
+<div class="pills"><span class="pill p1">Large language models</span><span class="pill p1">Causal reasoning</span><span class="pill p1">CLADDER</span><span class="pill p1">Counterfactuals</span><span class="pill p1">Benchmarking</span><span class="pill p3">Chain of thought</span></div>  <h4><a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/631bb9434d718ea309af82566347d607-Abstract-Conference.html" target="_blank" rel="noopener">CLADDER: Assessing Causal Reasoning in Language Models</a></h4>
+  <p class="cardmeta">Zhijing Jin, Yuen Chen, Felix Leeb, Luigi Gresele et al. · 2026-07-21</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Advances in Neural Information Processing Systems 36 (NeurIPS 2023)</span></div>
+  
+  <div class="foot">
+    <span><span class="stars">★★★★★<span class="off"></span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/jin-2023-cladder/index.html">My deep read</a>      <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/631bb9434d718ea309af82566347d607-Abstract-Conference.html" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=CLADDER%3A%20Assessing%20Causal%20Reasoning%20in%20Language%20Models" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="因果DAG,小于胎龄儿,儿童营养不良,最小充分调整集,快速综述,目标估计量" data-diseases="pregnancy" data-text="directed acyclic graph helps to understand the causality of malnutrition in under-5 children born small for gestational age 有向无环图用于理解足月小于胎龄儿五岁以下营养不良的因果结构 soumya tiwari viswas chhapola nisha chaudhary lokesh sharma causal dag small for gestational age child malnutrition minimal sufficient adjustment set rapid review estimand  妊娠围产 pregnancy">
+<div class="pills"><span class="pill p3">Causal DAG</span><span class="pill p2">Small for gestational age</span><span class="pill p2">Child malnutrition</span><span class="pill p2">Minimal sufficient adjustment set</span><span class="pill p0">Rapid review</span><span class="pill p4">Estimand</span></div>  <h4><a href="https://doi.org/10.1016/j.jclinepi.2024.111611" target="_blank" rel="noopener">Directed acyclic graph helps to understand the causality of malnutrition in under-5 children born small for gestational age</a></h4>
+  <p class="cardmeta">Soumya Tiwari, Viswas Chhapola, Nisha Chaudhary, Lokesh Sharma · 2026-07-21</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Journal of Clinical Epidemiology 177 (2025):111611</span><span class="jbadge jb-cas z2">CAS 2 Top</span><span class="jbadge jb-jcr">JCR Q1</span><span class="jbadge jb-if">IF 5.8</span></div>
+  <div class="dbadges"><span class="dbadge">Pregnancy</span></div>
+  <div class="foot">
+    <span><span class="stars">★★★★<span class="off">★</span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/tiwari-2025-sga-malnutrition-dag/index.html">My deep read</a>      <a href="https://doi.org/10.1016/j.jclinepi.2024.111611" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Directed%20acyclic%20graph%20helps%20to%20understand%20the%20causality%20of%20malnutrition%20in%20under-5%20children%20born%20small%20for%20gestational%20age" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="因果DAG,范围综述,DAG构建,选择偏倚,测量误差,观察性研究" data-diseases="" data-text="how to develop causal directed acyclic graphs for observational health research: a scoping review 如何为观察性健康研究构建因果有向无环图：范围综述 louise poppe johan steen wen wei loh geert crombez fien de block noortje jacobs peter w. g. tennant jelle van cauwenberg annick l. de paepe causal dag scoping review dag construction selection bias measurement error observational research  ">
+<div class="pills"><span class="pill p3">Causal DAG</span><span class="pill p3">Scoping review</span><span class="pill p3">DAG construction</span><span class="pill p0">Selection bias</span><span class="pill p0">Measurement error</span><span class="pill p0">Observational research</span></div>  <h4><a href="https://doi.org/10.1080/17437199.2024.2402809" target="_blank" rel="noopener">How to develop causal directed acyclic graphs for observational health research: a scoping review</a></h4>
+  <p class="cardmeta">Louise Poppe, Johan Steen, Wen Wei Loh, Geert Crombez et al. · 2026-07-21</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Health Psychology Review 19 (2025):45–65</span></div>
+  
+  <div class="foot">
+    <span><span class="stars">★★★★★<span class="off"></span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/poppe-2025-dag-development-scoping/index.html">My deep read</a>      <a href="https://doi.org/10.1080/17437199.2024.2402809" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=How%20to%20develop%20causal%20directed%20acyclic%20graphs%20for%20observational%20health%20research%3A%20a%20scoping%20review" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="伞式综述,证据分级,荟萃分析,重叠处理,标准化复算,报告规范" data-diseases="" data-text="conducting umbrella reviews 如何开展伞式综述 lazaros belbasis vanesa bellou john p a ioannidis umbrella review evidence grading meta-analysis overlap handling standardized re-analysis reporting  ">
+<div class="pills"><span class="pill p1">Umbrella review</span><span class="pill p4">Evidence grading</span><span class="pill p4">Meta-analysis</span><span class="pill p1">Overlap handling</span><span class="pill p3">Standardized re-analysis</span><span class="pill p1">Reporting</span></div>  <h4><a href="https://doi.org/10.1136/bmjmed-2021-000071" target="_blank" rel="noopener">Conducting umbrella reviews</a></h4>
+  <p class="cardmeta">Lazaros Belbasis, Vanesa Bellou, John P A Ioannidis · 2026-07-21</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">BMJ Medicine 1 (2022):e000071</span></div>
+  
+  <div class="foot">
+    <span><span class="stars">★★★★★<span class="off"></span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/belbasis-2022-umbrella-reviews/index.html">My deep read</a>      <a href="https://doi.org/10.1136/bmjmed-2021-000071" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Conducting%20umbrella%20reviews" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="伞式综述,早产,危险因素,流行病学稳健性,小样本效应,超额显著性" data-diseases="pregnancy" data-text="risk factors for preterm birth: an umbrella review of meta-analyses of observational studies 早产危险因素：观察性研究meta分析的伞式综述 ioannis mitrogiannis evangelos evangelou athina efthymiou theofilos kanavos effrosyni birbas george makrydimas stefania papatheodorou umbrella review preterm birth risk factors epidemiological credibility small-study effects excess significance  妊娠围产 pregnancy">
+<div class="pills"><span class="pill p1">Umbrella review</span><span class="pill p0">Preterm birth</span><span class="pill p0">Risk factors</span><span class="pill p4">Epidemiological credibility</span><span class="pill p3">Small-study effects</span><span class="pill p3">Excess significance</span></div>  <h4><a href="https://doi.org/10.1186/s12916-023-03171-4" target="_blank" rel="noopener">Risk factors for preterm birth: an umbrella review of meta-analyses of observational studies</a></h4>
+  <p class="cardmeta">Ioannis Mitrogiannis, Evangelos Evangelou, Athina Efthymiou, Theofilos Kanavos et al. · 2026-07-21</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">BMC Medicine 21 (2023):494</span></div>
+  <div class="dbadges"><span class="dbadge">Pregnancy</span></div>
+  <div class="foot">
+    <span><span class="stars">★★★★<span class="off">★</span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/mitrogiannis-2023-preterm-birth-umbrella/index.html">My deep read</a>      <a href="https://doi.org/10.1186/s12916-023-03171-4" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Risk%20factors%20for%20preterm%20birth%3A%20an%20umbrella%20review%20of%20meta-analyses%20of%20observational%20studies" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="因果知识图谱,糖尿病肾病,临床决策支持,电子健康记录,图剪枝,知识评价" data-diseases="diabetes,kidney" data-text="causal knowledge graph construction and evaluation for clinical decision support of diabetic nephropathy 面向糖尿病肾病临床决策支持的因果知识图谱构建与评价 kewei lyu yu tian yong shang tianshu zhou ziyue yang qianghua liu xi yao ping zhang jianghua chen jingsong li causal knowledge graph diabetic nephropathy clinical decision support electronic health records graph pruning knowledge evaluation  糖尿病 diabetes 肾病 kidney disease">
+<div class="pills"><span class="pill p2">Causal knowledge graph</span><span class="pill p4">Diabetic nephropathy</span><span class="pill p4">Clinical decision support</span><span class="pill p1">Electronic health records</span><span class="pill p4">Graph pruning</span><span class="pill p0">Knowledge evaluation</span></div>  <h4><a href="https://doi.org/10.1016/j.jbi.2023.104298" target="_blank" rel="noopener">Causal knowledge graph construction and evaluation for clinical decision support of diabetic nephropathy</a></h4>
+  <p class="cardmeta">Kewei Lyu, Yu Tian, Yong Shang, Tianshu Zhou et al. · 2026-07-21</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Journal of Biomedical Informatics 139 (2023):104298</span></div>
+  <div class="dbadges"><span class="dbadge">Diabetes</span><span class="dbadge">Kidney disease</span></div>
+  <div class="foot">
+    <span><span class="stars">★★★★<span class="off">★</span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/lyu-2023-diabetic-nephropathy-ckg/index.html">My deep read</a>      <a href="https://doi.org/10.1016/j.jbi.2023.104298" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Causal%20knowledge%20graph%20construction%20and%20evaluation%20for%20clinical%20decision%20support%20of%20diabetic%20nephropathy" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="大语言模型,证据三角互证,因果证据抽取,信息抽取,证据溯源,模型蒸馏,人道主义NLP" data-diseases="" data-text="causal evidence extraction and triangulation in crisis reports using large language models: a reliefweb-based study 使用大语言模型从危机报告中提取和三角测量因果证据：基于reliefweb的研究 yuanjun zhang mourad oussalah large language models evidence triangulation causal evidence extraction information extraction evidence provenance model distillation humanitarian nlp  ">
+<div class="pills"><span class="pill p1">Large language models</span><span class="pill p3">Evidence triangulation</span><span class="pill p3">Causal evidence extraction</span><span class="pill p2">Information extraction</span><span class="pill p0">Evidence provenance</span><span class="pill p0">Model distillation</span><span class="pill p0">Humanitarian NLP</span></div>  <h4><a href="https://doi.org/10.18653/v1/2026.findings-acl.1626" target="_blank" rel="noopener">Causal Evidence Extraction and Triangulation in Crisis Reports using Large Language Models: A ReliefWeb-based Study</a></h4>
+  <p class="cardmeta">Yuanjun Zhang, Mourad Oussalah · 2026-07-20</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Findings of the Association for Computational Linguistics: ACL 2026, 32478–32491</span></div>
+  
+  <div class="foot">
+    <span><span class="stars">★★★★<span class="off">★</span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/zhang-2026-reliefweb-triangulation/index.html">My deep read</a>      <a href="https://doi.org/10.18653/v1/2026.findings-acl.1626" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Causal%20Evidence%20Extraction%20and%20Triangulation%20in%20Crisis%20Reports%20using%20Large%20Language%20Models%3A%20A%20ReliefWeb-based%20Study" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="大语言模型,知识图谱,因果知识图谱,信息抽取,关系归一化,RAG检索增强,问答系统,航空安全" data-diseases="" data-text="enhancing system safety analysis in aviation: a causal knowledge graph framework powered by large language models for proactive risk identification 加强航空系统安全分析：大语言模型驱动的因果知识图谱框架用于主动风险识别 jifei cheng donghui shi jozef zurada yakun sun large language models knowledge graph causal knowledge graph information extraction relation normalization retrieval-augmented generation question answering aviation safety  ">
+<div class="pills"><span class="pill p1">Large language models</span><span class="pill p2">Knowledge graph</span><span class="pill p2">Causal knowledge graph</span><span class="pill p2">Information extraction</span><span class="pill p4">Relation normalization</span><span class="pill p2">Retrieval-augmented generation</span><span class="pill p4">Question answering</span><span class="pill p2">Aviation safety</span></div>  <h4><a href="https://doi.org/10.1016/j.ress.2026.113141" target="_blank" rel="noopener">Enhancing system safety analysis in aviation: A causal knowledge graph framework powered by Large Language Models for proactive risk identification</a></h4>
+  <p class="cardmeta">Jifei Cheng, Donghui Shi, Jozef Zurada, Yakun Sun · 2026-07-19</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Reliability Engineering &amp; System Safety 277 (2027):113141; online 13 July 2026</span></div>
+  
+  <div class="foot">
+    <span><span class="stars">★★★★<span class="off">★</span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/cheng-2027-aviation-causal-kg/index.html">My deep read</a>      <a href="https://doi.org/10.1016/j.ress.2026.113141" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Enhancing%20system%20safety%20analysis%20in%20aviation%3A%20A%20causal%20knowledge%20graph%20framework%20powered%20by%20Large%20Language%20Models%20for%20proactive%20risk%20identification" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="因果推断,因果DAG,定量偏倚分析,多重偏倚分析,概率偏倚分析,选择偏倚,测量误差,专家启发" data-diseases="" data-text="roadmap for systematic identification and analysis of multiple biases in causal inference 因果推断中多重偏倚的系统识别与分析路线图 rushani wijesuriya rachael hughes john carlin rachel l peters jennifer j koplin margarita moreno-betancur causal inference causal dag quantitative bias analysis multiple-bias analysis probabilistic bias analysis selection bias measurement error expert elicitation  ">
+<div class="pills"><span class="pill p0">Causal inference</span><span class="pill p3">Causal DAG</span><span class="pill p4">Quantitative bias analysis</span><span class="pill p0">Multiple-bias analysis</span><span class="pill p4">Probabilistic bias analysis</span><span class="pill p0">Selection bias</span><span class="pill p0">Measurement error</span><span class="pill p2">Expert elicitation</span></div>  <h4><a href="https://doi.org/10.1093/aje/kwag166" target="_blank" rel="noopener">Roadmap for systematic identification and analysis of multiple biases in causal inference</a></h4>
+  <p class="cardmeta">Rushani Wijesuriya, Rachael Hughes, John Carlin, Rachel L Peters et al. · 2026-07-19</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">American Journal of Epidemiology</span><span class="jbadge jb-cas z2">CAS 2</span><span class="jbadge jb-jcr">JCR Q1</span><span class="jbadge jb-if">IF 4.1</span></div>
+  
+  <div class="foot">
+    <span><span class="stars">★★★★★<span class="off"></span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/wijesuriya-2026-multiple-bias-roadmap/index.html">My deep read</a>      <a href="https://doi.org/10.1093/aje/kwag166" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Roadmap%20for%20systematic%20identification%20and%20analysis%20of%20multiple%20biases%20in%20causal%20inference" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="多状态模型,疾病轨迹,共病,多组学,蛋白组学,UK Biobank,风险预测,肿瘤流行病学" data-diseases="cancer" data-text="multiomics insight into disease trajectories of cardiometabolic diseases and cancer 多组学揭示心代谢疾病与癌症的疾病轨迹 xuanwei jiang guangrui yang meng chen nannan feng lan xu xihao du chunlai zeng victor w. zhong multistate model disease trajectories multimorbidity multiomics proteomics uk biobank risk prediction cancer epidemiology  癌症 cancer">
+<div class="pills"><span class="pill p3">Multistate model</span><span class="pill p3">Disease trajectories</span><span class="pill p3">Multimorbidity</span><span class="pill p4">Multiomics</span><span class="pill p2">Proteomics</span><span class="pill p4">UK Biobank</span><span class="pill p4">Risk prediction</span><span class="pill p0">Cancer epidemiology</span></div>  <h4><a href="https://doi.org/10.1038/s41467-025-67510-0" target="_blank" rel="noopener">Multiomics insight into disease trajectories of cardiometabolic diseases and cancer</a></h4>
+  <p class="cardmeta">Xuanwei Jiang, Guangrui Yang, Meng Chen, Nannan Feng et al. · 2026-07-09</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Nature Communications 17:813, 2026</span><span class="jbadge jb-cas z1">CAS 1 Top</span><span class="jbadge jb-jcr">JCR Q1</span><span class="jbadge jb-if">IF 18.1</span></div>
+  <div class="dbadges"><span class="dbadge">Cancer</span></div>
+  <div class="foot">
+    <span><span class="stars">★★★<span class="off">★★</span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/jiang-2026-cmd-cancer-multiomics/index.html">My deep read</a>      <a href="https://doi.org/10.1038/s41467-025-67510-0" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Multiomics%20insight%20into%20disease%20trajectories%20of%20cardiometabolic%20diseases%20and%20cancer" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="网络meta分析,系统综述,证据分级,随机对照试验,比较效果研究,GLP-1,减肥药,临床指南" data-diseases="obesity" data-text="comparative effects of drugs for adults with overweight or obesity: systematic review and network meta-analysis 超重或肥胖成人用药的比较效果：系统综述与网络荟萃分析 kailei nong qingyang shi xinran xie yang wang arnav agarwal gordon h guyatt kamlesh khunti carel w le roux ivan d florez thomas agoritsas per olav vandvik sheyu li network meta-analysis systematic review evidence grading randomized controlled trials comparative effectiveness glp-1 obesity drugs clinical guideline  肥胖 obesity">
+<div class="pills"><span class="pill p3">Network meta-analysis</span><span class="pill p0">Systematic review</span><span class="pill p4">Evidence grading</span><span class="pill p0">Randomized controlled trials</span><span class="pill p2">Comparative effectiveness</span><span class="pill p0">GLP-1</span><span class="pill p1">Obesity drugs</span><span class="pill p0">Clinical guideline</span></div>  <h4><a href="https://doi.org/10.1136/bmj-2026-372161" target="_blank" rel="noopener">Comparative effects of drugs for adults with overweight or obesity: systematic review and network meta-analysis</a></h4>
+  <p class="cardmeta">Kailei Nong, Qingyang Shi, Xinran Xie, Yang Wang et al. · 2026-07-09</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">BMJ 394:e372161, 2026 (BMJ Rapid Recommendations)</span></div>
+  <div class="dbadges"><span class="dbadge">Obesity</span></div>
+  <div class="foot">
+    <span><span class="stars">★★★<span class="off">★★</span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/nong-2026-obesity-drugs-nma/index.html">My deep read</a>      <a href="https://doi.org/10.1136/bmj-2026-372161" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Comparative%20effects%20of%20drugs%20for%20adults%20with%20overweight%20or%20obesity%3A%20systematic%20review%20and%20network%20meta-analysis" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="系统综述,荟萃分析,随机对照试验,证据分级,三角验证,健康用户偏倚,GLP-1,肿瘤流行病学" data-diseases="cancer" data-text="risk for cancer with glucagon-like peptide-1 receptor agonists and dual agonists: a systematic review and meta-analysis glp-1 受体激动剂及双重激动剂与癌症风险：系统综述与荟萃分析 albert ko yu-cheng chang furkan bahar tsu hsien wang nutchapon xanthavanij chun-chiao yu rebecca jen-ling hsieh xin ya see shao-wei lo junmin song yuan ping hsia cho-hung chiang xiaocao xu shuwen lin cho-han chiang systematic review meta-analysis randomized controlled trials evidence grading triangulation healthy user bias glp-1 cancer epidemiology  癌症 cancer">
+<div class="pills"><span class="pill p0">Systematic review</span><span class="pill p4">Meta-analysis</span><span class="pill p0">Randomized controlled trials</span><span class="pill p4">Evidence grading</span><span class="pill p0">Triangulation</span><span class="pill p1">Healthy user bias</span><span class="pill p0">GLP-1</span><span class="pill p0">Cancer epidemiology</span></div>  <h4><a href="https://doi.org/10.7326/ANNALS-25-02237" target="_blank" rel="noopener">Risk for Cancer With Glucagon-Like Peptide-1 Receptor Agonists and Dual Agonists: A Systematic Review and Meta-analysis</a></h4>
+  <p class="cardmeta">Albert Ko, Yu-Cheng Chang, Furkan Bahar, Tsu Hsien Wang et al. · 2026-07-09</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Annals of Internal Medicine 179(2):216–229, 2026</span><span class="jbadge jb-cas z1">CAS 1 Top</span><span class="jbadge jb-jcr">JCR Q1</span><span class="jbadge jb-if">IF 17.2</span></div>
+  <div class="dbadges"><span class="dbadge">Cancer</span></div>
+  <div class="foot">
+    <span><span class="stars">★★★<span class="off">★★</span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/ko-2026-glp1-cancer-meta/index.html">My deep read</a>      <a href="https://doi.org/10.7326/ANNALS-25-02237" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Risk%20for%20Cancer%20With%20Glucagon-Like%20Peptide-1%20Receptor%20Agonists%20and%20Dual%20Agonists%3A%20A%20Systematic%20Review%20and%20Meta-analysis" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="目标试验仿真,真实世界证据,药物流行病学,倾向评分匹配,治疗效应异质性,混杂by适应证,GLP-1,肿瘤流行病学" data-diseases="cancer,obesity" data-text="glp-1 receptor agonists and cancer risk in adults with obesity 肥胖成人使用 glp-1 受体激动剂与癌症风险 hao dai yongqiu li yao an lee ying lu thomas j. george william t. donahoo kelvin p. lee harikrishna nakshatri john allen yi guo ramon c. sun jingchuan guo jiang bian target trial emulation real-world evidence pharmacoepidemiology propensity score matching heterogeneity of treatment effects confounding by indication glp-1 cancer epidemiology  癌症 cancer 肥胖 obesity">
+<div class="pills"><span class="pill p0">Target trial emulation</span><span class="pill p1">Real-world evidence</span><span class="pill p1">Pharmacoepidemiology</span><span class="pill p3">Propensity score matching</span><span class="pill p3">Heterogeneity of treatment effects</span><span class="pill p1">Confounding by indication</span><span class="pill p0">GLP-1</span><span class="pill p0">Cancer epidemiology</span></div>  <h4><a href="https://doi.org/10.1001/jamaoncol.2025.2681" target="_blank" rel="noopener">GLP-1 Receptor Agonists and Cancer Risk in Adults With Obesity</a></h4>
+  <p class="cardmeta">Hao Dai, Yongqiu Li, Yao An Lee, Ying Lu et al. · 2026-07-09</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">JAMA Oncology 11(10):1186–1193, 2025</span><span class="jbadge jb-cas z1">CAS 1 Top</span><span class="jbadge jb-jcr">JCR Q1</span><span class="jbadge jb-if">IF 23.9</span></div>
+  <div class="dbadges"><span class="dbadge">Cancer</span><span class="dbadge">Obesity</span></div>
+  <div class="foot">
+    <span><span class="stars">★★★<span class="off">★★</span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/dai-2025-glp1-cancer/index.html">My deep read</a>      <a href="https://doi.org/10.1001/jamaoncol.2025.2681" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=GLP-1%20Receptor%20Agonists%20and%20Cancer%20Risk%20in%20Adults%20With%20Obesity" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="药物流行病学,混杂by适应证,高胰岛素血症,二甲双胍" data-diseases="cancer,diabetes" data-text="diabetes and cancer: a consensus report 糖尿病与癌症：共识报告 edward giovannucci david m. harlan michael c. archer richard m. bergenstal susan m. gapstur laurel a. habel michael pollak judith g. regensteiner douglas yee pharmacoepidemiology confounding by indication hyperinsulinemia metformin  癌症 cancer 糖尿病 diabetes">
+<div class="pills"><span class="pill p1">Pharmacoepidemiology</span><span class="pill p1">Confounding by indication</span><span class="pill p0">Hyperinsulinemia</span><span class="pill p4">Metformin</span></div>  <h4><a href="https://doi.org/10.2337/dc10-0666" target="_blank" rel="noopener">Diabetes and Cancer: A Consensus Report</a></h4>
+  <p class="cardmeta">Edward Giovannucci, David M. Harlan, Michael C. Archer, Richard M. Bergenstal et al. · 2026-07-09</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Diabetes Care 33(7):1674–1685, 2010 (joint ADA/ACS consensus report)</span></div>
+  <div class="dbadges"><span class="dbadge">Cancer</span><span class="dbadge">Diabetes</span></div>
+  <div class="foot">
+    <span><span class="stars">★★★<span class="off">★★</span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/giovannucci-2010-diabetes-cancer/index.html">My deep read</a>      <a href="https://doi.org/10.2337/dc10-0666" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Diabetes%20and%20Cancer%3A%20A%20Consensus%20Report" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="因果DAG,混杂调整,对撞偏倚,教学讲义" data-diseases="" data-text="introduction to causal directed acyclic graphs 因果有向无环图导论 amber w. trickey causal dag confounder adjustment collider bias teaching deck  ">
+<div class="pills"><span class="pill p3">Causal DAG</span><span class="pill p4">Confounder adjustment</span><span class="pill p1">Collider bias</span><span class="pill p3">Teaching deck</span></div>  <h4><a href="" target="_blank" rel="noopener">Introduction to Causal Directed Acyclic Graphs</a></h4>
+  <p class="cardmeta">Amber W. Trickey · 2026-07-07</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Stanford S-SPIRE Works in Progress (presentation), 2019-01-28</span></div>
+  
+  <div class="foot">
+    <span><span class="stars">★★<span class="off">★★★</span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/trickey-2019-intro-dags/index.html">My deep read</a>      <a href="" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Introduction%20to%20Causal%20Directed%20Acyclic%20Graphs" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="因果推断,三角验证,行为科学,混杂与对撞" data-diseases="" data-text="causal inference on human behaviour 人类行为的因果推断 drew h. bailey konrad p. kording julia m. rohrer kou murayama causal inference triangulation behavioural science confounding &amp; colliders  ">
+<div class="pills"><span class="pill p0">Causal inference</span><span class="pill p0">Triangulation</span><span class="pill p4">Behavioural science</span><span class="pill p2">Confounding &amp; colliders</span></div>  <h4><a href="https://doi.org/10.1038/s41562-024-01939-z" target="_blank" rel="noopener">Causal inference on human behaviour</a></h4>
+  <p class="cardmeta">Drew H. Bailey, Konrad P. Kording, Julia M. Rohrer, Kou Murayama · 2026-07-07</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Nature Human Behaviour</span></div>
+  
+  <div class="foot">
+    <span><span class="stars">★★★<span class="off">★★</span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/bailey-2024-causal-human-behaviour/index.html">My deep read</a>      <a href="https://doi.org/10.1038/s41562-024-01939-z" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Causal%20inference%20on%20human%20behaviour" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="因果DAG,混杂调整,对撞偏倚,协变量选择" data-diseases="" data-text="using causal diagrams for biomedical research 因果图在生物医学研究中的应用 demetrios n. kyriacou philip greenland mohammad a. mansournia causal dag confounder adjustment collider bias covariate selection  ">
+<div class="pills"><span class="pill p3">Causal DAG</span><span class="pill p4">Confounder adjustment</span><span class="pill p1">Collider bias</span><span class="pill p4">Covariate selection</span></div>  <h4><a href="https://doi.org/10.1016/j.annemergmed.2022.08.014" target="_blank" rel="noopener">Using Causal Diagrams for Biomedical Research</a></h4>
+  <p class="cardmeta">Demetrios N. Kyriacou, Philip Greenland, Mohammad A. Mansournia · 2026-07-07</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Annals of Emergency Medicine</span></div>
+  
+  <div class="foot">
+    <span><span class="stars">★★★<span class="off">★★</span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/kyriacou-2023-causal-diagrams/index.html">My deep read</a>      <a href="https://doi.org/10.1016/j.annemergmed.2022.08.014" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Using%20Causal%20Diagrams%20for%20Biomedical%20Research" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="Bradford Hill,因果DAG,三角验证,GRADE" data-diseases="" data-text="assessing causality in epidemiology: revisiting bradford hill to incorporate developments in causal thinking 流行病学中的因果性评估：结合因果思维进展重新审视 bradford hill 准则 michal shimonovich anna pearce hilary thomson katherine keyes srinivasa vittal katikireddi bradford hill causal dag triangulation grade  ">
+<div class="pills"><span class="pill p0">Bradford Hill</span><span class="pill p3">Causal DAG</span><span class="pill p0">Triangulation</span><span class="pill p1">GRADE</span></div>  <h4><a href="https://doi.org/10.1007/s10654-020-00703-7" target="_blank" rel="noopener">Assessing causality in epidemiology: revisiting Bradford Hill to incorporate developments in causal thinking</a></h4>
+  <p class="cardmeta">Michal Shimonovich, Anna Pearce, Hilary Thomson, Katherine Keyes et al. · 2026-07-07</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">European Journal of Epidemiology</span><span class="jbadge jb-cas z2">CAS 2</span><span class="jbadge jb-jcr">JCR Q1</span><span class="jbadge jb-if">IF 6.6</span></div>
+  
+  <div class="foot">
+    <span><span class="stars">★★★★<span class="off">★</span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/shimonovich-2021-bradford-hill/index.html">My deep read</a>      <a href="https://doi.org/10.1007/s10654-020-00703-7" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Assessing%20causality%20in%20epidemiology%3A%20revisiting%20Bradford%20Hill%20to%20incorporate%20developments%20in%20causal%20thinking" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="因果DAG,连续时间机制,局部独立图,时变混杂" data-diseases="" data-text="can we believe the dags? a comment on the relationship between causal dags and mechanisms 我们能相信 dag 吗？关于因果 dag 与机制关系的评论 odd o. aalen kjetil røysland jon michael gran roger kouyos theis lange causal dag continuous-time mechanisms local independence time-varying confounding  ">
+<div class="pills"><span class="pill p3">Causal DAG</span><span class="pill p4">Continuous-time mechanisms</span><span class="pill p4">Local independence</span><span class="pill p1">Time-varying confounding</span></div>  <h4><a href="https://doi.org/10.1177/0962280213520436" target="_blank" rel="noopener">Can we believe the DAGs? A comment on the relationship between causal DAGs and mechanisms</a></h4>
+  <p class="cardmeta">Odd O. Aalen, Kjetil Røysland, Jon Michael Gran, Roger Kouyos et al. · 2026-07-07</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Statistical Methods in Medical Research</span></div>
+  
+  <div class="foot">
+    <span><span class="stars">★★★★<span class="off">★</span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/aalen-2016-believe-dags/index.html">My deep read</a>      <a href="https://doi.org/10.1177/0962280213520436" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Can%20we%20believe%20the%20DAGs%3F%20A%20comment%20on%20the%20relationship%20between%20causal%20DAGs%20and%20mechanisms" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="因果DAG,专家启发,证据分级,风险治理" data-diseases="" data-text="directed acyclic graph guidance documentation: human system risk board 有向无环图指南文件：人体系统风险委员会 erik l. antonsen robert j. reynolds avalon monti jacqueline charvat devan petersen erin s. connell mark shelhamer mary van baalen daniel buckland causal dag expert elicitation evidence grading risk governance  ">
+<div class="pills"><span class="pill p3">Causal DAG</span><span class="pill p2">Expert elicitation</span><span class="pill p4">Evidence grading</span><span class="pill p2">Risk governance</span></div>  <h4><a href="https://ntrs.nasa.gov/citations/20220006812" target="_blank" rel="noopener">Directed Acyclic Graph Guidance Documentation: Human System Risk Board</a></h4>
+  <p class="cardmeta">Erik L. Antonsen, Robert J. Reynolds, Avalon Monti, Jacqueline Charvat et al. · 2026-07-07</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">NASA/TM-20220006812</span></div>
+  
+  <div class="foot">
+    <span><span class="stars">★★★★<span class="off">★</span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/antonsen-2022-nasa-dag-guidance/index.html">My deep read</a>      <a href="https://ntrs.nasa.gov/citations/20220006812" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Directed%20Acyclic%20Graph%20Guidance%20Documentation%3A%20Human%20System%20Risk%20Board" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="因果DAG,专家启发,航天医学,证据分级" data-diseases="" data-text="causal diagramming for assessing human system risk in spaceflight 用因果图评估航天飞行中的人体系统风险 erik antonsen robert j. reynolds jacqueline charvat mary van baalen daniel m. buckland causal dag expert elicitation spaceflight medicine evidence grading  ">
+<div class="pills"><span class="pill p3">Causal DAG</span><span class="pill p2">Expert elicitation</span><span class="pill p1">Spaceflight medicine</span><span class="pill p4">Evidence grading</span></div>  <h4><a href="https://doi.org/10.1038/s41526-024-00375-7" target="_blank" rel="noopener">Causal diagramming for assessing human system risk in spaceflight</a></h4>
+  <p class="cardmeta">Erik Antonsen, Robert J. Reynolds, Jacqueline Charvat, Mary Van Baalen et al. · 2026-07-07</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">npj Microgravity</span></div>
+  
+  <div class="foot">
+    <span><span class="stars">★★★<span class="off">★★</span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/antonsen-2024-spaceflight-dag/index.html">My deep read</a>      <a href="https://doi.org/10.1038/s41526-024-00375-7" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Causal%20diagramming%20for%20assessing%20human%20system%20risk%20in%20spaceflight" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="循证DAG,DAG构建,混杂调整,金属混合暴露" data-diseases="" data-text="development and application of an evidence-based directed acyclic graph to evaluate the associations between metal mixtures and cardiometabolic outcomes 基于证据的有向无环图的开发与应用：评估金属混合物与心代谢结局的关联 emily riseberg rachel d. melamed katherine a. james tanya l. alderete laura corlin evidence-based dag dag construction confounder adjustment metal mixtures  ">
+<div class="pills"><span class="pill p2">Evidence-based DAG</span><span class="pill p3">DAG construction</span><span class="pill p4">Confounder adjustment</span><span class="pill p2">Metal mixtures</span></div>  <h4><a href="https://doi.org/10.1515/em-2022-0133" target="_blank" rel="noopener">Development and application of an evidence-based directed acyclic graph to evaluate the associations between metal mixtures and cardiometabolic outcomes</a></h4>
+  <p class="cardmeta">Emily Riseberg, Rachel D. Melamed, Katherine A. James, Tanya L. Alderete et al. · 2026-07-07</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Epidemiologic Methods</span></div>
+  
+  <div class="foot">
+    <span><span class="stars">★★★★★<span class="off"></span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/riseberg-2023-metals-dag/index.html">My deep read</a>      <a href="https://doi.org/10.1515/em-2022-0133" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Development%20and%20application%20of%20an%20evidence-based%20directed%20acyclic%20graph%20to%20evaluate%20the%20associations%20between%20metal%20mixtures%20and%20cardiometabolic%20outcomes" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="因果发现,文献综合,等价类,实验选择" data-diseases="" data-text="experiment selection in meta-analytic piecemeal causal discovery 元分析式渐进因果发现中的实验选择 nicholas j. matiasz alcino j. silva william hsu causal discovery literature synthesis equivalence class experiment selection  ">
+<div class="pills"><span class="pill p4">Causal discovery</span><span class="pill p4">Literature synthesis</span><span class="pill p2">Equivalence class</span><span class="pill p0">Experiment selection</span></div>  <h4><a href="https://doi.org/10.1109/ACCESS.2021.3093524" target="_blank" rel="noopener">Experiment Selection in Meta-Analytic Piecemeal Causal Discovery</a></h4>
+  <p class="cardmeta">Nicholas J. Matiasz, Alcino J. Silva, William Hsu · 2026-07-07</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">IEEE Access</span></div>
+  
+  <div class="foot">
+    <span><span class="stars">★★★<span class="off">★★</span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/matiasz-2021-piecemeal-causal-discovery/index.html">My deep read</a>      <a href="https://doi.org/10.1109/ACCESS.2021.3093524" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Experiment%20Selection%20in%20Meta-Analytic%20Piecemeal%20Causal%20Discovery" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="证据分级,风险评估,荟萃分析,剂量反应" data-diseases="" data-text="the burden of proof studies: assessing the evidence of risk 证据负担研究：评估风险证据 peng zheng aleksandr y. aravkin christopher j. l. murray evidence grading risk assessment meta-analysis dose-response  ">
+<div class="pills"><span class="pill p4">Evidence grading</span><span class="pill p3">Risk assessment</span><span class="pill p4">Meta-analysis</span><span class="pill p2">Dose-response</span></div>  <h4><a href="https://doi.org/10.1038/s41591-022-01973-2" target="_blank" rel="noopener">The Burden of Proof studies: assessing the evidence of risk</a></h4>
+  <p class="cardmeta">Peng Zheng, Aleksandr Y. Aravkin, Christopher J. L. Murray · 2026-07-07</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Nature Medicine</span><span class="jbadge jb-cas z1">CAS 1 Top</span><span class="jbadge jb-jcr">JCR Q1</span><span class="jbadge jb-if">IF 52.5</span></div>
+  
+  <div class="foot">
+    <span><span class="stars">★★★★<span class="off">★</span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/zheng-2022-burden-of-proof/index.html">My deep read</a>      <a href="https://doi.org/10.1038/s41591-022-01973-2" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=The%20Burden%20of%20Proof%20studies%3A%20assessing%20the%20evidence%20of%20risk" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="因果推断,三角验证,偏倚方向,孟德尔随机化" data-diseases="" data-text="triangulation in aetiological epidemiology 病因流行病学中的三角互证 debbie a. lawlor kate tilling george davey smith causal inference triangulation direction of bias mendelian randomization  ">
+<div class="pills"><span class="pill p0">Causal inference</span><span class="pill p0">Triangulation</span><span class="pill p0">Direction of bias</span><span class="pill p3">Mendelian randomization</span></div>  <h4><a href="https://doi.org/10.1093/ije/dyw314" target="_blank" rel="noopener">Triangulation in aetiological epidemiology</a></h4>
+  <p class="cardmeta">Debbie A. Lawlor, Kate Tilling, George Davey Smith · 2026-07-07</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">International Journal of Epidemiology</span><span class="jbadge jb-cas z2">CAS 2 Top</span><span class="jbadge jb-jcr">JCR Q1</span><span class="jbadge jb-if">IF 5.7</span></div>
+  
+  <div class="foot">
+    <span><span class="stars">★★★★★<span class="off"></span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/lawlor-2016-triangulation/index.html">My deep read</a>      <a href="https://doi.org/10.1093/ije/dyw314" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Triangulation%20in%20aetiological%20epidemiology" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="大语言模型,系统综述自动化,混杂调整,信息抽取" data-diseases="" data-text="a pilot project leveraging large language models for automated screening and variable extraction in observational studies 利用大语言模型自动筛选观察性研究并提取变量的试点项目 manjil m. pradhan melissa l. rethlefsen scott a. malec large language models systematic review automation confounder adjustment information extraction  ">
+<div class="pills"><span class="pill p1">Large language models</span><span class="pill p1">Systematic review automation</span><span class="pill p4">Confounder adjustment</span><span class="pill p2">Information extraction</span></div>  <h4><a href="https://doi.org/10.64898/2026.06.13.26355589" target="_blank" rel="noopener">A Pilot Project Leveraging Large Language Models for Automated Screening and Variable Extraction in Observational Studies</a></h4>
+  <p class="cardmeta">Manjil M. Pradhan, Melissa L. Rethlefsen, Scott A. Malec · 2026-07-07</p>
+  <div class="jmetrics">
+<span class="jbadge jb-pre">medRxiv</span>
+</div>
+  
+  <div class="foot">
+    <span><span class="stars">★★★★<span class="off">★</span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/pradhan-2026-litscreen-varex/index.html">My deep read</a>      <a href="https://doi.org/10.64898/2026.06.13.26355589" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=A%20Pilot%20Project%20Leveraging%20Large%20Language%20Models%20for%20Automated%20Screening%20and%20Variable%20Extraction%20in%20Observational%20Studies" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="因果推断,因果DAG,证据分级,知识基础设施" data-diseases="" data-text="living dags: the future of dags in epidemiology living dag：流行病学中 dag 的未来 robert j. reynolds causal inference causal dag evidence grading epistemic infrastructure  ">
+<div class="pills"><span class="pill p0">Causal inference</span><span class="pill p3">Causal DAG</span><span class="pill p4">Evidence grading</span><span class="pill p4">Epistemic infrastructure</span></div>  <h4><a href="https://doi.org/10.1093/aje/kwag029" target="_blank" rel="noopener">Living DAGs: the future of DAGs in epidemiology</a></h4>
+  <p class="cardmeta">Robert J. Reynolds · 2026-07-07</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">American Journal of Epidemiology</span><span class="jbadge jb-cas z2">CAS 2</span><span class="jbadge jb-jcr">JCR Q1</span><span class="jbadge jb-if">IF 4.1</span></div>
+  
+  <div class="foot">
+    <span><span class="stars">★★★★★<span class="off"></span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/reynolds-2026-living-dags/index.html">My deep read</a>      <a href="https://doi.org/10.1093/aje/kwag029" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Living%20DAGs%3A%20the%20future%20of%20DAGs%20in%20epidemiology" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="知识图谱嵌入,电子病历,ICU再入院预测,生物医学本体,MIMIC-III" data-diseases="" data-text="knowledge graph embeddings for icu readmission prediction 用于 icu 再入院预测的知识图谱嵌入 ricardo m. s. carvalho daniela oliveira catia pesquita knowledge graph embeddings electronic health records icu readmission prediction biomedical ontologies mimic-iii  ">
+<div class="pills"><span class="pill p3">Knowledge graph embeddings</span><span class="pill p2">Electronic health records</span><span class="pill p4">ICU readmission prediction</span><span class="pill p0">Biomedical ontologies</span><span class="pill p0">MIMIC-III</span></div>  <h4><a href="https://doi.org/10.1186/s12911-022-02070-7" target="_blank" rel="noopener">Knowledge Graph Embeddings for ICU readmission prediction</a></h4>
+  <p class="cardmeta">Ricardo M. S. Carvalho, Daniela Oliveira, Catia Pesquita · 2026-07-06</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">BMC Medical Informatics and Decision Making</span></div>
+  
+  <div class="foot">
+    <span><span class="stars">★★<span class="off">★★★</span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/carvalho-2023-kg-icu-readmission/index.html">My deep read</a>      <a href="https://doi.org/10.1186/s12911-022-02070-7" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Knowledge%20Graph%20Embeddings%20for%20ICU%20readmission%20prediction" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="知识图谱,大语言模型,信息抽取,主动学习" data-diseases="mental" data-text="large language model powered knowledge graph construction for mental health exploration 大语言模型驱动的心理健康探索知识图谱构建 shan gao kaixian yu yue yang sheng yu chenglong shi xueqin wang niansheng tang hongtu zhu knowledge graph large language models information extraction active learning  精神心理 mental health">
+<div class="pills"><span class="pill p2">Knowledge graph</span><span class="pill p1">Large language models</span><span class="pill p2">Information extraction</span><span class="pill p2">Active learning</span></div>  <h4><a href="https://doi.org/10.1038/s41467-025-62781-z" target="_blank" rel="noopener">Large language model powered knowledge graph construction for mental health exploration</a></h4>
+  <p class="cardmeta">Shan Gao, Kaixian Yu, Yue Yang, Sheng Yu et al. · 2026-07-06</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Nature Communications</span><span class="jbadge jb-cas z1">CAS 1 Top</span><span class="jbadge jb-jcr">JCR Q1</span><span class="jbadge jb-if">IF 18.1</span></div>
+  <div class="dbadges"><span class="dbadge">Mental health</span></div>
+  <div class="foot">
+    <span><span class="stars">★★★★<span class="off">★</span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/gao-2025-mdkg-mental-health/index.html">My deep read</a>      <a href="https://doi.org/10.1038/s41467-025-62781-z" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Large%20language%20model%20powered%20knowledge%20graph%20construction%20for%20mental%20health%20exploration" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="因果推断,DAG构建,协变量选择,混杂调整,偏倚放大" data-diseases="" data-text="synthesizing subject-matter expertise for variable selection in causal effect estimation: a case study 整合领域专家知识开展因果效应估计中的变量选择：一项案例研究 julia debertin javier a. jurado vélez laura corlin bertha hidalgo eleanor j. murray causal inference dag construction covariate selection confounder adjustment bias amplification  ">
+<div class="pills"><span class="pill p0">Causal inference</span><span class="pill p3">DAG construction</span><span class="pill p4">Covariate selection</span><span class="pill p4">Confounder adjustment</span><span class="pill p4">Bias amplification</span></div>  <h4><a href="https://doi.org/10.1097/EDE.0000000000001758" target="_blank" rel="noopener">Synthesizing Subject-matter Expertise for Variable Selection in Causal Effect Estimation: A Case Study</a></h4>
+  <p class="cardmeta">Julia Debertin, Javier A. Jurado Vélez, Laura Corlin, Bertha Hidalgo et al. · 2026-07-06</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Epidemiology</span><span class="jbadge jb-cas z2">CAS 2</span><span class="jbadge jb-jcr">JCR Q1</span><span class="jbadge jb-if">IF 4.4</span></div>
+  
+  <div class="foot">
+    <span><span class="stars">★★★★★<span class="off"></span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/sme-2024-dag-variable-selection/index.html">My deep read</a>      <a href="https://doi.org/10.1097/EDE.0000000000001758" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Synthesizing%20Subject-matter%20Expertise%20for%20Variable%20Selection%20in%20Causal%20Effect%20Estimation%3A%20A%20Case%20Study" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="因果推断,知识图谱,中介分析,药物不良反应,协变量选择" data-diseases="" data-text="causal knowledge graph analysis identifies adverse drug effects 因果知识图谱分析识别药物不良效应 sumyyah toonsi paul n. schofield robert hoehndorf causal inference knowledge graph mediation analysis adverse drug effects covariate selection  ">
+<div class="pills"><span class="pill p0">Causal inference</span><span class="pill p2">Knowledge graph</span><span class="pill p3">Mediation analysis</span><span class="pill p0">Adverse drug effects</span><span class="pill p4">Covariate selection</span></div>  <h4><a href="https://doi.org/10.1093/bioinformatics/btaf661" target="_blank" rel="noopener">Causal knowledge graph analysis identifies adverse drug effects</a></h4>
+  <p class="cardmeta">Sumyyah Toonsi, Paul N. Schofield, Robert Hoehndorf · 2026-07-06</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Bioinformatics</span></div>
+  
+  <div class="foot">
+    <span><span class="stars">★★★★★<span class="off"></span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/toonsi-2025-causal-kg-ade/index.html">My deep read</a>      <a href="https://doi.org/10.1093/bioinformatics/btaf661" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Causal%20knowledge%20graph%20analysis%20identifies%20adverse%20drug%20effects" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card" data-status="read" data-source="mine" data-tags="因果推断,三角验证,孟德尔随机化,工具变量" data-diseases="" data-text="evidence triangulation in health research 健康研究中的证据三角互证 sirena gutierrez m. maria glymour george davey smith causal inference triangulation mendelian randomization instrumental variables  ">
+<div class="pills"><span class="pill p0">Causal inference</span><span class="pill p0">Triangulation</span><span class="pill p3">Mendelian randomization</span><span class="pill p0">Instrumental variables</span></div>  <h4><a href="https://doi.org/10.1007/s10654-024-01194-6" target="_blank" rel="noopener">Evidence triangulation in health research</a></h4>
+  <p class="cardmeta">Sirena Gutierrez, M. Maria Glymour, George Davey Smith · 2026-07-06</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">European Journal of Epidemiology</span><span class="jbadge jb-cas z2">CAS 2</span><span class="jbadge jb-jcr">JCR Q1</span><span class="jbadge jb-if">IF 6.6</span></div>
+  
+  <div class="foot">
+    <span><span class="stars">★★★★★<span class="off"></span></span> <span class="status read">Read</span></span>
+    <span class="cardlinks">
+<a href="../deep/gutierrez-2025-triangulation/index.html">My deep read</a>      <a href="https://doi.org/10.1007/s10654-024-01194-6" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Evidence%20triangulation%20in%20health%20research" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card card--bf" data-status="to-read" data-source="backfill" data-tags="回补" data-diseases="infectious" data-text="causal discovery in sepsis—a (random) walk in the park?  andrew j. admon erin f. carlton 回补 〔自动回补 · 相关度 9/10〕该论文探讨了在脓毒症临床数据中应用因果发现算法（如pc、fci及基于随机游走的图学习方法）构建因果有向无环图（dag）的可行性与挑战。通过模拟与真实数据实验，比较了不同方法在变量选择、结构准确性和计算效率上的表现。主要结论指出，现有因果发现方法在脓毒症高维、异质性数据中仍存在稳定性不足和可解释性差的问题，需结合领域知识或半自动构建策略加以改进。 感染 infectious disease">
+<div class="pills"><span class="pill pill-bf">↩ backfill</span></div>  <h4><a href="https://doi.org/10.1001/jamanetworkopen.2025.27496" target="_blank" rel="noopener">Causal Discovery in Sepsis—A (Random) Walk in the Park?</a></h4>
+<p class="note">〔自动回补 · 相关度 9/10〕该论文探讨了在脓毒症临床数据中应用因果发现算法（如PC、FCI及基于随机游走的图学习方法）构建因果有向无环图（DAG）的可行性与挑战。通过模拟与真实数据实验，比较了不同方法在变量选择、结构准确性和计算效率上的表现。主要结论指出，现有因果发现方法在脓毒症高维、异质性数据中仍存在稳定性不足和可解释性差的问题，需结合领域知识或半自动构建策略加以改进。</p>  <p class="cardmeta">Andrew J. Admon, Erin F. Carlton · 2026-07-07</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">JAMA Network Open</span><span class="jbadge jb-cas z1">CAS 1 Top</span><span class="jbadge jb-jcr">JCR Q1</span><span class="jbadge jb-if">IF 11.7</span></div>
+  <div class="dbadges"><span class="dbadge">Infectious disease</span></div>
+  <div class="foot">
+    <span><span class="stars"><span class="off">★★★★★</span></span> <span class="status to-read">To read</span></span>
+    <span class="cardlinks">
+      <a href="https://doi.org/10.1001/jamanetworkopen.2025.27496" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Causal%20Discovery%20in%20Sepsis%E2%80%94A%20%28Random%29%20Walk%20in%20the%20Park%3F" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card card--bf" data-status="to-read" data-source="backfill" data-tags="因果发现,大语言模型,回补" data-diseases="" data-text="causal discovery from data assisted by large language models  kamyar barakati aleksander molak christopher t. nelson xiaohang zhang ichiro takeuchi sergei v. kalinin causal discovery large language models 回补 〔自动回补 · 相关度 9/10〕该论文提出一种将大语言模型（llm）与数据驱动因果发现相结合的方法，用于从文献中提取领域知识并辅助构建材料科学中的因果有向无环图（dag）。以sm掺杂bifeo3为例，通过chatgpt分析铁电体相关文献，结合高分辨率扫描透射电镜数据，构建了结构、化学与极化自由度之间的因果邻接矩阵。研究旨在建立统一框架，将llm驱动的文献分析与数据驱动发现整合，以指导铁电材料的精确工程化与实验验证。 ">
+<div class="pills"><span class="pill pill-bf">↩ backfill</span><span class="pill p4">Causal discovery</span><span class="pill p1">Large language models</span></div>  <h4><a href="https://doi.org/10.1063/5.0272287" target="_blank" rel="noopener">Causal discovery from data assisted by large language models</a></h4>
+<p class="note">〔自动回补 · 相关度 9/10〕该论文提出一种将大语言模型（LLM）与数据驱动因果发现相结合的方法，用于从文献中提取领域知识并辅助构建材料科学中的因果有向无环图（DAG）。以Sm掺杂BiFeO3为例，通过ChatGPT分析铁电体相关文献，结合高分辨率扫描透射电镜数据，构建了结构、化学与极化自由度之间的因果邻接矩阵。研究旨在建立统一框架，将LLM驱动的文献分析与数据驱动发现整合，以指导铁电材料的精确工程化与实验验证。</p>  <p class="cardmeta">Kamyar Barakati, Aleksander Molak, Christopher T. Nelson, Xiaohang Zhang et al. · 2026-07-07</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Applied Physics Letters</span><span class="jbadge jb-cas z2">CAS 2</span><span class="jbadge jb-jcr">JCR Q2</span><span class="jbadge jb-if">IF 3.8</span></div>
+  
+  <div class="foot">
+    <span><span class="stars"><span class="off">★★★★★</span></span> <span class="status to-read">To read</span></span>
+    <span class="cardlinks">
+      <a href="https://doi.org/10.1063/5.0272287" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Causal%20discovery%20from%20data%20assisted%20by%20large%20language%20models" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card card--bf" data-status="to-read" data-source="backfill" data-tags="因果推断,回补" data-diseases="" data-text="assimilative causal inference  marios andreou nan chen erik bollt causal inference 回补  ">
+<div class="pills"><span class="pill pill-bf">↩ backfill</span><span class="pill p0">Causal inference</span></div>  <h4><a href="https://doi.org/10.1038/s41467-026-68568-0" target="_blank" rel="noopener">Assimilative causal inference</a></h4>
+  <p class="cardmeta">Marios Andreou, Nan Chen, Erik Bollt · 2026-07-07</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Nature Communications</span><span class="jbadge jb-cas z1">CAS 1 Top</span><span class="jbadge jb-jcr">JCR Q1</span><span class="jbadge jb-if">IF 18.1</span></div>
+  
+  <div class="foot">
+    <span><span class="stars"><span class="off">★★★★★</span></span> <span class="status to-read">To read</span></span>
+    <span class="cardlinks">
+      <a href="https://doi.org/10.1038/s41467-026-68568-0" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Assimilative%20causal%20inference" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+<article class="card card--bf" data-status="to-read" data-source="backfill" data-tags="大语言模型,三角验证,因果推断,信息抽取,回补" data-diseases="" data-text="evidence triangulator: using large language models to extract and synthesize causal evidence across study designs  xuanyu shi wenjing zhao ting chen chao yang jian du large language models triangulation causal inference information extraction 回补  ">
+<div class="pills"><span class="pill pill-bf">↩ backfill</span><span class="pill p1">Large language models</span><span class="pill p0">Triangulation</span><span class="pill p0">Causal inference</span><span class="pill p2">Information extraction</span></div>  <h4><a href="https://doi.org/10.1038/s41467-025-62783-x" target="_blank" rel="noopener">Evidence triangulator: using large language models to extract and synthesize causal evidence across study designs</a></h4>
+  <p class="cardmeta">Xuanyu Shi, Wenjing Zhao, Ting Chen, Chao Yang et al. · 2026-07-07</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Nature Communications</span><span class="jbadge jb-cas z1">CAS 1 Top</span><span class="jbadge jb-jcr">JCR Q1</span><span class="jbadge jb-if">IF 18.1</span></div>
+  
+  <div class="foot">
+    <span><span class="stars"><span class="off">★★★★★</span></span> <span class="status to-read">To read</span></span>
+    <span class="cardlinks">
+      <a href="https://doi.org/10.1038/s41467-025-62783-x" target="_blank" rel="noopener">Source ↗</a>
+      <a href="https://scholar.google.com/scholar?q=Evidence%20triangulator%3A%20using%20large%20language%20models%20to%20extract%20and%20synthesize%20causal%20evidence%20across%20study%20designs" target="_blank" rel="noopener">Scholar ↗</a>
+    </span>
+  </div>
+</article>
+</div>
+<div class="empty hidden" id="noresult">Nothing matches.</div>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>My Research Desk · Xuanyu Shi</span>
+    <span>Updated on weekdays · <a href="https://xuanyshi.github.io/research-desk/en/feed.xml">RSS</a></span>
+  </div>
+</footer>
+<script src="../../assets/app.js?v=53362a7aaf"></script></body>
+</html>

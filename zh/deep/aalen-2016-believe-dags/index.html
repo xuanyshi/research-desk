@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>我们能相信 DAG 吗？关于因果 DAG 与机制关系的评论 · 精读 · 我的文献集</title>
+<meta name="description" content="粗时间分辨率会把间接通路压成虚假的直接边，甚至改变效应方向；DAG用于机制解释时必须显式记录时间尺度、采样间隔和反馈结构。">
+<meta property="og:title" content="我们能相信 DAG 吗？关于因果 DAG 与机制关系的评论 · 精读 · 我的文献集">
+<meta property="og:description" content="粗时间分辨率会把间接通路压成虚假的直接边，甚至改变效应方向；DAG用于机制解释时必须显式记录时间尺度、采样间隔和反馈结构。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="我的文献集">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/zh/deep/aalen-2016-believe-dags/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/zh/deep/aalen-2016-believe-dags/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/aalen-2016-believe-dags/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/aalen-2016-believe-dags/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/aalen-2016-believe-dags/">
+<link rel="alternate" type="application/atom+xml" title="我的文献集 · 精读" href="https://xuanyshi.github.io/research-desk/zh/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">我的文献集<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">首页</a>
+      <a href="../../library/index.html" class="">文献库</a>
+      <a href="../../deep/index.html" class="on">精读</a>
+      <a href="../../daily/index.html" class="">每日速览</a>
+      <a href="../../log/index.html" class="">历程</a>
+      <a href="../../about/index.html" class="">关于</a>
+      <span class="lang">
+        <a href="../../../zh/deep/aalen-2016-believe-dags/" class="on">中</a>
+        <a href="../../../en/deep/aalen-2016-believe-dags/" class="">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">我的精读</div>
+  <h1><span class="title-original" lang="en">Can we believe the DAGs? A comment on the relationship between causal DAGs and mechanisms</span><span class="title-zh" lang="zh-CN">我们能相信 DAG 吗？关于因果 DAG 与机制关系的评论</span></h1>
+  <p>Odd O. Aalen, Kjetil Røysland, Jon Michael Gran, Roger Kouyos et al.</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Statistical Methods in Medical Research</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.1177/0962280213520436" target="_blank" rel="noopener">原文 / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=Can%20we%20believe%20the%20DAGs%3F%20A%20comment%20on%20the%20relationship%20between%20causal%20DAGs%20and%20mechanisms" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p3">因果DAG</span><span class="pill p4">连续时间机制</span><span class="pill p4">局部独立图</span><span class="pill p1">时变混杂</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30秒结论</div>
+      <h2 id="overview-title"><strong>粗时间分辨率会把间接通路压成虚假的直接边，甚至改变效应方向</strong>；DAG用于机制解释时必须显式记录时间尺度、采样间隔和反馈结构。</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>研究问题</dt>
+          <dd><strong>将连续时间中的因果机制压缩为少数离散测量后，DAG上的直接边还能否代表真实机制</strong>？</dd>
+        </div>
+        <div>
+          <dt>研究设计</dt>
+          <dd><strong>方法学论证</strong>；以线性随机微分方程定义连续时间机制，结合阿司匹林中介模拟、四节点链模拟和Swiss HIV Cohort Study实例检验离散采样的影响。</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>证据强度</span>
+          <strong class="evidence-level level-mid">中等</strong>
+        </div>
+        <dl>
+          <div><dt>计算对象</dt><dd>连续时间局部独立图、<strong>离散时间</strong>条件依赖、模拟中的中介比例与偏相关，以及717名HAART治疗者的月度、年度和三年度分析。</dd></div>
+          <div><dt>触发条件</dt><dd><strong>理论推导依赖线性动力系统及类似faithfulness的非抵消条件</strong>；模拟知道真实机制，HIV实例变量有限且缺少Zidovudine用药信息。</dd></div>
+          <div><dt>对结论的影响</dt><dd><strong>论文有力说明粗采样可制造直接边，但不能据此否定所有DAG</strong>；结论主要约束无视时间的机制解释和调整策略。</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">阅读建议</strong><strong>先看Figure 4理解局部机制与离散图的差别，再核对Table 1和Figure 6</strong>。附录末尾给出了传递闭包结论的适用条件。</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">三个关键数字</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">17%—23%</div>
+          <h3>阿司匹林模拟的中介比例</h3>
+          <p><strong>真实机制设定为100%经血小板聚集中介</strong>；离散回归却产生约80%的表观直接效应</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">−0.104</div>
+          <h3>四节点链中的偏相关</h3>
+          <p><strong>根因与结局在给定中间变量后的符号转为负，与局部机制方向相反</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">717人</div>
+          <h3>Swiss HIV Cohort实例</h3>
+          <p><strong>月度分析支持RNA→CD4→HEM</strong>；降低到年度和三年度后关系逐渐被抹平</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">重点看哪里</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1177/0962280213520436" target="_blank" rel="noopener">
+            Figure 4 · PDF p. 11<small>原文入口</small> ↗
+          </a>
+          <div><h3>连续机制如何投影成离散DAG</h3><p><strong>上图是局部独立结构，下图显示有限时间间隔上的依赖</strong>；这是全文理论主张的最直观入口。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1177/0962280213520436" target="_blank" rel="noopener">
+            Table 1 · PDF p. 12<small>原文入口</small> ↗
+          </a>
+          <div><h3>检查中介比例为何严重失真</h3><p><strong>比较三种作用速度和两个测量时点，确认粗测量如何产生表观直接效应</strong>。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1177/0962280213520436" target="_blank" rel="noopener">
+            Figure 6 · PDF p. 16<small>原文入口</small> ↗
+          </a>
+          <div><h3>核对真实队列中的时间分辨率效应</h3><p><strong>比较月度、年度和三年度估计，观察RNA→HEM的虚假直接信号如何随采样变粗而出现</strong>。</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">论证路径示意图</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">机制</div>
+            <h3>连续时间动力系统</h3>
+            <p><strong>用矩阵A编码无穷小时刻的局部直接依赖，并允许反馈结构</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">表示</div>
+            <h3>局部独立图</h3>
+            <p>将连续过程中的直接影响与<strong>条件独立</strong>关系表示为机制图。</p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">采样</div>
+            <h3>离散时间投影</h3>
+            <p><strong>有限间隔依赖由矩阵指数决定，可为机制图中所有可达节点补出直接边</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">模拟</div>
+            <h3>中介与四节点链</h3>
+            <p><strong>检验表观直接效应、中介比例失真和符号反转</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">实例</div>
+            <h3>Swiss HIV Cohort</h3>
+            <p><strong>在同一队列中降低时间分辨率，观察通路信息丢失和直接边出现</strong>。</p>
+          </li>
+        </ol>
+        <figcaption><strong>根据PDF正文、Figure 4、Table 1和Figure 6整理</strong>；箭头表示分析顺序。</figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">完整精读</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>真实因果是连续时间里的机制，DAG 却建在稀疏的离散观测上。 采样一粗，DAG 会凭空长出并不存在的直接箭头，退化成底层机制图的传递闭包。 对正在造 DAG 工具的人，这是该先读的一盆冷水。</p>
+</blockquote>
+<h2>作者团队</h2>
+<p>第一作者 Odd O. Aalen 是奥斯陆大学医学统计学教授，以 Aalen 加性风险模型与生存分析闻名；他与同校生物统计系的 Røysland、Gran 长期发展连续时间随机过程的因果推断，正对应本文对离散 DAG 的反思。</p>
+<h2>解决什么问题</h2>
+<p><strong>因果 DAG</strong> 是流行病学的通用语言：画节点、连箭头、用 d-分离和后门准则判断效应能否识别。可节点到底是什么？多数应用里，节点是某个量在某个时点的一次测量。真实机制则可能在连续时间中运行，例如阿司匹林持续抑制血小板聚集，HAART 持续压低病毒载量。</p>
+<p>作者直接追问：把连续过程在几个离散时点上采样再画 DAG，这张图还能对应底层机制吗？答案通常是否定的，而且图本身不会提示失真发生在哪里。论文保留 DAG 在识别<strong>选择偏倚</strong>和混杂方面的用途，批评集中在用离散 DAG 表示连续机制。</p>
+<h2>怎么做的</h2>
+<p>核心动作是把机制显式写成<strong>连续时间动力系统</strong>，再看它在离散采样下投影成什么。他们用线性随机微分方程 dX=[A(μ−X)+a]dt+σdW 当真机制，矩阵 A 的非对角元编码谁直接影响谁：A_ij=0 即 X_i 对 X_j 局部独立。这套"局部独立图"是把贝叶斯网络的条件独立搬进连续时间的自然推广，用鞅论定义，还能装下 DAG 装不下的东西：反馈环（CD4 既被治疗影响、又决定何时开始治疗，两条反向箭头，根本不无环）。</p>
+<p><strong>关键是 A 与它的矩阵指数 e^{−tA} 的区别</strong>。A 是无穷小时刻的局部依赖，e^{−tA} 是长度 t 的离散区间上的依赖，两者不是一回事。只要采样间隔不无穷小，局部动态就被"抹开"：本来 E→M→D 的链，只在 0 和 t 两点看，回归就报出一条 E→D 直接效应。</p>
+<p><strong>附录把这做成一般命题：离散 DAG 是局部独立图的传递闭包，机制图上凡可达的点，离散 DAG 上都连一条直接箭头</strong>。离散化不是让你看不清，是主动往图里塞假的直接边。所倚赖的假设与 faithfulness 同路：两条间接路径不刚好抵消。</p>
+<h2>关键结果</h2>
+<p>阿司匹林那组模拟最扎心。真机制是全部效应过血小板聚集（100% 中介），但在离散观测上做<strong>中介分析</strong>，setup 1 报出的中介比例只有 17%–23%，凭空冒出近 80% 的"直接效应"。更反直觉：治疗对中介越慢，估出的中介比例反而越接近真相（setup 2 为 56%–74%，setup 3 到 60%–92%），作者自己都说没料到，快速起效的阿司匹林给出最差的图。</p>
+<p>第二个模拟更狠：真机制是 X1→X2→X3→X4 一条链，离散回归却给根因 X1 估出负系数（偏相关 −0.104），方向反了，照此干预就是错的。真实数据也复现：瑞士 HIV 队列用月度数据能干净还原 RNA→CD4→HEM、无 RNA→HEM 直接边；一降到年度、三年度分辨率，链被抹开，假的直接边冒出来。顺带一个推论：暴露若是连续过程，<strong>工具变量</strong>的排他性约束会破，IV 估计有偏。</p>
+<h2>证据有多硬</h2>
+<p><strong>这是评论、警示文，边界要看清</strong>。第一，"真机制是线性 SDE"这前提在扛大梁；真实机制通常非线性，作者也承认线性只为能算，好在"离散化填箭头"这个定性结论对非线性大体稳健。第二，传递闭包挂在类 faithfulness 假设上，且作者反复强调这"主要是粗离散化的问题"，细采样能还原结构。</p>
+<p><strong>所以被批的不是 DAG 本身，是粗采样上、无视时间的那种朴素用法</strong>。第三，他们最后开的药方（连续时间里定义一串 DAG、动态路径模型、可加危险度模型）本质仍是 DAG，只是把时间显式放进去，与 Hernán–Robins 的时变 DAG、g 方法同路。所以标题比内容挑衅，答案其实是"尊重时间和采样就能信"。</p>
+<p><strong>第四，模拟里他们能拿到真 A，现实拿不到</strong>；批评的力度因此取决于"连续时间机制"是否是对现实的正确刻画，若某些现象本就由离散决策点驱动，这刀砍得就轻。</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="本页导航">
+    <div class="deep-toc-title">本页导航</div>
+    <a href="#overview" class="is-main">30秒结论</a>
+    <a href="#key-numbers">三个关键数字</a>
+    <a href="#where-to-focus">重点看哪里</a>
+    <a href="#study-design">论证路径示意图</a>
+    <a href="#full-read">完整精读</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← 回精读列表</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>我的文献集 · Xuanyu Shi</span>
+    <span>每个工作日更新一次 · <a href="https://xuanyshi.github.io/research-desk/zh/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

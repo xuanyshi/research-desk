@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>因果推断中多重偏倚的系统识别与分析路线图 · 精读 · 我的文献集</title>
+<meta name="description" content="先用理想试验和DAG列出主分析假设，再建立含未测变量、误测和选择过程的联合模型。模拟中同时分析的相对偏倚为5.3%，主分析为52.8%，逐个分析均超过20%。">
+<meta property="og:title" content="因果推断中多重偏倚的系统识别与分析路线图 · 精读 · 我的文献集">
+<meta property="og:description" content="先用理想试验和DAG列出主分析假设，再建立含未测变量、误测和选择过程的联合模型。模拟中同时分析的相对偏倚为5.3%，主分析为52.8%，逐个分析均超过20%。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="我的文献集">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/zh/deep/wijesuriya-2026-multiple-bias-roadmap/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/zh/deep/wijesuriya-2026-multiple-bias-roadmap/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/wijesuriya-2026-multiple-bias-roadmap/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/wijesuriya-2026-multiple-bias-roadmap/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/wijesuriya-2026-multiple-bias-roadmap/">
+<link rel="alternate" type="application/atom+xml" title="我的文献集 · 精读" href="https://xuanyshi.github.io/research-desk/zh/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">我的文献集<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">首页</a>
+      <a href="../../library/index.html" class="">文献库</a>
+      <a href="../../deep/index.html" class="on">精读</a>
+      <a href="../../daily/index.html" class="">每日速览</a>
+      <a href="../../log/index.html" class="">历程</a>
+      <a href="../../about/index.html" class="">关于</a>
+      <span class="lang">
+        <a href="../../../zh/deep/wijesuriya-2026-multiple-bias-roadmap/" class="on">中</a>
+        <a href="../../../en/deep/wijesuriya-2026-multiple-bias-roadmap/" class="">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">我的精读</div>
+  <h1><span class="title-original" lang="en">Roadmap for systematic identification and analysis of multiple biases in causal inference</span><span class="title-zh" lang="zh-CN">因果推断中多重偏倚的系统识别与分析路线图</span></h1>
+  <p>Rushani Wijesuriya, Rachael Hughes, John Carlin, Rachel L Peters et al.</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">American Journal of Epidemiology</span><span class="jbadge jb-cas z2">中科院2区</span><span class="jbadge jb-jcr">JCR Q1</span><span class="jbadge jb-if">IF 4.1</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.1093/aje/kwag166" target="_blank" rel="noopener">原文 / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=Roadmap%20for%20systematic%20identification%20and%20analysis%20of%20multiple%20biases%20in%20causal%20inference" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p0">因果推断</span><span class="pill p3">因果DAG</span><span class="pill p4">定量偏倚分析</span><span class="pill p0">多重偏倚分析</span><span class="pill p4">概率偏倚分析</span><span class="pill p0">选择偏倚</span><span class="pill p0">测量误差</span><span class="pill p2">专家启发</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30秒结论</div>
+      <h2 id="overview-title"><strong>先用理想试验和DAG列出主分析假设，再建立含未测变量、误测和选择过程的联合模型</strong>。模拟中同时分析的相对偏倚为5.3%，主分析为52.8%，逐个分析均超过20%。</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>研究问题</dt>
+          <dd>选择、混杂和测量偏倚同时存在时，如何从隐含假设出发进行<strong>联合定量偏倚分析</strong>？</dd>
+        </div>
+        <div>
+          <dt>研究设计</dt>
+          <dd><strong>三步方法路线图</strong>；用5,279名HealthNuts婴儿的母乳喂养—哮喘案例和1,000个模拟数据集，比较同时校正与逐个偏倚分析。</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>证据强度</span>
+          <strong class="evidence-level level-mid">中等</strong>
+        </div>
+        <dl>
+          <div><dt>计算对象</dt><dd><strong>理想试验组件、主与替代DAG、HealthNuts案例的偏倚参数模型、1,000次概率抽样与bootstrap</strong>，以及已知真值模拟。</dd></div>
+          <div><dt>触发条件</dt><dd><strong>联合分析有效依赖替代DAG、偏倚模型和外部参数分布正确</strong>；参数多不可由主数据识别，案例估计差异较小，模拟结构也较简化。</dd></div>
+          <div><dt>对结论的影响</dt><dd><strong>当多个偏倚存在依赖或方向相反时，逐个敏感性分析可能误导</strong>；联合结果仍应作为条件于模型与参数的敏感性范围。</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">阅读建议</strong><strong>按Figure 1、Figure 3、Figure 4顺序阅读三步路线图，再看Table 5的模拟</strong>。重点记录每个偏倚参数的条件集、来源和对最终估计的实际影响。</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">三个关键数字</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">5,279名</div>
+          <h3>HealthNuts案例婴儿</h3>
+          <p><strong>用于评估母乳喂养对哮喘风险的主分析与联合偏倚分析</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">1,000 × 1,000</div>
+          <h3>概率抽样与bootstrap</h3>
+          <p><strong>案例中同时传播偏倚参数不确定性和抽样变异</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">5.3% vs 52.8%</div>
+          <h3>模拟相对偏倚</h3>
+          <p><strong>同时分析与未校正主分析相比</strong>；逐个偏倚分析均超过20%</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">重点看哪里</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1093/aje/kwag166" target="_blank" rel="noopener">
+            Figure 1与Table 1 · PDF pp. 5–6<small>原文入口</small> ↗
+          </a>
+          <div><h3>把主分析拆成理想试验与识别假设</h3><p><strong>第一步逐项对照入选、干预、分配、随访和结局测量，明确每个观察性替代所需条件</strong>。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1093/aje/kwag166" target="_blank" rel="noopener">
+            Figure 3 · PDF pp. 6–7<small>原文入口</small> ↗
+          </a>
+          <div><h3>查看多个偏倚如何共同进入DAG</h3><p><strong>替代图同时表示可推广性、失访选择、未测妊娠高血压混杂，以及暴露和结局误测</strong>。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1093/aje/kwag166" target="_blank" rel="noopener">
+            Figure 4与Table 5 · PDF pp. 9–11<small>原文入口</small> ↗
+          </a>
+          <div><h3>比较联合校正与逐个校正</h3><p><strong>案例差异较小，模拟中联合方法接近真值而逐个方法均保留实质偏倚</strong>。</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">联合定量偏倚分析路线图</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">步骤1</div>
+            <h3>定义理想试验与估计量</h3>
+            <p><strong>逐项写清人群、干预版本、分配、随访和结局测量</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">步骤2</div>
+            <h3>绘制主与替代DAG</h3>
+            <p>标出选择、<strong>未测混杂</strong>、误测及其相互依赖。</p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">参数</div>
+            <h3>为偏倚模型指定分布</h3>
+            <p><strong>从验证研究、领域文献和专家判断获取条件参数及不确定性</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">步骤3</div>
+            <h3>联合填补、加权与回归</h3>
+            <p><strong>同时生成真实变量、选择权重和结局估计，保留DAG编码的依赖</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">输出</div>
+            <h3>传播两类不确定性</h3>
+            <p><strong>概率抽样传播参数不确定性，bootstrap传播主数据抽样变异</strong>。</p>
+          </li>
+        </ol>
+        <figcaption><strong>依据PDF Figures 1–4和Tables 1–5整理</strong>。</figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">完整精读</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>先用理想试验和 DAG 把隐含假设逐项翻出来，再把选择、混杂和测量偏倚放进同一个定量模型；逐个做敏感性分析可能给出错的总判断。</p>
+</blockquote>
+<h2>作者团队</h2>
+<p>Rushani Wijesuriya 和 Margarita Moreno-Betancur 所在的墨尔本 Murdoch Children's Research Institute 临床流行病学与生物统计学单元牵头，合作者来自 University of Melbourne、University of Bristol MRC Integrative Epidemiology Unit 和 University of Queensland。文章于 2026 年 7 月 16 日在 American Journal of Epidemiology 在线发表，目前是 accepted manuscript。</p>
+<h2>解决什么问题</h2>
+<p><strong>观察性因果分析同时依赖可交换性、一致性、阳性和测量等假设</strong>。常见做法先挑一个偏倚来算，其余假设仍藏在主分析里；几个偏倚分别算一遍，每次也默认其他偏倚不存在。偏倚可能相关、方向也可能相反，单项结果无法回答叠加后的效应量。</p>
+<h2>怎么做的</h2>
+<p><strong>路线图有三步</strong>。第一步的【计算对象】是理想试验的入选人群、干预、分配、随访和结局测量；观察性数据无法完整仿真某一项时，【触发条件】是相应识别假设必须成立，【结论影响】是把笼统的“无偏”拆成可核查条件，并尽量画进主分析 DAG。第二步加入有根据的替代假设。</p>
+<p>HealthNuts 案例研究 5,279 名婴儿；替代图纳入英语能力和同意造成的可推广性偏倚、结局失访形成的对撞<strong>选择偏倚</strong>、未测量妊娠高血压造成的混杂，以及父母报告母乳喂养和哮喘带来的测量误差。</p>
+<p>第三步的【计算对象】是含真实暴露、结局、<strong>未测混杂</strong>和选择过程的理想联合分布。替代图提示变量依赖时，【触发条件】是不能再按单个偏倚独立计算；作者据图设 logistic 偏倚模型，抽样填补未观测变量，计算选择权重，再做加权结局回归。【结论影响】是每次 Monte Carlo 抽样产生一个联合调整估计，并用参数分布和 bootstrap 计算区间。</p>
+<h2>关键结果</h2>
+<p><strong>案例分析用了 1,000 次概率抽样和 1,000 次 bootstrap</strong>。联合调整后的母乳喂养风险差约为 -0.10，主分析约为 -0.05；各区间大量重叠，作者据此只说联合调整给出稍强的保护关联。证明性模拟更能说明问题：1,000 个样本量 2,000 的数据集，真实风险比为 0.51。</p>
+<p>联合分析的平均 log 风险比为 -0.70，相对偏倚 5.3%，95% 区间覆盖率 0.92；主分析平均值 -0.32，相对偏倚 52.8%。所有逐一偏倚分析的相对偏倚都超过 20%，其中只校正结局<strong>测量误差</strong>的估计甚至翻到 2.60。</p>
+<h2>证据有多硬</h2>
+<p><strong>文章把【假设清单、替代 DAG、联合定量分析】完整跑了一遍，并公开代码</strong>。判据清楚：估计量与已知真实 log 风险比相比，相对偏倚低于 10% 时近似无偏，超过 20% 会实质偏离目标。结果依赖替代 DAG、偏倚模型和参数分布设对；参数不能由主数据识别，部分以边际文献值近似条件参数，部分来自专家判断。</p>
+<p><strong>模拟仅覆盖一个简化结构和二元变量</strong>。DAG 也画不全所有测量与可推广性问题。案例中各结果差别很小，模拟优势尚需更多误设情形和真实数据复现。当前 accepted manuscript 还可能修订。</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="本页导航">
+    <div class="deep-toc-title">本页导航</div>
+    <a href="#overview" class="is-main">30秒结论</a>
+    <a href="#key-numbers">三个关键数字</a>
+    <a href="#where-to-focus">重点看哪里</a>
+    <a href="#study-design">联合定量偏倚分析路线图</a>
+    <a href="#full-read">完整精读</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← 回精读列表</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>我的文献集 · Xuanyu Shi</span>
+    <span>每个工作日更新一次 · <a href="https://xuanyshi.github.io/research-desk/zh/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

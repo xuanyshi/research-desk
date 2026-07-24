@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Large language model powered knowledge graph construction for mental health exploration · Deep reads · My Research Desk</title>
+<meta name="description" content="MDKG demonstrates substantial engineering scale and human-review utility, reaching about 1.64 million entities and 10.7 million relations after fusion while reducing review time. The evidence supports a data resource and hypothesis-generation role, not validated causal discovery or clinical deployment.">
+<meta property="og:title" content="Large language model powered knowledge graph construction for mental health exploration · Deep reads · My Research Desk">
+<meta property="og:description" content="MDKG demonstrates substantial engineering scale and human-review utility, reaching about 1.64 million entities and 10.7 million relations after fusion while reducing review time. The evidence supports a data resource and hypothesis-generation role, not validated causal discovery or clinical deployment.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="My Research Desk">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/en/deep/gao-2025-mdkg-mental-health/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/en/deep/gao-2025-mdkg-mental-health/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/gao-2025-mdkg-mental-health/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/gao-2025-mdkg-mental-health/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/gao-2025-mdkg-mental-health/">
+<link rel="alternate" type="application/atom+xml" title="My Research Desk · Deep reads" href="https://xuanyshi.github.io/research-desk/en/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">My Research Desk<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">Home</a>
+      <a href="../../library/index.html" class="">Library</a>
+      <a href="../../deep/index.html" class="on">Deep reads</a>
+      <a href="../../daily/index.html" class="">Daily</a>
+      <a href="../../log/index.html" class="">Log</a>
+      <a href="../../about/index.html" class="">About</a>
+      <span class="lang">
+        <a href="../../../zh/deep/gao-2025-mdkg-mental-health/" class="">中</a>
+        <a href="../../../en/deep/gao-2025-mdkg-mental-health/" class="on">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">My deep read</div>
+  <h1>Large language model powered knowledge graph construction for mental health exploration</h1>
+  <p>Shan Gao, Kaixian Yu, Yue Yang, Sheng Yu et al.</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Nature Communications</span><span class="jbadge jb-cas z1">CAS 1 Top</span><span class="jbadge jb-jcr">JCR Q1</span><span class="jbadge jb-if">IF 18.1</span></div>
+  <div class="dbadges"><span class="dbadge">Mental health</span></div>
+  <p class="deep-links">
+    <a href="https://doi.org/10.1038/s41467-025-62781-z" target="_blank" rel="noopener">Source / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=Large%20language%20model%20powered%20knowledge%20graph%20construction%20for%20mental%20health%20exploration" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p2">Knowledge graph</span><span class="pill p1">Large language models</span><span class="pill p2">Information extraction</span><span class="pill p2">Active learning</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30-second read</div>
+      <h2 id="overview-title">MDKG demonstrates substantial <strong>engineering scale and human-review utility</strong>, reaching about 1.64 million entities and 10.7 million relations after fusion while reducing review time. The evidence supports a data resource and hypothesis-generation role, <strong>not validated causal discovery or clinical deployment</strong>.</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>Question</dt>
+          <dd>Can LLMs, active learning, and multi-source fusion build a <strong>contextualized mental-health knowledge graph</strong> with limited manual annotation and improve expert review and disease prediction?</dd>
+        </div>
+        <div>
+          <dt>Design</dt>
+          <dd>A system-construction and validation study using <strong>about 234,000 PubMed abstracts</strong> and multiple biomedical databases, followed by annotation, joint entity–relation extraction, LLM refinement, entity alignment, graph fusion, and downstream prediction in UK Biobank.</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>Evidence strength</span>
+          <strong class="evidence-level level-mid">Moderate</strong>
+        </div>
+        <dl>
+          <div><dt>What was assessed</dt><dd>Joint-extraction F1, graph size, expert-rated correctness and review time, and AUCs for EHR, KG, and EHR+KG models in UK Biobank.</dd></div>
+          <div><dt>Downgrade triggers</dt><dd>Extraction is limited to <strong>abstract-level, sentence-level evidence</strong>; GPT-4o participates in both refinement and judgment without an independent recall audit; inter-rater agreement is low; downstream prediction is primarily internally evaluated in UK Biobank.</dd></div>
+          <div><dt>Impact on interpretation</dt><dd>The results support <strong>pipeline feasibility, graph coverage, and review efficiency</strong>. Relation validity, external generalizability, causal direction, and clinical utility still require independent datasets and human gold standards.</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">Reading advice</strong>Read in the order <strong>system architecture → training and refinement → human evaluation → downstream validation</strong>, then separately inspect the computational definition of the paper&#39;s “causal KG.”</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">Three numbers to keep</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">About 10.7M</div>
+          <h3>Relations after fusion</h3>
+          <p>The graph also contains <strong>about 1.64 million entities</strong>; scale does not mean that every relation was independently validated</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">31 s</div>
+          <h3>Review time per triplet</h3>
+          <p>129 s for PrimeKG and 85 s for GENA, a reported <strong>62%–77% reduction</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">AUC 0.89</div>
+          <h3>EHR+KG prediction for MDD</h3>
+          <p>XGBoost reached 0.82 with EHR alone and 0.71 with KG alone; the gain still requires <strong>external validation</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">Where to focus</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://www.nature.com/articles/s41467-025-62781-z#Fig1" target="_blank" rel="noopener">
+            Figure 1<small>Direct Nature figure</small> ↗
+          </a>
+          <div><h3>Start with the system architecture</h3><p>Trace the data flow across <strong>literature extraction, database fusion, contextualization, and applications</strong>, and see how flat triplets are extended with conditional and population information.</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://www.nature.com/articles/s41467-025-62781-z#Fig6" target="_blank" rel="noopener">
+            Figure 6<small>Direct Nature figure</small> ↗
+          </a>
+          <div><h3>Then inspect annotation and extraction</h3><p>Separate the roles of <strong>active-learning sampling, SpERT.PL joint extraction, CODER++ encoding, and GPT-4o refinement</strong>, rather than attributing final F1 to a single model.</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://www.nature.com/articles/s41467-025-62781-z#Fig4" target="_blank" rel="noopener">
+            Figure 4<small>Direct Nature figure</small> ↗
+          </a>
+          <div><h3>Check the strength of human evaluation</h3><p>Compare <strong>correctness, insightfulness, review time, coverage, and rater agreement</strong>. Efficiency gains are clearer than correctness estimates when agreement is low.</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://www.nature.com/articles/s41467-025-62781-z#Fig5" target="_blank" rel="noopener">
+            Figure 5<small>Direct Nature figure</small> ↗
+          </a>
+          <div><h3>Finish with downstream prediction</h3><p>Compare the <strong>model workflow, AUC, and SHAP results</strong> for EHR, KG, and EHR+KG inputs to assess whether graph embeddings add information beyond clinical history.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">Computational pipeline at a glance</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">Inputs</div>
+            <h3>Literature and databases</h3>
+            <p>Conditions were selected from GBD 2019, yielding <strong>about 234,000 PubMed abstracts</strong>, then supplemented with DrugBank, DisGeNET, UMLS, MONDO, and other resources.</p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">Annotation</div>
+            <h3>Pre-labeling and active learning</h3>
+            <p>BERN2, QuickUMLS, and GPT-4 generated candidates; <strong>uncertainty and relation-type diversity</strong> selected 500 abstracts for manual refinement.</p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">Extraction</div>
+            <h3>Joint model plus LLM refinement</h3>
+            <p>SpERT.PL with CODER++ and NoisyTune extracted entities and relations; GPT-4o reviewed spans, types, relations, and conflicting triplets.</p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">Graph building</div>
+            <h3>Alignment, fusion, and context</h3>
+            <p>SapBERT plus FAISS aligned entities above <strong>0.9 similarity</strong>; conditions, populations, provenance, and confidence were retained on edges.</p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">Validation</div>
+            <h3>Human review and prediction</h3>
+            <p>Experts compared correctness and review time; RDF2vec created <strong>200-dimensional history embeddings</strong> for prediction of three mental disorders in UK Biobank.</p>
+          </li>
+        </ol>
+        <figcaption>Redrawn from the Methods and Figures 1 and 6; arrows indicate processing order, not causal direction.</figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">Full deep read</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>GPT-4 plus active learning pulls context-tagged triplets from PubMed abstracts, then a dozen databases are fused in, yielding <strong>MDKG, a 10M-relation contextualized mental-disorders knowledge graph</strong> that cuts expert review time and lifts disease prediction on the UK Biobank.</p>
+</blockquote>
+<h2>The authors</h2>
+<p>This is a multi-institution biostatistics collaboration. Shan Gao is the first author, and Hongtu Zhu is the last author; Kaixian Yu and Yue Yang contributed to the model and data work.</p>
+<p>Hongtu Zhu works on UK Biobank-scale imaging genetics and big-data integration. Sheng Yu focuses on medical NLP and biomedical knowledge graphs, while Xueqin Wang works on statistical learning.</p>
+<h2>The problem</h2>
+<p>Evidence on mental disorders is distributed across hundreds of thousands of papers and many databases, making comprehensive manual review impractical. High-burden conditions such as schizophrenia and bipolar disorder still lack sufficiently comprehensive public disease-specific knowledge graphs.</p>
+<p>Existing biomedical KGs have two recurring limitations. Training data are expensive, which restricts graph scale. Flat triplets also discard conditions such as “women only,” “early-stage MDD,” and study sample size, leaving the same edge difficult to interpret across populations.</p>
+<p>The study therefore aimed to increase graph scale while retaining the conditions, populations, provenance, and confidence attached to each relation.</p>
+<h2>The approach</h2>
+<p>Two lines: literature extraction, and database fusion.</p>
+<p>The literature pipeline combines LLMs with active learning. Keywords were derived from high-burden conditions in GBD 2019, yielding 234,087 PubMed articles. BERN2 and QuickUMLS pre-labeled entities, while GPT-4 added noun phrases for methods and physiological processes. A two-step prompt first determined whether a sentence expressed a target relation and then returned the corresponding entity pair.</p>
+<p>Active learning reduced the relation-labeling burden. Candidate sentences were encoded with the extractor's [CLS] token and clustered with weighted K-means, using cross-entropy uncertainty as the weight. Clusters were prioritized by uncertainty and relation-type diversity. Manual refinement of 500 abstracts supplied additional examples for rare relations such as risk.</p>
+<p>Production extraction used SpERT.PL with the UMLS-pretrained CODER++ encoder and NoisyTune. GPT-4o then checked entity spans, types, and relations and assigned a score from 1 to 10; outputs below 5 were reprocessed. For contradictory triplets, the full abstract was used to determine whether the conflict represented genuinely different conclusions or an extraction error.</p>
+<p>Each literature triplet carries three context layers. These comprise 283,417 conditional statements, seven study-population fields such as age, sex, race, and sample size, and side information such as provenance and confidence.</p>
+<p>Population characteristics were extracted from PDF/XML tables using ChatGPT question answering, PaddleOCR, and pdfplumber. The confidence score combined model output, journal impact, cross-source frequency, publication year, and contradiction counts; it supports ranking and review but does not establish relation validity.</p>
+<p>The database-fusion pipeline covered DrugBank, DisGeNET, UMLS, MONDO, and other sources. Each source was assessed by origin, generation method, evidence strength, and update frequency before entity alignment with SapBERT embeddings and FAISS retrieval.</p>
+<p>Candidate entity pairs above 0.9 cosine similarity were merged. Because crossing this threshold changes node counts, connectivity, and downstream paths, alignment errors directly affect graph structure.</p>
+<p>Downstream, MDKG served as external knowledge for prediction in UK Biobank. Entities were mapped through SapBERT to ICD-10 and then to PheCodes, reducing feature dimensionality by about 75%.</p>
+<p>RDF2vec generated graph embeddings, and each participant's history was summarized as a 200-dimensional vector. LR, RF, SVM, and XGBoost models predicted MDD, anxiety, and bipolar disorder in 1:2 case-control samples using history from 1–7 years before diagnosis.</p>
+<h2>Key results</h2>
+<p>The literature graph contains 236,542 entities and 1,913,461 triplets, with 880,692 unique relations after normalization. After multi-source fusion, MDKG contains <strong>1,642,543 entities and 10,702,976 relations</strong>, including nearly one million relations absent from the comparison resources.</p>
+<p>For MDD, anxiety, bipolar disorder, schizophrenia, and depression, MDKG contains <strong>5–50 times</strong> as much relevant information as PrimeKG, SPOKE, and GENA. NER micro/macro F1 is <strong>0.89/0.88</strong>, and joint NER+RE reaches <strong>0.79/0.76</strong> after refinement.</p>
+<p>Four experts, including two psychiatrists and two medical PhDs, rated MDKG at <strong>0.79 correctness</strong>, slightly above GENA's 0.783. Errors were more often attributed to semantic ambiguity (28%) than factual error (12%).</p>
+<p>Context shortened review time. A clinician spent an average of <strong>31 s per MDKG triplet</strong>, compared with 129 s for PrimeKG and 85 s for GENA, a <strong>62%–77% reduction</strong>. The confidence score correlated 0.78 with human insightfulness ratings.</p>
+<p>GENA nevertheless scored higher on insightfulness (2.29 versus 2.18). One explanation offered by the authors is MDKG's inclusion of older textbook-like evidence; 24.34% of its schizophrenia triplets predate 2010.</p>
+<p>All three disease-prediction tasks improved after KG embeddings were added. For MDD, <strong>XGBoost with EHR+KG reached an AUC of 0.89</strong>, compared with 0.82 for EHR alone and 0.71 for KG alone. In the environment-only setting, adding KG information increased SVM AUC from 0.57 to 0.78.</p>
+<p>For bipolar disorder, LR increased from 0.70 with KG alone to 0.87 in the integrated model. Overall AUC gains ranged from <strong>0.02 to 0.21</strong> and were larger when the original feature set was sparse. Several embedding dimensions ranked highly in SHAP analysis, although their clinical meaning remains unclear.</p>
+<h2>How solid is the evidence</h2>
+<p>Extraction is limited to <strong>sentence-level evidence in abstracts</strong>; full text, tables, and figures are not systematically covered. Standalone RE F1 is 0.68 and raw joint-extraction F1 is 0.63. The higher post-refinement results depend substantially on GPT-4o, with <strong>no independent human recall audit</strong> of deleted triplets.</p>
+<p>The 0.79 correctness score assesses whether a triplet matches its source sentence. It measures source fidelity rather than the reliability of the source conclusion. Cross-disciplinary rater <strong>kappa was 0.04</strong>, which weakens interpretation of the point estimate.</p>
+<p>The paper's “causal graph” chains risk relations into directed paths with <strong>no confounding adjustment, intervention semantics, or counterfactual identification</strong>. The eight-step glutamate-to-depression path is suitable for hypothesis generation, not for interpreting an identified causal effect.</p>
+<p>Downstream prediction was primarily internal to UK Biobank, whose population is disproportionately White and socially advantaged. External validity is therefore limited. AUC gains varied across models and conditions, the 200-dimensional embeddings lacked clinical interpretability, and synonym or abbreviation errors could still impair entity alignment and graph connectivity.</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="On this page">
+    <div class="deep-toc-title">On this page</div>
+    <a href="#overview" class="is-main">30-second read</a>
+    <a href="#key-numbers">Three numbers to keep</a>
+    <a href="#where-to-focus">Where to focus</a>
+    <a href="#study-design">Computational pipeline at a glance</a>
+    <a href="#full-read">Full deep read</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← Back to deep reads</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>My Research Desk · Xuanyu Shi</span>
+    <span>Updated on weekdays · <a href="https://xuanyshi.github.io/research-desk/en/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

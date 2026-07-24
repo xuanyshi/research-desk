@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CLADDER: Assessing Causal Reasoning in Language Models · Deep reads · My Research Desk</title>
+<meta name="description" content="GPT-4 rises from 62.03% to 70.40%, with higher rungs still harder. Models reconstruct graphs well but fail at query or estimand recognition and formal inference.">
+<meta property="og:title" content="CLADDER: Assessing Causal Reasoning in Language Models · Deep reads · My Research Desk">
+<meta property="og:description" content="GPT-4 rises from 62.03% to 70.40%, with higher rungs still harder. Models reconstruct graphs well but fail at query or estimand recognition and formal inference.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="My Research Desk">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/en/deep/jin-2023-cladder/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/en/deep/jin-2023-cladder/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/jin-2023-cladder/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/jin-2023-cladder/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/jin-2023-cladder/">
+<link rel="alternate" type="application/atom+xml" title="My Research Desk · Deep reads" href="https://xuanyshi.github.io/research-desk/en/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">My Research Desk<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">Home</a>
+      <a href="../../library/index.html" class="">Library</a>
+      <a href="../../deep/index.html" class="on">Deep reads</a>
+      <a href="../../daily/index.html" class="">Daily</a>
+      <a href="../../log/index.html" class="">Log</a>
+      <a href="../../about/index.html" class="">About</a>
+      <span class="lang">
+        <a href="../../../zh/deep/jin-2023-cladder/" class="">中</a>
+        <a href="../../../en/deep/jin-2023-cladder/" class="on">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">My deep read</div>
+  <h1>CLADDER: Assessing Causal Reasoning in Language Models</h1>
+  <p>Zhijing Jin, Yuen Chen, Felix Leeb, Luigi Gresele et al.</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Advances in Neural Information Processing Systems 36 (NeurIPS 2023)</span></div>
+  
+  <p class="deep-links">
+    <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/631bb9434d718ea309af82566347d607-Abstract-Conference.html" target="_blank" rel="noopener">Source / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=CLADDER%3A%20Assessing%20Causal%20Reasoning%20in%20Language%20Models" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p1">Large language models</span><span class="pill p1">Causal reasoning</span><span class="pill p1">CLADDER</span><span class="pill p1">Counterfactuals</span><span class="pill p1">Benchmarking</span><span class="pill p3">Chain of thought</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30-second read</div>
+      <h2 id="overview-title">GPT-4 rises from 62.03% to 70.40%, with higher rungs still harder. Models reconstruct graphs well but fail at <strong>query or estimand recognition and formal inference</strong>.</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>Question</dt>
+          <dd>Can LLMs convert natural-language causal questions into correct <strong>associational, interventional, and counterfactual inference</strong> rather than rely on commonsense patterns?</dd>
+        </div>
+        <div>
+          <dt>Design</dt>
+          <dd>A synthetic benchmark using graphs and an inference engine to generate about 10,000 questions with ground truth, comparing models and <strong>six-step CausalCoT</strong> across commonsense, nonsensical, and anti-commonsense contexts.</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>Evidence strength</span>
+          <strong class="evidence-level level-mid">Moderate</strong>
+        </div>
+        <dl>
+          <div><dt>What was assessed</dt><dd><strong>Final answers and six intermediate reasoning stages for 10,112 closed-world questions</strong>, with truth generated by a symbolic causal engine.</dd></div>
+          <div><dt>Downgrade triggers</dt><dd>Commonsense shortcuts should fail in anti-commonsense contexts; CausalCoT improves across contexts but still misses nearly 30%, while <strong>real graph construction and unmeasured confounding are excluded</strong>.</dd></div>
+          <div><dt>Impact on interpretation</dt><dd>The benchmark supports formal-reasoning tests and agent unit tests. <strong>Synthetic accuracy is not equivalent to causal-modeling ability in real medical studies.</strong></dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">Reading advice</strong>Start with Figure 2 for ground-truth generation, compare models and rungs in Table 2, then use Table 3 to separate <strong>correct graph extraction from correct causal inference</strong>.</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">Three numbers to keep</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">About 10K</div>
+          <h3>CLADDER samples</h3>
+          <p><strong>Exactly 10,112 questions</strong>; 3,160, 3,160, and 3,792 across the three rungs</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">70.40%</div>
+          <h3>CausalCoT accuracy</h3>
+          <p><strong>8.37 points above vanilla GPT-4</strong>; rung 3 remains at 62.05%</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">53%</div>
+          <h3>Query or estimand F1</h3>
+          <p><strong>Node and edge F1 are 99.34% and 97.01%</strong>, locating the bottleneck in formal reasoning</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">Where to focus</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/631bb9434d718ea309af82566347d607-Abstract-Conference.html" target="_blank" rel="noopener">
+            Figure 2 and Table 1 · PDF pp. 4–5<small>Direct link</small> ↗
+          </a>
+          <div><h3>Audit dataset generation</h3><p><strong>The sequence from graphs and queries to symbolic truth and language templates defines what is tested.</strong></p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/631bb9434d718ea309af82566347d607-Abstract-Conference.html" target="_blank" rel="noopener">
+            Table 2 · PDF p. 8<small>Direct link</small> ↗
+          </a>
+          <div><h3>Compare models and causal rungs</h3><p><strong>Overall, rung-specific, and commonsense-alignment accuracies appear in one table.</strong></p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/631bb9434d718ea309af82566347d607-Abstract-Conference.html" target="_blank" rel="noopener">
+            Table 3 · PDF p. 9<small>Direct link</small> ↗
+          </a>
+          <div><h3>Locate reasoning failures</h3><p><strong>High graph-extraction F1 and low estimand or inference F1 expose the true bottleneck.</strong></p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">From causal graphs to decidable language questions</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">Structure</div>
+            <h3>Sample a causal graph</h3>
+            <p><strong>Choose variables and directed edges from predefined graph families to create a closed world.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">Query</div>
+            <h3>Cover all three rungs</h3>
+            <p><strong>Generate association, intervention, and counterfactual identification tasks.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">Truth</div>
+            <h3>Run symbolic inference</h3>
+            <p><strong>Compute a unique answer and explanation from the graph and probabilities.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">Language</div>
+            <h3>Create three context types</h3>
+            <p><strong>Verbalize commonsense, nonsensical, and anti-commonsense settings to reduce shortcuts.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">Evaluation</div>
+            <h3>Decompose six-step errors</h3>
+            <p><strong>Score graph parsing, estimands, inference, arithmetic, and final answers separately.</strong></p>
+          </li>
+        </ol>
+        <figcaption><strong>Organized from Figures 2 and 4 and Tables 1–3.</strong></figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">Full deep read</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>CLADDER turns natural-language questions into tasks with answers determined by a causal inference engine; GPT-4 reaches only 70.40% even with a bespoke reasoning chain.</p>
+</blockquote>
+<h2>The authors</h2>
+<p>Zhijing Jin, Yuen Chen, Felix Leeb, Luigi Gresele, and colleagues are affiliated with the Max Planck Institute for Intelligent Systems, ETH Zürich, IIT Kharagpur, the University of Hong Kong, and the University of Washington. The team combines NLP, causal inference, and cognitive science, with supervision from Bernhard Schölkopf and Mrinmaya Sachan.</p>
+<h2>The problem</h2>
+<p>Claims that a model “understands causality” often rely on commonsense questions or causal-phrase extraction, which can be solved by language patterns. CLADDER tests whether models parse a graph, classify a query, invoke the right identification rule, and calculate an answer while limiting contamination and commonsense shortcuts.</p>
+<h2>The approach</h2>
+<p>Binary and categorical causal graphs generate questions across association, intervention, and counterfactual rungs. An inference engine derives symbolic questions and ground-truth probabilities before templates verbalize them. Contexts are commonsensical, nonsensical, or anti-commonsensical.</p>
+<p>CausalCoT uses six stages: parse the graph, identify the query, formalize it, collect data, perform causal inference, and calculate the binary answer. Evaluation covers final accuracy and intermediate node, edge, query or estimand, inference, and arithmetic performance.</p>
+<h2>Key results</h2>
+<p>CLADDER v1.5 contains <strong>10,112 samples</strong>: 3,160, 3,160, and 3,792 across rungs 1, 2, and 3. Random accuracy is 49.27%; LLaMa scores 44.03%, Alpaca 44.66%, GPT-3.5 52.18%, and GPT-4 <strong>62.03%</strong>.</p>
+<p>CausalCoT raises GPT-4 to <strong>70.40%</strong>, an 8.37-point gain. Rung accuracies are 83.35%, 67.47%, and 62.05%. Anti-commonsense accuracy rises from 60.47% to 70.12%. Node and edge F1 are 99.34% and 97.01%, yet query or estimand F1 is 53% and formal-inference F1 is 50.65%.</p>
+<h2>How solid is the evidence</h2>
+<p>Ground truth comes from explicit models and an inference engine. Nonsensical and anti-commonsense contexts reduce memorization shortcuts, and stepwise evaluation localizes failures. These remain closed-world synthetic tasks: the graph, variables, and identifiability are supplied. Target populations, temporal ordering, unmeasured confounding, and measurement mechanisms are outside the benchmark.</p>
+<p>The models and APIs are a 2023 snapshot and do not determine current-model performance. Some fine-grained evaluations use only 2,000 questions because of rate limits, and accuracy treats all errors as equally costly.</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="On this page">
+    <div class="deep-toc-title">On this page</div>
+    <a href="#overview" class="is-main">30-second read</a>
+    <a href="#key-numbers">Three numbers to keep</a>
+    <a href="#where-to-focus">Where to focus</a>
+    <a href="#study-design">From causal graphs to decidable language questions</a>
+    <a href="#full-read">Full deep read</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← Back to deep reads</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>My Research Desk · Xuanyu Shi</span>
+    <span>Updated on weekdays · <a href="https://xuanyshi.github.io/research-desk/en/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

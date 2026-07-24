@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CLADDER：评估语言模型的因果推理能力 · 精读 · 我的文献集</title>
+<meta name="description" content="GPT-4由62.03%升至70.40%，高阶问题仍明显更难。模型擅长复原图，主要失败在查询／估计量识别和形式推断。">
+<meta property="og:title" content="CLADDER：评估语言模型的因果推理能力 · 精读 · 我的文献集">
+<meta property="og:description" content="GPT-4由62.03%升至70.40%，高阶问题仍明显更难。模型擅长复原图，主要失败在查询／估计量识别和形式推断。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="我的文献集">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/zh/deep/jin-2023-cladder/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/zh/deep/jin-2023-cladder/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/jin-2023-cladder/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/jin-2023-cladder/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/jin-2023-cladder/">
+<link rel="alternate" type="application/atom+xml" title="我的文献集 · 精读" href="https://xuanyshi.github.io/research-desk/zh/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">我的文献集<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">首页</a>
+      <a href="../../library/index.html" class="">文献库</a>
+      <a href="../../deep/index.html" class="on">精读</a>
+      <a href="../../daily/index.html" class="">每日速览</a>
+      <a href="../../log/index.html" class="">历程</a>
+      <a href="../../about/index.html" class="">关于</a>
+      <span class="lang">
+        <a href="../../../zh/deep/jin-2023-cladder/" class="on">中</a>
+        <a href="../../../en/deep/jin-2023-cladder/" class="">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">我的精读</div>
+  <h1><span class="title-original" lang="en">CLADDER: Assessing Causal Reasoning in Language Models</span><span class="title-zh" lang="zh-CN">CLADDER：评估语言模型的因果推理能力</span></h1>
+  <p>Zhijing Jin, Yuen Chen, Felix Leeb, Luigi Gresele et al.</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Advances in Neural Information Processing Systems 36 (NeurIPS 2023)</span></div>
+  
+  <p class="deep-links">
+    <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/631bb9434d718ea309af82566347d607-Abstract-Conference.html" target="_blank" rel="noopener">原文 / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=CLADDER%3A%20Assessing%20Causal%20Reasoning%20in%20Language%20Models" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p1">大语言模型</span><span class="pill p1">因果推理</span><span class="pill p1">CLADDER</span><span class="pill p1">反事实</span><span class="pill p1">基准测试</span><span class="pill p3">链式推理</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30秒结论</div>
+      <h2 id="overview-title">GPT-4由62.03%升至70.40%，高阶问题仍明显更难。模型擅长复原图，主要失败在<strong>查询／估计量识别和形式推断</strong>。</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>研究问题</dt>
+          <dd>大语言模型能否把自然语言因果问题转换为正确的<strong>关联、干预和反事实推断</strong>，而非依赖常识模式？</dd>
+        </div>
+        <div>
+          <dt>研究设计</dt>
+          <dd>合成基准；用因果图和推理引擎生成约1万道带真值的问题，并在常识、无意义、反常识语境中比较多种模型与<strong>六步CausalCoT</strong>。</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>证据强度</span>
+          <strong class="evidence-level level-mid">中等</strong>
+        </div>
+        <dl>
+          <div><dt>计算对象</dt><dd><strong>10,112道封闭世界因果题的最终答案与六个中间推理步骤</strong>，真值由符号因果推理引擎生成。</dd></div>
+          <div><dt>触发条件</dt><dd>若模型只依赖常识，反常识语境表现应下降；CausalCoT跨三类语境改善，仍有近30%错误，且<strong>真实建图与未测量混杂不在测试范围</strong>。</dd></div>
+          <div><dt>对结论的影响</dt><dd>基准可检验形式推理和代理单元测试；<strong>不能把合成题准确率等同于真实医学研究的因果建模能力</strong>。</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">阅读建议</strong>先看Figure 2理解真值生成，再用Table 2比较模型和三层难度，最后读Table 3定位错误，重点区分<strong>图抽取正确与因果推断正确</strong>。</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">三个关键数字</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">约1万题</div>
+          <h3>CLADDER样本</h3>
+          <p><strong>精确为10,112题</strong>；三层分别为3,160、3,160和3,792题</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">70.40%</div>
+          <h3>CausalCoT准确率</h3>
+          <p><strong>比原始GPT-4高8.37个百分点</strong>；第三层只有62.05%</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">53%</div>
+          <h3>查询／估计量F1</h3>
+          <p><strong>节点与边提取F1分别为99.34%和97.01%</strong>，瓶颈在形式推断</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">重点看哪里</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/631bb9434d718ea309af82566347d607-Abstract-Conference.html" target="_blank" rel="noopener">
+            Figure 2与Table 1 · PDF pp. 4–5<small>图表直达</small> ↗
+          </a>
+          <div><h3>核对数据如何生成</h3><p><strong>因果图、查询、符号真值和自然语言模板的顺序决定基准测到什么</strong>。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/631bb9434d718ea309af82566347d607-Abstract-Conference.html" target="_blank" rel="noopener">
+            Table 2 · PDF p. 8<small>图表直达</small> ↗
+          </a>
+          <div><h3>比较模型与因果阶梯</h3><p><strong>总体、三层和三种常识对齐语境的准确率在同一表中</strong>。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/631bb9434d718ea309af82566347d607-Abstract-Conference.html" target="_blank" rel="noopener">
+            Table 3 · PDF p. 9<small>图表直达</small> ↗
+          </a>
+          <div><h3>定位推理断点</h3><p><strong>高图抽取F1与低估计量、推断F1的反差揭示真正瓶颈</strong>。</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">从因果图到可判定自然语言题</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">结构</div>
+            <h3>采样因果图</h3>
+            <p><strong>从预设图族中选择变量和有向边，形成封闭世界</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">查询</div>
+            <h3>覆盖三个因果阶梯</h3>
+            <p><strong>生成关联、干预与反事实问题及相应识别任务</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">真值</div>
+            <h3>调用符号推理引擎</h3>
+            <p><strong>由图和概率计算唯一答案与解释步骤</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">语言</div>
+            <h3>生成三类语境</h3>
+            <p><strong>模板化为常识、无意义和反常识叙述以压低捷径</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">评测</div>
+            <h3>拆解六步错误</h3>
+            <p><strong>分别评分图解析、估计量、推断、算术与最终答案</strong>。</p>
+          </li>
+        </ol>
+        <figcaption><strong>依据PDF Figures 2、4和Tables 1–3整理</strong>。</figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">完整精读</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>CLADDER把自然语言问题还原为可由因果推理引擎判定的任务；GPT-4加专用推理链后准确率仍为70.40%。</p>
+</blockquote>
+<h2>作者团队</h2>
+<p>Zhijing Jin、Yuen Chen、Felix Leeb、Luigi Gresele 等作者来自 Max Planck Institute for Intelligent Systems、ETH Zürich、IIT Kharagpur、University of Hong Kong 与 University of Washington。团队由 NLP、因果推断和认知科学研究者组成，Bernhard Schölkopf 与 Mrinmaya Sachan 参与指导。</p>
+<h2>解决什么问题</h2>
+<p>“模型懂因果”常用常识问答或因果词抽取来证明，任务可能依赖语言模式而不需要形式推断。CLADDER要检验模型能否读取因果图、识别查询类型、调用正确的识别公式并完成运算，同时降低训练数据污染和常识捷径。</p>
+<h2>怎么做的</h2>
+<p>作者从二元与分类变量因果图采样，覆盖关联、干预和反事实三个因果阶梯层级。推理引擎根据图、查询与概率生成符号问题和真值，再通过模板转成自然语言。语境分为常识、无意义和反常识三类。</p>
+<p>CausalCoT把任务拆成六步：解析图、识别查询、写出符号表达、抽取数据、执行因果推断、做算术并回答。评价对象是最终二元答案，同时分解节点、边、查询／估计量识别和运算表现。</p>
+<h2>关键结果</h2>
+<p>CLADDER v1.5含 <strong>10,112个样本</strong>：因果阶梯第1、2、3层分别为3,160、3,160、3,792题。随机基线为49.27%；LLaMa为44.03%，Alpaca为44.66%，GPT-3.5为52.18%，GPT-4为 <strong>62.03%</strong>。</p>
+<p>CausalCoT将GPT-4总体准确率提高到 <strong>70.40%</strong>，提升8.37个百分点；第1、2、3层分别为83.35%、67.47%、62.05%。反常识子集由60.47%升至70.12%。图节点与边提取F1为99.34%和97.01%，查询／估计量识别F1只有53%，形式推断步骤总体F1为50.65%。</p>
+<h2>证据有多硬</h2>
+<p>真值由明确的因果模型和推理引擎产生，反常识与无意义语境削弱了记忆题库的可能，分步骤误差也能定位失败。合成问题属于封闭世界，图结构、变量定义和可识别性已由出题者提供；现实研究最难的目标人群、时间顺序、未测量混杂和测量过程不在考核范围内。</p>
+<p>模型与API版本属于2023年快照，当前模型表现不能由这张表推断。部分细粒度分析因限流只抽取2,000题，且准确率没有反映错误答案在医学决策中的不同代价。</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="本页导航">
+    <div class="deep-toc-title">本页导航</div>
+    <a href="#overview" class="is-main">30秒结论</a>
+    <a href="#key-numbers">三个关键数字</a>
+    <a href="#where-to-focus">重点看哪里</a>
+    <a href="#study-design">从因果图到可判定自然语言题</a>
+    <a href="#full-read">完整精读</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← 回精读列表</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>我的文献集 · Xuanyu Shi</span>
+    <span>每个工作日更新一次 · <a href="https://xuanyshi.github.io/research-desk/zh/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

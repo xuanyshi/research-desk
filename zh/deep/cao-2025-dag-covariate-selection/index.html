@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>有向无环图在观察性研究多因素分析协变量选择中的应用 · 精读 · 我的文献集</title>
+<meta name="description" content="协变量角色由因果结构决定，统计关联只可补充先验知识。DAG提高透明度，不能量化混杂大小或解决未测量混杂。">
+<meta property="og:title" content="有向无环图在观察性研究多因素分析协变量选择中的应用 · 精读 · 我的文献集">
+<meta property="og:description" content="协变量角色由因果结构决定，统计关联只可补充先验知识。DAG提高透明度，不能量化混杂大小或解决未测量混杂。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="我的文献集">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/zh/deep/cao-2025-dag-covariate-selection/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/zh/deep/cao-2025-dag-covariate-selection/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/cao-2025-dag-covariate-selection/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/cao-2025-dag-covariate-selection/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/cao-2025-dag-covariate-selection/">
+<link rel="alternate" type="application/atom+xml" title="我的文献集 · 精读" href="https://xuanyshi.github.io/research-desk/zh/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">我的文献集<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">首页</a>
+      <a href="../../library/index.html" class="">文献库</a>
+      <a href="../../deep/index.html" class="on">精读</a>
+      <a href="../../daily/index.html" class="">每日速览</a>
+      <a href="../../log/index.html" class="">历程</a>
+      <a href="../../about/index.html" class="">关于</a>
+      <span class="lang">
+        <a href="../../../zh/deep/cao-2025-dag-covariate-selection/" class="on">中</a>
+        <a href="../../../en/deep/cao-2025-dag-covariate-selection/" class="">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">我的精读</div>
+  <h1><span class="title-original" lang="en">Directed acyclic graphs in choosing covariates for multivariable model of observational study</span><span class="title-zh" lang="zh-CN">有向无环图在观察性研究多因素分析协变量选择中的应用</span></h1>
+  <p>曹雨滋, 袁驰, 刘刚, 孙凤 et al.</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">华西医学 40卷6期（2025）</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.7507/1002-0179.202504241" target="_blank" rel="noopener">原文 / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=Directed%20acyclic%20graphs%20in%20choosing%20covariates%20for%20multivariable%20model%20of%20observational%20study" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p3">因果DAG</span><span class="pill p4">协变量选择</span><span class="pill p2">多因素分析</span><span class="pill p3">混杂因素</span><span class="pill p1">碰撞偏倚</span><span class="pill p0">观察性研究</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30秒结论</div>
+      <h2 id="overview-title">协变量角色由因果结构决定，统计关联只可补充先验知识。DAG提高透明度，<strong>不能量化混杂大小或解决未测量混杂</strong>。</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>研究问题</dt>
+          <dd>观察性研究的多因素模型中，为什么按P值或效应改变选协变量会失败，DAG如何避免<strong>中介、工具变量和碰撞点误调</strong>？</dd>
+        </div>
+        <div>
+          <dt>研究设计</dt>
+          <dd>中文叙述性方法综述；比较4类数据驱动方法、DAG路径规则和多种因果选择准则，并以<strong>2型糖尿病—骨折</strong>示例说明后果。</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>证据强度</span>
+          <strong class="evidence-level level-mid">方法综述</strong>
+        </div>
+        <dl>
+          <div><dt>计算对象</dt><dd><strong>候选协变量在暴露—结局DAG中的位置、开放与封闭路径，以及不同选择规则生成的调整集合</strong>。</dd></div>
+          <div><dt>触发条件</dt><dd>后门路径开放时需用非暴露子代阻断；中介或碰撞点被调整时，<strong>可能阻断目标效应或打开新的偏倚路径</strong>。</dd></div>
+          <div><dt>对结论的影响</dt><dd>可据图确定主调整集并解释禁调变量；<strong>仍需对未测量混杂、测量误差和替代DAG做敏感性分析</strong>。</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">阅读建议</strong>先看Figure 1和Table 1分清变量角色，再比较Table 2的数据驱动规则，最后用Figure 4与Tables 3–4检查<strong>后门路径和调整集选择</strong>。</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">三个关键数字</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">4类</div>
+          <h3>数据驱动方法</h3>
+          <p><strong>前向、后向、效应改变和高维倾向评分</strong>均可能选入不当变量</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">10%</div>
+          <h3>常见效应改变阈值</h3>
+          <p><strong>估计值变化超过阈值不证明该变量是混杂因素</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">约2/3</div>
+          <h3>明确展示DAG的应用研究</h3>
+          <p><strong>系统报告建图与协变量假设者更少</strong>，透明度仍不足</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">重点看哪里</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.7507/1002-0179.202504241" target="_blank" rel="noopener">
+            Figure 1与Table 1 · PDF pp. 2–3<small>图表直达</small> ↗
+          </a>
+          <div><h3>先识别变量角色</h3><p><strong>混杂、中介、工具、碰撞点及其子代的调整后果集中展示</strong>。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.7507/1002-0179.202504241" target="_blank" rel="noopener">
+            Table 2 · PDF p. 4<small>图表直达</small> ↗
+          </a>
+          <div><h3>比较数据驱动规则</h3><p><strong>四类方法的计算对象、停止规则和隐含假设可以横向核对</strong>。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.7507/1002-0179.202504241" target="_blank" rel="noopener">
+            Figure 4与Tables 3–4 · PDF pp. 5–7<small>图表直达</small> ↗
+          </a>
+          <div><h3>落实后门准则</h3><p><strong>建图步骤、路径开闭规则和替代混杂筛选法在此汇合</strong>。</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">从变量清单到因果调整集</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">问题</div>
+            <h3>定义暴露、结局和效应</h3>
+            <p><strong>先确定要估计总效应、直接效应还是其他目标量</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">角色</div>
+            <h3>按因果结构分类变量</h3>
+            <p><strong>区分共同原因、中介、工具、碰撞点、修饰因素和代理</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">建图</div>
+            <h3>系统添加节点与边</h3>
+            <p><strong>结合临床知识、文献和ESC-DAGs流程记录假设</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">路径</div>
+            <h3>检查全部后门路径</h3>
+            <p><strong>阻断非因果开放路径并避免打开碰撞路径</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">分析</div>
+            <h3>选择主集与替代集</h3>
+            <p><strong>用DAGitty验证充分性，并单独报告偏离图建议的模型</strong>。</p>
+          </li>
+        </ol>
+        <figcaption><strong>依据PDF Figures 1–4与Tables 1–4整理</strong>。</figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">完整精读</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>这篇中文综述把数据驱动选变量的误区、DAG路径规则和临床协变量选择放到同一框架中，适合作为应用入门。</p>
+</blockquote>
+<h2>作者团队</h2>
+<p>曹雨滋、袁驰、李舍予来自四川大学华西医院内分泌代谢科与中国循证医学中心 MAGIC 中国中心，刘刚来自华中科技大学同济医学院公共卫生学院，孙凤来自北京大学公共卫生学院流行病与卫生统计学系。团队横跨临床内分泌、循证医学和流行病学方法。</p>
+<h2>解决什么问题</h2>
+<p>观察性研究常用逐步回归、单变量P值或效应改变比例选择协变量。这些规则根据数据关联工作，可能漏掉共同原因，也可能调整中介、工具变量或碰撞点。文章解释DAG如何把变量的因果角色与统计关联分开，并给出建图和调整的实践建议。</p>
+<h2>怎么做的</h2>
+<p>综述先区分混杂因素、效应修饰因素、中介、工具变量、碰撞点及其子代，再比较前向选择、后向剔除、10%效应改变法和高维倾向评分。作者用2型糖尿病与骨折示例说明，仅因某变量显著或改变OR就调整，可能打开原本关闭的路径。</p>
+<p>建图建议沿用ESC-DAGs：映射研究结论，按时间性、表面效度、理论和反事实审查边，再整合。协变量选择的【计算对象】是暴露与结局之间的非因果开放路径；【触发条件】是后门准则要求阻断全部偏倚路径；【实际影响】是保留最小充分集，同时排除中介、碰撞点和不必要工具变量。</p>
+<h2>关键结果</h2>
+<p>本文是叙述性方法综述，没有新的效应估计。它汇总四类数据驱动方法、DAG路径开闭规则，以及共同原因法、治疗前变量法和析取原因法等替代策略。复杂图可用 DAGitty 计算最小充分调整集并检查自定集合是否封闭所有偏倚路径。</p>
+<p>文中举例显示，某研究调整由统计规则选出的变量后OR从粗略值改变为 <strong>0.80</strong>，但该变量可能是碰撞点，因此“改变估计”本身不能证明需要调整。作者还指出应用综述中约 <strong>2/3</strong> 的DAG研究明确提供了图，系统报告建图假设者更少。</p>
+<h2>证据有多硬</h2>
+<p>文章准确梳理经典DAG逻辑和近期应用建议，适合中文临床教学。它没有系统检索与纳入流程，也没有比较各种协变量选择策略的模拟或实证性能。所给比例和案例需要回到引用原文核查。</p>
+<p>DAG只描述在既定结构下应调整什么，不能量化混杂大小。若图不完整，最小充分集仍会错误；多个可行集合也无法仅凭数据决定哪张图更合理。测量误差和未测量混杂需另做敏感性分析。</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="本页导航">
+    <div class="deep-toc-title">本页导航</div>
+    <a href="#overview" class="is-main">30秒结论</a>
+    <a href="#key-numbers">三个关键数字</a>
+    <a href="#where-to-focus">重点看哪里</a>
+    <a href="#study-design">从变量清单到因果调整集</a>
+    <a href="#full-read">完整精读</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← 回精读列表</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>我的文献集 · Xuanyu Shi</span>
+    <span>每个工作日更新一次 · <a href="https://xuanyshi.github.io/research-desk/zh/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

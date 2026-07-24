@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Directed acyclic graphs in choosing covariates for multivariable model of observational study · Deep reads · My Research Desk</title>
+<meta name="description" content="Causal structure determines covariate roles; statistical association only supplements prior knowledge. DAGs improve transparency but do not quantify confounding or solve unmeasured confounding.">
+<meta property="og:title" content="Directed acyclic graphs in choosing covariates for multivariable model of observational study · Deep reads · My Research Desk">
+<meta property="og:description" content="Causal structure determines covariate roles; statistical association only supplements prior knowledge. DAGs improve transparency but do not quantify confounding or solve unmeasured confounding.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="My Research Desk">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/en/deep/cao-2025-dag-covariate-selection/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/en/deep/cao-2025-dag-covariate-selection/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/cao-2025-dag-covariate-selection/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/cao-2025-dag-covariate-selection/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/cao-2025-dag-covariate-selection/">
+<link rel="alternate" type="application/atom+xml" title="My Research Desk · Deep reads" href="https://xuanyshi.github.io/research-desk/en/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">My Research Desk<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">Home</a>
+      <a href="../../library/index.html" class="">Library</a>
+      <a href="../../deep/index.html" class="on">Deep reads</a>
+      <a href="../../daily/index.html" class="">Daily</a>
+      <a href="../../log/index.html" class="">Log</a>
+      <a href="../../about/index.html" class="">About</a>
+      <span class="lang">
+        <a href="../../../zh/deep/cao-2025-dag-covariate-selection/" class="">中</a>
+        <a href="../../../en/deep/cao-2025-dag-covariate-selection/" class="on">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">My deep read</div>
+  <h1>Directed acyclic graphs in choosing covariates for multivariable model of observational study</h1>
+  <p>曹雨滋, 袁驰, 刘刚, 孙凤 et al.</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">华西医学 40卷6期（2025）</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.7507/1002-0179.202504241" target="_blank" rel="noopener">Source / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=Directed%20acyclic%20graphs%20in%20choosing%20covariates%20for%20multivariable%20model%20of%20observational%20study" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p3">Causal DAG</span><span class="pill p4">Covariate selection</span><span class="pill p2">Multivariable analysis</span><span class="pill p3">Confounding</span><span class="pill p1">Collider bias</span><span class="pill p0">Observational research</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30-second read</div>
+      <h2 id="overview-title">Causal structure determines covariate roles; statistical association only supplements prior knowledge. DAGs improve transparency but <strong>do not quantify confounding or solve unmeasured confounding</strong>.</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>Question</dt>
+          <dd>Why can P-value or change-in-estimate selection fail in observational models, and how do DAGs avoid adjusting <strong>mediators, instruments, and colliders</strong>?</dd>
+        </div>
+        <div>
+          <dt>Design</dt>
+          <dd>A Chinese narrative methods review comparing four data-driven procedures, DAG path rules, and causal selection criteria, illustrated with a <strong>type 2 diabetes–fracture</strong> example.</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>Evidence strength</span>
+          <strong class="evidence-level level-mid">Methods review</strong>
+        </div>
+        <dl>
+          <div><dt>What was assessed</dt><dd><strong>Candidate covariate positions in an exposure–outcome DAG, open and closed paths, and adjustment sets from different selection rules.</strong></dd></div>
+          <div><dt>Downgrade triggers</dt><dd>An open backdoor requires blocking by a non-descendant of exposure; conditioning on a mediator or collider can <strong>block the target effect or open a new biasing path</strong>.</dd></div>
+          <div><dt>Impact on interpretation</dt><dd>The graph identifies primary adjustment and prohibited variables. <strong>Unmeasured confounding, measurement error, and alternative DAGs still require sensitivity analysis.</strong></dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">Reading advice</strong>Use Figure 1 and Table 1 for variable roles, compare data-driven rules in Table 2, then inspect Figure 4 and Tables 3–4 for <strong>backdoor paths and adjustment-set selection</strong>.</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">Three numbers to keep</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">Four</div>
+          <h3>Data-driven methods</h3>
+          <p><strong>Forward, backward, change-in-estimate, and high-dimensional propensity-score procedures</strong> can select harmful variables</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">10%</div>
+          <h3>Common change threshold</h3>
+          <p><strong>A change beyond the threshold does not prove that a variable is a confounder</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">About two-thirds</div>
+          <h3>Applied studies displaying a DAG</h3>
+          <p><strong>Even fewer systematically report construction and covariate assumptions</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">Where to focus</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.7507/1002-0179.202504241" target="_blank" rel="noopener">
+            Figure 1 and Table 1 · PDF pp. 2–3<small>Direct link</small> ↗
+          </a>
+          <div><h3>Identify variable roles first</h3><p><strong>Confounders, mediators, instruments, colliders, descendants, and adjustment consequences appear together.</strong></p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.7507/1002-0179.202504241" target="_blank" rel="noopener">
+            Table 2 · PDF p. 4<small>Direct link</small> ↗
+          </a>
+          <div><h3>Compare data-driven rules</h3><p><strong>Objects, stopping rules, and assumptions of four procedures can be audited side by side.</strong></p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.7507/1002-0179.202504241" target="_blank" rel="noopener">
+            Figure 4 and Tables 3–4 · PDF pp. 5–7<small>Direct link</small> ↗
+          </a>
+          <div><h3>Apply the backdoor criterion</h3><p><strong>Construction steps, path rules, and alternative confounder-selection criteria converge here.</strong></p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">From a variable list to causal adjustment</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">Question</div>
+            <h3>Define exposure, outcome, and effect</h3>
+            <p><strong>Decide whether the target is a total effect, direct effect, or another estimand.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">Roles</div>
+            <h3>Classify variables causally</h3>
+            <p><strong>Separate common causes, mediators, instruments, colliders, modifiers, and proxies.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">Graph</div>
+            <h3>Add nodes and edges systematically</h3>
+            <p><strong>Combine clinical knowledge, literature, and ESC-DAGs while logging assumptions.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">Paths</div>
+            <h3>Inspect every backdoor</h3>
+            <p><strong>Block open noncausal paths without opening collider paths.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">Analysis</div>
+            <h3>Choose primary and alternative sets</h3>
+            <p><strong>Verify sufficiency in DAGitty and report models that deviate from graph advice separately.</strong></p>
+          </li>
+        </ol>
+        <figcaption><strong>Organized from Figures 1–4 and Tables 1–4.</strong></figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">Full deep read</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>This Chinese review places data-driven covariate-selection errors, DAG path rules, and clinical adjustment decisions in one framework, making it a useful applied introduction.</p>
+</blockquote>
+<h2>The authors</h2>
+<p>曹雨滋, 袁驰, and 李舍予 are affiliated with Endocrinology and the MAGIC China Center at West China Hospital, Sichuan University; 刘刚 with Tongji Medical College, Huazhong University of Science and Technology; 孙凤 with Epidemiology and Biostatistics at Peking University. The team spans clinical endocrinology, evidence-based medicine, and epidemiology.</p>
+<h2>The problem</h2>
+<p>Observational studies often select covariates using stepwise regression, univariable P values, or change-in-estimate rules. These association-driven procedures can miss common causes or condition on mediators, instruments, and colliders. The review explains how DAGs separate a variable's causal role from statistical association.</p>
+<h2>The approach</h2>
+<p>The article distinguishes confounders, effect modifiers, mediators, instruments, colliders, and descendants, then compares forward selection, backward elimination, the 10% change-in-estimate rule, and high-dimensional propensity scores. A type 2 diabetes–fracture example shows why statistical significance or estimate change does not establish adjustment validity.</p>
+<p>Graph development follows ESC-DAGs: map study claims, review edges through temporality, face validity, theory, and counterfactual reasoning, then integrate. The adjustment object is every open noncausal exposure–outcome path. The backdoor criterion triggers blocking of all biasing paths; the practical effect is a minimal sufficient set excluding mediators, colliders, and unnecessary instruments.</p>
+<h2>Key results</h2>
+<p>This is a narrative methods review without new effect estimates. It summarizes four data-driven procedures, DAG path-opening rules, and alternatives including common-cause, pretreatment-variable, and disjunctive-cause criteria. DAGitty can calculate minimal sufficient sets and test whether a proposed set blocks all biasing paths.</p>
+<p>One example reports an adjusted OR of <strong>0.80</strong> after a statistically selected variable is included, yet that variable may be a collider; estimate change alone is not evidence for adjustment. The review also notes that roughly <strong>two-thirds</strong> of applied DAG studies explicitly displayed their graph, with fewer reporting construction assumptions systematically.</p>
+<h2>How solid is the evidence</h2>
+<p>The article clearly synthesizes classic DAG logic and recent applied recommendations for a Chinese clinical audience. It is not a systematic review and provides no simulation or empirical comparison of selection strategies. Numerical examples and prevalence claims still depend on the cited sources.</p>
+<p>A DAG determines adjustment under an assumed structure but does not quantify confounding. An incomplete graph yields a wrong set, and multiple valid sets cannot identify the correct graph from data alone. Measurement error and unmeasured confounding require separate sensitivity analyses.</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="On this page">
+    <div class="deep-toc-title">On this page</div>
+    <a href="#overview" class="is-main">30-second read</a>
+    <a href="#key-numbers">Three numbers to keep</a>
+    <a href="#where-to-focus">Where to focus</a>
+    <a href="#study-design">From a variable list to causal adjustment</a>
+    <a href="#full-read">Full deep read</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← Back to deep reads</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>My Research Desk · Xuanyu Shi</span>
+    <span>Updated on weekdays · <a href="https://xuanyshi.github.io/research-desk/en/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

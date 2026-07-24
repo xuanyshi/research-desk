@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Causal Evidence Extraction and Triangulation in Crisis Reports using Large Language Models: A ReliefWeb-based Study · Deep reads · My Research Desk</title>
+<meta name="description" content="Query conditioning and snippet grounding yield weighted F1 90.73% for the best proprietary pipeline and 94.15% after Llama-3.1-8B distillation. LoE=0.865 measures cross-context directional concentration without testing cross-design bias independence.">
+<meta property="og:title" content="Causal Evidence Extraction and Triangulation in Crisis Reports using Large Language Models: A ReliefWeb-based Study · Deep reads · My Research Desk">
+<meta property="og:description" content="Query conditioning and snippet grounding yield weighted F1 90.73% for the best proprietary pipeline and 94.15% after Llama-3.1-8B distillation. LoE=0.865 measures cross-context directional concentration without testing cross-design bias independence.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="My Research Desk">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/en/deep/zhang-2026-reliefweb-triangulation/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/en/deep/zhang-2026-reliefweb-triangulation/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/zhang-2026-reliefweb-triangulation/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/zhang-2026-reliefweb-triangulation/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/zhang-2026-reliefweb-triangulation/">
+<link rel="alternate" type="application/atom+xml" title="My Research Desk · Deep reads" href="https://xuanyshi.github.io/research-desk/en/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">My Research Desk<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">Home</a>
+      <a href="../../library/index.html" class="">Library</a>
+      <a href="../../deep/index.html" class="on">Deep reads</a>
+      <a href="../../daily/index.html" class="">Daily</a>
+      <a href="../../log/index.html" class="">Log</a>
+      <a href="../../about/index.html" class="">About</a>
+      <span class="lang">
+        <a href="../../../zh/deep/zhang-2026-reliefweb-triangulation/" class="">中</a>
+        <a href="../../../en/deep/zhang-2026-reliefweb-triangulation/" class="on">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">My deep read</div>
+  <h1>Causal Evidence Extraction and Triangulation in Crisis Reports using Large Language Models: A ReliefWeb-based Study</h1>
+  <p>Yuanjun Zhang, Mourad Oussalah</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Findings of the Association for Computational Linguistics: ACL 2026, 32478–32491</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.18653/v1/2026.findings-acl.1626" target="_blank" rel="noopener">Source / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=Causal%20Evidence%20Extraction%20and%20Triangulation%20in%20Crisis%20Reports%20using%20Large%20Language%20Models%3A%20A%20ReliefWeb-based%20Study" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p1">Large language models</span><span class="pill p3">Evidence triangulation</span><span class="pill p3">Causal evidence extraction</span><span class="pill p2">Information extraction</span><span class="pill p0">Evidence provenance</span><span class="pill p0">Model distillation</span><span class="pill p0">Humanitarian NLP</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30-second read</div>
+      <h2 id="overview-title">Query conditioning and snippet grounding yield weighted F1 90.73% for the best proprietary pipeline and 94.15% after Llama-3.1-8B distillation. LoE=0.865 measures <strong>cross-context directional concentration</strong> without testing cross-design bias independence.</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>Question</dt>
+          <dd>How can auditable <strong>intervention–outcome causal statements</strong> be extracted from long crisis reports, and do their directions converge across disaster and source contexts?</dd>
+        </div>
+        <div>
+          <dt>Design</dt>
+          <dd>An engineering method and case study using about 8,000 English ReliefWeb reports from 2000–2024, a 100-report expert benchmark for two-stage LLM extraction, and <strong>disaster×source cells</strong> for cash-assistance and food outcomes.</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>Evidence strength</span>
+          <strong class="evidence-level level-mid">Moderate</strong>
+        </div>
+        <dl>
+          <div><dt>What was assessed</dt><dd><strong>Four label-layer F1 measures on 100 reports with 220 expert relations</strong>, plus directional distributions for about 19,600 extracted records across 19 disaster×source cells.</dd></div>
+          <div><dt>Downgrade triggers</dt><dd>The test set is small and has no reported annotator agreement; fixed configurations lack repeated runs or error bars, and LoE depends on <strong>strength weights, polarity labels, smoothing, and cell definitions</strong>.</dd></div>
+          <div><dt>Impact on interpretation</dt><dd>The results support auditable extraction and cross-context agreement summaries. <strong>LoE cannot be read directly as cross-design causal strength or intervention-effect magnitude.</strong></dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">Reading advice</strong>Start with Figure 1 to separate query conditioning, snippet classification, and triangulation. Verify the F1 gains in Table 2, then read Equation 5 with Figure 2 and ask <strong>what LoE actually computes</strong>.</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">Three numbers to keep</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">About 8,000</div>
+          <h3>ReliefWeb reports</h3>
+          <p><strong>Covering 2000–2024, four disaster types, and five source groups</strong>; the expert test set contains 100 reports</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">Peak 94.15%</div>
+          <h3>Weighted F1</h3>
+          <p><strong>Best proprietary pipeline: 90.73%; LoRA: 94.15%</strong>; one fixed run with no error bars</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">0.865</div>
+          <h3>LoE for food-related outcomes</h3>
+          <p><strong>Positive probability is 0.91 across 19 non-empty cells</strong>; LoE is a linear transform of the dominant direction</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">Where to focus</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://aclanthology.org/2026.findings-acl.1626.pdf#page=2" target="_blank" rel="noopener">
+            Figure 1 · PDF p. 2<small>Direct link</small> ↗
+          </a>
+          <div><h3>Separate extraction from synthesis</h3><p><strong>The figure distinguishes query-conditioned candidate extraction, snippet-grounded direction classification, polarity normalization, and disaster×source triangulation.</strong></p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://aclanthology.org/2026.findings-acl.1626.pdf#page=4" target="_blank" rel="noopener">
+            Table 2 · PDF p. 4<small>Direct link</small> ↗
+          </a>
+          <div><h3>Audit the models and ablations</h3><p><strong>Query conditioning contributes the largest gain and snippet grounding further improves relation extraction</strong>; the table also contrasts Llama before and after distillation.</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://aclanthology.org/2026.findings-acl.1626.pdf#page=5" target="_blank" rel="noopener">
+            Equation 5 and Figure 2 · PDF pp. 4–5<small>Direct link</small> ↗
+          </a>
+          <div><h3>Interpret LoE</h3><p><strong>Equation 5 rescales the largest directional probability to 0–1</strong>, while Figure 2 shows cumulative trajectories and the number of contributing cells.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">From crisis reports to directional convergence</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">Retrieval</div>
+            <h3>Select cash-assistance reports</h3>
+            <p><strong>Retain about 8,000 English full-text reports within selected disaster and source groups.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">Candidates</div>
+            <h3>Extract query-scoped pairs</h3>
+            <p><strong>Return only intervention-class relations with supporting snippets</strong> to control peripheral over-extraction.</p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">Classification</div>
+            <h3>Assign direction and strength</h3>
+            <p><strong>Snippet and full report trigger increase, decrease, no-change, and three strength labels.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">Cells</div>
+            <h3>Normalize polarity and count</h3>
+            <p><strong>Aggregate by disaster×source after strength weighting and Laplace smoothing.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">Synthesis</div>
+            <h3>Compute directional concentration</h3>
+            <p><strong>Average non-empty cells equally and linearly rescale the dominant-direction probability into LoE.</strong></p>
+          </li>
+        </ol>
+        <figcaption><strong>Organized from PDF Figure 1, Equations 1–5, Table 2, and Figure 2.</strong></figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">Full deep read</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>The paper adds query conditioning, evidence snippets, and context stratification to crisis-report extraction. Extraction is strong; its LoE score measures directional concentration across contexts rather than cross-design causal strength.</p>
+</blockquote>
+<h2>The authors</h2>
+<p>Yuanjun Zhang lists the University of Oulu and LUT University as affiliations, while corresponding author Mourad Oussalah is at the University of Oulu. The work was supported by the EU Horizon 2020 and CHANSE Digital Emergency Communication project, DIGeMERGE; the group has also published on explainable multimodal disaster-severity assessment.</p>
+<h2>The problem</h2>
+<p>ReliefWeb reports are long and multi-topic. Recall-oriented keyword search retrieves documents in which cash assistance may appear only in passing, and an unconstrained LLM can turn peripheral text into intervention–outcome relations. The paper aims to produce structured records containing an intervention, outcome, direction, strength, and supporting passage, then summarize directional agreement across disaster and source contexts.</p>
+<h2>The approach</h2>
+<p>The corpus contains English full-text ReliefWeb reports from 2000–2024 retrieved with “cash assistance.” The authors retain four disaster types—flood, drought, epidemic, and earthquake—and five source groups: academic, government, media, NGO, and Red Cross/Red Crescent. This leaves <strong>8,029 reports</strong>. Domain experts annotate 220 relations in a random test sample of 100 reports.</p>
+<p>Extraction has two stages. Stage 1 computes intervention–outcome candidates within the query-specified intervention class and attaches supporting snippets; the query condition is intended to suppress retrieval-induced over-extraction. Stage 2 classifies each candidate as increase, decrease, or no clear change and assigns weak, moderate, or strong evidence using the snippet and full report. Intervention and outcome matches use BERTScore≥0.8. Strength is scored only when direction is correct, with 0.5 credit for adjacent-category errors.</p>
+<p>Before triangulation, polarity normalization maps positively and negatively framed outcomes such as food security and food insecurity onto a common improvement direction. Each record enters a disaster×source cell. Weak, moderate, and strong receive weights 0, 1, and 2; directional counts receive Laplace smoothing with α=0.1. Non-empty cells are averaged equally. The largest of the three global directional probabilities is linearly rescaled from 1/3–1 into <strong>LoE 0–1</strong>. Temporal trajectories repeat the calculation cumulatively by year.</p>
+<p>The best proprietary pipeline also generates training labels for two Llama-3.1-8B LoRA adapters, one per stage. The 100 expert-annotated reports are excluded from distillation.</p>
+<h2>Key results</h2>
+<p>Two-step Qwen-Plus with query conditioning and snippet grounding reaches weighted F1 <strong>90.73%</strong>. Llama-3.1-8B rises from 75.12% without fine-tuning to <strong>94.15%</strong> after LoRA SFT. The weighted score combines intervention, outcome, direction, and strength at 0.30, 0.30, 0.20, and 0.20.</p>
+<p>The selected proprietary pipeline extracts <strong>19,568 records</strong> from 8,029 reports. The food-outcome analysis retains 19 non-empty disaster×source cells and reports PP=0.91 and LoE=0.865. The cumulative series peaks in 2017 at PP=0.953 and LoE=0.929 before softening modestly from 2018–2024. Polarity labels cover 941 outcome strings occurring at least three times, representing 13,554 records or 69.27% of all extractions.</p>
+<h2>How solid is the evidence</h2>
+<p>The extraction study includes an expert test set, ablations, and explicit scoring rules. Query conditioning improves results consistently across three API models. The test set contains only 100 reports, however, and the paper gives no inter-annotator agreement. A BERTScore threshold may count loosely similar relations as matches. The ACL responsible-research checklist says fixed configurations were run once, without means, standard deviations, or error bars. Teacher-generated distillation labels can pass systematic model errors to the student.</p>
+<p>For LoE, the computational object is the largest cell-averaged directional probability. Dominance by one direction triggers a larger score; the practical effect is a 0–1 measure of concentration. The calculation does not align causal estimands or test whether biases are independent across reports, disasters, or sources. Giving weak evidence a weight of zero removes it from directional counts. Equal cell weighting limits domination by high-volume sources but leaves shared reporting bias untouched.</p>
+<p>A sentence in a report claiming that cash assistance improved food security is a causal statement in text, not necessarily a controlled effect estimate. English-only accessible text, one retrieval phrase, and restricted disaster and source categories narrow generalizability. The authors appropriately frame the output as decision support requiring human review and state that strength labels describe reported evidence, not effect magnitude or population impact.</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="On this page">
+    <div class="deep-toc-title">On this page</div>
+    <a href="#overview" class="is-main">30-second read</a>
+    <a href="#key-numbers">Three numbers to keep</a>
+    <a href="#where-to-focus">Where to focus</a>
+    <a href="#study-design">From crisis reports to directional convergence</a>
+    <a href="#full-read">Full deep read</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← Back to deep reads</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>My Research Desk · Xuanyu Shi</span>
+    <span>Updated on weekdays · <a href="https://xuanyshi.github.io/research-desk/en/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

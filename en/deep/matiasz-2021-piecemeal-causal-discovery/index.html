@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Experiment Selection in Meta-Analytic Piecemeal Causal Discovery · Deep reads · My Research Desk</title>
+<meta name="description" content="Expectation-based Algorithm 3 reduces the average equivalence class below ten graphs after nine experiments, versus 19 for random selection. Even all two-variable experiments leave an average of four to five indistinguishable graphs.">
+<meta property="og:title" content="Experiment Selection in Meta-Analytic Piecemeal Causal Discovery · Deep reads · My Research Desk">
+<meta property="og:description" content="Expectation-based Algorithm 3 reduces the average equivalence class below ten graphs after nine experiments, versus 19 for random selection. Even all two-variable experiments leave an average of four to five indistinguishable graphs.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="My Research Desk">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/en/deep/matiasz-2021-piecemeal-causal-discovery/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/en/deep/matiasz-2021-piecemeal-causal-discovery/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/matiasz-2021-piecemeal-causal-discovery/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/matiasz-2021-piecemeal-causal-discovery/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/matiasz-2021-piecemeal-causal-discovery/">
+<link rel="alternate" type="application/atom+xml" title="My Research Desk · Deep reads" href="https://xuanyshi.github.io/research-desk/en/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">My Research Desk<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">Home</a>
+      <a href="../../library/index.html" class="">Library</a>
+      <a href="../../deep/index.html" class="on">Deep reads</a>
+      <a href="../../daily/index.html" class="">Daily</a>
+      <a href="../../log/index.html" class="">Log</a>
+      <a href="../../about/index.html" class="">About</a>
+      <span class="lang">
+        <a href="../../../zh/deep/matiasz-2021-piecemeal-causal-discovery/" class="">中</a>
+        <a href="../../../en/deep/matiasz-2021-piecemeal-causal-discovery/" class="on">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">My deep read</div>
+  <h1>Experiment Selection in Meta-Analytic Piecemeal Causal Discovery</h1>
+  <p>Nicholas J. Matiasz, Alcino J. Silva, William Hsu</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">IEEE Access</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.1109/ACCESS.2021.3093524" target="_blank" rel="noopener">Source / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=Experiment%20Selection%20in%20Meta-Analytic%20Piecemeal%20Causal%20Discovery" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p4">Causal discovery</span><span class="pill p4">Literature synthesis</span><span class="pill p2">Equivalence class</span><span class="pill p0">Experiment selection</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30-second read</div>
+      <h2 id="overview-title">Expectation-based Algorithm 3 reduces the average <strong>equivalence class</strong> below ten graphs after nine experiments, versus 19 for random selection. Even all two-variable experiments leave an average of four to five indistinguishable graphs.</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>Question</dt>
+          <dd><strong>When only local causal claims from separate papers are available</strong>, how can compatible graphs be synthesized and the next informative experiment selected?</dd>
+        </div>
+        <div>
+          <dt>Design</dt>
+          <dd>Constraint-based <strong>causal discovery</strong> and simulation, encoding research-map evidence as observational or interventional independence constraints, solving with SAT/MaxSAT, and comparing random, degree-of-freedom, and expectation policies.</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>Evidence strength</span>
+          <strong class="evidence-level level-low">Limited</strong>
+        </div>
+        <dl>
+          <div><dt>What was assessed</dt><dd><strong>All 543 four-variable DAGs, 48 two-variable studies, compatible-graph equivalence classes, degrees of freedom, and three experiment-selection policies.</strong></dd></div>
+          <div><dt>Downgrade triggers</dt><dd><strong>The oracle always returns correct results and assumes causal sufficiency</strong>. Evaluation stops at four variables, and Algorithm 3 requires costly equivalence-class enumeration.</dd></div>
+          <div><dt>Impact on interpretation</dt><dd><strong>The framework shows how literature constraints can reconcile conflicts and rank evidence gaps</strong>, but does not establish recovery of true structure in noisy, confounded, large biological networks.</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">Reading advice</strong><strong>Start with Figure 1 for the research-map-to-constraint workflow, read Algorithms 2–4</strong>, and then verify experiment counts and residual underdetermination in Figure 2 and Table 2.</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">Three numbers to keep</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">543</div>
+          <h3>Complete set of four-variable DAGs</h3>
+          <p><strong>Each graph is used as the truth in repeated simulation</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">9 vs 19</div>
+          <h3>Experiments to reach fewer than ten graphs</h3>
+          <p><strong>About nine for Algorithm 3 and 19 for random selection</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">4–5</div>
+          <h3>Graphs remaining at the limit</h3>
+          <p><strong>Average equivalence-class size after all two-variable studies</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">Where to focus</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1109/ACCESS.2021.3093524" target="_blank" rel="noopener">
+            Figure 1 · PDF p. 7<small>Article entry</small> ↗
+          </a>
+          <div><h3>Convert a research map into graph constraints</h3><p><strong>The figure connects evidence edges, observation or intervention markers, constraint solving, and recommendation of the next experiment.</strong></p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1109/ACCESS.2021.3093524" target="_blank" rel="noopener">
+            Algorithms 2–4 · PDF pp. 7–9<small>Article entry</small> ↗
+          </a>
+          <div><h3>Compare freedom, expectation, and hypothesis categorization</h3><p><strong>The algorithms rank variable pairs, expected graph removal, or SAT compatibility to select or screen experiments.</strong></p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1109/ACCESS.2021.3093524" target="_blank" rel="noopener">
+            Figure 2 and Table 2 · PDF p. 10<small>Article entry</small> ↗
+          </a>
+          <div><h3>Check information efficiency and underdetermination</h3><p><strong>The results compare the rate of equivalence-class reduction and show why two-variable evidence cannot identify a unique graph.</strong></p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">Piecemeal causal-discovery loop</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">Evidence</div>
+            <h3>Encode local study claims</h3>
+            <p><strong>Turn observed or interventional dependence statements into confidence-weighted constraints.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">Solving</div>
+            <h3>Find maximally compatible graphs</h3>
+            <p><strong>Use SAT when constraints agree and weighted MaxSAT to minimize conflict when they do not.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">Uncertainty</div>
+            <h3>Compute equivalence-class freedom</h3>
+            <p><strong>Track which directions or absent-edge relations remain possible for each variable pair.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">Selection</div>
+            <h3>Recommend an informative experiment</h3>
+            <p><strong>Prefer tests expected to remove the most candidate graphs while avoiding uninformative interventions.</strong></p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">Update</div>
+            <h3>Add the result and solve again</h3>
+            <p><strong>Each new constraint shrinks the class until cost or identifiability limits are reached.</strong></p>
+          </li>
+        </ol>
+        <figcaption><strong>Organized from PDF Figure 1, Algorithms 1–4, and the simulation results.</strong></figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">Full deep read</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>Encode the causal claims scattered across many studies (aggregate statistics only, no raw data) as constraints, compute all consistent causal graphs (the equivalence class), then use information gain to pick "the next experiment most worth running." A pre-LLM ancestor of "literature → causal graph."</p>
+</blockquote>
+<h2>The authors</h2>
+<p>From UCLA, the paper joins the groups of senior author Alcino Silva and William Hsu. Silva, a professor of neurobiology and psychiatry, champions "research maps" for integrating knowledge and planning experiments; Hsu works in medical imaging informatics.</p>
+<h2>The problem</h2>
+<p><strong>Most of what a scientist reads is free text: papers report aggregate statistics</strong>, not raw data — yet classic causal-discovery algorithms run on raw data, and "building causal models with only textual information" has had little work. Biology adds a structural difficulty: you can usually observe only a subset of the system's variables at once (piecemeal), and must stitch subset results together analytically.</p>
+<p>The authors concede a hard limit up front: piecemeal <strong>causal discovery</strong> "often fails to identify the one true causal graph for the system under investigation, regardless of the number of experiments." So the problem splits in two — synthesize causal evidence from many studies into one consistent model, and decide which experiment to run next most efficiently.</p>
+<h2>The approach</h2>
+<p><strong>A causal graph G = (V, D), structure only, no parameters</strong>. Constraints are written as (conditional) independence relations with an intervention set, X ⊥⊥ Y | C ‖ J (J is the intervention set, J = ∅ is passive observation), bridged by the causal Markov and faithfulness conditions with d-separation linking distributions to graphs.</p>
+<p><strong>Solving uses the Hyttinen–Eberhardt–Järvisalo (2014) ASP constraint-based algorithm — which assumes neither acyclicity nor causal sufficiency</strong>, so it can represent cycles and latent confounders: conflict-free constraints go to SAT, conflicting ones to weighted MaxSAT, where each constraint carries a confidence weight (from p-values or a research-map edge's evidence score) and the solver finds the graph set minimizing the summed weight of violated constraints.</p>
+<p><strong>Evidence comes from Silva's research maps: nodes are phenomena</strong>, edges carry a sign (excitation/inhibition/independence) and a methodology tag (↑↓ intervention, ∅↑∅↓ observation), each with a Bayesian aggregate score based on evidential convergence and consistency.</p>
+<p>The engine for choosing experiments is the <strong>equivalence class</strong> and its degrees of freedom (DOF). The consistent-graph set is the equivalence class — the bigger, the more ignorant; DOF is "how many edge-relation variants remain between any pair across the whole class," and since each DAG pair has 3 possibilities (X→Y, X←Y, X···Y), fixing one leaves 2 DOF.</p>
+<p><strong>Algorithm 2 picks the pair with the most remaining DOF</strong>, then chooses a maximally informative experiment from a lookup, deliberately avoiding uninformative interventions (e.g., if X→Y is among the options, don't intervene on Y — that erases the edge and makes the variants indistinguishable).</p>
+<p>Algorithm 3 goes further: for each DOF assignment it computes the expected number of graphs pruned if true, e = (fraction assigning it) × (graphs it would eliminate), and picks the max — a value-of-information objective, but it must enumerate the whole <strong>equivalence class</strong>, so it costs more.</p>
+<p><strong>Algorithm 4 uses just 1–2 SAT queries to sort a proposed hypothesis into three classes: consistent with none (contradiction), consistent with all (already entailed), or consistent with some but not all (the only kind worth testing, guaranteed to prune the class) — which the authors call an analytic expression of Popper's falsifiability.</strong></p>
+<h2>Key results</h2>
+<p><strong>A framework plus exhaustive simulation — no new empirical study here (the real two-paper neuroscience merge is in a companion paper)</strong>. Model-space scale: 1/2/3 variables give 1/3/25 DAGs, 4 variables give 543, 7 variables about 1.1 billion.</p>
+<p><strong>The evaluation runs over all 543 four-variable DAGs</strong>, each taken as ground truth with an oracle that assumes causal sufficiency and knows the true graph, selecting from the 48 two-variable studies defined by the research-map schema and recording equivalence-class size, averaged across all 543.</p>
+<p><strong>Main findings: Algorithm 3 shrinks the class to fewer than 10 graphs (a size a domain expert can review) in 9 experiments vs 19 for random</strong>; reaching the minimum, random takes on average 32 more studies than Algorithm 3.</p>
+<p><strong>But there's a fundamental ceiling — after every two-variable experiment is done, on average 4–5 graphs remain indistinguishable</strong>, the limit of piecemeal two-variable discovery (contrast: with all variables observable and any interventions, log(N)+1 experiments suffice).</p>
+<h2>How solid is the evidence</h2>
+<p><strong>Heavily idealized</strong>. Although the underlying engine can represent cycles and latent confounders, the demonstrated evaluation is restricted to DAGs (acyclic) with an oracle assuming causal sufficiency (no latent confounders) — so the "general model space" is a property of the tooling, never actually stress-tested by the simulations.</p>
+<p>And the oracle returns the correct result for every experiment: no scientist fallibility, no <strong>measurement error</strong>, no finite-sample independence-test error.</p>
+<p><strong>The exhaustive study only reaches N = 4</strong>; 7 variables is already ~10⁹, and Algorithm 3 must enumerate the whole class, so large systems are impractical (the fallback is to wait for supercomputers, or drop to the 1–2-SAT-query Algorithm 4 for screening).</p>
+<p><strong>The baseline is random experiment selection, which the authors admit doesn't mean real scientists choose at random</strong>. Faithfulness, oracle correctness, and the non-identifiability under the two-variable constraint (4–5 residual graphs) are the binding limits.</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="On this page">
+    <div class="deep-toc-title">On this page</div>
+    <a href="#overview" class="is-main">30-second read</a>
+    <a href="#key-numbers">Three numbers to keep</a>
+    <a href="#where-to-focus">Where to focus</a>
+    <a href="#study-design">Piecemeal causal-discovery loop</a>
+    <a href="#full-read">Full deep read</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← Back to deep reads</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>My Research Desk · Xuanyu Shi</span>
+    <span>Updated on weekdays · <a href="https://xuanyshi.github.io/research-desk/en/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

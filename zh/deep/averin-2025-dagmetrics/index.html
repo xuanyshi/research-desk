@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>使用DAGMetrics评估有向无环图：块茎与土壤微生物组数据的启示 · 精读 · 我的文献集</title>
+<meta name="description" content="PC+Spearman在复杂度与跨预处理稳定性间较平衡。图间F1和重复边衡量结构一致性，不代表边方向正确或具有干预意义。">
+<meta property="og:title" content="使用DAGMetrics评估有向无环图：块茎与土壤微生物组数据的启示 · 精读 · 我的文献集">
+<meta property="og:description" content="PC+Spearman在复杂度与跨预处理稳定性间较平衡。图间F1和重复边衡量结构一致性，不代表边方向正确或具有干预意义。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="我的文献集">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/zh/deep/averin-2025-dagmetrics/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/zh/deep/averin-2025-dagmetrics/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/averin-2025-dagmetrics/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/averin-2025-dagmetrics/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/averin-2025-dagmetrics/">
+<link rel="alternate" type="application/atom+xml" title="我的文献集 · 精读" href="https://xuanyshi.github.io/research-desk/zh/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">我的文献集<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">首页</a>
+      <a href="../../library/index.html" class="">文献库</a>
+      <a href="../../deep/index.html" class="on">精读</a>
+      <a href="../../daily/index.html" class="">每日速览</a>
+      <a href="../../log/index.html" class="">历程</a>
+      <a href="../../about/index.html" class="">关于</a>
+      <span class="lang">
+        <a href="../../../zh/deep/averin-2025-dagmetrics/" class="on">中</a>
+        <a href="../../../en/deep/averin-2025-dagmetrics/" class="">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">我的精读</div>
+  <h1><span class="title-original" lang="en">Evaluating Directed Acyclic Graphs with DAGMetrics: Insights from Tuber and Soil Microbiome Data</span><span class="title-zh" lang="zh-CN">使用DAGMetrics评估有向无环图：块茎与土壤微生物组数据的启示</span></h1>
+  <p>Pavel Averin, Ifigeneia Mellidou, Maria Ganopoulou, Aliki Xanthopoulou et al.</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Agronomy 15 (2025):987</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.3390/agronomy15040987" target="_blank" rel="noopener">原文 / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=Evaluating%20Directed%20Acyclic%20Graphs%20with%20DAGMetrics%3A%20Insights%20from%20Tuber%20and%20Soil%20Microbiome%20Data" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p2">DAGMetrics</span><span class="pill p4">因果发现</span><span class="pill p0">图结构比较</span><span class="pill p1">Markov毯</span><span class="pill p3">微生物组</span><span class="pill p3">R软件</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30秒结论</div>
+      <h2 id="overview-title">PC+Spearman在复杂度与跨预处理稳定性间较平衡。图间F1和重复边衡量<strong>结构一致性</strong>，不代表边方向正确或具有干预意义。</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>研究问题</dt>
+          <dd>没有真值DAG时，怎样比较不同因果发现算法输出的<strong>复杂度、相似度、稳定性与局部结构</strong>？</dd>
+        </div>
+        <div>
+          <dt>研究设计</dt>
+          <dd>R软件与案例研究；在块茎和土壤微生物组上组合4种算法、多种检验或评分、缩放与变换，生成<strong>360张DAG</strong>并分析Markov毯。</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>证据强度</span>
+          <strong class="evidence-level level-low">低至中等</strong>
+        </div>
+        <dl>
+          <div><dt>计算对象</dt><dd><strong>360张学习所得DAG的边、碰撞点、孤立节点、图间F1和Markov毯</strong>，来自两个微生物组数据集。</dd></div>
+          <div><dt>触发条件</dt><dd>复杂度适中且跨缩放、变换较稳定时选择候选图；若多个算法共享错误假设，<strong>稳定性会保留系统性错误</strong>。</dd></div>
+          <div><dt>对结论的影响</dt><dd>适合做因果发现后的结构质量控制；<strong>没有真值、干预或外部验证时不能确认因果边</strong>。</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">阅读建议</strong>先读Figure 1比较复杂度，再看Figure 2的算法间F1，最后用Figure 3和Figures 4–5审查局部结构，始终区分<strong>相似度与准确率</strong>。</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">三个关键数字</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">360张</div>
+          <h3>学习所得DAG</h3>
+          <p><strong>块茎240张、土壤120张</strong>，覆盖算法与预处理组合</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">4种</div>
+          <h3>结构学习算法</h3>
+          <p><strong>PC、Inter-IAMB、Tabu Search和Hill-Climbing</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">最多7个</div>
+          <h3>Markov毯节点</h3>
+          <p><strong>块茎最多7个、土壤最多4个</strong>，并存在大量孤立节点</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">重点看哪里</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://www.mdpi.com/2073-4395/15/4/987" target="_blank" rel="noopener">
+            Figure 1 · PDF p. 7<small>图表直达</small> ↗
+          </a>
+          <div><h3>比较结构复杂度</h3><p><strong>归一化边、碰撞点和孤立节点揭示算法族的密度差异</strong>。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://www.mdpi.com/2073-4395/15/4/987" target="_blank" rel="noopener">
+            Figure 2 · PDF p. 8<small>图表直达</small> ↗
+          </a>
+          <div><h3>读懂图间F1</h3><p><strong>热图显示算法与预处理输出的一致程度，不提供真值准确率</strong>。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://www.mdpi.com/2073-4395/15/4/987" target="_blank" rel="noopener">
+            Figure 3 · PDF p. 9<small>图表直达</small> ↗
+          </a>
+          <div><h3>检查局部结构分布</h3><p><strong>Markov毯节点、边、碰撞点和孤立情况用于评估局部可解释性</strong>。</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">无真值条件下的DAG比较</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">学习</div>
+            <h3>生成多配置DAG</h3>
+            <p><strong>交叉算法、检验、评分、缩放和变换，保留全部输出</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">描述</div>
+            <h3>量化全局复杂度</h3>
+            <p><strong>计算边、碰撞点和孤立节点并按节点数归一化</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">比较</div>
+            <h3>计算结构相似度</h3>
+            <p><strong>以图间F1和共同边衡量不同设置的一致程度</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">局部</div>
+            <h3>展开Markov毯</h3>
+            <p><strong>围绕目标节点比较父、子与共同子节点的其他原因</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">选择</div>
+            <h3>保留稳定候选图</h3>
+            <p><strong>以复杂度和稳定性筛图，并明确缺少因果真值验证</strong>。</p>
+          </li>
+        </ol>
+        <figcaption><strong>依据PDF Methods及Figures 1–3整理</strong>。</figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">完整精读</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>DAGMetrics能比较学习所得DAG的复杂度与稳定性；没有真值图时，这些指标只能筛选结构，不能确认因果方向。</p>
+</blockquote>
+<h2>作者团队</h2>
+<p>Pavel Averin 与 Theodoros Moysiadis 来自 University of Nicosia，Ifigeneia Mellidou、Aliki Xanthopoulou 来自希腊 ELGO-DIMITRA 植物育种与遗传资源研究所，Maria Ganopoulou 来自 Aristotle University of Thessaloniki。团队结合计算机科学、植物研究和微生物组分析。</p>
+<h2>解决什么问题</h2>
+<p>因果发现算法对检验方法、评分函数、缩放与变换十分敏感。真实微生物组通常没有已知DAG，研究者很难判断哪张图值得后续解释。DAGMetrics提供一套统一的全局与局部比较工具。</p>
+<h2>怎么做的</h2>
+<p>R包计算边数、碰撞点数、孤立节点数等描述指标，也用F1与真阳性边数比较图的相似性，并可视化Markov毯。作者在马铃薯块茎与土壤微生物组上比较PC、Inter-IAMB、Tabu Search和Hill-Climbing，组合Kendall、Spearman、Pearson相关或AIC、BIC评分，以及三种缩放和两种变换。</p>
+<p>总计生成块茎 <strong>240张DAG</strong>、土壤120张。模型选择的【计算对象】是不同配置输出的图结构；【触发条件】是复杂度适中且跨预处理设置相对稳定；【实际影响】是选出用于Markov毯和生物学解释的候选图。</p>
+<h2>关键结果</h2>
+<p>评分型算法通常产生更稠密的图，约束型算法产生更多孤立节点。PC与Inter-IAMB在Spearman或Kendall相关下跨缩放和变换较稳定；作者最终偏好PC+Spearman，理由是复杂度与稳定性的折中。</p>
+<p>块茎数据的Markov毯最多7个节点，土壤数据最多4个；大量节点孤立。不同风土和采后阶段之间出现若干相同边，部分与已知微生物代谢或生态关系相符。作者同时明确，各算法输出之间高度不相似。</p>
+<h2>证据有多硬</h2>
+<p>软件功能通过两个真实数据集和360张图展示，适合检查计算可复现性与结构敏感性。论文没有真值DAG，因此F1衡量两张估计图的一致程度，不能称为准确率。稳定错误会得到高分，多个算法共享假设也可能共同遗漏潜变量、组成型约束和批次效应。</p>
+<p>微生物丰度具有高维、小样本和组成数据特征，标准条件独立检验可能失真。发现的边主要通过已有生物学知识作事后解释，没有干预或独立队列验证。</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="本页导航">
+    <div class="deep-toc-title">本页导航</div>
+    <a href="#overview" class="is-main">30秒结论</a>
+    <a href="#key-numbers">三个关键数字</a>
+    <a href="#where-to-focus">重点看哪里</a>
+    <a href="#study-design">无真值条件下的DAG比较</a>
+    <a href="#full-read">完整精读</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← 回精读列表</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>我的文献集 · Xuanyu Shi</span>
+    <span>每个工作日更新一次 · <a href="https://xuanyshi.github.io/research-desk/zh/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>
