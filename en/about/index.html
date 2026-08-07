@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About · My Research Desk</title>
+<meta name="description" content="Papers I&#39;ve read, am reading, or mean to — plus a few worth a look from the journals each day.">
+<meta property="og:title" content="About · My Research Desk">
+<meta property="og:description" content="Papers I&#39;ve read, am reading, or mean to — plus a few worth a look from the journals each day.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="My Research Desk">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/en/about/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/en/about/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/about/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/about/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/about/">
+<link rel="alternate" type="application/atom+xml" title="My Research Desk · Deep reads" href="https://xuanyshi.github.io/research-desk/en/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../index.html">My Research Desk<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../index.html" class="">Home</a>
+      <a href="../library/index.html" class="">Library</a>
+      <a href="../deep/index.html" class="">Deep reads</a>
+      <a href="../daily/index.html" class="">Daily</a>
+      <a href="../log/index.html" class="">Log</a>
+      <a href="../about/index.html" class="on">About</a>
+      <span class="lang">
+        <a href="../../zh/about/" class="">中</a>
+        <a href="../../en/about/" class="on">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--sub">
+  <h1>About</h1>
+</section>
+<article class="prose">
+<h2>About me</h2>
+<p>I'm <strong>Xuanyu Shi</strong>, a methods researcher working at the intersection of statistics, data science, and epidemiology — a BS in Statistics and an MS in Data Science (both in the US), and a PhD at Peking University Health Science Center (health big data).</p>
+<p>My interests center on causal inference methodology (Pearl's DAG/SCM tradition and the Hernán–Robins epidemiological designs such as target trial emulation), biomedical knowledge graphs, evidence triangulation across study designs (RCT / Mendelian randomization / observational), and real-world evidence — applied mostly in pharmacoepidemiology and cancer epidemiology (e.g. GLP-1RA and cancer, risk factors for gastrointestinal cancers).</p>
+<p>Selected work: <em>Nature Communications</em> (2025, first author, Evidence Triangulator), <em>Scientific Data</em> (2024, first author), <em>Health Data Science</em> (2024).</p>
+<p><a href="https://xuanyshi.github.io/" target="_blank" rel="noopener">Homepage</a> · <a href="https://github.com/xuanyshi" target="_blank" rel="noopener">GitHub</a> · <a href="https://scholar.google.com/citations?user=ImrZzA8AAAAJ" target="_blank" rel="noopener">Google Scholar</a></p>
+
+<hr />
+<h2>About this site</h2>
+<p>This site does two things.</p>
+<p>It watches a shortlist of strong journals for me. Every day it pulls the new papers, has a model score them against my interests and write a short summary, and files them under <strong>Daily</strong>. I only read the ones that score well.</p>
+<p>And it holds what I've picked out myself. Anything worth keeping goes into the <strong>Library</strong> with tags, a rating, where I left off, and a note. When I've really worked through a paper, I write it up under <strong>Deep reads</strong>.</p>
+<p>One note: the scores and summaries under <strong>Daily</strong> are model-generated. The library notes and every deep read are written by me.</p>
+<h2>Using it</h2>
+<p>Fetch and score the latest papers:</p>
+<pre><code class="language-bash">python -m pipeline.daily
+</code></pre>
+<p>Save a paper:</p>
+<pre><code class="language-bash">python -m pipeline.add 2401.12345 --tags causal-inference --rating 4 --status read --note &quot;section 3 is the point&quot;
+</code></pre>
+<p>Rebuild the pages after editing data or templates:</p>
+<pre><code class="language-bash">python -m pipeline.render
+</code></pre>
+<h2>What it runs on</h2>
+<p>The pages are static HTML generated with Python and Jinja2, hosted on GitHub Pages. Beyond watching whitelisted journals (Crossref), it also searches OpenAlex by topic across the published literature and tracks arXiv/medRxiv preprints; scoring uses an OpenAI-compatible model endpoint. GitHub Actions handles the daily fetch and each deploy.</p>
+<p>The source and configuration notes are in the README.</p>
+</article>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>My Research Desk · Xuanyu Shi</span>
+    <span>Updated on weekdays · <a href="https://xuanyshi.github.io/research-desk/en/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>
