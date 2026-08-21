@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GENESIS：面向可解释因果发现 · 精读 · 我的文献集</title>
+<meta name="description" content="GENESIS通过模体、统计检验、Markov blanket和LLM裁决实现100%决策可追溯覆盖。该指标由流程保证，附录仍有带完整理由的错误边。">
+<meta property="og:title" content="GENESIS：面向可解释因果发现 · 精读 · 我的文献集">
+<meta property="og:description" content="GENESIS通过模体、统计检验、Markov blanket和LLM裁决实现100%决策可追溯覆盖。该指标由流程保证，附录仍有带完整理由的错误边。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="我的文献集">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/zh/deep/thorat-2026-genesis-causal-discovery/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/zh/deep/thorat-2026-genesis-causal-discovery/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/thorat-2026-genesis-causal-discovery/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/thorat-2026-genesis-causal-discovery/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/thorat-2026-genesis-causal-discovery/">
+<link rel="alternate" type="application/atom+xml" title="我的文献集 · 精读" href="https://xuanyshi.github.io/research-desk/zh/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">我的文献集<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">首页</a>
+      <a href="../../library/index.html" class="">文献库</a>
+      <a href="../../deep/index.html" class="on">精读</a>
+      <a href="../../daily/index.html" class="">每日速览</a>
+      <a href="../../log/index.html" class="">历程</a>
+      <a href="../../about/index.html" class="">关于</a>
+      <span class="lang">
+        <a href="../../../zh/deep/thorat-2026-genesis-causal-discovery/" class="on">中</a>
+        <a href="../../../en/deep/thorat-2026-genesis-causal-discovery/" class="">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">我的精读</div>
+  <h1><span class="title-original" lang="en">GENESIS: Towards Explainable Causal Discovery</span><span class="title-zh" lang="zh-CN">GENESIS：面向可解释因果发现</span></h1>
+  <p>Abhinav Thorat, Ravi Kumar Kolla, Vishak K Bhat, Harsh Vardhan Singh Chauhan et al.</p>
+  <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+  
+  <p class="deep-links">
+    <a href="https://arxiv.org/abs/2608.03868" target="_blank" rel="noopener">原文 / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=GENESIS%3A%20Towards%20Explainable%20Causal%20Discovery" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p1">因果发现</span><span class="pill p0">因果DAG</span><span class="pill p1">大语言模型</span><span class="pill p4">决策可追溯</span><span class="pill p1">Markov blanket</span><span class="pill p0">结构汉明距离</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30秒结论</div>
+      <h2 id="overview-title">GENESIS通过模体、统计检验、Markov blanket和LLM裁决实现<strong>100%决策可追溯覆盖</strong>。该指标由流程保证，附录仍有带完整理由的错误边。</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>研究问题</dt>
+          <dd>LLM参与因果发现时，能否让<strong>每条边的保留或删除理由可追查</strong>，同时维持结构准确性？</dd>
+        </div>
+        <div>
+          <dt>研究设计</dt>
+          <dd><strong>arXiv v1预印本</strong>；在5个标准贝叶斯网络、3个样本量和6个随机种子上比较统计与LLM辅助因果发现方法。</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>证据强度</span>
+          <strong class="evidence-level level-low">有限</strong>
+        </div>
+        <dl>
+          <div><dt>计算对象</dt><dd><strong>5个已知真图上的SHD、逐边解决来源及正确性</strong>，样本量为1,000、2,500和5,000。</dd></div>
+          <div><dt>触发条件</dt><dd>若理由覆盖等于正确性，各来源解决的边应接近全对；Child中统计来源仅<strong>6/11正确</strong>，且全部实验均为小型合成基准。</dd></div>
+          <div><dt>对结论的影响</dt><dd>结果支持<strong>边级审计轨迹原型</strong>，尚不足以证明模型能在真实生物医学数据中发现正确因果结构。</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">阅读建议</strong>先看Figure 1掌握三阶段流程，再核对Tables 3-5的SHD和Appendix逐边正确性。阅读时始终分开<strong>结构准确性、理由覆盖率和理由正确性</strong>。</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">三个关键数字</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">100%</div>
+          <h3>决策可追溯率</h3>
+          <p><strong>每条最终边至少绑定一种理由</strong>；这是按纳入规则构造的覆盖率</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">5 × 3 × 6</div>
+          <h3>基准设计</h3>
+          <p><strong>5个网络、3个样本量、6个随机种子</strong>，以SHD评价结构</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">6/11</div>
+          <h3>Child统计来源正确边</h3>
+          <p><strong>样本量1,000时仅55%正确</strong>；可追溯边仍可能为错误边</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">重点看哪里</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://arxiv.org/abs/2608.03868" target="_blank" rel="noopener">
+            Figure 1与Tables 1-2 · PDF p. 4<small>图表直达</small> ↗
+          </a>
+          <div><h3>拆解三阶段决策轨迹</h3><p><strong>候选模体、数据分数、blanket核验和最终裁决</strong>在同一流程中连接。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://arxiv.org/abs/2608.03868" target="_blank" rel="noopener">
+            Tables 3-5 · PDF pp. 6-7<small>图表直达</small> ↗
+          </a>
+          <div><h3>比较SHD而非只看可追溯率</h3><p><strong>GENESIS多次优于纯统计基线</strong>，但在Child等网络没有稳定超过LLM-CD或CaMML。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://arxiv.org/abs/2608.03868" target="_blank" rel="noopener">
+            Tables 6-13 · PDF pp. 11-13<small>图表直达</small> ↗
+          </a>
+          <div><h3>核对超参数与逐边错误</h3><p>附录暴露<strong>下阈值不一致和理由正确率差异</strong>，是判断复现性的关键。</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">GENESIS边决策链</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">语义先验</div>
+            <h3>生成三节点模体</h3>
+            <p><strong>GPT-5从变量元数据提出chain、fork和collider</strong>并给出置信度。</p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">数据核验</div>
+            <h3>计算边与模体分数</h3>
+            <p><strong>组合条件独立、BIC、ANM和LiNGAM信号</strong>，形成初始候选图。</p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">局部结构</div>
+            <h3>求Markov blanket共识</h3>
+            <p><strong>取数据IAMB与LLM blanket的交集</strong>，互相入选时保留边。</p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">竞争解释</div>
+            <h3>裁决不确定边</h3>
+            <p><strong>枚举直接、中介、长链和共同原因假设</strong>，再输出KEEP或DISCARD。</p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">双重评价</div>
+            <h3>分开审核理由与真值</h3>
+            <p>同时报告<strong>理由来源、理由正确性和SHD</strong>，避免把覆盖率当成因果正确性。</p>
+          </li>
+        </ol>
+        <figcaption><strong>依据PDF Algorithm 1、Figures 1-2和Appendix整理</strong>；输出是带理由的边决策。</figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">完整精读</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>GENESIS把因果发现拆成三节点模体生成、统计核验和边决策三段，并为每条保留边记录理由。 它在五个标准贝叶斯网络上实现100%【决策可追溯】，但该比例由定义和流程保证，不代表边100%正确。</p>
+</blockquote>
+<h2>作者团队</h2>
+<p>Abhinav Thorat、Ravi Kumar Kolla、Vishak K Bhat、Harsh Vardhan Singh Chauhan和Niranjan Pedanekar来自Sony Research India的User Engagement Research团队。论文于2026年8月4日提交至arXiv，目前为v1预印本。</p>
+<h2>解决什么问题</h2>
+<p>纯统计因果发现依赖条件独立、评分函数或函数形式假设，在小样本和Markov等价情形下常不能确定边的方向。LLM可以利用变量名称和描述补充语义先验，但现有混合方法通常只给最终图，难以追查某条边为什么被保留或删除。</p>
+<p>作者提出【决策可追溯性】：对最终DAG中的每条边，都保存至少一种明确理由，来源可以是统计证据、Markov blanket一致性或LLM领域推理。这个指标回答【是否有理由可查】，不直接回答【理由是否正确】或【边是否为真】。</p>
+<h2>怎么做的</h2>
+<p>【第一阶段：LLM Explorer】的计算对象是变量元数据及其三节点组合。GPT-5生成chain、fork和collider模体，并给出语义置信度；候选模体触发后，结论影响是把单条边升级为局部结构假设，供数据阶段核验。</p>
+<p>【第二阶段：Data Explorer】的计算对象是候选边和模体。作者把条件独立检验、BIC、加性噪声模型和LiNGAM的结果加权为边置信度，并检验模体蕴含的依赖结构。候选分数超过下阈值时进入初始图；分数位于不确定区间或LLM与数据冲突时，边被送入下一阶段。</p>
+<p>【第三阶段：Edge Resolution】先取数据IAMB与Qwen3.5-27B所给Markov blanket的交集。若两个端点互相进入对方的共识blanket，边被保留；条件不满足时，GPT-5列出直接、两种中介、长链和共同原因五类竞争解释，Gemini 3 Pro据此作KEEP或DISCARD判定。最终边保存解决来源，形成审计轨迹。</p>
+<h2>关键结果</h2>
+<p>实验覆盖Asia、Cancer、Child、Earthquake和Survey五个已知真图的贝叶斯网络；每个网络分别生成1,000、2,500和5,000个观测，六个随机种子重复。主要准确性指标为Structural Hamming Distance（SHD）。</p>
+<p>在样本量1,000时，GENESIS在Earthquake、Cancer和Asia的SHD分别为0.00、0.17和0.33，Child为6.83，Survey为4.17。样本量5,000时相应为0.00、0.00、1.00、6.67和1.83。它在多数网络上优于PC、SCORE、NOTEARS和DirectLiNGAM，但没有稳定优于LLM-CD、CausalOrder或CaMML。例如Child在三个样本量下均由LLM-CD或CaMML取得更低SHD。</p>
+<p>所有设置的【决策可追溯率】均为100%，因为算法只允许带至少一种理由的边进入最终图。附录同时报告理由来源的正确率：样本量1,000的Child网络中，统计来源仅6/11正确，Markov blanket来源11/12正确；Asia的blanket来源为5/7正确。由此可见，理由覆盖完整仍可产生错误边。</p>
+<h2>证据有多硬</h2>
+<p>【证据等级：有限】。实验有已知真图、多个样本量、六次重复和逐边正确性表，足以检验小型基准上的结构恢复与审计覆盖。全部数据来自五个教科书式网络，节点名称和元数据直接暴露语义；Asia和Cancer带医学词汇，也不能代表真实生物医学因果发现。论文没有外部真实数据、盲化元数据、分布迁移、潜在混杂或测量误差实验。</p>
+<p>【100%决策可追溯】由纳入规则保证，属于过程覆盖率。它没有验证理由的事实真实性、证据独立性、置信度校准或专家可复核性。不同阶段使用GPT-5、Qwen3.5-27B和Gemini 3 Pro，也使结果依赖模型版本、提示词和服务状态。</p>
+<p>复现说明还存在两处内部不一致。Cancer示例把不确定区间写为0.40至0.70，附录统一超参数表把下阈值写为0.25；方法脚注称模体上限为5n，附录又称所有实验固定为40。算法以DAG为输出，但伪代码没有明确展示全局环检测或冲突方向处理。阈值、候选规模和无环约束需要作者澄清。</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="本页导航">
+    <div class="deep-toc-title">本页导航</div>
+    <a href="#overview" class="is-main">30秒结论</a>
+    <a href="#key-numbers">三个关键数字</a>
+    <a href="#where-to-focus">重点看哪里</a>
+    <a href="#study-design">GENESIS边决策链</a>
+    <a href="#full-read">完整精读</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← 回精读列表</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>我的文献集 · Xuanyu Shi</span>
+    <span>每个工作日更新一次 · <a href="https://xuanyshi.github.io/research-desk/zh/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>
