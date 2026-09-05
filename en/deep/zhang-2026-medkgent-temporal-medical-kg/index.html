@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MedKGent: A Large Language Model Agent Framework for Constructing Temporally Evolving Medical Knowledge Graph · Deep reads · My Research Desk</title>
+<meta name="description" content="The framework provides PMID-level provenance, daily replay, and nearly 3 million relations. Confidence comes from repeated generation and repeated mentions, making it useful for filtering and ranking but not a probability that a medical fact or causal effect is true.">
+<meta property="og:title" content="MedKGent: A Large Language Model Agent Framework for Constructing Temporally Evolving Medical Knowledge Graph · Deep reads · My Research Desk">
+<meta property="og:description" content="The framework provides PMID-level provenance, daily replay, and nearly 3 million relations. Confidence comes from repeated generation and repeated mentions, making it useful for filtering and ranking but not a probability that a medical fact or causal effect is true.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="My Research Desk">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/en/deep/zhang-2026-medkgent-temporal-medical-kg/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/en/deep/zhang-2026-medkgent-temporal-medical-kg/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/zhang-2026-medkgent-temporal-medical-kg/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/zhang-2026-medkgent-temporal-medical-kg/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/zhang-2026-medkgent-temporal-medical-kg/">
+<link rel="alternate" type="application/atom+xml" title="My Research Desk · Deep reads" href="https://xuanyshi.github.io/research-desk/en/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">My Research Desk<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">Home</a>
+      <a href="../../library/index.html" class="">Library</a>
+      <a href="../../deep/index.html" class="on">Deep reads</a>
+      <a href="../../daily/index.html" class="">Daily</a>
+      <a href="../../log/index.html" class="">Log</a>
+      <a href="../../about/index.html" class="">About</a>
+      <span class="lang">
+        <a href="../../../zh/deep/zhang-2026-medkgent-temporal-medical-kg/" class="">中</a>
+        <a href="../../../en/deep/zhang-2026-medkgent-temporal-medical-kg/" class="on">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">My deep read</div>
+  <h1>MedKGent: A Large Language Model Agent Framework for Constructing Temporally Evolving Medical Knowledge Graph</h1>
+  <p>Duzhen Zhang, Zixiao Wang, Zhong-Zhi Li, Yahan Yu et al.</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">npj Digital Medicine (2026), Article in Press</span><span class="jbadge jb-cas z1">CAS 1 Top</span><span class="jbadge jb-jcr">JCR Q1</span><span class="jbadge jb-if">IF 18</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.1038/s41746-026-03058-7" target="_blank" rel="noopener">Source / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=MedKGent%3A%20A%20Large%20Language%20Model%20Agent%20Framework%20for%20Constructing%20Temporally%20Evolving%20Medical%20Knowledge%20Graph" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p3">Medical knowledge graph</span><span class="pill p2">LLM agents</span><span class="pill p3">Relation extraction</span><span class="pill p0">Temporal updating</span><span class="pill p2">Provenance</span><span class="pill p4">Retrieval-augmented generation</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30-second read</div>
+      <h2 id="overview-title">The framework provides <strong>PMID-level provenance, daily replay, and nearly 3 million relations</strong>. Confidence comes from repeated generation and repeated mentions, making it useful for filtering and ranking but not a probability that a medical fact or causal effect is true.</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>Question</dt>
+          <dd>How does MedKGent turn <strong>more than 10 million PubMed abstracts into an updatable medical knowledge graph</strong>, and what does its confidence value establish?</dd>
+        </div>
+        <div>
+          <dt>Design</dt>
+          <dd><strong>A methods and infrastructure study in npj Digital Medicine</strong>; two Qwen2.5 agents process abstracts from 1975-2023 by day, followed by human, LLM-judge, and medical-QA evaluation.</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>Evidence strength</span>
+          <strong class="evidence-level level-moderate">Moderate</strong>
+        </div>
+        <dl>
+          <div><dt>What was assessed</dt><dd><strong>A production graph from 10,014,314 abstracts, automated review of 83,438 triples, human review of 2,767 triples, and seven QA benchmarks.</strong></dd></div>
+          <div><dt>Downgrade triggers</dt><dd>Human review covers about 0.093% of final relations, and the accepted manuscript contains two inconsistencies in numbers or annotator count. Clinical or causal claims would require study-design and bias information.</dd></div>
+          <div><dt>Impact on interpretation</dt><dd>The study supports <strong>large-scale literature relation extraction and RAG infrastructure</strong>, not direct causal interpretation of Cause, Treat, or Prevent edges.</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">Reading advice</strong>Start with Figure 1 to trace score generation and accumulation, use Figure 3 to audit extraction validity, and finish with Figure 4. Keep <strong>extraction consistency, source recurrence, and medical credibility</strong> separate.</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">Three numbers to keep</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">10,014,314</div>
+          <h3>PubMed abstracts entering the pipeline</h3>
+          <p>Filtered from more than 20 million records to <strong>1975-2023 abstracts containing 100-300 words</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">2,971,384</div>
+          <h3>Relations after merging and conflict handling</h3>
+          <p>Connect <strong>156,275 normalized entities</strong>, with PMID lists and latest publication dates on edges</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">+8.4 points</div>
+          <h3>Largest MedQA-US accuracy gain</h3>
+          <p>GPT-3.5-turbo increased from <strong>0.599 to 0.683</strong>, demonstrating retrieval utility under the study setup</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">Where to focus</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1038/s41746-026-03058-7" target="_blank" rel="noopener">
+            Figure 1 · PDF p. 18<small>Direct link</small> ↗
+          </a>
+          <div><h3>Trace the two-agent construction pipeline</h3><p>The figure shows <strong>50 stochastic extractions, the 0.60 threshold, repeated-edge accumulation, and conflict replacement</strong>, anchoring interpretation of confidence.</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1038/s41746-026-03058-7" target="_blank" rel="noopener">
+            Figure 3 · PDF p. 20<small>Direct link</small> ↗
+          </a>
+          <div><h3>Audit automated and human validity</h3><p>Compare <strong>83,438 automatically judged and 2,767 manually judged triples</strong>, while noting 85.44% in the text versus 85.64% in the figure.</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1038/s41746-026-03058-7" target="_blank" rel="noopener">
+            Figure 4 · PDF p. 21<small>Direct link</small> ↗
+          </a>
+          <div><h3>Separate QA gain from graph quality</h3><p>Across seven datasets and five models, <strong>MedKGent RAG exceeds direct answering and SemMedDB RAG</strong>, but the measured object remains downstream accuracy.</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://github.com/BladeDancer957/MedKGent" target="_blank" rel="noopener">
+            Data and code availability · PDF p. 12<small>Direct link</small> ↗
+          </a>
+          <div><h3>Inspect the public graph and code</h3><p>The authors release the <strong>Hugging Face graph, GitHub code, and a Zenodo archive</strong>, enabling version pinning and relation-level audits.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">Five steps from abstracts to QA</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">Corpus</div>
+            <h3>Filter and order by day</h3>
+            <p>Retain <strong>100-300-word abstracts from 1975-2023</strong>, sorting same-day records by PMID.</p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">Entities</div>
+            <h3>Normalize six concept types</h3>
+            <p>PubTator3 detects <strong>genes, diseases, chemicals, variants, species, and cell lines</strong>.</p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">Extraction</div>
+            <h3>Filter through repeated decoding</h3>
+            <p>Run the same prompt <strong>50 times</strong> and remove triples appearing with frequency below 0.60.</p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">Construction</div>
+            <h3>Accumulate scores and adjudicate conflicts</h3>
+            <p>Repeated edges append PMIDs and gain score; an LLM <strong>retains one relation</strong> when predicates differ.</p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">Evaluation</div>
+            <h3>Validate extraction and utility separately</h3>
+            <p>Humans and LLMs assess <strong>source consistency</strong>, while QA tests RAG accuracy; neither establishes causal validity.</p>
+          </li>
+        </ol>
+        <figcaption><strong>Organized from PDF Figures 1, 3, and 4</strong>; each step has a different validation object.</figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">Full deep read</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>MedKGent uses two Qwen2.5 agents to process 10,014,314 PubMed abstracts in sequence, producing a medical knowledge graph with 156,275 entities and 2,971,384 relations. It demonstrates that large-scale literature relation extraction with source provenance can support retrieval-augmented QA. Its confidence values measure output stability and repeated mentions, not the probability that a medical fact, causal effect, or clinical decision is correct.</p>
+</blockquote>
+<h2>The authors</h2>
+<p>Duzhen Zhang, Zixiao Wang, Zhong-Zhi Li, Yahan Yu, Shuncheng Jia, Jiahua Dong, Haotian Xu, Xing Wu, Yingying Zhang, Tielin Zhang, Jie Yang, Xiuying Chen, and Le Song are affiliated with Mohamed bin Zayed University of Artificial Intelligence, the University of Chinese Academy of Sciences, Kyoto University, Tsinghua University, East China Normal University, the Chinese Academy of Sciences, Brigham and Women's Hospital at Harvard Medical School, and GenBio AI.</p>
+<p>The paper was received on 30 September 2025, accepted on 20 July 2026, and published online in npj Digital Medicine on 4 August 2026. The current PDF is an unedited Article in Press version under CC BY-NC-ND 4.0.</p>
+<h2>The problem</h2>
+<p>Biomedical knowledge graphs often collapse decades of literature into a static set of relations, obscuring when a claim first appeared, how it recurred, and how its sources changed. Conventional supervised relation extraction also depends on fixed schemas and annotated data, making new relations or corpora costly to accommodate.</p>
+<p>MedKGent aims to establish an updatable literature-to-graph pipeline. It identifies entities and relations in PubMed abstracts, stores PMID-level provenance and publication dates, writes records to Neo4j chronologically, and tests whether the resulting graph improves medical QA.</p>
+<h2>The approach</h2>
+<p>The authors began with more than 20 million PubMed abstracts. Records that could not be downloaded, lacked abstracts, were incomplete, fell outside 1975-2023, or did not contain 100-300 words were removed. The remaining 10,014,314 abstracts were ordered by publication date and then by PMID within each day.</p>
+<p>The extraction object is an entity pair identified by PubTator3 and one of 12 relations generated by Qwen2.5-32B-Instruct. Six entity types are represented: Gene, Disease, Chemical, Variant, Species, and CellLine. The relation vocabulary comprises Associate, Negative Correlate, Positive Correlate, Compare, Cotreat, Interact, Drug Interact, Cause, Inhibit, Treat, Stimulate, and Prevent. Each abstract undergoes 50 stochastic inferences at temperature 0.7. A triple's frequency is rounded down to a multiple of 0.05, and values below 0.60 trigger deletion. This removes relations unstable under repeated decoding but does not assess study design, bias, or causal identification.</p>
+<p>When an existing entity pair has the same relation, its score s and the incoming score s' are combined as s=1-(1-s)(1-s'). The new PMID is appended and the timestamp becomes the latest publication date. If the relation differs, the Constructor Agent compares scores and timestamps at temperature 0.2 and keeps one relation. The rule compresses duplicates and conflicts, with a risk of collapsing multiple valid contexts or opposing findings into one edge.</p>
+<p>For QA, identifiers, exact keywords, or BiomedBERT vectors link question entities to graph nodes. One-hop neighbors are retrieved, reranked by an LLM, and reduced to five triples. Direct answering, SemMedDB RAG, and MedKGent RAG are compared across seven medical QA datasets and five LLMs.</p>
+<h2>Key results</h2>
+<p>The Extractor Agent retained 8,922,152 triples from 3,472,524 abstracts. After duplicate merging and conflict resolution, the graph contains 156,275 entities and 2,971,384 relations. Gene and Chemical nodes account for 57.6% and 33.6%, respectively. Associate, Negative Correlate, and Positive Correlate make up 47.7%, 26.1%, and 19.9% of relations. A score of 0.95 contains 38.3% of final edges.</p>
+<p>Automated evaluation sampled 34,725 abstracts and 83,438 triples. Under a four-level rubric that treats scores of at least 2 as valid, the text reports overall validity of 85.44% for GPT-4.1 and 88.10% for DeepSeek-v3. Two PhD-level annotators independently reviewed 2,767 triples from 1,000 abstracts, with overall validity of 86.30% and 86.09%. Most pairwise Cohen's kappa values exceeded 0.60.</p>
+<p>Both RAG settings generally outperformed direct answering across the seven QA datasets. The largest MedKGent gain on MedQA-US was 8.4 percentage points, with GPT-3.5-turbo improving from 0.599 to 0.683. Under the study's retrieval and prompt settings, MedKGent RAG also consistently exceeded SemMedDB RAG. The Figure 4 legend reports paired bootstrap significance testing with 5,000 iterations, although there is no modern same-corpus, same-scale graph-construction baseline.</p>
+<h2>How solid is the evidence</h2>
+<p>The evidence is moderate for an engineering claim. The paper documents a large production run, explicit extraction thresholds, public code and graph data, combined automated and human evaluation, and QA experiments across models. It supports the conclusion that the pipeline extracts many relations broadly consistent with source abstracts and can improve selected RAG tasks.</p>
+<p>Human review covers about 0.093% of the final graph, with no reported stratification by rare relation, entity type, or high-risk predicate. Automated assessment still relies on LLM judges. The binary validity rate groups Likely Correct with Correct, raising the reported pass rate. The abstract refers to three domain experts, while Methods and Results describe two. The GPT-4.1 overall rate is 85.44% in the text but 85.64% in Figure 3. These discrepancies require the final version or author clarification.</p>
+<p>Extraction is limited to English abstracts of 100-300 words. Dose, comparator, subgroup, study design, tables, figures, and supplementary material from full text do not systematically enter the graph. Errors from PubTator3 detection and normalization also propagate downstream.</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="On this page">
+    <div class="deep-toc-title">On this page</div>
+    <a href="#overview" class="is-main">30-second read</a>
+    <a href="#key-numbers">Three numbers to keep</a>
+    <a href="#where-to-focus">Where to focus</a>
+    <a href="#study-design">Five steps from abstracts to QA</a>
+    <a href="#full-read">Full deep read</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← Back to deep reads</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>My Research Desk · Xuanyu Shi</span>
+    <span>Updated on weekdays · <a href="https://xuanyshi.github.io/research-desk/en/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>
