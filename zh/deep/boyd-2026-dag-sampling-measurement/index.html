@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>为什么DAG通常应纳入抽样与测量过程 · 精读 · 我的文献集</title>
+<meta name="description" content="DAG应在触发时加入样本进入S、真实变量、测量代理和测量共同原因。这些节点可显示强制条件化、选择偏倚和共同测量误差何时使估计量不识别。">
+<meta property="og:title" content="为什么DAG通常应纳入抽样与测量过程 · 精读 · 我的文献集">
+<meta property="og:description" content="DAG应在触发时加入样本进入S、真实变量、测量代理和测量共同原因。这些节点可显示强制条件化、选择偏倚和共同测量误差何时使估计量不识别。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="我的文献集">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/zh/deep/boyd-2026-dag-sampling-measurement/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/zh/deep/boyd-2026-dag-sampling-measurement/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/boyd-2026-dag-sampling-measurement/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/boyd-2026-dag-sampling-measurement/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/boyd-2026-dag-sampling-measurement/">
+<link rel="alternate" type="application/atom+xml" title="我的文献集 · 精读" href="https://xuanyshi.github.io/research-desk/zh/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">我的文献集<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">首页</a>
+      <a href="../../library/index.html" class="">文献库</a>
+      <a href="../../deep/index.html" class="on">精读</a>
+      <a href="../../daily/index.html" class="">每日速览</a>
+      <a href="../../log/index.html" class="">历程</a>
+      <a href="../../about/index.html" class="">关于</a>
+      <span class="lang">
+        <a href="../../../zh/deep/boyd-2026-dag-sampling-measurement/" class="on">中</a>
+        <a href="../../../en/deep/boyd-2026-dag-sampling-measurement/" class="">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">我的精读</div>
+  <h1><span class="title-original" lang="en">Why your DAG should probably incorporate sampling and measurement processes</span><span class="title-zh" lang="zh-CN">为什么DAG通常应纳入抽样与测量过程</span></h1>
+  <p>Robin J Boyd, Rob Cooke, Gary D Powney, Oliver L Pescott</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Current Opinion in Insect Science 78 (2026):101578</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.1016/j.cois.2026.101578" target="_blank" rel="noopener">原文 / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=Why%20your%20DAG%20should%20probably%20incorporate%20sampling%20and%20measurement%20processes" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p0">因果DAG</span><span class="pill p3">抽样过程</span><span class="pill p2">测量误差</span><span class="pill p1">选择偏倚</span><span class="pill p3">可识别性</span><span class="pill p1">目标估计量</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30秒结论</div>
+      <h2 id="overview-title">DAG应在触发时加入<strong>样本进入S、真实变量、测量代理和测量共同原因</strong>。这些节点可显示强制条件化、选择偏倚和共同测量误差何时使估计量不识别。</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>研究问题</dt>
+          <dd>只画自然系统中的因果关系时，<strong>抽样和测量过程会怎样改变描述、预测和因果估计量的可识别性</strong>？</dd>
+        </div>
+        <div>
+          <dt>研究设计</dt>
+          <dd><strong>Current Opinion in Insect Science概念综述</strong>；用英国紫蛱蝶占域、选择节点和测量代理的DAG说明观测过程。</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>证据强度</span>
+          <strong class="evidence-level level-low">有限</strong>
+        </div>
+        <dl>
+          <div><dt>计算对象</dt><dd><strong>全概率公式给出的识别区间、Figures 1-2的路径判据及9项昆虫科学应用</strong>。</dd></div>
+          <div><dt>触发条件</dt><dd>文章没有新数据或模拟；表1不是系统检索。若S直接依赖Y或代理共享共同原因，当前数据不能单独识别目标量。</dd></div>
+          <div><dt>对结论的影响</dt><dd><strong>适合作为建图和识别审查清单</strong>，不能据此推断加入观测节点会自动校正偏倚或改善估计。</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">阅读建议</strong>先读Box 1理解数据与假设如何共同识别估计量，再看Figures 1-2。把每项判据写成<strong>计算对象、触发条件和结论影响</strong>。</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">三个关键数字</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">0.06-0.96</div>
+          <h3>全国占域率识别区间</h3>
+          <p><strong>抽样10%、样本占域率0.60且样本外未知</strong>时只能得到宽区间</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">3类</div>
+          <h3>推断目标</h3>
+          <p><strong>描述、预测和因果估计量</strong>都依赖抽样与测量假设</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">1/9</div>
+          <h3>显式纳入观测过程的案例</h3>
+          <p>作者知晓的<strong>9项昆虫科学DAG应用中仅1项加入样本选择</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">重点看哪里</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1016/j.cois.2026.101578" target="_blank" rel="noopener">
+            Box 1 · PDF p. 2<small>图表直达</small> ↗
+          </a>
+          <div><h3>从数据推出识别区间</h3><p><strong>0.06至0.96的范围</strong>直观显示抽样外结局未知时，样本均值不能直接代表总体。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1016/j.cois.2026.101578" target="_blank" rel="noopener">
+            Figure 1 · PDF p. 4<small>图表直达</small> ↗
+          </a>
+          <div><h3>检查选择和测量如何开路</h3><p><strong>强制条件化样本进入S会打开对撞路径</strong>，共享观察者因素又连接两个测量代理。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1016/j.cois.2026.101578" target="_blank" rel="noopener">
+            Figure 2 · PDF p. 6<small>图表直达</small> ↗
+          </a>
+          <div><h3>区分三类抽样机制</h3><p>图示<strong>可忽略、条件可忽略和不可忽略抽样</strong>对应不同的识别结论。</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">观测过程DAG审查路径</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">目标</div>
+            <h3>先定义估计量</h3>
+            <p>明确<strong>单位层级数量、目标总体和干预条件</strong>，再检查数据能否回答。</p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">抽样</div>
+            <h3>加入样本进入S</h3>
+            <p>标出<strong>哪些暴露、结局或共同原因决定进入与留存</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">测量</div>
+            <h3>区分真实量与代理</h3>
+            <p>为X和Y加入<strong>观测代理及影响测量的共同因素</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">路径</div>
+            <h3>检查强制条件化</h3>
+            <p>识别<strong>S作为对撞点或Y直接决定S</strong>时被打开的路径。</p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">结论</div>
+            <h3>报告识别状态</h3>
+            <p>说明估计量是<strong>点识别、区间识别或需额外假设与验证数据</strong>。</p>
+          </li>
+        </ol>
+        <figcaption><strong>依据PDF Box 1和Figures 1-2整理</strong>；适用于描述、预测和因果问题。</figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">完整精读</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>只画目标系统中的因果关系，仍可能漏掉决定结果能否从数据识别的关键假设。 作者主张把抽样、缺失和测量代理一起画进DAG，使描述、预测和因果估计量共享同一套观测过程审查。</p>
+</blockquote>
+<h2>作者团队</h2>
+<p>Robin J Boyd、Rob Cooke、Gary D Powney和Oliver L Pescott来自UK Centre for Ecology and Hydrology及University of Exeter。文章是Current Opinion in Insect Science的开放获取综述，2026年7月17日在线发表，采用CC BY许可。</p>
+<h2>解决什么问题</h2>
+<p>生态学和昆虫科学中的DAG多用于表达数据收集前变量之间的因果关系，常把任务限定为寻找混杂调整集。任何观测关联都经过【抽样】和【测量】：哪些单位进入数据、真实变量如何变成可见代理，都会改变可识别性。忽略这些过程时，图中对自然系统的假设写得很清楚，数据为何能代表目标人群却仍是隐含条件。</p>
+<p>作者进一步指出，描述和预测问题同样需要识别假设。研究者即使不估计因果效应，也要说明样本如何代表目标总体、结局是否被一致测量，以及缺失机制能否忽略。</p>
+<h2>怎么做的</h2>
+<p>论文用英国紫蛱蝶占域率贯穿全文。描述估计量是英国1公里网格中被占据的比例；预测估计量是在林地覆盖和温度条件下的占域概率；因果估计量是干预林地覆盖后平均占域变化。三个问题先固定单位层级数量和目标总体，再讨论可用数据能否识别它。</p>
+<p>【抽样判据】的计算对象是目标总体中的真实结局Y、样本进入指标S及可能决定进入的变量X。若S与Y之间没有开放路径，抽样可忽略；若路径可由观测到的非对撞变量阻断，触发条件可忽略；若S直接依赖Y，或研究者被迫条件化S后打开连接暴露与结局的对撞路径，估计量不能仅凭当前数据识别。</p>
+<p>【测量判据】的计算对象是真实暴露X、真实结局Y、它们的测量代理Xs和Ys，以及影响测量的因素M。若两个代理共享观察者经验等共同原因，代理间关联会包含额外的非因果路径；触发后，真实因果效应需要额外测量模型、验证数据或更强假设，常规协变量调整不足以恢复。</p>
+<h2>关键结果</h2>
+<p>Box 1给出一个识别区间。若只抽取10%的英国网格，样本网格占域率为0.60，而未抽样网格占域率完全未知，则全国占域率只能限定在0.06至0.96。若进一步假设样本进入与占域独立，估计量被点识别为0.60；假设越强，排除的可能值越多，但错误排除真实值的风险也越高。</p>
+<p>Figure 1比较四个因果场景。即使温度混杂已测量并调整，只要样本进入是连接暴露和结局的对撞点，研究者因只能分析S=1而被迫条件化它，目标效应仍不识别。若暴露和结局代理又共享观察者经验这一共同原因，不识别问题进一步增加。</p>
+<p>Figure 2把抽样过程分为可忽略、条件可忽略和不可忽略。前两类分别依赖Y与S无条件独立，或给定X后条件独立；第三类中S直接受Y影响，描述均值和条件预测均不能从样本点识别。</p>
+<h2>证据有多硬</h2>
+<p>【证据等级：有限】。这是一篇概念综述，没有新数据、模拟比较或误差校正实验。数值例子由全概率公式直接推出，DAG场景与选择偏倚、缺失数据和测量误差理论一致，适合检查识别逻辑；它没有证明加入更多节点会自动改善估计，也没有比较不同画法的可重复性。</p>
+<p>表1列出的昆虫科学应用是作者知晓的九项研究，并非系统检索。文中结论主要展示【哪些假设必须显式表达】，没有提供自动判定可识别性的完整算法，也没有覆盖复杂调查权重、纵向失访、依赖误分类、验证子研究或概率抽样设计的全部处理。</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="本页导航">
+    <div class="deep-toc-title">本页导航</div>
+    <a href="#overview" class="is-main">30秒结论</a>
+    <a href="#key-numbers">三个关键数字</a>
+    <a href="#where-to-focus">重点看哪里</a>
+    <a href="#study-design">观测过程DAG审查路径</a>
+    <a href="#full-read">完整精读</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← 回精读列表</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>我的文献集 · Xuanyu Shi</span>
+    <span>每个工作日更新一次 · <a href="https://xuanyshi.github.io/research-desk/zh/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

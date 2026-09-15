@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026-09-04 · 每日速览 · 我的文献集</title>
+<meta name="description" content="我读过、在读、想读的论文，还有每天从高水平期刊里挑出来的那几篇。">
+<meta property="og:title" content="2026-09-04 · 每日速览 · 我的文献集">
+<meta property="og:description" content="我读过、在读、想读的论文，还有每天从高水平期刊里挑出来的那几篇。">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="我的文献集">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/zh/daily/2026-09-04/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/zh/daily/2026-09-04/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/daily/2026-09-04/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/daily/2026-09-04/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/daily/2026-09-04/">
+<link rel="alternate" type="application/atom+xml" title="我的文献集 · 精读" href="https://xuanyshi.github.io/research-desk/zh/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">我的文献集<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">首页</a>
+      <a href="../../library/index.html" class="">文献库</a>
+      <a href="../../deep/index.html" class="">精读</a>
+      <a href="../../daily/index.html" class="on">每日速览</a>
+      <a href="../../log/index.html" class="">历程</a>
+      <a href="../../about/index.html" class="">关于</a>
+      <span class="lang">
+        <a href="../../../zh/daily/2026-09-04/" class="on">中</a>
+        <a href="../../../en/daily/2026-09-04/" class="">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--sub">
+  <h1>2026-09-04</h1>
+  <p>26 篇里挑，4 篇够相关（≥7）。分高的排前面。</p>
+</section>
+
+<div class="toolbar">
+  <input class="search" id="q" type="search" placeholder="搜标题、作者、标签、笔记…" autocomplete="off">
+  <div class="filters" id="scoreFilters">
+    <button class="chip-btn on" data-min="0">全部</button>
+    <button class="chip-btn" data-min="7">只看高分的</button>
+  </div>
+  <div class="filters filters--disease" id="diseaseFilters">
+    <span class="filters-label">疾病</span>
+    <button class="chip-btn on" data-disease="all">全部</button>
+<button class="chip-btn" data-disease="cardiovascular">心血管 <span class="chip-n">2</span></button><button class="chip-btn" data-disease="diabetes">糖尿病 <span class="chip-n">1</span></button><button class="chip-btn" data-disease="dementia">痴呆认知 <span class="chip-n">1</span></button><button class="chip-btn" data-disease="infectious">感染 <span class="chip-n">1</span></button>  </div>
+</div>
+<div class="count-note"><span id="count">26</span> 篇</div>
+
+<div id="papers">
+<article class="paper" data-score="9" data-diseases="" data-text="replicating trace: a practitioner&#39;s guide to its threshold and particle budget 复现trace：阈值与粒子预算的实践指南 alex chadyuk alicia zhang roy kucukates 该论文独立复现并剖析了trace方法——从预训练自回归序列模型中通过阈值化条件互信息读取因果图。作者发现最优阈值与真值定义的边界（delta=0.05）相关，单一全局阈值主要恢复滞后1的直接边，对更长滞后边的召回率显著下降；基于滞后分组的阈值族可恢复部分滞后2边。此外，f1得分在所选阈值下从极少数粒子即开始饱和，反映了阈值余量而非估计量收敛行为。基于上述结果，论文提炼出五项实践规则，为在因果图构建中应用此类序列模型提供了可操作的阈值设定与粒子预算建议。 ">
+  <div class="head">
+    <div class="badge hi">9</div>
+    <div>
+      <h3><span class="title-original" lang="en">Replicating TRACE: A Practitioner&#39;s Guide to Its Threshold and Particle Budget</span><span class="title-zh" lang="zh-CN">复现TRACE：阈值与粒子预算的实践指南</span></h3>
+      <p class="authors">Alex Chadyuk, Alicia Zhang, Roy Kucukates</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文独立复现并剖析了TRACE方法——从预训练自回归序列模型中通过阈值化条件互信息读取因果图。作者发现最优阈值与真值定义的边界（delta=0.05）相关，单一全局阈值主要恢复滞后1的直接边，对更长滞后边的召回率显著下降；基于滞后分组的阈值族可恢复部分滞后2边。此外，F1得分在所选阈值下从极少数粒子即开始饱和，反映了阈值余量而非估计量收敛行为。基于上述结果，论文提炼出五项实践规则，为在因果图构建中应用此类序列模型提供了可操作的阈值设定与粒子预算建议。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2609.01108v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2609.01108v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Replicating%20TRACE%3A%20A%20Practitioner%27s%20Guide%20to%20Its%20Threshold%20and%20Particle%20Budget" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2609.01108v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2609.01108v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="9" data-diseases="" data-text="verifiable disaster storylines and causal knowledge graphs: a citation-grounded pipeline from heterogeneous humanitarian sources 可验证的灾害故事线与因果知识图谱：一种来自异构人道主义来源的引用扎根管线 ivan decostanzi michele ronco sergio consoli christina corbane lorenzo bertolini indaco biazzo daria mihaila manuel garcia-herranz felix schwebel yelena mejova kyriaki kalimeri 该论文针对人道主义危机中异构信息快速综合的难题，提出一种结合 em-dat、reliefweb 与欧洲媒体监测的管线，利用检索增强生成抽取结构化事件画像并构建每个节点和边都带有引用解释的因果知识图谱，确保可溯源。在三个危机案例中由领域专家与非专家共同评估，结果显示检索精度和因果抽取忠实性较高，且专家更偏好具有引用依据的组件。该工作计划扩展至完整灾害目录并公开叙述增强的数据版本。 ">
+  <div class="head">
+    <div class="badge hi">9</div>
+    <div>
+      <h3><span class="title-original" lang="en">Verifiable Disaster Storylines and Causal Knowledge Graphs: A Citation-Grounded Pipeline from Heterogeneous Humanitarian Sources</span><span class="title-zh" lang="zh-CN">可验证的灾害故事线与因果知识图谱：一种来自异构人道主义来源的引用扎根管线</span></h3>
+      <p class="authors">Ivan Decostanzi, Michele Ronco, Sergio Consoli, Christina Corbane et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文针对人道主义危机中异构信息快速综合的难题，提出一种结合 EM-DAT、ReliefWeb 与欧洲媒体监测的管线，利用检索增强生成抽取结构化事件画像并构建每个节点和边都带有引用解释的因果知识图谱，确保可溯源。在三个危机案例中由领域专家与非专家共同评估，结果显示检索精度和因果抽取忠实性较高，且专家更偏好具有引用依据的组件。该工作计划扩展至完整灾害目录并公开叙述增强的数据版本。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2609.00858v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2609.00858v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Verifiable%20Disaster%20Storylines%20and%20Causal%20Knowledge%20Graphs%3A%20A%20Citation-Grounded%20Pipeline%20from%20Heterogeneous%20Humanitarian%20Sources" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2609.00858v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2609.00858v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="7" data-diseases="" data-text="leveraging generative ai for causal inference with unstructured data 利用生成式ai对非结构化数据进行因果推断 kosuke imai kentaro nakamura 论文提出一个名为genai-powered inference (gpi)的统计框架，旨在利用文本和图像等非结构化数据进行因果效应估计。gpi借助开源预训练生成式ai模型（如大语言模型和扩散模型）提取能保留底层结构的低维表示，再对表示应用机器学习估计因果效应并量化不确定性，且无需微调模型。通过三个应用（社交媒体审查效应、图像特征影响评估、政治修辞说服力）展示了其有效性与广泛适用性，并提供开源软件实现。 ">
+  <div class="head">
+    <div class="badge mid">7</div>
+    <div>
+      <h3><span class="title-original" lang="en">Leveraging generative AI for causal inference with unstructured data</span><span class="title-zh" lang="zh-CN">利用生成式AI对非结构化数据进行因果推断</span> <span class="ai-tag">AI</span></h3>
+      <p class="authors">Kosuke Imai, Kentaro Nakamura</p>
+      <div class="jmetrics">
+<span class="jbadge jb-venue">Proceedings of the National Academy of Sciences</span><span class="jbadge jb-cas z1">中科院1区 Top</span><span class="jbadge jb-jcr">JCR Q1</span><span class="jbadge jb-if">IF 9.5</span></div>
+      
+<p class="sum">论文提出一个名为GenAI-Powered Inference (GPI)的统计框架，旨在利用文本和图像等非结构化数据进行因果效应估计。GPI借助开源预训练生成式AI模型（如大语言模型和扩散模型）提取能保留底层结构的低维表示，再对表示应用机器学习估计因果效应并量化不确定性，且无需微调模型。通过三个应用（社交媒体审查效应、图像特征影响评估、政治修辞说服力）展示了其有效性与广泛适用性，并提供开源软件实现。</p>      <p class="links">
+        <a href="https://doi.org/10.1073/pnas.2530532123" target="_blank" rel="noopener">原文 ↗</a>
+        <a href="https://scholar.google.com/scholar?q=Leveraging%20generative%20AI%20for%20causal%20inference%20with%20unstructured%20data" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add 10.1073/pnas.2530532123" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add 10.1073/pnas.2530532123</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="7" data-diseases="" data-text="causal evidentiary governance for high-risk machine learning systems 面向高风险机器学习系统的因果证据治理 samah kareem barış çeliktaş 该文针对信贷、招聘等高风险机器学习系统在监管中缺乏因果归因与高效证据验证的问题，提出因果证据治理框架。该框架采用版本化dag划分允许与禁止的因果路径，定义causal harm rate度量由禁止路径导致的预测变异，并通过签名证据包与merkle树实现可审计的证据验证。在合成信贷数据和german credit数据集上的实验表明，该方法比关联性公平指标更有效地隔离因果伤害。 ">
+  <div class="head">
+    <div class="badge mid">7</div>
+    <div>
+      <h3><span class="title-original" lang="en">Causal Evidentiary Governance for High-Risk Machine Learning Systems</span><span class="title-zh" lang="zh-CN">面向高风险机器学习系统的因果证据治理</span> <span class="ai-tag">AI</span></h3>
+      <p class="authors">Samah Kareem, Barış Çeliktaş</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该文针对信贷、招聘等高风险机器学习系统在监管中缺乏因果归因与高效证据验证的问题，提出因果证据治理框架。该框架采用版本化DAG划分允许与禁止的因果路径，定义Causal Harm Rate度量由禁止路径导致的预测变异，并通过签名证据包与Merkle树实现可审计的证据验证。在合成信贷数据和German Credit数据集上的实验表明，该方法比关联性公平指标更有效地隔离因果伤害。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2609.01040v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2609.01040v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Causal%20Evidentiary%20Governance%20for%20High-Risk%20Machine%20Learning%20Systems" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2609.01040v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2609.01040v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="6" data-diseases="" data-text="context‐stratified mendelian randomization: exploiting regional exposure variation to explore causal effect heterogeneity and nonlinearity 情境分层孟德尔随机化：利用区域暴露变异探索因果效应异质性与非线性 stephen burgess benjamin a. r. woolf amy m. mason 标准孟德尔随机化通常报告单一总体平均效应，难以揭示效应异质性或非线性关系，而现有分层方法依赖强且不可验证的假设。该论文提出情境分层孟德尔随机化，利用招募中心、地理区域或时间段等情境间的外生暴露变异，在各情境内分别进行mr分析，并通过cochran&#39;s q统计量和元回归评估异质性。模拟显示该方法在存在异质性时能够检测，且在同质性下控制假阳性率；基于uk biobank的维生素d与冠心病风险实例未发现因果效应或异质性。该方法实现简单且不受碰撞偏倚影响，但功效和可解释性依赖于情境间有意义的暴露分布变异。 ">
+  <div class="head">
+    <div class="badge mid">6</div>
+    <div>
+      <h3><span class="title-original" lang="en">Context‐Stratified Mendelian Randomization: Exploiting Regional Exposure Variation to Explore Causal Effect Heterogeneity and Nonlinearity</span><span class="title-zh" lang="zh-CN">情境分层孟德尔随机化：利用区域暴露变异探索因果效应异质性与非线性</span></h3>
+      <p class="authors">Stephen Burgess, Benjamin A. R. Woolf, Amy M. Mason</p>
+      <div class="jmetrics">
+<span class="jbadge jb-venue">Statistics in Medicine</span><span class="jbadge jb-cas z3">中科院3区</span><span class="jbadge jb-jcr">JCR Q3</span><span class="jbadge jb-if">IF 2.1</span></div>
+      
+<p class="sum">标准孟德尔随机化通常报告单一总体平均效应，难以揭示效应异质性或非线性关系，而现有分层方法依赖强且不可验证的假设。该论文提出情境分层孟德尔随机化，利用招募中心、地理区域或时间段等情境间的外生暴露变异，在各情境内分别进行MR分析，并通过Cochran&#39;s Q统计量和元回归评估异质性。模拟显示该方法在存在异质性时能够检测，且在同质性下控制假阳性率；基于UK Biobank的维生素D与冠心病风险实例未发现因果效应或异质性。该方法实现简单且不受碰撞偏倚影响，但功效和可解释性依赖于情境间有意义的暴露分布变异。</p>      <p class="links">
+        <a href="https://doi.org/10.1002/sim.70727" target="_blank" rel="noopener">原文 ↗</a>
+        <a href="https://scholar.google.com/scholar?q=Context%E2%80%90Stratified%20Mendelian%20Randomization%3A%20Exploiting%20Regional%20Exposure%20Variation%20to%20Explore%20Causal%20Effect%20Heterogeneity%20and%20Nonlinearity" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add 10.1002/sim.70727" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add 10.1002/sim.70727</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="4" data-diseases="" data-text="translating causal circuits into therapeutic targets 将因果回路转化为治疗靶点 jonathan downar joshua c. brown 该论文围绕因果回路向治疗靶点的转化展开，提出利用因果结构识别潜在干预靶点的思路。由于未提供原文摘要，具体方法与主要结论需参考原文。 ">
+  <div class="head">
+    <div class="badge low">4</div>
+    <div>
+      <h3><span class="title-original" lang="en">Translating Causal Circuits Into Therapeutic Targets</span><span class="title-zh" lang="zh-CN">将因果回路转化为治疗靶点</span></h3>
+      <p class="authors">Jonathan Downar, Joshua C. Brown</p>
+      <div class="jmetrics">
+<span class="jbadge jb-venue">American Journal of Psychiatry</span><span class="jbadge jb-cas z1">中科院1区 Top</span><span class="jbadge jb-jcr">JCR Q1</span><span class="jbadge jb-if">IF 15.9</span></div>
+      
+<p class="sum">该论文围绕因果回路向治疗靶点的转化展开，提出利用因果结构识别潜在干预靶点的思路。由于未提供原文摘要，具体方法与主要结论需参考原文。</p>      <p class="links">
+        <a href="https://doi.org/10.1176/appi.ajp.20260710" target="_blank" rel="noopener">原文 ↗</a>
+        <a href="https://scholar.google.com/scholar?q=Translating%20Causal%20Circuits%20Into%20Therapeutic%20Targets" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add 10.1176/appi.ajp.20260710" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add 10.1176/appi.ajp.20260710</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="4" data-diseases="" data-text="causal–semantic spatiotemporal traffic flow forecasting for expressway uav pre-deployment using etc gantry networks 基于etc门架网络的高速公路无人机预部署的因果-语义时空交通流预测 zeen yang zhuoer wang hongjuan zhang bijun li 该研究面向高速公路无人机预部署的决策支持需求，提出一种因果-语义时空交通流预测框架，以实现24小时路段级交通流预测。方法上利用条件granger因果分析构建路段间有向因果先验图，并引入大语言模型生成的场景语义先验来刻画非典型交通状态，通过知识蒸馏将两者融入轻量级学生模型。湖北省etc门架数据实验表明，该方法在典型场景下整体性能最佳，在非典型场景下亦有竞争力，可为高速公路执法无人机预部署提供日尺度决策支持。 ">
+  <div class="head">
+    <div class="badge low">4</div>
+    <div>
+      <h3><span class="title-original" lang="en">Causal–Semantic Spatiotemporal Traffic Flow Forecasting for Expressway UAV Pre-Deployment Using ETC Gantry Networks</span><span class="title-zh" lang="zh-CN">基于ETC门架网络的高速公路无人机预部署的因果-语义时空交通流预测</span> <span class="ai-tag">AI</span></h3>
+      <p class="authors">Zeen Yang, Zhuoer Wang, Hongjuan Zhang, Bijun Li</p>
+      <div class="jmetrics">
+<span class="jbadge jb-venue">ISPRS International Journal of Geo-Information</span></div>
+      
+<p class="sum">该研究面向高速公路无人机预部署的决策支持需求，提出一种因果-语义时空交通流预测框架，以实现24小时路段级交通流预测。方法上利用条件Granger因果分析构建路段间有向因果先验图，并引入大语言模型生成的场景语义先验来刻画非典型交通状态，通过知识蒸馏将两者融入轻量级学生模型。湖北省ETC门架数据实验表明，该方法在典型场景下整体性能最佳，在非典型场景下亦有竞争力，可为高速公路执法无人机预部署提供日尺度决策支持。</p>      <p class="links">
+        <a href="https://doi.org/10.3390/ijgi15080354" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://www.mdpi.com/2220-9964/15/8/354/pdf?version=1786001769" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Causal%E2%80%93Semantic%20Spatiotemporal%20Traffic%20Flow%20Forecasting%20for%20Expressway%20UAV%20Pre-Deployment%20Using%20ETC%20Gantry%20Networks" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add 10.3390/ijgi15080354" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add 10.3390/ijgi15080354</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="3" data-diseases="" data-text="towards trustworthy autonomous robots: an explainable ai-based decision framework 迈向可信自主机器人：基于可解释人工智能的决策框架 cagri temel 该论文提出一种名为trace的可解释决策框架，通过语义感知、信念推理、动作合成与执行验证四个可审计层次，使自主机器人的每个动作可溯源到传感器证据。框架利用因果图进行概率状态估计，并设计了证据可溯性、决策可重构性和时间连续性等评估指标。实验表明，在仓储机器人导航场景中，trace实现了较高的可审计性指标。 ">
+  <div class="head">
+    <div class="badge low">3</div>
+    <div>
+      <h3><span class="title-original" lang="en">Towards Trustworthy Autonomous Robots: An Explainable AI-Based Decision Framework</span><span class="title-zh" lang="zh-CN">迈向可信自主机器人：基于可解释人工智能的决策框架</span> <span class="ai-tag">AI</span></h3>
+      <p class="authors">Cagri Temel</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出一种名为TRACE的可解释决策框架，通过语义感知、信念推理、动作合成与执行验证四个可审计层次，使自主机器人的每个动作可溯源到传感器证据。框架利用因果图进行概率状态估计，并设计了证据可溯性、决策可重构性和时间连续性等评估指标。实验表明，在仓储机器人导航场景中，TRACE实现了较高的可审计性指标。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2609.02861v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2609.02861v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Towards%20Trustworthy%20Autonomous%20Robots%3A%20An%20Explainable%20AI-Based%20Decision%20Framework" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2609.02861v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2609.02861v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="3" data-diseases="" data-text="spectral initialization and scheduled graph smoothness for uncertain knowledge graph completion 面向不确定知识图谱补全的谱初始化与调度图平滑方法 md abrar jahin taufikur rahman fuad jay pujara craig a. knoblock 针对不确定知识图谱（ukg）中三元组置信度缺失与伪标签依赖问题，提出quest方法：利用置信度加权图拉普拉斯的非平凡特征向量初始化实体嵌入，以引入社区与枢纽结构，并在训练早期施加无偏的dirichlet能量正则化以保证结构一致性。在两个ukg数据集上，quest在不增加可训练参数的情况下提升了置信度预测与链接预测精度，并改善了稠密图上的训练稳定性。 ">
+  <div class="head">
+    <div class="badge low">3</div>
+    <div>
+      <h3><span class="title-original" lang="en">Spectral Initialization and Scheduled Graph Smoothness for Uncertain Knowledge Graph Completion</span><span class="title-zh" lang="zh-CN">面向不确定知识图谱补全的谱初始化与调度图平滑方法</span> <span class="ai-tag">AI</span></h3>
+      <p class="authors">Md Abrar Jahin, Taufikur Rahman Fuad, Jay Pujara, Craig A. Knoblock</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">针对不确定知识图谱（UKG）中三元组置信度缺失与伪标签依赖问题，提出QUEST方法：利用置信度加权图拉普拉斯的非平凡特征向量初始化实体嵌入，以引入社区与枢纽结构，并在训练早期施加无偏的Dirichlet能量正则化以保证结构一致性。在两个UKG数据集上，QUEST在不增加可训练参数的情况下提升了置信度预测与链接预测精度，并改善了稠密图上的训练稳定性。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2609.02519v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2609.02519v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Spectral%20Initialization%20and%20Scheduled%20Graph%20Smoothness%20for%20Uncertain%20Knowledge%20Graph%20Completion" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2609.02519v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2609.02519v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="3" data-diseases="" data-text="a systematic approach to constructing a chance-and-risk matrix for semiconductor supply chains 半导体供应链机会-风险矩阵的系统构建方法 ema salkić alexander fichtl philipp ulrich hans ehm marta bonik georg groh 针对半导体供应链风险情报缺乏规模化系统整理的问题，该研究提出一个端到端流水线：检索企业公开披露文件，利用大语言模型抽取其中的风险与机会信息，并组织为知识图谱，进而通过算法公式、llm相关性调整与专家验证三层机制进行去重和排序。应用于五家半导体企业后，共得到76,207个评分条目，独立验证显示92.6%有效；自动排序与专家判断的平均spearman相关系数在风险上为0.55、机会上为0.72，最终矩阵识别出贸易限制是跨企业的主要风险。 ">
+  <div class="head">
+    <div class="badge low">3</div>
+    <div>
+      <h3><span class="title-original" lang="en">A systematic Approach to constructing a Chance-and-Risk Matrix for Semiconductor Supply Chains</span><span class="title-zh" lang="zh-CN">半导体供应链机会-风险矩阵的系统构建方法</span> <span class="ai-tag">AI</span></h3>
+      <p class="authors">Ema Salkić, Alexander Fichtl, Philipp Ulrich, Hans Ehm et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">针对半导体供应链风险情报缺乏规模化系统整理的问题，该研究提出一个端到端流水线：检索企业公开披露文件，利用大语言模型抽取其中的风险与机会信息，并组织为知识图谱，进而通过算法公式、LLM相关性调整与专家验证三层机制进行去重和排序。应用于五家半导体企业后，共得到76,207个评分条目，独立验证显示92.6%有效；自动排序与专家判断的平均Spearman相关系数在风险上为0.55、机会上为0.72，最终矩阵识别出贸易限制是跨企业的主要风险。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2609.01563v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2609.01563v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=A%20systematic%20Approach%20to%20constructing%20a%20Chance-and-Risk%20Matrix%20for%20Semiconductor%20Supply%20Chains" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2609.01563v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2609.01563v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="3" data-diseases="" data-text="automated tree knowledge graph construction using ontology expansion and retrieval from vietnamese history textbooks 基于本体扩展与检索的越南历史教科书自动化树知识图谱构建 ket doan nguyen minh n. h. nguyen 该论文提出一个端到端流水线，用于从越南语高中历史教科书中自动化构建树形知识图谱，并系统评估基于图结构的检索策略。构建阶段采用三阶段混合关系抽取、联合查找去重、质心过滤器及双llm验证器，以控制本体膨胀并保留文档结构。检索实验表明，top-down图遍历策略在ndcg@10上较向量基线提升4.7个百分点，但结构信息在查询不需要结构上下文时会损害性能。 ">
+  <div class="head">
+    <div class="badge low">3</div>
+    <div>
+      <h3><span class="title-original" lang="en">Automated Tree Knowledge Graph Construction using Ontology Expansion and Retrieval from Vietnamese History Textbooks</span><span class="title-zh" lang="zh-CN">基于本体扩展与检索的越南历史教科书自动化树知识图谱构建</span> <span class="ai-tag">AI</span></h3>
+      <p class="authors">Ket Doan Nguyen, Minh N. H. Nguyen</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出一个端到端流水线，用于从越南语高中历史教科书中自动化构建树形知识图谱，并系统评估基于图结构的检索策略。构建阶段采用三阶段混合关系抽取、联合查找去重、质心过滤器及双LLM验证器，以控制本体膨胀并保留文档结构。检索实验表明，Top-Down图遍历策略在NDCG@10上较向量基线提升4.7个百分点，但结构信息在查询不需要结构上下文时会损害性能。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2609.00763v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2609.00763v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Automated%20Tree%20Knowledge%20Graph%20Construction%20using%20Ontology%20Expansion%20and%20Retrieval%20from%20Vietnamese%20History%20Textbooks" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2609.00763v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2609.00763v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="3" data-diseases="" data-text="ranked by the matcher: a reproducibility audit of knowledge graph extraction from threat reports 按匹配器排名：威胁报告知识图谱抽取的可复现性审计 safayat bin hakim houbing herbert song 该论文针对威胁报告知识图谱抽取工具所报告的三元组f1分数依赖于预测三元组与金标准注释的匹配规则这一问题，开展可复现性审计。研究发现，12个被检系统中仅5个能重新实现其声明的匹配规则；在共享文档上以8种协议对10个系统输出重新评分，逆转了45个两两排序中的11个，且同一预测集f1跨度达0.16至0.70。在grid外部校准集上，机械匹配器与多人裁决的一致性最高仅71%，而llm评判者达86%。作者构建ctiforge以分离组件效果，结果显示验证层对不同部署配置的精度影响方向不同。 ">
+  <div class="head">
+    <div class="badge low">3</div>
+    <div>
+      <h3><span class="title-original" lang="en">Ranked by the Matcher: A Reproducibility Audit of Knowledge Graph Extraction from Threat Reports</span><span class="title-zh" lang="zh-CN">按匹配器排名：威胁报告知识图谱抽取的可复现性审计</span> <span class="ai-tag">AI</span></h3>
+      <p class="authors">Safayat Bin Hakim, Houbing Herbert Song</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文针对威胁报告知识图谱抽取工具所报告的三元组F1分数依赖于预测三元组与金标准注释的匹配规则这一问题，开展可复现性审计。研究发现，12个被检系统中仅5个能重新实现其声明的匹配规则；在共享文档上以8种协议对10个系统输出重新评分，逆转了45个两两排序中的11个，且同一预测集F1跨度达0.16至0.70。在GRID外部校准集上，机械匹配器与多人裁决的一致性最高仅71%，而LLM评判者达86%。作者构建CTIForge以分离组件效果，结果显示验证层对不同部署配置的精度影响方向不同。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2609.01671v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2609.01671v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Ranked%20by%20the%20Matcher%3A%20A%20Reproducibility%20Audit%20of%20Knowledge%20Graph%20Extraction%20from%20Threat%20Reports" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2609.01671v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2609.01671v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="3" data-diseases="" data-text="iso-rag: isoperimetric noise control for retrieval-augmented generation iso-rag：基于等周噪声控制的检索增强生成 siyuan zhang hanchen wang dong wen ying zhang wenjie zhang 针对多跳问答中图检索增强生成存在全局图遍历噪声大、延迟高的问题，提出iso-rag框架。该方法将知识图谱投影到庞加莱双曲空间中，预计算节点级等周概貌，在检索时剪除虚假边并将搜索空间限制在局部子图，从而调控personalized pagerank扩散过程。实验表明，iso-rag在多跳问答基准上相较现有方法在检索召回率上平均提升10.0%，下游精确匹配提升4.3%，显著优化了精度与效率的权衡。 ">
+  <div class="head">
+    <div class="badge low">3</div>
+    <div>
+      <h3><span class="title-original" lang="en">ISO-RAG: Isoperimetric Noise Control for Retrieval-Augmented Generation</span><span class="title-zh" lang="zh-CN">ISO-RAG：基于等周噪声控制的检索增强生成</span> <span class="ai-tag">AI</span></h3>
+      <p class="authors">Siyuan Zhang, Hanchen Wang, Dong Wen, Ying Zhang et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">针对多跳问答中图检索增强生成存在全局图遍历噪声大、延迟高的问题，提出ISO-RAG框架。该方法将知识图谱投影到庞加莱双曲空间中，预计算节点级等周概貌，在检索时剪除虚假边并将搜索空间限制在局部子图，从而调控Personalized PageRank扩散过程。实验表明，ISO-RAG在多跳问答基准上相较现有方法在检索召回率上平均提升10.0%，下游精确匹配提升4.3%，显著优化了精度与效率的权衡。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2609.00513v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2609.00513v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=ISO-RAG%3A%20Isoperimetric%20Noise%20Control%20for%20Retrieval-Augmented%20Generation" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2609.00513v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2609.00513v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="3" data-diseases="" data-text="egt-kg: evidence-grounded typed kg retrieval for practical scientific qa with small language models egt-kg：面向实用科学问答的基于证据的类型化知识图谱检索（小语言模型） muran yu jiechao gao yuandong pan barney h. miao andrew c. lesh kincho h. law jie wang michael d. lepech 该论文提出 egt-kg，一种面向资源受限环境下小语言模型的科学问答检索框架。在既有文献库有限、证据零散、上下文与推理能力受限的条件下，egt-kg 利用自动或专家定义的关系模式构建类型化知识图谱，并作为检索增强上下文供小语言模型问答。在 biopolymer-bound soil composite 文献基准上，egt-kg 的两种变体在多数评价维度上优于 vanilla rag，其中 llama3:8b 的最高 final score 达 70.37。 ">
+  <div class="head">
+    <div class="badge low">3</div>
+    <div>
+      <h3><span class="title-original" lang="en">EGT-KG: Evidence-Grounded Typed KG Retrieval for Practical Scientific QA with Small Language Models</span><span class="title-zh" lang="zh-CN">EGT-KG：面向实用科学问答的基于证据的类型化知识图谱检索（小语言模型）</span> <span class="ai-tag">AI</span></h3>
+      <p class="authors">Muran Yu, Jiechao Gao, Yuandong Pan, Barney H. Miao et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出 EGT-KG，一种面向资源受限环境下小语言模型的科学问答检索框架。在既有文献库有限、证据零散、上下文与推理能力受限的条件下，EGT-KG 利用自动或专家定义的关系模式构建类型化知识图谱，并作为检索增强上下文供小语言模型问答。在 Biopolymer-bound Soil Composite 文献基准上，EGT-KG 的两种变体在多数评价维度上优于 vanilla RAG，其中 llama3:8b 的最高 Final Score 达 70.37。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2609.00479v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2609.00479v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=EGT-KG%3A%20Evidence-Grounded%20Typed%20KG%20Retrieval%20for%20Practical%20Scientific%20QA%20with%20Small%20Language%20Models" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2609.00479v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2609.00479v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="3" data-diseases="cardiovascular" data-text="effects of adolescent parenting styles on adult cardiovascular conditions: a population-based cohort study 青少年期教养方式对成年心血管疾病的影响：一项基于人群的队列研究 noor, n. jackisch, j. baggio, s. cullati, s. carmeli, c. 本文利用美国全国青少年至成人健康纵向研究（n=4,050），通过潜在类别分析将青少年期教养方式分为权威型、放任型和忽视型，并基于有向无环图选择混杂因素，采用双重稳健逆概率加权模型估计其对成年期心血管疾病及高血压的风险差异。结果显示，总体上不同教养方式对心血管结局的长期效应较小，置信区间包含零；在经济困难家庭中放任型教养方式风险较低，但敏感性分析结果不一致。作者认为青少年期教养方式对成年心血管疾病的长期效应估计较小，且无稳健证据表明因家庭经济困难程度而异。 心血管 cardiovascular">
+  <div class="head">
+    <div class="badge low">3</div>
+    <div>
+      <h3><span class="title-original" lang="en">Effects of Adolescent Parenting Styles on Adult Cardiovascular Conditions: A Population-Based Cohort Study</span><span class="title-zh" lang="zh-CN">青少年期教养方式对成年心血管疾病的影响：一项基于人群的队列研究</span></h3>
+      <p class="authors">Noor, N., Jackisch, J., Baggio, S., Cullati, S. et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">medRxiv</span>
+</div>
+      <div class="dbadges"><span class="dbadge">心血管</span></div>
+<p class="sum">本文利用美国全国青少年至成人健康纵向研究（n=4,050），通过潜在类别分析将青少年期教养方式分为权威型、放任型和忽视型，并基于有向无环图选择混杂因素，采用双重稳健逆概率加权模型估计其对成年期心血管疾病及高血压的风险差异。结果显示，总体上不同教养方式对心血管结局的长期效应较小，置信区间包含零；在经济困难家庭中放任型教养方式风险较低，但敏感性分析结果不一致。作者认为青少年期教养方式对成年心血管疾病的长期效应估计较小，且无稳健证据表明因家庭经济困难程度而异。</p>      <p class="links">
+        <a href="https://doi.org/10.64898/2026.08.22.26361103" target="_blank" rel="noopener">原文 ↗</a>
+        <a href="https://scholar.google.com/scholar?q=Effects%20of%20Adolescent%20Parenting%20Styles%20on%20Adult%20Cardiovascular%20Conditions%3A%20A%20Population-Based%20Cohort%20Study" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add 10.64898/2026.08.22.26361103" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add 10.64898/2026.08.22.26361103</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="3" data-diseases="" data-text="from linear models to deep learning: statistical advances in genomic selection for animal breeding 从线性模型到深度学习：动物育种中基因组选择的统计进展 lifei zhang mingzhu zhang xinle wang cancan chen shunzhe wang yujie zhao yanjun zhang ruijun wang yongbin liu 该综述系统梳理了基因组选择（gs）在动物育种中的统计方法演进，涵盖了基于线性混合模型和贝叶斯模型的传统方法，以及现代机器学习与深度学习方法。文章阐述了各类方法的假设、优势与局限，并比较了计算效率与预测准确度，旨在为大数据育种环境下优化基因组评估策略提供实用指导。 ">
+  <div class="head">
+    <div class="badge low">3</div>
+    <div>
+      <h3><span class="title-original" lang="en">From linear models to deep learning: statistical advances in genomic selection for animal breeding</span><span class="title-zh" lang="zh-CN">从线性模型到深度学习：动物育种中基因组选择的统计进展</span> <span class="ai-tag">AI</span></h3>
+      <p class="authors">Lifei Zhang, Mingzhu Zhang, Xinle Wang, Cancan Chen et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-venue">Journal of Animal Science and Biotechnology/Journal of animal science and biotechnology</span></div>
+      
+<p class="sum">该综述系统梳理了基因组选择（GS）在动物育种中的统计方法演进，涵盖了基于线性混合模型和贝叶斯模型的传统方法，以及现代机器学习与深度学习方法。文章阐述了各类方法的假设、优势与局限，并比较了计算效率与预测准确度，旨在为大数据育种环境下优化基因组评估策略提供实用指导。</p>      <p class="links">
+        <a href="https://doi.org/10.1186/s40104-026-01477-w" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://link.springer.com/content/pdf/10.1186/s40104-026-01477-w.pdf" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=From%20linear%20models%20to%20deep%20learning%3A%20statistical%20advances%20in%20genomic%20selection%20for%20animal%20breeding" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add 10.1186/s40104-026-01477-w" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add 10.1186/s40104-026-01477-w</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="2" data-diseases="" data-text="pearl: path-entity aligned relational learning with contextual subgraphs for inductive knowledge graph completion pearl：面向归纳知识图谱补全的路径-实体对齐与上下文子图关系学习 yunchi yang longlong li cunquan qu 针对归纳知识图谱补全中不可见实体链接预测问题，提出pearl框架。该方法利用大语言模型检索语义相关路径，构建查询实体邻域组成的上下文子图，并通过路径-实体二部交互图与双视角对比学习增强路径表征的上下文适应性。在wn18rr、fb15k-237和nell-995基准上取得最优平均hits@10，消融实验验证了各模块的有效性。 ">
+  <div class="head">
+    <div class="badge low">2</div>
+    <div>
+      <h3><span class="title-original" lang="en">PEARL: Path-Entity Aligned Relational Learning with Contextual Subgraphs for Inductive Knowledge Graph Completion</span><span class="title-zh" lang="zh-CN">PEARL：面向归纳知识图谱补全的路径-实体对齐与上下文子图关系学习</span> <span class="ai-tag">AI</span></h3>
+      <p class="authors">Yunchi Yang, Longlong Li, Cunquan Qu</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">针对归纳知识图谱补全中不可见实体链接预测问题，提出PEARL框架。该方法利用大语言模型检索语义相关路径，构建查询实体邻域组成的上下文子图，并通过路径-实体二部交互图与双视角对比学习增强路径表征的上下文适应性。在WN18RR、FB15k-237和NELL-995基准上取得最优平均Hits@10，消融实验验证了各模块的有效性。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2609.02216v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2609.02216v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=PEARL%3A%20Path-Entity%20Aligned%20Relational%20Learning%20with%20Contextual%20Subgraphs%20for%20Inductive%20Knowledge%20Graph%20Completion" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2609.02216v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2609.02216v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="2" data-diseases="" data-text="import what you need: learning when and how to augment ehr graphs with external knowledge 按需导入：学习何时以及如何用外部知识增强ehr图 chen chen mohsen nayebi kerdabadi dongjie wang mei liu zijun yao 针对电子健康记录（ehr）中患者轨迹稀疏且不规则导致纵向预测受限的问题，现有知识增强方法常采用固定且与患者状态无关的拓扑增强。该论文提出基于强化学习的动态拓扑增强框架reta，将知识图谱导入建模为每次就诊的预算感知策略，从软导入、硬导入或跳过三种动作中决策，并利用解耦编码器分别处理语义与结构信号。在mimic-iii和mimic-iv上的诊断预测、死亡率和再入院任务中，reta优于强基线，且在不同数据集与知识图谱间表现出可迁移性，其可解释的增强模式显示动态决策能提升精度并控制成本。 ">
+  <div class="head">
+    <div class="badge low">2</div>
+    <div>
+      <h3><span class="title-original" lang="en">Import What You Need: Learning When and How to Augment EHR Graphs with External Knowledge</span><span class="title-zh" lang="zh-CN">按需导入：学习何时以及如何用外部知识增强EHR图</span></h3>
+      <p class="authors">Chen Chen, Mohsen Nayebi Kerdabadi, Dongjie Wang, Mei Liu et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">针对电子健康记录（EHR）中患者轨迹稀疏且不规则导致纵向预测受限的问题，现有知识增强方法常采用固定且与患者状态无关的拓扑增强。该论文提出基于强化学习的动态拓扑增强框架ReTA，将知识图谱导入建模为每次就诊的预算感知策略，从软导入、硬导入或跳过三种动作中决策，并利用解耦编码器分别处理语义与结构信号。在MIMIC-III和MIMIC-IV上的诊断预测、死亡率和再入院任务中，ReTA优于强基线，且在不同数据集与知识图谱间表现出可迁移性，其可解释的增强模式显示动态决策能提升精度并控制成本。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2609.01839v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2609.01839v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Import%20What%20You%20Need%3A%20Learning%20When%20and%20How%20to%20Augment%20EHR%20Graphs%20with%20External%20Knowledge" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2609.01839v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2609.01839v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="2" data-diseases="" data-text="athena: vulnerability-affected library identification via knowledge graph completion athena：基于知识图谱补全的漏洞影响库识别 phong trinh duy trang dang yen hung nguyen-huu bach le quyet-thang huynh dieu hoang vu david lo thanh le-cong 本文提出athena，一种基于知识图谱补全的漏洞影响库识别方法。针对漏洞数据库条目中受影响库信息缺失或错误的问题，athena将漏洞数据库建模为知识图谱，将识别任务转化为链接预测，并结合微调llm与知识图谱嵌入对候选结果重排序。在vullib数据集上的实验表明，athena显著优于现有基线，证明了图结构建模的有效性。 ">
+  <div class="head">
+    <div class="badge low">2</div>
+    <div>
+      <h3><span class="title-original" lang="en">Athena: Vulnerability-Affected Library Identification via Knowledge Graph Completion</span><span class="title-zh" lang="zh-CN">Athena：基于知识图谱补全的漏洞影响库识别</span> <span class="ai-tag">AI</span></h3>
+      <p class="authors">Phong Trinh Duy, Trang Dang Yen, Hung Nguyen-Huu, Bach Le et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">本文提出Athena，一种基于知识图谱补全的漏洞影响库识别方法。针对漏洞数据库条目中受影响库信息缺失或错误的问题，Athena将漏洞数据库建模为知识图谱，将识别任务转化为链接预测，并结合微调LLM与知识图谱嵌入对候选结果重排序。在VulLib数据集上的实验表明，Athena显著优于现有基线，证明了图结构建模的有效性。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2609.01187v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2609.01187v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Athena%3A%20Vulnerability-Affected%20Library%20Identification%20via%20Knowledge%20Graph%20Completion" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2609.01187v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2609.01187v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="2" data-diseases="" data-text="the zbmath open knowledge graph: tracing centuries of mathematical research zbmath open 知识图谱：追踪数百年的数学研究 yuni susanti moritz schubotz 该论文构建了zbmath open知识图谱，涵盖250余年数学文献的专家评审、关键词、学科分类和作者消歧等语义内容，形成3400万实体和1.68亿条rdf三元组。研究展示了该图谱在跨世纪追踪数学知识发展和学术关系方面的查询能力。 ">
+  <div class="head">
+    <div class="badge low">2</div>
+    <div>
+      <h3><span class="title-original" lang="en">The zbMATH Open Knowledge Graph: Tracing Centuries of Mathematical Research</span><span class="title-zh" lang="zh-CN">zbMATH Open 知识图谱：追踪数百年的数学研究</span> <span class="ai-tag">AI</span></h3>
+      <p class="authors">Yuni Susanti, Moritz Schubotz</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文构建了zbMATH Open知识图谱，涵盖250余年数学文献的专家评审、关键词、学科分类和作者消歧等语义内容，形成3400万实体和1.68亿条RDF三元组。研究展示了该图谱在跨世纪追踪数学知识发展和学术关系方面的查询能力。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2609.00969v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2609.00969v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=The%20zbMATH%20Open%20Knowledge%20Graph%3A%20Tracing%20Centuries%20of%20Mathematical%20Research" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2609.00969v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2609.00969v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="2" data-diseases="" data-text="expart-kg: artwork image description generation through iterative exploration of knowledge graphs expart-kg：通过知识图谱迭代探索生成艺术作品图像描述 yuta kato shintaro ozaki kazuki hayashi yusuke sakai hidetaka kamigaito katsuhiko hayashi taro watanabe 该研究提出一种基于知识图谱检索增强生成（rag）的框架expart-kg，旨在提升大型视觉语言模型（lvlm）对图像中实体与概念间事实关系的描述准确性和详细程度。方法在答案生成与知识图谱检索之间交替迭代，并通过正确性判断控制搜索过程，从而高效获取必要且充分的事实信息。实验表明，该方法在提升艺术作品解释详细程度的同时降低了外部知识检索成本，生成质量与固定次数迭代方法相当。 ">
+  <div class="head">
+    <div class="badge low">2</div>
+    <div>
+      <h3><span class="title-original" lang="en">ExpArt-KG: Artwork Image Description Generation through Iterative Exploration of Knowledge Graphs</span><span class="title-zh" lang="zh-CN">ExpArt-KG：通过知识图谱迭代探索生成艺术作品图像描述</span> <span class="ai-tag">AI</span></h3>
+      <p class="authors">Yuta Kato, Shintaro Ozaki, Kazuki Hayashi, Yusuke Sakai et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该研究提出一种基于知识图谱检索增强生成（RAG）的框架ExpArt-KG，旨在提升大型视觉语言模型（LVLM）对图像中实体与概念间事实关系的描述准确性和详细程度。方法在答案生成与知识图谱检索之间交替迭代，并通过正确性判断控制搜索过程，从而高效获取必要且充分的事实信息。实验表明，该方法在提升艺术作品解释详细程度的同时降低了外部知识检索成本，生成质量与固定次数迭代方法相当。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2609.00629v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2609.00629v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=ExpArt-KG%3A%20Artwork%20Image%20Description%20Generation%20through%20Iterative%20Exploration%20of%20Knowledge%20Graphs" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2609.00629v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2609.00629v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="2" data-diseases="" data-text="a mathematical framework for legacy, governance, and decision integrity in enterprise ai 企业ai中遗留、治理与决策完整性的数学框架 shorab sarker 本文针对企业ai系统在人员更替、模型替换和监管变化下如何维持合法、可解释且负责任的决策，提出一个设计科学框架。该框架包括标准化遗留分数、决策置信度与风险模型、权威感知检索、决策记忆、监管变化速度映射及联邦式监管知识图谱架构，并给出八条ai决策完整性规则与评估协议。作者通过包含200次蒙特卡洛重复的合成决策模拟展示所提指标的非补偿性及路由机制效果，但强调该贡献为概念性而非现场验证。 ">
+  <div class="head">
+    <div class="badge low">2</div>
+    <div>
+      <h3><span class="title-original" lang="en">A Mathematical Framework for Legacy, Governance, and Decision Integrity in Enterprise AI</span><span class="title-zh" lang="zh-CN">企业AI中遗留、治理与决策完整性的数学框架</span> <span class="ai-tag">AI</span></h3>
+      <p class="authors">Shorab Sarker</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">本文针对企业AI系统在人员更替、模型替换和监管变化下如何维持合法、可解释且负责任的决策，提出一个设计科学框架。该框架包括标准化遗留分数、决策置信度与风险模型、权威感知检索、决策记忆、监管变化速度映射及联邦式监管知识图谱架构，并给出八条AI决策完整性规则与评估协议。作者通过包含200次蒙特卡洛重复的合成决策模拟展示所提指标的非补偿性及路由机制效果，但强调该贡献为概念性而非现场验证。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2609.00572v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2609.00572v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=A%20Mathematical%20Framework%20for%20Legacy%2C%20Governance%2C%20and%20Decision%20Integrity%20in%20Enterprise%20AI" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2609.00572v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2609.00572v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="1" data-diseases="" data-text="oracle, will i ever learn? a study of prediction convergence and complementarity across link prediction models 神谕，我能学会吗？跨链接预测模型的预测收敛性与互补性研究 guillaume méroué fabien gandon pierre monnin 该论文研究不同链接预测模型（或同一模型的不同训练）对同一查询产生不同预测的现象，旨在量化模型间捕获知识的互补程度及其可恢复性。作者提出以神谕（oracle）为每个查询选择最佳预测，作为模型组合性能的上界，在多种架构和基准上考察个体模型与神谕的差距。结果发现模型间存在显著互补性，但随着模型数量增加，互补性迅速饱和，仍有部分查询无法被现有模型集体解决，揭示了模型集成的潜力与当前链接预测的局限性。 ">
+  <div class="head">
+    <div class="badge low">1</div>
+    <div>
+      <h3><span class="title-original" lang="en">Oracle, will I ever learn? A study of prediction convergence and complementarity across link prediction models</span><span class="title-zh" lang="zh-CN">神谕，我能学会吗？跨链接预测模型的预测收敛性与互补性研究</span></h3>
+      <p class="authors">Guillaume Méroué, Fabien Gandon, Pierre Monnin</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文研究不同链接预测模型（或同一模型的不同训练）对同一查询产生不同预测的现象，旨在量化模型间捕获知识的互补程度及其可恢复性。作者提出以神谕（oracle）为每个查询选择最佳预测，作为模型组合性能的上界，在多种架构和基准上考察个体模型与神谕的差距。结果发现模型间存在显著互补性，但随着模型数量增加，互补性迅速饱和，仍有部分查询无法被现有模型集体解决，揭示了模型集成的潜力与当前链接预测的局限性。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2609.02638v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2609.02638v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Oracle%2C%20will%20I%20ever%20learn%3F%20A%20study%20of%20prediction%20convergence%20and%20complementarity%20across%20link%20prediction%20models" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2609.02638v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2609.02638v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="1" data-diseases="" data-text="ssakg 2.0: an open-source package for structural associative sequence memory and context-based retrieval ssakg 2.0：用于结构关联序列记忆和基于上下文的检索的开源包 przemysław stokłosa janusz a. starzyk paweł raif 该论文介绍ssakg 2.0，一个用于构建结构顺序关联知识图谱（ssakg）的开源软件包，将对象表示为节点、有序序列表示为连接模式，以实现从部分无序上下文重建完整序列的关联记忆功能。版本2.0利用计算机内存的位操作来加速图搜索，并采用python与c混合实现以平衡灵活性与性能。实验基于随机序列、nltk语料库句子和mrna序列，验证了该包存储和重建序列的能力，并分析了图密度、序列长度和记忆规模对检索性能的影响。 ">
+  <div class="head">
+    <div class="badge low">1</div>
+    <div>
+      <h3><span class="title-original" lang="en">SSAKG 2.0: An Open-Source Package for Structural Associative Sequence Memory and Context-Based Retrieval</span><span class="title-zh" lang="zh-CN">SSAKG 2.0：用于结构关联序列记忆和基于上下文的检索的开源包</span></h3>
+      <p class="authors">Przemysław Stokłosa, Janusz A. Starzyk, Paweł Raif</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文介绍SSAKG 2.0，一个用于构建结构顺序关联知识图谱（SSAKG）的开源软件包，将对象表示为节点、有序序列表示为连接模式，以实现从部分无序上下文重建完整序列的关联记忆功能。版本2.0利用计算机内存的位操作来加速图搜索，并采用Python与C混合实现以平衡灵活性与性能。实验基于随机序列、NLTK语料库句子和mRNA序列，验证了该包存储和重建序列的能力，并分析了图密度、序列长度和记忆规模对检索性能的影响。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2609.01849v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2609.01849v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=SSAKG%202.0%3A%20An%20Open-Source%20Package%20for%20Structural%20Associative%20Sequence%20Memory%20and%20Context-Based%20Retrieval" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2609.01849v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2609.01849v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="1" data-diseases="cardiovascular,diabetes,dementia" data-text="metabolomic signatures of data-driven type 2 diabetes subtypes and their associations with dementia and stroke risk 数据驱动的2型糖尿病亚型的代谢组学特征及其与痴呆和卒中风险的关联 han, s. hewett, j. ahmadizar, f. biessels, g. j. 该研究基于uk biobank数据，分析数据驱动的2型糖尿病亚型之间的nmr代谢组学差异，并利用主成分分析归纳代谢模式，通过cox回归及孟德尔随机化评估其与痴呆、卒中及全因死亡的关联。结果显示各亚型代谢特征不同，主要体现为脂质与脂蛋白重塑，其中hdl相关代谢模式与痴呆及全因死亡风险相关。 心血管 cardiovascular 糖尿病 diabetes 痴呆认知 dementia">
+  <div class="head">
+    <div class="badge low">1</div>
+    <div>
+      <h3><span class="title-original" lang="en">Metabolomic signatures of data-driven type 2 diabetes subtypes and their associations with dementia and stroke risk</span><span class="title-zh" lang="zh-CN">数据驱动的2型糖尿病亚型的代谢组学特征及其与痴呆和卒中风险的关联</span></h3>
+      <p class="authors">Han, S., Hewett, J., Ahmadizar, F., Biessels, G. J.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">medRxiv</span>
+</div>
+      <div class="dbadges"><span class="dbadge">心血管</span><span class="dbadge">糖尿病</span><span class="dbadge">痴呆认知</span></div>
+<p class="sum">该研究基于UK Biobank数据，分析数据驱动的2型糖尿病亚型之间的NMR代谢组学差异，并利用主成分分析归纳代谢模式，通过Cox回归及孟德尔随机化评估其与痴呆、卒中及全因死亡的关联。结果显示各亚型代谢特征不同，主要体现为脂质与脂蛋白重塑，其中HDL相关代谢模式与痴呆及全因死亡风险相关。</p>      <p class="links">
+        <a href="https://doi.org/10.64898/2026.08.21.26361082" target="_blank" rel="noopener">原文 ↗</a>
+        <a href="https://scholar.google.com/scholar?q=Metabolomic%20signatures%20of%20data-driven%20type%202%20diabetes%20subtypes%20and%20their%20associations%20with%20dementia%20and%20stroke%20risk" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add 10.64898/2026.08.21.26361082" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add 10.64898/2026.08.21.26361082</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="1" data-diseases="infectious" data-text="host genetic regulation of nlrp3 inflammasome cytokines reveals immune and vascular pathways in hiv hiv宿主遗传调控nlrp3炎症小体细胞因子揭示免疫与血管通路 chung, r. chalasani, n. s. barbehenn, a. s. lundgren, e. savur, s. shome, s. sheikhzadeh, c. h. sarvadhavabhatla, s. donaire, m. s. pae, v. chu, x. winder, d. maguire, c. t. topal, s. ganesan, a. yabes, j. m. larson, d. t. lalani, t. ewers, e. c. colombo, r. e. dugan, e. rathore, u. marson, a. agan, b. k. tomalka, j. a. sekaly, r.-p. loannidis, n. m. lee, s. a. 该研究旨在解析hiv感染者中炎症小体相关细胞因子（il-6、il-1β、il-18）的遗传调控机制。作者对1000名接受抗病毒治疗的hiv感染者进行全基因组测序与细胞因子定量，结合全基因组关联分析、转录组分析、孟德尔随机化及crispr扰动整合，鉴定出14个与抗病毒防御、脂质代谢和血管重塑相关的位点，并提示细胞因子与血管事件之间存在因果关联。研究为炎症、免疫激活与hiv心血管风险提供了遗传学证据。 感染 infectious disease">
+  <div class="head">
+    <div class="badge low">1</div>
+    <div>
+      <h3><span class="title-original" lang="en">Host Genetic Regulation of NLRP3 Inflammasome Cytokines Reveals Immune and Vascular Pathways in HIV</span><span class="title-zh" lang="zh-CN">HIV宿主遗传调控NLRP3炎症小体细胞因子揭示免疫与血管通路</span></h3>
+      <p class="authors">Chung, R., Chalasani, N. S., Barbehenn, A. S., Lundgren, E. et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">medRxiv</span>
+</div>
+      <div class="dbadges"><span class="dbadge">感染</span></div>
+<p class="sum">该研究旨在解析HIV感染者中炎症小体相关细胞因子（IL-6、IL-1β、IL-18）的遗传调控机制。作者对1000名接受抗病毒治疗的HIV感染者进行全基因组测序与细胞因子定量，结合全基因组关联分析、转录组分析、孟德尔随机化及CRISPR扰动整合，鉴定出14个与抗病毒防御、脂质代谢和血管重塑相关的位点，并提示细胞因子与血管事件之间存在因果关联。研究为炎症、免疫激活与HIV心血管风险提供了遗传学证据。</p>      <p class="links">
+        <a href="https://doi.org/10.64898/2026.06.08.26355202" target="_blank" rel="noopener">原文 ↗</a>
+        <a href="https://scholar.google.com/scholar?q=Host%20Genetic%20Regulation%20of%20NLRP3%20Inflammasome%20Cytokines%20Reveals%20Immune%20and%20Vascular%20Pathways%20in%20HIV" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add 10.64898/2026.06.08.26355202" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add 10.64898/2026.06.08.26355202</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+</div>
+<div class="empty hidden" id="noresult">没找到。</div>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>我的文献集 · Xuanyu Shi</span>
+    <span>每个工作日更新一次 · <a href="https://xuanyshi.github.io/research-desk/zh/feed.xml">RSS</a></span>
+  </div>
+</footer>
+<script src="../../../assets/app.js?v=53362a7aaf"></script></body>
+</html>
