@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MedKGent：用于构建时序演化医学知识图谱的大语言模型智能体框架 · 精读 · 我的文献集</title>
+<meta name="description" content="框架实现了PMID级来源、按日更新和近300万条关系。confidence来自重复生成与重复文献，适合抽取筛选和排序，不能当作医学事实或因果效应的可信概率。">
+<meta property="og:title" content="MedKGent：用于构建时序演化医学知识图谱的大语言模型智能体框架 · 精读 · 我的文献集">
+<meta property="og:description" content="框架实现了PMID级来源、按日更新和近300万条关系。confidence来自重复生成与重复文献，适合抽取筛选和排序，不能当作医学事实或因果效应的可信概率。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="我的文献集">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/zh/deep/zhang-2026-medkgent-temporal-medical-kg/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/zh/deep/zhang-2026-medkgent-temporal-medical-kg/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/zhang-2026-medkgent-temporal-medical-kg/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/zhang-2026-medkgent-temporal-medical-kg/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/zhang-2026-medkgent-temporal-medical-kg/">
+<link rel="alternate" type="application/atom+xml" title="我的文献集 · 精读" href="https://xuanyshi.github.io/research-desk/zh/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">我的文献集<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">首页</a>
+      <a href="../../library/index.html" class="">文献库</a>
+      <a href="../../deep/index.html" class="on">精读</a>
+      <a href="../../daily/index.html" class="">每日速览</a>
+      <a href="../../log/index.html" class="">历程</a>
+      <a href="../../about/index.html" class="">关于</a>
+      <span class="lang">
+        <a href="../../../zh/deep/zhang-2026-medkgent-temporal-medical-kg/" class="on">中</a>
+        <a href="../../../en/deep/zhang-2026-medkgent-temporal-medical-kg/" class="">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">我的精读</div>
+  <h1><span class="title-original" lang="en">MedKGent: A Large Language Model Agent Framework for Constructing Temporally Evolving Medical Knowledge Graph</span><span class="title-zh" lang="zh-CN">MedKGent：用于构建时序演化医学知识图谱的大语言模型智能体框架</span></h1>
+  <p>Duzhen Zhang, Zixiao Wang, Zhong-Zhi Li, Yahan Yu et al.</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">npj Digital Medicine (2026), Article in Press</span><span class="jbadge jb-cas z1">中科院1区 Top</span><span class="jbadge jb-jcr">JCR Q1</span><span class="jbadge jb-if">IF 18</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.1038/s41746-026-03058-7" target="_blank" rel="noopener">原文 / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=MedKGent%3A%20A%20Large%20Language%20Model%20Agent%20Framework%20for%20Constructing%20Temporally%20Evolving%20Medical%20Knowledge%20Graph" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p3">医学知识图谱</span><span class="pill p2">大语言模型智能体</span><span class="pill p3">关系抽取</span><span class="pill p0">时序更新</span><span class="pill p2">来源追踪</span><span class="pill p4">检索增强生成</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30秒结论</div>
+      <h2 id="overview-title">框架实现了<strong>PMID级来源、按日更新和近300万条关系</strong>。confidence来自重复生成与重复文献，适合抽取筛选和排序，不能当作医学事实或因果效应的可信概率。</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>研究问题</dt>
+          <dd>MedKGent怎样把<strong>超过1,000万篇PubMed摘要转成可更新的医学知识图谱</strong>，它的confidence又能说明到哪一步？</dd>
+        </div>
+        <div>
+          <dt>研究设计</dt>
+          <dd><strong>npj Digital Medicine方法与基础设施研究</strong>；两个Qwen2.5智能体按日处理1975-2023年摘要，并用人工、LLM裁判和医学问答评估。</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>证据强度</span>
+          <strong class="evidence-level level-moderate">中等</strong>
+        </div>
+        <dl>
+          <div><dt>计算对象</dt><dd><strong>10,014,314篇摘要的实际建图、83,438条自动评价、2,767条人工评价及7个问答基准</strong>。</dd></div>
+          <div><dt>触发条件</dt><dd>人工评价约占最终关系的0.093%，且摘要、方法与图中有两处数字或标注者数量不一致；若目标是临床或因果结论，还缺少研究设计与偏倚信息。</dd></div>
+          <div><dt>对结论的影响</dt><dd>支持<strong>大规模文献关系抽取和RAG基础设施</strong>，不支持把Cause、Treat或Prevent边直接解释为经过识别的因果效应。</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">阅读建议</strong>先看Figure 1理解分数怎样生成和累积，再用Figure 3核对抽取有效率，最后看Figure 4。始终分开<strong>抽取一致性、来源重复和医学可信度</strong>。</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">三个关键数字</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">10,014,314</div>
+          <h3>进入流水线的PubMed摘要</h3>
+          <p>从超过2,000万条记录中筛得，覆盖<strong>1975-2023年且长度为100-300词</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">2,971,384</div>
+          <h3>去重与冲突处理后的关系</h3>
+          <p>连接<strong>156,275个标准化实体</strong>，每条边保存PMID列表和最近发表日期</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">+8.4个百分点</div>
+          <h3>MedQA-US最大准确率增益</h3>
+          <p>GPT-3.5-turbo由<strong>0.599升至0.683</strong>，反映特定设置下的检索效用</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">重点看哪里</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1038/s41746-026-03058-7" target="_blank" rel="noopener">
+            Figure 1 · PDF p. 18<small>图表直达</small> ↗
+          </a>
+          <div><h3>追踪双智能体建图流程</h3><p>图示<strong>50次随机抽取、0.60阈值、重复关系累积分数和冲突替换</strong>，是理解confidence含义的入口。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1038/s41746-026-03058-7" target="_blank" rel="noopener">
+            Figure 3 · PDF p. 20<small>图表直达</small> ↗
+          </a>
+          <div><h3>核对自动与人工有效率</h3><p>比较<strong>83,438条自动评价和2,767条人工评价</strong>，并暴露正文85.44%与图中85.64%的差异。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1038/s41746-026-03058-7" target="_blank" rel="noopener">
+            Figure 4 · PDF p. 21<small>图表直达</small> ↗
+          </a>
+          <div><h3>区分问答增益与图谱质量</h3><p>7个数据集和5个模型显示<strong>MedKGent RAG优于直接回答与SemMedDB RAG</strong>，评价对象仍是下游准确率。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://github.com/BladeDancer957/MedKGent" target="_blank" rel="noopener">
+            Data and code availability · PDF p. 12<small>图表直达</small> ↗
+          </a>
+          <div><h3>检查公开图谱和代码</h3><p>作者公开<strong>Hugging Face图谱、GitHub代码和Zenodo归档</strong>，可继续做版本锁定与关系抽查。</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">MedKGent从摘要到问答的五步链</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">语料</div>
+            <h3>筛选并按日排序</h3>
+            <p>保留<strong>1975-2023年的100-300词摘要</strong>，同日按PMID升序处理。</p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">实体</div>
+            <h3>标准化六类概念</h3>
+            <p>PubTator3识别<strong>基因、疾病、化学物、变异、物种和细胞系</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">抽取</div>
+            <h3>用重复生成过滤</h3>
+            <p>同一提示运行<strong>50次</strong>，出现频率低于0.60的三元组被删除。</p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">构建</div>
+            <h3>累积分数并裁决冲突</h3>
+            <p>重复边追加PMID并提高分数；异关系由LLM <strong>只保留一种关系</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">评价</div>
+            <h3>分开核验抽取和效用</h3>
+            <p>人工与LLM核查<strong>来源一致性</strong>，问答实验检验RAG准确率，二者均不等于因果验证。</p>
+          </li>
+        </ol>
+        <figcaption><strong>依据PDF Figures 1、3和4整理</strong>；每一步对应不同的可验证对象。</figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">完整精读</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>MedKGent用两个Qwen2.5智能体顺序处理10,014,314篇PubMed摘要，构建出含156,275个实体和2,971,384条关系的医学知识图谱。 它证明了大规模、带来源追踪的文献关系抽取可以服务检索增强问答；文中的【confidence】衡量模型输出稳定性和关系重复出现，不能解释为医学事实、因果效应或临床决策的可信概率。</p>
+</blockquote>
+<h2>作者团队</h2>
+<p>Duzhen Zhang、Zixiao Wang、Zhong-Zhi Li、Yahan Yu、Shuncheng Jia、Jiahua Dong、Haotian Xu、Xing Wu、Yingying Zhang、Tielin Zhang、Jie Yang、Xiuying Chen和Le Song来自Mohamed bin Zayed University of Artificial Intelligence、中国科学院大学、京都大学、清华大学、华东师范大学、中国科学院脑科学与智能技术卓越创新中心、Harvard Medical School附属Brigham and Women's Hospital及GenBio AI。</p>
+<p>论文于2025年9月30日投稿，2026年7月20日接收，2026年8月4日在npj Digital Medicine在线发表。当前PDF是未经最终编辑的Article in Press版本，采用CC BY-NC-ND 4.0许可。</p>
+<h2>解决什么问题</h2>
+<p>生物医学知识图谱常把多年文献一次性汇总为静态关系，难以保留知识首次出现、后续重复和来源变化。传统监督式关系抽取又依赖固定模式与标注数据，扩展到新关系或新语料时成本较高。</p>
+<p>MedKGent的目标是建立一条可持续更新的文献建图流水线：从PubMed摘要中识别实体和关系，为每条关系保存PMID与发表日期，按日期顺序写入Neo4j，并测试该图谱能否改善医学问答。</p>
+<h2>怎么做的</h2>
+<p>作者先从超过2,000万篇PubMed摘要中筛选数据。排除无法下载、缺少摘要、内容不完整、年份不在1975-2023年及长度不在100-300词的记录后，保留10,014,314篇摘要，按发表日期和同日PMID升序排列。</p>
+<p>【抽取判据】的计算对象是PubTator3识别的实体对及Qwen2.5-32B-Instruct生成的12类关系。实体分为Gene、Disease、Chemical、Variant、Species和CellLine；关系包括Associate、Negative Correlate、Positive Correlate、Compare、Cotreat、Interact、Drug Interact、Cause、Inhibit、Treat、Stimulate和Prevent。对同一摘要执行50次随机推理，temperature为0.7。某三元组在50次输出中的出现比例向下取整到0.05，得到初始confidence；低于0.60即删除。该触发条件减少随机输出不稳定的关系，但没有检验原始研究设计、偏倚或因果识别。</p>
+<p>【累积判据】的计算对象是同一实体对和同一关系的既有分数s与新分数s'。重复关系出现时按s=1-(1-s)(1-s')更新，并追加PMID、把时间戳改为最近发表日期。若同一实体对出现另一种关系，Constructor Agent以temperature 0.2比较两者分数和时间戳，只保留一种关系。该规则压缩重复与冲突，但会把多种真实语境或相反结论合并为单一边。</p>
+<p>问答阶段先用标识符、关键词或BiomedBERT向量把问题实体链接到节点，取得一跳邻居，再由LLM重排并保留5条关系。作者比较直接回答、SemMedDB RAG和MedKGent RAG，覆盖7个医学问答数据集与5个LLM。</p>
+<h2>关键结果</h2>
+<p>3,472,524篇摘要产生可保留的关系，Extractor Agent共输出8,922,152条三元组。去重和冲突处理后，图谱含156,275个实体与2,971,384条关系。Gene和Chemical分别占节点的57.6%和33.6%；Associate、Negative Correlate和Positive Correlate分别占关系的47.7%、26.1%和19.9%。38.3%的最终关系分数落在0.95档。</p>
+<p>自动评价随机抽取34,725篇摘要，共83,438条关系。以4级评分中不低于2分为有效，GPT-4.1与DeepSeek-v3的总体有效率正文分别报告为85.44%和88.10%。两名博士级标注者独立评阅1,000篇摘要的2,767条关系，总体有效率为86.30%和86.09%。多数两两Cohen's kappa超过0.60。</p>
+<p>在7个问答数据集上，两种RAG设置普遍优于直接回答。MedKGent RAG在MedQA-US上的最大增益为8.4个百分点，例如GPT-3.5-turbo从0.599升至0.683；在作者使用的检索与提示设置下，它也持续高于SemMedDB RAG。Figure 4图注说明使用5,000次配对bootstrap检验，但论文没有给出同语料、同规模的现代知识图谱构建基线。</p>
+<h2>证据有多硬</h2>
+<p>【证据等级：中等】。论文提供大规模实际运行、明确的抽取阈值、公开代码和图谱、自动与人工双轨评价，以及跨模型问答实验。它支持【该流水线能抽取与来源摘要大体一致的关系，并可改善特定RAG任务】这一工程结论。</p>
+<p>人工核查只覆盖最终图谱规模的约0.093%，且论文没有说明是否按关系稀有度、实体类型或高风险谓词分层抽样。自动评价仍依赖LLM裁判；专家标注把2分的【Likely Correct】与3分的【Correct】一起计为有效，会提高二元有效率。摘要写有3名领域专家，方法和结果只报告2名；GPT-4.1总有效率正文为85.44%，Figure 3标为85.64%。这些差异应等待最终排版版或作者说明。</p>
+<p>抽取对象仅为英文摘要，并限制在100-300词。全文中的剂量、比较组、亚组、研究设计、表格和补充材料没有系统进入图谱。PubTator3的识别与标准化误差也会向后传播。</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="本页导航">
+    <div class="deep-toc-title">本页导航</div>
+    <a href="#overview" class="is-main">30秒结论</a>
+    <a href="#key-numbers">三个关键数字</a>
+    <a href="#where-to-focus">重点看哪里</a>
+    <a href="#study-design">MedKGent从摘要到问答的五步链</a>
+    <a href="#full-read">完整精读</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← 回精读列表</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>我的文献集 · Xuanyu Shi</span>
+    <span>每个工作日更新一次 · <a href="https://xuanyshi.github.io/research-desk/zh/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

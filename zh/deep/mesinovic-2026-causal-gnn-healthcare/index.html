@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>医疗健康中的因果图神经网络 · 精读 · 我的文献集</title>
+<meta name="description" content="作者区分Tier 1因果启发、Tier 2因果结构化和Tier 3因果验证。预测准确、解释子图或跨域稳定均不足以单独证明因果识别。">
+<meta property="og:title" content="医疗健康中的因果图神经网络 · 精读 · 我的文献集">
+<meta property="og:description" content="作者区分Tier 1因果启发、Tier 2因果结构化和Tier 3因果验证。预测准确、解释子图或跨域稳定均不足以单独证明因果识别。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="我的文献集">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/zh/deep/mesinovic-2026-causal-gnn-healthcare/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/zh/deep/mesinovic-2026-causal-gnn-healthcare/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/mesinovic-2026-causal-gnn-healthcare/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/mesinovic-2026-causal-gnn-healthcare/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/mesinovic-2026-causal-gnn-healthcare/">
+<link rel="alternate" type="application/atom+xml" title="我的文献集 · 精读" href="https://xuanyshi.github.io/research-desk/zh/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">我的文献集<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">首页</a>
+      <a href="../../library/index.html" class="">文献库</a>
+      <a href="../../deep/index.html" class="on">精读</a>
+      <a href="../../daily/index.html" class="">每日速览</a>
+      <a href="../../log/index.html" class="">历程</a>
+      <a href="../../about/index.html" class="">关于</a>
+      <span class="lang">
+        <a href="../../../zh/deep/mesinovic-2026-causal-gnn-healthcare/" class="on">中</a>
+        <a href="../../../en/deep/mesinovic-2026-causal-gnn-healthcare/" class="">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">我的精读</div>
+  <h1><span class="title-original" lang="en">Causal graph neural networks for healthcare</span><span class="title-zh" lang="zh-CN">医疗健康中的因果图神经网络</span></h1>
+  <p>Munib Mesinovic, Max Buhlan, Tingting Zhu</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Nature Biomedical Engineering (2026), Online 7 August 2026</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.1038/s41551-026-01742-3" target="_blank" rel="noopener">原文 / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=Causal%20graph%20neural%20networks%20for%20healthcare" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p2">因果图神经网络</span><span class="pill p4">结构因果模型</span><span class="pill p4">证据分级</span><span class="pill p0">因果数字孪生</span><span class="pill p2">多模态三角测量</span><span class="pill p3">临床验证</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30秒结论</div>
+      <h2 id="overview-title">作者区分<strong>Tier 1因果启发、Tier 2因果结构化和Tier 3因果验证</strong>。预测准确、解释子图或跨域稳定均不足以单独证明因果识别。</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>研究问题</dt>
+          <dd>医疗因果GNN需要满足哪些条件，才能从<strong>因果启发的网络结构升级为可支持临床主张的因果证据</strong>？</dd>
+        </div>
+        <div>
+          <dt>研究设计</dt>
+          <dd><strong>Nature Biomedical Engineering专家Perspective</strong>；综合151篇参考文献，以假设表、方法分类和说明性案例提出三层证据标准。</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>证据强度</span>
+          <strong class="evidence-level level-low">有限</strong>
+        </div>
+        <dl>
+          <div><dt>计算对象</dt><dd><strong>既有方法、Table 1的因果假设、Tables 2-3的应用映射及Boxes 1-4的概念框架</strong>。</dd></div>
+          <div><dt>触发条件</dt><dd>文章没有系统检索、偏倚评价或效应量汇总；Figures 1-2和Boxes 3-4含概念或假想数字。</dd></div>
+          <div><dt>对结论的影响</dt><dd>适合用作<strong>因果主张分级和审计清单</strong>，不能据此推断因果GNN普遍优于关联模型或已经可以指导临床治疗。</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">阅读建议</strong>先看Table 1确定每类方法依赖什么假设，再读Circumstances of failure和The validation crisis。阅读图表时要分开<strong>实证结果、理论示意和假想工作流</strong>。</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">三个关键数字</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">3层</div>
+          <h3>因果证据分级</h3>
+          <p>从<strong>因果启发到因果结构化，再到经过多模态证据验证的未知因果发现</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">16项</div>
+          <h3>被引用的跨域预测任务</h3>
+          <p>在该反向证据中，<strong>全部特征模型的域内和域外准确率均高于因果特征模型</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">32.8 ms</div>
+          <h3>116节点图的单例推理时间</h3>
+          <p>只说明<strong>中等规模脑网络的因果子图识别延迟</strong>，不包括训练和大规模建图</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">重点看哪里</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1038/s41551-026-01742-3" target="_blank" rel="noopener">
+            Table 1 · PDF p. 7<small>图表直达</small> ↗
+          </a>
+          <div><h3>把方法名称还原为假设</h3><p>表中并列<strong>方法类别、代表方法、识别假设、因果主张和层级</strong>，是审查因果命名的核心。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1038/s41551-026-01742-3" target="_blank" rel="noopener">
+            Figure 2 · PDF p. 6<small>图表直达</small> ↗
+          </a>
+          <div><h3>识别概念曲线的边界</h3><p>图示关联性能、干预性能和未测量混杂，但作者明确标注为<strong>理论预期和概念曲线</strong>。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1038/s41551-026-01742-3" target="_blank" rel="noopener">
+            Box 3 · PDF p. 16<small>图表直达</small> ↗
+          </a>
+          <div><h3>拆解多模态证据三角测量</h3><p>淀粉样蛋白算例把五类证据加权为0；应关注<strong>证据方向和不可替代的验证门槛</strong>，不照搬权重。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1038/s41551-026-01742-3" target="_blank" rel="noopener">
+            Box 4 · PDF p. 17<small>图表直达</small> ↗
+          </a>
+          <div><h3>防止把假想治疗数字当作结果</h3><p>三种降压药的风险和eGFR数字属于<strong>Imagined clinical workflow</strong>，仅用于解释流程。</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">因果GNN主张的五步审计</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">问题</div>
+            <h3>区分关联、干预和反事实</h3>
+            <p>先写清目标是<strong>P(Y|X)、P(Y|do(X))还是个体反事实</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">图</div>
+            <h3>定义节点、边和尺度</h3>
+            <p>说明边来自<strong>机制、实验、观察关联或知识先验</strong>，并固定可干预的生物尺度。</p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">识别</div>
+            <h3>列出触发假设</h3>
+            <p>检查<strong>混杂、选择、faithfulness、正值性和结构正确性</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">验证</div>
+            <h3>匹配证据层级</h3>
+            <p>未知因果发现需有<strong>独立复现、实验或前瞻性验证及敏感性分析</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">报告</div>
+            <h3>按失败条件限定结论</h3>
+            <p>假设缺失或干预证据反对时，将结论降为<strong>关联、机制候选或不可识别</strong>。</p>
+          </li>
+        </ol>
+        <figcaption><strong>依据PDF Box 1、Table 1和The validation crisis整理</strong>；每一步都应改变最终结论范围。</figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">完整精读</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>这篇Perspective把医疗因果图神经网络分成【因果启发】【因果结构化】【因果验证】三个层级，并要求因果主张的验证强度随层级提高。 它适合作为方法命名和证据审查框架；论文没有系统综述流程，也没有证明因果GNN普遍优于关联模型或已经能够支持临床决策。</p>
+</blockquote>
+<h2>作者团队</h2>
+<p>Munib Mesinovic和Tingting Zhu来自University of Oxford工程科学系，Max Buhlan同时来自Leipzig University医学院和University of Oxford临床磁共振研究中心。论文于2025年11月12日投稿，2026年6月12日接收，2026年8月7日在Nature Biomedical Engineering在线发表，文章类型为Perspective。</p>
+<h2>解决什么问题</h2>
+<p>医疗AI在单中心测试中可能表现良好，换医院、扫描仪、流程或患者构成后却明显下降。预测模型还可能学习费用、处方习惯和测量流程等代理信号，把制度差异误当作疾病机制。</p>
+<p>作者讨论因果推断与GNN结合后能否缓解这些问题，并把现有工作放入同一审查框架。文章覆盖结构因果模型、因果表征、干预预测、反事实生成、跨环境稳健性、因果公平和患者级数字孪生。</p>
+<h2>框架怎么组织</h2>
+<p>文章先按Pearl因果层级区分三个计算对象。Level 1估计P(Y|X)，回答观察条件下的关联问题；Level 2估计P(Y|do(X))，回答施加干预后的结局；Level 3计算个体在未发生干预下的反事实结局。若模型只从观察分布学习P(Y|X)，即使预测准确，也不能在没有额外因果假设时推出后两类量。</p>
+<p>GNN通过邻居消息传递学习图表示。它与因果图的形式相似，但只有当边代表因果关系、结构方程与识别条件成立时，消息传递才可解释为因果影响传播。蛋白互作、功能连接、共病网络和知识图谱携带的证据性质不同，不能因其具有图结构就统一当作因果图。</p>
+<p>作者归纳五类能力：区分因果与捷径特征、估计干预效果、生成个体反事实、在异质环境中保持稳定，以及按因果路径审查公平性。Table 1同时列出各类方法的触发假设。例如，因果发现依赖faithfulness，并需说明潜在混杂能否存在；路径公平要求敏感属性、介质与结局之间的因果图正确，相关混杂已被测量。</p>
+<h2>三层证据标准</h2>
+<p>【Tier 1：因果启发】使用不变性、去偏或因果术语设计网络，但不对学到的关系作明确因果主张。它的验证对象仍可限于预测、跨环境稳定性和解释一致性。</p>
+<p>【Tier 2：因果结构化】学习因果结构或估计因果效应，要求结构、充分性、可识别性和正值性等假设在具体场景中可辩护，并与外部知识或已知机制一致。预测AUC不能单独触发因果结论。</p>
+<p>【Tier 3：因果验证】用于声称发现未知因果关系。作者要求生物学合理性、至少两个独立队列复现、实验或前瞻性干预验证，以及针对强主张的敏感性分析，包括E-value。任何一项缺失，都应降低结论层级或缩小主张范围。</p>
+<p>Box 3用淀粉样蛋白与认知下降构造说明性算例，把生物学合理性、复现、实验、前瞻性验证和敏感性分析按0.20、0.25、0.30、0.15和0.10加权。假定前两项支持、实验与试验反对、敏感性中性，汇总分为0。这个例子说明观察关联可能被干预证据推翻；这些权重没有在外部数据中校准，不宜直接转为通用评分器。</p>
+<h2>文章综合了哪些应用</h2>
+<p>在脑网络中，CI-GNN和DisC尝试把疾病相关子图与扫描环境或全局生理噪声分开。CI-GNN在17个ABIDE站点做留一站点交叉验证，多数站点高于比较方法；识别的脑区连接仍需多模态神经影像或电生理验证。</p>
+<p>在癌症领域，CautionGCN从差异表达基因中筛选与亚型有关的候选因果基因，依赖因果充分性和faithfulness。MOGONET完成多组学图整合，但核心对象是跨组学相关和分类，不属于正式因果识别。PDGrapher把蛋白互作网络近似为因果图，在9个癌细胞系的化学扰动数据中预测组合靶点；蛋白互作边本身仍混合直接作用和间接关联。</p>
+<p>其他应用包括精神疾病亚型、癫痫预测、术后并发症、药物推荐、血压监测、认知下降和公平性分解。Table 2与Table 3有意区分已演示的用途和潜在转化方向。实时临床监测、跨机构部署及完整患者级因果数字孪生多数仍处于方法研究或设想阶段。</p>
+<h2>反向证据与失败条件</h2>
+<p>文章没有把因果方法写成必然优势。它引用一项覆盖医疗、就业、教育和社会政策共16个预测任务的研究：使用全部特征的模型在域内和域外准确率均高于只使用因果特征的模型，因果域泛化方法也未超过标准模型。只有分布漂移足够大时，舍弃非因果特征带来的稳健性才可能抵消信息损失。</p>
+<p>CausalBench在大规模单细胞扰动数据上的初始评价也发现，既有干预方法没有超过仅观察方法。后续挑战赛方法利用干预数据取得更好结果，但需要放宽无环性和因果充分性等常见假设。神经影像的小样本、高维图和模型方差，以及EHR中的未测量临床判断、患者偏好和选择机制，都可能使结构看似合理却仍受残余混杂驱动。</p>
+<p>Box 2给出一个计算参考：CI-GNN在116节点脑网络上进行因果子图识别，推理时间为每例32.8 ms。这个数字只支持中等规模图的推理延迟，不能外推到约20,000个蛋白编码基因的全基因组因果发现，也没有包括建图和训练成本。</p>
+<h2>证据有多硬</h2>
+<p>【证据等级：有限】。论文是专家Perspective，综合151篇参考文献，提供方法分类、假设表和临床转化框架；没有报告系统检索、纳排流程、偏倚评价或效应量汇总。被讨论的方法跨越合成数据、单中心回顾性队列、多中心数据、细胞扰动实验和非医疗数据集，性能指标不能直接横向比较。</p>
+<p>Figure 1中的94%降至73%、87%至95%的治疗生存率，以及Figure 2的性能曲线均为概念示意。Box 4明确标为【Imagined clinical workflow】，其中三种降压药的12%、18%、22%心血管风险下降和eGFR变化不是试验或模型验证结果。页面只把这些数字用于理解工作流，不作为药物推荐证据。</p>
+<p>文章最可靠的结论是审查边界：预测性能、图解释和稳定特征不能自动证明因果识别；节点语义和生物尺度决定可执行的干预；因果主张要说明估计量、结构假设、验证设计和失败条件。</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="本页导航">
+    <div class="deep-toc-title">本页导航</div>
+    <a href="#overview" class="is-main">30秒结论</a>
+    <a href="#key-numbers">三个关键数字</a>
+    <a href="#where-to-focus">重点看哪里</a>
+    <a href="#study-design">因果GNN主张的五步审计</a>
+    <a href="#full-read">完整精读</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← 回精读列表</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>我的文献集 · Xuanyu Shi</span>
+    <span>每个工作日更新一次 · <a href="https://xuanyshi.github.io/research-desk/zh/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>
