@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>关于 · 我的文献集</title>
+<meta name="description" content="我读过、在读、想读的论文，还有每天从高水平期刊里挑出来的那几篇。">
+<meta property="og:title" content="关于 · 我的文献集">
+<meta property="og:description" content="我读过、在读、想读的论文，还有每天从高水平期刊里挑出来的那几篇。">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="我的文献集">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/zh/about/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/zh/about/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/about/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/about/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/about/">
+<link rel="alternate" type="application/atom+xml" title="我的文献集 · 精读" href="https://xuanyshi.github.io/research-desk/zh/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../index.html">我的文献集<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../index.html" class="">首页</a>
+      <a href="../library/index.html" class="">文献库</a>
+      <a href="../deep/index.html" class="">精读</a>
+      <a href="../daily/index.html" class="">每日速览</a>
+      <a href="../log/index.html" class="">历程</a>
+      <a href="../about/index.html" class="on">关于</a>
+      <span class="lang">
+        <a href="../../zh/about/" class="on">中</a>
+        <a href="../../en/about/" class="">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--sub">
+  <h1>关于</h1>
+</section>
+<article class="prose">
+<h2>关于我</h2>
+<p>我是 <strong>Xuanyu Shi</strong>，方法学研究者，工作在统计学、数据科学与流行病学的交叉地带——本科统计学、硕士数据科学（均在美国），博士就读于北京大学医学部（健康医疗大数据方向）。</p>
+<p>研究上主要关注：因果推断方法（Pearl 的 DAG/SCM 传统，以及 Hernán–Robins 的流行病学设计，如 target trial emulation）、生物医学知识图谱、跨研究设计的证据三角互证（RCT / 孟德尔随机化 / 观察性研究）、真实世界证据；应用侧多在药物流行病学与肿瘤流行病学（如 GLP-1RA 与肿瘤、消化系统肿瘤的危险因素）。</p>
+<p>代表性成果：<em>Nature Communications</em>（2025，一作，Evidence Triangulator）、<em>Scientific Data</em>（2024，一作）、<em>Health Data Science</em>（2024）。</p>
+<p><a href="https://xuanyshi.github.io/" target="_blank" rel="noopener">个人主页</a> · <a href="https://github.com/xuanyshi" target="_blank" rel="noopener">GitHub</a> · <a href="https://scholar.google.com/citations?user=ImrZzA8AAAAJ" target="_blank" rel="noopener">Google Scholar</a></p>
+
+<hr />
+<h2>关于这个站点</h2>
+<p>这个站点就干两件事。</p>
+<p>一是每天替我盯着一批高水平期刊。它把新文章抓下来，让模型照我的兴趣打个分、写段中文摘要，攒成「每日速览」。分高的我才细看。</p>
+<p>二是存我自己挑出来的东西。值得读的收进「文献库」，标上标签、打个分、记下读到哪、写几句笔记。真读透了的，我会另写一篇精读。</p>
+<p>说明一下：「每日速览」里的分数和摘要是大模型生成的；文献库的笔记和每篇精读，都是我自己写的。</p>
+<h2>怎么用</h2>
+<p>抓最近的新文章并打分：</p>
+<pre><code class="language-bash">python -m pipeline.daily
+</code></pre>
+<p>收藏一篇：</p>
+<pre><code class="language-bash">python -m pipeline.add 2401.12345 --tags 因果推断 --rating 4 --status read --note &quot;第3节重点&quot;
+</code></pre>
+<p>改了数据或模板，只重新生成页面：</p>
+<pre><code class="language-bash">python -m pipeline.render
+</code></pre>
+<h2>搭在什么上面</h2>
+<p>页面是 Python 加 Jinja2 直接生成的静态 HTML，放在 GitHub Pages 上。追新除了盯白名单期刊（Crossref），也用 OpenAlex 按主题搜全网已发表文献、并追 arXiv/medRxiv 预印本；打分走一个 OpenAI 兼容的模型接口。每天的抓取、每次的部署，都交给 GitHub Actions。</p>
+<p>源码和配置说明都在 README 里。</p>
+</article>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>我的文献集 · Xuanyu Shi</span>
+    <span>每个工作日更新一次 · <a href="https://xuanyshi.github.io/research-desk/zh/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>
