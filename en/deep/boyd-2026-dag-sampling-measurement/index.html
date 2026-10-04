@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why your DAG should probably incorporate sampling and measurement processes · Deep reads · My Research Desk</title>
+<meta name="description" content="When triggered, a DAG should add sample inclusion S, true variables, measured proxies, and common causes of measurement. These nodes expose forced conditioning, selection bias, and shared measurement error that can defeat identification.">
+<meta property="og:title" content="Why your DAG should probably incorporate sampling and measurement processes · Deep reads · My Research Desk">
+<meta property="og:description" content="When triggered, a DAG should add sample inclusion S, true variables, measured proxies, and common causes of measurement. These nodes expose forced conditioning, selection bias, and shared measurement error that can defeat identification.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="My Research Desk">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/en/deep/boyd-2026-dag-sampling-measurement/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/en/deep/boyd-2026-dag-sampling-measurement/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/boyd-2026-dag-sampling-measurement/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/boyd-2026-dag-sampling-measurement/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/boyd-2026-dag-sampling-measurement/">
+<link rel="alternate" type="application/atom+xml" title="My Research Desk · Deep reads" href="https://xuanyshi.github.io/research-desk/en/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">My Research Desk<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">Home</a>
+      <a href="../../library/index.html" class="">Library</a>
+      <a href="../../deep/index.html" class="on">Deep reads</a>
+      <a href="../../daily/index.html" class="">Daily</a>
+      <a href="../../log/index.html" class="">Log</a>
+      <a href="../../about/index.html" class="">About</a>
+      <span class="lang">
+        <a href="../../../zh/deep/boyd-2026-dag-sampling-measurement/" class="">中</a>
+        <a href="../../../en/deep/boyd-2026-dag-sampling-measurement/" class="on">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">My deep read</div>
+  <h1>Why your DAG should probably incorporate sampling and measurement processes</h1>
+  <p>Robin J Boyd, Rob Cooke, Gary D Powney, Oliver L Pescott</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">Current Opinion in Insect Science 78 (2026):101578</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.1016/j.cois.2026.101578" target="_blank" rel="noopener">Source / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=Why%20your%20DAG%20should%20probably%20incorporate%20sampling%20and%20measurement%20processes" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p0">Causal DAG</span><span class="pill p3">Sampling process</span><span class="pill p2">Measurement error</span><span class="pill p1">Selection bias</span><span class="pill p3">Identification</span><span class="pill p1">Estimand</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30-second read</div>
+      <h2 id="overview-title">When triggered, a DAG should add <strong>sample inclusion S, true variables, measured proxies, and common causes of measurement</strong>. These nodes expose forced conditioning, selection bias, and shared measurement error that can defeat identification.</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>Question</dt>
+          <dd>When a DAG only represents the natural system, <strong>how do sampling and measurement alter identification of descriptive, predictive, and causal estimands</strong>?</dd>
+        </div>
+        <div>
+          <dt>Design</dt>
+          <dd><strong>A conceptual review in Current Opinion in Insect Science</strong>, using UK butterfly occupancy, selection nodes, and measured proxies to represent the observation process.</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>Evidence strength</span>
+          <strong class="evidence-level level-low">Limited</strong>
+        </div>
+        <dl>
+          <div><dt>What was assessed</dt><dd><strong>An identification range from the law of total probability, path criteria in Figures 1-2, and nine insect-science applications.</strong></dd></div>
+          <div><dt>Downgrade triggers</dt><dd>The review has no new data or simulation and Table 1 is not systematic. If S depends directly on Y or proxies share a cause, the target cannot be identified from current data alone.</dd></div>
+          <div><dt>Impact on interpretation</dt><dd>The paper provides a <strong>graph-construction and identification checklist</strong>, not evidence that adding observation nodes automatically corrects bias or improves estimates.</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">Reading advice</strong>Start with Box 1 to see how data and assumptions identify a target, then inspect Figures 1-2. Express each criterion as <strong>objects, trigger condition, and effect on the conclusion</strong>.</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">Three numbers to keep</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">0.06-0.96</div>
+          <h3>National occupancy identification range</h3>
+          <p><strong>With 10% sampled, sample occupancy 0.60, and nonsample occupancy unknown</strong>, only a broad range follows</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">3</div>
+          <h3>Inferential goals</h3>
+          <p><strong>Descriptive, predictive, and causal estimands</strong> all depend on sampling and measurement assumptions</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">1/9</div>
+          <h3>Examples including observation processes</h3>
+          <p>Only <strong>one of nine insect-science DAG applications known to the authors includes site selection</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">Where to focus</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1016/j.cois.2026.101578" target="_blank" rel="noopener">
+            Box 1 · PDF p. 2<small>Direct link</small> ↗
+          </a>
+          <div><h3>Derive the identification range</h3><p>The <strong>0.06 to 0.96 range</strong> shows why a sample mean cannot represent the population when nonsampled outcomes are unknown.</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1016/j.cois.2026.101578" target="_blank" rel="noopener">
+            Figure 1 · PDF p. 4<small>Direct link</small> ↗
+          </a>
+          <div><h3>Check paths opened by selection and measurement</h3><p><strong>Forced conditioning on sample inclusion S opens a collider path</strong>, while a shared observer factor connects two proxies.</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1016/j.cois.2026.101578" target="_blank" rel="noopener">
+            Figure 2 · PDF p. 6<small>Direct link</small> ↗
+          </a>
+          <div><h3>Distinguish three sampling mechanisms</h3><p>The panels connect <strong>ignorable, conditionally ignorable, and non-ignorable sampling</strong> to different identification conclusions.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">Observation-process DAG audit</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">Target</div>
+            <h3>Define the estimand first</h3>
+            <p>Specify the <strong>unit-level quantity, target population, and intervention condition</strong> before assessing data.</p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">Sampling</div>
+            <h3>Add sample inclusion S</h3>
+            <p>Record <strong>which exposures, outcomes, or common causes govern inclusion and retention</strong>.</p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">Measurement</div>
+            <h3>Separate truth from proxies</h3>
+            <p>Add <strong>observed proxies and common factors affecting measurement</strong> for X and Y.</p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">Paths</div>
+            <h3>Inspect forced conditioning</h3>
+            <p>Identify paths opened when <strong>S is a collider or Y directly determines S</strong>.</p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">Conclusion</div>
+            <h3>Report identification status</h3>
+            <p>State whether the target is <strong>point identified, range identified, or needs additional assumptions and validation data</strong>.</p>
+          </li>
+        </ol>
+        <figcaption><strong>Organized from Box 1 and Figures 1-2</strong>; applicable to descriptive, predictive, and causal questions.</figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">Full deep read</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>A DAG limited to causal relations in the target system can omit the assumptions that determine whether an estimand is identified from data. The authors argue for adding sampling, missingness, and measured proxies so that descriptive, predictive, and causal estimands share an explicit observation-process audit.</p>
+</blockquote>
+<h2>The authors</h2>
+<p>Robin J Boyd, Rob Cooke, Gary D Powney, and Oliver L Pescott are based at the UK Centre for Ecology and Hydrology and the University of Exeter. This open-access review in Current Opinion in Insect Science was available online on 17 July 2026 under a CC BY license.</p>
+<h2>The problem</h2>
+<p>DAGs in ecology and insect science mainly represent causal relations among variables that exist before data collection, often with the task reduced to finding a confounder adjustment set. Every observed association also passes through <strong>sampling and measurement</strong>: which units enter the data and how true variables become observed proxies can determine identification. A graph may state assumptions about nature while leaving implicit why the data represent the target population.</p>
+<p>The authors extend the point beyond causal effects. Descriptive and predictive questions also require assumptions about sample coverage, outcome measurement, and whether missingness can be ignored.</p>
+<h2>The approach</h2>
+<p>The paper uses Purple Emperor butterfly occupancy in the United Kingdom throughout. Its descriptive estimand is the proportion of one-kilometre squares occupied; its predictive estimand is occupancy probability conditional on woodland cover and temperature; and its causal estimand is the average change under an intervention on woodland cover. Each question first fixes the unit-level quantity and target population before asking whether available data identify it.</p>
+<p>For the <strong>sampling criterion</strong>, the objects are the true outcome Y in the target population, sample inclusion S, and variables X that may govern inclusion. Sampling is ignorable when no open path connects S and Y. It is conditionally ignorable when measured non-colliders block that path. If S depends directly on Y, or forced conditioning on S opens a collider path between exposure and outcome, the estimand is not identified from the current data alone.</p>
+<p>For the <strong>measurement criterion</strong>, the objects are true exposure X, true outcome Y, measured proxies Xs and Ys, and factors M affecting measurement. When the two proxies share a cause such as observer expertise, their association contains an additional non-causal path. The trigger means that the true causal effect requires a measurement model, validation data, or stronger assumptions; conventional covariate adjustment is insufficient.</p>
+<h2>Key results</h2>
+<p>Box 1 gives an identification region. If only 10% of UK squares are sampled and occupancy in the sample is 0.60, while occupancy outside the sample is completely unknown, national occupancy can only be bounded from 0.06 to 0.96. Adding independence between inclusion and occupancy point-identifies the value at 0.60. A stronger assumption excludes more possible values but increases the risk of excluding the truth.</p>
+<p>Figure 1 compares four causal scenarios. Even after temperature confounding is measured and adjusted, sample inclusion can be a collider linking exposure and outcome. Because the analyst can only study S = 1, forced conditioning opens that path and leaves the target effect unidentified. Shared observer expertise as a cause of both exposure and outcome proxies adds another unidentified path.</p>
+<p>Figure 2 separates ignorable, conditionally ignorable, and non-ignorable sampling. The first two require Y and S to be unconditionally independent or conditionally independent given X. In the third, S is directly affected by Y, so descriptive means and conditional predictions are not identified from the sample.</p>
+<h2>How solid is the evidence</h2>
+<p><strong>Evidence level: limited.</strong> This is a conceptual review with no new dataset, simulation comparison, or correction experiment. Its numerical range follows directly from the law of total probability, and the graph examples align with established selection-bias, missing-data, and measurement-error theory. They test identification logic but do not show that adding nodes automatically improves estimation or reproducibility.</p>
+<p>Table 1 lists nine insect-science applications known to the authors and is not a systematic search. The paper shows which assumptions should be explicit but does not provide a complete identification algorithm. Complex survey weights, longitudinal dropout, dependent misclassification, validation substudies, and probability sampling are outside its worked examples.</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="On this page">
+    <div class="deep-toc-title">On this page</div>
+    <a href="#overview" class="is-main">30-second read</a>
+    <a href="#key-numbers">Three numbers to keep</a>
+    <a href="#where-to-focus">Where to focus</a>
+    <a href="#study-design">Observation-process DAG audit</a>
+    <a href="#full-read">Full deep read</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← Back to deep reads</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>My Research Desk · Xuanyu Shi</span>
+    <span>Updated on weekdays · <a href="https://xuanyshi.github.io/research-desk/en/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

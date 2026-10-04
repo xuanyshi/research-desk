@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GENESIS: Towards Explainable Causal Discovery · Deep reads · My Research Desk</title>
+<meta name="description" content="GENESIS uses motifs, statistical checks, Markov blankets, and LLM adjudication to reach 100% decision-traceability coverage. That metric is guaranteed by the workflow, while appendix tables still contain fully justified incorrect edges.">
+<meta property="og:title" content="GENESIS: Towards Explainable Causal Discovery · Deep reads · My Research Desk">
+<meta property="og:description" content="GENESIS uses motifs, statistical checks, Markov blankets, and LLM adjudication to reach 100% decision-traceability coverage. That metric is guaranteed by the workflow, while appendix tables still contain fully justified incorrect edges.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="My Research Desk">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/en/deep/thorat-2026-genesis-causal-discovery/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/en/deep/thorat-2026-genesis-causal-discovery/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/thorat-2026-genesis-causal-discovery/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/thorat-2026-genesis-causal-discovery/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/thorat-2026-genesis-causal-discovery/">
+<link rel="alternate" type="application/atom+xml" title="My Research Desk · Deep reads" href="https://xuanyshi.github.io/research-desk/en/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">My Research Desk<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">Home</a>
+      <a href="../../library/index.html" class="">Library</a>
+      <a href="../../deep/index.html" class="on">Deep reads</a>
+      <a href="../../daily/index.html" class="">Daily</a>
+      <a href="../../log/index.html" class="">Log</a>
+      <a href="../../about/index.html" class="">About</a>
+      <span class="lang">
+        <a href="../../../zh/deep/thorat-2026-genesis-causal-discovery/" class="">中</a>
+        <a href="../../../en/deep/thorat-2026-genesis-causal-discovery/" class="on">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">My deep read</div>
+  <h1>GENESIS: Towards Explainable Causal Discovery</h1>
+  <p>Abhinav Thorat, Ravi Kumar Kolla, Vishak K Bhat, Harsh Vardhan Singh Chauhan et al.</p>
+  <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+  
+  <p class="deep-links">
+    <a href="https://arxiv.org/abs/2608.03868" target="_blank" rel="noopener">Source / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=GENESIS%3A%20Towards%20Explainable%20Causal%20Discovery" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p1">Causal discovery</span><span class="pill p0">Causal DAG</span><span class="pill p1">Large language models</span><span class="pill p4">Decision traceability</span><span class="pill p1">Markov blanket</span><span class="pill p0">Structural Hamming Distance</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30-second read</div>
+      <h2 id="overview-title">GENESIS uses motifs, statistical checks, Markov blankets, and LLM adjudication to reach <strong>100% decision-traceability coverage</strong>. That metric is guaranteed by the workflow, while appendix tables still contain fully justified incorrect edges.</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>Question</dt>
+          <dd>When LLMs assist causal discovery, can <strong>every edge decision remain inspectable</strong> without sacrificing structural accuracy?</dd>
+        </div>
+        <div>
+          <dt>Design</dt>
+          <dd><strong>An arXiv version 1 preprint</strong> comparing statistical and LLM-assisted discovery on five benchmark Bayesian networks, three sample sizes, and six random seeds.</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>Evidence strength</span>
+          <strong class="evidence-level level-low">Limited</strong>
+        </div>
+        <dl>
+          <div><dt>What was assessed</dt><dd><strong>SHD, edge-level resolution sources, and correctness on five known graphs</strong>, at sample sizes 1,000, 2,500, and 5,000.</dd></div>
+          <div><dt>Downgrade triggers</dt><dd>If rationale coverage implied correctness, source-resolved edges should be almost uniformly correct; only <strong>6 of 11 statistically resolved Child edges are correct</strong>, and every experiment uses a small synthetic benchmark.</dd></div>
+          <div><dt>Impact on interpretation</dt><dd>The study supports an <strong>edge-level audit-trail prototype</strong> but does not establish correct causal discovery in real biomedical data.</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">Reading advice</strong>Start with Figure 1 for the three stages, then verify SHD in Tables 3-5 and source correctness in the appendix. Keep <strong>structural accuracy, rationale coverage, and rationale correctness</strong> separate.</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">Three numbers to keep</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">100%</div>
+          <h3>Decision traceability</h3>
+          <p><strong>Every final edge carries at least one listed reason</strong>; coverage follows from the inclusion rule</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">5 × 3 × 6</div>
+          <h3>Benchmark design</h3>
+          <p><strong>Five networks, three sample sizes, and six random seeds</strong>, evaluated with SHD</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">6/11</div>
+          <h3>Correct statistical edges on Child</h3>
+          <p><strong>Only 55% are correct at n = 1,000</strong>; a traceable edge can still be wrong</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">Where to focus</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://arxiv.org/abs/2608.03868" target="_blank" rel="noopener">
+            Figure 1 and Tables 1-2 · PDF p. 4<small>Direct link</small> ↗
+          </a>
+          <div><h3>Trace the three-stage decision path</h3><p><strong>Candidate motifs, data scores, blanket checks, and final adjudication</strong> are connected in one workflow.</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://arxiv.org/abs/2608.03868" target="_blank" rel="noopener">
+            Tables 3-5 · PDF pp. 6-7<small>Direct link</small> ↗
+          </a>
+          <div><h3>Compare SHD, not traceability alone</h3><p><strong>GENESIS often beats purely statistical baselines</strong> but does not consistently beat LLM-CD or CaMML on Child.</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://arxiv.org/abs/2608.03868" target="_blank" rel="noopener">
+            Tables 6-13 · PDF pp. 11-13<small>Direct link</small> ↗
+          </a>
+          <div><h3>Audit hyperparameters and edge errors</h3><p>The appendix exposes <strong>a lower-threshold inconsistency and varying rationale accuracy</strong>, both central to reproduction.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">GENESIS edge-decision chain</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">Semantic prior</div>
+            <h3>Generate three-node motifs</h3>
+            <p><strong>GPT-5 proposes chains, forks, and colliders from variable metadata</strong> with confidence scores.</p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">Data check</div>
+            <h3>Score edges and motifs</h3>
+            <p><strong>Conditional independence, BIC, ANM, and LiNGAM signals are combined</strong> into an initial candidate graph.</p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">Local structure</div>
+            <h3>Intersect Markov blankets</h3>
+            <p><strong>Data-derived IAMB and LLM blankets are intersected</strong>; mutual membership retains an edge.</p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">Alternatives</div>
+            <h3>Adjudicate uncertain edges</h3>
+            <p><strong>Direct, mediated, longer-chain, and common-cause hypotheses are enumerated</strong> before KEEP or DISCARD.</p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">Dual audit</div>
+            <h3>Separate reasons from truth</h3>
+            <p>Report <strong>resolution source, rationale correctness, and SHD together</strong> so coverage is not mistaken for causal accuracy.</p>
+          </li>
+        </ol>
+        <figcaption><strong>Organized from Algorithm 1, Figures 1-2, and the appendix</strong>; the output is an edge decision with a rationale.</figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">Full deep read</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>GENESIS splits causal discovery into three-node motif generation, statistical checking, and edge resolution, while retaining a reason for every included edge. It reaches 100% "decision traceability" on five benchmark Bayesian networks, but that percentage is guaranteed by the workflow and does not mean that every edge is correct.</p>
+</blockquote>
+<h2>The authors</h2>
+<p>Abhinav Thorat, Ravi Kumar Kolla, Vishak K Bhat, Harsh Vardhan Singh Chauhan, and Niranjan Pedanekar are with the User Engagement Research team at Sony Research India. The paper was submitted to arXiv on 4 August 2026 and is currently a version 1 preprint.</p>
+<h2>The problem</h2>
+<p>Purely statistical causal discovery relies on conditional independence, score functions, or functional-form assumptions and often cannot orient edges under small samples or Markov equivalence. LLMs can add semantic priors from variable names and descriptions, but existing hybrids commonly return a final graph without showing why each edge was retained or removed.</p>
+<p>The authors define <strong>decision traceability</strong>: every edge in the final DAG must retain at least one explicit justification from statistical evidence, Markov-blanket consistency, or LLM domain reasoning. This metric asks whether a reason can be inspected. It does not directly establish that the reason is sound or that the edge is true.</p>
+<h2>The approach</h2>
+<p><strong>Stage 1, LLM Explorer</strong>, operates on variable metadata and three-node combinations. GPT-5 proposes chains, forks, and colliders with semantic confidence scores. Triggering a candidate motif turns isolated edges into a local structural hypothesis for later data checking.</p>
+<p><strong>Stage 2, Data Explorer</strong>, operates on candidate edges and motifs. Conditional-independence tests, BIC, additive-noise models, and LiNGAM are combined into edge confidence, while motif-implied dependence patterns are checked separately. Scores above a lower threshold enter the initial graph; intermediate scores or disagreement between the LLM and data trigger edge resolution.</p>
+<p><strong>Stage 3, Edge Resolution</strong>, intersects IAMB Markov blankets estimated from the data with blankets proposed by Qwen3.5-27B. Mutual membership retains an edge. Otherwise, GPT-5 enumerates five competing explanations - direct, two mediated alternatives, a longer chain, and a common cause - and Gemini 3 Pro returns KEEP or DISCARD. The final edge records its resolution source as an audit trail.</p>
+<h2>Key results</h2>
+<p>The experiments cover five Bayesian networks with known graphs: Asia, Cancer, Child, Earthquake, and Survey. The authors generate 1,000, 2,500, and 5,000 observations per network and repeat each setting across six random seeds. Structural Hamming Distance (SHD) is the main accuracy measure.</p>
+<p>At 1,000 observations, GENESIS reports SHD values of 0.00, 0.17, and 0.33 on Earthquake, Cancer, and Asia, with 6.83 on Child and 4.17 on Survey. At 5,000 observations, the corresponding values are 0.00, 0.00, 1.00, 6.67, and 1.83. It beats PC, SCORE, NOTEARS, and DirectLiNGAM on most networks, but does not consistently beat LLM-CD, CausalOrder, or CaMML. On Child, LLM-CD or CaMML has lower SHD at every sample size.</p>
+<p><strong>Decision traceability is 100% in every setting</strong> because an edge cannot enter the final graph without at least one listed reason. Appendix edge tables also show source accuracy. On Child at n = 1,000, only 6 of 11 statistically resolved edges are correct and 11 of 12 Markov-blanket-resolved edges are correct. On Asia, 5 of 7 blanket-resolved edges are correct. Complete reason coverage can therefore coexist with incorrect edges.</p>
+<h2>How solid is the evidence</h2>
+<p><strong>Evidence level: limited.</strong> Known graphs, three sample sizes, six repeats, and edge-level correctness tables support evaluation on small benchmarks. All observations come from five textbook networks, while node names and metadata expose semantic content. Medical labels in Asia and Cancer do not constitute real biomedical validation. There is no external real-world dataset, blinded metadata, distribution shift, latent-confounding test, or measurement-error test.</p>
+<p>The 100% result is a process-coverage property created by the inclusion rule. It does not validate factual truth, independence of evidence sources, confidence calibration, or expert reproducibility. Using GPT-5, Qwen3.5-27B, and Gemini 3 Pro also makes performance depend on model versions, prompts, and service state.</p>
+<p>Two internal inconsistencies affect reproduction. The Cancer example uses an uncertainty interval of 0.40 to 0.70, whereas the appendix hyperparameter table gives a lower threshold of 0.25. A methods footnote caps motifs at 5n, while the appendix says the maximum is fixed at 40 for all experiments. The algorithm declares a DAG output but does not explicitly show global cycle detection or conflicting-orientation resolution. Thresholds, candidate limits, and acyclicity handling need clarification.</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="On this page">
+    <div class="deep-toc-title">On this page</div>
+    <a href="#overview" class="is-main">30-second read</a>
+    <a href="#key-numbers">Three numbers to keep</a>
+    <a href="#where-to-focus">Where to focus</a>
+    <a href="#study-design">GENESIS edge-decision chain</a>
+    <a href="#full-read">Full deep read</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← Back to deep reads</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>My Research Desk · Xuanyu Shi</span>
+    <span>Updated on weekdays · <a href="https://xuanyshi.github.io/research-desk/en/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>

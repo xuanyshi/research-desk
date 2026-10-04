@@ -1,0 +1,2032 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026-06 · 每日速览 · 我的文献集</title>
+<meta name="description" content="我读过、在读、想读的论文，还有每天从高水平期刊里挑出来的那几篇。">
+<meta property="og:title" content="2026-06 · 每日速览 · 我的文献集">
+<meta property="og:description" content="我读过、在读、想读的论文，还有每天从高水平期刊里挑出来的那几篇。">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="我的文献集">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/zh/daily/2026-06/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/zh/daily/2026-06/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/daily/2026-06/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/daily/2026-06/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/daily/2026-06/">
+<link rel="alternate" type="application/atom+xml" title="我的文献集 · 精读" href="https://xuanyshi.github.io/research-desk/zh/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=53362a7aaf">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">我的文献集<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">首页</a>
+      <a href="../../library/index.html" class="">文献库</a>
+      <a href="../../deep/index.html" class="">精读</a>
+      <a href="../../daily/index.html" class="on">每日速览</a>
+      <a href="../../log/index.html" class="">历程</a>
+      <a href="../../about/index.html" class="">关于</a>
+      <span class="lang">
+        <a href="../../../zh/daily/2026-06/" class="on">中</a>
+        <a href="../../../en/daily/2026-06/" class="">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--sub">
+  <h1>2026-06</h1>
+  <p>109 篇里挑，75 篇够相关（≥7）。分高的排前面。</p>
+</section>
+
+<div class="toolbar">
+  <input class="search" id="q" type="search" placeholder="搜标题、作者、标签、笔记…" autocomplete="off">
+  <div class="filters" id="scoreFilters">
+    <button class="chip-btn on" data-min="0">全部</button>
+    <button class="chip-btn" data-min="7">只看高分的</button>
+  </div>
+  <div class="filters filters--disease" id="diseaseFilters">
+    <span class="filters-label">疾病</span>
+    <button class="chip-btn on" data-disease="all">全部</button>
+<button class="chip-btn" data-disease="cancer">癌症 <span class="chip-n">1</span></button><button class="chip-btn" data-disease="cardiovascular">心血管 <span class="chip-n">1</span></button><button class="chip-btn" data-disease="diabetes">糖尿病 <span class="chip-n">1</span></button><button class="chip-btn" data-disease="mental">精神心理 <span class="chip-n">1</span></button><button class="chip-btn" data-disease="respiratory">呼吸系统 <span class="chip-n">1</span></button>  </div>
+</div>
+<div class="count-note"><span id="count">109</span> 篇</div>
+
+<div id="papers">
+<article class="paper" data-score="10" data-diseases="" data-text="deeproot: a kg-coordinated multi-agent system for therapeutic reasoning over historical medical texts  zijian carl ma sean j. wang sijbren kramer li erran li 该论文提出deeproot，一个基于多智能体llm的系统，用于从历史医学文献中构建并利用验证过的知识图谱，实现可规模化的治疗推理。系统将知识图谱的 grounding 与 llm 的 reasoning 分离并组合，在《神农本草经》上恢复10/21个药物-疾病治疗对（r@20 47.6%），显著优于基线llm（4.8%）和随机（~2.4%），且llm-as-judge审计显示其推理质量优于直接调用相同api的工具型llm。deeproot在证据幻觉率（7-10% vs 87%）和推理连贯性上均取得最优平衡，为历史医学知识的系统挖掘与再利用提供了可行路径。 ">
+  <div class="head">
+    <div class="badge hi">10</div>
+    <div>
+      <h3>DeepRoot: A KG-Coordinated Multi-Agent System for Therapeutic Reasoning over Historical Medical Texts <span class="ai-tag">AI</span></h3>
+      <p class="authors">Zijian Carl Ma, Sean J. Wang, Sijbren Kramer, Li Erran Li</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出DeepRoot，一个基于多智能体LLM的系统，用于从历史医学文献中构建并利用验证过的知识图谱，实现可规模化的治疗推理。系统将知识图谱的 grounding 与 LLM 的 reasoning 分离并组合，在《神农本草经》上恢复10/21个药物-疾病治疗对（R@20 47.6%），显著优于基线LLM（4.8%）和随机（~2.4%），且LLM-as-judge审计显示其推理质量优于直接调用相同API的工具型LLM。DeepRoot在证据幻觉率（7-10% vs 87%）和推理连贯性上均取得最优平衡，为历史医学知识的系统挖掘与再利用提供了可行路径。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.15931v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.15931v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=DeepRoot%3A%20A%20KG-Coordinated%20Multi-Agent%20System%20for%20Therapeutic%20Reasoning%20over%20Historical%20Medical%20Texts" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.15931v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.15931v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="10" data-diseases="" data-text="agents-k1: towards agent-native knowledge orchestration  zongsheng cao bihao zhan jinxin shi jiong wang fangchen yu zhijie zhong zijie guo tianshuo peng zhuo liu yi xie xiang zhuang shengji tang yue fan runmin ma shiyang feng xiangchao yan anran liu peng ye wenlong zhang shufei zhang chunfeng song fenghua ling jie zhou liang he bo zhang lei bai 该论文提出agents-k1，一个端到端的知识编排管线，将原始文献转化为智能体可用的科学知识图谱。管线包含多模态解析器、基于grpo训练的4b信息抽取模型，以及统一搜索与图谱检索的cli接口。在246万篇论文上构建了scholar-kg，实验表明其在科学信息抽取、知识图谱构建和多跳推理上表现优异，为因果dag的自动化构建提供了可扩展的基础设施。 ">
+  <div class="head">
+    <div class="badge hi">10</div>
+    <div>
+      <h3>Agents-K1: Towards Agent-native Knowledge Orchestration <span class="ai-tag">AI</span></h3>
+      <p class="authors">Zongsheng Cao, Bihao Zhan, Jinxin Shi, Jiong Wang et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出Agents-K1，一个端到端的知识编排管线，将原始文献转化为智能体可用的科学知识图谱。管线包含多模态解析器、基于GRPO训练的4B信息抽取模型，以及统一搜索与图谱检索的CLI接口。在246万篇论文上构建了Scholar-KG，实验表明其在科学信息抽取、知识图谱构建和多跳推理上表现优异，为因果DAG的自动化构建提供了可扩展的基础设施。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.13669v2" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.13669v2" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Agents-K1%3A%20Towards%20Agent-native%20Knowledge%20Orchestration" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.13669v2" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.13669v2</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="10" data-diseases="" data-text="from prompts to tokens: internalizing causal supervision in vision-language model for multi-image causal reasoning  haoping yu yuanxi li jing ma 该论文针对视觉-语言模型在多图像因果推理中因果知识外部化、推理不可控的问题，提出bridgevlm模型。该方法通过从多图像输入中诱导因果图，并将其转化为结构化因果令牌，注入大语言模型解码器中的ramp层进行因果消息传递，同时引入统一训练接口m3s实现细粒度因果监督。实验表明，该方法在causalvlbench干预任务上准确率从33.2%提升至54.4%，因果结构学习f1分数从33.4%提升至75.1%，显著优于提示级监督方法。 ">
+  <div class="head">
+    <div class="badge hi">10</div>
+    <div>
+      <h3>From Prompts to Tokens: Internalizing Causal Supervision in Vision-Language Model for Multi-Image Causal Reasoning <span class="ai-tag">AI</span></h3>
+      <p class="authors">Haoping Yu, Yuanxi Li, Jing Ma</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文针对视觉-语言模型在多图像因果推理中因果知识外部化、推理不可控的问题，提出BridgeVLM模型。该方法通过从多图像输入中诱导因果图，并将其转化为结构化因果令牌，注入大语言模型解码器中的RAMP层进行因果消息传递，同时引入统一训练接口M3S实现细粒度因果监督。实验表明，该方法在CausalVLBench干预任务上准确率从33.2%提升至54.4%，因果结构学习F1分数从33.4%提升至75.1%，显著优于提示级监督方法。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.11745v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.11745v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=From%20Prompts%20to%20Tokens%3A%20Internalizing%20Causal%20Supervision%20in%20Vision-Language%20Model%20for%20Multi-Image%20Causal%20Reasoning" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.11745v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.11745v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="10" data-diseases="" data-text="causal ensemble agent: hierarchical causal discovery with llm-guided expert reweighting  xinyu li yuanyuan wang haoxuan li chuan zhou erdun gao bo han tongliang liu kun zhang howard bondell mingming gong 该论文提出causal ensemble agent（cea）框架，旨在解决不同因果发现算法结果冲突的问题。方法上，cea通过线性意见池化聚合多个统计因果发现专家的结构信息，并利用大语言模型（llm）作为元裁判，在聚合置信度接近决策边界时动态重加权专家，从而生成更优且更完整的因果图。实验表明，cea在合成和真实数据集上优于多种现有因果发现方法，验证了llm在因果发现元分析中的有效性。 ">
+  <div class="head">
+    <div class="badge hi">10</div>
+    <div>
+      <h3>Causal Ensemble Agent: Hierarchical Causal Discovery with LLM-guided Expert Reweighting <span class="ai-tag">AI</span></h3>
+      <p class="authors">Xinyu Li, Yuanyuan Wang, Haoxuan Li, Chuan Zhou et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出Causal Ensemble Agent（CEA）框架，旨在解决不同因果发现算法结果冲突的问题。方法上，CEA通过线性意见池化聚合多个统计因果发现专家的结构信息，并利用大语言模型（LLM）作为元裁判，在聚合置信度接近决策边界时动态重加权专家，从而生成更优且更完整的因果图。实验表明，CEA在合成和真实数据集上优于多种现有因果发现方法，验证了LLM在因果发现元分析中的有效性。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.10607v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.10607v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Causal%20Ensemble%20Agent%3A%20Hierarchical%20Causal%20Discovery%20with%20LLM-guided%20Expert%20Reweighting" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.10607v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.10607v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="10" data-diseases="" data-text="kg-softmap: soft knowledge-graph priors for bayesian network structure learning from sparse discrete data  guoliang xu james e. corter 该论文针对稀疏离散数据下贝叶斯网络结构学习困难的问题，提出kg-softmap方法，将加权有向知识图谱编码为有限强度的边先验，结合bdeu评分与logit形式先验进行最大后验估计。知识图谱可由专家或大语言模型提取。实验表明，在稀疏观测率下该方法显著优于纯数据驱动方法，且恢复质量随知识图谱质量平滑变化，在真实教育数据集上可生成可解释的概念级后验模型。 ">
+  <div class="head">
+    <div class="badge hi">10</div>
+    <div>
+      <h3>KG-SoftMAP: Soft Knowledge-Graph Priors for Bayesian Network Structure Learning from Sparse Discrete Data <span class="ai-tag">AI</span></h3>
+      <p class="authors">Guoliang Xu, James E. Corter</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文针对稀疏离散数据下贝叶斯网络结构学习困难的问题，提出KG-SoftMAP方法，将加权有向知识图谱编码为有限强度的边先验，结合BDeu评分与logit形式先验进行最大后验估计。知识图谱可由专家或大语言模型提取。实验表明，在稀疏观测率下该方法显著优于纯数据驱动方法，且恢复质量随知识图谱质量平滑变化，在真实教育数据集上可生成可解释的概念级后验模型。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.10358v2" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.10358v2" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=KG-SoftMAP%3A%20Soft%20Knowledge-Graph%20Priors%20for%20Bayesian%20Network%20Structure%20Learning%20from%20Sparse%20Discrete%20Data" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.10358v2" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.10358v2</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="10" data-diseases="" data-text="caution: knowing when to trust llms for ensemble causal discovery  bo peng kaiwen wu sirui chen zhiheng wang yu qiao chaochao lu 该论文提出caution框架，通过集成多种统计因果发现算法与llm领域知识，利用共识投票、可信校准仲裁和环修复三步，可靠地构建因果有向无环图。实验表明，该方法在多个数据集上优于纯数据驱动和llm增强基线，尤其在大图上表现更优，且对llm错误具有强鲁棒性。 ">
+  <div class="head">
+    <div class="badge hi">10</div>
+    <div>
+      <h3>CauTion: Knowing When to Trust LLMs for Ensemble Causal Discovery <span class="ai-tag">AI</span></h3>
+      <p class="authors">Bo Peng, Kaiwen Wu, Sirui Chen, Zhiheng Wang et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出CauTion框架，通过集成多种统计因果发现算法与LLM领域知识，利用共识投票、可信校准仲裁和环修复三步，可靠地构建因果有向无环图。实验表明，该方法在多个数据集上优于纯数据驱动和LLM增强基线，尤其在大图上表现更优，且对LLM错误具有强鲁棒性。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.03602v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.03602v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=CauTion%3A%20Knowing%20When%20to%20Trust%20LLMs%20for%20Ensemble%20Causal%20Discovery" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.03602v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.03602v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="10" data-diseases="" data-text="consistency evaluation of benchmarks used for causal discovery  yuzhe zhang chihui chen lina yao chen wang 该论文系统研究了因果发现基准因果图的质量问题，指出领域知识更新常导致基准图与最新文献不一致，尤其影响基于大语言模型的因果发现方法评估。作者设计了一条自动化流水线，从科学数据库中检索相关论文，并利用大语言模型检查基准因果图与领域文献的一致性。在11个流行基准上处理了38,081篇论文后，发现不同基准与领域研究的一致性差异显著，对因果发现研究具有重要启示。 ">
+  <div class="head">
+    <div class="badge hi">10</div>
+    <div>
+      <h3>Consistency evaluation of benchmarks used for causal discovery <span class="ai-tag">AI</span></h3>
+      <p class="authors">Yuzhe Zhang, Chihui Chen, Lina Yao, Chen Wang</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文系统研究了因果发现基准因果图的质量问题，指出领域知识更新常导致基准图与最新文献不一致，尤其影响基于大语言模型的因果发现方法评估。作者设计了一条自动化流水线，从科学数据库中检索相关论文，并利用大语言模型检查基准因果图与领域文献的一致性。在11个流行基准上处理了38,081篇论文后，发现不同基准与领域研究的一致性差异显著，对因果发现研究具有重要启示。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.01789v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.01789v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Consistency%20evaluation%20of%20benchmarks%20used%20for%20causal%20discovery" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.01789v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.01789v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="9" data-diseases="mental" data-text="knowledge-augmented agentic ai for mental health medication information seeking  huizi yu jian liu wenkong wang lingyao li jiayan zhou zhaoqian xue xiang li xinxin lin zhiying liang zhuoru wu siyuan ma xin ma lizhou fan 该论文针对精神科药物信息中监管记录与患者叙述难以整合的问题，开发了一个基于知识图谱的多智能体框架，融合reddit、webmd评论与fda不良事件报告系统数据。通过llm实体识别管线与医学本体（atc-n、icd-10、meddra）构建可追溯来源的知识图谱，确保监管事实与患者经验分离。结果显示患者生成数据与监管报告存在独立信号，且部分不良事件在社区中早于官方记录数百天出现，为可审计的精神科药物信息整合提供了方法基础。 精神心理 mental health">
+  <div class="head">
+    <div class="badge hi">9</div>
+    <div>
+      <h3>Knowledge-augmented Agentic AI for Mental Health Medication Information Seeking <span class="ai-tag">AI</span></h3>
+      <p class="authors">Huizi Yu, Jian Liu, Wenkong Wang, Lingyao Li et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      <div class="dbadges"><span class="dbadge">精神心理</span></div>
+<p class="sum">该论文针对精神科药物信息中监管记录与患者叙述难以整合的问题，开发了一个基于知识图谱的多智能体框架，融合Reddit、WebMD评论与FDA不良事件报告系统数据。通过LLM实体识别管线与医学本体（ATC-N、ICD-10、MedDRA）构建可追溯来源的知识图谱，确保监管事实与患者经验分离。结果显示患者生成数据与监管报告存在独立信号，且部分不良事件在社区中早于官方记录数百天出现，为可审计的精神科药物信息整合提供了方法基础。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.26205v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.26205v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Knowledge-augmented%20Agentic%20AI%20for%20Mental%20Health%20Medication%20Information%20Seeking" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.26205v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.26205v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="9" data-diseases="" data-text="from causal discovery to implementation: an agentic ai framework for e-scooter mobility hub planning across 29 german cities  meng jin melanie handrich simone martinenz nicholas hoeser ziyue li 该论文针对电动滑板车枢纽规划缺乏城市类型特异性因果证据的问题，提出一个三阶段智能体ai框架。该框架利用大语言模型驱动的因果发现流程，从德国29个城市的公开gbfs数据中构建因果模板库，编码不同城市类型与集群类型下环境特征对热点需求的因果驱动关系。研究发现核心区需求由活动可达性与交通邻近性驱动，而外围区需求受建成形态影响，且存在城市类型特异性模式，支持可迁移的选址模板。该框架已在德国海尔布隆市指导两个实际枢纽选址建设。 ">
+  <div class="head">
+    <div class="badge hi">9</div>
+    <div>
+      <h3>From Causal Discovery to Implementation: An Agentic AI Framework for E-Scooter Mobility Hub Planning Across 29 German Cities <span class="ai-tag">AI</span></h3>
+      <p class="authors">Meng Jin, Melanie Handrich, Simone Martinenz, Nicholas Hoeser et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文针对电动滑板车枢纽规划缺乏城市类型特异性因果证据的问题，提出一个三阶段智能体AI框架。该框架利用大语言模型驱动的因果发现流程，从德国29个城市的公开GBFS数据中构建因果模板库，编码不同城市类型与集群类型下环境特征对热点需求的因果驱动关系。研究发现核心区需求由活动可达性与交通邻近性驱动，而外围区需求受建成形态影响，且存在城市类型特异性模式，支持可迁移的选址模板。该框架已在德国海尔布隆市指导两个实际枢纽选址建设。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.25484v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.25484v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=From%20Causal%20Discovery%20to%20Implementation%3A%20An%20Agentic%20AI%20Framework%20for%20E-Scooter%20Mobility%20Hub%20Planning%20Across%2029%20German%20Cities" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.25484v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.25484v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="9" data-diseases="" data-text="beyond shapley: efficient computation of asymmetric shapley values  ezequiel companeetz santiago cifuentes sergio abriola 该论文提出一种高效计算非对称shapley值（asv）的方法，利用因果有向无环图（dag）将因果知识融入模型无关的解释。作者证明在特定条件下asv可多项式时间精确计算，并引入拓扑序等价类概念以降低计算复杂度；对于任意因果dag，还开发了基于均匀采样拓扑序的近似算法。实验表明该方法在真实因果结构下具有实际可行性。 ">
+  <div class="head">
+    <div class="badge hi">9</div>
+    <div>
+      <h3>Beyond Shapley: Efficient Computation of Asymmetric Shapley Values <span class="ai-tag">AI</span></h3>
+      <p class="authors">Ezequiel Companeetz, Santiago Cifuentes, Sergio Abriola</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出一种高效计算非对称Shapley值（ASV）的方法，利用因果有向无环图（DAG）将因果知识融入模型无关的解释。作者证明在特定条件下ASV可多项式时间精确计算，并引入拓扑序等价类概念以降低计算复杂度；对于任意因果DAG，还开发了基于均匀采样拓扑序的近似算法。实验表明该方法在真实因果结构下具有实际可行性。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.25103v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.25103v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Beyond%20Shapley%3A%20Efficient%20Computation%20of%20Asymmetric%20Shapley%20Values" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.25103v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.25103v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="9" data-diseases="diabetes" data-text="t2d-bench: evidence-gated evaluation of llm outputs for type 2 diabetes using a multi-layer clinical-lifestyle knowledge graph  saba a. farahani hung cao ramesh jain amir m. rahmani 该论文提出了t2d-bench，一个基于多层临床-生活方式知识图谱的llm输出证据门控评估框架。知识图谱融合了umls、drugbank等生物医学本体与ada诊疗规则，通过可计算证据路径检测llm输出中的无依据遗漏。实验表明，gpt-4o-mini和gpt-4o在100个临床场景中分别有35%和33%的输出未通过证据路径检查，而证据门控机制可识别并修正这些不合规内容。研究展示了可计算证据约束在糖尿病领域llm输出中实现可衡量、可纠正的合规性评估。 糖尿病 diabetes">
+  <div class="head">
+    <div class="badge hi">9</div>
+    <div>
+      <h3>T2D-Bench: Evidence-Gated Evaluation of LLM Outputs for Type 2 Diabetes Using a Multi-Layer Clinical-Lifestyle Knowledge Graph <span class="ai-tag">AI</span></h3>
+      <p class="authors">Saba A. Farahani, Hung Cao, Ramesh Jain, Amir M. Rahmani</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      <div class="dbadges"><span class="dbadge">糖尿病</span></div>
+<p class="sum">该论文提出了T2D-Bench，一个基于多层临床-生活方式知识图谱的LLM输出证据门控评估框架。知识图谱融合了UMLS、DrugBank等生物医学本体与ADA诊疗规则，通过可计算证据路径检测LLM输出中的无依据遗漏。实验表明，GPT-4o-mini和GPT-4o在100个临床场景中分别有35%和33%的输出未通过证据路径检查，而证据门控机制可识别并修正这些不合规内容。研究展示了可计算证据约束在糖尿病领域LLM输出中实现可衡量、可纠正的合规性评估。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.24145v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.24145v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=T2D-Bench%3A%20Evidence-Gated%20Evaluation%20of%20LLM%20Outputs%20for%20Type%202%20Diabetes%20Using%20a%20Multi-Layer%20Clinical-Lifestyle%20Knowledge%20Graph" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.24145v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.24145v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="9" data-diseases="" data-text="causal discovery in the era of agents  yujia zheng vishal verma mantej gill haoyue dai peter spirtes kun zhang 该论文探讨大语言模型在因果发现中的合理角色，指出当前方法将llm输出直接作为因果证据存在不可靠风险。作者提出代理应辅助流程而非提供因果结论的原则，并基于此开发了causal-learn+在线平台，通过协调数据分析、预处理、方法推荐、专家知识整合等环节，实现可审计的因果发现。以big five人格数据为例展示了代理辅助管道的可行性。 ">
+  <div class="head">
+    <div class="badge hi">9</div>
+    <div>
+      <h3>Causal Discovery in the Era of Agents</h3>
+      <p class="authors">Yujia Zheng, Vishal Verma, Mantej Gill, Haoyue Dai et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文探讨大语言模型在因果发现中的合理角色，指出当前方法将LLM输出直接作为因果证据存在不可靠风险。作者提出代理应辅助流程而非提供因果结论的原则，并基于此开发了causal-learn+在线平台，通过协调数据分析、预处理、方法推荐、专家知识整合等环节，实现可审计的因果发现。以Big Five人格数据为例展示了代理辅助管道的可行性。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.23608v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.23608v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Causal%20Discovery%20in%20the%20Era%20of%20Agents" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.23608v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.23608v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="9" data-diseases="" data-text="when confidence takes the wrong path: diagnosing retrieval-state lock-in in rag  sahib julka 该论文诊断了检索增强生成（rag）系统中的“检索状态锁定”问题，即当检索状态存在缺陷时，多次采样答案的一致性会误导置信度评估。通过分离答案表面、检索证据和检索状态三个对象，在基于知识图谱的rag系统中测量了这种一致性盲区，发现42%至59%的错误携带零答案离散度。研究提出了一种可审计的决策规则，要求答案、证据和检索状态检查均判定低风险时才接受答案，在临床校准领域达到100%精确度，但覆盖率仅为7.7%。 ">
+  <div class="head">
+    <div class="badge hi">9</div>
+    <div>
+      <h3>When Confidence Takes the Wrong Path: Diagnosing Retrieval-State Lock-In in RAG <span class="ai-tag">AI</span></h3>
+      <p class="authors">Sahib Julka</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文诊断了检索增强生成（RAG）系统中的“检索状态锁定”问题，即当检索状态存在缺陷时，多次采样答案的一致性会误导置信度评估。通过分离答案表面、检索证据和检索状态三个对象，在基于知识图谱的RAG系统中测量了这种一致性盲区，发现42%至59%的错误携带零答案离散度。研究提出了一种可审计的决策规则，要求答案、证据和检索状态检查均判定低风险时才接受答案，在临床校准领域达到100%精确度，但覆盖率仅为7.7%。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.22728v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.22728v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=When%20Confidence%20Takes%20the%20Wrong%20Path%3A%20Diagnosing%20Retrieval-State%20Lock-In%20in%20RAG" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.22728v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.22728v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="9" data-diseases="" data-text="dcd-pfn: a decoupling-aware foundation model for causal discovery  zhengkang guan yikang chen yi he yunze tong zijing hu haoyuan qian fei wu kun kuang 该论文针对传统因果发现算法在非线性、噪声系统及计算瓶颈上的不足，提出一种解耦感知的基础模型dcd-pfn。该方法通过预训练于多样化的结构因果模型，学习样本级解耦权重以识别马尔可夫边界，并利用并行化局部发现高效重建全局因果图。实验表明，该模型在零样本泛化上表现稳健，为因果结构发现提供了新的深度学习范式。 ">
+  <div class="head">
+    <div class="badge hi">9</div>
+    <div>
+      <h3>DCD-PFN: A Decoupling-Aware Foundation Model for Causal Discovery <span class="ai-tag">AI</span></h3>
+      <p class="authors">Zhengkang Guan, Yikang Chen, Yi He, Yunze Tong et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文针对传统因果发现算法在非线性、噪声系统及计算瓶颈上的不足，提出一种解耦感知的基础模型DCD-PFN。该方法通过预训练于多样化的结构因果模型，学习样本级解耦权重以识别马尔可夫边界，并利用并行化局部发现高效重建全局因果图。实验表明，该模型在零样本泛化上表现稳健，为因果结构发现提供了新的深度学习范式。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.21212v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.21212v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=DCD-PFN%3A%20A%20Decoupling-Aware%20Foundation%20Model%20for%20Causal%20Discovery" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.21212v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.21212v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="9" data-diseases="" data-text="temporal causal prior-data fitted networks for panel data with learned reliability signals  shravan talupula saurabh sharma 该论文针对工业时间序列中因果效应估计的挑战，提出时序因果先验数据拟合网络（tcpfn），一种零样本时序因果发现基础模型。方法包括因果判断头联合预测多种因果参数、混合训练先验覆盖六种因果机制、离散令牌面板数据架构防止信息泄漏，以及基于faiss的工业规模零样本推理。在19个基准数据集上，tcpfn在因果发现任务中达到0.93–0.98的auroc，并在工业纸浆数据集上展示了优于传统方法的可扩展性。 ">
+  <div class="head">
+    <div class="badge hi">9</div>
+    <div>
+      <h3>Temporal Causal Prior-Data Fitted Networks for Panel Data with Learned Reliability Signals <span class="ai-tag">AI</span></h3>
+      <p class="authors">Shravan Talupula, Saurabh Sharma</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文针对工业时间序列中因果效应估计的挑战，提出时序因果先验数据拟合网络（TCPFN），一种零样本时序因果发现基础模型。方法包括因果判断头联合预测多种因果参数、混合训练先验覆盖六种因果机制、离散令牌面板数据架构防止信息泄漏，以及基于FAISS的工业规模零样本推理。在19个基准数据集上，TCPFN在因果发现任务中达到0.93–0.98的AUROC，并在工业纸浆数据集上展示了优于传统方法的可扩展性。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.20889v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.20889v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Temporal%20Causal%20Prior-Data%20Fitted%20Networks%20for%20Panel%20Data%20with%20Learned%20Reliability%20Signals" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.20889v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.20889v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="9" data-diseases="" data-text="beyond ahi: an interpretable causal-discovery-guided framework for sleep recovery in connected health  saba a. farahani elahe khatibi manoj vishwanath amir m. rahmani hung cao 该论文针对传统睡眠指标（如ahi）无法充分反映患者主观恢复的问题，提出一种可解释的因果发现引导框架，从多模态多导睡眠图（psg）数据中学习有向无环图（dag），识别呼吸负担、缺氧负担、睡眠碎片化、睡眠结构与自主神经调节五个生理域，并结合约束性llm辅助审计去除混杂与重叠变量，最终构建分层睡眠恢复评分（srs）。在两个大型队列中，srs与患者感知恢复的关联强度是ahi的2.5倍，为可穿戴健康设备中的恢复建模提供了可解释、偏倚可控的框架。 ">
+  <div class="head">
+    <div class="badge hi">9</div>
+    <div>
+      <h3>Beyond AHI: An Interpretable Causal-Discovery-Guided Framework for Sleep Recovery in Connected Health <span class="ai-tag">AI</span></h3>
+      <p class="authors">Saba A. Farahani, Elahe Khatibi, Manoj Vishwanath, Amir M. Rahmani et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文针对传统睡眠指标（如AHI）无法充分反映患者主观恢复的问题，提出一种可解释的因果发现引导框架，从多模态多导睡眠图（PSG）数据中学习有向无环图（DAG），识别呼吸负担、缺氧负担、睡眠碎片化、睡眠结构与自主神经调节五个生理域，并结合约束性LLM辅助审计去除混杂与重叠变量，最终构建分层睡眠恢复评分（SRS）。在两个大型队列中，SRS与患者感知恢复的关联强度是AHI的2.5倍，为可穿戴健康设备中的恢复建模提供了可解释、偏倚可控的框架。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.18506v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.18506v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Beyond%20AHI%3A%20An%20Interpretable%20Causal-Discovery-Guided%20Framework%20for%20Sleep%20Recovery%20in%20Connected%20Health" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.18506v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.18506v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="9" data-diseases="" data-text="foundcause: causal discovery with latent confounders from observational data  patrick blöbaum krishnakumar balasubramanian shiva prasad kasiviswanathan 该论文提出foundcause，一种基于合成数据训练的摊销因果发现模型，能够在单次前向传播中将观测数据集直接映射为因果图。模型通过置换不变transformer编码器、统计特征注入、因子化解码器及可学习潜在令牌的混杂模块，显式处理潜在混杂与缺失数据。在15个真实数据集上，foundcause在f1、auroc和结构汉明距离上均优于多种经典非摊销方法与现有摊销方法，且推理速度极快。 ">
+  <div class="head">
+    <div class="badge hi">9</div>
+    <div>
+      <h3>FoundCause: Causal Discovery with Latent Confounders from Observational Data <span class="ai-tag">AI</span></h3>
+      <p class="authors">Patrick Blöbaum, Krishnakumar Balasubramanian, Shiva Prasad Kasiviswanathan</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出FoundCause，一种基于合成数据训练的摊销因果发现模型，能够在单次前向传播中将观测数据集直接映射为因果图。模型通过置换不变Transformer编码器、统计特征注入、因子化解码器及可学习潜在令牌的混杂模块，显式处理潜在混杂与缺失数据。在15个真实数据集上，FoundCause在F1、AUROC和结构汉明距离上均优于多种经典非摊销方法与现有摊销方法，且推理速度极快。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.17516v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.17516v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=FoundCause%3A%20Causal%20Discovery%20with%20Latent%20Confounders%20from%20Observational%20Data" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.17516v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.17516v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="9" data-diseases="" data-text="a causal model of theory of mind in conflict for artificial intelligence  nikolos gurney 这篇论文针对人工智能在冲突情境下何时应激活心理理论（tom）的问题，构建了一个结构因果模型（dag）。模型将tom视为由情境和主体条件触发的机制，包含四个外生变量、五个内生中介变量和三条因果路径（可处理性、推理深度、使能原因），以认知准确性为主要结局。该框架为ai系统提供了原则性的、资源理性的心理化决策程序，并通过仿真和实证研究验证了其有效性。 ">
+  <div class="head">
+    <div class="badge hi">9</div>
+    <div>
+      <h3>A Causal Model of Theory of Mind in Conflict for Artificial Intelligence <span class="ai-tag">AI</span></h3>
+      <p class="authors">Nikolos Gurney</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">这篇论文针对人工智能在冲突情境下何时应激活心理理论（ToM）的问题，构建了一个结构因果模型（DAG）。模型将ToM视为由情境和主体条件触发的机制，包含四个外生变量、五个内生中介变量和三条因果路径（可处理性、推理深度、使能原因），以认知准确性为主要结局。该框架为AI系统提供了原则性的、资源理性的心理化决策程序，并通过仿真和实证研究验证了其有效性。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.16944v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.16944v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=A%20Causal%20Model%20of%20Theory%20of%20Mind%20in%20Conflict%20for%20Artificial%20Intelligence" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.16944v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.16944v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="9" data-diseases="" data-text="verigraph: towards verifiable data-analytic agents  jiajie jin zhao yang wenle liao yuyang hu guanting dong xiaoxi li yutao zhu zhicheng dou 该论文针对基于大语言模型的数据分析代理输出难以审计的问题，提出verigraph框架，通过引入计算扩展、基础扩展和推导扩展三种证据扩展原语，在推理过程中构建显式的异质证据有向无环图（dag），将原始数据、变量、计算结果与自然语言声明统一连接，实现结构可追溯与语义可评估。实验表明，verigraph-8b在多个基准上取得最佳综合得分，并生成可审计的证据图，其声明级证据支持率达到87.61%，验证了显式证据图构建是实现可验证数据分析代理的有效路径。 ">
+  <div class="head">
+    <div class="badge hi">9</div>
+    <div>
+      <h3>VeriGraph: Towards Verifiable Data-Analytic Agents <span class="ai-tag">AI</span></h3>
+      <p class="authors">Jiajie Jin, Zhao Yang, Wenle Liao, Yuyang Hu et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文针对基于大语言模型的数据分析代理输出难以审计的问题，提出VeriGraph框架，通过引入计算扩展、基础扩展和推导扩展三种证据扩展原语，在推理过程中构建显式的异质证据有向无环图（DAG），将原始数据、变量、计算结果与自然语言声明统一连接，实现结构可追溯与语义可评估。实验表明，VeriGraph-8B在多个基准上取得最佳综合得分，并生成可审计的证据图，其声明级证据支持率达到87.61%，验证了显式证据图构建是实现可验证数据分析代理的有效路径。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.16603v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.16603v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=VeriGraph%3A%20Towards%20Verifiable%20Data-Analytic%20Agents" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.16603v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.16603v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="9" data-diseases="" data-text="relational structural causal models  adiba ejaz elias bareinboim 该论文研究如何在对象及其关系变化的环境中学习因果模型，提出了关系结构因果模型，扩展了pearl的结构因果模型。通过定义关系因果图并推导符号识别准则，实现了在未观测混杂存在下对未见对象组合的因果与观测查询的识别。最后提出关系神经因果模型，在模拟交通场景中优于非关系基线方法。 ">
+  <div class="head">
+    <div class="badge hi">9</div>
+    <div>
+      <h3>Relational Structural Causal Models <span class="ai-tag">AI</span></h3>
+      <p class="authors">Adiba Ejaz, Elias Bareinboim</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文研究如何在对象及其关系变化的环境中学习因果模型，提出了关系结构因果模型，扩展了Pearl的结构因果模型。通过定义关系因果图并推导符号识别准则，实现了在未观测混杂存在下对未见对象组合的因果与观测查询的识别。最后提出关系神经因果模型，在模拟交通场景中优于非关系基线方法。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.14892v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.14892v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Relational%20Structural%20Causal%20Models" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.14892v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.14892v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="9" data-diseases="" data-text="graph2idea:retrieval-augmented scientific idea generation with graph-structured contexts  xu li hanzhe tu xun han 该论文提出graph2idea框架，针对现有基于llm的科学思路生成方法中检索证据以扁平文本呈现、难以捕捉跨论文关系的问题，通过将检索到的论文转化为结构化知识三元组并动态构建目标中心知识图谱，提取紧凑的图衍生上下文，再经两阶段生成过程识别研究方向并合成候选思路。实验表明，该方法在自动评估协议下，在新颖性、质量和可行性指标上均优于基线模型，证明图结构化证据有助于更清晰、紧凑且可追溯地重组已有科学知识以生成研究思路。 ">
+  <div class="head">
+    <div class="badge hi">9</div>
+    <div>
+      <h3>Graph2Idea:Retrieval-Augmented Scientific Idea Generation with Graph-Structured Contexts <span class="ai-tag">AI</span></h3>
+      <p class="authors">Xu Li, Hanzhe Tu, Xun Han</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出Graph2Idea框架，针对现有基于LLM的科学思路生成方法中检索证据以扁平文本呈现、难以捕捉跨论文关系的问题，通过将检索到的论文转化为结构化知识三元组并动态构建目标中心知识图谱，提取紧凑的图衍生上下文，再经两阶段生成过程识别研究方向并合成候选思路。实验表明，该方法在自动评估协议下，在新颖性、质量和可行性指标上均优于基线模型，证明图结构化证据有助于更清晰、紧凑且可追溯地重组已有科学知识以生成研究思路。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.09105v3" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.09105v3" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Graph2Idea%3ARetrieval-Augmented%20Scientific%20Idea%20Generation%20with%20Graph-Structured%20Contexts" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.09105v3" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.09105v3</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="9" data-diseases="" data-text="eml-cd: causal mechanism recovery via eml symbolic trees in structure learning  sota asanuma 该论文提出eml-cd框架，将eml符号树算子集成到因果结构学习中，旨在从数据中恢复可解释的因果机制（封闭形式的因果方程）。在sachs蛋白质信号数据上，结构恢复性能与pc/ges相当，并能为每条边附加可解释方程；在符号合成基准上，机制恢复误差远低于固定sindy字典。该方法兼顾了因果图的结构发现与机制的可解释性，为因果dag的构建提供了新的符号化路径。 ">
+  <div class="head">
+    <div class="badge hi">9</div>
+    <div>
+      <h3>EML-CD: Causal Mechanism Recovery via EML Symbolic Trees in Structure Learning <span class="ai-tag">AI</span></h3>
+      <p class="authors">Sota Asanuma</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出EML-CD框架，将EML符号树算子集成到因果结构学习中，旨在从数据中恢复可解释的因果机制（封闭形式的因果方程）。在Sachs蛋白质信号数据上，结构恢复性能与PC/GES相当，并能为每条边附加可解释方程；在符号合成基准上，机制恢复误差远低于固定SINDy字典。该方法兼顾了因果图的结构发现与机制的可解释性，为因果DAG的构建提供了新的符号化路径。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.05942v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.05942v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=EML-CD%3A%20Causal%20Mechanism%20Recovery%20via%20EML%20Symbolic%20Trees%20in%20Structure%20Learning" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.05942v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.05942v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="9" data-diseases="" data-text="lmt: a bayesian framework for causal discovery from textual alarm records in manufacturing systems  xiaofeng xiao jianhong chen qiuzhuang sun naichen shi xubo yue 该论文针对制造系统中文本报警记录的因果发现难题，提出lmt框架。该方法先利用大语言模型从事件描述中提取语义因果信号，构建因果图的先验分布，再通过基于泊松过程的似然函数融合时间戳证据，对先验进行贝叶斯更新。模拟实验表明，该框架在小样本报警场景下尤其有效，能生成可解释且数据支持的因果图。 ">
+  <div class="head">
+    <div class="badge hi">9</div>
+    <div>
+      <h3>LMT: A Bayesian Framework for Causal Discovery from Textual Alarm Records in Manufacturing Systems <span class="ai-tag">AI</span></h3>
+      <p class="authors">Xiaofeng Xiao, Jianhong Chen, Qiuzhuang Sun, Naichen Shi et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文针对制造系统中文本报警记录的因果发现难题，提出LMT框架。该方法先利用大语言模型从事件描述中提取语义因果信号，构建因果图的先验分布，再通过基于泊松过程的似然函数融合时间戳证据，对先验进行贝叶斯更新。模拟实验表明，该框架在小样本报警场景下尤其有效，能生成可解释且数据支持的因果图。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.09892v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.09892v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=LMT%3A%20A%20Bayesian%20Framework%20for%20Causal%20Discovery%20from%20Textual%20Alarm%20Records%20in%20Manufacturing%20Systems" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.09892v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.09892v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="8" data-diseases="" data-text="mapping political-elite networks in europe with a multilingual joint entity-relation extraction pipeline  kirill solovev jana lasser 该论文提出一个模块化、全开源的多语言联合实体关系抽取流水线，用于从大规模非结构化新闻语料中构建带符号的时序知识图谱。方法结合基于跨度的命名实体识别、三级链接映射到wikidata标识符，以及受本体约束的混合专家模型进行有向关系抽取。在奥地利和波兰的案例研究中，该流水线成功重建了政党的生命周期并揭示了国家企业庇护网络与政治极化结构，为跨国的计算社会科学提供了可复现的基础设施。 ">
+  <div class="head">
+    <div class="badge hi">8</div>
+    <div>
+      <h3>Mapping Political-Elite Networks in Europe with a Multilingual Joint Entity-Relation Extraction Pipeline <span class="ai-tag">AI</span></h3>
+      <p class="authors">Kirill Solovev, Jana Lasser</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出一个模块化、全开源的多语言联合实体关系抽取流水线，用于从大规模非结构化新闻语料中构建带符号的时序知识图谱。方法结合基于跨度的命名实体识别、三级链接映射到Wikidata标识符，以及受本体约束的混合专家模型进行有向关系抽取。在奥地利和波兰的案例研究中，该流水线成功重建了政党的生命周期并揭示了国家企业庇护网络与政治极化结构，为跨国的计算社会科学提供了可复现的基础设施。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.27347v2" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.27347v2" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Mapping%20Political-Elite%20Networks%20in%20Europe%20with%20a%20Multilingual%20Joint%20Entity-Relation%20Extraction%20Pipeline" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.27347v2" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.27347v2</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="8" data-diseases="" data-text="infinitesimal causality  sridhar mahadevan 该论文在frobenius markov范畴中引入无穷小因果性（idc），利用切丛语义刻画干预作为复制/丢弃结构的切形变。通过区分代数frobenius结构与几何frobenius可积条件，定义了范畴因果充分性，并证明结构因果模型中无穷小因果性最自然地在确定性机制切片上表述。主要结论包括：干预的lie括号衡量信息流结构保持性，pearl的do-演算规则可对应为范畴中的单位不变性、余积兼容性与闭包条件。 ">
+  <div class="head">
+    <div class="badge hi">8</div>
+    <div>
+      <h3>Infinitesimal Causality</h3>
+      <p class="authors">Sridhar Mahadevan</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文在Frobenius Markov范畴中引入无穷小因果性（IDC），利用切丛语义刻画干预作为复制/丢弃结构的切形变。通过区分代数Frobenius结构与几何Frobenius可积条件，定义了范畴因果充分性，并证明结构因果模型中无穷小因果性最自然地在确定性机制切片上表述。主要结论包括：干预的Lie括号衡量信息流结构保持性，Pearl的do-演算规则可对应为范畴中的单位不变性、余积兼容性与闭包条件。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.24621v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.24621v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Infinitesimal%20Causality" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.24621v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.24621v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="8" data-diseases="" data-text="self-evolving cognitive framework via causal world modeling for embodied scientific intelligence  yi yu tetsunari inamura 该论文提出一种面向具身科学智能的自我演化认知框架，通过整合因果世界建模、干预驱动的因果推理与持续认知精炼三个组件，使智能体在与环境交互中不断构建、修正和扩展内部因果表征。论文将具身交互重新诠释为因果假设生成、干预实验与知识获取的认识论过程，并建议采用干预驱动的因果-认识论基准来评估此类智能。主要贡献在于为从预测智能向认识论智能的转变提供了概念与理论基础，强调因果结构的动态构建与验证。 ">
+  <div class="head">
+    <div class="badge hi">8</div>
+    <div>
+      <h3>Self-Evolving Cognitive Framework via Causal World Modeling for Embodied Scientific Intelligence</h3>
+      <p class="authors">Yi Yu, Tetsunari Inamura</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出一种面向具身科学智能的自我演化认知框架，通过整合因果世界建模、干预驱动的因果推理与持续认知精炼三个组件，使智能体在与环境交互中不断构建、修正和扩展内部因果表征。论文将具身交互重新诠释为因果假设生成、干预实验与知识获取的认识论过程，并建议采用干预驱动的因果-认识论基准来评估此类智能。主要贡献在于为从预测智能向认识论智能的转变提供了概念与理论基础，强调因果结构的动态构建与验证。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.22449v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.22449v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Self-Evolving%20Cognitive%20Framework%20via%20Causal%20World%20Modeling%20for%20Embodied%20Scientific%20Intelligence" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.22449v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.22449v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="8" data-diseases="" data-text="aria: a causal-aware framework for rescuing llm reasoning in trustworthy materials discovery  yi cao liaoyaqi wang jieneng chen benjamin van durme alan yuille paulette clancy 该论文针对大语言模型在材料发现中忽视物理因果性的问题，提出因果感知框架aria。该方法通过三级级联推理（直接因果推理、物理类比迁移、参数回退）结合知识图谱，缓解了模型对局部证据的过度依赖。在包含2839条过程-结构-属性关系的知识图谱上，aria在二维材料的前向预测与逆向设计任务中优于基线，并生成可审计的因果轨迹，提升了ai辅助材料发现的可靠性与可解释性。 ">
+  <div class="head">
+    <div class="badge hi">8</div>
+    <div>
+      <h3>ARIA: A Causal-Aware Framework for Rescuing LLM Reasoning in Trustworthy Materials Discovery <span class="ai-tag">AI</span></h3>
+      <p class="authors">Yi Cao, Liaoyaqi Wang, Jieneng Chen, Benjamin Van Durme et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文针对大语言模型在材料发现中忽视物理因果性的问题，提出因果感知框架ARIA。该方法通过三级级联推理（直接因果推理、物理类比迁移、参数回退）结合知识图谱，缓解了模型对局部证据的过度依赖。在包含2839条过程-结构-属性关系的知识图谱上，ARIA在二维材料的前向预测与逆向设计任务中优于基线，并生成可审计的因果轨迹，提升了AI辅助材料发现的可靠性与可解释性。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.22375v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.22375v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=ARIA%3A%20A%20Causal-Aware%20Framework%20for%20Rescuing%20LLM%20Reasoning%20in%20Trustworthy%20Materials%20Discovery" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.22375v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.22375v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="8" data-diseases="" data-text="medhal-loc: are &#34;explainable-by-architecture&#34; medical hallucination detectors faithful localizers? a localization benchmark  minmin chen daojian lu yining dai jvyu cai fengdan chen 该论文提出medhal-loc基准，用于评估基于知识图谱三元组分解的医学幻觉检测器在定位错误跨度上的忠实性。通过构建包含四种可定位错误类型的受控子集和自然子集，测试了四种细粒度范式，发现知识图谱三元组流水线虽检测性能尚可，但定位能力仅略高于随机水平，瓶颈在于实体抽取覆盖率不足。结论强调架构可解释性需被验证而非默认成立。 ">
+  <div class="head">
+    <div class="badge hi">8</div>
+    <div>
+      <h3>MedHal-Loc: Are &#34;Explainable-by-Architecture&#34; Medical Hallucination Detectors Faithful Localizers? A Localization Benchmark <span class="ai-tag">AI</span></h3>
+      <p class="authors">Minmin Chen, Daojian Lu, Yining Dai, Jvyu Cai et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出MedHal-Loc基准，用于评估基于知识图谱三元组分解的医学幻觉检测器在定位错误跨度上的忠实性。通过构建包含四种可定位错误类型的受控子集和自然子集，测试了四种细粒度范式，发现知识图谱三元组流水线虽检测性能尚可，但定位能力仅略高于随机水平，瓶颈在于实体抽取覆盖率不足。结论强调架构可解释性需被验证而非默认成立。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.21517v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.21517v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=MedHal-Loc%3A%20Are%20%22Explainable-by-Architecture%22%20Medical%20Hallucination%20Detectors%20Faithful%20Localizers%3F%20A%20Localization%20Benchmark" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.21517v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.21517v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="8" data-diseases="" data-text="latent confounded causal discovery via lie bracket geometry  sridhar mahadevan 该论文基于kan-do-calculus的范畴论框架，提出两种潜混杂下的因果发现算法：bridge利用观测与干预测度间的radon-nikodym导数生成因果向量场，通过lie括号闭合性残差识别潜混淆结构；skfm则通过谱方法学习干预场并分解潜在曲率。实验表明，两种算法能有效发现含潜混杂的因果模型，并将dag搜索空间压缩多个数量级。 ">
+  <div class="head">
+    <div class="badge hi">8</div>
+    <div>
+      <h3>Latent Confounded Causal Discovery via Lie Bracket Geometry</h3>
+      <p class="authors">Sridhar Mahadevan</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文基于Kan-Do-Calculus的范畴论框架，提出两种潜混杂下的因果发现算法：BRIDGE利用观测与干预测度间的Radon-Nikodym导数生成因果向量场，通过Lie括号闭合性残差识别潜混淆结构；SKFM则通过谱方法学习干预场并分解潜在曲率。实验表明，两种算法能有效发现含潜混杂的因果模型，并将DAG搜索空间压缩多个数量级。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.19610v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.19610v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Latent%20Confounded%20Causal%20Discovery%20via%20Lie%20Bracket%20Geometry" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.19610v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.19610v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="8" data-diseases="" data-text="the critical role of model selection in causal inference: a comparative analysis of classification models within the inferbert framework for pharmacovigilance  csaba kiss roland molontay gabriele pergola 该论文探讨了在药物警戒中区分因果性不良药物事件与虚假关联的问题，基于inferbert框架比较了xgboost、albert、biobert和med-llama四种分类模型在两个基准数据集上的表现。研究发现，领域特异性预训练（biobert）在准确性和因果发现一致性上优于简单基线和大规模通用llm（med-llama），而模型校准对因果发现效果不一。结论表明，在计算药物警戒中，投资于可管理的领域感知模型比单纯扩大模型规模更有效。 ">
+  <div class="head">
+    <div class="badge hi">8</div>
+    <div>
+      <h3>The Critical Role of Model Selection in Causal Inference: A Comparative Analysis of Classification Models within the InferBERT Framework for Pharmacovigilance <span class="ai-tag">AI</span></h3>
+      <p class="authors">Csaba Kiss, Roland Molontay, Gabriele Pergola</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文探讨了在药物警戒中区分因果性不良药物事件与虚假关联的问题，基于InferBERT框架比较了XGBoost、ALBERT、BioBERT和Med-LLaMA四种分类模型在两个基准数据集上的表现。研究发现，领域特异性预训练（BioBERT）在准确性和因果发现一致性上优于简单基线和大规模通用LLM（Med-LLaMA），而模型校准对因果发现效果不一。结论表明，在计算药物警戒中，投资于可管理的领域感知模型比单纯扩大模型规模更有效。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.17113v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.17113v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=The%20Critical%20Role%20of%20Model%20Selection%20in%20Causal%20Inference%3A%20A%20Comparative%20Analysis%20of%20Classification%20Models%20within%20the%20InferBERT%20Framework%20for%20Pharmacovigilance" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.17113v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.17113v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="8" data-diseases="" data-text="weaving multi-source evidence for biomedical reasoning: the biomedhop benchmark and bioweave framework  xingyu tan shiyuan liu xiaoyang wang qing liu xiwei xu xin yuan liming zhu wenjie zhang 该论文提出biomedhop基准和bioweave框架，旨在解决生物医学问答中多源证据（知识图谱、文献、网页）的图推理与证据拓扑构建问题。bioweave通过检索知识图谱路径、收集文档与网页线索，构建统一证据图并验证答案。实验表明，bioweave在biomedhop上优于现有方法，并能提升不同大语言模型骨干的推理性能，使小模型达到接近gpt-4-turbo的效果。 ">
+  <div class="head">
+    <div class="badge hi">8</div>
+    <div>
+      <h3>Weaving Multi-Source Evidence for Biomedical Reasoning: The BioMedHop Benchmark and BioWeave Framework <span class="ai-tag">AI</span></h3>
+      <p class="authors">Xingyu Tan, Shiyuan Liu, Xiaoyang Wang, Qing Liu et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出BioMedHop基准和BioWeave框架，旨在解决生物医学问答中多源证据（知识图谱、文献、网页）的图推理与证据拓扑构建问题。BioWeave通过检索知识图谱路径、收集文档与网页线索，构建统一证据图并验证答案。实验表明，BioWeave在BioMedHop上优于现有方法，并能提升不同大语言模型骨干的推理性能，使小模型达到接近GPT-4-Turbo的效果。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.16211v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.16211v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Weaving%20Multi-Source%20Evidence%20for%20Biomedical%20Reasoning%3A%20The%20BioMedHop%20Benchmark%20and%20BioWeave%20Framework" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.16211v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.16211v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="8" data-diseases="" data-text="when correct edges cannot be verified: a provenance gap in incomplete kgqa and a provenance-favoring completion policy  yongqi kang yu fu yong zhao 该论文针对不完整知识图谱问答（ikgqa）中补全边的可验证性问题，通过实验发现76-96%的正确补全边在文本中缺乏支持证据，表明文本忠实度衡量的是来源可追溯性而非正确性。基于此，提出一种偏好来源可追溯性的补全策略tgcomplete，在推理断点处检索证据并决定是否采纳或弃权，在保证精确度的同时提高了已采纳边的严格忠实度，但牺牲了召回率。 ">
+  <div class="head">
+    <div class="badge hi">8</div>
+    <div>
+      <h3>When Correct Edges Cannot Be Verified: A Provenance Gap in Incomplete KGQA and a Provenance-Favoring Completion Policy <span class="ai-tag">AI</span></h3>
+      <p class="authors">Yongqi Kang, Yu Fu, Yong Zhao</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文针对不完整知识图谱问答（IKGQA）中补全边的可验证性问题，通过实验发现76-96%的正确补全边在文本中缺乏支持证据，表明文本忠实度衡量的是来源可追溯性而非正确性。基于此，提出一种偏好来源可追溯性的补全策略TGComplete，在推理断点处检索证据并决定是否采纳或弃权，在保证精确度的同时提高了已采纳边的严格忠实度，但牺牲了召回率。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.15833v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.15833v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=When%20Correct%20Edges%20Cannot%20Be%20Verified%3A%20A%20Provenance%20Gap%20in%20Incomplete%20KGQA%20and%20a%20Provenance-Favoring%20Completion%20Policy" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.15833v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.15833v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="8" data-diseases="" data-text="vernier: probing representational misalignment behind lexical gaps in causal reasoning  zhenyu yu 该论文探究指令微调语言模型在因果推理任务中，因变量名替换为占位符后回答不一致的原因。通过配对视图权重更新作为干预工具，分析表征对齐机制，发现该现象主要源于表征层面的错位而非信息丢失。实验在qwen-7b、qwen-14b和llama-3.1-8b上验证了变量名探针精度提升与决策表征跨视图迁移能力，并指出成功受限于模型规模、家族与任务类型。 ">
+  <div class="head">
+    <div class="badge hi">8</div>
+    <div>
+      <h3>Vernier: Probing Representational Misalignment Behind Lexical Gaps in Causal Reasoning</h3>
+      <p class="authors">Zhenyu Yu</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文探究指令微调语言模型在因果推理任务中，因变量名替换为占位符后回答不一致的原因。通过配对视图权重更新作为干预工具，分析表征对齐机制，发现该现象主要源于表征层面的错位而非信息丢失。实验在Qwen-7B、Qwen-14B和Llama-3.1-8B上验证了变量名探针精度提升与决策表征跨视图迁移能力，并指出成功受限于模型规模、家族与任务类型。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.15733v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.15733v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Vernier%3A%20Probing%20Representational%20Misalignment%20Behind%20Lexical%20Gaps%20in%20Causal%20Reasoning" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.15733v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.15733v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="8" data-diseases="" data-text="is it you or your environment? a bayesian inference framework for genomically-anchored personalized physiological interpretation  aruna dey suraj biswas 该论文针对个性化健康ai的冷启动问题，提出一种基于因果推断和贝叶斯先验设计的框架。利用基因组谱作为外生遗传锚点，初始化个体生理设定点的先验信念，并通过动态衰减机制融合后续行为数据，区分体质与环境导致的生理偏差。结论表明，该方法可在无行为数据时提供个性化基线，并需满足证据分级、动态衰减、祖先匹配效应量等部署约束。 ">
+  <div class="head">
+    <div class="badge hi">8</div>
+    <div>
+      <h3>Is It You or Your Environment? A Bayesian Inference Framework for Genomically-Anchored Personalized Physiological Interpretation <span class="ai-tag">AI</span></h3>
+      <p class="authors">Aruna Dey, Suraj Biswas</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文针对个性化健康AI的冷启动问题，提出一种基于因果推断和贝叶斯先验设计的框架。利用基因组谱作为外生遗传锚点，初始化个体生理设定点的先验信念，并通过动态衰减机制融合后续行为数据，区分体质与环境导致的生理偏差。结论表明，该方法可在无行为数据时提供个性化基线，并需满足证据分级、动态衰减、祖先匹配效应量等部署约束。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.13556v2" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.13556v2" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Is%20It%20You%20or%20Your%20Environment%3F%20A%20Bayesian%20Inference%20Framework%20for%20Genomically-Anchored%20Personalized%20Physiological%20Interpretation" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.13556v2" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.13556v2</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="8" data-diseases="" data-text="causal invariance in graphical models with latent variables  marco borriero monia lupparelli giovanni m. marchetti veronica vinciotti 该论文探讨了在存在未观测父变量时，如何利用因果不变性原理从观测数据中识别因果父节点。通过刻画隐变量诱导的观测变量图结构，形式化了因果不变性得以保持的条件，并针对多元高斯目标变量建立了检验该不变性的充要条件。研究为含隐变量的因果结构发现提供了理论支撑，有助于提升因果dag构建的鲁棒性。 ">
+  <div class="head">
+    <div class="badge hi">8</div>
+    <div>
+      <h3>Causal invariance in graphical models with latent variables</h3>
+      <p class="authors">Marco Borriero, Monia Lupparelli, Giovanni M. Marchetti, Veronica Vinciotti</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文探讨了在存在未观测父变量时，如何利用因果不变性原理从观测数据中识别因果父节点。通过刻画隐变量诱导的观测变量图结构，形式化了因果不变性得以保持的条件，并针对多元高斯目标变量建立了检验该不变性的充要条件。研究为含隐变量的因果结构发现提供了理论支撑，有助于提升因果DAG构建的鲁棒性。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.13281v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.13281v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Causal%20invariance%20in%20graphical%20models%20with%20latent%20variables" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.13281v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.13281v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="8" data-diseases="" data-text="causalmoe: a billion-scale multimodal foundation model for granger causal discovery with pattern-routed heterogeneous experts  bo liu di dai jingwei liu jiarui jin xiaocheng fang guangkun nie hongyan li shenda hong 该论文提出causalmoe，一个十亿参数规模的多模态格兰杰因果基础模型，用于从时间序列中发现因果结构。模型通过模式路由混合专家机制捕捉时间序列中的分布变化与动态机制切换，并首次整合大语言模型与视觉语言模型，利用文本与视觉先验正则化因果估计。实验表明，causalmoe在全监督基准上达到最优，并在少样本场景下有效泛化。 ">
+  <div class="head">
+    <div class="badge hi">8</div>
+    <div>
+      <h3>CausalMoE: A Billion-Scale Multimodal Foundation Model for Granger Causal Discovery with Pattern-Routed Heterogeneous Experts <span class="ai-tag">AI</span></h3>
+      <p class="authors">Bo Liu, Di Dai, Jingwei Liu, Jiarui Jin et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出CausalMoE，一个十亿参数规模的多模态格兰杰因果基础模型，用于从时间序列中发现因果结构。模型通过模式路由混合专家机制捕捉时间序列中的分布变化与动态机制切换，并首次整合大语言模型与视觉语言模型，利用文本与视觉先验正则化因果估计。实验表明，CausalMoE在全监督基准上达到最优，并在少样本场景下有效泛化。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.13024v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.13024v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=CausalMoE%3A%20A%20Billion-Scale%20Multimodal%20Foundation%20Model%20for%20Granger%20Causal%20Discovery%20with%20Pattern-Routed%20Heterogeneous%20Experts" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.13024v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.13024v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="8" data-diseases="" data-text="scir: a controllable benchmark for scientific reasoning in llms  pierre beckmann marco valentino andre freitas 该论文提出scir基准，用于评估大语言模型在科学推理中的演绎、归纳和因果溯因三种推理能力。基准从形式化对象（包括因果图）生成可验证任务，并通过多文档科学语篇渲染控制信息提取难度和推理难度。实验表明，两个难度维度均显著影响模型表现，且推理模型在推理轴上优于非推理模型。scir是首个在提取和推理难度上均可参数化控制的多范式科学推理基准。 ">
+  <div class="head">
+    <div class="badge hi">8</div>
+    <div>
+      <h3>SciR: A Controllable Benchmark for Scientific Reasoning in LLMs</h3>
+      <p class="authors">Pierre Beckmann, Marco Valentino, Andre Freitas</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出SciR基准，用于评估大语言模型在科学推理中的演绎、归纳和因果溯因三种推理能力。基准从形式化对象（包括因果图）生成可验证任务，并通过多文档科学语篇渲染控制信息提取难度和推理难度。实验表明，两个难度维度均显著影响模型表现，且推理模型在推理轴上优于非推理模型。SciR是首个在提取和推理难度上均可参数化控制的多范式科学推理基准。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.13020v2" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.13020v2" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=SciR%3A%20A%20Controllable%20Benchmark%20for%20Scientific%20Reasoning%20in%20LLMs" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.13020v2" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.13020v2</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="8" data-diseases="" data-text="worldreasoner: evaluating whether language model agents forecast events with valid reasoning  yizhou chi eric chamoun zifeng ding andreas vlachos 该论文提出worldreasoner评估框架，用于检验语言模型代理在时间受限条件下进行事件预测时的推理有效性。框架通过构建包含时间戳证据和事后因果事件图的基准数据集，从预测准确性、证据质量和因果图推理质量三个维度评估代理表现。实验表明，时间有效检索是预测准确性的关键驱动因素，因果图构建有助于恢复关键事件，但代理在将证据转化为校准概率方面仍存在困难。 ">
+  <div class="head">
+    <div class="badge hi">8</div>
+    <div>
+      <h3>WorldReasoner: Evaluating Whether Language Model Agents Forecast Events with Valid Reasoning</h3>
+      <p class="authors">Yizhou Chi, Eric Chamoun, Zifeng Ding, Andreas Vlachos</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出WorldReasoner评估框架，用于检验语言模型代理在时间受限条件下进行事件预测时的推理有效性。框架通过构建包含时间戳证据和事后因果事件图的基准数据集，从预测准确性、证据质量和因果图推理质量三个维度评估代理表现。实验表明，时间有效检索是预测准确性的关键驱动因素，因果图构建有助于恢复关键事件，但代理在将证据转化为校准概率方面仍存在困难。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.11816v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.11816v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=WorldReasoner%3A%20Evaluating%20Whether%20Language%20Model%20Agents%20Forecast%20Events%20with%20Valid%20Reasoning" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.11816v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.11816v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="8" data-diseases="" data-text="llms+graphs: toward graph-native, synergistic ai systems  arijit khan longxu sun xin huang 该论文探讨了大语言模型（llm）与图结构数据（包括知识图谱、图神经网络）的协同整合，提出三种互补的融合方向：llm借助图计算增强检索与推理、llm与知识图谱双向赋能、以及图算法强化ai代理的规划与决策能力。论文系统梳理了相关算法、系统与设计原则，为构建图原生的下一代ai系统提供了统一视角。 ">
+  <div class="head">
+    <div class="badge hi">8</div>
+    <div>
+      <h3>LLMs+Graphs: Toward Graph-Native, Synergistic AI Systems <span class="ai-tag">AI</span></h3>
+      <p class="authors">Arijit Khan, Longxu Sun, Xin Huang</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文探讨了大语言模型（LLM）与图结构数据（包括知识图谱、图神经网络）的协同整合，提出三种互补的融合方向：LLM借助图计算增强检索与推理、LLM与知识图谱双向赋能、以及图算法强化AI代理的规划与决策能力。论文系统梳理了相关算法、系统与设计原则，为构建图原生的下一代AI系统提供了统一视角。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.11560v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.11560v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=LLMs%2BGraphs%3A%20Toward%20Graph-Native%2C%20Synergistic%20AI%20Systems" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.11560v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.11560v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="8" data-diseases="respiratory" data-text="lung-r1: a knowledge graph-guided llm for pulmonary diagnostic reasoning  haoyang zeng yuanxi fu rongzhen li yuming yang xiao sun jingwang huang gujie shao guohui xiang quan lu dongfan ye xuetao chen jiang zhong kaiwen wei zhi xu 该论文针对肺部诊断中知识整合与病例推理的鸿沟，构建了结构化肺部知识图谱lungkg（含59,038节点和164,308边），并基于此提出lung-r1模型，通过知识图谱约束的推理链构建和强化学习训练，提升基于电子病历的诊断推理能力。实验表明，lung-r1-14b在多项评估中达到最优，验证了知识图谱引导训练对电子病历诊断的有效性。 呼吸系统 respiratory">
+  <div class="head">
+    <div class="badge hi">8</div>
+    <div>
+      <h3>Lung-R1: A Knowledge Graph-Guided LLM for Pulmonary Diagnostic Reasoning <span class="ai-tag">AI</span></h3>
+      <p class="authors">Haoyang Zeng, Yuanxi Fu, Rongzhen Li, Yuming Yang et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      <div class="dbadges"><span class="dbadge">呼吸系统</span></div>
+<p class="sum">该论文针对肺部诊断中知识整合与病例推理的鸿沟，构建了结构化肺部知识图谱LungKG（含59,038节点和164,308边），并基于此提出Lung-R1模型，通过知识图谱约束的推理链构建和强化学习训练，提升基于电子病历的诊断推理能力。实验表明，Lung-R1-14B在多项评估中达到最优，验证了知识图谱引导训练对电子病历诊断的有效性。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.11675v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.11675v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Lung-R1%3A%20A%20Knowledge%20Graph-Guided%20LLM%20for%20Pulmonary%20Diagnostic%20Reasoning" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.11675v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.11675v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="8" data-diseases="" data-text="estimate collapsibility of causal effects in completed partial dags via strong d-convex hulls  yuxin deng yi sun zhiming li huaxiong liu 该论文提出一种在完全部分有向无环图（cpdag）中估计因果效应的可压缩方法，确保在对某些变量边缘化前后估计量的一致性。通过引入强d-凸包来刻画最小可压缩集，并设计高效算法将其从dag推广至cpdag，再结合图约简过程与ida框架。实验表明该方法在cpdag中能有效实现因果估计的可压缩性。 ">
+  <div class="head">
+    <div class="badge hi">8</div>
+    <div>
+      <h3>Estimate Collapsibility of Causal Effects in Completed Partial DAGs via Strong d-Convex Hulls</h3>
+      <p class="authors">Yuxin Deng, Yi Sun, Zhiming Li, Huaxiong Liu</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出一种在完全部分有向无环图（CPDAG）中估计因果效应的可压缩方法，确保在对某些变量边缘化前后估计量的一致性。通过引入强d-凸包来刻画最小可压缩集，并设计高效算法将其从DAG推广至CPDAG，再结合图约简过程与IDA框架。实验表明该方法在CPDAG中能有效实现因果估计的可压缩性。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.08941v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.08941v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Estimate%20Collapsibility%20of%20Causal%20Effects%20in%20Completed%20Partial%20DAGs%20via%20Strong%20d-Convex%20Hulls" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.08941v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.08941v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="8" data-diseases="" data-text="inference-time conformal reasoning with valid factuality control for large language models  ting wang yuanjie shi yan yan huan zhang 该论文提出一种推理时共形推理（itcr）框架，将共形预测直接集成到大语言模型的多步推理图生成过程中。通过定义结构级事实不确定性函数和非一致性分数，校准共形阈值以决定何时停止生成，从而在推理过程中实现对事实正确性的有效控制。实验表明，该方法在多个数据集上实现了经验有效的覆盖保证，且推理时校准的图比事后剪枝的图在下游推理任务中生成更准确。 ">
+  <div class="head">
+    <div class="badge hi">8</div>
+    <div>
+      <h3>Inference-Time Conformal Reasoning with Valid Factuality Control for Large Language Models</h3>
+      <p class="authors">Ting Wang, Yuanjie Shi, Yan Yan, Huan Zhang</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出一种推理时共形推理（ITCR）框架，将共形预测直接集成到大语言模型的多步推理图生成过程中。通过定义结构级事实不确定性函数和非一致性分数，校准共形阈值以决定何时停止生成，从而在推理过程中实现对事实正确性的有效控制。实验表明，该方法在多个数据集上实现了经验有效的覆盖保证，且推理时校准的图比事后剪枝的图在下游推理任务中生成更准确。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.08831v2" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.08831v2" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Inference-Time%20Conformal%20Reasoning%20with%20Valid%20Factuality%20Control%20for%20Large%20Language%20Models" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.08831v2" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.08831v2</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="8" data-diseases="" data-text="beyond additivity: causal discovery in location-scale noise models with hidden variables  mariyam khan shohei shimizu thong pham 该论文针对含隐变量的因果发现问题，提出在位置尺度噪声模型（lsnm）下，满足无弓形环条件的有向无环混合图（admg）是可识别的，这是首个超越加性噪声假设的因果不足模型可识别性结果。论文还给出了弓形环假设违反时识别因果方向的充分条件，并设计了lsnm-uv两阶段算法。实验表明，在异方差数据上该方法优于基于加性噪声的基线方法。 ">
+  <div class="head">
+    <div class="badge hi">8</div>
+    <div>
+      <h3>Beyond Additivity: Causal Discovery in Location-Scale Noise Models with Hidden Variables</h3>
+      <p class="authors">Mariyam Khan, Shohei Shimizu, Thong Pham</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文针对含隐变量的因果发现问题，提出在位置尺度噪声模型（LSNM）下，满足无弓形环条件的有向无环混合图（ADMG）是可识别的，这是首个超越加性噪声假设的因果不足模型可识别性结果。论文还给出了弓形环假设违反时识别因果方向的充分条件，并设计了LSNM-UV两阶段算法。实验表明，在异方差数据上该方法优于基于加性噪声的基线方法。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.08196v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.08196v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Beyond%20Additivity%3A%20Causal%20Discovery%20in%20Location-Scale%20Noise%20Models%20with%20Hidden%20Variables" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.08196v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.08196v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="8" data-diseases="" data-text="output type before quality: a standards-derived xai admissibility rubric for autonomous-driving safety  abhinaw priyadershi mandar pitale jelena frtunikj maria spence 该论文指出自动驾驶安全标准要求因果链、干预效应等证据类型，但现有xai方法（如shap）仅输出特征排名，存在证据类型缺口。作者从多个安全标准中推导出19条可测试的循证标准，对六类xai方法进行结构性评分，发现因果xai在危险识别、事故调查和数据管理阶段显著优于其他方法。研究提出基于生命周期阶段证据需求选择xai方法的原则，并通过真实驾驶数据验证了方法输出类型与标准预测的一致性。 ">
+  <div class="head">
+    <div class="badge hi">8</div>
+    <div>
+      <h3>Output Type Before Quality: A Standards-Derived XAI Admissibility Rubric for Autonomous-Driving Safety</h3>
+      <p class="authors">Abhinaw Priyadershi, Mandar Pitale, Jelena Frtunikj, Maria Spence</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文指出自动驾驶安全标准要求因果链、干预效应等证据类型，但现有XAI方法（如SHAP）仅输出特征排名，存在证据类型缺口。作者从多个安全标准中推导出19条可测试的循证标准，对六类XAI方法进行结构性评分，发现因果XAI在危险识别、事故调查和数据管理阶段显著优于其他方法。研究提出基于生命周期阶段证据需求选择XAI方法的原则，并通过真实驾驶数据验证了方法输出类型与标准预测的一致性。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.05461v2" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.05461v2" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Output%20Type%20Before%20Quality%3A%20A%20Standards-Derived%20XAI%20Admissibility%20Rubric%20for%20Autonomous-Driving%20Safety" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.05461v2" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.05461v2</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="8" data-diseases="" data-text="caliper: probing lexical anchors versus causal structure in llms  zhenyu yu shuigeng zhou 该论文提出caliper扰动方法，通过将因果推理问题中的语义变量名替换为占位符，保留因果图与概率规范，以检验大语言模型是否依赖词汇模式而非结构因果推理。在9个指令微调模型（3.8b至671b）和三个因果推理基准上，词汇匿名化导致准确率显著下降（最高达29.6个百分点），且结构化提示与少样本学习仅缩小差距但未恢复结构推理能力。结论表明当前零样本评估的llm在去除词汇锚定后几乎不展现结构因果推理能力。 ">
+  <div class="head">
+    <div class="badge hi">8</div>
+    <div>
+      <h3>Caliper: Probing Lexical Anchors versus Causal Structure in LLMs</h3>
+      <p class="authors">Zhenyu Yu, Shuigeng Zhou</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出Caliper扰动方法，通过将因果推理问题中的语义变量名替换为占位符，保留因果图与概率规范，以检验大语言模型是否依赖词汇模式而非结构因果推理。在9个指令微调模型（3.8B至671B）和三个因果推理基准上，词汇匿名化导致准确率显著下降（最高达29.6个百分点），且结构化提示与少样本学习仅缩小差距但未恢复结构推理能力。结论表明当前零样本评估的LLM在去除词汇锚定后几乎不展现结构因果推理能力。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.04915v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.04915v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Caliper%3A%20Probing%20Lexical%20Anchors%20versus%20Causal%20Structure%20in%20LLMs" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.04915v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.04915v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="8" data-diseases="" data-text="stepwise reasoning enhancement for llms via external subgraph generation  xin zhang yang cao baoxing wu kai song siying li 这篇论文提出sgr框架，通过从外部知识图谱生成查询相关的子图，为大型语言模型提供显式关系证据，引导其进行逐步推理。方法包括实体关系提取、模式引导的子图检索以及多路径推理结果的验证与聚合。实验表明，sgr在多个知识图谱问答基准上提升了推理准确率和可解释性，验证了动态子图生成对增强llm推理能力的有效性。 ">
+  <div class="head">
+    <div class="badge hi">8</div>
+    <div>
+      <h3>Stepwise Reasoning Enhancement for LLMs via External Subgraph Generation <span class="ai-tag">AI</span></h3>
+      <p class="authors">Xin Zhang, Yang Cao, Baoxing Wu, Kai Song et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">这篇论文提出SGR框架，通过从外部知识图谱生成查询相关的子图，为大型语言模型提供显式关系证据，引导其进行逐步推理。方法包括实体关系提取、模式引导的子图检索以及多路径推理结果的验证与聚合。实验表明，SGR在多个知识图谱问答基准上提升了推理准确率和可解释性，验证了动态子图生成对增强LLM推理能力的有效性。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.04454v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.04454v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Stepwise%20Reasoning%20Enhancement%20for%20LLMs%20via%20External%20Subgraph%20Generation" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.04454v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.04454v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="8" data-diseases="" data-text="learning temporal causal structure via smooth differentiable optimization  tong zhao ce guo wayne luk emil lupu ray dipojjwal 该论文提出一种基于平滑可微优化的时间序列因果结构学习方法，通过gumbel-sinkhorn算子学习变量的可微排列，并三角化结构向量自回归模型的瞬时系数矩阵，将无环性约束转化为参数化形式，实现统一的梯度优化。在三个真实世界基准上，该方法在因果发现准确性和效率上均优于12种基线方法，并在大规模基准上实现超过6倍的加速。 ">
+  <div class="head">
+    <div class="badge hi">8</div>
+    <div>
+      <h3>Learning Temporal Causal Structure via Smooth Differentiable Optimization</h3>
+      <p class="authors">Tong Zhao, Ce Guo, Wayne Luk, Emil Lupu et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出一种基于平滑可微优化的时间序列因果结构学习方法，通过Gumbel-Sinkhorn算子学习变量的可微排列，并三角化结构向量自回归模型的瞬时系数矩阵，将无环性约束转化为参数化形式，实现统一的梯度优化。在三个真实世界基准上，该方法在因果发现准确性和效率上均优于12种基线方法，并在大规模基准上实现超过6倍的加速。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.03227v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.03227v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Learning%20Temporal%20Causal%20Structure%20via%20Smooth%20Differentiable%20Optimization" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.03227v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.03227v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="8" data-diseases="" data-text="multi-agent computer use  jing yu koh ruslan salakhutdinov daniel fried 该论文提出多智能体计算机使用系统（macu），通过一个管理模型将计算机使用任务分解为有向无环图（dag），编码子任务的依赖与目标，并并行调度子智能体执行dag前沿节点，同时根据新信息动态修订dag。实验表明，macu在桌面和网页导航基准上比单智能体基线提升3.4-25.5%，并显著缩短长周期任务完成时间。该方法利用dag结构处理部分可观测环境，为因果dag构建与证据整合提供了可借鉴的框架。 ">
+  <div class="head">
+    <div class="badge hi">8</div>
+    <div>
+      <h3>Multi-Agent Computer Use</h3>
+      <p class="authors">Jing Yu Koh, Ruslan Salakhutdinov, Daniel Fried</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出多智能体计算机使用系统（MACU），通过一个管理模型将计算机使用任务分解为有向无环图（DAG），编码子任务的依赖与目标，并并行调度子智能体执行DAG前沿节点，同时根据新信息动态修订DAG。实验表明，MACU在桌面和网页导航基准上比单智能体基线提升3.4-25.5%，并显著缩短长周期任务完成时间。该方法利用DAG结构处理部分可观测环境，为因果DAG构建与证据整合提供了可借鉴的框架。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.01533v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.01533v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Multi-Agent%20Computer%20Use" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.01533v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.01533v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="7" data-diseases="" data-text="travel-oriented reasoning large language model via domain-specific knowledge graphs  vignesh ram nithin kappagantula shayan hassantabar samuel simpson golnaz moallem 该论文针对大语言模型在旅游等专业领域推理不准确的问题，提出一种基于专家设计知识图谱的模块化流水线，通过构建旅游知识图谱、生成多跳问答对、监督微调及校准分析，提升模型准确率。实验表明，微调后的qwen3-4b模型在基准测试中精确匹配率达82.4%，显著优于基线模型，并识别出两种主要错误模式。 ">
+  <div class="head">
+    <div class="badge mid">7</div>
+    <div>
+      <h3>Travel-Oriented Reasoning Large Language Model via Domain-Specific Knowledge Graphs <span class="ai-tag">AI</span></h3>
+      <p class="authors">Vignesh Ram Nithin Kappagantula, Shayan Hassantabar, Samuel Simpson, Golnaz Moallem</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文针对大语言模型在旅游等专业领域推理不准确的问题，提出一种基于专家设计知识图谱的模块化流水线，通过构建旅游知识图谱、生成多跳问答对、监督微调及校准分析，提升模型准确率。实验表明，微调后的Qwen3-4B模型在基准测试中精确匹配率达82.4%，显著优于基线模型，并识别出两种主要错误模式。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.29254v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.29254v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Travel-Oriented%20Reasoning%20Large%20Language%20Model%20via%20Domain-Specific%20Knowledge%20Graphs" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.29254v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.29254v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="7" data-diseases="" data-text="ontology-guided evidence path inference for multi-hop knowledge graph question answering  yongxue shan meihan wu cundi fang jie peng xiaodong wang 该论文提出opi框架，利用本体图捕捉关系类型约束，通过双向检索与迭代精炼策略解决多跳知识图谱问答中的搜索空间膨胀与语义约束问题。实验表明，该方法在webqsp、cwq和metaqa数据集上显著提升回答准确率并缩小搜索空间。 ">
+  <div class="head">
+    <div class="badge mid">7</div>
+    <div>
+      <h3>Ontology-Guided Evidence Path Inference for Multi-hop Knowledge Graph Question Answering <span class="ai-tag">AI</span></h3>
+      <p class="authors">Yongxue Shan, Meihan Wu, Cundi Fang, Jie Peng et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出OPI框架，利用本体图捕捉关系类型约束，通过双向检索与迭代精炼策略解决多跳知识图谱问答中的搜索空间膨胀与语义约束问题。实验表明，该方法在WebQSP、CWQ和MetaQA数据集上显著提升回答准确率并缩小搜索空间。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.28076v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.28076v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Ontology-Guided%20Evidence%20Path%20Inference%20for%20Multi-hop%20Knowledge%20Graph%20Question%20Answering" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.28076v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.28076v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="7" data-diseases="" data-text="a neuroimaging simulation framework for developing and evaluating causal ai  eryn libert-scott emma a. m. stanley vibujithan vigneshwaran matthias wilms erik y. ohara nils d. forkert 该论文提出一种生成合成神经影像数据的框架，允许用户指定非影像变量与影像变量之间的因果结构，从而创建带有真实因果标签的基准数据集。方法基于真实数据估计解剖变异的子空间，并通过模板变形生成模拟t1加权mri图像，实现目标脑区体积的精确因果控制。实验表明，该方法能生成高保真度的合成图像，并初步评估了现有因果发现方法在抑制虚假连接方面的不足，为开发适用于医学影像的因果ai方法提供了关键工具。 ">
+  <div class="head">
+    <div class="badge mid">7</div>
+    <div>
+      <h3>A Neuroimaging Simulation Framework for Developing and Evaluating Causal AI <span class="ai-tag">AI</span></h3>
+      <p class="authors">Eryn Libert-Scott, Emma A. M. Stanley, Vibujithan Vigneshwaran, Matthias Wilms et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出一种生成合成神经影像数据的框架，允许用户指定非影像变量与影像变量之间的因果结构，从而创建带有真实因果标签的基准数据集。方法基于真实数据估计解剖变异的子空间，并通过模板变形生成模拟T1加权MRI图像，实现目标脑区体积的精确因果控制。实验表明，该方法能生成高保真度的合成图像，并初步评估了现有因果发现方法在抑制虚假连接方面的不足，为开发适用于医学影像的因果AI方法提供了关键工具。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.28684v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.28684v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=A%20Neuroimaging%20Simulation%20Framework%20for%20Developing%20and%20Evaluating%20Causal%20AI" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.28684v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.28684v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="7" data-diseases="" data-text="mkg-rag-bench: benchmarking retrieval in multimodal knowledge graph-augmented generation  xiaochen wang bao hoang han liu ting wang fenglong ma 该论文提出mkg-rag-bench，一个专门评估多模态知识图谱检索增强生成中检索性能的跨领域基准。通过从通用和医学领域知识图谱构建对齐的问答数据集，并设计基于llm的筛选与查询生成流程，系统评估了多种检索器在多模态设置下的表现。实验表明，多模态检索质量对端到端生成性能具有决定性影响，但当前检索仍面临挑战。 ">
+  <div class="head">
+    <div class="badge mid">7</div>
+    <div>
+      <h3>MKG-RAG-Bench: Benchmarking Retrieval in Multimodal Knowledge Graph-Augmented Generation <span class="ai-tag">AI</span></h3>
+      <p class="authors">Xiaochen Wang, Bao Hoang, Han Liu, Ting Wang et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出MKG-RAG-Bench，一个专门评估多模态知识图谱检索增强生成中检索性能的跨领域基准。通过从通用和医学领域知识图谱构建对齐的问答数据集，并设计基于LLM的筛选与查询生成流程，系统评估了多种检索器在多模态设置下的表现。实验表明，多模态检索质量对端到端生成性能具有决定性影响，但当前检索仍面临挑战。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.26458v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.26458v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=MKG-RAG-Bench%3A%20Benchmarking%20Retrieval%20in%20Multimodal%20Knowledge%20Graph-Augmented%20Generation" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.26458v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.26458v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="7" data-diseases="" data-text="kg-trace: a neuro-symbolic framework for mechanistic grounding in antimicrobial resistance prediction  naman garg sarika jain sourav yadav bharat k. bhargava ghanapriya singh abhishek srivastava parimal kar 该论文提出kg-trace框架，将who突变知识图谱作为结构化生物约束整合到神经基因组模型中，通过可学习的信任门动态平衡神经证据与符号知识。在结核分枝杆菌数据集上，该方法在保持高预测精度的同时，引入生物基础比率（bgr）量化神经归因与已知生物学的对齐程度，为临床提供可验证的审计轨迹。 ">
+  <div class="head">
+    <div class="badge mid">7</div>
+    <div>
+      <h3>KG-TRACE: A Neuro-Symbolic Framework for Mechanistic Grounding in Antimicrobial Resistance Prediction <span class="ai-tag">AI</span></h3>
+      <p class="authors">Naman Garg, Sarika Jain, Sourav Yadav, Bharat K. Bhargava et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出KG-TRACE框架，将WHO突变知识图谱作为结构化生物约束整合到神经基因组模型中，通过可学习的信任门动态平衡神经证据与符号知识。在结核分枝杆菌数据集上，该方法在保持高预测精度的同时，引入生物基础比率（BGR）量化神经归因与已知生物学的对齐程度，为临床提供可验证的审计轨迹。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.26179v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.26179v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=KG-TRACE%3A%20A%20Neuro-Symbolic%20Framework%20for%20Mechanistic%20Grounding%20in%20Antimicrobial%20Resistance%20Prediction" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.26179v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.26179v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="7" data-diseases="" data-text="ttft-aware graph chain-of-thought:distance-indexed neural a* for low-hallucination multi-hop medical reasoning  bechir dardouri kaïs zhioua yassine msaddak 该论文提出一种面向临床llm的graphrag系统，通过有向剪枝地标标记（pll）与轻量级astarnet启发式搜索，在约70万节点的医学知识图谱中实现低幻觉、可解释的多跳推理。方法在生育辅助查询上相比纯文本rag降低了首词延迟（ttft）并减少了临床医生审核的幻觉，同时保持推理路径清晰。主要贡献在于图链式推理的工程化部署，而非因果结构发现或证据整合方法学。 ">
+  <div class="head">
+    <div class="badge mid">7</div>
+    <div>
+      <h3>TTFT-Aware Graph Chain-of-Thought:Distance-Indexed Neural A* for Low-Hallucination Multi-Hop Medical Reasoning <span class="ai-tag">AI</span></h3>
+      <p class="authors">Bechir Dardouri, Kaïs Zhioua, Yassine Msaddak</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出一种面向临床LLM的GraphRAG系统，通过有向剪枝地标标记（PLL）与轻量级AStarNet启发式搜索，在约70万节点的医学知识图谱中实现低幻觉、可解释的多跳推理。方法在生育辅助查询上相比纯文本RAG降低了首词延迟（TTFT）并减少了临床医生审核的幻觉，同时保持推理路径清晰。主要贡献在于图链式推理的工程化部署，而非因果结构发现或证据整合方法学。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.23108v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.23108v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=TTFT-Aware%20Graph%20Chain-of-Thought%3ADistance-Indexed%20Neural%20A%2A%20for%20Low-Hallucination%20Multi-Hop%20Medical%20Reasoning" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.23108v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.23108v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="7" data-diseases="cancer" data-text="vista architect: a graph database-oriented health ai system demonstrated in multidisciplinary tumor boards  tuomo kiiskinen jason fries philip adamson david wu timothy john ellis-caleo aaron fanous balasubramanian narasimhan joel neal sylvia plevritis manuel a. rivas 该论文提出vista architect，一种面向图数据库的医疗ai架构，通过将电子健康记录转化为带溯源的知识图谱，并利用llm提取临床时间线，解决长上下文提示与rag在时间关系捕捉上的不足。在斯坦福多学科肿瘤委员会中，对1180名患者的15个关键变量评估达到96.4%准确率，并显著缩短了准备时间。系统模块化设计可适配其他专科，但验证仅限于胸肿瘤学领域。 癌症 cancer">
+  <div class="head">
+    <div class="badge mid">7</div>
+    <div>
+      <h3>VISTA Architect: A graph database-oriented health AI system demonstrated in multidisciplinary tumor boards <span class="ai-tag">AI</span></h3>
+      <p class="authors">Tuomo Kiiskinen, Jason Fries, Philip Adamson, David Wu et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      <div class="dbadges"><span class="dbadge">癌症</span></div>
+<p class="sum">该论文提出VISTA Architect，一种面向图数据库的医疗AI架构，通过将电子健康记录转化为带溯源的知识图谱，并利用LLM提取临床时间线，解决长上下文提示与RAG在时间关系捕捉上的不足。在斯坦福多学科肿瘤委员会中，对1180名患者的15个关键变量评估达到96.4%准确率，并显著缩短了准备时间。系统模块化设计可适配其他专科，但验证仅限于胸肿瘤学领域。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.22692v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.22692v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=VISTA%20Architect%3A%20A%20graph%20database-oriented%20health%20AI%20system%20demonstrated%20in%20multidisciplinary%20tumor%20boards" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.22692v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.22692v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="7" data-diseases="" data-text="knowledge-graph grounding helps llms only for out-of-training knowledge: a controlled study on clinical question answering  madhulatha mandarapu sandeep kunkunuru 该论文研究了知识图谱（kg）对大型语言模型（llm）在临床问答中的帮助是否仅限于训练数据之外的知识。通过复现一项nature medicine研究并构建图+向量引擎，作者发现kg仅在涉及模型未见过的知识时显著提升准确率（从随机水平提升至接近100%），而对已知事实无增益。结论表明，公共kg对llm的辅助作用有限，私有或新颖数据才是其价值所在。 ">
+  <div class="head">
+    <div class="badge mid">7</div>
+    <div>
+      <h3>Knowledge-Graph Grounding Helps LLMs Only for Out-of-Training Knowledge: A Controlled Study on Clinical Question Answering <span class="ai-tag">AI</span></h3>
+      <p class="authors">Madhulatha Mandarapu, Sandeep Kunkunuru</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文研究了知识图谱（KG）对大型语言模型（LLM）在临床问答中的帮助是否仅限于训练数据之外的知识。通过复现一项Nature Medicine研究并构建图+向量引擎，作者发现KG仅在涉及模型未见过的知识时显著提升准确率（从随机水平提升至接近100%），而对已知事实无增益。结论表明，公共KG对LLM的辅助作用有限，私有或新颖数据才是其价值所在。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.22419v2" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.22419v2" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Knowledge-Graph%20Grounding%20Helps%20LLMs%20Only%20for%20Out-of-Training%20Knowledge%3A%20A%20Controlled%20Study%20on%20Clinical%20Question%20Answering" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.22419v2" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.22419v2</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="7" data-diseases="" data-text="ai economist agent: an agentic framework for model-grounded economic analysis with rag, knowledge graphs, and large language models  masahiro kato 该论文提出一种基于rag与知识图谱的ai经济学家智能体框架，利用大语言模型和知识图谱进行经济情景分析。框架通过智能体规划分析、检索证据、选择模型并生成报告，避免直接由语言模型产生定量结论，而是将叙事基于显式模型计算与检索证据。在两项应用（美国通胀持续性分析与银行压力测试叙事生成）中，该方法提升了报告的经济一致性与可追溯性。 ">
+  <div class="head">
+    <div class="badge mid">7</div>
+    <div>
+      <h3>AI Economist Agent: An Agentic Framework for Model-Grounded Economic Analysis with RAG, Knowledge Graphs, and Large Language Models <span class="ai-tag">AI</span></h3>
+      <p class="authors">Masahiro Kato</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出一种基于RAG与知识图谱的AI经济学家智能体框架，利用大语言模型和知识图谱进行经济情景分析。框架通过智能体规划分析、检索证据、选择模型并生成报告，避免直接由语言模型产生定量结论，而是将叙事基于显式模型计算与检索证据。在两项应用（美国通胀持续性分析与银行压力测试叙事生成）中，该方法提升了报告的经济一致性与可追溯性。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.20041v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.20041v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=AI%20Economist%20Agent%3A%20An%20Agentic%20Framework%20for%20Model-Grounded%20Economic%20Analysis%20with%20RAG%2C%20Knowledge%20Graphs%2C%20and%20Large%20Language%20Models" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.20041v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.20041v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="7" data-diseases="" data-text="unsupervised causal abstractions discovery  théo saulus simon lacoste-julien dhanya sridhar 该论文研究从低层测量数据中自动学习高层结构因果模型（scm）的问题，提出一种无监督的因果抽象发现方法。利用低秩因果发现假设，证明低秩图生成的观测数据可诱导出构成因果抽象的潜变量，并给出可识别性条件。最后提出一个实用目标函数来学习高层scm，为因果结构发现提供了新途径。 ">
+  <div class="head">
+    <div class="badge mid">7</div>
+    <div>
+      <h3>Unsupervised Causal Abstractions Discovery</h3>
+      <p class="authors">Théo Saulus, Simon Lacoste-Julien, Dhanya Sridhar</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文研究从低层测量数据中自动学习高层结构因果模型（SCM）的问题，提出一种无监督的因果抽象发现方法。利用低秩因果发现假设，证明低秩图生成的观测数据可诱导出构成因果抽象的潜变量，并给出可识别性条件。最后提出一个实用目标函数来学习高层SCM，为因果结构发现提供了新途径。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.19594v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.19594v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Unsupervised%20Causal%20Abstractions%20Discovery" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.19594v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.19594v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="7" data-diseases="" data-text="identifying structural biases from causal mechanism shifts  praharsh nanavati jilles vreeken david kaltenpoth 该论文针对因果发现中常见的数据非独立同分布及未测量变量问题，提出从因果机制变化中识别隐藏混杂与选择偏差的方法。通过分析不同环境下变量机制变化的依赖性，构建基于互信息的可检验准则，并开发strubi算法。实验表明，该方法能准确恢复受偏倚影响的变量集及偏倚类型，性能优于现有方法。 ">
+  <div class="head">
+    <div class="badge mid">7</div>
+    <div>
+      <h3>Identifying Structural Biases from Causal Mechanism Shifts</h3>
+      <p class="authors">Praharsh Nanavati, Jilles Vreeken, David Kaltenpoth</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文针对因果发现中常见的数据非独立同分布及未测量变量问题，提出从因果机制变化中识别隐藏混杂与选择偏差的方法。通过分析不同环境下变量机制变化的依赖性，构建基于互信息的可检验准则，并开发StruBI算法。实验表明，该方法能准确恢复受偏倚影响的变量集及偏倚类型，性能优于现有方法。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.18834v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.18834v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Identifying%20Structural%20Biases%20from%20Causal%20Mechanism%20Shifts" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.18834v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.18834v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="7" data-diseases="" data-text="fast nonparametric conditional independence testing via two-stage regression  eric v. strobl 该论文提出blitz，一种两阶段回归的非参数条件独立性检验方法，旨在满足基于约束的因果发现算法中数千次查询的速度与精度需求。方法先通过低阶多项式回归消除对条件集的平滑依赖，再用浅层树回归残差化非线性特征，并基于残差交叉协方差构造检验统计量。模拟与因果发现实验表明，blitz在保持最快速度的同时，提供了比现有快速方法更好的零分布校准，并提升了因果图方向恢复的可靠性。 ">
+  <div class="head">
+    <div class="badge mid">7</div>
+    <div>
+      <h3>Fast Nonparametric Conditional Independence Testing via Two-Stage Regression</h3>
+      <p class="authors">Eric V. Strobl</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出BLITZ，一种两阶段回归的非参数条件独立性检验方法，旨在满足基于约束的因果发现算法中数千次查询的速度与精度需求。方法先通过低阶多项式回归消除对条件集的平滑依赖，再用浅层树回归残差化非线性特征，并基于残差交叉协方差构造检验统计量。模拟与因果发现实验表明，BLITZ在保持最快速度的同时，提供了比现有快速方法更好的零分布校准，并提升了因果图方向恢复的可靠性。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.18011v2" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.18011v2" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Fast%20Nonparametric%20Conditional%20Independence%20Testing%20via%20Two-Stage%20Regression" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.18011v2" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.18011v2</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="7" data-diseases="" data-text="half a link can be enough to predict a whole link: understanding generalization in knowledge graph foundation models  cosimo gregucci obaidah theeb daniel hernandez antonio vergari steffen staab 该论文探讨知识图谱基础模型（kgfm）在未见图谱上的零样本泛化机制，提出基于半链接（half-link）的细粒度分类法，将测试三元组按(h,r)和(r,t)是否在推理图中出现分为四类场景。通过分层分析发现，现有kgfm依赖已见半链接进行预测，而未见半链接带来不同挑战，该分类可作为诊断kgfm泛化鲁棒性的协议。 ">
+  <div class="head">
+    <div class="badge mid">7</div>
+    <div>
+      <h3>Half a Link can Be Enough to Predict a Whole Link: Understanding Generalization in Knowledge Graph Foundation Models <span class="ai-tag">AI</span></h3>
+      <p class="authors">Cosimo Gregucci, Obaidah Theeb, Daniel Hernandez, Antonio Vergari et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文探讨知识图谱基础模型（KGFM）在未见图谱上的零样本泛化机制，提出基于半链接（half-link）的细粒度分类法，将测试三元组按(h,r)和(r,t)是否在推理图中出现分为四类场景。通过分层分析发现，现有KGFM依赖已见半链接进行预测，而未见半链接带来不同挑战，该分类可作为诊断KGFM泛化鲁棒性的协议。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.18001v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.18001v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Half%20a%20Link%20can%20Be%20Enough%20to%20Predict%20a%20Whole%20Link%3A%20Understanding%20Generalization%20in%20Knowledge%20Graph%20Foundation%20Models" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.18001v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.18001v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="7" data-diseases="" data-text="dyna : dynamic episodic memory networks for augmenting large language models with temporal knowledge graphs in continuous learning  ali sarabadani mahtab tajvidiyan 该论文提出dyna框架，通过时间知识图谱作为外部可更新记忆，增强冻结的大语言模型，使其在不重新训练的情况下学习新知识。方法在查询时利用随机游走和中心性度量检索相关节点，并注入llm响应。实验表明，dyna在时序回忆任务中相比微调减少约7%的灾难性遗忘，相比标准rag提升约5%的时序排序能力，且图聚类系数与检索性能正相关。 ">
+  <div class="head">
+    <div class="badge mid">7</div>
+    <div>
+      <h3>DYNA : Dynamic Episodic Memory Networks for Augmenting Large Language Models with Temporal Knowledge Graphs in Continuous Learning <span class="ai-tag">AI</span></h3>
+      <p class="authors">Ali Sarabadani, Mahtab Tajvidiyan</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出DYNA框架，通过时间知识图谱作为外部可更新记忆，增强冻结的大语言模型，使其在不重新训练的情况下学习新知识。方法在查询时利用随机游走和中心性度量检索相关节点，并注入LLM响应。实验表明，DYNA在时序回忆任务中相比微调减少约7%的灾难性遗忘，相比标准RAG提升约5%的时序排序能力，且图聚类系数与检索性能正相关。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.15778v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.15778v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=DYNA%20%3A%20Dynamic%20Episodic%20Memory%20Networks%20for%20Augmenting%20Large%20Language%20Models%20with%20Temporal%20Knowledge%20Graphs%20in%20Continuous%20Learning" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.15778v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.15778v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="7" data-diseases="" data-text="faithful action-unit causal reasoning for counterfactually faithful emotion explanations  van thong huynh hong hai nguyen thuy pham trong nghia nguyen soo-hyung kim 该论文提出facr方法，将面部动作单元（au）到情绪推理建模为反事实一致性约束，利用独立诱导的极性感知因果图g，通过do干预训练模型：对因果标记的au进行干预应改变预测，对无关au干预则不应影响预测。在unbc-pain数据集上，该方法使调用au与已知因果结构（pspi）的一致性从0.08提升至0.57，并在跨数据集情绪迁移任务中忠实度从0.50升至0.84。论文还扩展至文本解释生成，通过控制au激活实现解释的忠实性。 ">
+  <div class="head">
+    <div class="badge mid">7</div>
+    <div>
+      <h3>Faithful Action-unit Causal Reasoning for Counterfactually Faithful Emotion Explanations</h3>
+      <p class="authors">Van Thong Huynh, Hong Hai Nguyen, Thuy Pham, Trong Nghia Nguyen et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出FACR方法，将面部动作单元（AU）到情绪推理建模为反事实一致性约束，利用独立诱导的极性感知因果图G，通过do干预训练模型：对因果标记的AU进行干预应改变预测，对无关AU干预则不应影响预测。在UNBC-PAIN数据集上，该方法使调用AU与已知因果结构（PSPI）的一致性从0.08提升至0.57，并在跨数据集情绪迁移任务中忠实度从0.50升至0.84。论文还扩展至文本解释生成，通过控制AU激活实现解释的忠实性。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.15779v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.15779v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Faithful%20Action-unit%20Causal%20Reasoning%20for%20Counterfactually%20Faithful%20Emotion%20Explanations" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.15779v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.15779v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="7" data-diseases="" data-text="semantic reasoning in medicine: the role of knowledge graphs across five key domains  haniye sherafatmandjoo mohammad akbari zahed rahmati 该论文综述了知识图谱在医学五大领域（临床决策支持、疾病与治疗结果预测、健康推荐、精准医学、医学问答）中的应用，并讨论了基于电子健康记录、临床叙述、生物医学文献等资源的图谱构建方法。主要结论指出知识图谱能增强可解释性和患者特异性推理，但仍面临知识覆盖有限、数据异质性、隐私与偏见等挑战。 ">
+  <div class="head">
+    <div class="badge mid">7</div>
+    <div>
+      <h3>Semantic Reasoning in Medicine: The Role of Knowledge Graphs Across Five Key Domains <span class="ai-tag">AI</span></h3>
+      <p class="authors">Haniye Sherafatmandjoo, Mohammad Akbari, Zahed Rahmati</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文综述了知识图谱在医学五大领域（临床决策支持、疾病与治疗结果预测、健康推荐、精准医学、医学问答）中的应用，并讨论了基于电子健康记录、临床叙述、生物医学文献等资源的图谱构建方法。主要结论指出知识图谱能增强可解释性和患者特异性推理，但仍面临知识覆盖有限、数据异质性、隐私与偏见等挑战。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.15155v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.15155v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Semantic%20Reasoning%20in%20Medicine%3A%20The%20Role%20of%20Knowledge%20Graphs%20Across%20Five%20Key%20Domains" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.15155v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.15155v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="7" data-diseases="" data-text="provenance-enhanced statements in knowledge graphs  fabio vitali valentina pasqual 该论文针对知识图谱中大量存在的带来源声明（如“根据x，φ”）的陈述，提出dec框架，将来源谓词解释为认知立场指示器，并将来源同质的陈述分组为“认知世界”。基于认知模态逻辑（信念、知识、推测），dec刻画了认知世界与事实核心之间的局部性、理性及可控渗透，支持对归因内容进行原则性推理而不将分歧视为矛盾。论文在rdf数据集上形式化了dec语义，并实现了一个原型推理器，支持受控事实化及分歧与错觉的显式检测。 ">
+  <div class="head">
+    <div class="badge mid">7</div>
+    <div>
+      <h3>Provenance-Enhanced Statements in Knowledge Graphs</h3>
+      <p class="authors">Fabio Vitali, Valentina Pasqual</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文针对知识图谱中大量存在的带来源声明（如“根据X，φ”）的陈述，提出DEC框架，将来源谓词解释为认知立场指示器，并将来源同质的陈述分组为“认知世界”。基于认知模态逻辑（信念、知识、推测），DEC刻画了认知世界与事实核心之间的局部性、理性及可控渗透，支持对归因内容进行原则性推理而不将分歧视为矛盾。论文在RDF数据集上形式化了DEC语义，并实现了一个原型推理器，支持受控事实化及分歧与错觉的显式检测。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.15246v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.15246v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Provenance-Enhanced%20Statements%20in%20Knowledge%20Graphs" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.15246v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.15246v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="7" data-diseases="" data-text="knowledge-based zero-replay debugging of multi-agent llm traces  dong ho kang hyeonjeong cha daein weon 该论文针对多智能体大语言模型系统调试中因果事件定位成本高的问题，提出一种基于知识图谱的零回放因果效应预测方法。通过将执行轨迹编译为结构化事件知识图谱，并训练轻量级预测器（branchpoint-latent）预估回放结果，在37个轨迹族上将局部化召回率从0.73提升至0.93，实现了可审计、低成本的调试决策支持。 ">
+  <div class="head">
+    <div class="badge mid">7</div>
+    <div>
+      <h3>Knowledge-Based Zero-Replay Debugging of Multi-Agent LLM Traces <span class="ai-tag">AI</span></h3>
+      <p class="authors">Dong Ho Kang, Hyeonjeong Cha, Daein Weon</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文针对多智能体大语言模型系统调试中因果事件定位成本高的问题，提出一种基于知识图谱的零回放因果效应预测方法。通过将执行轨迹编译为结构化事件知识图谱，并训练轻量级预测器（BranchPoint-Latent）预估回放结果，在37个轨迹族上将局部化召回率从0.73提升至0.93，实现了可审计、低成本的调试决策支持。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.14805v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.14805v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Knowledge-Based%20Zero-Replay%20Debugging%20of%20Multi-Agent%20LLM%20Traces" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.14805v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.14805v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="7" data-diseases="cardiovascular" data-text="estimating individualized treatment effects in acute ischemic stroke with causal transformation models (tram-dag): a multi-centre observational study with external rct validation  lisa herzog oliver dürr pascal bühler hakim baazaoui julian deseö susanne wegener beate sick 该论文针对急性缺血性卒中个体化治疗需求，提出基于因果有向无环图的因果转换模型（tram-dag），利用多中心观察性数据估计机械取栓对比溶栓的个体化治疗效果。模型在外部rct（mr clean）人群中验证，其平均治疗效果与试验报告一致，且个体化估计能正确排序患者预后。研究支持因果模型在卒中个体化决策中的应用，并展示了观察性证据与临床试验之间的桥接能力。 心血管 cardiovascular">
+  <div class="head">
+    <div class="badge mid">7</div>
+    <div>
+      <h3>Estimating Individualized Treatment Effects in Acute Ischemic Stroke with Causal Transformation Models (TRAM-DAG): A Multi-Centre Observational Study with External RCT Validation</h3>
+      <p class="authors">Lisa Herzog, Oliver Dürr, Pascal Bühler, Hakim Baazaoui et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      <div class="dbadges"><span class="dbadge">心血管</span></div>
+<p class="sum">该论文针对急性缺血性卒中个体化治疗需求，提出基于因果有向无环图的因果转换模型（TRAM-DAG），利用多中心观察性数据估计机械取栓对比溶栓的个体化治疗效果。模型在外部RCT（MR CLEAN）人群中验证，其平均治疗效果与试验报告一致，且个体化估计能正确排序患者预后。研究支持因果模型在卒中个体化决策中的应用，并展示了观察性证据与临床试验之间的桥接能力。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.12623v3" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.12623v3" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Estimating%20Individualized%20Treatment%20Effects%20in%20Acute%20Ischemic%20Stroke%20with%20Causal%20Transformation%20Models%20%28TRAM-DAG%29%3A%20A%20Multi-Centre%20Observational%20Study%20with%20External%20RCT%20Validation" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.12623v3" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.12623v3</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="7" data-diseases="" data-text="worldkernel: a world model is the coupling kernel of admissible possible worlds  fabio rovai 该论文指出在结构因果模型中，对于不可识别量（反事实世界间的耦合），强预测器会崩溃为单点估计，而真实值是一个不可缩小的可容许区间。作者将世界模型形式化为一个正半定耦合核，其非对角元素编码了预测器无法捕捉的跨世界耦合，并证明利用正半定性约束可在多项式时间内对反事实进行有界推断。论文还展示了本体论公理和从经验中学习的约束可进一步收紧这些界，从而为因果推断中的不确定性量化提供理论框架。 ">
+  <div class="head">
+    <div class="badge mid">7</div>
+    <div>
+      <h3>WorldKernel: A World Model is the Coupling Kernel of Admissible Possible Worlds <span class="ai-tag">AI</span></h3>
+      <p class="authors">Fabio Rovai</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文指出在结构因果模型中，对于不可识别量（反事实世界间的耦合），强预测器会崩溃为单点估计，而真实值是一个不可缩小的可容许区间。作者将世界模型形式化为一个正半定耦合核，其非对角元素编码了预测器无法捕捉的跨世界耦合，并证明利用正半定性约束可在多项式时间内对反事实进行有界推断。论文还展示了本体论公理和从经验中学习的约束可进一步收紧这些界，从而为因果推断中的不确定性量化提供理论框架。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.10934v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.10934v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=WorldKernel%3A%20A%20World%20Model%20is%20the%20Coupling%20Kernel%20of%20Admissible%20Possible%20Worlds" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.10934v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.10934v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="7" data-diseases="" data-text="benchmarking knowledge editing using logical rules  tatiana moteu ngoli ndah jean kouagou hamada m. zahera axel-cyrille ngonga ngomo 该论文针对现有知识编辑基准仅关注直接事实回忆、忽略逻辑后果的不足，提出一个新基准，通过从知识图谱中提取逻辑规则并生成多跳问题，评估知识编辑方法对蕴含知识的处理能力。实验表明，rome和ft等方法在直接编辑知识上表现良好，但在蕴含知识上性能下降高达24%，揭示了知识编辑需要语义感知评估框架。 ">
+  <div class="head">
+    <div class="badge mid">7</div>
+    <div>
+      <h3>Benchmarking Knowledge Editing using Logical Rules <span class="ai-tag">AI</span></h3>
+      <p class="authors">Tatiana Moteu Ngoli, NDah Jean Kouagou, Hamada M. Zahera, Axel-Cyrille Ngonga Ngomo</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文针对现有知识编辑基准仅关注直接事实回忆、忽略逻辑后果的不足，提出一个新基准，通过从知识图谱中提取逻辑规则并生成多跳问题，评估知识编辑方法对蕴含知识的处理能力。实验表明，ROME和FT等方法在直接编辑知识上表现良好，但在蕴含知识上性能下降高达24%，揭示了知识编辑需要语义感知评估框架。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.10554v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.10554v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Benchmarking%20Knowledge%20Editing%20using%20Logical%20Rules" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.10554v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.10554v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="7" data-diseases="" data-text="knowledge graphs and reasoning llms for finding simple yet effective transcriptomic perturbation predictors  jake fawkes liam hodgson jason hartford 该论文旨在预测未知基因敲除扰动对转录组基因表达的影响。方法上，利用生物知识图谱构建k近邻模型，并进一步通过强化学习优化llm以改进邻域选择。主要结论是，简单的k近邻方法在分布外扰动预测上表现优异，而强化学习训练的llm在差异表达预测任务上达到当前最优水平，展示了知识图谱作为模型先验的有效性以及llm在生物响应预测中的潜力。 ">
+  <div class="head">
+    <div class="badge mid">7</div>
+    <div>
+      <h3>Knowledge Graphs and Reasoning LLMs for Finding Simple Yet Effective Transcriptomic Perturbation Predictors <span class="ai-tag">AI</span></h3>
+      <p class="authors">Jake Fawkes, Liam Hodgson, Jason Hartford</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文旨在预测未知基因敲除扰动对转录组基因表达的影响。方法上，利用生物知识图谱构建K近邻模型，并进一步通过强化学习优化LLM以改进邻域选择。主要结论是，简单的K近邻方法在分布外扰动预测上表现优异，而强化学习训练的LLM在差异表达预测任务上达到当前最优水平，展示了知识图谱作为模型先验的有效性以及LLM在生物响应预测中的潜力。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.08816v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.08816v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Knowledge%20Graphs%20and%20Reasoning%20LLMs%20for%20Finding%20Simple%20Yet%20Effective%20Transcriptomic%20Perturbation%20Predictors" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.08816v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.08816v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="7" data-diseases="" data-text="causal atlases from entropic inference: bayesian networks beyond optimal dags  hazhir aliahmadi irina babayan greg van anders 该论文针对传统贝叶斯网络优化方法在因果学习中可能忽略多链因果结构的问题，提出基于熵推断的因果图谱生成方法。通过最大熵系综采样，在2节点和20节点线性结构方程模型的模拟噪声数据上，生成与数据一致的多个因果图集，量化因果结构的内在模糊性。主要结论是优化得到的单一dag可能包含因果伪影，而熵推断方法能提供更忠实于数据变异性的因果表示。 ">
+  <div class="head">
+    <div class="badge mid">7</div>
+    <div>
+      <h3>Causal Atlases from Entropic Inference: Bayesian Networks beyond Optimal DAGs</h3>
+      <p class="authors">Hazhir Aliahmadi, Irina Babayan, Greg van Anders</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文针对传统贝叶斯网络优化方法在因果学习中可能忽略多链因果结构的问题，提出基于熵推断的因果图谱生成方法。通过最大熵系综采样，在2节点和20节点线性结构方程模型的模拟噪声数据上，生成与数据一致的多个因果图集，量化因果结构的内在模糊性。主要结论是优化得到的单一DAG可能包含因果伪影，而熵推断方法能提供更忠实于数据变异性的因果表示。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.06440v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.06440v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Causal%20Atlases%20from%20Entropic%20Inference%3A%20Bayesian%20Networks%20beyond%20Optimal%20DAGs" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.06440v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.06440v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="7" data-diseases="" data-text="llm explainability with counterfactual chains and causal graphs  nirit nussbaum-hoffer nitay calderon liat ein-dor roi reichart 该论文提出一种四阶段方法，利用因果图建模大语言模型（llm）的内部推理过程，通过发现类判别概念、映射概念状态，并引入基于mcmc的反事实增强技术进行因果发现，从而生成可解释的因果图。在疾病诊断、情感分析和llm-as-a-judge任务上的实验表明，所发现的因果图能捕捉与llm推理一致的有意义依赖关系，为llm的概念级可解释性提供了基础。 ">
+  <div class="head">
+    <div class="badge mid">7</div>
+    <div>
+      <h3>LLM Explainability with Counterfactual Chains and Causal Graphs <span class="ai-tag">AI</span></h3>
+      <p class="authors">Nirit Nussbaum-Hoffer, Nitay Calderon, Liat Ein-Dor, Roi Reichart</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出一种四阶段方法，利用因果图建模大语言模型（LLM）的内部推理过程，通过发现类判别概念、映射概念状态，并引入基于MCMC的反事实增强技术进行因果发现，从而生成可解释的因果图。在疾病诊断、情感分析和LLM-as-a-judge任务上的实验表明，所发现的因果图能捕捉与LLM推理一致的有意义依赖关系，为LLM的概念级可解释性提供了基础。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.05972v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.05972v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=LLM%20Explainability%20with%20Counterfactual%20Chains%20and%20Causal%20Graphs" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.05972v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.05972v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="7" data-diseases="" data-text="executable schema contracts: from automatic ingestion to multi-source retrieval  padmaja jonnalagedda yuguang yao xiang gao hilaf hasson kamalika das 该论文提出一个从多源异构数据中自动发现可执行模式（schema）的系统，利用封闭世界字段目录约束大语言模型进行模式发现，并通过确定性结构分析推断键与层级关系，构建可追溯来源的知识图谱。在查询时，模式作为共享契约驱动多工具代理在结构化查询、图遍历与向量检索间路由，返回带引用的答案。在四个问答基准上的零样本对比实验表明，该系统优于仅检索或分解式基线，消融实验证实模式条件路由、结构分析与模式引导构建各自贡献了性能提升。 ">
+  <div class="head">
+    <div class="badge mid">7</div>
+    <div>
+      <h3>Executable Schema Contracts: From Automatic Ingestion to Multi-Source Retrieval <span class="ai-tag">AI</span></h3>
+      <p class="authors">Padmaja Jonnalagedda, Yuguang Yao, Xiang Gao, Hilaf Hasson et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出一个从多源异构数据中自动发现可执行模式（schema）的系统，利用封闭世界字段目录约束大语言模型进行模式发现，并通过确定性结构分析推断键与层级关系，构建可追溯来源的知识图谱。在查询时，模式作为共享契约驱动多工具代理在结构化查询、图遍历与向量检索间路由，返回带引用的答案。在四个问答基准上的零样本对比实验表明，该系统优于仅检索或分解式基线，消融实验证实模式条件路由、结构分析与模式引导构建各自贡献了性能提升。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.05415v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.05415v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Executable%20Schema%20Contracts%3A%20From%20Automatic%20Ingestion%20to%20Multi-Source%20Retrieval" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.05415v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.05415v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="7" data-diseases="" data-text="reasoningflow: discourse structures for understanding llm reasoning traces  jinu lee shivam agarwal amruta parulekar siddarth madala dilek hakkani-tur julia hockenmaier 该论文提出reasoningflow框架，将大型推理模型的推理轨迹转化为细粒度的有向无环图（dag），以捕捉回溯、自我修正等非线性结构。通过人工标注31条轨迹（2100步）验证标注方案，并自动标注1260条轨迹（247700步），覆盖数学、科学、论证三类任务及五种模型。主要发现包括：不同模型推理结构相似、dag可揭示局部验证等细粒度行为、多数错误步骤不用于推导最终答案、步骤间的因果依赖与语言层面的语篇结构不一致。 ">
+  <div class="head">
+    <div class="badge mid">7</div>
+    <div>
+      <h3>ReasoningFlow: Discourse Structures for Understanding LLM Reasoning Traces <span class="ai-tag">AI</span></h3>
+      <p class="authors">Jinu Lee, Shivam Agarwal, Amruta Parulekar, Siddarth Madala et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出ReasoningFlow框架，将大型推理模型的推理轨迹转化为细粒度的有向无环图（DAG），以捕捉回溯、自我修正等非线性结构。通过人工标注31条轨迹（2100步）验证标注方案，并自动标注1260条轨迹（247700步），覆盖数学、科学、论证三类任务及五种模型。主要发现包括：不同模型推理结构相似、DAG可揭示局部验证等细粒度行为、多数错误步骤不用于推导最终答案、步骤间的因果依赖与语言层面的语篇结构不一致。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.05402v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.05402v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=ReasoningFlow%3A%20Discourse%20Structures%20for%20Understanding%20LLM%20Reasoning%20Traces" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.05402v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.05402v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="7" data-diseases="" data-text="bridging auxiliary constraints to resolve instruction following in large reasoning models  zhengyi zhao shubo zhang huimin wang zezhong wang yutian zhao yefeng zheng binyang li yulan he kam-fai wong xian wu 该论文针对大型推理模型在多指令遵循中难以平衡或满足约束的问题，提出约束关系图补全（crgc）框架。该方法将指令表示为结构化约束知识图谱，显式建模约束间关系并发现“桥接约束”以辅助模型聚焦和协调要求。实验表明，该方法相比标准提示将约束违反率降低39%，同时保持推理能力。 ">
+  <div class="head">
+    <div class="badge mid">7</div>
+    <div>
+      <h3>Bridging Auxiliary Constraints to Resolve Instruction Following in Large Reasoning Models <span class="ai-tag">AI</span></h3>
+      <p class="authors">Zhengyi Zhao, Shubo Zhang, Huimin Wang, Zezhong Wang et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文针对大型推理模型在多指令遵循中难以平衡或满足约束的问题，提出约束关系图补全（CRGC）框架。该方法将指令表示为结构化约束知识图谱，显式建模约束间关系并发现“桥接约束”以辅助模型聚焦和协调要求。实验表明，该方法相比标准提示将约束违反率降低39%，同时保持推理能力。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.03624v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.03624v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Bridging%20Auxiliary%20Constraints%20to%20Resolve%20Instruction%20Following%20in%20Large%20Reasoning%20Models" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.03624v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.03624v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="6" data-diseases="" data-text="an ai-powered bayesian generative modeling approach for causal inference in observational studies  qiao liu wing hung wong 该论文提出一种基于人工智能的贝叶斯生成建模方法，用于在观察性研究中改进因果推断。方法通过生成模型模拟数据生成过程，结合先验知识进行后验推断，以估计因果效应并处理混杂偏倚。主要结论表明，该方法在模拟和真实数据上相比传统方法提高了因果效应估计的准确性和稳健性。 ">
+  <div class="head">
+    <div class="badge mid">6</div>
+    <div>
+      <h3>An AI-powered Bayesian Generative Modeling Approach for Causal Inference in Observational Studies</h3>
+      <p class="authors">Qiao Liu, Wing Hung Wong</p>
+      <div class="jmetrics">
+<span class="jbadge jb-venue">Journal of the American Statistical Association</span><span class="jbadge jb-cas z2">中科院2区 Top</span><span class="jbadge jb-jcr">JCR Q1</span><span class="jbadge jb-if">IF 4</span></div>
+      
+<p class="sum">该论文提出一种基于人工智能的贝叶斯生成建模方法，用于在观察性研究中改进因果推断。方法通过生成模型模拟数据生成过程，结合先验知识进行后验推断，以估计因果效应并处理混杂偏倚。主要结论表明，该方法在模拟和真实数据上相比传统方法提高了因果效应估计的准确性和稳健性。</p>      <p class="links">
+        <a href="https://doi.org/10.1080/01621459.2026.2654227" target="_blank" rel="noopener">原文 ↗</a>
+        <a href="https://scholar.google.com/scholar?q=An%20AI-powered%20Bayesian%20Generative%20Modeling%20Approach%20for%20Causal%20Inference%20in%20Observational%20Studies" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add 10.1080/01621459.2026.2654227" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add 10.1080/01621459.2026.2654227</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="6" data-diseases="" data-text="semflowrag: directed semantic flow from abstraction to evidence for complex reasoning  houyuan qin rong wu qinyuan qin botian shi jingjing qu yang sun pinlong cai 该论文针对基于知识图谱的检索增强生成中，检索概率流易陷入高抽象度概念节点（概率黑洞）导致语义漂移的问题，提出semflowrag框架。该方法将平面检索空间重构为语料自适应的语义梯度有向图，通过嵌入方差量化实体抽象度，并设计抽象度引导的pagerank算法实现从抽象到具体证据的逐层收敛。实验表明，该方法在复杂问答数据集上有效缓解了概率黑洞问题，提升了检索与推理性能。 ">
+  <div class="head">
+    <div class="badge mid">6</div>
+    <div>
+      <h3>SemFlowRAG: Directed Semantic Flow from Abstraction to Evidence for Complex Reasoning</h3>
+      <p class="authors">Houyuan Qin, Rong Wu, Qinyuan Qin, Botian Shi et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文针对基于知识图谱的检索增强生成中，检索概率流易陷入高抽象度概念节点（概率黑洞）导致语义漂移的问题，提出SemFlowRAG框架。该方法将平面检索空间重构为语料自适应的语义梯度有向图，通过嵌入方差量化实体抽象度，并设计抽象度引导的PageRank算法实现从抽象到具体证据的逐层收敛。实验表明，该方法在复杂问答数据集上有效缓解了概率黑洞问题，提升了检索与推理性能。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.28447v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.28447v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=SemFlowRAG%3A%20Directed%20Semantic%20Flow%20from%20Abstraction%20to%20Evidence%20for%20Complex%20Reasoning" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.28447v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.28447v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="6" data-diseases="" data-text="retisem: generalising causal models for fragmented biomedical data  inam ullah imran razzak shoaib jameel 该论文提出retisem框架，利用领域约束的结构方程模型从碎片化生物医学数据中恢复因果图并进行中介分析。方法将变量组织为生物学信息块，施加禁止边约束，分解路径效应。在合成基准和真实数据（nhanes与视网膜变量）上验证，表明该方法在有限资源下能有效测试结构化因果假设，但视网膜变量主要表现为下游生物标志物。 ">
+  <div class="head">
+    <div class="badge mid">6</div>
+    <div>
+      <h3>RetiSEM: Generalising Causal Models for Fragmented Biomedical Data</h3>
+      <p class="authors">Inam Ullah, Imran Razzak, Shoaib Jameel</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出RetiSEM框架，利用领域约束的结构方程模型从碎片化生物医学数据中恢复因果图并进行中介分析。方法将变量组织为生物学信息块，施加禁止边约束，分解路径效应。在合成基准和真实数据（NHANES与视网膜变量）上验证，表明该方法在有限资源下能有效测试结构化因果假设，但视网膜变量主要表现为下游生物标志物。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.24488v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.24488v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=RetiSEM%3A%20Generalising%20Causal%20Models%20for%20Fragmented%20Biomedical%20Data" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.24488v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.24488v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="6" data-diseases="" data-text="a survey on federated causal discovery and inference  xianjie guo yuwei wang guodu xiang xiaoli tang kui yu han yu qiang yang 该综述系统梳理了联邦因果发现与推断领域的方法，通过多维分类法（方法论范式、联邦拓扑、结构范围）组织现有工作，并探讨了时间动态、数据异质性、缺失数据等实际问题。论文将联邦因果发现与推断视为统一推理流程的互补阶段，强调前者为后者提供有效效应估计所需的结构知识。最后指出了隐私、通信效率、理论保证等方面的开放挑战。 ">
+  <div class="head">
+    <div class="badge mid">6</div>
+    <div>
+      <h3>A Survey on Federated Causal Discovery and Inference</h3>
+      <p class="authors">Xianjie Guo, Yuwei Wang, Guodu Xiang, Xiaoli Tang et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该综述系统梳理了联邦因果发现与推断领域的方法，通过多维分类法（方法论范式、联邦拓扑、结构范围）组织现有工作，并探讨了时间动态、数据异质性、缺失数据等实际问题。论文将联邦因果发现与推断视为统一推理流程的互补阶段，强调前者为后者提供有效效应估计所需的结构知识。最后指出了隐私、通信效率、理论保证等方面的开放挑战。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.23741v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.23741v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=A%20Survey%20on%20Federated%20Causal%20Discovery%20and%20Inference" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.23741v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.23741v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="6" data-diseases="" data-text="on the use of auxiliary variables in multiple imputation when estimating the average causal effect with missing data  jiaxin zhang s. ghazaleh dashti john b. carlin katherine j. lee margarita moreno-betancur 该论文探讨在缺失数据情况下，使用多重插补估计平均因果效应时辅助变量的作用。通过缺失有向无环图描述缺失机制，推导因果效应的可恢复性条件，并基于模拟研究比较不同插补策略与完整病例分析的效果。主要结论是区分中介与非中介辅助变量、采用兼容且灵活的插补方法对避免偏倚至关重要。 ">
+  <div class="head">
+    <div class="badge mid">6</div>
+    <div>
+      <h3>On the use of auxiliary variables in multiple imputation when estimating the average causal effect with missing data</h3>
+      <p class="authors">Jiaxin Zhang, S. Ghazaleh Dashti, John B. Carlin, Katherine J. Lee et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文探讨在缺失数据情况下，使用多重插补估计平均因果效应时辅助变量的作用。通过缺失有向无环图描述缺失机制，推导因果效应的可恢复性条件，并基于模拟研究比较不同插补策略与完整病例分析的效果。主要结论是区分中介与非中介辅助变量、采用兼容且灵活的插补方法对避免偏倚至关重要。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.22016v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.22016v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=On%20the%20use%20of%20auxiliary%20variables%20in%20multiple%20imputation%20when%20estimating%20the%20average%20causal%20effect%20with%20missing%20data" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.22016v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.22016v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="6" data-diseases="" data-text="a framework for directed acyclic hypergraph learning  zhiyuan dong carlos mundo-levano wei qian daniel lau gonzalo r. arce 该论文提出一种从观测数据学习有向无环超图（dahg）的框架，以捕捉成对因果模型无法表示的联合父节点影响。方法包括广义线性结构方程模型（含乘法交互项）、基于张量t-积的加权邻接张量表示及其无环性刻画，以及通过傅里叶分解导出的可微无环约束，并采用增广拉格朗日方法进行最小二乘学习。主要贡献在于将因果结构学习从成对关系扩展到超边关系，为复杂因果机制建模提供了新途径。 ">
+  <div class="head">
+    <div class="badge mid">6</div>
+    <div>
+      <h3>A Framework for Directed Acyclic Hypergraph Learning</h3>
+      <p class="authors">Zhiyuan Dong, Carlos Mundo-Levano, Wei Qian, Daniel Lau et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出一种从观测数据学习有向无环超图（DAHG）的框架，以捕捉成对因果模型无法表示的联合父节点影响。方法包括广义线性结构方程模型（含乘法交互项）、基于张量t-积的加权邻接张量表示及其无环性刻画，以及通过傅里叶分解导出的可微无环约束，并采用增广拉格朗日方法进行最小二乘学习。主要贡献在于将因果结构学习从成对关系扩展到超边关系，为复杂因果机制建模提供了新途径。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.21668v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.21668v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=A%20Framework%20for%20Directed%20Acyclic%20Hypergraph%20Learning" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.21668v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.21668v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="6" data-diseases="" data-text="bioinsight: multi-agent orchestration for interactive biomedical knowledge discovery  jieyi wang bingxuan li nanyi jiang desong meng zirui fan yuxin guo jiayu liu kunlun zhu eddie yang xiusi chen pan lu bingxin zhao 该论文提出bioinsight，一个多智能体系统，用于将静态生物医学报告生成转变为交互式证据中心界面。系统通过分解证据检索与机制推理、标准化引用，并利用结构化证据生成交互式仪表盘，以支持研究者检查证据、评估不确定性和比较机制。在标准化生物医学问答、蛋白质功能推理和端到端证据合成任务上，bioinsight取得了最佳性能，表明生物医学ai系统应向保留溯源、交互式的证据制品发展。 ">
+  <div class="head">
+    <div class="badge mid">6</div>
+    <div>
+      <h3>BioInsight: Multi-Agent Orchestration for Interactive Biomedical Knowledge Discovery</h3>
+      <p class="authors">Jieyi Wang, Bingxuan Li, Nanyi Jiang, Desong Meng et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出BioInsight，一个多智能体系统，用于将静态生物医学报告生成转变为交互式证据中心界面。系统通过分解证据检索与机制推理、标准化引用，并利用结构化证据生成交互式仪表盘，以支持研究者检查证据、评估不确定性和比较机制。在标准化生物医学问答、蛋白质功能推理和端到端证据合成任务上，BioInsight取得了最佳性能，表明生物医学AI系统应向保留溯源、交互式的证据制品发展。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.20997v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.20997v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=BioInsight%3A%20Multi-Agent%20Orchestration%20for%20Interactive%20Biomedical%20Knowledge%20Discovery" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.20997v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.20997v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="6" data-diseases="" data-text="beyond reward engineering: a data recipe for long-context reinforcement learning  xiaoyue xu sikui zhang xiaorong wang xu han chaojun xiao 该论文从数据视角出发，提出一种包含检索、多证据合成与推理三类任务的数据配方，结合基于结果的grpo强化学习设置，显著提升了大语言模型在长上下文推理基准上的表现。实验在多个模型上验证了平均+3.2至+7.2分的提升，并展示了向智能体任务的迁移能力。研究强调数据质量而非奖励工程，但未涉及因果结构发现或证据整合方法学。 ">
+  <div class="head">
+    <div class="badge mid">6</div>
+    <div>
+      <h3>Beyond Reward Engineering: A Data Recipe for Long-Context Reinforcement Learning</h3>
+      <p class="authors">Xiaoyue Xu, Sikui Zhang, Xiaorong Wang, Xu Han et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文从数据视角出发，提出一种包含检索、多证据合成与推理三类任务的数据配方，结合基于结果的GRPO强化学习设置，显著提升了大语言模型在长上下文推理基准上的表现。实验在多个模型上验证了平均+3.2至+7.2分的提升，并展示了向智能体任务的迁移能力。研究强调数据质量而非奖励工程，但未涉及因果结构发现或证据整合方法学。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.18831v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.18831v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Beyond%20Reward%20Engineering%3A%20A%20Data%20Recipe%20for%20Long-Context%20Reinforcement%20Learning" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.18831v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.18831v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="6" data-diseases="" data-text="computational identifiability  lucius e. j. bynum rajesh ranganath kyunghyun cho 该论文提出“计算可识别性”框架，将传统理论可识别性扩展为有限计算搜索过程，在给定误差容限内寻找经验估计量。通过实验展示了该方法在小样本、模糊图准则、混合观察-干预数据及反事实场景下的识别能力，为实际因果推断提供了更精细的识别条件判断工具。 ">
+  <div class="head">
+    <div class="badge mid">6</div>
+    <div>
+      <h3>Computational Identifiability</h3>
+      <p class="authors">Lucius E. J. Bynum, Rajesh Ranganath, Kyunghyun Cho</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出“计算可识别性”框架，将传统理论可识别性扩展为有限计算搜索过程，在给定误差容限内寻找经验估计量。通过实验展示了该方法在小样本、模糊图准则、混合观察-干预数据及反事实场景下的识别能力，为实际因果推断提供了更精细的识别条件判断工具。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.19361v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.19361v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Computational%20Identifiability" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.19361v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.19361v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="6" data-diseases="" data-text="towards personalised intervention: a causal-dynamical framework to determine psychological treatment trajectories  lourens waldorp titus mürtz anita jansen jonas haslbeck 该论文针对心理治疗中个体化干预决策的偏差问题，提出一个因果动态框架：首先从密集纵向患者数据中构建因果图并估计因果效应，然后基于因果关系模拟新的时间序列，最后通过比较不同干预策略的模拟结果，为个体患者确定最有效的治疗焦点。该方法旨在减少临床决策中的偏差，提升治疗效果，但尚未在真实数据中验证其有效性。 ">
+  <div class="head">
+    <div class="badge mid">6</div>
+    <div>
+      <h3>Towards personalised intervention: A causal-dynamical framework to determine psychological treatment trajectories</h3>
+      <p class="authors">Lourens Waldorp, Titus Mürtz, Anita Jansen, Jonas Haslbeck</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文针对心理治疗中个体化干预决策的偏差问题，提出一个因果动态框架：首先从密集纵向患者数据中构建因果图并估计因果效应，然后基于因果关系模拟新的时间序列，最后通过比较不同干预策略的模拟结果，为个体患者确定最有效的治疗焦点。该方法旨在减少临床决策中的偏差，提升治疗效果，但尚未在真实数据中验证其有效性。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.09283v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.09283v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Towards%20personalised%20intervention%3A%20A%20causal-dynamical%20framework%20to%20determine%20psychological%20treatment%20trajectories" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.09283v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.09283v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="6" data-diseases="" data-text="trio: learning time-series forecasting with temporal-spatial-sample attention and structural causal priors  tao chen yexu zhou zhi gong hengwei he hongda li zhewei chen dongjing wang xin zhang decheng liu chunlei peng zheng chen wenyue ding 该论文提出trio模型，通过时间-空间-样本注意力机制处理多变量时间序列预测，并引入时间序列结构因果模型（ts-scm）生成合成任务以提供结构先验。实验表明该架构在合成、工业及公开基准上提升了预测性能，零样本实验提示ts-scm先验有潜在价值，但通用pfn式时间序列预测仍是开放问题。 ">
+  <div class="head">
+    <div class="badge mid">6</div>
+    <div>
+      <h3>Trio: Learning Time-Series Forecasting with Temporal-Spatial-Sample Attention and Structural Causal Priors</h3>
+      <p class="authors">Tao Chen, Yexu Zhou, Zhi Gong, Hengwei He et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出Trio模型，通过时间-空间-样本注意力机制处理多变量时间序列预测，并引入时间序列结构因果模型（TS-SCM）生成合成任务以提供结构先验。实验表明该架构在合成、工业及公开基准上提升了预测性能，零样本实验提示TS-SCM先验有潜在价值，但通用PFN式时间序列预测仍是开放问题。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.07291v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.07291v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Trio%3A%20Learning%20Time-Series%20Forecasting%20with%20Temporal-Spatial-Sample%20Attention%20and%20Structural%20Causal%20Priors" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.07291v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.07291v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="6" data-diseases="" data-text="causshield: sample reconstruction-resilient vertical fl via causal representation learning  yongqi jiang yansong gao siguang chen anmin fu 该论文提出causshield，一种基于因果表示学习的纵向联邦学习隐私保护方法。通过将共享表示分解为任务相关（因果）与任务无关（非因果）两部分，并设计无监督优化目标，在保护隐私的同时保持模型效用。实验表明，该方法在隐私保护、模型效用和计算效率上均优于现有防御方法。 ">
+  <div class="head">
+    <div class="badge mid">6</div>
+    <div>
+      <h3>CausShield: Sample Reconstruction-Resilient Vertical FL via Causal Representation Learning</h3>
+      <p class="authors">Yongqi Jiang, Yansong Gao, Siguang Chen, Anmin Fu</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出CausShield，一种基于因果表示学习的纵向联邦学习隐私保护方法。通过将共享表示分解为任务相关（因果）与任务无关（非因果）两部分，并设计无监督优化目标，在保护隐私的同时保持模型效用。实验表明，该方法在隐私保护、模型效用和计算效率上均优于现有防御方法。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.08027v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.08027v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=CausShield%3A%20Sample%20Reconstruction-Resilient%20Vertical%20FL%20via%20Causal%20Representation%20Learning" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.08027v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.08027v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="6" data-diseases="" data-text="causal scaffolding for physical reasoning: a benchmark for causally-informed physical world understanding in vlms  tianyi tang zhuoyi lin zeyu feng tianyi ma yew-soon ong ivor tsang haiyan yin 该论文提出causalphys基准，包含3000余个视频/图像问题，每个问题配有专家标注的因果图，用于评估视觉语言模型（vlm）的因果物理推理能力。作者进一步提出因果图引导的评估指标和因果理性微调方法（crft），实验表明该方法能提升vlm的推理准确性与可解释性。主要结论是当前vlm在因果依赖关系捕捉上存在系统性缺陷，而因果结构对齐的微调可有效缓解该问题。 ">
+  <div class="head">
+    <div class="badge mid">6</div>
+    <div>
+      <h3>Causal Scaffolding for Physical Reasoning: A Benchmark for Causally-Informed Physical World Understanding in VLMs</h3>
+      <p class="authors">Tianyi Tang, Zhuoyi Lin, Zeyu Feng, Tianyi Ma et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出CausalPhys基准，包含3000余个视频/图像问题，每个问题配有专家标注的因果图，用于评估视觉语言模型（VLM）的因果物理推理能力。作者进一步提出因果图引导的评估指标和因果理性微调方法（CRFT），实验表明该方法能提升VLM的推理准确性与可解释性。主要结论是当前VLM在因果依赖关系捕捉上存在系统性缺陷，而因果结构对齐的微调可有效缓解该问题。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.05966v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.05966v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Causal%20Scaffolding%20for%20Physical%20Reasoning%3A%20A%20Benchmark%20for%20Causally-Informed%20Physical%20World%20Understanding%20in%20VLMs" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.05966v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.05966v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="6" data-diseases="" data-text="causal longitudinal prior-fitted networks for counterfactual outcome prediction  amirhossein zare amirhessam zare herlock rahimi reza salarikia mohammad kashkooli 该论文提出causallongpfn，一种基于先验拟合网络的零样本反事实结果预测方法，用于纵向治疗决策中的时变混杂和异质性处理。模型通过预训练于合成结构因果模型生成的时序数据，在测试时无需梯度更新即可预测未来结局。在癌症、hiv、华法林及mimic-iii数据集上，该方法与领域特定训练的基线模型表现相当，展示了合成因果预训练在零样本纵向预测中的潜力。 ">
+  <div class="head">
+    <div class="badge mid">6</div>
+    <div>
+      <h3>Causal Longitudinal Prior-Fitted Networks for Counterfactual Outcome Prediction</h3>
+      <p class="authors">Amirhossein Zare, Amirhessam Zare, Herlock Rahimi, Reza Salarikia et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出CausalLongPFN，一种基于先验拟合网络的零样本反事实结果预测方法，用于纵向治疗决策中的时变混杂和异质性处理。模型通过预训练于合成结构因果模型生成的时序数据，在测试时无需梯度更新即可预测未来结局。在癌症、HIV、华法林及MIMIC-III数据集上，该方法与领域特定训练的基线模型表现相当，展示了合成因果预训练在零样本纵向预测中的潜力。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.05797v2" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.05797v2" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Causal%20Longitudinal%20Prior-Fitted%20Networks%20for%20Counterfactual%20Outcome%20Prediction" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.05797v2" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.05797v2</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="6" data-diseases="" data-text="causal modeling of selection in evolution  haoyue dai zeyu tang peter spirtes kun zhang 该论文区分了静态选择与进化选择两种因果选择形式，指出现有方法将二者混为一谈导致进化场景下的错误发现。作者提出一种新的因果模型专门刻画进化选择，并开发了从单/多环境或世代数据中识别该模型的完备程序。实验表明该方法能有效从数据中揭示进化背后的因果机制。 ">
+  <div class="head">
+    <div class="badge mid">6</div>
+    <div>
+      <h3>Causal Modeling of Selection in Evolution</h3>
+      <p class="authors">Haoyue Dai, Zeyu Tang, Peter Spirtes, Kun Zhang</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文区分了静态选择与进化选择两种因果选择形式，指出现有方法将二者混为一谈导致进化场景下的错误发现。作者提出一种新的因果模型专门刻画进化选择，并开发了从单/多环境或世代数据中识别该模型的完备程序。实验表明该方法能有效从数据中揭示进化背后的因果机制。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.05689v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.05689v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Causal%20Modeling%20of%20Selection%20in%20Evolution" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.05689v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.05689v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="6" data-diseases="" data-text="stablerca: robust graph-agnostic mechanism-level root cause analysis  xiaoyu lin nicholas tagliapietra kehan li lavdim halilaj juergen luettin 该论文提出stablerca框架，用于在无需全局因果图的情况下进行根因分析。方法通过估计局部马尔可夫边界并检测其中的条件分布偏移，利用独立因果机制原理识别干预目标。实验表明该方法对图误设鲁棒，适用于多干预目标和大规模系统，在合成与真实数据集上表现可靠。 ">
+  <div class="head">
+    <div class="badge mid">6</div>
+    <div>
+      <h3>StableRCA: Robust Graph-Agnostic Mechanism-Level Root Cause Analysis</h3>
+      <p class="authors">Xiaoyu Lin, Nicholas Tagliapietra, Kehan Li, Lavdim Halilaj et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出StableRCA框架，用于在无需全局因果图的情况下进行根因分析。方法通过估计局部马尔可夫边界并检测其中的条件分布偏移，利用独立因果机制原理识别干预目标。实验表明该方法对图误设鲁棒，适用于多干预目标和大规模系统，在合成与真实数据集上表现可靠。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.05636v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.05636v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=StableRCA%3A%20Robust%20Graph-Agnostic%20Mechanism-Level%20Root%20Cause%20Analysis" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.05636v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.05636v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="6" data-diseases="" data-text="code-on-graph: iterative programmatic reasoning via large language models on knowledge graphs  weiwei ding zixuan li long bai zhuo chen kun su fei wang xiaolong jin jin zhang jiafeng guo xueqi cheng 该论文提出code-on-graph（cog）框架，旨在解决现有llm与知识图谱集成中预定义操作符灵活性不足和大规模事实知识注入不可扩展的问题。cog将知识图谱模式表示为python类，并生成可执行代码进行推理，避免直接注入大量事实知识。在webqsp、cwq和grailqa数据集上，cog相比先前最优模型性能提升高达10.5%。 ">
+  <div class="head">
+    <div class="badge mid">6</div>
+    <div>
+      <h3>Code-on-Graph: Iterative Programmatic Reasoning via Large Language Models on Knowledge Graphs <span class="ai-tag">AI</span></h3>
+      <p class="authors">Weiwei Ding, Zixuan Li, Long Bai, Zhuo Chen et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出Code-on-Graph（CoG）框架，旨在解决现有LLM与知识图谱集成中预定义操作符灵活性不足和大规模事实知识注入不可扩展的问题。CoG将知识图谱模式表示为Python类，并生成可执行代码进行推理，避免直接注入大量事实知识。在WebQSP、CWQ和GrailQA数据集上，CoG相比先前最优模型性能提升高达10.5%。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.03705v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.03705v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Code-on-Graph%3A%20Iterative%20Programmatic%20Reasoning%20via%20Large%20Language%20Models%20on%20Knowledge%20Graphs" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.03705v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.03705v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="6" data-diseases="" data-text="do real-world datasets contain natural experiments? an empirical study using causal feature selection  gautam gare john galeotti michael mozer deva ramanan nan rosemary ke 该论文探讨真实世界数据集中是否存在自然实验，并提出通过因果发现恢复因果图、结合因果特征选择来检测自然实验的方法。在合成数据上验证假设后，对多个真实数据集进行系统评估，结果表明真实数据中确实存在自然实验，利用这些自然实验可提升模型性能。研究为自然实验的自动检测提供了初步探索。 ">
+  <div class="head">
+    <div class="badge mid">6</div>
+    <div>
+      <h3>Do Real-World Datasets Contain Natural Experiments? An Empirical Study Using Causal Feature Selection</h3>
+      <p class="authors">Gautam Gare, John Galeotti, Michael Mozer, Deva Ramanan et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文探讨真实世界数据集中是否存在自然实验，并提出通过因果发现恢复因果图、结合因果特征选择来检测自然实验的方法。在合成数据上验证假设后，对多个真实数据集进行系统评估，结果表明真实数据中确实存在自然实验，利用这些自然实验可提升模型性能。研究为自然实验的自动检测提供了初步探索。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.03251v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.03251v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Do%20Real-World%20Datasets%20Contain%20Natural%20Experiments%3F%20An%20Empirical%20Study%20Using%20Causal%20Feature%20Selection" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.03251v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.03251v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="6" data-diseases="" data-text="identifiable markov switching models with instantaneous effects and exponential families  roel hulsman carles balsells-rodas sara magliacane 该论文针对非平稳时间序列中隐状态（regime）及其依赖的因果结构可识别性问题，提出在指数族噪声、瞬时效应和非线性滞后效应下，隐状态与因果结构可识别的理论条件。在此基础上开发了flowmsm框架，可与任意平稳因果发现方法结合，恢复不同隐状态下的因果结构。实验在合成数据和金融经济数据集上验证了方法的有效性。 ">
+  <div class="head">
+    <div class="badge mid">6</div>
+    <div>
+      <h3>Identifiable Markov Switching Models with Instantaneous Effects and Exponential Families</h3>
+      <p class="authors">Roel Hulsman, Carles Balsells-Rodas, Sara Magliacane</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文针对非平稳时间序列中隐状态（regime）及其依赖的因果结构可识别性问题，提出在指数族噪声、瞬时效应和非线性滞后效应下，隐状态与因果结构可识别的理论条件。在此基础上开发了FlowMSM框架，可与任意平稳因果发现方法结合，恢复不同隐状态下的因果结构。实验在合成数据和金融经济数据集上验证了方法的有效性。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.02231v2" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.02231v2" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Identifiable%20Markov%20Switching%20Models%20with%20Instantaneous%20Effects%20and%20Exponential%20Families" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.02231v2" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.02231v2</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="5" data-diseases="" data-text="causal inference in the presence of missing outcome and treatment variables: triply robust estimator and sensitivity analysis  hyunman sim won kyung lee christoph lange woojoo lee 该论文针对观察性研究中结局或治疗变量部分缺失时的因果效应估计问题，提出了一种三重稳健估计器，该估计器结合了结局、治疗和缺失数据模型，只要其中两个模型正确设定即可保证一致性。此外，论文引入了一种新的敏感性分析框架，用于评估未测量混杂对因果效应估计的潜在影响，并通过实际数据应用展示了其实用价值。 ">
+  <div class="head">
+    <div class="badge low">5</div>
+    <div>
+      <h3>Causal Inference in the Presence of Missing Outcome and Treatment Variables: Triply Robust Estimator and Sensitivity Analysis</h3>
+      <p class="authors">Hyunman Sim, Won Kyung Lee, Christoph Lange, Woojoo Lee</p>
+      <div class="jmetrics">
+<span class="jbadge jb-venue">Statistics in Medicine</span><span class="jbadge jb-cas z3">中科院3区</span><span class="jbadge jb-jcr">JCR Q3</span><span class="jbadge jb-if">IF 2.1</span></div>
+      
+<p class="sum">该论文针对观察性研究中结局或治疗变量部分缺失时的因果效应估计问题，提出了一种三重稳健估计器，该估计器结合了结局、治疗和缺失数据模型，只要其中两个模型正确设定即可保证一致性。此外，论文引入了一种新的敏感性分析框架，用于评估未测量混杂对因果效应估计的潜在影响，并通过实际数据应用展示了其实用价值。</p>      <p class="links">
+        <a href="https://doi.org/10.1002/sim.70630" target="_blank" rel="noopener">原文 ↗</a>
+        <a href="https://scholar.google.com/scholar?q=Causal%20Inference%20in%20the%20Presence%20of%20Missing%20Outcome%20and%20Treatment%20Variables%3A%20Triply%20Robust%20Estimator%20and%20Sensitivity%20Analysis" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add 10.1002/sim.70630" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add 10.1002/sim.70630</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="5" data-diseases="" data-text="theory for identification and inference with synthetic controls: a proximal causal inference framework  xu shi kendrick qijun li myeonghun yu wang miao arun kumar kuchibhotla mengtong hu eric tchetgen tchetgen 该论文提出一个基于近端因果推断框架的理论，用于合成控制方法的识别与推断。通过引入潜在变量和代理变量，解决了传统合成控制中未观测混杂的问题，并给出了识别条件和推断策略。主要结论是，在满足近端因果假设下，合成控制估计量具有一致性和渐近正态性，为观察性研究中的因果效应估计提供了更稳健的理论基础。 ">
+  <div class="head">
+    <div class="badge low">5</div>
+    <div>
+      <h3>Theory for Identification and Inference with Synthetic Controls: A Proximal Causal Inference Framework</h3>
+      <p class="authors">Xu Shi, Kendrick Qijun Li, Myeonghun Yu, Wang Miao et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-venue">Journal of the American Statistical Association</span><span class="jbadge jb-cas z2">中科院2区 Top</span><span class="jbadge jb-jcr">JCR Q1</span><span class="jbadge jb-if">IF 4</span></div>
+      
+<p class="sum">该论文提出一个基于近端因果推断框架的理论，用于合成控制方法的识别与推断。通过引入潜在变量和代理变量，解决了传统合成控制中未观测混杂的问题，并给出了识别条件和推断策略。主要结论是，在满足近端因果假设下，合成控制估计量具有一致性和渐近正态性，为观察性研究中的因果效应估计提供了更稳健的理论基础。</p>      <p class="links">
+        <a href="https://doi.org/10.1080/01621459.2026.2639734" target="_blank" rel="noopener">原文 ↗</a>
+        <a href="https://scholar.google.com/scholar?q=Theory%20for%20Identification%20and%20Inference%20with%20Synthetic%20Controls%3A%20A%20Proximal%20Causal%20Inference%20Framework" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add 10.1080/01621459.2026.2639734" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add 10.1080/01621459.2026.2639734</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="5" data-diseases="" data-text="beyond triplet plausibility: relation set completion in knowledge graphs  zihao zheng borui cai yao zhao xin han mengqi ji 该论文指出传统知识图谱补全（kgc）仅关注三元组层面的缺失，忽略了实体与关系兼容性信息的缺失，因此提出关系集补全任务（rsc）以推理实体缺失的语义兼容关系。作者设计了关系集嵌入模型（relsete），通过建模实体已有关系的潜在模式来推断缺失关系，并在标准基准数据集上验证了模型的有效性。 ">
+  <div class="head">
+    <div class="badge low">5</div>
+    <div>
+      <h3>Beyond Triplet Plausibility: Relation Set Completion in Knowledge Graphs <span class="ai-tag">AI</span></h3>
+      <p class="authors">Zihao Zheng, Borui Cai, Yao Zhao, Xin Han et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文指出传统知识图谱补全（KGC）仅关注三元组层面的缺失，忽略了实体与关系兼容性信息的缺失，因此提出关系集补全任务（RSC）以推理实体缺失的语义兼容关系。作者设计了关系集嵌入模型（RelSetE），通过建模实体已有关系的潜在模式来推断缺失关系，并在标准基准数据集上验证了模型的有效性。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.29860v3" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.29860v3" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Beyond%20Triplet%20Plausibility%3A%20Relation%20Set%20Completion%20in%20Knowledge%20Graphs" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.29860v3" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.29860v3</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="5" data-diseases="" data-text="llm-guided planning for multi-hop reasoning over multimodal nuclear regulatory documents  mingyu jeon bokyeong kim suwan cho jae young suh yonggyun yu 该论文提出一种基于大语言模型的规划方法，用于在核监管文档中进行多跳推理。系统通过浏览、阅读和搜索工具操作文档树，并维护动态知识图谱作为状态，在200个问题的基准测试中达到81.5%的准确率。主要结论是规划能力是性能的关键因素，而边推理虽增加成本但未提升准确率，仅作为可追溯性模块使用。 ">
+  <div class="head">
+    <div class="badge low">5</div>
+    <div>
+      <h3>LLM-Guided Planning for Multi-hop Reasoning over Multimodal Nuclear Regulatory Documents <span class="ai-tag">AI</span></h3>
+      <p class="authors">Mingyu Jeon, Bokyeong Kim, Suwan Cho, Jae Young Suh et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出一种基于大语言模型的规划方法，用于在核监管文档中进行多跳推理。系统通过浏览、阅读和搜索工具操作文档树，并维护动态知识图谱作为状态，在200个问题的基准测试中达到81.5%的准确率。主要结论是规划能力是性能的关键因素，而边推理虽增加成本但未提升准确率，仅作为可追溯性模块使用。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.29399v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.29399v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=LLM-Guided%20Planning%20for%20Multi-hop%20Reasoning%20over%20Multimodal%20Nuclear%20Regulatory%20Documents" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.29399v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.29399v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="5" data-diseases="" data-text="multivariable mendelian randomization with weak instruments: a comparison of bayesian and frequentist methods  andrew j. grant ashish patel stephen burgess 该论文探讨多变量孟德尔随机化中弱工具变量问题，指出在多个暴露条件下难以保证条件强工具变量。提出一种贝叶斯框架方法mvmr-pony以缓解弱工具变量偏倚，并与现有频率学派方法进行模拟比较。结果表明，在相关遗传效应、测量误差和中介效应导致的弱工具变量场景下，mvmr-pony在偏倚、覆盖率、i类错误率和统计功效方面均优于频率学派方法。 ">
+  <div class="head">
+    <div class="badge low">5</div>
+    <div>
+      <h3>Multivariable Mendelian randomization with weak instruments: a comparison of Bayesian and frequentist methods</h3>
+      <p class="authors">Andrew J. Grant, Ashish Patel, Stephen Burgess</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文探讨多变量孟德尔随机化中弱工具变量问题，指出在多个暴露条件下难以保证条件强工具变量。提出一种贝叶斯框架方法MVMR-Pony以缓解弱工具变量偏倚，并与现有频率学派方法进行模拟比较。结果表明，在相关遗传效应、测量误差和中介效应导致的弱工具变量场景下，MVMR-Pony在偏倚、覆盖率、I类错误率和统计功效方面均优于频率学派方法。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.26638v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.26638v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Multivariable%20Mendelian%20randomization%20with%20weak%20instruments%3A%20a%20comparison%20of%20Bayesian%20and%20frequentist%20methods" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.26638v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.26638v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="5" data-diseases="" data-text="an approach for a supporting multi-llm system for automated certification based on the german it-grundschutz  lea roxanne muth marian margraf 该论文提出一种基于多大型语言模型与混合检索增强生成的半自动化bsi it-grundschutz认证系统，旨在应对nis2指令带来的安全认证需求增长与专业人员短缺问题。系统结合llm与知识图谱支持保护需求评估、建模、检查、措施整合等认证阶段。主要结论是该方法可提升效率、降低成本并保障安全概念质量。 ">
+  <div class="head">
+    <div class="badge low">5</div>
+    <div>
+      <h3>An Approach for a Supporting Multi-LLM System for Automated Certification Based on the German IT-Grundschutz <span class="ai-tag">AI</span></h3>
+      <p class="authors">Lea Roxanne Muth, Marian Margraf</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出一种基于多大型语言模型与混合检索增强生成的半自动化BSI IT-Grundschutz认证系统，旨在应对NIS2指令带来的安全认证需求增长与专业人员短缺问题。系统结合LLM与知识图谱支持保护需求评估、建模、检查、措施整合等认证阶段。主要结论是该方法可提升效率、降低成本并保障安全概念质量。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.25608v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.25608v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=An%20Approach%20for%20a%20Supporting%20Multi-LLM%20System%20for%20Automated%20Certification%20Based%20on%20the%20German%20IT-Grundschutz" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.25608v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.25608v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="5" data-diseases="" data-text="predicate importance estimation and decoupled rationale-score distillation for entity alignment  keunha kim yoonjin jang hyeon-gu lee sihyung kim youngjoong ko 该论文针对知识图谱集成中的实体对齐问题，提出谓词重要性估计（pie）与解耦理由-分数蒸馏（drsd）两个模块。pie通过去除主语信息的三元组编码与可学习权重构建谓词感知的实体嵌入，drsd利用教师llm生成伪答案训练小型语言模型，并解耦置信度估计与标签一致理由。实验表明该方法提升了实体对齐分类性能，并通过置信度与决策的差异实现不确定性检测。 ">
+  <div class="head">
+    <div class="badge low">5</div>
+    <div>
+      <h3>Predicate Importance Estimation and Decoupled Rationale-Score Distillation for Entity Alignment <span class="ai-tag">AI</span></h3>
+      <p class="authors">Keunha Kim, Yoonjin Jang, Hyeon-gu Lee, Sihyung Kim et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文针对知识图谱集成中的实体对齐问题，提出谓词重要性估计（PIE）与解耦理由-分数蒸馏（DRSD）两个模块。PIE通过去除主语信息的三元组编码与可学习权重构建谓词感知的实体嵌入，DRSD利用教师LLM生成伪答案训练小型语言模型，并解耦置信度估计与标签一致理由。实验表明该方法提升了实体对齐分类性能，并通过置信度与决策的差异实现不确定性检测。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.22992v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.22992v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Predicate%20Importance%20Estimation%20and%20Decoupled%20Rationale-Score%20Distillation%20for%20Entity%20Alignment" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.22992v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.22992v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="5" data-diseases="" data-text="two layers of instability in causal estimation  alexis bellot 该论文从理论层面揭示因果推断中的两类不稳定性：一是数据分布微小变化可能导致因果效应不连续（独立于估计量），二是估计量本身作为结构因果模型空间上多模态分布的汇总统计，也可能产生不连续跳跃。作者提出基于决策理论的估计量分类，指出逆概率加权和回归估计量属于不连续汇总，而显式后验均值和中位数则连续。研究为理解不同估计量的稳定性提供了理论框架。 ">
+  <div class="head">
+    <div class="badge low">5</div>
+    <div>
+      <h3>Two Layers of Instability in Causal Estimation</h3>
+      <p class="authors">Alexis Bellot</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文从理论层面揭示因果推断中的两类不稳定性：一是数据分布微小变化可能导致因果效应不连续（独立于估计量），二是估计量本身作为结构因果模型空间上多模态分布的汇总统计，也可能产生不连续跳跃。作者提出基于决策理论的估计量分类，指出逆概率加权和回归估计量属于不连续汇总，而显式后验均值和中位数则连续。研究为理解不同估计量的稳定性提供了理论框架。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.21185v2" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.21185v2" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Two%20Layers%20of%20Instability%20in%20Causal%20Estimation" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.21185v2" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.21185v2</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="5" data-diseases="" data-text="finerex: fine-tuned ner-re for human smuggling knowledge graphs  elijah feldman dipak meher carlotta domeniconi 该论文提出finerex，一个基于微调大语言模型的命名实体识别与关系抽取流水线，用于从法庭文书中构建人口走私知识图谱。在512个文本块的手动标注数据集上，finerex在实体和关系f1分数上分别比通用基线提升15.50%和31.46%，并减少了知识图谱中的法律噪声和节点重复。研究表明，领域特定微调能显著提升知识图谱构建的质量与效率，但未涉及因果结构发现或证据整合方法。 ">
+  <div class="head">
+    <div class="badge low">5</div>
+    <div>
+      <h3>FineREX: Fine-Tuned NER-RE for Human Smuggling Knowledge Graphs <span class="ai-tag">AI</span></h3>
+      <p class="authors">Elijah Feldman, Dipak Meher, Carlotta Domeniconi</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出FineREX，一个基于微调大语言模型的命名实体识别与关系抽取流水线，用于从法庭文书中构建人口走私知识图谱。在512个文本块的手动标注数据集上，FineREX在实体和关系F1分数上分别比通用基线提升15.50%和31.46%，并减少了知识图谱中的法律噪声和节点重复。研究表明，领域特定微调能显著提升知识图谱构建的质量与效率，但未涉及因果结构发现或证据整合方法。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.19710v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.19710v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=FineREX%3A%20Fine-Tuned%20NER-RE%20for%20Human%20Smuggling%20Knowledge%20Graphs" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.19710v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.19710v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="5" data-diseases="" data-text="tensor-based second-order causal discovery  nathan ouyang kexin wang anna seigal 该论文提出了一种基于张量的二阶因果发现算法（tscd），利用观测数据和干预数据的协方差矩阵构造张量，在线性结构方程模型假设下输出有向无环图及边函数，并扩展至非线性模型。主要结论是该方法在干预次数对数于变量数时具有可识别性，实验表明其鲁棒性强、可扩展至数百变量。 ">
+  <div class="head">
+    <div class="badge low">5</div>
+    <div>
+      <h3>Tensor-based second-order causal discovery</h3>
+      <p class="authors">Nathan Ouyang, Kexin Wang, Anna Seigal</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出了一种基于张量的二阶因果发现算法（TSCD），利用观测数据和干预数据的协方差矩阵构造张量，在线性结构方程模型假设下输出有向无环图及边函数，并扩展至非线性模型。主要结论是该方法在干预次数对数于变量数时具有可识别性，实验表明其鲁棒性强、可扩展至数百变量。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.18074v2" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.18074v2" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Tensor-based%20second-order%20causal%20discovery" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.18074v2" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.18074v2</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="5" data-diseases="" data-text="learnopt: recovering the latent cognitive structure of standardized examinations via knowledge graphs and constrained optimization  joy bose om thomas 该论文提出learnopt方法，利用知识图谱和约束优化从标准化考试历史试题中恢复潜在认知结构，并生成个性化学习计划。方法包括用llm标注试题构建知识图谱、提取五类潜在技能分布，并将学习规划建模为背包变体优化问题。主要结论是neet考试的潜在结构在课程体系内稳定，但随课程改革显著变化，且考试层级比学科和时间更能塑造认知结构。 ">
+  <div class="head">
+    <div class="badge low">5</div>
+    <div>
+      <h3>LearnOpt: Recovering the Latent Cognitive Structure of Standardized Examinations via Knowledge Graphs and Constrained Optimization <span class="ai-tag">AI</span></h3>
+      <p class="authors">Joy Bose, Om Thomas</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出LearnOpt方法，利用知识图谱和约束优化从标准化考试历史试题中恢复潜在认知结构，并生成个性化学习计划。方法包括用LLM标注试题构建知识图谱、提取五类潜在技能分布，并将学习规划建模为背包变体优化问题。主要结论是NEET考试的潜在结构在课程体系内稳定，但随课程改革显著变化，且考试层级比学科和时间更能塑造认知结构。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.15349v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.15349v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=LearnOpt%3A%20Recovering%20the%20Latent%20Cognitive%20Structure%20of%20Standardized%20Examinations%20via%20Knowledge%20Graphs%20and%20Constrained%20Optimization" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.15349v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.15349v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="5" data-diseases="" data-text="constraint-based difference graph discovery in a linear setting  daria bystrova emilie devijver 该论文研究跨环境因果差异图的推断问题，提出一种基于回归系数相等性检验的线性结构因果模型发现方法。引入diff-separation图形准则及其faithfulness假设，并开发ldiffpc算法，通过多环境数据恢复因果差异图。主要贡献在于将回归系数不变性与图形条件关联，扩展了传统d-separation的适用范围。 ">
+  <div class="head">
+    <div class="badge low">5</div>
+    <div>
+      <h3>Constraint-based difference graph discovery in a linear setting</h3>
+      <p class="authors">Daria Bystrova, Emilie Devijver</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文研究跨环境因果差异图的推断问题，提出一种基于回归系数相等性检验的线性结构因果模型发现方法。引入diff-separation图形准则及其faithfulness假设，并开发LDiffPC算法，通过多环境数据恢复因果差异图。主要贡献在于将回归系数不变性与图形条件关联，扩展了传统d-separation的适用范围。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.13947v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.13947v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Constraint-based%20difference%20graph%20discovery%20in%20a%20linear%20setting" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.13947v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.13947v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="5" data-diseases="" data-text="a practical framework for sensitivity analysis in externally controlled trials: an illustration with a bayesian hybrid evidence synthesis case study  xuemin gu kitty guo jane zhang 该论文针对外部对照试验中借用历史数据的敏感性分析缺乏结构化模板的问题，提出了一个三支柱框架，涵盖异质性诊断、源影响、无借用参考、有效样本量、先验敏感性、转折点、替代借用方法和结构模型敏感性等八项模块化分析。该框架方法无关，适用于贝叶斯或频率学派借用，并通过模拟的种族桥接提交案例展示了其可重复性。主要结论是提供了一个适用于监管提交的敏感性分析实用模板。 ">
+  <div class="head">
+    <div class="badge low">5</div>
+    <div>
+      <h3>A Practical Framework for Sensitivity Analysis in Externally Controlled Trials: An Illustration with a Bayesian Hybrid Evidence Synthesis Case Study</h3>
+      <p class="authors">Xuemin Gu, Kitty Guo, Jane Zhang</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文针对外部对照试验中借用历史数据的敏感性分析缺乏结构化模板的问题，提出了一个三支柱框架，涵盖异质性诊断、源影响、无借用参考、有效样本量、先验敏感性、转折点、替代借用方法和结构模型敏感性等八项模块化分析。该框架方法无关，适用于贝叶斯或频率学派借用，并通过模拟的种族桥接提交案例展示了其可重复性。主要结论是提供了一个适用于监管提交的敏感性分析实用模板。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.08642v2" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.08642v2" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=A%20Practical%20Framework%20for%20Sensitivity%20Analysis%20in%20Externally%20Controlled%20Trials%3A%20An%20Illustration%20with%20a%20Bayesian%20Hybrid%20Evidence%20Synthesis%20Case%20Study" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.08642v2" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.08642v2</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="5" data-diseases="" data-text="autoforest: automatically generating forest plots from biomedical studies with end-to-end evidence extraction and synthesis  massimiliano pronesti angelo miculescu mohsin kapdi paul flanagan oisín redmond joao bettencourt-silva gurdeep mannu spiros denaxas rui bebiano da providencia e costa anya belz yufang hou 该论文提出autoforest系统，旨在从生物医学文献中自动生成森林图，解决系统评价中数据提取与元分析流程碎片化的问题。系统利用大语言模型自动识别干预、对照、结局（ico）元素，提取结局数据，执行统计合成并生成森林图。通过用户研究验证了其在加速证据合成和降低元分析门槛方面的有效性。 ">
+  <div class="head">
+    <div class="badge low">5</div>
+    <div>
+      <h3>AutoForest: Automatically Generating Forest Plots from Biomedical Studies with End-to-End Evidence Extraction and Synthesis</h3>
+      <p class="authors">Massimiliano Pronesti, Angelo Miculescu, Mohsin Kapdi, Paul Flanagan et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出AutoForest系统，旨在从生物医学文献中自动生成森林图，解决系统评价中数据提取与元分析流程碎片化的问题。系统利用大语言模型自动识别干预、对照、结局（ICO）元素，提取结局数据，执行统计合成并生成森林图。通过用户研究验证了其在加速证据合成和降低元分析门槛方面的有效性。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.02403v2" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.02403v2" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=AutoForest%3A%20Automatically%20Generating%20Forest%20Plots%20from%20Biomedical%20Studies%20with%20End-to-End%20Evidence%20Extraction%20and%20Synthesis" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.02403v2" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.02403v2</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="5" data-diseases="" data-text="construction of historical knowledge graphs based on bert and graph neural networks  ping li bartlomiej brzozka 该论文提出一种结合bert和图神经网络（gnn）的高层架构，用于从历史文本中自动提取实体和关系，构建结构化知识图谱。实验基于市政记录、议会文件和历史信函等数据集，相比传统规则和深度学习基线，在精确率、召回率和f1分数上表现更优。研究主要贡献在于利用上下文语义表示与关系图学习算法，提升历史知识图谱构建的准确性和完整性。 ">
+  <div class="head">
+    <div class="badge low">5</div>
+    <div>
+      <h3>Construction of Historical Knowledge Graphs Based on BERT and Graph Neural Networks <span class="ai-tag">AI</span></h3>
+      <p class="authors">Ping Li, Bartlomiej Brzozka</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文提出一种结合BERT和图神经网络（GNN）的高层架构，用于从历史文本中自动提取实体和关系，构建结构化知识图谱。实验基于市政记录、议会文件和历史信函等数据集，相比传统规则和深度学习基线，在精确率、召回率和F1分数上表现更优。研究主要贡献在于利用上下文语义表示与关系图学习算法，提升历史知识图谱构建的准确性和完整性。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2606.01747v1" target="_blank" rel="noopener">原文 ↗</a>
+<a href="https://arxiv.org/pdf/2606.01747v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Construction%20of%20Historical%20Knowledge%20Graphs%20Based%20on%20BERT%20and%20Graph%20Neural%20Networks" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2606.01747v1" data-copied="✓ 已复制" aria-label="复制收藏命令"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">收藏： python -m pipeline.add arXiv:2606.01747v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+</div>
+<div class="empty hidden" id="noresult">没找到。</div>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>我的文献集 · Xuanyu Shi</span>
+    <span>每个工作日更新一次 · <a href="https://xuanyshi.github.io/research-desk/zh/feed.xml">RSS</a></span>
+  </div>
+</footer>
+<script src="../../../assets/app.js?v=53362a7aaf"></script></body>
+</html>
