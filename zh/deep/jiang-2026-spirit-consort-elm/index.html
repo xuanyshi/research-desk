@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPIRIT-CONSORT-ELM：评估随机对照试验报告的要素级标注数据集与大语言模型方法 · 精读 · 我的文献集</title>
+<meta name="description" content="自动流程F1为0.822，人工片段可提高至0.893。检索质量是主要改进方向；报告完整性不能替代偏倚风险评价。">
+<meta property="og:title" content="SPIRIT-CONSORT-ELM：评估随机对照试验报告的要素级标注数据集与大语言模型方法 · 精读 · 我的文献集">
+<meta property="og:description" content="自动流程F1为0.822，人工片段可提高至0.893。检索质量是主要改进方向；报告完整性不能替代偏倚风险评价。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="我的文献集">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/zh/deep/jiang-2026-spirit-consort-elm/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/zh/deep/jiang-2026-spirit-consort-elm/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/jiang-2026-spirit-consort-elm/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/jiang-2026-spirit-consort-elm/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/jiang-2026-spirit-consort-elm/">
+<link rel="alternate" type="application/atom+xml" title="我的文献集 · 精读" href="https://xuanyshi.github.io/research-desk/zh/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=a39d90a1b7">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">我的文献集<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">首页</a>
+      <a href="../../library/index.html" class="">文献库</a>
+      <a href="../../deep/index.html" class="on">精读</a>
+      <a href="../../daily/index.html" class="">每日速览</a>
+      <a href="../../log/index.html" class="">历程</a>
+      <a href="../../about/index.html" class="">关于</a>
+      <span class="lang">
+        <a href="../../../zh/deep/jiang-2026-spirit-consort-elm/" class="on">中</a>
+        <a href="../../../en/deep/jiang-2026-spirit-consort-elm/" class="">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">我的精读</div>
+  <h1><span class="title-original" lang="en">SPIRIT-CONSORT-ELM: element-level annotated dataset and large language model approach for assessing randomized controlled trial reporting</span><span class="title-zh" lang="zh-CN">SPIRIT-CONSORT-ELM：评估随机对照试验报告的要素级标注数据集与大语言模型方法</span></h1>
+  <p>Lan Jiang, Xiangji Ying, Andrew W. Brown, Mengfei Lan et al.</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">npj Digital Medicine (2026), Article in Press</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.1038/s41746-026-03318-6" target="_blank" rel="noopener">原文 / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=SPIRIT-CONSORT-ELM%3A%20element-level%20annotated%20dataset%20and%20large%20language%20model%20approach%20for%20assessing%20randomized%20controlled%20trial%20reporting" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p2">大语言模型</span><span class="pill p4">信息抽取</span><span class="pill p1">基准评测</span><span class="pill p3">随机对照试验</span><span class="pill p3">报告规范</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30秒结论</div>
+      <h2 id="overview-title">自动流程F1为0.822，人工片段可提高至0.893。<strong>检索质量是主要改进方向；报告完整性不能替代偏倚风险评价</strong>。</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>研究问题</dt>
+          <dd>把SPIRIT与CONSORT条目拆成具体问题，能否可靠识别<strong>RCT方案和结果论文缺失的报告要素</strong>？</dd>
+        </div>
+        <div>
+          <dt>研究设计</dt>
+          <dd><strong>200篇配对文章的要素级标注与内部测试</strong>；PubMedBERT检索证据后，由大语言模型回答119个结构化问题。</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>证据强度</span>
+          <strong class="evidence-level level-mid">中等；限内部报告要素评估</strong>
+        </div>
+        <dl>
+          <div><dt>计算对象</dt><dd><strong>20组方案—结果配对中，模型对119题的回答与参考标签的一致性</strong>；多选题内部拆分计算，最终按题平均。</dd></div>
+          <div><dt>触发条件</dt><dd>无相关片段或条件不满足时自动赋值；前置答案错误会传播到条件题。<strong>需要分别检查人工作答与自动赋值子集的错误率</strong>，论文未设实际部署通过阈值。</dd></div>
+          <div><dt>对结论的影响</dt><dd>可辅助定位需人工复核的缺失信息；<strong>不能据此判定试验实施质量、低偏倚风险或高证据确定性</strong>。</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">阅读建议</strong>先读Table 4理解问题类型，再看Figure 2和Table 2区分检索与判断误差，最后核对<strong>自动赋值规则、6篇第二评估者实验和2025版覆盖范围</strong>。</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">三个关键数字</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">200篇</div>
+          <h3>100组方案—结果配对</h3>
+          <p><strong>50篇双人标注，150篇单人标注</strong>；测试集为20组配对</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">约一半</div>
+          <h3>由规则自动赋值</h3>
+          <p>约2万个问题实例中，<strong>人工作答与自动赋值各占约一半</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">0.822 → 0.893</div>
+          <h3>自动检索与人工片段的F1</h3>
+          <p><strong>替换证据片段提高7.1个百分点</strong>；最佳示例策略只提高0.8个百分点</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">重点看哪里</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1038/s41746-026-03318-6" target="_blank" rel="noopener">
+            Table 1与Methods · PDF pp. 2、6<small>原文入口</small> ↗
+          </a>
+          <div><h3>还原标注来源</h3><p>区分<strong>9,892次人工作答与9,608个自动标签</strong>；无文本和不适用含义不同。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1038/s41746-026-03318-6" target="_blank" rel="noopener">
+            Table 4 · PDF p. 7<small>原文入口</small> ↗
+          </a>
+          <div><h3>检查要素和条件依赖</h3><p>剂量、频率、疗程分别判断；<strong>前置问题决定后续问题是否适用</strong>。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://www.nature.com/articles/s41746-026-03318-6#Fig2" target="_blank" rel="noopener">
+            Figure 2 · PDF p. 8<small>图表直达</small> ↗
+          </a>
+          <div><h3>拆开检索与问答</h3><p>流程依次连接<strong>证据句、问题、专用说明和结构化选项</strong>。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1038/s41746-026-03318-6" target="_blank" rel="noopener">
+            Tables 2-3 · PDF p. 4<small>原文入口</small> ↗
+          </a>
+          <div><h3>比较改进的实际收益</h3><p>人工片段F1为0.893，最佳示例为0.830；<strong>证据检索改进大于示例增益</strong>。</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1038/s41746-026-03318-6" target="_blank" rel="noopener">
+            Discussion · PDF pp. 4-5<small>原文入口</small> ↗
+          </a>
+          <div><h3>限定人工替代结论</h3><p>第二评估者实验仅6篇，自动检索AC1为0.684；<strong>未验证常规编辑工作流中的替代效果</strong>。</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">报告要素评估中的误差来源</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">规范</div>
+            <h3>拆分复合条目</h3>
+            <p>固定<strong>要素、选项及适用条件</strong>，保留规范版本。</p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">证据</div>
+            <h3>检索原文片段</h3>
+            <p>记录<strong>句子位置和检索覆盖</strong>；漏检需人工排查。</p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">规则</div>
+            <h3>保留状态差异</h3>
+            <p>区分<strong>未报告、不适用、无文本可评估</strong>。</p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">判断</div>
+            <h3>回答结构化问题</h3>
+            <p>检查<strong>模型选项与证据是否对应</strong>，追踪条件题依赖。</p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">复核</div>
+            <h3>分层评价误差</h3>
+            <p>分别评价<strong>检索、自动赋值和问答</strong>，再转交专家。</p>
+          </li>
+        </ol>
+        <figcaption>依据<strong>Table 4、Figure 2及Methods</strong>整理；各阶段需保留证据来源和规则路径。</figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">完整精读</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>将RCT报告条目拆成要素级问题，可定位具体缺失信息；模型表现仍受证据检索和标签生成方式限制。</p>
+</blockquote>
+<h2>作者团队</h2>
+<p>Lan Jiang、Xiangji Ying为共同第一作者，Illinois Urbana-Champaign信息学院的Halil Kilicoglu为通讯作者，联合UNC流行病学等团队。研究延续其SPIRIT-CONSORT-TM语料工作。<a href="https://doi.org/10.1038/s41746-026-03318-6">原文</a>于2026年10月6日以Article in Press形式发表。</p>
+<h2>解决什么问题</h2>
+<p>一个报告条目可能包含剂量、频率、疗程等多个要素。只判断条目是否出现，会掩盖部分缺失。本文将评估细化为结构化问题，识别RCT方案与结果论文具体报告了什么。</p>
+<h2>怎么做的</h2>
+<p>基于SPIRIT 2013和CONSORT 2010的83个细化条目，专家设计119题，包括85道单选、34道多选及26道条件依赖题；多要素题包含在上述分类中。</p>
+<p>语料为100组方案—结果配对，共200篇。50篇双人独立标注后协商，150篇单人标注。19,500个适用问题实例中，9,892个由人工作答，9,608个因无片段或条件未满足而自动赋值。</p>
+<p>标签区分【未报告】【不适用】【无文本可评估】：普遍适用要素缺失时标为No或Not reported；前置回答确认不适用时标为Not applicable；无法判断适用性时标为No text to assess。不能合并成同一种缺失。</p>
+<p>流程先用微调PubMedBERT检索条目相关句，再由GPT-5或Qwen-2.5回答结构化问题。沿用20组配对的独立测试划分，其余80组用于训练、提示开发及示例选择。多选题内部拆成二元子项计算micro-F1，最终按119题平均；置信区间来自10,000次bootstrap。</p>
+<h2>关键结果</h2>
+<p>双人标注平均Gwet’s AC1为0.782。自动检索加GPT-5的F1为0.822（95% CI 0.794—0.847），AC1为0.796；换成人工片段后F1为0.893（0.872—0.913）。最佳单示例策略仅提高至0.830。</p>
+<p>第二评估者实验仅含6篇：模型相对协商标签AC1为0.684，提供人工片段后为0.763，仍低于该子集人际一致性0.841。全文直输F1为0.476的实验仅覆盖5组配对和10题，不能泛化为所有全文方法的表现。</p>
+<h2>证据有多硬</h2>
+<p>【内部验证】配对划分降低同一试验跨集合泄漏风险，但40篇测试文章来自PMC开放获取且具有配对方案的试验，尚无外部验证。人工参考标签依赖既有片段；检索覆盖不足可能同时影响标注与模型。</p>
+<p>【结论边界】F1衡量要素回答与参考标签的吻合，未检验研究实施质量、偏倚风险或因果确定性。约半数标签由规则生成，须另报人工作答与自动赋值子集表现；条件题还会传播前置判断错误。2025版规范仅部分对齐。</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="本页导航">
+    <div class="deep-toc-title">本页导航</div>
+    <a href="#overview" class="is-main">30秒结论</a>
+    <a href="#key-numbers">三个关键数字</a>
+    <a href="#where-to-focus">重点看哪里</a>
+    <a href="#study-design">报告要素评估中的误差来源</a>
+    <a href="#full-read">完整精读</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← 回精读列表</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>我的文献集 · Xuanyu Shi</span>
+    <span>每个工作日更新一次 · <a href="https://xuanyshi.github.io/research-desk/zh/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>
