@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPIRIT-CONSORT-ELM: element-level annotated dataset and large language model approach for assessing randomized controlled trial reporting · Deep reads · My Research Desk</title>
+<meta name="description" content="Automatic-pipeline F1 is 0.822 versus 0.893 with expert snippets. Retrieval is a major improvement target; completeness does not establish low risk of bias.">
+<meta property="og:title" content="SPIRIT-CONSORT-ELM: element-level annotated dataset and large language model approach for assessing randomized controlled trial reporting · Deep reads · My Research Desk">
+<meta property="og:description" content="Automatic-pipeline F1 is 0.822 versus 0.893 with expert snippets. Retrieval is a major improvement target; completeness does not establish low risk of bias.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="My Research Desk">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/en/deep/jiang-2026-spirit-consort-elm/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/en/deep/jiang-2026-spirit-consort-elm/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/deep/jiang-2026-spirit-consort-elm/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/deep/jiang-2026-spirit-consort-elm/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/deep/jiang-2026-spirit-consort-elm/">
+<link rel="alternate" type="application/atom+xml" title="My Research Desk · Deep reads" href="https://xuanyshi.github.io/research-desk/en/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=a39d90a1b7">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">My Research Desk<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">Home</a>
+      <a href="../../library/index.html" class="">Library</a>
+      <a href="../../deep/index.html" class="on">Deep reads</a>
+      <a href="../../daily/index.html" class="">Daily</a>
+      <a href="../../log/index.html" class="">Log</a>
+      <a href="../../about/index.html" class="">About</a>
+      <span class="lang">
+        <a href="../../../zh/deep/jiang-2026-spirit-consort-elm/" class="">中</a>
+        <a href="../../../en/deep/jiang-2026-spirit-consort-elm/" class="on">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--deep">
+  <div class="tagline">My deep read</div>
+  <h1>SPIRIT-CONSORT-ELM: element-level annotated dataset and large language model approach for assessing randomized controlled trial reporting</h1>
+  <p>Lan Jiang, Xiangji Ying, Andrew W. Brown, Mengfei Lan et al.</p>
+  <div class="jmetrics">
+<span class="jbadge jb-venue">npj Digital Medicine (2026), Article in Press</span></div>
+  
+  <p class="deep-links">
+    <a href="https://doi.org/10.1038/s41746-026-03318-6" target="_blank" rel="noopener">Source / DOI ↗</a>
+    <a href="https://scholar.google.com/scholar?q=SPIRIT-CONSORT-ELM%3A%20element-level%20annotated%20dataset%20and%20large%20language%20model%20approach%20for%20assessing%20randomized%20controlled%20trial%20reporting" target="_blank" rel="noopener">Scholar ↗</a>
+<span class="deep-tags"><span class="pill p2">Large language models</span><span class="pill p4">Information extraction</span><span class="pill p1">Benchmarking</span><span class="pill p3">Randomized controlled trials</span><span class="pill p3">Reporting guidelines</span></span>  </p>
+</section>
+
+<div class="deep-layout">
+  <div class="deep-main">
+    <section class="deep-overview" id="overview" aria-labelledby="overview-title">
+      <div class="guide-kicker">30-second read</div>
+      <h2 id="overview-title">Automatic-pipeline F1 is 0.822 versus 0.893 with expert snippets. <strong>Retrieval is a major improvement target; completeness does not establish low risk of bias</strong>.</h2>
+      <dl class="overview-facts">
+        <div>
+          <dt>Question</dt>
+          <dd>Can element-level SPIRIT and CONSORT questions reliably identify <strong>missing information in trial protocols and results publications</strong>?</dd>
+        </div>
+        <div>
+          <dt>Design</dt>
+          <dd><strong>Element-level annotation of 200 paired articles and internal testing</strong>; PubMedBERT retrieves evidence before an LLM answers 119 structured questions.</dd>
+        </div>
+      </dl>
+      <div class="evidence-card">
+        <div class="evidence-head">
+          <span>Evidence strength</span>
+          <strong class="evidence-level level-mid">Moderate; internal reporting assessment only</strong>
+        </div>
+        <dl>
+          <div><dt>What was assessed</dt><dd><strong>Agreement between model answers and reference labels for 119 questions in 20 held-out protocol-results pairs</strong>, averaging across questions after within-question decomposition.</dd></div>
+          <div><dt>Downgrade triggers</dt><dd>Missing snippets or unmet conditions trigger automatic labels, while incorrect preceding answers propagate to conditional questions. <strong>Audit errors separately for human-answered and rule-assigned instances</strong>; no deployment acceptance threshold is established.</dd></div>
+          <div><dt>Impact on interpretation</dt><dd>Can flag reporting details for expert review. It <strong>does not establish trial-conduct quality, low risk of bias or high certainty of evidence</strong>.</dd></div>
+        </dl>
+      </div>
+      <p class="reading-advice"><strong class="reading-advice-label">Reading advice</strong>Read Table 4 for question types, then Figure 2 and Table 2 to separate retrieval from judgment errors. Audit <strong>automatic labels, the six-article second-assessor study and 2025 guideline coverage</strong>.</p>
+    </section>
+
+    <section class="guide-section" id="key-numbers" aria-labelledby="key-numbers-title">
+      <div class="guide-section-head">
+        <span>01</span><h2 id="key-numbers-title">Three numbers to keep</h2>
+      </div>
+      <div class="key-stats">
+        <article class="key-stat">
+          <div class="key-value">200 articles</div>
+          <h3>100 protocol-results pairs</h3>
+          <p><strong>50 double-annotated and 150 single-annotated articles</strong>; 20 pairs form the test set</p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">About half</div>
+          <h3>Labels assigned by rules</h3>
+          <p>Among roughly 20,000 instances, <strong>human answers and automatic labels each account for about half</strong></p>
+        </article>
+        <article class="key-stat">
+          <div class="key-value">0.822 → 0.893</div>
+          <h3>F1 with retrieved versus expert snippets</h3>
+          <p><strong>Expert snippets add 7.1 percentage points</strong>; the best example strategy adds 0.8 points</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="where-to-focus" aria-labelledby="where-to-focus-title">
+      <div class="guide-section-head">
+        <span>02</span><h2 id="where-to-focus-title">Where to focus</h2>
+      </div>
+      <ol class="focus-list">
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1038/s41746-026-03318-6" target="_blank" rel="noopener">
+            Table 1 and Methods · PDF pp. 2, 6<small>Article entry</small> ↗
+          </a>
+          <div><h3>Reconstruct label provenance</h3><p>Separate <strong>9,892 human answers from 9,608 automatic labels</strong>; missing text and inapplicability are distinct.</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1038/s41746-026-03318-6" target="_blank" rel="noopener">
+            Table 4 · PDF p. 7<small>Article entry</small> ↗
+          </a>
+          <div><h3>Inspect elements and dependencies</h3><p>Dose, frequency and duration are distinct; <strong>preceding answers determine conditional applicability</strong>.</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://www.nature.com/articles/s41746-026-03318-6#Fig2" target="_blank" rel="noopener">
+            Figure 2 · PDF p. 8<small>Direct link</small> ↗
+          </a>
+          <div><h3>Separate retrieval and answering</h3><p>Trace <strong>evidence sentences, questions, specific instructions and structured options</strong>.</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1038/s41746-026-03318-6" target="_blank" rel="noopener">
+            Tables 2-3 · PDF p. 4<small>Article entry</small> ↗
+          </a>
+          <div><h3>Compare the size of improvements</h3><p>Expert-snippet F1 is 0.893 versus 0.830 with the best example strategy; <strong>retrieval gains exceed example gains</strong>.</p></div>
+        </li>
+        <li>
+          <a class="focus-ref" href="https://doi.org/10.1038/s41746-026-03318-6" target="_blank" rel="noopener">
+            Discussion · PDF pp. 4-5<small>Article entry</small> ↗
+          </a>
+          <div><h3>Bound claims about assessor replacement</h3><p>Only six articles inform the second-assessor study, with automatic-retrieval AC1 of 0.684; <strong>routine editorial replacement remains untested</strong>.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="guide-section" id="study-design" aria-labelledby="study-design-title">
+      <div class="guide-section-head">
+        <span>03</span><h2 id="study-design-title">Sources of error in element-level assessment</h2>
+      </div>
+      <figure class="study-diagram">
+        <ol>
+          <li>
+            <span class="step-no">1</span>
+            <div class="step-kicker">Guideline</div>
+            <h3>Decompose compound items</h3>
+            <p>Fix <strong>elements, options and applicability rules</strong>, retaining the guideline version.</p>
+          </li>
+          <li>
+            <span class="step-no">2</span>
+            <div class="step-kicker">Evidence</div>
+            <h3>Retrieve source snippets</h3>
+            <p>Record <strong>sentence locations and retrieval coverage</strong>; review suspected omissions.</p>
+          </li>
+          <li>
+            <span class="step-no">3</span>
+            <div class="step-kicker">Rules</div>
+            <h3>Preserve distinct states</h3>
+            <p>Separate <strong>not reported, not applicable and no text to assess</strong>.</p>
+          </li>
+          <li>
+            <span class="step-no">4</span>
+            <div class="step-kicker">Judgment</div>
+            <h3>Answer structured questions</h3>
+            <p>Check <strong>answer-evidence correspondence</strong> and conditional dependencies.</p>
+          </li>
+          <li>
+            <span class="step-no">5</span>
+            <div class="step-kicker">Review</div>
+            <h3>Evaluate errors by stage</h3>
+            <p>Audit <strong>retrieval, automatic labels and question answering</strong> before expert review.</p>
+          </li>
+        </ol>
+        <figcaption>Organized from <strong>Table 4, Figure 2 and the Methods</strong>; retain evidence provenance and rule paths at each stage.</figcaption>
+      </figure>
+    </section>
+
+    <section class="guide-section full-read" id="full-read" aria-labelledby="full-read-title">
+      <div class="guide-section-head">
+        <span>04</span><h2 id="full-read-title">Full deep read</h2>
+      </div>
+      <article class="prose deepbody">
+      <blockquote>
+<p>Element-level questions locate specific omissions in RCT reports; performance remains constrained by evidence retrieval and the construction of reference labels.</p>
+</blockquote>
+<h2>The authors</h2>
+<p>Lan Jiang and Xiangji Ying are joint first authors. Halil Kilicoglu at the University of Illinois Urbana-Champaign School of Information Sciences is the corresponding author, collaborating with epidemiology researchers at UNC and other institutions. The study extends the team's SPIRIT-CONSORT-TM corpus. The <a href="https://doi.org/10.1038/s41746-026-03318-6">article</a> was published on 6 October 2026 as an Article in Press.</p>
+<h2>The problem</h2>
+<p>A reporting item can contain several elements, such as dose, frequency and treatment duration. Detecting any item-related text can conceal partial reporting. This study turns the assessment into structured questions about what trial protocols and results publications actually report.</p>
+<h2>The approach</h2>
+<p>Experts derive 119 questions from 83 fine-grained items based on SPIRIT 2013 and CONSORT 2010. There are 85 check-one and 34 check-all-that-apply questions; 26 questions are conditional. Multi-element questions are included within these categories.</p>
+<p>The corpus comprises 100 protocol-results pairs, or 200 articles. Fifty articles undergo independent double annotation and reconciliation; one annotator assesses the remaining 150. Of 19,500 applicable question instances, 9,892 receive explicit human responses and 9,608 are assigned automatically because relevant snippets are absent or triggering conditions are unmet.</p>
+<p>The label rules preserve distinct states. Missing universally applicable elements receive No or Not reported; a preceding answer establishing inapplicability triggers Not applicable; unresolved applicability triggers No text to assess. These states should not be collapsed into a single missing-information label.</p>
+<p>A fine-tuned PubMedBERT model retrieves item-related sentences, followed by structured question answering with GPT-5 or Qwen-2.5. Evaluation retains 20 held-out protocol-results pairs, with the other 80 pairs available for training, prompt development and example selection. Multiple-answer questions are split into binary sub-items to calculate within-question micro-F1; final scores average across 119 questions. Confidence intervals use 10,000 bootstrap iterations.</p>
+<h2>Key results</h2>
+<p>Mean inter-annotator Gwet’s AC1 is 0.782. Automatic retrieval plus GPT-5 achieves F1 = 0.822 (95% CI 0.794–0.847) and AC1 = 0.796. Expert snippets raise F1 to 0.893 (0.872–0.913). The best single-example strategy reaches only 0.830.</p>
+<p>The second-assessor experiment includes just six articles. Model agreement with reconciled labels is AC1 = 0.684 with automatic retrieval and 0.763 with expert snippets, below human inter-annotator agreement of 0.841 on that subset. Direct full-text prompting yields F1 = 0.476 in an experiment limited to five article pairs and ten questions; that estimate cannot characterize all full-text approaches.</p>
+<h2>How solid is the evidence</h2>
+<p>Splitting by protocol-results pair reduces the risk of placing the same trial in different partitions. However, the 40 test articles come from PMC open-access trials with paired protocols and results. There is no external validation. Reference labels rely on previously annotated snippets, so incomplete evidence coverage can affect both annotation and model evaluation.</p>
+<p>F1 measures agreement with reference answers about reporting elements. It does not validate trial conduct, risk of bias or causal certainty. Roughly half the corpus labels are generated by rules; performance should also be reported separately for directly answered and automatically assigned instances. Conditional questions propagate upstream errors. Alignment with the 2025 reporting guidelines remains incomplete.</p>
+      </article>
+    </section>
+  </div>
+
+  <aside class="deep-toc" aria-label="On this page">
+    <div class="deep-toc-title">On this page</div>
+    <a href="#overview" class="is-main">30-second read</a>
+    <a href="#key-numbers">Three numbers to keep</a>
+    <a href="#where-to-focus">Where to focus</a>
+    <a href="#study-design">Sources of error in element-level assessment</a>
+    <a href="#full-read">Full deep read</a>
+  </aside>
+</div>
+
+<p class="deep-back"><a href="../../deep/index.html">← Back to deep reads</a></p>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>My Research Desk · Xuanyu Shi</span>
+    <span>Updated on weekdays · <a href="https://xuanyshi.github.io/research-desk/en/feed.xml">RSS</a></span>
+  </div>
+</footer>
+</body>
+</html>
