@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026-11-10 · Daily · My Research Desk</title>
+<meta name="description" content="Papers I&#39;ve read, am reading, or mean to — plus a few worth a look from the journals each day.">
+<meta property="og:title" content="2026-11-10 · Daily · My Research Desk">
+<meta property="og:description" content="Papers I&#39;ve read, am reading, or mean to — plus a few worth a look from the journals each day.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="My Research Desk">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://xuanyshi.github.io/research-desk/en/daily/2026-11-10/">
+<meta property="og:url" content="https://xuanyshi.github.io/research-desk/en/daily/2026-11-10/">
+<link rel="alternate" hreflang="zh" href="https://xuanyshi.github.io/research-desk/zh/daily/2026-11-10/">
+<link rel="alternate" hreflang="en" href="https://xuanyshi.github.io/research-desk/en/daily/2026-11-10/">
+<link rel="alternate" hreflang="x-default" href="https://xuanyshi.github.io/research-desk/zh/daily/2026-11-10/">
+<link rel="alternate" type="application/atom+xml" title="My Research Desk · Deep reads" href="https://xuanyshi.github.io/research-desk/en/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+<link rel="stylesheet" href="../../../assets/style.css?v=a39d90a1b7">
+</head>
+<body>
+<header class="site-head">
+  <div class="head-in">
+    <a class="wordmark" href="../../index.html">My Research Desk<span class="mk">.</span></a>
+    <nav class="nav">
+      <a href="../../index.html" class="">Home</a>
+      <a href="../../library/index.html" class="">Library</a>
+      <a href="../../deep/index.html" class="">Deep reads</a>
+      <a href="../../daily/index.html" class="on">Daily</a>
+      <a href="../../log/index.html" class="">Log</a>
+      <a href="../../about/index.html" class="">About</a>
+      <span class="lang">
+        <a href="../../../zh/daily/2026-11-10/" class="">中</a>
+        <a href="../../../en/daily/2026-11-10/" class="on">EN</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="masthead masthead--sub">
+  <h1>2026-11-10</h1>
+  <p>23 papers, 3 relevant enough (≥7). Highest scores first.</p>
+</section>
+
+<div class="toolbar">
+  <input class="search" id="q" type="search" placeholder="Search title, author, tag, note…" autocomplete="off">
+  <div class="filters" id="scoreFilters">
+    <button class="chip-btn on" data-min="0">All</button>
+    <button class="chip-btn" data-min="7">High scores only</button>
+  </div>
+  <div class="filters filters--disease" id="diseaseFilters">
+    <span class="filters-label">Disease</span>
+    <button class="chip-btn on" data-disease="all">All</button>
+<button class="chip-btn" data-disease="liver">Liver disease <span class="chip-n">1</span></button><button class="chip-btn" data-disease="infectious">Infectious disease <span class="chip-n">1</span></button>  </div>
+</div>
+<div class="count-note"><span id="count">23</span> </div>
+
+<div id="papers">
+<article class="paper" data-score="9" data-diseases="" data-text="causal graph fusion across incomplete cohorts and causal steering of tabular foundation models 跨不完整队列的因果图融合与表格基础模型的因果引导 yanke li dhiyaa al jorf ayoube ighissou anke scheel-sailer robert riener diego paez-granados 论文针对临床数据分散在变量部分重叠的不完整队列中、缺失数据下的因果发现与多源整合长期分离的问题，提出因果图融合方法：先在共享变量上学习部分祖先图，再结合时间背景知识融合进各队列图，并用马尔可夫毯指导重插补，使缺失数据处理嵌入因果发现过程。论文还提出因果注意力引导，将学习到的图编译进冻结表格基础模型的注意力中，从而在推理阶段引入因果结构而无需重新训练。实验表明，图融合在多种缺失与异质性条件下优于合并队列和单队列基线；因果引导可在分布偏移下提升判别性能。在两个脊髓损伤队列中，融合方法将年龄、白蛋白和血红蛋白识别为住院时长的祖先，并生成紧凑且符合时间顺序的预测变量集合。 ">
+  <div class="head">
+    <div class="badge hi">9</div>
+    <div>
+      <h3>Causal graph fusion across incomplete cohorts and causal steering of tabular foundation models <span class="ai-tag">AI</span></h3>
+      <p class="authors">Yanke Li, Dhiyaa Al Jorf, Ayoube Ighissou, Anke Scheel-Sailer et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">论文针对临床数据分散在变量部分重叠的不完整队列中、缺失数据下的因果发现与多源整合长期分离的问题，提出因果图融合方法：先在共享变量上学习部分祖先图，再结合时间背景知识融合进各队列图，并用马尔可夫毯指导重插补，使缺失数据处理嵌入因果发现过程。论文还提出因果注意力引导，将学习到的图编译进冻结表格基础模型的注意力中，从而在推理阶段引入因果结构而无需重新训练。实验表明，图融合在多种缺失与异质性条件下优于合并队列和单队列基线；因果引导可在分布偏移下提升判别性能。在两个脊髓损伤队列中，融合方法将年龄、白蛋白和血红蛋白识别为住院时长的祖先，并生成紧凑且符合时间顺序的预测变量集合。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2611.09400v1" target="_blank" rel="noopener">Source ↗</a>
+<a href="https://arxiv.org/pdf/2611.09400v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Causal%20graph%20fusion%20across%20incomplete%20cohorts%20and%20causal%20steering%20of%20tabular%20foundation%20models" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2611.09400v1" data-copied="✓ Copied" aria-label="Copy the save command"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">Save: python -m pipeline.add arXiv:2611.09400v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="8" data-diseases="" data-text="causal discovery grounding and the naturalness assumption 因果发现的基础与自然性假设 guilherme p. soares andreas koukorinis sander beckers jake fawkes david s. watson ricardo silva 论文针对标准因果发现依赖忠实性假设、且近似违背与精确违背难以区分所导致的推断缺口，提出不依赖精确条件独立性的“自然性”原则。该方法以观测关联强度约束因果依赖强度，并在贝叶斯框架下建模未知约束函数，借助其他研究的历史实验数据实现自适应因果发现。研究展示了该原则在因果效应部分识别中的价值，并讨论了其对更一般因果发现原则的启发。 ">
+  <div class="head">
+    <div class="badge hi">8</div>
+    <div>
+      <h3>Causal Discovery Grounding and the Naturalness Assumption</h3>
+      <p class="authors">Guilherme P. Soares, Andreas Koukorinis, Sander Beckers, Jake Fawkes et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">论文针对标准因果发现依赖忠实性假设、且近似违背与精确违背难以区分所导致的推断缺口，提出不依赖精确条件独立性的“自然性”原则。该方法以观测关联强度约束因果依赖强度，并在贝叶斯框架下建模未知约束函数，借助其他研究的历史实验数据实现自适应因果发现。研究展示了该原则在因果效应部分识别中的价值，并讨论了其对更一般因果发现原则的启发。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2611.10388v1" target="_blank" rel="noopener">Source ↗</a>
+<a href="https://arxiv.org/pdf/2611.10388v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Causal%20Discovery%20Grounding%20and%20the%20Naturalness%20Assumption" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2611.10388v1" data-copied="✓ Copied" aria-label="Copy the save command"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">Save: python -m pipeline.add arXiv:2611.10388v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="7" data-diseases="" data-text="zio: order-based structure learning for zero-inflated count data under data heterogeneity zio：数据异质性下零膨胀计数数据的基于顺序的结构学习 fariha taskin junsouk choi hyunwoong chang 论文针对零膨胀多元计数数据的dag结构学习，指出现有基于dag空间局部搜索的方法可扩展性差且易陷入次优解。作者提出在变量顺序空间搜索的评分框架，并扩展至多组异质数据，通过共享变量顺序、各数据独立边集，采用随机到随机提议算子的随机爬山算法进行优化。模拟研究显示该方法相较现有方法具有竞争力，联合分析更多异质数据可提升图估计精度，并应用于重度抑郁症研究的单核rna测序数据。 ">
+  <div class="head">
+    <div class="badge mid">7</div>
+    <div>
+      <h3>ZIO: Order-Based Structure Learning for Zero-Inflated Count Data under Data Heterogeneity</h3>
+      <p class="authors">Fariha Taskin, Junsouk Choi, Hyunwoong Chang</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">论文针对零膨胀多元计数数据的DAG结构学习，指出现有基于DAG空间局部搜索的方法可扩展性差且易陷入次优解。作者提出在变量顺序空间搜索的评分框架，并扩展至多组异质数据，通过共享变量顺序、各数据独立边集，采用随机到随机提议算子的随机爬山算法进行优化。模拟研究显示该方法相较现有方法具有竞争力，联合分析更多异质数据可提升图估计精度，并应用于重度抑郁症研究的单核RNA测序数据。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2611.11448v1" target="_blank" rel="noopener">Source ↗</a>
+<a href="https://arxiv.org/pdf/2611.11448v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=ZIO%3A%20Order-Based%20Structure%20Learning%20for%20Zero-Inflated%20Count%20Data%20under%20Data%20Heterogeneity" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2611.11448v1" data-copied="✓ Copied" aria-label="Copy the save command"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">Save: python -m pipeline.add arXiv:2611.11448v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="6" data-diseases="" data-text="causal discernment and the direction of clinical research 因果辨析与临床研究方向 carlo berzuini luisa bernardinelli 论文针对临床试验可确定干预效应却难以厘清因果路径的问题，提出“因果辨析”实践：识别与证据相符但导向不同决策或研究方向的解释，并寻找能够区分这些解释的研究。方法结合因果图与文字说明，围绕目标变化传递、获益与伤害路径、跨情境稳定性以及未解决路径是否影响决策四个问题展开，并用概念分析、假设计算、cast和降脂治疗示例说明。结论认为，因果记录通过显式呈现竞争解释、证据和假设，可形式化下一项研究选择背后的推理并便于审查，但其相对常规理由审查的附加价值仍待评估。 ">
+  <div class="head">
+    <div class="badge mid">6</div>
+    <div>
+      <h3>Causal discernment and the direction of clinical research</h3>
+      <p class="authors">Carlo Berzuini, Luisa Bernardinelli</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">论文针对临床试验可确定干预效应却难以厘清因果路径的问题，提出“因果辨析”实践：识别与证据相符但导向不同决策或研究方向的解释，并寻找能够区分这些解释的研究。方法结合因果图与文字说明，围绕目标变化传递、获益与伤害路径、跨情境稳定性以及未解决路径是否影响决策四个问题展开，并用概念分析、假设计算、CAST和降脂治疗示例说明。结论认为，因果记录通过显式呈现竞争解释、证据和假设，可形式化下一项研究选择背后的推理并便于审查，但其相对常规理由审查的附加价值仍待评估。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2611.11311v1" target="_blank" rel="noopener">Source ↗</a>
+<a href="https://arxiv.org/pdf/2611.11311v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Causal%20discernment%20and%20the%20direction%20of%20clinical%20research" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2611.11311v1" data-copied="✓ Copied" aria-label="Copy the save command"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">Save: python -m pipeline.add arXiv:2611.11311v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="6" data-diseases="" data-text="transporting the past: an optimal transport view of backtracking counterfactuals 运输过去：回溯反事实的最优传输视角 zhangyi liu pouria fatemi suvrit sra 论文研究结构因果模型中回溯反事实推断，将事实观测诱导的外生变量后验分布通过最优传输映射到满足反事实查询的外生配置集合。作者提出两类互补框架：自然点对点投影，以及强制反事实外生变量相互独立以保持其作为同一scm外生噪声的可解释性，并给出边际、惩罚和硬约束求解器。合成实验在非双射scm上展示了问题的几何结构，并揭示传输成本、反事实约束满足与外生独立性保持之间的权衡。 ">
+  <div class="head">
+    <div class="badge mid">6</div>
+    <div>
+      <h3>Transporting the Past: An Optimal Transport View of Backtracking Counterfactuals</h3>
+      <p class="authors">Zhangyi Liu, Pouria Fatemi, Suvrit Sra</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">论文研究结构因果模型中回溯反事实推断，将事实观测诱导的外生变量后验分布通过最优传输映射到满足反事实查询的外生配置集合。作者提出两类互补框架：自然点对点投影，以及强制反事实外生变量相互独立以保持其作为同一SCM外生噪声的可解释性，并给出边际、惩罚和硬约束求解器。合成实验在非双射SCM上展示了问题的几何结构，并揭示传输成本、反事实约束满足与外生独立性保持之间的权衡。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2611.08682v1" target="_blank" rel="noopener">Source ↗</a>
+<a href="https://arxiv.org/pdf/2611.08682v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Transporting%20the%20Past%3A%20An%20Optimal%20Transport%20View%20of%20Backtracking%20Counterfactuals" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2611.08682v1" data-copied="✓ Copied" aria-label="Copy the save command"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">Save: python -m pipeline.add arXiv:2611.08682v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="5" data-diseases="" data-text="navigating selection bias in genome-wide association studies (gwas) 全基因组关联研究（gwas）中选择偏倚的应对指南 ciarrah-jane s barry tahereh gholipourshahraki zoltán kutalik bjarni j vilhjálmsson esben agerbo 论文聚焦gwas中因参与、病例对照 ascertainment、指标事件、性别差异参与或生存至招募等产生的选择偏倚，及其向pgs、mr和遗传相关分析传播的问题。作者按分析者决策将十种检测或校正方法组织起来，比较其原理、假设、数据需求和局限，并提供r实现、模拟示例与交互式方法选择工具。文章最后给出偏倚知情研究设计、敏感性分析和报告建议。 ">
+  <div class="head">
+    <div class="badge low">5</div>
+    <div>
+      <h3>Navigating Selection Bias in Genome-wide Association Studies (GWAS)</h3>
+      <p class="authors">Ciarrah-Jane S Barry, Tahereh Gholipourshahraki, Zoltán Kutalik, Bjarni J Vilhjálmsson et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">论文聚焦GWAS中因参与、病例对照 ascertainment、指标事件、性别差异参与或生存至招募等产生的选择偏倚，及其向PGS、MR和遗传相关分析传播的问题。作者按分析者决策将十种检测或校正方法组织起来，比较其原理、假设、数据需求和局限，并提供R实现、模拟示例与交互式方法选择工具。文章最后给出偏倚知情研究设计、敏感性分析和报告建议。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2611.09429v1" target="_blank" rel="noopener">Source ↗</a>
+<a href="https://arxiv.org/pdf/2611.09429v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Navigating%20Selection%20Bias%20in%20Genome-wide%20Association%20Studies%20%28GWAS%29" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2611.09429v1" data-copied="✓ Copied" aria-label="Copy the save command"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">Save: python -m pipeline.add arXiv:2611.09429v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="4" data-diseases="" data-text="when does better confidence improve a knowledge-graph audit? 更好的置信度何时能改善知识图谱审计？ zehao lin kai chen xixuan hao erenkai zhu chunyu li helan hu feiyu xiong 论文研究llm构建知识图谱时，置信度估计如何影响预算受限的人工审核，并区分共享实体错误与其他事实错误。作者将非自适应审计建模为预算化覆盖问题，提出联合规划与独立块规划，并在re-docred和dwie上进行模拟与确认。结果显示联合规划较错误率×扇出基线减少错误，独立块规划也优于仅事实标量基线，但冻结等价标准仍不确定。结论建议评估完整修复概率，并在选择审计模型时保留仅事实与因子化基线。 ">
+  <div class="head">
+    <div class="badge low">4</div>
+    <div>
+      <h3>When Does Better Confidence Improve a Knowledge-Graph Audit? <span class="ai-tag">AI</span></h3>
+      <p class="authors">Zehao Lin, Kai Chen, Xixuan Hao, Erenkai Zhu et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">论文研究LLM构建知识图谱时，置信度估计如何影响预算受限的人工审核，并区分共享实体错误与其他事实错误。作者将非自适应审计建模为预算化覆盖问题，提出联合规划与独立块规划，并在Re-DocRED和DWIE上进行模拟与确认。结果显示联合规划较错误率×扇出基线减少错误，独立块规划也优于仅事实标量基线，但冻结等价标准仍不确定。结论建议评估完整修复概率，并在选择审计模型时保留仅事实与因子化基线。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2611.05877v2" target="_blank" rel="noopener">Source ↗</a>
+<a href="https://arxiv.org/pdf/2611.05877v2" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=When%20Does%20Better%20Confidence%20Improve%20a%20Knowledge-Graph%20Audit%3F" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2611.05877v2" data-copied="✓ Copied" aria-label="Copy the save command"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">Save: python -m pipeline.add arXiv:2611.05877v2</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="3" data-diseases="" data-text="vietnamese legal ontology: every legal answer, traced to the article that grounds it 越南法律本体：将每个法律答案追溯到其依据条文 khac-hoai nam bui quan tran minh 该论文针对越南大型开放法律语料中引文为自由文本、难以定位具体法律版本和条款的问题，构建了一个可追溯的法律本体知识图谱。方法上遵循 nvidia auto ontology 的发现、 grounding、验证、暴露与学习等流程，将四个开放数据集整合为包含 1150 万节点和 1600 万边的图，并为节点与边保留来源记录和方法。主要结论是，该图谱能够解析大量引文并暴露扁平记录难以发现的问题，例如引用已失效法律、条款编号与现行法内容不符、版本错配及地方机构共享文号等。 ">
+  <div class="head">
+    <div class="badge low">3</div>
+    <div>
+      <h3>Vietnamese Legal Ontology: Every legal answer, traced to the article that grounds it <span class="ai-tag">AI</span></h3>
+      <p class="authors">Khac-Hoai Nam Bui, Quan Tran Minh</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文针对越南大型开放法律语料中引文为自由文本、难以定位具体法律版本和条款的问题，构建了一个可追溯的法律本体知识图谱。方法上遵循 NVIDIA Auto Ontology 的发现、 grounding、验证、暴露与学习等流程，将四个开放数据集整合为包含 1150 万节点和 1600 万边的图，并为节点与边保留来源记录和方法。主要结论是，该图谱能够解析大量引文并暴露扁平记录难以发现的问题，例如引用已失效法律、条款编号与现行法内容不符、版本错配及地方机构共享文号等。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2611.11426v1" target="_blank" rel="noopener">Source ↗</a>
+<a href="https://arxiv.org/pdf/2611.11426v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Vietnamese%20Legal%20Ontology%3A%20Every%20legal%20answer%2C%20traced%20to%20the%20article%20that%20grounds%20it" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2611.11426v1" data-copied="✓ Copied" aria-label="Copy the save command"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">Save: python -m pipeline.add arXiv:2611.11426v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="3" data-diseases="" data-text="auto-glakg: automated biomarker reasoning for explainable glaucoma detection auto-glakg：面向可解释青光眼检测的自动化生物标志物推理 cheng huang zeyu han yian hu yaopeng ding jingxi qiu yadi liu 该论文针对青光眼眼底图像检测缺乏透明解释的问题，提出 auto-glakg 框架，将 resnet50 对杯盘比和六种形态学征象的预测与固定临床先验规则结合，再由知识图谱推理器聚合带符号规则贡献生成青光眼评分。研究在 689 张眼底图像上采用分层、分组感知的五折交叉验证，报告 auc 0.951、敏感度 0.970、特异度 0.779。结果表明该框架能提供规则层面的解释，并将 cdr 估计识别为需用独立测量生物标志物验证的重点。 ">
+  <div class="head">
+    <div class="badge low">3</div>
+    <div>
+      <h3>Auto-GlaKG: Automated Biomarker Reasoning for Explainable Glaucoma Detection <span class="ai-tag">AI</span></h3>
+      <p class="authors">Cheng Huang, Zeyu Han, Yian Hu, Yaopeng Ding et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文针对青光眼眼底图像检测缺乏透明解释的问题，提出 Auto-GlaKG 框架，将 ResNet50 对杯盘比和六种形态学征象的预测与固定临床先验规则结合，再由知识图谱推理器聚合带符号规则贡献生成青光眼评分。研究在 689 张眼底图像上采用分层、分组感知的五折交叉验证，报告 AUC 0.951、敏感度 0.970、特异度 0.779。结果表明该框架能提供规则层面的解释，并将 CDR 估计识别为需用独立测量生物标志物验证的重点。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2611.11258v1" target="_blank" rel="noopener">Source ↗</a>
+<a href="https://arxiv.org/pdf/2611.11258v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Auto-GlaKG%3A%20Automated%20Biomarker%20Reasoning%20for%20Explainable%20Glaucoma%20Detection" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2611.11258v1" data-copied="✓ Copied" aria-label="Copy the save command"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">Save: python -m pipeline.add arXiv:2611.11258v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="3" data-diseases="" data-text="scorpion: a strategic, controllable and personified conversational companion scorpion：一种策略化、可控且人格化的对话伴侣 luo ji xiyuan chen dan wang qingqing gu teng chen feixiang guo yetao wu jinxian qu yue zhao kun fan ningyuan xi hange zhou zhonglin jiang yong chen hongyan li 论文针对固定提示语言模型在开放域对话中难以适配多样话题的问题，从多种文本语料中抽取不同聊天策略，并基于人类原则引导语言模型呈现不同风格。作者设计并部署了对话伴侣 scorpion，利用 graphrag 对知识图谱进行全局抽取与摘要，生成社区摘要策略和面向查询的最优策略。该系统能够进行策略性思考，产生人格化、风格化回复，并可由显式因素控制。 ">
+  <div class="head">
+    <div class="badge low">3</div>
+    <div>
+      <h3>SCorPion: A Strategic, Controllable and Personified Conversational Companion <span class="ai-tag">AI</span></h3>
+      <p class="authors">Luo Ji, Xiyuan Chen, Dan Wang, Qingqing Gu et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">论文针对固定提示语言模型在开放域对话中难以适配多样话题的问题，从多种文本语料中抽取不同聊天策略，并基于人类原则引导语言模型呈现不同风格。作者设计并部署了对话伴侣 SCorPion，利用 GraphRAG 对知识图谱进行全局抽取与摘要，生成社区摘要策略和面向查询的最优策略。该系统能够进行策略性思考，产生人格化、风格化回复，并可由显式因素控制。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2611.10906v1" target="_blank" rel="noopener">Source ↗</a>
+<a href="https://arxiv.org/pdf/2611.10906v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=SCorPion%3A%20A%20Strategic%2C%20Controllable%20and%20Personified%20Conversational%20Companion" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2611.10906v1" data-copied="✓ Copied" aria-label="Copy the save command"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">Save: python -m pipeline.add arXiv:2611.10906v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="3" data-diseases="" data-text="patternbloom: empowering agentic rag with externalized rl-distilled graph patterns patternbloom：以外部化强化学习蒸馏图模式增强智能体 rag yi ge heng huang 该论文针对智能体 rag 中检索内容仅停留在语言模型隐状态、难以复用程序性推理知识的问题，提出将检索单元从内容转向逻辑的 patternbloom 框架。方法包括两阶段强化学习：先以信息密度奖励筛选高价值证据图轨迹并蒸馏为图模式记忆，再以模式增强奖励将策略与记忆耦合。实验显示 7b 模型在 avg-ood em 上超过 27 个基线 15.0，且收益随推理深度增加。 ">
+  <div class="head">
+    <div class="badge low">3</div>
+    <div>
+      <h3>PatternBloom: Empowering Agentic RAG with Externalized RL-Distilled Graph Patterns <span class="ai-tag">AI</span></h3>
+      <p class="authors">Yi Ge, Heng Huang</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文针对智能体 RAG 中检索内容仅停留在语言模型隐状态、难以复用程序性推理知识的问题，提出将检索单元从内容转向逻辑的 PatternBloom 框架。方法包括两阶段强化学习：先以信息密度奖励筛选高价值证据图轨迹并蒸馏为图模式记忆，再以模式增强奖励将策略与记忆耦合。实验显示 7B 模型在 Avg-OOD EM 上超过 27 个基线 15.0，且收益随推理深度增加。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2611.10477v1" target="_blank" rel="noopener">Source ↗</a>
+<a href="https://arxiv.org/pdf/2611.10477v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=PatternBloom%3A%20Empowering%20Agentic%20RAG%20with%20Externalized%20RL-Distilled%20Graph%20Patterns" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2611.10477v1" data-copied="✓ Copied" aria-label="Copy the save command"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">Save: python -m pipeline.add arXiv:2611.10477v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="3" data-diseases="" data-text="triplegrader: a web-based platform supporting collaborative triple annotation with quality grading and inter-rater agreement assessment triplegrader：一个支持协作式三元组标注、质量评分与评分者间一致性评估的网页平台 rajan lamichhane songhui yue 该论文针对知识图谱关系三元组需要人工验证与质量分级、现有平台多聚焦片段标注和类别标签一致性的问题，提出开源网页平台 triplegrader。平台支持对主语-谓语-宾语三元组进行 0 到 10 的序数评分，在评分完成前隐藏同伴分数，并提供线程评论、修订提案与版本发布功能，同时计算二次加权 cohen&#39;s kappa 和 fleiss 型 kappa。论文通过自动化测试、错误注入以及在两个小语料上整合适配四个大语言模型抽取的三元组进行评估，发现仅 10% 至 32% 的候选三元组可保持不变，53% 至 71% 需修正，且每个模型还需补充 11 至 29 个缺失三元组，说明大语言模型抽取的三元组需要大量人工审查。 ">
+  <div class="head">
+    <div class="badge low">3</div>
+    <div>
+      <h3>TripleGrader: A Web-Based Platform Supporting Collaborative Triple Annotation with Quality Grading and Inter-Rater Agreement Assessment</h3>
+      <p class="authors">Rajan Lamichhane, Songhui Yue</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">该论文针对知识图谱关系三元组需要人工验证与质量分级、现有平台多聚焦片段标注和类别标签一致性的问题，提出开源网页平台 TripleGrader。平台支持对主语-谓语-宾语三元组进行 0 到 10 的序数评分，在评分完成前隐藏同伴分数，并提供线程评论、修订提案与版本发布功能，同时计算二次加权 Cohen&#39;s kappa 和 Fleiss 型 kappa。论文通过自动化测试、错误注入以及在两个小语料上整合适配四个大语言模型抽取的三元组进行评估，发现仅 10% 至 32% 的候选三元组可保持不变，53% 至 71% 需修正，且每个模型还需补充 11 至 29 个缺失三元组，说明大语言模型抽取的三元组需要大量人工审查。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2611.10317v1" target="_blank" rel="noopener">Source ↗</a>
+<a href="https://arxiv.org/pdf/2611.10317v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=TripleGrader%3A%20A%20Web-Based%20Platform%20Supporting%20Collaborative%20Triple%20Annotation%20with%20Quality%20Grading%20and%20Inter-Rater%20Agreement%20Assessment" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2611.10317v1" data-copied="✓ Copied" aria-label="Copy the save command"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">Save: python -m pipeline.add arXiv:2611.10317v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="3" data-diseases="" data-text="typed-centrality grounding for agentic graphrag: a symbolic approach for agentic reasoning 面向智能体graphrag的类型化中心性接地：一种用于智能体推理的符号方法 rosario napoli antonio celesti massimo villari maria fazio 论文针对现有graphrag将知识图谱视为同质图、主要依赖文本相似度提供上下文的问题，提出一种基于类型化中心性的符号层。该方法按知识图谱中不同类别分别计算中心性，并构建符号表示作为llm的确定性知识来源。作者在真实pole数据集上对比有无符号层的推理与信息检索表现，结果表明该方法生成的回答更符合上下文，并提升了输出一致性。 ">
+  <div class="head">
+    <div class="badge low">3</div>
+    <div>
+      <h3>Typed-Centrality Grounding for Agentic GraphRAG: A Symbolic Approach for Agentic Reasoning <span class="ai-tag">AI</span></h3>
+      <p class="authors">Rosario Napoli, Antonio Celesti, Massimo Villari, Maria Fazio</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">论文针对现有GraphRAG将知识图谱视为同质图、主要依赖文本相似度提供上下文的问题，提出一种基于类型化中心性的符号层。该方法按知识图谱中不同类别分别计算中心性，并构建符号表示作为LLM的确定性知识来源。作者在真实POLE数据集上对比有无符号层的推理与信息检索表现，结果表明该方法生成的回答更符合上下文，并提升了输出一致性。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2611.09414v1" target="_blank" rel="noopener">Source ↗</a>
+<a href="https://arxiv.org/pdf/2611.09414v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Typed-Centrality%20Grounding%20for%20Agentic%20GraphRAG%3A%20A%20Symbolic%20Approach%20for%20Agentic%20Reasoning" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2611.09414v1" data-copied="✓ Copied" aria-label="Copy the save command"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">Save: python -m pipeline.add arXiv:2611.09414v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="3" data-diseases="" data-text="towards an autonomous ai steward for large-scale physics experiments: integrating causal diagnostics, rag, and conformal prediction 面向大型物理实验的自主ai管家：集成因果诊断、rag与保形预测 oliver noll nicholas tan jerome alexander lehnen frank simon frank maas 论文针对长期粒子物理实验中的非平稳机器数据流监控与专家隐性知识保存问题，提出名为helmholtz co-pilot的混合多智能体系统，作为自主实验管家。系统可由人工操作员或异步因果诊断引擎触发，对数据采集和慢控制流进行动态因果发现以追溯级联报警的根因，并通过自适应模型选择维持预测可靠性。其推理层采用c++与python架构编排react工作者dag，结合rag机构记忆和保形预测为建议提供覆盖保证，并设置人工在环护栏。论文概述了系统架构及在katrin实验中的影子测试进展。 ">
+  <div class="head">
+    <div class="badge low">3</div>
+    <div>
+      <h3>Towards an Autonomous AI Steward for Large-Scale Physics Experiments: Integrating Causal Diagnostics, RAG, and Conformal Prediction</h3>
+      <p class="authors">Oliver Noll, Nicholas Tan Jerome, Alexander Lehnen, Frank Simon et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">论文针对长期粒子物理实验中的非平稳机器数据流监控与专家隐性知识保存问题，提出名为Helmholtz Co-Pilot的混合多智能体系统，作为自主实验管家。系统可由人工操作员或异步因果诊断引擎触发，对数据采集和慢控制流进行动态因果发现以追溯级联报警的根因，并通过自适应模型选择维持预测可靠性。其推理层采用C++与Python架构编排ReAct工作者DAG，结合RAG机构记忆和保形预测为建议提供覆盖保证，并设置人工在环护栏。论文概述了系统架构及在KATRIN实验中的影子测试进展。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2611.09298v1" target="_blank" rel="noopener">Source ↗</a>
+<a href="https://arxiv.org/pdf/2611.09298v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Towards%20an%20Autonomous%20AI%20Steward%20for%20Large-Scale%20Physics%20Experiments%3A%20Integrating%20Causal%20Diagnostics%2C%20RAG%2C%20and%20Conformal%20Prediction" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2611.09298v1" data-copied="✓ Copied" aria-label="Copy the save command"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">Save: python -m pipeline.add arXiv:2611.09298v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="3" data-diseases="liver" data-text="human genetic investigation of tmprss6 as a therapeutic target for liver disease: efficacy and safety liabilities tmprss6作为肝病治疗靶点的人类遗传学研究：疗效与安全性风险 dib, m.-j. vujkovic, m. burgess, s. dutta, t. tzoulaki, i. dehghan, a. yaghootkar, h. meena, d. 论文评估抑制tmprss6对代谢性肝病及心血管结局的潜在疗效与安全性。研究以rs855791变异并依据循环hepcidin加权作为tmprss6抑制的遗传代理，采用孟德尔随机化分析肝脏mri表型、肝酶、临床肝结局、心血管代谢终点、血浆蛋白、生物标志物和疾病终点，并结合共定位与中介分析。结果显示，遗传代理的tmprss6抑制与较低肝铁含量和较高ct1相关，但与肝脂肪变、肝硬化或肝癌无一致关联；同时与较高ldl胆固醇及冠心病风险相关，ldl胆固醇可能介导约21%的冠心病关联。 肝病 liver disease">
+  <div class="head">
+    <div class="badge low">3</div>
+    <div>
+      <h3>Human genetic investigation of TMPRSS6 as a therapeutic target for liver disease: efficacy and safety liabilities</h3>
+      <p class="authors">Dib, M.-J., Vujkovic, M., Burgess, S., Dutta, T. et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">medRxiv</span>
+</div>
+      <div class="dbadges"><span class="dbadge">Liver disease</span></div>
+<p class="sum">论文评估抑制TMPRSS6对代谢性肝病及心血管结局的潜在疗效与安全性。研究以rs855791变异并依据循环hepcidin加权作为TMPRSS6抑制的遗传代理，采用孟德尔随机化分析肝脏MRI表型、肝酶、临床肝结局、心血管代谢终点、血浆蛋白、生物标志物和疾病终点，并结合共定位与中介分析。结果显示，遗传代理的TMPRSS6抑制与较低肝铁含量和较高cT1相关，但与肝脂肪变、肝硬化或肝癌无一致关联；同时与较高LDL胆固醇及冠心病风险相关，LDL胆固醇可能介导约21%的冠心病关联。</p>      <p class="links">
+        <a href="https://doi.org/10.64898/2026.10.29.26366887" target="_blank" rel="noopener">Source ↗</a>
+        <a href="https://scholar.google.com/scholar?q=Human%20genetic%20investigation%20of%20TMPRSS6%20as%20a%20therapeutic%20target%20for%20liver%20disease%3A%20efficacy%20and%20safety%20liabilities" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add 10.64898/2026.10.29.26366887" data-copied="✓ Copied" aria-label="Copy the save command"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">Save: python -m pipeline.add 10.64898/2026.10.29.26366887</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="2" data-diseases="" data-text="regkg-2025: a gkg-compatible reconstruction of the gdelt global knowledge graph for the missing period of 14 june to 2 july 2025 regkg-2025：对2025年6月14日至7月2日缺失时段gdelt全球知识图谱的gkg兼容重建 nikita a. klimin gdelt采集管线在2025年6月中断，导致全球知识图谱出现缺失时段。研究从common crawl和wayback machine恢复文章记录，按周边原生gkg数据估计来源配额，经文本筛选、规范化、翻译和人工复核后，转换为27列gkg 2.1格式。重建样本包含281,620条文章记录，覆盖全部1,665个缺失批次，约为建模原生体量的14%；在完整周测试中41%的恢复文章与原生gkg匹配，字段一致性接近处理器基线。该数据集支持回溯性内容分析和来源级汇总，但其语调与主题分布不同于原生gkg，且不支持穷尽计数。 ">
+  <div class="head">
+    <div class="badge low">2</div>
+    <div>
+      <h3>ReGKG-2025: A GKG-Compatible Reconstruction of the GDELT Global Knowledge Graph for the Missing Period of 14 June to 2 July 2025 <span class="ai-tag">AI</span></h3>
+      <p class="authors">Nikita A. Klimin</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">GDELT采集管线在2025年6月中断，导致全球知识图谱出现缺失时段。研究从Common Crawl和Wayback Machine恢复文章记录，按周边原生GKG数据估计来源配额，经文本筛选、规范化、翻译和人工复核后，转换为27列GKG 2.1格式。重建样本包含281,620条文章记录，覆盖全部1,665个缺失批次，约为建模原生体量的14%；在完整周测试中41%的恢复文章与原生GKG匹配，字段一致性接近处理器基线。该数据集支持回溯性内容分析和来源级汇总，但其语调与主题分布不同于原生GKG，且不支持穷尽计数。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2611.11316v1" target="_blank" rel="noopener">Source ↗</a>
+<a href="https://arxiv.org/pdf/2611.11316v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=ReGKG-2025%3A%20A%20GKG-Compatible%20Reconstruction%20of%20the%20GDELT%20Global%20Knowledge%20Graph%20for%20the%20Missing%20Period%20of%2014%20June%20to%202%20July%202025" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2611.11316v1" data-copied="✓ Copied" aria-label="Copy the save command"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">Save: python -m pipeline.add arXiv:2611.11316v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="2" data-diseases="" data-text="roadstate: a domain-prior-enhanced vision-language system for industrial-grade lane-level map updating roadstate：面向工业级车道级地图更新的领域先验增强视觉语言系统 deguo xia zihan li jiaqi wang dong xie xiyan liu liuhui zhang jizhou huang mengmeng yang diange yang chen zhu liwei qian xin pei shuanglong li hanmeng liu 论文针对车道级地图更新中遮挡、标线模糊和视角变化等条件下的时序一致与可审计道路语义问题，提出生产部署的视觉语言系统 roadstate。其核心模型将道路场景理解建模为自回归状态估计，并利用语义依赖有向无环图构建 geometric chain-of-thought 领域先验。实验显示模型在六个道路状态维度上达到 94.33% 平均准确率，系统在 360 多个城市部署并降低约 30% 生产成本。 ">
+  <div class="head">
+    <div class="badge low">2</div>
+    <div>
+      <h3>RoadState: A Domain-Prior-Enhanced Vision-Language System for Industrial-Grade Lane-Level Map Updating</h3>
+      <p class="authors">Deguo Xia, Zihan Li, Jiaqi Wang, Dong Xie et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">论文针对车道级地图更新中遮挡、标线模糊和视角变化等条件下的时序一致与可审计道路语义问题，提出生产部署的视觉语言系统 RoadState。其核心模型将道路场景理解建模为自回归状态估计，并利用语义依赖有向无环图构建 Geometric Chain-of-Thought 领域先验。实验显示模型在六个道路状态维度上达到 94.33% 平均准确率，系统在 360 多个城市部署并降低约 30% 生产成本。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2611.10746v1" target="_blank" rel="noopener">Source ↗</a>
+<a href="https://arxiv.org/pdf/2611.10746v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=RoadState%3A%20A%20Domain-Prior-Enhanced%20Vision-Language%20System%20for%20Industrial-Grade%20Lane-Level%20Map%20Updating" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2611.10746v1" data-copied="✓ Copied" aria-label="Copy the save command"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">Save: python -m pipeline.add arXiv:2611.10746v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="2" data-diseases="" data-text="collaboration signatures: tracking long-horizon dynamics of cross-meeting collaboration networks 协作签名：追踪跨会议协作网络的长期动态 shengqi zhu sheshera mysore bahareh sarrafzadeh 论文针对企业平台协作分析多依赖碎片化日志、对协作内容与长期动态刻画不足的问题，基于4.5万余次会议转录和160万个议程项构建跨会议协作网络。研究发现会议作为协作快照呈树状结构，工作内容形成嵌套有向无环图，并提出累积议程、互动与语言信息形成协作签名。该签名在留出会议识别中达到随机水平的4.5倍，并在下一次会议预测和树级拟合上优于团队或任务视角。 ">
+  <div class="head">
+    <div class="badge low">2</div>
+    <div>
+      <h3>Collaboration Signatures: Tracking Long-Horizon Dynamics of Cross-Meeting Collaboration Networks</h3>
+      <p class="authors">Shengqi Zhu, Sheshera Mysore, Bahareh Sarrafzadeh</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">论文针对企业平台协作分析多依赖碎片化日志、对协作内容与长期动态刻画不足的问题，基于4.5万余次会议转录和160万个议程项构建跨会议协作网络。研究发现会议作为协作快照呈树状结构，工作内容形成嵌套有向无环图，并提出累积议程、互动与语言信息形成协作签名。该签名在留出会议识别中达到随机水平的4.5倍，并在下一次会议预测和树级拟合上优于团队或任务视角。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2611.10341v1" target="_blank" rel="noopener">Source ↗</a>
+<a href="https://arxiv.org/pdf/2611.10341v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Collaboration%20Signatures%3A%20Tracking%20Long-Horizon%20Dynamics%20of%20Cross-Meeting%20Collaboration%20Networks" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2611.10341v1" data-copied="✓ Copied" aria-label="Copy the save command"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">Save: python -m pipeline.add arXiv:2611.10341v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="2" data-diseases="" data-text="differentially private graphrag: protecting relation connectivity and semantics 差分隐私 graphrag：保护关系连接性与语义 jie fu yuan hong yue ning wendy hui wang 论文针对 graphrag 黑盒访问可能被用于重构知识图谱、泄露实体连接与关系语义的问题，提出差分隐私框架 relguard。该框架形式化关系差分隐私（relation-dp），并在 graphrag 索引前通过指数机制扰动关系谓词或移除关联连接性。实验表明，relguard 在三种 graphrag 系统和两类重构攻击下比四种现有防御提供更强保护，同时较好保持下游效用。 ">
+  <div class="head">
+    <div class="badge low">2</div>
+    <div>
+      <h3>Differentially Private GraphRAG: Protecting Relation Connectivity and Semantics</h3>
+      <p class="authors">Jie Fu, Yuan Hong, Yue Ning, Wendy Hui Wang</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">论文针对 GraphRAG 黑盒访问可能被用于重构知识图谱、泄露实体连接与关系语义的问题，提出差分隐私框架 RelGuard。该框架形式化关系差分隐私（relation-DP），并在 GraphRAG 索引前通过指数机制扰动关系谓词或移除关联连接性。实验表明，RelGuard 在三种 GraphRAG 系统和两类重构攻击下比四种现有防御提供更强保护，同时较好保持下游效用。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2611.09658v1" target="_blank" rel="noopener">Source ↗</a>
+<a href="https://arxiv.org/pdf/2611.09658v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Differentially%20Private%20GraphRAG%3A%20Protecting%20Relation%20Connectivity%20and%20Semantics" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2611.09658v1" data-copied="✓ Copied" aria-label="Copy the save command"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">Save: python -m pipeline.add arXiv:2611.09658v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="2" data-diseases="infectious" data-text="serum vitamin d levels do not affect susceptibility to ebv infection. a mendelian randomization study. 血清维生素d水平不影响ebv感染易感性：一项孟德尔随机化研究 stanley, j. hamilton, f. davey smith, g. 该研究探讨遗传代理的血清维生素d水平是否因果影响ebv感染易感性，采用两样本顺式孟德尔随机化，以维生素d代谢相关基因附近变异作为工具变量。结局包括ebv血清阳性、四种ebv抗原抗体反应、血液和唾液中可检测ebv dna，并以多发性硬化症病例状态作为阳性对照。结果显示遗传代理维生素d水平对ebv血清学反应及可检测ebv dna无明确因果影响，但与多发性硬化症风险降低相关，提示维生素d与ebv可能通过不同通路影响多发性硬化症风险。 感染 infectious disease">
+  <div class="head">
+    <div class="badge low">2</div>
+    <div>
+      <h3>Serum Vitamin D Levels do not Affect Susceptibility to EBV Infection. A Mendelian Randomization Study.</h3>
+      <p class="authors">Stanley, J., Hamilton, F., Davey Smith, G.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">medRxiv</span>
+</div>
+      <div class="dbadges"><span class="dbadge">Infectious disease</span></div>
+<p class="sum">该研究探讨遗传代理的血清维生素D水平是否因果影响EBV感染易感性，采用两样本顺式孟德尔随机化，以维生素D代谢相关基因附近变异作为工具变量。结局包括EBV血清阳性、四种EBV抗原抗体反应、血液和唾液中可检测EBV DNA，并以多发性硬化症病例状态作为阳性对照。结果显示遗传代理维生素D水平对EBV血清学反应及可检测EBV DNA无明确因果影响，但与多发性硬化症风险降低相关，提示维生素D与EBV可能通过不同通路影响多发性硬化症风险。</p>      <p class="links">
+        <a href="https://doi.org/10.64898/2026.10.29.26366817" target="_blank" rel="noopener">Source ↗</a>
+        <a href="https://scholar.google.com/scholar?q=Serum%20Vitamin%20D%20Levels%20do%20not%20Affect%20Susceptibility%20to%20EBV%20Infection.%20A%20Mendelian%20Randomization%20Study." target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add 10.64898/2026.10.29.26366817" data-copied="✓ Copied" aria-label="Copy the save command"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">Save: python -m pipeline.add 10.64898/2026.10.29.26366817</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="1" data-diseases="" data-text="finite-sample and communication-efficient networked information aggregation 有限样本与通信高效的网络化信息聚合 mohammadhossein bateni zahra hadizadeh mohammadtaghi hajiaghayi mahdi jafariraviz shayan taherijam 论文研究通信约束下多个智能体在有向无环图网络中的信息聚合与学习问题。作者重新审视完整消息协议的有限样本分析，指出既有证明中的缺口，并在满足确定性 m-coverage 的路径上建立总体风险保证；随后提出共享草图协议，用 k 维线性草图替代完整预测向量，并通过压缩最小二乘与 oblivious subspace embedding 分析通信与统计的权衡。结果表明压缩带来的额外误差由草图维度控制，统计项仍由原始样本量决定；对高斯草图可获得显式高概率总体风险界。 ">
+  <div class="head">
+    <div class="badge low">1</div>
+    <div>
+      <h3>Finite-Sample and Communication-Efficient Networked Information Aggregation</h3>
+      <p class="authors">Mohammadhossein Bateni, Zahra Hadizadeh, MohammadTaghi Hajiaghayi, Mahdi JafariRaviz et al.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">arXiv</span>
+</div>
+      
+<p class="sum">论文研究通信约束下多个智能体在有向无环图网络中的信息聚合与学习问题。作者重新审视完整消息协议的有限样本分析，指出既有证明中的缺口，并在满足确定性 M-coverage 的路径上建立总体风险保证；随后提出共享草图协议，用 k 维线性草图替代完整预测向量，并通过压缩最小二乘与 oblivious subspace embedding 分析通信与统计的权衡。结果表明压缩带来的额外误差由草图维度控制，统计项仍由原始样本量决定；对高斯草图可获得显式高概率总体风险界。</p>      <p class="links">
+        <a href="http://arxiv.org/abs/2611.11032v1" target="_blank" rel="noopener">Source ↗</a>
+<a href="https://arxiv.org/pdf/2611.11032v1" target="_blank" rel="noopener">PDF</a>        <a href="https://scholar.google.com/scholar?q=Finite-Sample%20and%20Communication-Efficient%20Networked%20Information%20Aggregation" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add arXiv:2611.11032v1" data-copied="✓ Copied" aria-label="Copy the save command"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">Save: python -m pipeline.add arXiv:2611.11032v1</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="1" data-diseases="" data-text="understanding how the self-regulation in sport practice survey is received by mental performance consultants for prospective use in applied practice 理解心理表现顾问如何接受《运动实践中的自我调节调查》以用于未来应用实践 young, b. w. hoar, s. bain, l. baker, j. 该研究探讨心理表现顾问在咨询青少年运动员时，对《运动实践中的自我调节调查》未来应用前景的看法。研究让12名加拿大心理表现顾问完成模拟调查并进行访谈，了解其对调查内容及预期用途的评价。多数顾问认为该调查可作为应用咨询资源，有助于提升运动员自我觉察并辅助个案概念化中的信息收集，但在是否采用量化评估上存在立场分歧。 ">
+  <div class="head">
+    <div class="badge low">1</div>
+    <div>
+      <h3>Understanding How the Self-Regulation in Sport Practice Survey is Received by Mental Performance Consultants for Prospective Use in Applied Practice</h3>
+      <p class="authors">Young, B. W., Hoar, S., Bain, L., Baker, J.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">medRxiv</span>
+</div>
+      
+<p class="sum">该研究探讨心理表现顾问在咨询青少年运动员时，对《运动实践中的自我调节调查》未来应用前景的看法。研究让12名加拿大心理表现顾问完成模拟调查并进行访谈，了解其对调查内容及预期用途的评价。多数顾问认为该调查可作为应用咨询资源，有助于提升运动员自我觉察并辅助个案概念化中的信息收集，但在是否采用量化评估上存在立场分歧。</p>      <p class="links">
+        <a href="https://doi.org/10.64898/2026.10.29.26366811" target="_blank" rel="noopener">Source ↗</a>
+        <a href="https://scholar.google.com/scholar?q=Understanding%20How%20the%20Self-Regulation%20in%20Sport%20Practice%20Survey%20is%20Received%20by%20Mental%20Performance%20Consultants%20for%20Prospective%20Use%20in%20Applied%20Practice" target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add 10.64898/2026.10.29.26366811" data-copied="✓ Copied" aria-label="Copy the save command"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">Save: python -m pipeline.add 10.64898/2026.10.29.26366811</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+<article class="paper" data-score="1" data-diseases="" data-text="determinants of emergency contraceptive use among adolescent girls aged 15-19 years in west asembo ward, rarieda sub county, siaya county, kenya: a mixed method, cross-sectional study. 肯尼亚西亚亚县拉里埃达副县西阿森博选区15-19岁少女紧急避孕使用的影响因素：一项混合方法横断面研究 angango, g. o. onguru, d. ogolla, s. otiti, i. 该研究旨在了解肯尼亚西阿森博选区15-19岁少女紧急避孕使用的比例、相关因素及认知。研究采用横断面混合方法，对400名少女进行问卷调查，并开展10名关键知情人访谈和4组焦点小组讨论，定量数据用spss分析，定性数据用nvivo主题分析后整合。结果显示34.8%的受访者曾使用紧急避孕，年龄、教育程度及独居状况等与使用相关；结论强调需要以青少年为中心的多部门服务与生殖健康咨询。 ">
+  <div class="head">
+    <div class="badge low">1</div>
+    <div>
+      <h3>Determinants of Emergency Contraceptive Use among Adolescent Girls aged 15-19 Years in West Asembo Ward, Rarieda Sub County, Siaya County, Kenya: A Mixed method, Cross-sectional Study.</h3>
+      <p class="authors">Angango, G. o., Onguru, D., Ogolla, S., Otiti, I.</p>
+      <div class="jmetrics">
+<span class="jbadge jb-pre">medRxiv</span>
+</div>
+      
+<p class="sum">该研究旨在了解肯尼亚西阿森博选区15-19岁少女紧急避孕使用的比例、相关因素及认知。研究采用横断面混合方法，对400名少女进行问卷调查，并开展10名关键知情人访谈和4组焦点小组讨论，定量数据用SPSS分析，定性数据用NVivo主题分析后整合。结果显示34.8%的受访者曾使用紧急避孕，年龄、教育程度及独居状况等与使用相关；结论强调需要以青少年为中心的多部门服务与生殖健康咨询。</p>      <p class="links">
+        <a href="https://doi.org/10.64898/2026.10.29.26366853" target="_blank" rel="noopener">Source ↗</a>
+        <a href="https://scholar.google.com/scholar?q=Determinants%20of%20Emergency%20Contraceptive%20Use%20among%20Adolescent%20Girls%20aged%2015-19%20Years%20in%20West%20Asembo%20Ward%2C%20Rarieda%20Sub%20County%2C%20Siaya%20County%2C%20Kenya%3A%20A%20Mixed%20method%2C%20Cross-sectional%20Study." target="_blank" rel="noopener">Scholar ↗</a>
+        <button class="cmd" type="button" data-copy="python -m pipeline.add 10.64898/2026.10.29.26366853" data-copied="✓ Copied" aria-label="Copy the save command"><span class="cmd-ic" aria-hidden="true">⧉</span><span class="cmd-tx">Save: python -m pipeline.add 10.64898/2026.10.29.26366853</span></button>
+      </p>
+    </div>
+  </div>
+</article>
+</div>
+<div class="empty hidden" id="noresult">Nothing matches.</div>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <span>My Research Desk · Xuanyu Shi</span>
+    <span>Updated on weekdays · <a href="https://xuanyshi.github.io/research-desk/en/feed.xml">RSS</a></span>
+  </div>
+</footer>
+<script src="../../../assets/app.js?v=a39d90a1b7"></script></body>
+</html>
